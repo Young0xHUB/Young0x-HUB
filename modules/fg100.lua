@@ -1,6 +1,6 @@
 -- this file is protected by Young0x Hub Obfuscator
-return{[(function(y)return(y)end)(0x987)]=((function(...)
-local _aPO=function(s)
+return{[(function(y)return(y)end)(0x446)]=((function(...)
+local _aWG=function(s)
 local o={};
 local i=1;
 local n=#s;while i<=n do
@@ -9,7 +9,7 @@ local v=0;for j=0,r-1 do v=v*85+(s:byte(i+j)-33)end;for j=1,5-r do v=v*85+84 end
 local nb=r-1;
 local b4={};
 local vv=v;for j=4,1,-1 do b4[j]=vv%256;vv=math.floor(vv/256)end;for j=1,nb do o[#o+1]=string.char(b4[j])end;i=i+r end;return table.concat(o)end
-local _cEN=_aPO("<\039G86;(HQU/gF/$4=jBV6sjY3?\034P7\0394#C\034r?n+W*DHUIG>=r[;7:e/;HU2=n;`@9gC,%M]9n\034KXFY+qNGB71UCfj^e3ArWf,ZQL;3d>p?9-liNFA,\034"); local _bMR=function(d,c)
+local _cYK=_aWG("7QsR,=E/XOBKC8f=\034Gan.oBGdDIkXmE[,gX8hX-i2(j;CHq5tg@O?A/E&Ksf1-Jnl4\039uB.6W6Qj7lOUfHYR=r,Wn(U6;(g!>;1/?:KDW^9lG53;J%B"); local _bSQ=function(d,c)
 local t={}for i=1,#c do t[c:sub(i,i)]=i-1 end;
 local o={};
 local b=0;
@@ -20,26 +20,24 @@ local lsh=bit32.lshift;
 local rsh=bit32.rshift;
 local band=bit32.band;for i=1,#d do
 local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=band(bor(b,lsh(v,n)),0xFFFFFFFF);if band(v,8191)>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do o[#o+1]=string.char(band(b,255));b=rsh(b,8);n=n-8 end end end end;if v>-1 then o[#o+1]=string.char(band(bor(b,lsh(v%91,n)),255))end;return table.concat(o)end
-local _KKA={};do
-local _d=_bMR("dZgH}l9Fbs~T$!,&Ol|WJbzz=nyX&FC_TTvbT:YT56Fms)i6Ep*4nDcy#Ss%SZ)+Op1Z2TS{*p.T*BvQ6!eec%O]]Qe)JHz}e.0pdXI+V4b&pA+j}YWB!|sv!-TD-Q}gty_0*&}!~XcTq=?v6[`+eZ-TgvtczvV!pTW`m}e>r*V>dZ`KLyqw.g#T,AY>I+oXZBm[v:>YerDi]QAGyo.YN>0pD-`):OZB.Ac(l>+>On[}BhJTCbZ<e!wVTLDT7=(X,hH;s6fOOp}e_;k%8+iBuTtFP>KQltpgV`%m+BZ:jOe!ASGROp,)vEu<g8[)E_vk}Ed>aB}85AHAx#_cji&x!mXY<`S:xw[+_Bi:JPt[Q>ST#cP20]`TXZr41@&@DB<}5&]lHt5M2a^S;bkTGD7v&Tr!O)7&z>khRz&/(`]pb<KQ%m)QZr]q*TgGC~:[dW[LETJ^6QFoYzSo6P-$vIN>OBvTgG}~R3SGP)1TG-H.FooQRG,@gZwz{TRBbAi>LYsz|^E<}ght4EMjS=2ao3K<J;XYXxL/:jlDh!k&U~BnFDo/vb(X=Ts_w:I1.<}gWnmQ0oWMLX-MA<vT>$VA%yupsAn)o(zT!|EpS}<9}=%7._DAOCkP@FM_.f~+r?TL.Y[c}1*4#%kbb|XUuER+2p+/H=2zHB*_Op5#`ku<Sw^TUQS/)jbpZv5^C~CWCw{+X>>/7SUqP^(cL)-6n|sp~A~%VU%-8!I=2aw.)r?JxD1YA=WbNa345q4X^9WvvbVObHSHOj(1pA5q0ULkFl1@QACIZh49%a}=@&9bE:|e<`%xm=+&OT]:SOR_^0vm>TJK+T=(sYor)I5aoT7S7h~;gH`.%!r,j!@7vTwUZTy-oT(XBM_1e-0LOApB[^7U@o!Piu(>5vQv|7)7c/nkiB|luc~Z@Rf!J>^Y+A$pfcZiJTMMxihgOYWUzpf>d)hxzNAcpAhe,E>=;p>A1xzh`i]Q3tLpopKOnTf>PbSbFTzq;o9DhOkz30RB*{A&*!(g;MI2)q+u^TW|yLhm}N5kE.md$%@$F_J>Sn>Tv78iL[1%[Q*B>GC~fJ$T==k!9x$,KQwtJ>LicTQApG,PsYZy`DKQPJ6y*j{KvBHj8L6}ZjnTzgc(flahK]whZT2/m<u<&FCyvoxGt1G>oh}yDf*tS>|=/43KR;E.oOo,6y;!]Q#7MEz@|HX>PFa0WjvbWcYTOBO`}KXYJYd^[9*@:D<Ku@g0j{J>9.2p@:D5#d{*Qk2p~s.T?.%(bs_DgB(yx`8bFoK]UpJl`RVyXp;TM,&psAi^yIS5N/Lo2p`L<LnZCMkY~+eeTLLTd=gypANqu4$u~6)e7!HCCI2co9=HG<w|Rf}ghtO%ldXY@&`SpAQj^TeA:n+rqFgH^|R6jgQA%71Tgve?gA/&]>//=foR:wbI1f,Au+zSeE)T`#2pPL#;=19W&D2p5|gB>GW:T{a>eA|hj:>[~+~e.B&TT&Ork|4QOpN:7AJWPT;Tji-pIBnfLIm<>T=Ix}XHxF;+R}S!nwQTuMY..$<,x#$wbA]:jObDpsQMIt(+6JE.s1>ieX]g2p(Qet[T^^*OJ>?H0p_(+QZ(>ipAq#y}tSO>`lOPX+E=,ka0vTE>m<(72o.AnraY^z7MWMmNr|`~5T#BH96jwawoJ>zG+A$%-=(8v2kTzg]9STP;NG91fTP4jVl%*XRB_-|Tgv!.}Au2RTR`,AgGW:T{7QMSvSpAwn*G?Hrot[I!v7pHksB!;L@sE.2a;GP^:n3.h&oOwTjMxihgb/Eg<`-eg(VIiBn4t>:PC$niwT_p/!oQnTr=nrg&qw4Or.Op;L<]*)kQsA<byAvBmxuhC4tT2/4T!|{p]umXpA!7DPl2IsV/LX=Ig#dUAT6A9iq7JO,<#PHBHC+B:nfj}Z<_&ch!G0Krw=2TlI%+UlEgX>MOQBV[oRvG<T,P7!<}}id`~TtD<S$v)/Xs).%FDWygSTZ.&QJ><=P.wi2Uro}gF9tm%B;b{$ZTT&Or86Kg0pu;kl>!T3OADPEJ.TCtO[H(mkpA!7a~^l=b6/%xGcM@Y=[p1>i2OcYv0O/A#T*bB)fE|[gAR`w~,P:TEM:;v|gAhePcRV1AQAS:!Wd_Opju(.gHCNMQ(dI!CIziTZSTBDbgMIF+X>N:Qlf2<`5q0ULk<Bi:sb@[f>eAG]!{W.E.^Z`QFn(Z]Q[O=raekT3hB8T;W`s;O8PTVYj=b}dMzAC+Kx?Ck>gvjI/M|w#>8bp#dZwDzASyL35T@/9#_XEFx`vpm=jTh1+9$6Bp7AMvJ>X>@:1Q)o,`:nQmIIDToHcbWI|y>A*{fMA65WpB;EV.B*C%G{7!<}iq~z4Tr^ch--)ve8Fp@!2bj9~_E.r|w+}7d]}g87S3NAWMLX3&t.iT?1O>]QD/VmiI.pOp|@}oDqhQ1>BH%LGY190`]T=Z0lp-(I1Y7hBiuWby:<]Q>+:{3Tj+_AKT@/43pkn@xg0>q=IAy/HA4bU!7vxT_A{PA%r!#Eym)}QT[M&BBccM.AOa9/<u*Ie{wCTp!hn}kHE/7oS!Eh%D@.C?l06WoR_%rnZU,A5b2v{`j&2K?#[^!/D_7_}U5pQlU{.;DxPTp&P+Z4)R8T:#Ac10q83=&k`vgB#EB6|5+<V/U6zR<Y8ji+nTQv>A7U@o!PiuFfpBLX)^ZO}g*zR{XQ}!::3Tq=W>S=~#jw6pxA[YiOkJh!{KxlT}4Y42;M_-A=YO[Tr=>}RM>AsU5fg^@>?!I!z3?KIs2T:/63`jR.0pzFv?seV]<B,`b2K_kX7!h@KT?b|8-CpR~+Wt/:eQ/2%8:DEDw+y2jn~+Qt=B9TkM~oy}M2z#vb|GwXHpxA~{)?&[oRF&Yo$pbA5M](/P2SoZ]QIa?1)G.b2p&HJ{l,7Me5vbpOOZ;F0>1cxDk/J>+B5qF8r@7iM_HTWX7^XoRR:#HA!|+P:*y1$DKQgm}G2td9DBC+ogYNU>~A}AwK(*2<;bYUoRqGv{i*QA(+t>gB!QN:q*4>3!rTQ$5V^=ppd^6T56>jvj<2u;:D6-X/!XdJ~+(aH8kp]li]cMf$G%)HaB9@pBNqv;nD[X,+r=|Fv<N9dfaH0pI;*sH?qsbTjmO~bfu<D./R%<&XXW:g:T)FKoD;gHb|L|+k+ASS;>YA&))/~XFrC8Lw>TeA}Arr%`U#H8[B5c{8;TF4mTwTR{?b.BCIuA?~V14baUh8CHKk<L8<U#AsKO=%(DMTtNoT(XFrC8Lw,MbB<}q<c-nsQA&VL+1<]Q]I&}8Jq>zg3X2+U^R*BYTTT&1IU{}p+>6H,HwT7p5v7H2O-s&#mNWBlw:>2C!GvrTRXYk/]CGHvZdZTE(c>s~[z>==?vIr+Z~+ltpgV`XbPV~+8ZZTi6a4|vIgxAs9;M%hE.Je,~<`3/qD+_RTWb,c9h*~j!^hr`b~`Td=RmkzCVx~WTq=eOjNV$!VgpYAEIh!NqhTOcZ<-MQ,E.&pyBy^7*Q?]Q@FWt:D6-X/!XjkgHln;zmmoAjmej%:)cpAU6TyxOFoB]WE<(Xt*Wb>6A:>8b%w/odDzT-I?fn^N&r!6EU`);lTzAIbh`znoZoRQu`rf:QBheMA%vx>I=wwtbD@PeXY0cgLmZ9QoR}Z#HGH#B$}?ld${-;M+sEA?(?T0K[g3*@1DAAum9RTpGW:n{1lj!I*>i~9$T6+jt6JECd93Ta!~Z=!=bwTsp(BcY6^m(i:VY5q0ULkL=oRYf8EV]<AZ:,Cx9j{QOwTU><l>CQ(WP6tpB5qCbNCi9F5S!<}iq4dWThKtLbu2p2pA@#az$OD+fE.iaKf!f>>KQjaQK~H@TpTgAzh]]<qEigB&<vTZ2aT;`$Aq#IK+B]:5L=`l_=s~-CINqo5IIXxM=(_wT6>`lk;g>`n>q{wWTC+<>xS~+x%ZT[4_v27dqbWu<Kwco77TlVALQxAuLjL&3~+EEiTm=4`;Na;y/4TaIRHh1gB0c0Q~_MqvDS!Yn)&zD}TBDqjKI1HX>$GWW[[,`zPJR(yHByD,VPA!>7Aup75fwv>gqx+$/`2uT.A[h>a:<S^E.P|5v*Da>Op!De?u<y@jQp5Ktje#QxA~L7xYSh!*L3yyarb+LI=2aw.iOi2,`nnR65uOB$%=,%65N~.2pIyZKiT[Mj+r=B-+B`dilQBX)0:/ei><lb475SdU{I=~X=Ts_w:vbpa(!}g1>wLQ<qW|QKYkT+Tab.`LT2B5]UF4rV4s`QBtN$rCXXkh!0aZT)=YfNb#<TT#RCj]TBN(4MTk^T*!TW|@X5LIRzggH^H1Qr<7!H/#wwyGTC=1I//075T{.`43[%S!wWT!0N`)_CI1Yh=?S[NBf*OKQq)T#V@za8T<aN;dI:DJ_=[f#BTu<f19>w>`t2`ug!hUS(hx^_[3=|NVrQBYn5c:,=iWb,6oRDE*QV[HAsZz;%SW>sAi^:{(WJVFOzgBdJ44[q&%U<>I!;BnVE,tFBTYAVy:LHA]:JPt[A38%a.,`+Y718Q#TZ:p;v0GRHA0c^T~A$oo&ad;.h!JslpsA.6{oF)JhXoOpb}D52zgTeAw0]lo!vbzNE%@_GEU{XYU6lv*pA)dZ+_ptQ8v~_TVI6o:?r*+B!Q$AbcCTzq[Dyx#~o8ezDAfQSXYBC+u4D92>YA[_fq+T}eX`v5o/Lc`BWM=[I}r>bv!.}Au2edV/~X:M1[ui}>IB}T!p<l`!xfLj:j)Y<uNx>AYU%TZv?+Ek^HT*d>nT*>Oc3o@p/)}%0TnTH!50oBLXI1#HwT$>|=k;g>`nvbP|>L=l*aj;(+b8u<00.TH~F#P5#>bvi4s=b]Y16/+s<CX#N..T<l=y!m}zD!I=99Egv~Nm;b*e~Tp&j+L5nG*BN%bxdM:>DTFR:D+_Pb]VFcU#41LOe?[TQBs~(M/ev2P&E{~+dP2p20<BWb1pmSZkX>J>u]>T}eX`.9(@!PfT{.^[|-eQKlhT1[oA@7=hNa`DV/2aV1Xx*_:TwT^!]#_<<`1gYA(N;M&V*8wM4T@DMIx6->bTH/9r=*]Q~fzz:DKKb<+4gpgH41LOe?QT%l@=qb.>h`#T,}B%&$hpz(4Bmx0Twm[TW`3p_i^holoR6-|-lqgBCI^MtufA4b(XpW`qka1/sfgHB3{nG>oA7Sel$3h.4bu$oRSD`lPp.Au+aPBI)oj_Op-)N{u<b|(QpzC-HNSp!ha,SqPmO_S!M?qoTwdTK/9#h*9C@VoR~-O)Zi+A(+?;+B5MzD-7Jz+!]Q-?Duj{g>zg}e&>p,^Mk5Z>ocZ<BxbRGDP^S:[7E7,sHp9Tg.J}#rY[ri+ApGW:T{Q5OpJ>EDQAZ:B<wA{>->2p7zcACTlI@I?bIQX>fDE=]k(I2c?6]j>fbz{!2pe)T3$TqY]M`|4QOpPL3>*)kQ_A!>2!ED]AyRDE<`:nfj`.!ByDxV+ri>(BwR_B]Cs>*4OiYQoR8cyr,QOp)a1l8<j+khUSfX1h.6nD]Qin>r1LqO0pR-+`$K!9<T!7(*R`vbCNMQ(dKTdroRQK<Z*4.ACtNX1=DZ,HFoltpgV`KO=r@>m=mTCxzWb:<pzAoRI=z=+g;CQ9}!o/gX9+Op)a1l/q$QohUSfX4cvp4A|(aTeAU{:!@Z~+00.T6T(!y7m!kK8TpGW:j=VPpAQj(>kh?%UYd0AD,b}gFuN}WN4M~XO3BJ8Tw+~)|vPn1Ovb_floi*7@]UP^k/9<C^4%bTrb:0=B?e4Qh!|GwXMXf:D>9/0a!o5J-v:T]l`!PL.mQ2iQ2p@:AQq^&_k^J>|HOp&H;g{~3>sAinGR4B>G)~$E~>|=k;FlCnu<O06R1z:{i}#T~A:n%=Yd!.Wb(X}SiO6KjAXJ~+|?9BhTxY]Mf6_u4BU%{!0D!3=R3o,`wnehWC.B%v`>t?<>7A`!NbOWgTYb_hPd-Q2p.N:A&yuk,,2pS$.BEK5xnWu_`C@E>AsUKY6-%HUD7!F{fMA60JIhmLE.~Jc,<`wn<fjubTi:PA8YE.U_E,<`7UpSWF;B!Q:A~4xTpc@o`!i50TWMob~+<Q3KCjfn)}:DK]KIYGHoE.?|XoiQpZOp&ypT2pOkPrMTjKBgeMY`&G0>~AhZ`E>X~IvbTG~$eE}AmvuWU#nj<6V4wPnT5bBl+B:DwtI]9j3^E.V3+ZndWZ}g{W/}8#+BSnr!d^;qG@7!#E25@I4T)+e3c`|*sodZ;D$%<}40#To&OrT@N%V]upeAV`6+W*vb<.MyVl[f;P,`r|<L`$ZT$}Rg2p@:&7(`eTA<~+1YV(1rM/m{dZDEtNr2d=|Ts=j+V~ADyQK>j!gWC//(hTqYlMY;~O2pop9ZoqfLIRgHCNA%;vS!!7?BPmnTc4Ol-AtTQl)LQ5crb>==X`E8;<}gpuD:vPvb1l+~>U/@4Mg8E.Cm|O#egg]Qq)wTM^GgyBi^,_5WE.m8=+&En]2p8)rY^TVI:>Z4M}!T)/qQ0p#YParyh{pACtNX1=DZSoKQ]nK0PBOn,A]QQA0a-Vx,Fo;tKx-M;`!>=TnM~>oRJ_pw]>pA$%QB!+xJ^pOp85cicbQQYAM)}=FV+$cQE,VYj[9+{DbG*4wD?o14B[B@ZozgQ}jeFv^8(DdT}^_hUNHqiTba,pwT8ZXYQK<vS=!7C<?i%=Z#nT`>RcRbx@2n4U{X#B<}[%09O?pBNqu4$ut%4A.B~XYreZ}g~)k>B2}=XscRQ[-b:D;EsbS=~XO3BJrl,`xU[7^uDBX)8,[(Hp@!K>3awgvb&Ox5ONKSqp[^JYs>$^_<0TOc@om{S~0ciQyBCfULHHu<Z84*bI+F2q+TcBx+:;I=heG`m1uhg#X>RMa.bM,`n:G-OC>TvQl4?w&@S=vNsEQAi:?A6`CTG=?v=SX?#2Lz>A/p2POE63[LI#(+v?u<s1Yi+,WQw*sQiBhTI!AS%vVY1Y-~dD7TgHP8y./uoB&V2YOH}gFn3HGB,`n:06KDiTwZzTkh~{*fqWX7Ab]QCJH?zE+.zg`L{>IQ,`plqTcMZM-u]oX>E,&4v&>Ac2.0IGjq$5I=BJgcC<l._OOp_^*lNKMQkhNg1;Hmw=TDwT+p7AK>c9l,#>)=k!mKo8rTBNB>gTg$rVst9w.+]Q1Lb{2p!!]Q|GQ!-It.J>R.xF-TS!_QwT9>3!PTpAI![K}!;EEghTxA@(:G>,oRa0zx:{pBTG5VA7tZWb69aSUdN:)|!v2psU,T?1a)y>h!j{M^=1O[gVS=YU+hs!R%>AC8Bo$>q9F!r!aw#pEAW:P@.WvbyiIV7+ohm)]^`<Op_A!yvbc03T!`*!*JopX>(F|$cqpA#%[@aAm&>!+AdG)pJ>Iwh+@Q8;+bOp1YX!J>iOOp^[EY4o}gsAKcn)FBcn!)Pt_pV!g/wpsAV3xQYB?19J/(2>ETBnS)`>Op|mXZvb1Ll7hbeD4(P^L%_ylb^h^>~A5UsNA@l$)YWy>d7!/6s(p}QT`MX+]QW/NkE.%_WC<`p0eP@2fBU}gu1qQTHqmi340x_}~+p0]QL1x.vbEE#Gu>sAe2r=OTbaGQJ>r5F7YT2Y&S7@fgwT>3n;RTH/|;,EE.q?(PDK:,KQbm{p35BMYBq3duzBdZ9Y=)}VpBQKKsCT+>r5(f2pV9u.=To&GCFS:L<X_>5vU:i.2IEy)7ZT<aj,BIoREEgGHw.AbaK7#ByD.,~mTpq=]J_rOT01,cavU#]]r@mlF{~T&+IH_tvT|=s/b4.c2pzZYBGD.,%=em>.KQV9u.aG/#gB,6WM=)1KuoOTf0;*oTq}=6#&,`c0o-wmpB:36pB:-pgvIXseZQH>LYm4Rt|f}g#Y?R4uI=D:On4!bEVYEt;y5cU9vb.twKFTbvH-?,zTRh}!(yb(COX>Sp]U##P^2yHJ,{I-!p@!g/g|Ao~+}mF_bpcBvoNe7!R6-;=eP>FBR(-iMUamoR.wduv+TT01,cn,~+}m(*/>)=]J*>ST}<:Q:T>3?HWk~+L1F_bpaBT5!Wg&0,WQxA_iY<n}*4A_FaMO<4fIDHnTP>@/n^!Wj=01_;V*]-qTkhe2Ml;}gM|bwTdpsA|h}*xKF(~g0pP[a;Dh)jOBH/|;R%Yx}!QKjT,AD[b>gvv(AH8A&Td=A,<(XZr59pQl]J$l]EaTC=h(->INOT:38S4:dZ,LBG[KDn_>OBUZu<1LBei0.DMBs>IBNP+PZ}ATt-m1Qqq!W]]QW3enh!,LBG[KDn_>7=h@KsI=sk,`9EJ_(sFTyD5lfioRStBGS9zT01_;V*~+]]2./>0BT534@,J>(upT6CJE4;LQjtRB47M/P5K`fZ]t(IzPC~URo$/iI.~+CLB]9(lV@:vbEE|#?gwT[*wo<T01&qJ_u<S]]#}U<AGQIgIBy4KQxAQdBcmYh!>fWCCmQb7k5Mh@8Ush<T;0a8%$#`bAU}W)L@zT?b+z=It#}gC7ySy|S==)DoTPmlpAqPi;BIV$]+I=V/qj#B5yX@9AvR5M1x`u9LMT2/r!w`>A`$toM~;JCroT>w#CZ7U%zZzA`M]-bLcZFQTFVY0c/z%]`rE.;t[%<`2cLtq8`T?1(Gy>:D8C./WNP*E.;t=oI2ZTX>1e8h1QpAzPN*s-K>+_r!01B_e;=TIK-ZZ_L2doE.StBG<`qP8X02!TyD~RskvbEE#G|p!hItA`rDr(1!l):HdtHTnM&Z}_;MlK>7*BQBOC0Gmp:I9z2ph/%!bTu!Fw_vPqIVdZ+s;G.Bsc{T84]#}gVkNsS=5M=)hcve~T!0XorVxDc0P@S=1xEE6ZZbxDZ||U4M?qlgTL+TUYjhn1>*9VgT%YL~,(pbJ-GT@/?PQPh!$}#;R%QT|Y-DZLVq%w<UI!:PpHCXjTKDI?gHEth^#CTTG2Eyvs8oZuQTx:_wYpE.]nBvNGO<KQ#GCMX(D_;BojLWoyTTFB9ida&b>q*4k&%j-GKs}]h+X>A5,Hgp>AeJlMda9Cg!I!nr;Xyk`>uMu]<vNe58~@OAx3>RJ$NN.<J>OI.B7SnP#KUF9/vNfW*aP.ZQkhe25b*}7!BO~+X5^QQ#DBnngHZm1`T|1!ISnP#KUF{iZ1vbH?1yr+oha%36pZ4pQlUMsXHtlTi`&DrTIK-ZT(aE2ph!rd;)jD)FHigA&Va&@]~+aQ(_cKf2b0:DyiIV7+j]E.}mD^R6=zJ>%m.Au+4RC22{}z}gaQ(_P>vb;toREwL}~URAyDnX,PwTB/Q5k_/OJ>T9QT/6#.u>E.>LQ?T_oR}g6L:XXIXY::MJ}!_:uNkgF>B/k`qq=]}gv^sa=IXYD:~ogTQ)^y}sUDk8+AyD.,~mM>ZvFe;hCG3&0QaB=%}=lKuv9@<DpA::Q$FgH(fHgAH/tXS4F57!=)_T*AT5D<={3oCI~%]e|3u~7(&z2pY-SigTSK`3$wu^8B,aj,skknl>}g4mM7XTCIBy/2zQ*2hFUO]Q0]6%b{@#OpZwG1*,Ug:TY9Z1qgU#VO8S!8vkMTbR-59INQsAe2C}5B-Ii5Tx[1`DKQUUQDl#`j]T@l@z9+oR0i<&8L_Bjm,jr@M27=lKe~t@ND,`#JCbksFB<a&Gx)/>]ls/<VU*%Wj.nTT>zqk`qqlsYkweOT`yW1U7t)^UiBtl*I8g^TjfeNE.EEjcXYg|T%~_y4h!Tt#@Tc<`!xS==)!EWw|L:D^?Kb)Y#%>f7=_:UFcpB{V.Op`Np+IwUp!huyhpWUDPr!JK|(~0.T(!#d5,LAvTGDnXjmn>3=H/*ja*|Qx>X>F1NnZv<`R@,Nx{*TPnrSlt4V+AG|mp1>wofSLG1h&1ETbC-3OgP^[[7PCaudOpq=]J@o#TH/*jnZU#}mx.-QKVQTt-lYrD&&6kvbu.8F({D,k~P^{{?S4{huFp|=UMsXo?~+Snbn1p7Aw3&jktNTC=4d^g#~;BPnrSltHC$,KQ[k2_CWiF*BKl5M%xY2>h>Tc4912@mTST!?RQf!^TL-q*0:<=-YjT{K-Z!;WMR@(W%XOTVwv1i$CKbAPUb`gObT4A85ghO|YT&Imnw,h!Ae$:JTohaEQGt+~>@!Dru:z0u<+s6W$moPZuPgYAj~pAI2z2xZ]QQI2]A!|HOpX{4/noypf>9(F/BcVkj!$}idpkc>_AWk4uHT+Kz)YJv55_<TZ-4;c{>`n0_Bq3V),T,f4ROG]C@-*TzC<YYZi<zx&TA^g_qdNToh8U.GTHx>]lUMsX{e=$(Qzg9kwF~G08f<~T6YG_U#e#4Pa/e(rTk4U3o.<TM^q*,`#JHrdapBj2Fz6LDTzqk`qqzt}}?[,B)/*:,JCpWMg)^y}s-T*bV9.&yL#AcU|QDBBF4yt6hwA-^`[^(yg{A$M{l>`lUMsXHtmm7gZBN%a5DKZTHqk`qqlsYkpA8Pei#_U),+gTMN,rHN`DJVzAlW3)?G>TRc.Q@IeKj{.uOA32HK;p~5*c8lh!6%5e@#X>spS<OY>Ap0ePJ6>!_3.A01`HL/Yx4Mh@KsI=gTVwK#(V7/#TH/$e@P2p3OzTBF4yt6hwA-5T4bXgKQ4mmQVGj=YByD2PK0]>@!Go2kgoU#%%eunA::eT71.IG#8.u{2TBDzO$Z^+zgfOZ|U;}8<O^TF`SH}^Nys/7#+AN}|Td=}x>AR@,Nx{`r2QI=CIE%]v=axOwTYx;M=)Zg=8,TW0;*ffspZx&Td=nj00{oBtv>|=V0L6V!u<fsjgbiZ.H{KT2B=f}6kc:6E}#A-+q[0UPIIky;VYH?tU0AFXoRj])qT`>Tv7$6gvj$43bT.RecNDh!Ux@bIRhEG%4bx:?%~UH[4Sn*E.Pb[e]!5z}gk/f=OH5M::2]1yETU/k.s>#rAFE.|?5P1ZZzFo_G1(DVth{BnTcMSjK#Z+0pTm#0P0&VHAcnYV#jj>#A?TWM~Q]QT92Rk[2g0pa-NMDfU?DA)YZQ(@1pq=GV#1DA6YZQ(@R^*-?PxDzP?RpA[Km3T>FoefC&viio8E9>|=:dm,]>gH-sbW8Y1!&~e:`En>==D[n~{>}g[k2_CWvb(X%|lds%tRc4gH~1Df!-j!5y2e$>!TZAS(MawY`1i%I=)/YFEAVt{OX>`[sN;L,`^?vLXT+B;N&~UJn.gA=)}V-#}gKWJ|9h;MQK#~A^3TVw#H{|5/#ALNzKaQFTbqk`qq!=l{Ap7A1~h+X>D4KU4i<`2yHJ,{>T01.+OpP[f}}QD+STe@wp1>uy]S#@5k@nJTv0;*^U@pohe2x,:k*peAda~HRgE.XUekj=E,2pd5`s[>6Y!TV)QR47aJ1=017otYLk@pX>t5:6?x}!e%,l#T+>y@3Rl%r>`lYSddWez/d7!BF49J,",_cEN);
+local _KNS={};do
+local _d=_bSQ("lm8?^$BT-jSF[4,Zu$3xH-LLU5v<ZTiQFFWJ8D?^0uD*4XM1_Q4NBFL5_{]3r^tBz6pG86AP]:}N^89TlvttxCDa./s6SF1M8hnX9{4)%FWNe>NbQR#lOC^4ceVO#wvF=P2em>ld,Lz(^AF>Hs,6SV/+}>AmbzMpSqXn0:D?mzp#2N,F37J_2|~!NFX*SRdXyM5T8*!3=>+F6F=hsgvkNYc0J$Kt-^mRSp]NLqV61v,5,UbhP!*6,Jyk2r&HX*UxqEnF0N)q`qnV^4n3go{VN>sU!.iuTwcS2FX$Ks-.]6pFvtR+`cYt(*ZW&Evv2>J$1oAU$3h,P4u*8F6hU>+YIqyN|0u8X8bI:6(K[Yz*+K7!GW&~RzMX._;0,A>9?FJYe~)DO+]uu|R=91bhRBHR+3gqH>+2:6M7XEs3x&gznXGy,RgcMqyNU:nycboMN6gV-9Pg:>X$IvFZt^gFnJx{C.>6AP_:)n^8i^=[j7xCAP38YEGF6hTuUx#qe>G6gyDd+H24eX}>Q?L>*t}DdAruSq5vf|qe9^@BlmXGXsop`hPFhZ/(@.?aIQdk`UU*J$h*&4L>I*tmTASW2V,JxkH<Df#*7qP#KVD+]/P&O+lUJ}]Un|N$NQwSN6<jpC^_9V$,z*Bba*f?L8|0=9d|Di@QKFNZ/(!}$7J*CVC!/W|f*NSqsm@v6]P6naSq%-#F~-&K~Z9.ck5<eN<6z(T`{RUH?FI<{b|abh9]JKU45qcN4[2}?F?Qkk/JpAJ`?E]U|n>n>6Kt#G[w/fSqH>$I8FWNymBhO}N(%*DXQPe/y}ELuN3^YNcN$+(*BtEvTFRF-6)GzGw?L8*ZDQI?zK$MeFo7/Q0:nMeU4tT<XFo+6qo@8NV6C%sY=pz(rCV/ioN6q?R1f-uN+FVlO+f_?cMU/u0:GM3OP[`BrFu6O=L)5m+P~vBt6&tP({!wiF=6b^>eHr#>z}sxwX`1bn>6xkH<DfozeJz6uN>Nz@dO<pposFf.n.:]xLH>w(?6*d^xDRpO)n{F)>5FjG*386HMO@zH3=B.Pic)^UHMzTr&W@YN<>3$d{~9r-8DCF:68G]bD-my&$XwO,^s:8H>tzL83$d{~9%YlqlF9]1+J/k)TFbMg1F,*^NAmFdtoc]F^NS6DZH:.n6.~CYyhGsY@F6h..ltz8OFIp(G;rD-pMvkyp|oG1i]sU]Aotoro}1z{Ft>S6mV>~$Vr*D-mDZFQ6)GzGw?-L?NZ4ngD-zZ^FL6NLh#W5=}lm^-gCOP7*hFA9!5(vSX4@7Qw&6y-7zF?@fzu^:`CNN6D-=U0&Poe8c`<.:enBO`{hD-oS^Ku>_>`~qsj!P8(Q>Fd.=`+J{C:*F!Ob];p/^4X;:>I*a17mo^hL|PUDnBVa`MjN5FQnP;;4X*xY@=@gV&v4bh#q9lT|ONuN.i2NH>kzyN[$wGh`a$q6&hNM#Fb>(JK~S.=U|MD<(6Kt,G2vPg[XSq9{z)GKAPZeSqY}}Fr3g[f08X.6@wrCGp;:G>ZF[toc]F0BN6?(i@.>/]^U[Go)q=EKAP;$cLQt2f9NS6KsO4H2Fb=U0&:/wU^aO+dl!RxCLA9CX!HFv^;hnDa0(:0:$+v>s+>]rFD3z%7NWJbr[yLpe*h;bx5*a$AOddlm{C1T&vxTRFTJ0jM^wT)8kI86;|18_>RyShz`P9XGZFK{RKx0h:N6_&q*8DQD3FzqdLrCAP_:inPF;U=TG!eXq>I1~t(OgFo.P=gt2URdLVpSwt;?<>PcZl.l|Pn$gZEr4W!F^-<Txp,ASF,(q0{`Ahsy8?G+Jcj^;4HMWTz-XF-6)Ga70z<>Bo.4}p|P8DQDsC:X<Ny*O5m]zmSqMNi~Dcs6#3z(]uc|mBh6s^D(_I(;R2QY<.4Z{_*;mjcN)LMXVdq!D#Bk~F&hBNyN#0;k74Dmu64Xo~K.~Ff./&dtkeSqT9ytvzs:DVz(0:@$&B-64Xo~&.[FT*h7~0Qw2+bh8%yyIqyYD-#q9l=t.j>1Iqg~GW&q0td71B}lz>q>nfGh(GCNW$T6oj75gcrC0&xW%o&F:*~qc:x-+WTz:#Gb`06v5Xn>x*$/pNBFL5Mf%R}OC@-6ctV2,d35xN(>Sq6#GW41(BZ,2nO^>FW$gv<UyR`yr-APD-^iw4@FX$IvFZ0N@FKq&{7^)UiD)Nj6KsO4H2Fb5N}*=FV.x?TNQz/FbMc#?7M}af1F]U|/7F^h00LA}k!,GW=7z[),>j=UZ>v*WUpuxbH>IzuN=/ybr)!FW$EBOkZfzTr-my&$XwO,^s&8H>eqH>LkC&XFx3DgB(DUx-bhKq^iGAV(nXux_f.J.NuN<vaI0HPFy*@mI,QFcNc)sZ._cUvDD-I]_GMk&wt+N6@4S3tn@9=~]4RTR^9RR!~LBb@4uI-gD4ayst=UfH4n@o%uD--%wFQ6]L2T[&9(JNQ6|?N6X$rzPAubG@>FCa#jjQGdK4,*I<Z}Vr:g#-IHQ$=&L2M:^a8?Y]-{mP)4{!Bb6*2FdtG/K9PXe>S1w_i),P?F3Z;bPeJ_1Y(6XF-TN;}SfVX(O+B5ccJ.rzGWHq+*6X#=Y,%>+Fg;lm9tv{FqNvfFg-%AirJQqSOF:6bF;U3;<..q.6$}xC@`re1U]F,(^gTB^(rqcNO;YFctIH.srO@R6FVN--f7;tBn8?GGMshK)4I<F;q[yF!.-;$riHLCz(Ass]*ah6^4>8r*DXK~wvva,4Sq>%S*qqm&Z-8?Hq2*y-^UAPDR3eM>D-f<$FL6r7o%STdh@4V0Gj.ze-;lx-X;z(wtEZaM+*-N#hHaoQ>6NIj5xNcN9{5or>*t.D3!%+cNDifT(>/6;(%!WA.s|P8D?^0uL-UFctnFrXP7:eg{2tnFw+B?dJ@pX*uo*@nHYt=41@_FH6@mu^>P9?3HFF3Ty_<X8?VqElJ7;U{!yw:p`o1N}**F#6Z_4[!lrFR+T^zPC&nb<Fs.u?LE1XyNZRv7}/JPX*Ke%N1@md2g|tEJZn^8(vso0p24#HY>n$EB6~ZA)9@ucNH>v9f:6dfuH>/qL8|0=9d|U#+jz>4*)GzGF:yNU:zMd^_F=U55myN6|0x<EZ&>CenXomP2]lnq<>|0=9d|@4lmxnKuk*,xX*ukn}#`W[.]]Un3(|g-focquNO$[P;c`>Q6kFXZwmAl%s>|D-55B8cFbFu%R>JQnX)m-|0D>NuN/eZl]2b>z@-^.p1E%FN}F/Vr:o8F86(,TzX(:.rcJUsgAN=6KsGCr@]FSU,n!)uucN/uTD~oH;K?bhNZ)>oUo8Sq2{Wa56CB3~@41t&pakoNu%X6z@q/J4H>MrzFdNdO1a0:<q*s)|^BDF`U^;=W?7)+GW-lJO}M+cILYN_>Q$ZfHt!MXk+F,(+Ja;0n#hbhb+Wio@qYTz42)]>&BV_7+FgU&%@4]uu|b~wN:8<.AP_2;UHMWTz-+J`q{F5nEtYy1`$m(#)>V6{!)@^>O+F5!R+?9nD-<qxs,-1~r(O+ilxnKtDazcCqX!`NOF_3V7`.cN11zFrXP7:e(-5`XFLJw?=F`U=T#pmDuD0:2+vkn#hxWFp_{g)FR7|_mDOuY:8?APy0STXF3ZjL{~mNyiz6NF&Oh&kFuFa-RIC82FE@xX_>0yHpb*r}2gzFcbP7XhO+]u^HzUjbSqvcd[8Fz}]Pu{X(KN<.sUoML__kz(l-@+&),F1>B^CNSqJJHSJNn$$M{1?bc_+-k*w-N6mgN=SqTzo^yP`a-.X{bFN}}y6N)lWF=4QGQFl]8)=t7X5Fow>6*k5}q44M4q=4P>pl)=pNfror/#}uOuA6=;~kLX<>R>Cnb},JqjdYgpmFy_dquN{W6LFx8Fu*L*4XK~`v4N3UtwiQJ-bh<q*s&_BNH>1`?64XqPff`NbFL5vfNeuNS&dT0:rJ]?[KcuPFw7r.XStFn$Iv0..85~&8yN.l_y+D1PN6Bt#G[w0>bF7Ao+V+^8>%K*y,I]`ZB/j44Yj)~XnXJy:T{n`F1@1}{aw<WnIFcN|0Z3:yPZ9|bha?fsrPDNTz9{z)|Q&b(T$>n$twiQ/CV*EN5FLGWJ;n0OC.x*s^6!{mG+sWsQ,J$n]yPR4*BtyVXNO>=6jP/Hwk(>N}}yCT>YhFCU]d7F3;/;U!WJukH%$65*Bt#G[w6NK602lL(OhQonW*fds@^SP>y*4P^MIY{F|>=6*]vy?%hF?QYkQ0p_5m`w@4WNjT}uYkUZDyz(W[u]?p:6Jl&L~*u(Bv*fPtZJxC<.ukFT?O&+@4D-?~$}xYy~#CO2KF}Ux*DXtB&LI+O:nXThv^2YOXuN^G|6st$>=6A7Z:L8^GJ6__uov5+F7UP{eC.6ZySqgi}F19!5(vDu@LJ>8sB=#-aerF9.)U-Nv,~&4WOFV6]gFg7qSq9t4F-(+Jr/W8v*b^>eHrbhNT[[D[a:Sq^inOahh<?zD-agzZ-FlU1{>6SeAsQ}yJ=}@4eX4,l3tFUq94u#sX<>U:ny0^N6$n.Jl/ispf24;u`/?pbNMW>h@425))i]%um,>6?iWrOeSqX[]fa0*i9Y/#N}W8t*sBH:&>H>`<JDr3`zF>^8Thv^lX9.d^Q5h6coCb$bi,@4#HRFT*h7]R.6$Hlm^-D<zUW3FF&P5ZXFL6NL@xQyMubh!sVw,JKe/6N-J*oDIG2XV>t4dz96q6D3},g0MSB6J<N6^UHuYa^-Ii_U-NymBhaq=X}*7FEqgU[7(`9,@4^-gCOPF=D[x-rCbhO5,[|PukFTr>H.b>w4?04Ju}GWb+yj}492x?`Nv*Va[56p8?#7fcU];4WJi]$n/ec[+f]Kn:Sq9T@H(F7>Ku0:RGz)D;1l;FdtaB7Y!Nq>$;xf.f>>S6)TLg2EwH^UYy?G2qk{AP}cdr}vg7?Nj6/{@+caC3t>cN3$!{h`oMib8?jqtj,J)4U*+OCkHFh(=:nX`N?6wo*8cNW<9Nk81wnznXTT5OSqnWLF2hTuUxcMhD&F#Kz4#L:jq*q;/lNFKt$8,cX.@4q.9.%UB=VuXL@4%->,4r+,{=~Cbb7)Uf=FnJy.sTPUZY8Fo.Qk*DF5.WSN~D#{OX09H@;Q#F,k}V.2=Q]4wTr-,KpFlUR,acN?3-8Nn$!Z:!KH3bzuL8UHO&-=JQ)$J>I4Y14NW$EB$1)PpK@4mgE>n$$M{1M.P0[hL8|0=9{_9(<koFc]Gj&c]a:xlN-DljtG}PbY^4-^tFvt5GeFT*h7RfHuMJlmq.-Z,BVbzFmKNrm>z}]P=~0&v;WJi%ud-$T*CVs1QRCIoXTzRT+vst}WmgEN5FD60_X*Yy?GCeuNvIjp8?WM<lk;)Uk*4/h6T9xN1@ps10(OX:)enXuyC.WMcFj6S~F@W*4X+].,}NbFqT>_7-nX[T_OUx.NuNfH$6!t4>OFnZh5/58?9]JKw{)4}5g[@W(%^QCTlmcu8w`o+{dF-6hI:X>:q>|GGYcNM[tReF,6h7~0p_>FCVe+)/82]UwT~|+6M7/B3rc_!hTz9T^vDekD}vq>EUsP{>Y*@FA#4H[q1mFFSrc3wncNbXL*>6r-NxcN9zcN&j=i9Fs.`J8,-quN1?wqdGqqz@%tdHM6qFgU)(@4SHrS>+{b,;xC!gQ?gT(F/C#G{8,Nz@qW_Av(*>w4yxYADmSq<QaYA>:6aFT-:S(EQ&N>8?kzj4{WX69tq>OF{MzM55cNJ{4F<xVPNpqL?F{)f`>C#E6Z+*&hU{,GWwxC<.f-W#FFVNt,=Q|MB/8?:QB-L@X*Q73RUuSqt|[gy&l`}E/#L!Y_J2W>HOAX{FxEBtl)g5-up$HFlU3ZWJQ/*(mz,*=Ug/Xp?>S6_JEc;G1oxC5{s5IOJFi])4MDJH]4^F{]:,3FrJ>~|=~9rF9E+wK61b_4L:e2vmd5B&SKSqKH&Fr3=SnozNq>mSJ}|!x>Z4aA<.GJ.d0=icz(*I3|qiz67W0ErF!7-QcNz(qSP=J7,6ZW-QD-qF2CO1d~E@PFh(U(nXW(3)4,y:uNXu[r+]{X]*h#{>e>mSJ}pkTH24h(:2hZaejuE4z(0.7#D^z6$x7)b6u>w4t>;sgubh)l4x4e$e^8E%WISg^4+2y>]*Ji%%$l(Fa_d(MXZyE)jeOl~*M7-QjMvRheSq!%q&VHF*EklmSHz>p@cr>>%-p1O+qS}k0JBrD-2JYtm4S$Q;N6Dd.)(Iy&/586wTHN{FW0>UNF3TnE%8Sq2J8vINw4~<86~%nXdluvD-SHz>a>2F*8KF}*)1__>6Nx}8V6wXKsAYz(2OV&ZTqFr-g|jmSqO;2%S>sU[h9Dh6D=rcn&F>`4&Fh6ni!*[nKN^8jHW,.v^47SZ>n$@(ws=:jIw?<>fDN9(a<.G[31EZ{cz(N}tRzl>F%zMA=>nX)?Y#D-qS]5*8e>f?.A|!sv=4asWJDdrIM>X*j{.l-*+J-/U1sQC612@4Dd~oequN{SV@`La8z@OAbU):j>c*V)!C>T$$<v86z?]MK~iiXmnXM[XwU4hXcNPgqhlv~g)TnX`cYmO+LA?~,^N1H>m?yNz1FXN_a!LFP>+_NIBUNRe*Sa^Q)&->-DV88FxoMeWJ3~d;(1uF~-pZnAjZ|4=FVNkt+k4@TycN3lD*=U6d|]e>~D7f.sv:C$2_zF7W^q<>[LDcLU>6Dd@rBjmWr()4r-XH]mbF;Mz#sS~v/MLNy*Ji[h=8nX,%#6|?Yzk*c(#C[GxB=AJFR7-AkV-&#p0:9ci~bl!{qF1Pm(LFA#7_IEG#LFl1mx>#Sqj&!#p>&6S+Ub((Sq<&3xi>-DIA;?tj%MKt`ZwL=-Ai}q}*Ar,JAEQ`U!-*z;i/Ap+>=6!~1AYe8FlqO_,>e6F^&h=8nX=jpIqEsucN|rU9JJe%@QnX`wN4lmSHZ#hc;(.F^PEKF,jL%*ZW-QjM%NI*Ji[ha6^l<.:<d=_4z3lm~sIjLFT68F:*fC~ax;SL^8ry*MP5B.~l2;247W69>+AF)Ui/bh2Jk<V;(qnX#i>&}9;Nq>~wyzMXa^&y0t3.5*rXrZY&6vfDpm@41TUu]quN?geq:GFXv*#4!}0(H>ZzH>W?-F>FZW0E]-D--LE#wFw41;-qCHnXa~x7lmqSRFJHZ~#FPPkt}l>6UD8SI9^k+Uz6%z&hRZ<#x-L`2StzW6r=La8?0oEDw`=4$xRi0<c5.48e@4`(@;e%tH~#=4NIt>-D1;p5~#f)KtRCox%`hZ,F94.|I>OFW0-q4~D-j&rx85?&Ei|PsUx,<#<{2NgUJFw+[i%:r&,FUx5:prnXwYThlm^Aw|8i7}/>e6}2RMMqcN1n7;`F_Ux{,>e6F^^4<Q^8r(D6SC^U.6X1=5kai]i%_Hy/iO*Nc?nXph9zU3RhcN}Aqqnav`M.nXFr$f@4qS}kbfFR69X*[[N@#;dvRm_4U*X1=5-FnyCL^8!%q&}9Btj6~Yy_C_VX2F(5Z>V6GB;(%//#oSgT`T!1I^?>yNZlM6uagE(F$*X18uNGzQ(69xmoP6@j]p!P>6Yx2<qI9@p!8Fi]o$m?$a8]:F0J1j1DbhQ&Cxl`TnH>D:-6M+9+U19}zU4P>68EVK~PgUfr;U[J%`q624;Ztbz>-D~<60b[@UKtwZGe:A*!)F=6Ar=z#IL>t4CbeJj84BLXQ6>>#6JiGQwDDFv+FLnXPHDSL+1:H>5XTN#FH#J!7sm&:^Q>)-3@z##o1l@4./w?`quNbg)zWU[XH>O<aHZ&R,6nMXj8=-]2(fq*LJq)}pS}3YcN7jQipF.-/ju(t>yNE=ATew(pFFRTM<j,.>qd:*Ia9JU1_}TFH>;Lk9uF5#U-:Fc.%vMEi>j6c(G?TF{W-QW8$dH[WF}#))S`SNq>mS.A0>vFg-~^W)F=*sAX4@D{)>n~l~@43T8h628>P-3@#Q=4%zB?I]NFgU6DZGrC+2jWfhuFc.I:V`&qV6c(f{-ylmqSXc=+Tg]FlUx{B$SwpNl>I*F^8*i3|m@4SH,ch/@7|1N*:<|IQIZn)`^4b~B%AUHFyM-/1FlU#m<mU*A}aFw+,E/F@Mz#sS28<>;LWF^slmqS}kd+1h6FI4Qr63dIx*TYQ)Np9sqR5/<.hr0hc3#hz(-L|]v{XF5z;_5y{g$jnFk{bYb)z(>,^JrTXF?.:5Y#_if4/*<EGw}]Y>=6eVyCP?>>94oPow.IFF!7Tu^8}9TH|>]U+2WxQk#&I]8EVKJM_G*?x>^8jjvCOK8*8EVKJM_G*?z6b~9%)UM0X6-^%Yt:cNphjq6F^PG$kG)9~*(Jq)}pcFA-+ldF/6}2RMq]yRV+G[u/#CX;9S:C(FDy`Hf(b>v*RRxZJhD-<QaY^/nY_g,J4TKQP8X*|Mr-Jpz(Pi6JrTq69E+wK61bG>cNB2bz)FgUx{s~>6+2lQhYcN7%0giFUq6jj|n8yNy18RViz^u*MDJH]4HZ]Uz@4Xp%k4,JJ[W|1/Q*M7+wr2^[#nTzhxz:LH&53d[FrFPJLw/Xr*ZWB9?83>x*JiWFpC2)b2`?nX<%(H#Opq<>;LWF?E@4T(#|IIBP9.q*:<.)(I*5Al=U!DhHq*?(2#YUA*N6`Ti}`x+B4CXFk6~Yy_C_2g-6CVnTKP^:J>Sqe3@onyq-[GSq:HbFsNXi{8|>_>*;{(?T_+9wnFT-x`LX55yhbhxZCK[,M+nX!%#6|?YzL8|0s$l}$nqd+FUqGn!:`>H>y1^nGF.#))LzAPhrw>!D[+%FQ6F^;^_4%zoOSp4>Q6Ji^PX*+2aoYnMXB2e^U4bbx*$E+w-*p_!/Z=Ijn4cN,%q&/>a-3@;^C,cN,E=hIF9]dDEc/Xx*;c(h}]/>-DxQ?@#ucB~C_=KS^t4FlqMC^M}IL6=4;ZtbwQ[>nXB2`Wo4,quNILY9K2ZXV64:+@^nO++OGH+h@b0:{;WT%OgjNFpPCLR?*&@)WCN6NI-BR-Sq>Hp?+HI0G[O+&,P6H#>%8?gdF8ZUq",_cYK);
 local _i=1;while _i<#_d do
 local _h=_d:byte(_i);
 local _l=_d:byte(_i+1);
-local _n=_h*256+_l;_KKA[#_KKA+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
-local HB=pcall
-local MIS=select
-local CWYE=bit32.lshift
-local BH=bit32.rshift
-local JVUS=setmetatable
-local XTC=ipairs
-local ODTT=string.rep
-local RVR=math.abs
-local _=((MIS('#')));
-local _=(MIS('#')); local I1IIlI1l
+local _n=_h*256+_l;_KNS[#_KNS+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
+local WIGN=math.floor
+local OXJO=string.len
+local OUN=table.concat
+local TZ=error
+local AM=bit32.lshift
+local NCZ=select
+local _=((NCZ('#')));
+local _=(NCZ('#')); local IllIlI1llI1
 do
-for llll1I1l = 0B1, 0x4E20, 0B1 do
+for ll1IlI1llI1 = 0B1, 0x4E20, 0B1 do
 pcall(function()
-game:GetService(_KKA[1])
+game:GetService(_KNS[1])
 			end)
 		end;
 (coroutine.wrap(function()
@@ -49,1558 +47,1038 @@ wait(0xA)
 			end
 		end))()
 if a9380 then
-error(_KKA[2])
+error(_KNS[2])
 while true do
 
 			end
 		end
 if v2354 and v2354 == z937597 then
-error(_KKA[2])
+error(_KNS[2])
 while true do
 
 			end
 		end
-local llll1I1l = string.byte
-local Illl1I1l = string.char
-local lIIIlI1l = 0x4
-local IIIIlI1l = 0x88
-local l1IIlI1l = 0xF7
-local llIIlI1l = {}
-function I1IIlI1l(IlIIlI1l)
-if llIIlI1l[IlIIlI1l] then
-return llIIlI1l[IlIIlI1l]
+local ll1IlI1llI1 = string.byte
+local IIlIlI1llI1 = string.char
+local lIlIlI1llI1 = 0x4A
+local I1lIlI1llI1 = 0xA3
+local l1lIlI1llI1 = 0x53
+local lllIlI1llI1 = {}
+function IllIlI1llI1(III1lI1llI1)
+if lllIlI1llI1[III1lI1llI1] then
+return lllIlI1llI1[III1lI1llI1]
 			end
-local lI1IlI1l = {};
-local II1IlI1l = l1IIlI1l
-for l1IIlI1l = 0B1, #IlIIlI1l, 0B1 do
-local I1IIlI1l = llll1I1l(IlIIlI1l, l1IIlI1l);
-local llIIlI1l = ((lIIIlI1l + l1IIlI1l * IIIIlI1l) + II1IlI1l) % 0x100
-lI1IlI1l[l1IIlI1l] = Illl1I1l((I1IIlI1l - llIIlI1l) % 0x100)
-II1IlI1l = I1IIlI1l
+local lII1lI1llI1 = {};
+local I1I1lI1llI1 = l1lIlI1llI1
+for l1lIlI1llI1 = 0B1, #III1lI1llI1, 0B1 do
+local IllIlI1llI1 = ll1IlI1llI1(III1lI1llI1, l1lIlI1llI1);
+local lllIlI1llI1 = ((lIlIlI1llI1 + l1lIlI1llI1 * I1lIlI1llI1) + I1I1lI1llI1) % 0x100
+lII1lI1llI1[l1lIlI1llI1] = IIlIlI1llI1((IllIlI1llI1 - lllIlI1llI1) % 0x100)
+I1I1lI1llI1 = IllIlI1llI1
 			end
-local l11IlI1l = table.concat(lI1IlI1l);
-llIIlI1l[IlIIlI1l] = l11IlI1l
-return l11IlI1l
+local l1I1lI1llI1 = table.concat(lII1lI1llI1);
+lllIlI1llI1[III1lI1llI1] = l1I1lI1llI1
+return l1I1lI1llI1
 		end
 	end
-local l1IIlI1l = function(llll1I1l)
-local Illl1I1l, lIIIlI1l = llll1I1l[#llll1I1l], I1IIlI1l(_KKA[3])
-for IIIIlI1l = 0B1, #Illl1I1l, 0B1 do
-lIIIlI1l = lIIIlI1l .. Illl1I1l[llll1I1l[IIIIlI1l]]
+local l1lIlI1llI1 = function(ll1IlI1llI1)
+local IIlIlI1llI1, lIlIlI1llI1 = ll1IlI1llI1[#ll1IlI1llI1], IllIlI1llI1(_KNS[3])
+for I1lIlI1llI1 = 0B1, #IIlIlI1llI1, 0B1 do
+lIlIlI1llI1 = lIlIlI1llI1  .. IIlIlI1llI1[ll1IlI1llI1[I1lIlI1llI1]]
 			end
-return lIIIlI1l
+return lIlIlI1llI1
 		end
-local lIIIlI1l = { l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[4]), I1IIlI1l(_KKA[5]) } }), l1IIlI1l({ 0B1, 0B10, 0x5, 0x4, 0B11, { I1IIlI1l(_KKA[6]), I1IIlI1l(_KKA[7]), I1IIlI1l(_KKA[8]), I1IIlI1l(_KKA[9]), I1IIlI1l(_KKA[10]) } }), l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[11]), I1IIlI1l(_KKA[12]), I1IIlI1l(_KKA[13]) } }), I1IIlI1l(_KKA[14]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[15]), I1IIlI1l(_KKA[16]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[17]), I1IIlI1l(_KKA[18]) } }), I1IIlI1l(_KKA[19]), I1IIlI1l(_KKA[3]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[20]), I1IIlI1l(_KKA[21]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[22]), I1IIlI1l(_KKA[23]), I1IIlI1l(_KKA[24]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[25]), I1IIlI1l(_KKA[26]), I1IIlI1l(_KKA[27]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[28]), I1IIlI1l(_KKA[29]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[30]), I1IIlI1l(_KKA[31]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[32]), I1IIlI1l(_KKA[33]), I1IIlI1l(_KKA[34]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[35]), I1IIlI1l(_KKA[36]) } }), l1IIlI1l({ 0B10, 0B101, 0x4, 0B11, 0B1, { I1IIlI1l(_KKA[37]), I1IIlI1l(_KKA[38]), I1IIlI1l(_KKA[39]), I1IIlI1l(_KKA[40]), I1IIlI1l(_KKA[41]) } }), l1IIlI1l({ 0B1, 0x4, 0B11, 0x5, 0B10, { I1IIlI1l(_KKA[42]), I1IIlI1l(_KKA[43]), I1IIlI1l(_KKA[44]), I1IIlI1l(_KKA[45]), I1IIlI1l(_KKA[46]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[47]), I1IIlI1l(_KKA[48]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[49]), I1IIlI1l(_KKA[50]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[51]), I1IIlI1l(_KKA[52]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[53]), I1IIlI1l(_KKA[54]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[55]), I1IIlI1l(_KKA[56]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[57]), I1IIlI1l(_KKA[58]) } }), I1IIlI1l(_KKA[59]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[60]), I1IIlI1l(_KKA[50]) } }), I1IIlI1l(_KKA[61]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[62]), I1IIlI1l(_KKA[63]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[64]), I1IIlI1l(_KKA[65]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[66]), I1IIlI1l(_KKA[67]), I1IIlI1l(_KKA[68]) } }), I1IIlI1l(_KKA[69]), I1IIlI1l(_KKA[70]), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[71]), I1IIlI1l(_KKA[72]), I1IIlI1l(_KKA[73]) } }), l1IIlI1l({ 0x4, 0B1, 0B10, 0B11, 0x5, { I1IIlI1l(_KKA[74]), I1IIlI1l(_KKA[75]), I1IIlI1l(_KKA[76]), I1IIlI1l(_KKA[77]), I1IIlI1l(_KKA[78]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[79]), I1IIlI1l(_KKA[80]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[81]), I1IIlI1l(_KKA[82]) } }), l1IIlI1l({ 0B11, 0B1, 0B10, 0x5, 0x4, { I1IIlI1l(_KKA[83]), I1IIlI1l(_KKA[84]), I1IIlI1l(_KKA[85]), I1IIlI1l(_KKA[86]), I1IIlI1l(_KKA[87]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[88]), I1IIlI1l(_KKA[89]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[90]), I1IIlI1l(_KKA[91]), I1IIlI1l(_KKA[92]) } }), l1IIlI1l({ 0B10, 0x4, 0B11, 0B1, { I1IIlI1l(_KKA[93]), I1IIlI1l(_KKA[94]), I1IIlI1l(_KKA[95]), I1IIlI1l(_KKA[96]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[97]), I1IIlI1l(_KKA[98]), I1IIlI1l(_KKA[32]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[99]), I1IIlI1l(_KKA[100]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[101]), I1IIlI1l(_KKA[102]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[103]), I1IIlI1l(_KKA[104]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[105]), I1IIlI1l(_KKA[106]), I1IIlI1l(_KKA[107]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[108]), I1IIlI1l(_KKA[109]), I1IIlI1l(_KKA[110]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[111]), I1IIlI1l(_KKA[112]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[113]), I1IIlI1l(_KKA[114]) } }), I1IIlI1l(_KKA[115]), I1IIlI1l(_KKA[116]), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[117]), I1IIlI1l(_KKA[118]), I1IIlI1l(_KKA[119]) } }), I1IIlI1l(_KKA[120]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[121]), I1IIlI1l(_KKA[122]) } }), I1IIlI1l(_KKA[123]), l1IIlI1l({ 0B10, 0B11, 0B1, 0x4, { I1IIlI1l(_KKA[124]), I1IIlI1l(_KKA[125]), I1IIlI1l(_KKA[126]), I1IIlI1l(_KKA[127]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[128]), I1IIlI1l(_KKA[129]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[130]), I1IIlI1l(_KKA[131]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[132]), I1IIlI1l(_KKA[133]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[134]), I1IIlI1l(_KKA[135]) } }), l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[136]), I1IIlI1l(_KKA[137]), I1IIlI1l(_KKA[138]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[139]), I1IIlI1l(_KKA[140]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[141]), I1IIlI1l(_KKA[142]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[143]), I1IIlI1l(_KKA[144]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[145]), I1IIlI1l(_KKA[146]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[147]), I1IIlI1l(_KKA[148]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[149]), I1IIlI1l(_KKA[150]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[151]), I1IIlI1l(_KKA[152]), I1IIlI1l(_KKA[153]) } }), I1IIlI1l(_KKA[154]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[155]), I1IIlI1l(_KKA[156]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[157]), I1IIlI1l(_KKA[158]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[159]), I1IIlI1l(_KKA[160]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[161]), I1IIlI1l(_KKA[162]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[163]), I1IIlI1l(_KKA[164]) } }), I1IIlI1l(_KKA[165]), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[166]), I1IIlI1l(_KKA[167]), I1IIlI1l(_KKA[168]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[169]), I1IIlI1l(_KKA[170]) } }), I1IIlI1l(_KKA[171]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[172]), I1IIlI1l(_KKA[173]) } }), l1IIlI1l({ 0x8, 0B11, 0x5, 0x6, 0B1, 0x4, 0B10, 0x7, { I1IIlI1l(_KKA[174]), I1IIlI1l(_KKA[175]), I1IIlI1l(_KKA[176]), I1IIlI1l(_KKA[177]), I1IIlI1l(_KKA[178]), I1IIlI1l(_KKA[179]), I1IIlI1l(_KKA[180]), I1IIlI1l(_KKA[181]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[182]), I1IIlI1l(_KKA[183]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[184]), I1IIlI1l(_KKA[185]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[186]), I1IIlI1l(_KKA[187]) } }), I1IIlI1l(_KKA[188]), I1IIlI1l(_KKA[189]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[190]), I1IIlI1l(_KKA[191]) } }), l1IIlI1l({ 0B1, 0B10, 0B11, 0x4, { I1IIlI1l(_KKA[192]), I1IIlI1l(_KKA[193]), I1IIlI1l(_KKA[194]), I1IIlI1l(_KKA[195]) } }), I1IIlI1l(_KKA[196]), I1IIlI1l(_KKA[197]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[198]), I1IIlI1l(_KKA[199]) } }), I1IIlI1l(_KKA[200]), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[201]), I1IIlI1l(_KKA[202]), I1IIlI1l(_KKA[203]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[184]), I1IIlI1l(_KKA[204]), I1IIlI1l(_KKA[205]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[206]), I1IIlI1l(_KKA[207]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[208]), I1IIlI1l(_KKA[209]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[210]), I1IIlI1l(_KKA[211]) } }), I1IIlI1l(_KKA[212]), I1IIlI1l(_KKA[213]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[214]), I1IIlI1l(_KKA[215]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[216]), I1IIlI1l(_KKA[217]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[218]), I1IIlI1l(_KKA[219]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[220]), I1IIlI1l(_KKA[137]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[221]), I1IIlI1l(_KKA[222]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[223]), I1IIlI1l(_KKA[224]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, 0x4, { I1IIlI1l(_KKA[225]), I1IIlI1l(_KKA[226]), I1IIlI1l(_KKA[227]), I1IIlI1l(_KKA[228]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[229]), I1IIlI1l(_KKA[230]) } }), l1IIlI1l({ 0B10, 0x4, 0B11, 0B1, { I1IIlI1l(_KKA[231]), I1IIlI1l(_KKA[232]), I1IIlI1l(_KKA[233]), I1IIlI1l(_KKA[234]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[145]), I1IIlI1l(_KKA[235]) } }), l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[236]), I1IIlI1l(_KKA[237]), I1IIlI1l(_KKA[238]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[239]), I1IIlI1l(_KKA[240]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[241]), I1IIlI1l(_KKA[242]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[243]), I1IIlI1l(_KKA[244]) } }), l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[245]), I1IIlI1l(_KKA[246]), I1IIlI1l(_KKA[247]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[248]), I1IIlI1l(_KKA[249]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[145]), I1IIlI1l(_KKA[250]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[251]), I1IIlI1l(_KKA[31]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[252]), I1IIlI1l(_KKA[253]) } }), l1IIlI1l({ 0B10, 0B1, 0x6, 0B11, 0x9, 0x8, 0x7, 0x5, 0xC, 0x4, 0xD, 0xB, 0xA, { I1IIlI1l(_KKA[254]), I1IIlI1l(_KKA[255]), I1IIlI1l(_KKA[256]), I1IIlI1l(_KKA[257]), I1IIlI1l(_KKA[258]), I1IIlI1l(_KKA[259]), I1IIlI1l(_KKA[260]), I1IIlI1l(_KKA[261]), I1IIlI1l(_KKA[262]), I1IIlI1l(_KKA[263]), I1IIlI1l(_KKA[264]), I1IIlI1l(_KKA[265]), I1IIlI1l(_KKA[266]) } }), I1IIlI1l(_KKA[267]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[268]), I1IIlI1l(_KKA[269]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[270]), I1IIlI1l(_KKA[271]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[272]), I1IIlI1l(_KKA[273]) } }), I1IIlI1l(_KKA[274]), l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[275]), I1IIlI1l(_KKA[276]), I1IIlI1l(_KKA[277]) } }), l1IIlI1l({ 0x6, 0x5, 0B1, 0B100, 0B11, 0B1000, 0B10, 0x7, 0x9, { I1IIlI1l(_KKA[278]), I1IIlI1l(_KKA[279]), I1IIlI1l(_KKA[280]), I1IIlI1l(_KKA[281]), I1IIlI1l(_KKA[282]), I1IIlI1l(_KKA[283]), I1IIlI1l(_KKA[284]), I1IIlI1l(_KKA[285]), I1IIlI1l(_KKA[286]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[287]), I1IIlI1l(_KKA[288]) } }), l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[289]), I1IIlI1l(_KKA[290]), I1IIlI1l(_KKA[291]) } }), I1IIlI1l(_KKA[292]), l1IIlI1l({ 0B1, 0x4, 0B11, 0B10, { I1IIlI1l(_KKA[293]), I1IIlI1l(_KKA[294]), I1IIlI1l(_KKA[295]), I1IIlI1l(_KKA[296]) } }), I1IIlI1l(_KKA[297]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[298]), I1IIlI1l(_KKA[299]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[300]), I1IIlI1l(_KKA[301]) } }), I1IIlI1l(_KKA[302]), l1IIlI1l({ 0B1, 0B10, 0x4, 0x5, 0B11, { I1IIlI1l(_KKA[303]), I1IIlI1l(_KKA[304]), I1IIlI1l(_KKA[305]), I1IIlI1l(_KKA[306]), I1IIlI1l(_KKA[307]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[308]), I1IIlI1l(_KKA[309]) } }), I1IIlI1l(_KKA[310]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[311]), I1IIlI1l(_KKA[312]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[14]), I1IIlI1l(_KKA[302]) } }), I1IIlI1l(_KKA[313]), l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[314]), I1IIlI1l(_KKA[315]), I1IIlI1l(_KKA[303]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[152]), I1IIlI1l(_KKA[316]), I1IIlI1l(_KKA[317]) } }), I1IIlI1l(_KKA[318]), I1IIlI1l(_KKA[319]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[320]), I1IIlI1l(_KKA[321]) } }), I1IIlI1l(_KKA[322]), l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[323]), I1IIlI1l(_KKA[324]), I1IIlI1l(_KKA[325]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[209]), I1IIlI1l(_KKA[326]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[327]), I1IIlI1l(_KKA[328]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[329]), I1IIlI1l(_KKA[330]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[331]), I1IIlI1l(_KKA[332]) } }), I1IIlI1l(_KKA[333]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[334]), I1IIlI1l(_KKA[111]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[335]), I1IIlI1l(_KKA[336]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[337]), I1IIlI1l(_KKA[338]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[339]), I1IIlI1l(_KKA[340]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[341]), I1IIlI1l(_KKA[342]), I1IIlI1l(_KKA[343]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[344]), I1IIlI1l(_KKA[345]) } }), l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[346]), I1IIlI1l(_KKA[347]), I1IIlI1l(_KKA[348]) } }), I1IIlI1l(_KKA[349]), l1IIlI1l({ 0x4, 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[350]), I1IIlI1l(_KKA[351]), I1IIlI1l(_KKA[352]), I1IIlI1l(_KKA[283]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[353]), I1IIlI1l(_KKA[354]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[355]), I1IIlI1l(_KKA[186]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[356]), I1IIlI1l(_KKA[357]), I1IIlI1l(_KKA[358]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[359]), I1IIlI1l(_KKA[360]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[361]), I1IIlI1l(_KKA[362]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[363]), I1IIlI1l(_KKA[364]), I1IIlI1l(_KKA[365]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[366]), I1IIlI1l(_KKA[157]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[367]), I1IIlI1l(_KKA[368]) } }), I1IIlI1l(_KKA[369]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[370]), I1IIlI1l(_KKA[145]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[371]), I1IIlI1l(_KKA[372]), I1IIlI1l(_KKA[373]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[374]), I1IIlI1l(_KKA[375]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[376]), I1IIlI1l(_KKA[377]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[378]), I1IIlI1l(_KKA[379]) } }), I1IIlI1l(_KKA[380]), l1IIlI1l({ 0B10, 0B11, 0x4, 0B1, { I1IIlI1l(_KKA[381]), I1IIlI1l(_KKA[382]), I1IIlI1l(_KKA[383]), I1IIlI1l(_KKA[384]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[385]), I1IIlI1l(_KKA[386]) } }), l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[387]), I1IIlI1l(_KKA[388]), I1IIlI1l(_KKA[389]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[390]), I1IIlI1l(_KKA[391]), I1IIlI1l(_KKA[392]) } }), l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[393]), I1IIlI1l(_KKA[394]), I1IIlI1l(_KKA[395]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[396]), I1IIlI1l(_KKA[397]), I1IIlI1l(_KKA[398]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[399]), I1IIlI1l(_KKA[400]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[401]), I1IIlI1l(_KKA[402]), I1IIlI1l(_KKA[403]) } }), l1IIlI1l({ 0B11, 0B10, 0x4, 0B1, { I1IIlI1l(_KKA[404]), I1IIlI1l(_KKA[405]), I1IIlI1l(_KKA[406]), I1IIlI1l(_KKA[407]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[408]), I1IIlI1l(_KKA[409]), I1IIlI1l(_KKA[410]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[411]), I1IIlI1l(_KKA[412]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[413]), I1IIlI1l(_KKA[290]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[414]), I1IIlI1l(_KKA[415]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[416]), I1IIlI1l(_KKA[417]) } }), I1IIlI1l(_KKA[418]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[419]), I1IIlI1l(_KKA[420]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[421]), I1IIlI1l(_KKA[422]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[423]), I1IIlI1l(_KKA[424]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[425]), I1IIlI1l(_KKA[426]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[361]), I1IIlI1l(_KKA[427]), I1IIlI1l(_KKA[428]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[429]), I1IIlI1l(_KKA[430]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[431]), I1IIlI1l(_KKA[432]), I1IIlI1l(_KKA[433]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[253]), I1IIlI1l(_KKA[434]) } }), l1IIlI1l({ 0B10, 0x4, 0B11, 0B1, 0x5, { I1IIlI1l(_KKA[435]), I1IIlI1l(_KKA[436]), I1IIlI1l(_KKA[437]), I1IIlI1l(_KKA[438]), I1IIlI1l(_KKA[439]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[440]), I1IIlI1l(_KKA[441]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[442]), I1IIlI1l(_KKA[443]), I1IIlI1l(_KKA[444]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[445]), I1IIlI1l(_KKA[446]), I1IIlI1l(_KKA[447]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[448]), I1IIlI1l(_KKA[449]), I1IIlI1l(_KKA[450]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[451]), I1IIlI1l(_KKA[452]), I1IIlI1l(_KKA[453]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[454]), I1IIlI1l(_KKA[455]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[404]), I1IIlI1l(_KKA[456]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, 0x4, { I1IIlI1l(_KKA[457]), I1IIlI1l(_KKA[458]), I1IIlI1l(_KKA[459]), I1IIlI1l(_KKA[460]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[461]), I1IIlI1l(_KKA[462]) } }), I1IIlI1l(_KKA[463]), l1IIlI1l({ 0B10, 0B11, 0x4, 0B1, { I1IIlI1l(_KKA[464]), I1IIlI1l(_KKA[465]), I1IIlI1l(_KKA[466]), I1IIlI1l(_KKA[467]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[104]), I1IIlI1l(_KKA[14]), I1IIlI1l(_KKA[468]) } }), I1IIlI1l(_KKA[469]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[470]), I1IIlI1l(_KKA[471]) } }), I1IIlI1l(_KKA[472]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[473]), I1IIlI1l(_KKA[474]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[475]), I1IIlI1l(_KKA[404]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[476]), I1IIlI1l(_KKA[477]) } }), l1IIlI1l({ 0x5, 0B11, 0B1, 0x4, 0B10, { I1IIlI1l(_KKA[478]), I1IIlI1l(_KKA[479]), I1IIlI1l(_KKA[480]), I1IIlI1l(_KKA[481]), I1IIlI1l(_KKA[482]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[483]), I1IIlI1l(_KKA[484]) } }), l1IIlI1l({ 0B11, 0B1, 0x4, 0B10, { I1IIlI1l(_KKA[485]), I1IIlI1l(_KKA[486]), I1IIlI1l(_KKA[487]), I1IIlI1l(_KKA[488]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[489]), I1IIlI1l(_KKA[490]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[491]), I1IIlI1l(_KKA[492]) } }), l1IIlI1l({ 0B10, 0B1, 0x5, 0x4, 0x6, 0B11, { I1IIlI1l(_KKA[493]), I1IIlI1l(_KKA[494]), I1IIlI1l(_KKA[495]), I1IIlI1l(_KKA[496]), I1IIlI1l(_KKA[497]), I1IIlI1l(_KKA[498]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[499]), I1IIlI1l(_KKA[500]), I1IIlI1l(_KKA[501]) } }), I1IIlI1l(_KKA[502]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[503]), I1IIlI1l(_KKA[504]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[505]), I1IIlI1l(_KKA[206]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[506]), I1IIlI1l(_KKA[507]), I1IIlI1l(_KKA[508]) } }), I1IIlI1l(_KKA[509]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[510]), I1IIlI1l(_KKA[511]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[512]), I1IIlI1l(_KKA[513]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[514]), I1IIlI1l(_KKA[515]) } }), I1IIlI1l(_KKA[516]), I1IIlI1l(_KKA[517]), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[518]), I1IIlI1l(_KKA[519]), I1IIlI1l(_KKA[520]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[521]), I1IIlI1l(_KKA[522]) } }), l1IIlI1l({ 0B11, 0B10, 0B1, 0x4, { I1IIlI1l(_KKA[523]), I1IIlI1l(_KKA[524]), I1IIlI1l(_KKA[525]), I1IIlI1l(_KKA[526]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[527]), I1IIlI1l(_KKA[528]) } }), I1IIlI1l(_KKA[529]), I1IIlI1l(_KKA[530]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[531]), I1IIlI1l(_KKA[532]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[533]), I1IIlI1l(_KKA[465]), I1IIlI1l(_KKA[534]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[535]), I1IIlI1l(_KKA[536]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[537]), I1IIlI1l(_KKA[538]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[539]), I1IIlI1l(_KKA[540]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[541]), I1IIlI1l(_KKA[542]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[249]), I1IIlI1l(_KKA[543]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[544]), I1IIlI1l(_KKA[545]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[546]), I1IIlI1l(_KKA[547]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[548]), I1IIlI1l(_KKA[549]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[550]), I1IIlI1l(_KKA[551]) } }), I1IIlI1l(_KKA[552]), l1IIlI1l({ 0B1, 0x5, 0x7, 0x4, 0x6, 0B10, 0B11, { I1IIlI1l(_KKA[553]), I1IIlI1l(_KKA[554]), I1IIlI1l(_KKA[325]), I1IIlI1l(_KKA[555]), I1IIlI1l(_KKA[556]), I1IIlI1l(_KKA[557]), I1IIlI1l(_KKA[558]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[559]), I1IIlI1l(_KKA[560]) } }), I1IIlI1l(_KKA[561]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[562]), I1IIlI1l(_KKA[563]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[564]), I1IIlI1l(_KKA[172]) } }), I1IIlI1l(_KKA[565]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[566]), I1IIlI1l(_KKA[290]) } }), I1IIlI1l(_KKA[567]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[568]), I1IIlI1l(_KKA[569]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[570]), I1IIlI1l(_KKA[571]) } }), I1IIlI1l(_KKA[572]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[573]), I1IIlI1l(_KKA[511]) } }), I1IIlI1l(_KKA[574]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[298]), I1IIlI1l(_KKA[575]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[576]), I1IIlI1l(_KKA[577]) } }), I1IIlI1l(_KKA[578]), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[579]), I1IIlI1l(_KKA[580]), I1IIlI1l(_KKA[581]) } }), I1IIlI1l(_KKA[582]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[583]), I1IIlI1l(_KKA[584]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[585]), I1IIlI1l(_KKA[586]) } }), I1IIlI1l(_KKA[587]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[210]), I1IIlI1l(_KKA[588]) } }), l1IIlI1l({ 0x4, 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[589]), I1IIlI1l(_KKA[590]), I1IIlI1l(_KKA[591]), I1IIlI1l(_KKA[592]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[586]), I1IIlI1l(_KKA[593]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[570]), I1IIlI1l(_KKA[594]) } }), I1IIlI1l(_KKA[595]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[596]), I1IIlI1l(_KKA[597]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[598]), I1IIlI1l(_KKA[599]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[600]), I1IIlI1l(_KKA[601]) } }), l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[602]), I1IIlI1l(_KKA[603]), I1IIlI1l(_KKA[604]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[605]), I1IIlI1l(_KKA[606]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[607]), I1IIlI1l(_KKA[608]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[609]), I1IIlI1l(_KKA[250]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[114]), I1IIlI1l(_KKA[610]) } }), l1IIlI1l({ 0B10, 0B1, 0x4, 0B11, { I1IIlI1l(_KKA[611]), I1IIlI1l(_KKA[612]), I1IIlI1l(_KKA[613]), I1IIlI1l(_KKA[614]) } }), I1IIlI1l(_KKA[615]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[610]), I1IIlI1l(_KKA[616]) } }), I1IIlI1l(_KKA[617]), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[618]), I1IIlI1l(_KKA[619]), I1IIlI1l(_KKA[620]) } }), I1IIlI1l(_KKA[621]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[622]), I1IIlI1l(_KKA[603]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[48]), I1IIlI1l(_KKA[623]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[624]), I1IIlI1l(_KKA[625]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[626]), I1IIlI1l(_KKA[627]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[628]), I1IIlI1l(_KKA[629]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[50]), I1IIlI1l(_KKA[630]) } }), I1IIlI1l(_KKA[631]), I1IIlI1l(_KKA[632]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[633]), I1IIlI1l(_KKA[549]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[199]), I1IIlI1l(_KKA[634]) } }), l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[635]), I1IIlI1l(_KKA[636]), I1IIlI1l(_KKA[637]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[638]), I1IIlI1l(_KKA[448]) } }), l1IIlI1l({ 0x4, 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[639]), I1IIlI1l(_KKA[640]), I1IIlI1l(_KKA[641]), I1IIlI1l(_KKA[642]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[643]), I1IIlI1l(_KKA[448]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[644]), I1IIlI1l(_KKA[645]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[646]), I1IIlI1l(_KKA[647]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[648]), I1IIlI1l(_KKA[649]), I1IIlI1l(_KKA[650]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[651]), I1IIlI1l(_KKA[652]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[653]), I1IIlI1l(_KKA[654]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[104]), I1IIlI1l(_KKA[655]) } }), I1IIlI1l(_KKA[656]), I1IIlI1l(_KKA[238]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[657]), I1IIlI1l(_KKA[658]) } }), l1IIlI1l({ 0B1, 0x6, 0x5, 0B11, 0B10, 0x4, { I1IIlI1l(_KKA[659]), I1IIlI1l(_KKA[660]), I1IIlI1l(_KKA[661]), I1IIlI1l(_KKA[662]), I1IIlI1l(_KKA[663]), I1IIlI1l(_KKA[664]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[665]), I1IIlI1l(_KKA[666]) } }), l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[667]), I1IIlI1l(_KKA[668]), I1IIlI1l(_KKA[669]) } }), I1IIlI1l(_KKA[670]), l1IIlI1l({ 0B11, 0B10, 0x4, 0B1, { I1IIlI1l(_KKA[195]), I1IIlI1l(_KKA[671]), I1IIlI1l(_KKA[672]), I1IIlI1l(_KKA[673]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[674]), I1IIlI1l(_KKA[675]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[676]), I1IIlI1l(_KKA[677]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[678]), I1IIlI1l(_KKA[679]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[360]), I1IIlI1l(_KKA[680]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[681]), I1IIlI1l(_KKA[15]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[682]), I1IIlI1l(_KKA[327]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[683]), I1IIlI1l(_KKA[5]) } }), I1IIlI1l(_KKA[684]), l1IIlI1l({ 0x7, 0x4, 0B1, 0x6, 0B11, 0x5, 0B1000, 0B10, { I1IIlI1l(_KKA[685]), I1IIlI1l(_KKA[686]), I1IIlI1l(_KKA[687]), I1IIlI1l(_KKA[688]), I1IIlI1l(_KKA[689]), I1IIlI1l(_KKA[690]), I1IIlI1l(_KKA[691]), I1IIlI1l(_KKA[692]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[693]), I1IIlI1l(_KKA[694]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[695]), I1IIlI1l(_KKA[696]) } }), I1IIlI1l(_KKA[697]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[698]), I1IIlI1l(_KKA[699]) } }), I1IIlI1l(_KKA[700]), l1IIlI1l({ 0x4, 0x5, 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[701]), I1IIlI1l(_KKA[702]), I1IIlI1l(_KKA[703]), I1IIlI1l(_KKA[704]), I1IIlI1l(_KKA[705]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[706]), I1IIlI1l(_KKA[707]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[708]), I1IIlI1l(_KKA[709]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[710]), I1IIlI1l(_KKA[711]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[101]), I1IIlI1l(_KKA[712]) } }), I1IIlI1l(_KKA[713]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[714]), I1IIlI1l(_KKA[715]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[716]), I1IIlI1l(_KKA[717]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[186]), I1IIlI1l(_KKA[718]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[206]), I1IIlI1l(_KKA[719]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[720]), I1IIlI1l(_KKA[721]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[722]), I1IIlI1l(_KKA[723]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[724]), I1IIlI1l(_KKA[199]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[725]), I1IIlI1l(_KKA[726]) } }), I1IIlI1l(_KKA[727]), l1IIlI1l({ 0B1, 0B11, 0B10, 0x4, { I1IIlI1l(_KKA[14]), I1IIlI1l(_KKA[728]), I1IIlI1l(_KKA[729]), I1IIlI1l(_KKA[730]) } }), I1IIlI1l(_KKA[731]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[50]), I1IIlI1l(_KKA[732]) } }), I1IIlI1l(_KKA[733]), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[734]), I1IIlI1l(_KKA[735]) } }), l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[736]), I1IIlI1l(_KKA[737]), I1IIlI1l(_KKA[738]) } }), I1IIlI1l(_KKA[739]), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[143]), I1IIlI1l(_KKA[740]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[741]), I1IIlI1l(_KKA[742]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[743]), I1IIlI1l(_KKA[744]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[745]), I1IIlI1l(_KKA[746]), I1IIlI1l(_KKA[747]) } }), l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[748]), I1IIlI1l(_KKA[749]), I1IIlI1l(_KKA[750]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[751]), I1IIlI1l(_KKA[752]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[753]), I1IIlI1l(_KKA[754]) } }), l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[755]), I1IIlI1l(_KKA[756]) } }), l1IIlI1l({ 0x4, 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[757]), I1IIlI1l(_KKA[758]), I1IIlI1l(_KKA[759]), I1IIlI1l(_KKA[760]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[761]), I1IIlI1l(_KKA[762]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[170]), I1IIlI1l(_KKA[763]) } }), l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[764]), I1IIlI1l(_KKA[765]) } }) }
-for llll1I1l, Illl1I1l in ipairs({ { 0B1, 0x16E }, { 0B1, 0x20 }, { 0x21, 0x16E } }) do
-while Illl1I1l[0B1] < Illl1I1l[0B10] do
-lIIIlI1l[Illl1I1l[0B1]], lIIIlI1l[Illl1I1l[0B10]], Illl1I1l[0B1], Illl1I1l[0B10] = lIIIlI1l[Illl1I1l[0B10]], lIIIlI1l[Illl1I1l[0B1]], Illl1I1l[0B1] + 0B1, Illl1I1l[0B10] - 0B1
-		end
+local lIlIlI1llI1 = { l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[4]), IllIlI1llI1(_KNS[5]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[6]), IllIlI1llI1(_KNS[7]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[8]), IllIlI1llI1(_KNS[9]) } }), l1lIlI1llI1({ 0B1, 0B11, 0B101, 0x4, 0B10, { IllIlI1llI1(_KNS[10]), IllIlI1llI1(_KNS[11]), IllIlI1llI1(_KNS[12]), IllIlI1llI1(_KNS[13]), IllIlI1llI1(_KNS[14]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[15]), IllIlI1llI1(_KNS[16]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[17]), IllIlI1llI1(_KNS[18]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[19]), IllIlI1llI1(_KNS[20]) } }), IllIlI1llI1(_KNS[21]), IllIlI1llI1(_KNS[22]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[23]), IllIlI1llI1(_KNS[24]) } }), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[25]), IllIlI1llI1(_KNS[26]), IllIlI1llI1(_KNS[27]) } }), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[28]), IllIlI1llI1(_KNS[29]), IllIlI1llI1(_KNS[30]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[31]), IllIlI1llI1(_KNS[32]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[33]), IllIlI1llI1(_KNS[34]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[35]), IllIlI1llI1(_KNS[36]) } }), IllIlI1llI1(_KNS[37]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[38]), IllIlI1llI1(_KNS[39]) } }), l1lIlI1llI1({ 0B11, 0B10, 0B1, { IllIlI1llI1(_KNS[23]), IllIlI1llI1(_KNS[40]), IllIlI1llI1(_KNS[41]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[42]), IllIlI1llI1(_KNS[43]) } }), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[44]), IllIlI1llI1(_KNS[45]), IllIlI1llI1(_KNS[46]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[47]), IllIlI1llI1(_KNS[48]) } }), IllIlI1llI1(_KNS[49]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[50]), IllIlI1llI1(_KNS[51]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[52]), IllIlI1llI1(_KNS[53]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[54]), IllIlI1llI1(_KNS[55]) } }), IllIlI1llI1(_KNS[56]), IllIlI1llI1(_KNS[57]), l1lIlI1llI1({ 0x4, 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[58]), IllIlI1llI1(_KNS[59]), IllIlI1llI1(_KNS[60]), IllIlI1llI1(_KNS[61]) } }), IllIlI1llI1(_KNS[62]), IllIlI1llI1(_KNS[63]), IllIlI1llI1(_KNS[64]), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[65]), IllIlI1llI1(_KNS[66]), IllIlI1llI1(_KNS[67]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[68]), IllIlI1llI1(_KNS[69]) } }), IllIlI1llI1(_KNS[70]), l1lIlI1llI1({ 0B10, 0B11, 0B1, 0x4, { IllIlI1llI1(_KNS[71]), IllIlI1llI1(_KNS[72]), IllIlI1llI1(_KNS[73]), IllIlI1llI1(_KNS[74]) } }), IllIlI1llI1(_KNS[75]), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[76]), IllIlI1llI1(_KNS[77]), IllIlI1llI1(_KNS[78]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[79]), IllIlI1llI1(_KNS[80]) } }), IllIlI1llI1(_KNS[81]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[82]), IllIlI1llI1(_KNS[83]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[84]), IllIlI1llI1(_KNS[85]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[86]), IllIlI1llI1(_KNS[87]) } }), IllIlI1llI1(_KNS[88]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[89]), IllIlI1llI1(_KNS[90]) } }), l1lIlI1llI1({ 0B11, 0B1, 0B10, { IllIlI1llI1(_KNS[91]), IllIlI1llI1(_KNS[92]), IllIlI1llI1(_KNS[93]) } }), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[94]), IllIlI1llI1(_KNS[95]), IllIlI1llI1(_KNS[96]) } }), l1lIlI1llI1({ 0B1, 0x4, 0x5, 0B11, 0B10, { IllIlI1llI1(_KNS[97]), IllIlI1llI1(_KNS[98]), IllIlI1llI1(_KNS[99]), IllIlI1llI1(_KNS[100]), IllIlI1llI1(_KNS[101]) } }), l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[102]), IllIlI1llI1(_KNS[103]), IllIlI1llI1(_KNS[104]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[105]), IllIlI1llI1(_KNS[106]) } }), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[107]), IllIlI1llI1(_KNS[108]), IllIlI1llI1(_KNS[109]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[110]), IllIlI1llI1(_KNS[111]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[112]), IllIlI1llI1(_KNS[113]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[114]), IllIlI1llI1(_KNS[115]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[116]), IllIlI1llI1(_KNS[117]) } }), IllIlI1llI1(_KNS[118]), IllIlI1llI1(_KNS[119]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[120]), IllIlI1llI1(_KNS[121]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[122]), IllIlI1llI1(_KNS[123]) } }), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[124]), IllIlI1llI1(_KNS[125]), IllIlI1llI1(_KNS[126]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[127]), IllIlI1llI1(_KNS[128]) } }), IllIlI1llI1(_KNS[129]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[130]), IllIlI1llI1(_KNS[131]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[132]), IllIlI1llI1(_KNS[133]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[134]), IllIlI1llI1(_KNS[135]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[136]), IllIlI1llI1(_KNS[137]) } }), IllIlI1llI1(_KNS[138]), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[139]), IllIlI1llI1(_KNS[140]), IllIlI1llI1(_KNS[141]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[142]), IllIlI1llI1(_KNS[143]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[144]), IllIlI1llI1(_KNS[145]) } }), l1lIlI1llI1({ 0B10, 0B1, 0B11, 0x4, { IllIlI1llI1(_KNS[102]), IllIlI1llI1(_KNS[103]), IllIlI1llI1(_KNS[146]), IllIlI1llI1(_KNS[147]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[148]), IllIlI1llI1(_KNS[149]) } }), IllIlI1llI1(_KNS[150]), IllIlI1llI1(_KNS[151]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[152]), IllIlI1llI1(_KNS[153]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[154]), IllIlI1llI1(_KNS[155]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[156]), IllIlI1llI1(_KNS[157]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[158]), IllIlI1llI1(_KNS[159]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[160]), IllIlI1llI1(_KNS[161]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[162]), IllIlI1llI1(_KNS[163]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[164]), IllIlI1llI1(_KNS[165]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[117]), IllIlI1llI1(_KNS[166]) } }), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[167]), IllIlI1llI1(_KNS[168]), IllIlI1llI1(_KNS[169]) } }), IllIlI1llI1(_KNS[170]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[171]), IllIlI1llI1(_KNS[172]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[173]), IllIlI1llI1(_KNS[174]) } }), l1lIlI1llI1({ 0B10, 0x5, 0B1, 0x4, 0B11, { IllIlI1llI1(_KNS[175]), IllIlI1llI1(_KNS[176]), IllIlI1llI1(_KNS[177]), IllIlI1llI1(_KNS[178]), IllIlI1llI1(_KNS[179]) } }), IllIlI1llI1(_KNS[180]), l1lIlI1llI1({ 0B1, 0x4, 0B11, 0B10, { IllIlI1llI1(_KNS[181]), IllIlI1llI1(_KNS[182]), IllIlI1llI1(_KNS[183]), IllIlI1llI1(_KNS[184]) } }), IllIlI1llI1(_KNS[185]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[186]), IllIlI1llI1(_KNS[187]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[188]), IllIlI1llI1(_KNS[189]) } }), IllIlI1llI1(_KNS[190]), l1lIlI1llI1({ 0x5, 0B11, 0x4, 0B10, 0B1, { IllIlI1llI1(_KNS[191]), IllIlI1llI1(_KNS[192]), IllIlI1llI1(_KNS[193]), IllIlI1llI1(_KNS[194]), IllIlI1llI1(_KNS[195]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[196]), IllIlI1llI1(_KNS[197]) } }), l1lIlI1llI1({ 0B1, 0x4, 0B11, 0B10, { IllIlI1llI1(_KNS[10]), IllIlI1llI1(_KNS[111]), IllIlI1llI1(_KNS[198]), IllIlI1llI1(_KNS[199]) } }), IllIlI1llI1(_KNS[200]), IllIlI1llI1(_KNS[201]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[202]), IllIlI1llI1(_KNS[197]) } }), l1lIlI1llI1({ 0x4, 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[203]), IllIlI1llI1(_KNS[204]), IllIlI1llI1(_KNS[205]), IllIlI1llI1(_KNS[206]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[207]), IllIlI1llI1(_KNS[208]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[209]), IllIlI1llI1(_KNS[210]) } }), IllIlI1llI1(_KNS[211]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[212]), IllIlI1llI1(_KNS[213]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[214]), IllIlI1llI1(_KNS[215]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[216]), IllIlI1llI1(_KNS[217]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[113]), IllIlI1llI1(_KNS[218]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[219]), IllIlI1llI1(_KNS[220]) } }), IllIlI1llI1(_KNS[221]), IllIlI1llI1(_KNS[222]), l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[223]), IllIlI1llI1(_KNS[224]), IllIlI1llI1(_KNS[225]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[23]), IllIlI1llI1(_KNS[226]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[227]), IllIlI1llI1(_KNS[228]) } }), l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[229]), IllIlI1llI1(_KNS[230]), IllIlI1llI1(_KNS[231]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[232]), IllIlI1llI1(_KNS[233]) } }), l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[234]), IllIlI1llI1(_KNS[235]), IllIlI1llI1(_KNS[236]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[237]), IllIlI1llI1(_KNS[238]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[239]), IllIlI1llI1(_KNS[240]) } }), IllIlI1llI1(_KNS[241]), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[242]), IllIlI1llI1(_KNS[243]), IllIlI1llI1(_KNS[244]) } }), IllIlI1llI1(_KNS[245]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[246]), IllIlI1llI1(_KNS[247]) } }), IllIlI1llI1(_KNS[248]), l1lIlI1llI1({ 0x5, 0x4, 0x9, 0x7, 0xB, 0B1, 0B10, 0x6, 0x8, 0xA, 0B11, { IllIlI1llI1(_KNS[249]), IllIlI1llI1(_KNS[250]), IllIlI1llI1(_KNS[251]), IllIlI1llI1(_KNS[252]), IllIlI1llI1(_KNS[253]), IllIlI1llI1(_KNS[254]), IllIlI1llI1(_KNS[255]), IllIlI1llI1(_KNS[256]), IllIlI1llI1(_KNS[257]), IllIlI1llI1(_KNS[258]), IllIlI1llI1(_KNS[259]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[260]), IllIlI1llI1(_KNS[261]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[262]), IllIlI1llI1(_KNS[263]) } }), l1lIlI1llI1({ 0x5, 0x6, 0B11, 0B10, 0x4, 0B1, { IllIlI1llI1(_KNS[264]), IllIlI1llI1(_KNS[265]), IllIlI1llI1(_KNS[266]), IllIlI1llI1(_KNS[267]), IllIlI1llI1(_KNS[268]), IllIlI1llI1(_KNS[269]) } }), l1lIlI1llI1({ 0B1, 0x4, 0B10, 0B11, { IllIlI1llI1(_KNS[270]), IllIlI1llI1(_KNS[271]), IllIlI1llI1(_KNS[272]), IllIlI1llI1(_KNS[273]) } }), IllIlI1llI1(_KNS[274]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[275]), IllIlI1llI1(_KNS[276]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[277]), IllIlI1llI1(_KNS[278]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[279]), IllIlI1llI1(_KNS[165]) } }), l1lIlI1llI1({ 0B11, 0B10, 0B1, { IllIlI1llI1(_KNS[280]), IllIlI1llI1(_KNS[281]), IllIlI1llI1(_KNS[282]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[283]), IllIlI1llI1(_KNS[284]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[285]), IllIlI1llI1(_KNS[286]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[287]), IllIlI1llI1(_KNS[288]) } }), IllIlI1llI1(_KNS[289]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[290]), IllIlI1llI1(_KNS[291]) } }), IllIlI1llI1(_KNS[292]), IllIlI1llI1(_KNS[293]), l1lIlI1llI1({ 0B11, 0B1, 0B10, { IllIlI1llI1(_KNS[294]), IllIlI1llI1(_KNS[295]), IllIlI1llI1(_KNS[296]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[297]), IllIlI1llI1(_KNS[298]) } }), IllIlI1llI1(_KNS[299]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[300]), IllIlI1llI1(_KNS[301]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[302]), IllIlI1llI1(_KNS[303]) } }), l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[304]), IllIlI1llI1(_KNS[68]), IllIlI1llI1(_KNS[305]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[306]), IllIlI1llI1(_KNS[239]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[307]), IllIlI1llI1(_KNS[308]) } }), l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[309]), IllIlI1llI1(_KNS[310]), IllIlI1llI1(_KNS[311]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[312]), IllIlI1llI1(_KNS[313]) } }), l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[314]), IllIlI1llI1(_KNS[315]), IllIlI1llI1(_KNS[316]) } }), l1lIlI1llI1({ 0B11, 0x4, 0B1, 0B10, 0x5, { IllIlI1llI1(_KNS[317]), IllIlI1llI1(_KNS[318]), IllIlI1llI1(_KNS[319]), IllIlI1llI1(_KNS[320]), IllIlI1llI1(_KNS[321]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[322]), IllIlI1llI1(_KNS[323]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[324]), IllIlI1llI1(_KNS[325]) } }), IllIlI1llI1(_KNS[326]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[327]), IllIlI1llI1(_KNS[328]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[329]), IllIlI1llI1(_KNS[117]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[330]), IllIlI1llI1(_KNS[331]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[332]), IllIlI1llI1(_KNS[333]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[334]), IllIlI1llI1(_KNS[335]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[336]), IllIlI1llI1(_KNS[337]) } }), IllIlI1llI1(_KNS[338]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[339]), IllIlI1llI1(_KNS[340]) } }), IllIlI1llI1(_KNS[341]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[342]), IllIlI1llI1(_KNS[343]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[344]), IllIlI1llI1(_KNS[345]) } }), l1lIlI1llI1({ 0B10, 0B1, 0x4, 0B11, { IllIlI1llI1(_KNS[346]), IllIlI1llI1(_KNS[347]), IllIlI1llI1(_KNS[348]), IllIlI1llI1(_KNS[349]) } }), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[350]), IllIlI1llI1(_KNS[351]), IllIlI1llI1(_KNS[352]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[353]), IllIlI1llI1(_KNS[155]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[354]), IllIlI1llI1(_KNS[283]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[355]), IllIlI1llI1(_KNS[356]) } }), IllIlI1llI1(_KNS[357]), IllIlI1llI1(_KNS[358]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[87]), IllIlI1llI1(_KNS[359]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[160]), IllIlI1llI1(_KNS[360]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[361]), IllIlI1llI1(_KNS[362]) } }), IllIlI1llI1(_KNS[363]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[364]), IllIlI1llI1(_KNS[365]) } }), IllIlI1llI1(_KNS[117]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[366]), IllIlI1llI1(_KNS[367]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[368]), IllIlI1llI1(_KNS[369]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[370]), IllIlI1llI1(_KNS[371]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[90]), IllIlI1llI1(_KNS[372]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[373]), IllIlI1llI1(_KNS[216]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[18]), IllIlI1llI1(_KNS[374]) } }), l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[375]), IllIlI1llI1(_KNS[376]), IllIlI1llI1(_KNS[377]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[378]), IllIlI1llI1(_KNS[379]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[380]), IllIlI1llI1(_KNS[381]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[382]), IllIlI1llI1(_KNS[383]) } }), l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[384]), IllIlI1llI1(_KNS[385]), IllIlI1llI1(_KNS[386]) } }), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[387]), IllIlI1llI1(_KNS[388]), IllIlI1llI1(_KNS[389]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[390]), IllIlI1llI1(_KNS[391]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[392]), IllIlI1llI1(_KNS[393]) } }), IllIlI1llI1(_KNS[394]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[243]), IllIlI1llI1(_KNS[395]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[396]), IllIlI1llI1(_KNS[397]) } }), IllIlI1llI1(_KNS[398]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[399]), IllIlI1llI1(_KNS[400]) } }), IllIlI1llI1(_KNS[31]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[401]), IllIlI1llI1(_KNS[402]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[403]), IllIlI1llI1(_KNS[404]) } }), l1lIlI1llI1({ 0B11, 0B1, 0B10, { IllIlI1llI1(_KNS[405]), IllIlI1llI1(_KNS[406]), IllIlI1llI1(_KNS[407]) } }), l1lIlI1llI1({ 0B10, 0B1, 0x4, 0B11, 0x5, { IllIlI1llI1(_KNS[408]), IllIlI1llI1(_KNS[409]), IllIlI1llI1(_KNS[410]), IllIlI1llI1(_KNS[411]), IllIlI1llI1(_KNS[412]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[413]), IllIlI1llI1(_KNS[414]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[415]), IllIlI1llI1(_KNS[416]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[417]), IllIlI1llI1(_KNS[418]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[419]), IllIlI1llI1(_KNS[420]) } }), l1lIlI1llI1({ 0B11, 0B10, 0B1, { IllIlI1llI1(_KNS[421]), IllIlI1llI1(_KNS[422]), IllIlI1llI1(_KNS[423]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[54]), IllIlI1llI1(_KNS[343]) } }), IllIlI1llI1(_KNS[424]), IllIlI1llI1(_KNS[425]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[426]), IllIlI1llI1(_KNS[427]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[372]), IllIlI1llI1(_KNS[428]) } }), IllIlI1llI1(_KNS[429]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[430]), IllIlI1llI1(_KNS[431]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[432]), IllIlI1llI1(_KNS[433]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[23]), IllIlI1llI1(_KNS[434]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[435]), IllIlI1llI1(_KNS[436]) } }), l1lIlI1llI1({ 0x5, 0B10, 0B11, 0x4, 0B1, { IllIlI1llI1(_KNS[437]), IllIlI1llI1(_KNS[438]), IllIlI1llI1(_KNS[439]), IllIlI1llI1(_KNS[440]), IllIlI1llI1(_KNS[441]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[145]), IllIlI1llI1(_KNS[442]) } }), IllIlI1llI1(_KNS[443]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[444]), IllIlI1llI1(_KNS[445]) } }), l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[446]), IllIlI1llI1(_KNS[447]), IllIlI1llI1(_KNS[448]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[449]), IllIlI1llI1(_KNS[450]) } }), IllIlI1llI1(_KNS[451]), IllIlI1llI1(_KNS[452]), l1lIlI1llI1({ 0B10, 0B1, 0x4, 0B11, { IllIlI1llI1(_KNS[453]), IllIlI1llI1(_KNS[206]), IllIlI1llI1(_KNS[454]), IllIlI1llI1(_KNS[455]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[456]), IllIlI1llI1(_KNS[404]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[457]), IllIlI1llI1(_KNS[458]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[459]), IllIlI1llI1(_KNS[460]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[461]), IllIlI1llI1(_KNS[462]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[247]), IllIlI1llI1(_KNS[463]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[464]), IllIlI1llI1(_KNS[465]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[466]), IllIlI1llI1(_KNS[467]) } }), IllIlI1llI1(_KNS[3]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[468]), IllIlI1llI1(_KNS[469]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[470]), IllIlI1llI1(_KNS[471]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[472]), IllIlI1llI1(_KNS[473]) } }), l1lIlI1llI1({ 0B11, 0B10, 0B1, { IllIlI1llI1(_KNS[474]), IllIlI1llI1(_KNS[475]), IllIlI1llI1(_KNS[167]) } }), IllIlI1llI1(_KNS[476]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[477]), IllIlI1llI1(_KNS[478]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[479]), IllIlI1llI1(_KNS[480]) } }), IllIlI1llI1(_KNS[481]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[482]), IllIlI1llI1(_KNS[483]) } }), l1lIlI1llI1({ 0B11, 0B1, 0B10, { IllIlI1llI1(_KNS[484]), IllIlI1llI1(_KNS[485]), IllIlI1llI1(_KNS[486]) } }), IllIlI1llI1(_KNS[487]), IllIlI1llI1(_KNS[488]), IllIlI1llI1(_KNS[489]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[490]), IllIlI1llI1(_KNS[491]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[492]), IllIlI1llI1(_KNS[493]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[494]), IllIlI1llI1(_KNS[495]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[496]), IllIlI1llI1(_KNS[497]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[498]), IllIlI1llI1(_KNS[117]) } }), l1lIlI1llI1({ 0B11, 0B1, 0B10, { IllIlI1llI1(_KNS[499]), IllIlI1llI1(_KNS[500]), IllIlI1llI1(_KNS[501]) } }), IllIlI1llI1(_KNS[502]), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[160]), IllIlI1llI1(_KNS[503]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[504]), IllIlI1llI1(_KNS[505]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[506]), IllIlI1llI1(_KNS[507]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[508]), IllIlI1llI1(_KNS[509]) } }), l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[510]), IllIlI1llI1(_KNS[511]), IllIlI1llI1(_KNS[512]) } }), l1lIlI1llI1({ 0B11, 0B1, 0B10, { IllIlI1llI1(_KNS[513]), IllIlI1llI1(_KNS[514]), IllIlI1llI1(_KNS[515]) } }), IllIlI1llI1(_KNS[95]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[516]), IllIlI1llI1(_KNS[311]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[517]), IllIlI1llI1(_KNS[518]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[519]), IllIlI1llI1(_KNS[520]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[521]), IllIlI1llI1(_KNS[42]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[522]), IllIlI1llI1(_KNS[523]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[378]), IllIlI1llI1(_KNS[524]) } }), IllIlI1llI1(_KNS[525]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[526]), IllIlI1llI1(_KNS[527]) } }), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[528]), IllIlI1llI1(_KNS[529]), IllIlI1llI1(_KNS[530]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[531]), IllIlI1llI1(_KNS[532]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[533]), IllIlI1llI1(_KNS[339]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[534]), IllIlI1llI1(_KNS[535]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[536]), IllIlI1llI1(_KNS[537]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[538]), IllIlI1llI1(_KNS[539]) } }), l1lIlI1llI1({ 0B10, 0B1, 0x4, 0B11, 0B101, { IllIlI1llI1(_KNS[540]), IllIlI1llI1(_KNS[541]), IllIlI1llI1(_KNS[542]), IllIlI1llI1(_KNS[543]), IllIlI1llI1(_KNS[544]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[545]), IllIlI1llI1(_KNS[546]) } }), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[547]), IllIlI1llI1(_KNS[548]), IllIlI1llI1(_KNS[549]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[550]), IllIlI1llI1(_KNS[551]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[552]), IllIlI1llI1(_KNS[163]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[553]), IllIlI1llI1(_KNS[327]) } }), l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[554]), IllIlI1llI1(_KNS[555]), IllIlI1llI1(_KNS[556]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[557]), IllIlI1llI1(_KNS[558]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[559]), IllIlI1llI1(_KNS[560]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[561]), IllIlI1llI1(_KNS[562]) } }), IllIlI1llI1(_KNS[563]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[564]), IllIlI1llI1(_KNS[565]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[566]), IllIlI1llI1(_KNS[426]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[124]), IllIlI1llI1(_KNS[567]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[568]), IllIlI1llI1(_KNS[569]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[570]), IllIlI1llI1(_KNS[571]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[572]), IllIlI1llI1(_KNS[573]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[574]), IllIlI1llI1(_KNS[575]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[576]), IllIlI1llI1(_KNS[577]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[5]), IllIlI1llI1(_KNS[578]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[444]), IllIlI1llI1(_KNS[579]) } }), l1lIlI1llI1({ 0B10, 0x4, 0B1, 0B11, { IllIlI1llI1(_KNS[580]), IllIlI1llI1(_KNS[581]), IllIlI1llI1(_KNS[142]), IllIlI1llI1(_KNS[582]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[583]), IllIlI1llI1(_KNS[578]) } }), l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[584]), IllIlI1llI1(_KNS[585]) } }), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[586]), IllIlI1llI1(_KNS[587]) } }), IllIlI1llI1(_KNS[588]), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[589]), IllIlI1llI1(_KNS[7]) } }) };
+local function I1lIlI1llI1(ll1IlI1llI1)
+return lIlIlI1llI1[ll1IlI1llI1 + 0x1878]
 	end
-local function IIIIlI1l(llll1I1l)
-return lIIIlI1l[llll1I1l - 0x9EF0]
+for ll1IlI1llI1, IIlIlI1llI1 in ipairs({ { 0B1, 0x12E }, { 0B1, 0xCB }, { 0xCC, 0x12E } }) do
+while IIlIlI1llI1[0B1] < IIlIlI1llI1[0B10] do
+lIlIlI1llI1[IIlIlI1llI1[0B1]], lIlIlI1llI1[IIlIlI1llI1[0B10]], IIlIlI1llI1[0B1], IIlIlI1llI1[0B10] = lIlIlI1llI1[IIlIlI1llI1[0B10]], lIlIlI1llI1[IIlIlI1llI1[0B1]], IIlIlI1llI1[0B1] + 0B1, IIlIlI1llI1[0B10] - 0B1
+		end
 	end
 do
 x8 = getfenv()
 i2 = unpack
 z6 = _ENV
-local llll1I1l = lIIIlI1l
-local Illl1I1l = {};
-local function IIIIlI1l(llll1I1l)
-local Illl1I1l = {};
-local lIIIlI1l = 0B1
-local IIIIlI1l = #llll1I1l
-while lIIIlI1l <= IIIIlI1l do
-local llIIlI1l = string[I1IIlI1l(_KKA[766])](llll1I1l, lIIIlI1l, lIIIlI1l)
-if llIIlI1l == I1IIlI1l(_KKA[767]) then
-table[I1IIlI1l(_KKA[768])](Illl1I1l, string[I1IIlI1l(_KKA[769])](0B0, 0B0, 0B0, 0B0))
-lIIIlI1l = lIIIlI1l + 0B1
-				elseif llIIlI1l:match(I1IIlI1l(_KKA[770])) then
-lIIIlI1l = lIIIlI1l + 0B1
+local ll1IlI1llI1 = lIlIlI1llI1
+local IIlIlI1llI1 = {};
+local function I1lIlI1llI1(ll1IlI1llI1)
+local IIlIlI1llI1 = {};
+local lIlIlI1llI1 = 0B1
+local I1lIlI1llI1 = #ll1IlI1llI1
+while lIlIlI1llI1 <= I1lIlI1llI1 do
+local l1lIlI1llI1 = string[IllIlI1llI1(_KNS[590])](ll1IlI1llI1, lIlIlI1llI1, lIlIlI1llI1)
+if l1lIlI1llI1 == IllIlI1llI1(_KNS[591]) then
+table[IllIlI1llI1(_KNS[592])](IIlIlI1llI1, string[IllIlI1llI1(_KNS[593])](0B0, 0B0, 0B0, 0B0))
+lIlIlI1llI1 = lIlIlI1llI1 + 0B1
+				elseif l1lIlI1llI1:match(IllIlI1llI1(_KNS[594])) then
+lIlIlI1llI1 = lIlIlI1llI1 + 0B1
 				else
-local l1IIlI1l = {};
-local llIIlI1l = 0B0
-while llIIlI1l < 0x5 and lIIIlI1l + llIIlI1l <= IIIIlI1l do
-local Illl1I1l = string[I1IIlI1l(_KKA[766])](llll1I1l, lIIIlI1l + llIIlI1l, lIIIlI1l + llIIlI1l)
-if Illl1I1l == I1IIlI1l(_KKA[767]) or Illl1I1l == I1IIlI1l(_KKA[771]) or Illl1I1l == I1IIlI1l(_KKA[772]) or Illl1I1l == I1IIlI1l(_KKA[773]) then
+local l1lIlI1llI1 = {};
+local lllIlI1llI1 = 0B0
+while lllIlI1llI1 < 0x5 and lIlIlI1llI1 + lllIlI1llI1 <= I1lIlI1llI1 do
+local IIlIlI1llI1 = string[IllIlI1llI1(_KNS[590])](ll1IlI1llI1, lIlIlI1llI1 + lllIlI1llI1, lIlIlI1llI1 + lllIlI1llI1)
+if IIlIlI1llI1 == IllIlI1llI1(_KNS[591]) or IIlIlI1llI1 == IllIlI1llI1(_KNS[595]) or IIlIlI1llI1 == IllIlI1llI1(_KNS[596]) or IIlIlI1llI1 == IllIlI1llI1(_KNS[597]) then
 break
 						end
-l1IIlI1l[#l1IIlI1l + 0B1] = Illl1I1l
-llIIlI1l = llIIlI1l + 0B1
+l1lIlI1llI1[#l1lIlI1llI1 + 0B1] = IIlIlI1llI1
+lllIlI1llI1 = lllIlI1llI1 + 0B1
 					end
-local IlIIlI1l = #l1IIlI1l
-for llll1I1l = IlIIlI1l + 0B1, 0x5, 0B1 do
-l1IIlI1l[#l1IIlI1l + 0B1] = I1IIlI1l(_KKA[774])
+local III1lI1llI1 = #l1lIlI1llI1
+for ll1IlI1llI1 = III1lI1llI1 + 0B1, 0x5, 0B1 do
+l1lIlI1llI1[#l1lIlI1llI1 + 0B1] = IllIlI1llI1(_KNS[316])
 					end
-local lI1IlI1l = 0B0
-for llll1I1l = 0B1, 0x5, 0B1 do
-lI1IlI1l = lI1IlI1l * 0x55 + (string[I1IIlI1l(_KKA[775])](l1IIlI1l[llll1I1l]) - 0x21)
+local lII1lI1llI1 = 0B0
+for ll1IlI1llI1 = 0B1, 0x5, 0B1 do
+lII1lI1llI1 = lII1lI1llI1 * 0x55 + (string[IllIlI1llI1(_KNS[598])](l1lIlI1llI1[ll1IlI1llI1]) - 0x21)
 					end
-local II1IlI1l = IlIIlI1l - 0B1
-for llll1I1l = 0B11, 0B11 - (II1IlI1l - 0B1), -0B1 do
-local lIIIlI1l = math[I1IIlI1l(_KKA[776])](lI1IlI1l / 0x100 ^ llll1I1l) % 0x100
-table[I1IIlI1l(_KKA[768])](Illl1I1l, string[I1IIlI1l(_KKA[769])](lIIIlI1l))
+local I1I1lI1llI1 = III1lI1llI1 - 0B1
+for ll1IlI1llI1 = 0B11, 0B11 - (I1I1lI1llI1 - 0B1), -0B1 do
+local lIlIlI1llI1 = math[IllIlI1llI1(_KNS[599])](lII1lI1llI1 / 0x100 ^ ll1IlI1llI1) % 0x100
+table[IllIlI1llI1(_KNS[592])](IIlIlI1llI1, string[IllIlI1llI1(_KNS[593])](lIlIlI1llI1))
 					end
-lIIIlI1l = lIIIlI1l + IlIIlI1l
+lIlIlI1llI1 = lIlIlI1llI1 + III1lI1llI1
 				end
 			end
 c9 = newproxy
 y1 = setmetatable
-return table[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[404]), I1IIlI1l(_KKA[777]) } })](Illl1I1l)
+return table[IllIlI1llI1(_KNS[600])](IIlIlI1llI1)
 		end
 z9 = getmetatable
 j8 = select
 t7 = getfenv
-for Illl1I1l = 0B1, #llll1I1l, 0B1 do
-local lIIIlI1l = llll1I1l[Illl1I1l]
-if type(lIIIlI1l) == I1IIlI1l(_KKA[778]) then
-llll1I1l[Illl1I1l] = IIIIlI1l(lIIIlI1l)
+for IIlIlI1llI1 = 0B1, #ll1IlI1llI1, 0B1 do
+local lIlIlI1llI1 = ll1IlI1llI1[IIlIlI1llI1]
+if type(lIlIlI1llI1) == IllIlI1llI1(_KNS[601]) then
+ll1IlI1llI1[IIlIlI1llI1] = I1lIlI1llI1(lIlIlI1llI1)
 			end
 		end
 	end
-local llll1I1l = setmetatable
-local Illl1I1l = function()
+local ll1IlI1llI1 = setmetatable
+local IIlIlI1llI1 = function()
 
 		end
 return (function(...)
-(IIIIlI1l(0x9F84)):gsub(IIIIlI1l(0xA047), function(llll1I1l, ...)
-_WATERMARK = llll1I1l
+(I1lIlI1llI1(-6240)):gsub(IllIlI1llI1(_KNS[602]), function(ll1IlI1llI1, ...)
+_WATERMARK = ll1IlI1llI1
 		end);
-local lIIIlI1l = game:GetService(IIIIlI1l(0x9F11));
-local llIIlI1l = game:GetService(IIIIlI1l(0x9FB4));
-local IlIIlI1l = game:GetService(IIIIlI1l(0xA004));
-local lI1IlI1l = game:GetService(IIIIlI1l(0x9FE0));
-local II1IlI1l = game:GetService(IIIIlI1l(0x9F08));
-local l11IlI1l = game:GetService(IIIIlI1l(0x9F6A));
-local I11IlI1l = game:GetService(IIIIlI1l(0x9F09));
-local ll1IlI1l = lIIIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[779]), I1IIlI1l(_KKA[780]) } })]
-local Il1IlI1l = ll1IlI1l:WaitForChild(IIIIlI1l(0xA055));
-local lIlIlI1l = getgenv()
-if lIlIlI1l[l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[781]), I1IIlI1l(_KKA[782]), I1IIlI1l(_KKA[783]) } })] ~= ll1IlI1l[IIIIlI1l(0x9F2F)] then
-lIlIlI1l[l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[784]), I1IIlI1l(_KKA[742]), I1IIlI1l(_KKA[785]) } })] = nil
+local lIlIlI1llI1 = game:GetService(I1lIlI1llI1(-5998));
+local lllIlI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6020)] = game:GetService(I1lIlI1llI1(-6043)) }, { [I1lIlI1llI1(-6089)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[IllIlI1llI1(_KNS[603])] = IIlIlI1llI1
+				end, [IllIlI1llI1(_KNS[604])] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6020)]
+				end });
+local III1lI1llI1 = game:GetService(I1lIlI1llI1(-6125));
+local lII1lI1llI1 = game:GetService(I1lIlI1llI1(-6066));
+local I1I1lI1llI1 = game:GetService(I1lIlI1llI1(-6003));
+local l1I1lI1llI1 = lIlIlI1llI1[I1lIlI1llI1(-6215)]
+local IlI1lI1llI1 = l1I1lI1llI1:WaitForChild(I1lIlI1llI1(-6198));
+local llI1lI1llI1 = getgenv()
+if llI1lI1llI1[I1lIlI1llI1(-5962)] ~= l1I1lI1llI1[I1lIlI1llI1(-6074)] then
+llI1lI1llI1[I1lIlI1llI1(-5962)] = nil
 pcall(function(...)
-l11IlI1l:SetCore(IIIIlI1l(0x9F4B), { [IIIIlI1l(0x9FC9)] = IIIIlI1l(0x9F77), [I1IIlI1l(_KKA[786])] = IIIIlI1l(0x9F34), [IIIIlI1l(0x9FA1)] = 0B101 })
+(game:GetService(I1lIlI1llI1(-6134))):SetCore(l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[605]), IllIlI1llI1(_KNS[606]), IllIlI1llI1(_KNS[607]) } }), { [I1lIlI1llI1(-6031)] = I1lIlI1llI1(-6137), [IllIlI1llI1(_KNS[608])] = I1lIlI1llI1(-6212), [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[609]), IllIlI1llI1(_KNS[610]) } })] = 0x5 })
 			end)
 return
 		end
-lIlIlI1l[IIIIlI1l(0x9F42)] = nil
-local IIlIlI1l = lIlIlI1l[IIIIlI1l(0x9FCB)]
-if IIlIlI1l and type(IIlIlI1l[IIIIlI1l(0x9F2C)]) == l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[787]), I1IIlI1l(_KKA[788]) } }) then
-pcall(IIlIlI1l[IIIIlI1l(0x9F2C)], true)
+llI1lI1llI1[I1lIlI1llI1(-5962)] = nil
+if llI1lI1llI1[l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[611]), IllIlI1llI1(_KNS[612]), IllIlI1llI1(_KNS[613]) } })] and type(llI1lI1llI1[I1lIlI1llI1(-6162)][l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[614]), IllIlI1llI1(_KNS[615]) } })]) == I1lIlI1llI1(-6122) then
+pcall(llI1lI1llI1[I1lIlI1llI1(-6162)][IllIlI1llI1(_KNS[616])], true)
 		end
-local l1lIlI1l = {};
-local I1lIlI1l = { [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[789]), I1IIlI1l(_KKA[790]) } })] = true, [IIIIlI1l(0x9FA0)] = false, [IIIIlI1l(0xA006)] = true, [IIIIlI1l(0x9F7B)] = true, [l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[791]), I1IIlI1l(_KKA[792]), I1IIlI1l(_KKA[793]) } })] = true, [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[794]), I1IIlI1l(_KKA[795]) } })] = false, [IIIIlI1l(0x9FF6)] = false, [IIIIlI1l(0x9FD5)] = false, [IIIIlI1l(0xA050)] = 0x9, [IIIIlI1l(0x9F03)] = nil, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[796]), I1IIlI1l(_KKA[797]) } })] = 0x8 };
-local lllIlI1l = { { [IIIIlI1l(0x9F45)] = l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[798]), I1IIlI1l(_KKA[799]) } }), [I1IIlI1l(_KKA[800])] = 0B0 }, { [I1IIlI1l(_KKA[801])] = IIIIlI1l(0x9F7F), [IIIIlI1l(0x9FAD)] = 0x64 }, { [IIIIlI1l(0x9F45)] = IIIIlI1l(0xA04B), [I1IIlI1l(_KKA[800])] = 0x1388 }, { [IIIIlI1l(0x9F45)] = IIIIlI1l(0x9F92), [I1IIlI1l(_KKA[800])] = 150000 }, { [IIIIlI1l(0x9F45)] = l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[802]), I1IIlI1l(_KKA[803]), I1IIlI1l(_KKA[804]) } }), [IIIIlI1l(0x9FAD)] = 400000 }, { [IIIIlI1l(0x9F45)] = IIIIlI1l(0x9F44), [I1IIlI1l(_KKA[800])] = 750000 }, { [IIIIlI1l(0x9F45)] = IIIIlI1l(0xA045), [I1IIlI1l(_KKA[800])] = 1000000 }, { [IIIIlI1l(0x9F45)] = IIIIlI1l(0x9F30), [I1IIlI1l(_KKA[800])] = 5000000 }, { [IIIIlI1l(0x9F45)] = IIIIlI1l(0x9EF2), [IIIIlI1l(0x9FAD)] = 10000000 } };
-local IllIlI1l = { [IIIIlI1l(0x9FEF)] = Color3[IIIIlI1l(0x9FF0)](0x7, 0x7, 0xC), [IIIIlI1l(0x9FD0)] = Color3[IIIIlI1l(0x9FF0)](0x14, 0x14, 0x1F), [I1IIlI1l(_KKA[805])] = Color3[I1IIlI1l(_KKA[806])](0x1D, 0x1D, 0x2D), [IIIIlI1l(0xA00C)] = Color3[IIIIlI1l(0x9FF0)](0x27, 0x27, 0x3B), [IIIIlI1l(0x9F99)] = Color3[IIIIlI1l(0x9FF0)](0xFF, 0xC6, 0x42), [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[807]), I1IIlI1l(_KKA[808]) } })] = Color3[IIIIlI1l(0x9FF0)](0xFF, 0xE4, 0x84), [IIIIlI1l(0xA05E)] = Color3[IIIIlI1l(0x9FF0)](0x8B, 0x52, 0xFF), [IIIIlI1l(0x9F6F)] = Color3[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[809]), I1IIlI1l(_KKA[810]) } })](0x3F, 0xE0, 0xFF), [IIIIlI1l(0x9F51)] = Color3[IIIIlI1l(0x9FF0)](0x48, 0xE6, 0x91), [I1IIlI1l(_KKA[811])] = Color3[IIIIlI1l(0x9FF0)](0xFF, 0x4B, 0x65), [IIIIlI1l(0xA017)] = Color3[IIIIlI1l(0x9FF0)](0xFA, 0xF9, 0xFF), [IIIIlI1l(0x9F01)] = Color3[I1IIlI1l(_KKA[806])](0xB2, 0xB1, 0xC4), [IIIIlI1l(0x9FA2)] = Color3[IIIIlI1l(0x9FF0)](0x49, 0x48, 0x67), [IIIIlI1l(0x9EF7)] = Color3[IIIIlI1l(0x9FF0)](0B0, 0B0, 0B0) };
-local lII1lI1l = llll1I1l({ [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[812]), I1IIlI1l(_KKA[813]) } })] = {} }, { [I1IIlI1l(_KKA[814])] = function(llll1I1l, Illl1I1l)
-llll1I1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[815]), I1IIlI1l(_KKA[816]) } })] = Illl1I1l
-				end, [IIIIlI1l(0x9F06)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[817])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0x4B64)
-							end, [I1IIlI1l(_KKA[818])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0xD80)
-							end, [I1IIlI1l(_KKA[819])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0x4432)
-							end, [I1IIlI1l(_KKA[820])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0x75F)
+local II11lI1llI1 = { { [I1lIlI1llI1(-5965)] = I1lIlI1llI1(-6186), [I1lIlI1llI1(-6231)] = 10000000 }, { [I1lIlI1llI1(-5965)] = I1lIlI1llI1(-5994), [I1lIlI1llI1(-6231)] = 5000000 }, { [I1lIlI1llI1(-5965)] = l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[617]), IllIlI1llI1(_KNS[618]) } }), [I1lIlI1llI1(-6231)] = 1000000 }, { [I1lIlI1llI1(-5965)] = l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[619]), IllIlI1llI1(_KNS[620]) } }), [I1lIlI1llI1(-6231)] = 750000 }, { [IllIlI1llI1(_KNS[621])] = l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[622]), IllIlI1llI1(_KNS[618]) } }), [I1lIlI1llI1(-6231)] = 400000 }, { [I1lIlI1llI1(-5965)] = I1lIlI1llI1(-6213), [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[623]), IllIlI1llI1(_KNS[624]) } })] = 150000 }, { [I1lIlI1llI1(-5965)] = I1lIlI1llI1(-6040), [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[624]), IllIlI1llI1(_KNS[623]) } })] = 0x1388 }, { [I1lIlI1llI1(-5965)] = l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[625]), IllIlI1llI1(_KNS[618]) } }), [I1lIlI1llI1(-6231)] = 0x64 }, { [I1lIlI1llI1(-5965)] = I1lIlI1llI1(-6100), [I1lIlI1llI1(-6231)] = 0B0 } };
+local lI11lI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6006)] = { [I1lIlI1llI1(-6099)] = Color3[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[626]), IllIlI1llI1(_KNS[627]) } })](0x6, 0x6, 0xA), [IllIlI1llI1(_KNS[628])] = Color3[I1lIlI1llI1(-5984)](0x12, 0x12, 0x1B), [I1lIlI1llI1(-5964)] = Color3[IllIlI1llI1(_KNS[629])](0x1B, 0x1B, 0x27), [I1lIlI1llI1(-6169)] = Color3[I1lIlI1llI1(-5984)](0x25, 0x21, 0x23), [I1lIlI1llI1(-6221)] = Color3[I1lIlI1llI1(-5984)](0xFF, 0xBE, 0x2D), [I1lIlI1llI1(-5999)] = Color3[I1lIlI1llI1(-5984)](0xFF, 0xDF, 0x7E), [IllIlI1llI1(_KNS[630])] = Color3[I1lIlI1llI1(-5984)](0xF9, 0xF8, 0xFC), [I1lIlI1llI1(-6160)] = Color3[IllIlI1llI1(_KNS[629])](0xA7, 0xA5, 0xB5), [I1lIlI1llI1(-6140)] = Color3[I1lIlI1llI1(-5984)](0x48, 0xE2, 0x89), [I1lIlI1llI1(-6241)] = Color3[I1lIlI1llI1(-5984)](0xFF, 0x48, 0x5C), [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[631]), IllIlI1llI1(_KNS[632]) } })] = Color3[I1lIlI1llI1(-5984)](0x3E, 0x3D, 0x4F) } }, { [I1lIlI1llI1(-5981)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6006)] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[IllIlI1llI1(_KNS[633])]
+				end });
+local I111lI1llI1 = { [I1lIlI1llI1(-6168)] = true, [I1lIlI1llI1(-6000)] = false, [I1lIlI1llI1(-6234)] = false, [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[634]), IllIlI1llI1(_KNS[635]) } })] = 0B1, [I1lIlI1llI1(-6135)] = l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[636]), IllIlI1llI1(_KNS[637]) } }) };
+local l111lI1llI1 = {};
+local Il11lI1llI1 = {};
+local ll11lI1llI1 = {};
+local IIl1lI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6082)] = {} }, { [IllIlI1llI1(_KNS[638])] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[639]), IllIlI1llI1(_KNS[640]) } })] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-5981)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6082)]
+				end });
+local lIl1lI1llI1 = {};
+local I1l1lI1llI1 = {};
+local l1l1lI1llI1 = false
+local function Ill1lI1llI1(ll1IlI1llI1, ...)
+Il11lI1llI1[#Il11lI1llI1 + 0B1] = ll1IlI1llI1
+return ll1IlI1llI1
+		end
+local function lll1lI1llI1(ll1IlI1llI1, IIlIlI1llI1, ...)
+if ll11lI1llI1[ll1IlI1llI1] then
+task[I1lIlI1llI1(-6209)](ll11lI1llI1[ll1IlI1llI1])
+			end
+ll11lI1llI1[ll1IlI1llI1] = task[I1lIlI1llI1(-5978)](function(...)
+IIlIlI1llI1();
+ll11lI1llI1[ll1IlI1llI1] = nil
+				end)
+		end
+local IIIllI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6190)] = function(ll1IlI1llI1, ...)
+if ll11lI1llI1[ll1IlI1llI1] then
+task[IllIlI1llI1(_KNS[641])](ll11lI1llI1[ll1IlI1llI1]);
+ll11lI1llI1[ll1IlI1llI1] = nil
+					end
+				end }, { [I1lIlI1llI1(-6243)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6190)] = IIlIlI1llI1
+				end, [IllIlI1llI1(_KNS[642])] = function(ll1IlI1llI1, IIlIlI1llI1)
+local lIlIlI1llI1 = { [IllIlI1llI1(_KNS[643])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 + 0xD87D)
+							end, [IllIlI1llI1(_KNS[644])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x36B0)
+							end, [IllIlI1llI1(_KNS[645])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 - 0x5C3A)
+							end, [IllIlI1llI1(_KNS[646])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(l1lIlI1llI1 - 0x5833)
 							end }
-return llll1I1l[lIIIlI1l[I1IIlI1l(_KKA[820])](0x963A, 0x9A36, 0x945F, 0x97A8)]
+return ll1IlI1llI1[lIlIlI1llI1[IllIlI1llI1(_KNS[646])](0x422A, 0x419A, 0x3C32, 0x4005)]
 				end });
-local III1lI1l = {};
-local l1I1lI1l = {};
-local I1I1lI1l = {};
-local llI1lI1l = {};
-local IlI1lI1l = {};
-local lI11lI1l = false
-local II11lI1l = nil
-local l111lI1l = nil
-local I111lI1l = nil
-local ll11lI1l = nil
-local Il11lI1l = nil
-local lIl1lI1l = nil
-local function IIl1lI1l(llll1I1l, ...)
-local Illl1I1l = { [I1IIlI1l(_KKA[821])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x78AA)
-					end, [I1IIlI1l(_KKA[822])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0xD599)
-					end, [I1IIlI1l(_KKA[823])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x9634)
-					end, [I1IIlI1l(_KKA[824])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x10BB)
-					end };
-(lII1lI1l .. Illl1I1l[I1IIlI1l(_KKA[822])](-14856, -13990, -13600, -14231))[#(lII1lI1l .. Illl1I1l[I1IIlI1l(_KKA[823])](79880, 79472, 78539, 80341)) + 0B1] = llll1I1l
-return llll1I1l
-		end
-local function l1l1lI1l(llll1I1l, Illl1I1l, ...)
-if III1lI1l[llll1I1l] then
-task[IIIIlI1l(0x9F9D)](III1lI1l[llll1I1l])
+local function lIIllI1llI1(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, ...)
+local l1lIlI1llI1 = Instance[I1lIlI1llI1(-6191)](ll1IlI1llI1)
+for ll1IlI1llI1, IIlIlI1llI1 in pairs(lIlIlI1llI1 or {}) do
+l1lIlI1llI1[ll1IlI1llI1] = IIlIlI1llI1
 			end
-III1lI1l[llll1I1l] = task[IIIIlI1l(0x9F67)](function(...)
-Illl1I1l();
-III1lI1l[llll1I1l] = nil
-				end)
+l1lIlI1llI1[I1lIlI1llI1(-6117)] = IIlIlI1llI1
+return l1lIlI1llI1
 		end
-local function I1l1lI1l(llll1I1l, ...)
-if III1lI1l[llll1I1l] then
-task[I1IIlI1l(_KKA[825])](III1lI1l[llll1I1l]);
-III1lI1l[llll1I1l] = nil
-			end
-		end
-local function lll1lI1l(...)
-for llll1I1l, Illl1I1l in pairs(III1lI1l) do
-task[I1IIlI1l(_KKA[825])](Illl1I1l);
-III1lI1l[llll1I1l] = nil
-			end
-		end
-local Ill1lI1l = llll1I1l({ [IIIIlI1l(0x9F97)] = function(...)
-for llll1I1l, lIIIlI1l in pairs(lII1lI1l .. IIIIlI1l(0x9F61)) do
-pcall(function(...)
-lIIIlI1l:Disconnect()
-						end)
-					end
-Illl1I1l(lII1lI1l / {})
-				end }, { [IIIIlI1l(0x9F06)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9F97)] = Illl1I1l
-				end, [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[I1IIlI1l(_KKA[826])]
+local I1IllI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-5982)] = function(ll1IlI1llI1, IIlIlI1llI1, ...)
+return lIIllI1llI1(l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[647]), IllIlI1llI1(_KNS[648]) } }), ll1IlI1llI1, { [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[649]), IllIlI1llI1(_KNS[650]) } })] = UDim[IllIlI1llI1(_KNS[651])](0B0, IIlIlI1llI1) })
+				end }, { [I1lIlI1llI1(-6127)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[652]) } })] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-5982)]
 				end });
-local function lIIllI1l(llll1I1l, Illl1I1l, ...)
-if II11lI1l then
-II11lI1l[I1IIlI1l(_KKA[786])] = llll1I1l
-II11lI1l[IIIIlI1l(0x9FA4)] = Illl1I1l or IllIlI1l[I1IIlI1l(_KKA[827])]
-			end
+local function l1IllI1llI1(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, lllIlI1llI1, ...)
+return lIIllI1llI1(I1lIlI1llI1(-6086), ll1IlI1llI1, { [I1lIlI1llI1(-6035)] = IIlIlI1llI1, [IllIlI1llI1(_KNS[653])] = lIlIlI1llI1 or 0B1, [I1lIlI1llI1(-6256)] = lllIlI1llI1 or 0B0, [I1lIlI1llI1(-6104)] = Enum[l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[654]), IllIlI1llI1(_KNS[655]), IllIlI1llI1(_KNS[656]) } })][I1lIlI1llI1(-5990)] })
 		end
-local function IIIllI1l(Illl1I1l, ...)
-local lIIIlI1l = tonumber(Illl1I1l) or 0B0
-local l1IIlI1l = llll1I1l({ [IIIIlI1l(0x9F05)] = { { 1e+18, IIIIlI1l(0x9F9C) }, { 1e+15, IIIIlI1l(0x9FF3) }, { 1000000000000, IIIIlI1l(0x9F43) }, { 1000000000, I1IIlI1l(_KKA[186]) }, { 1000000, I1IIlI1l(_KKA[479]) }, { 0x3E8, I1IIlI1l(_KKA[828]) } } }, { [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[829])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0x4B91)
-								end, [I1IIlI1l(_KKA[830])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0x38AD)
-								end, [I1IIlI1l(_KKA[831])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x1A14)
-								end, [I1IIlI1l(_KKA[832])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x336B)
-								end };
-llll1I1l[lIIIlI1l[I1IIlI1l(_KKA[830])](0x6390, 0x6658, 0x682F, 0x69D1)] = Illl1I1l
-					end, [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F05)]
-					end })
-for llll1I1l, Illl1I1l in ipairs(l1IIlI1l / IIIIlI1l(0xA01C)) do
-if math[IIIIlI1l(0x9F70)](lIIIlI1l) >= Illl1I1l[0B1] then
-return string[IIIIlI1l(0x9F7E)](IIIIlI1l(0x9F5D), lIIIlI1l / Illl1I1l[0B1], Illl1I1l[0B10])
-				end
-			end
-return tostring(math[IIIIlI1l(0x9F53)](lIIIlI1l))
-		end
-local function l1IllI1l(...)
-return ll1IlI1l[IIIIlI1l(0xA025)] or ll1IlI1l[IIIIlI1l(0x9F79)]:Wait()
-		end
-local function I1IllI1l(...)
-local llll1I1l = ll1IlI1l[IIIIlI1l(0xA025)]
-local Illl1I1l = ll1IlI1l:FindFirstChild(IIIIlI1l(0xA058))
-if not llll1I1l or not Illl1I1l then
-return nil
-			end
-local lIIIlI1l = llll1I1l:FindFirstChild(IIIIlI1l(0x9F48)) or Illl1I1l:FindFirstChild(IIIIlI1l(0x9F48));
-local l1IIlI1l = llll1I1l:FindFirstChildOfClass(I1IIlI1l(_KKA[833]))
-if lIIIlI1l and (lIIIlI1l[IIIIlI1l(0xA033)] == Illl1I1l and l1IIlI1l) then
-pcall(function(...)
-l1IIlI1l:EquipTool(lIIIlI1l)
-				end)
-			end
-lIIIlI1l = llll1I1l:FindFirstChild(IIIIlI1l(0x9F48)) or lIIIlI1l
-if lIIIlI1l then
-local llll1I1l = lIIIlI1l:FindFirstChild(IIIIlI1l(0x9FC8))
-if llll1I1l then
-llll1I1l[IIIIlI1l(0xA05A)] = 0B0
-				end
-			end
-return lIIIlI1l
-		end
-local function llIllI1l(...)
-local llll1I1l = ll1IlI1l:FindFirstChild(IIIIlI1l(0x9F36));
-local Illl1I1l = I1IllI1l();
-local lIIIlI1l = I1lIlI1l[IIIIlI1l(0xA006)] and 0B10 or 0B1
-for lIIIlI1l = 0B1, lIIIlI1l, 0B1 do
-if llll1I1l then
-llll1I1l:FireServer(IIIIlI1l(0x9F9F), I1IIlI1l(_KKA[834]));
-llll1I1l:FireServer(IIIIlI1l(0x9F9F), IIIIlI1l(0x9F15))
-				end
-if Illl1I1l then
-pcall(function(...)
-Illl1I1l:Activate()
-					end)
-				end
-			end
-		end
-local IlIllI1l = llll1I1l({ [IIIIlI1l(0x9F4D)] = function(...)
-local Illl1I1l = { [I1IIlI1l(_KKA[835])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x17D2)
-							end, [I1IIlI1l(_KKA[836])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0x259E)
-							end, [I1IIlI1l(_KKA[837])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0xBD29)
-							end, [I1IIlI1l(_KKA[838])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0xE17F)
-							end };
-pcall(function(...)
-local IlIIlI1l = { [I1IIlI1l(_KKA[839])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x9B4B)
-								end, [I1IIlI1l(_KKA[840])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x748A)
-								end, [I1IIlI1l(_KKA[835])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x5B42)
-								end, [I1IIlI1l(_KKA[823])] = function(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l)
-return IIIIlI1l(lIIIlI1l + 0xEBA2)
-								end };
-local Illl1I1l = ll1IlI1l[IlIIlI1l[I1IIlI1l(_KKA[840])](70176, 70216, 70831, 70549)]
-local lIIIlI1l = ll1IlI1l:FindFirstChild(IlIIlI1l[I1IIlI1l(_KKA[840])](70856, 70314, 70882, 70250));
-local llIIlI1l = llll1I1l({ [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[841]), I1IIlI1l(_KKA[816]) } })] = Illl1I1l and Illl1I1l:FindFirstChild(IlIIlI1l[I1IIlI1l(_KKA[823])](-19078, -20352, -19546, -19126)) }, { [IlIIlI1l[I1IIlI1l(_KKA[839])](81202, 80539, 81002, 81263)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA034)] = Illl1I1l
-								end, [I1IIlI1l(_KKA[842])] = function(llll1I1l, Illl1I1l)
-return llll1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[841]) } })]
-								end })
-if llIIlI1l - l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[843]), I1IIlI1l(_KKA[844]) } }) and lIIIlI1l then
-(llIIlI1l - l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[845]) } }))[IlIIlI1l[I1IIlI1l(_KKA[823])](-20072, -20096, -19311, -20078)] = lIIIlI1l
-						end
-					end)
-				end }, { [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-llll1I1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[846]), I1IIlI1l(_KKA[847]) } })] = Illl1I1l
-				end, [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F4D)]
+local IlIllI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6019)] = function(ll1IlI1llI1, ...)
+local IIlIlI1llI1 = tonumber(ll1IlI1llI1) or 0B0
+if IIlIlI1llI1 >= 1000000000000 then
+return string[I1lIlI1llI1(-6107)](I1lIlI1llI1(-5969), IIlIlI1llI1 / 1000000000000)
+					elseif IIlIlI1llI1 >= 1000000000 then
+return string[IllIlI1llI1(_KNS[657])](I1lIlI1llI1(-6062), IIlIlI1llI1 / 1000000000)
+					elseif IIlIlI1llI1 >= 1000000 then
+return string[I1lIlI1llI1(-6107)](I1lIlI1llI1(-5989), IIlIlI1llI1 / 1000000)
+					elseif IIlIlI1llI1 >= 0x3E8 then
+return string[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[658]), IllIlI1llI1(_KNS[23]) } })](I1lIlI1llI1(-6180), IIlIlI1llI1 / 0x3E8)
+					end
+return tostring(math[IllIlI1llI1(_KNS[599])](IIlIlI1llI1))
+				end }, { [I1lIlI1llI1(-6127)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6019)] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-6084)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return rawget(ll1IlI1llI1, l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[659]), IllIlI1llI1(_KNS[660]) } }))
 				end });
-local lI1llI1l = llll1I1l({ [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[848]), I1IIlI1l(_KKA[849]) } })] = function(...)
-l1I1lI1l = {};
-local llll1I1l = workspace:FindFirstChild(IIIIlI1l(0x9F6B))
-if not llll1I1l then
-return
-					end
-for llll1I1l, Illl1I1l in ipairs(llll1I1l:GetDescendants()) do
-if Illl1I1l[I1IIlI1l(_KKA[850])] == l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[851]), I1IIlI1l(_KKA[852]), I1IIlI1l(_KKA[853]) } }) and (Illl1I1l:IsA(IIIIlI1l(0xA026)) and tonumber(Illl1I1l[IIIIlI1l(0xA05A)])) then
-local llll1I1l = Illl1I1l[IIIIlI1l(0xA033)] and Illl1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[404]), I1IIlI1l(_KKA[854]) } })]:FindFirstChild(IIIIlI1l(0xA048))
-if llll1I1l and llll1I1l:IsA(IIIIlI1l(0x9FB3)) then
-local lIIIlI1l = tonumber(Illl1I1l[IIIIlI1l(0xA05A)]);
-l1I1lI1l[lIIIlI1l] = l1I1lI1l[lIIIlI1l] or {};
-l1I1lI1l[lIIIlI1l][#l1I1lI1l[lIIIlI1l] + 0B1] = llll1I1l
-							end
-						end
-					end
-				end }, { [I1IIlI1l(_KKA[855])] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9FA6)] = Illl1I1l
-				end, [IIIIlI1l(0x9F06)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9FA6)]
-				end });
-local function II1llI1l(llll1I1l, ...)
-if I1I1lI1l[llll1I1l] then
+local function llIllI1llI1(...)
+IIlIlI1llI1(IIl1lI1llI1 * {});
+local lIlIlI1llI1 = workspace:FindFirstChild(I1lIlI1llI1(-6029))
+if not lIlIlI1llI1 then
 return
 			end
-local Illl1I1l = {};
-local lIIIlI1l = {}
-for llll1I1l, lIIIlI1l in ipairs(llll1I1l:GetChildren()) do
-if lIIIlI1l:IsA(IIIIlI1l(0x9FB1)) or lIIIlI1l:IsA(IIIIlI1l(0x9F3B)) or lIIIlI1l:IsA(IIIIlI1l(0xA02E)) or lIIIlI1l:IsA(IIIIlI1l(0x9FB7)) or lIIIlI1l:IsA(IIIIlI1l(0xA011)) or lIIIlI1l:IsA(IIIIlI1l(0x9F47)) then
-Illl1I1l[lIIIlI1l] = lIIIlI1l[IIIIlI1l(0x9FEC)]
-				end
-			end
-local llIIlI1l = llll1I1l:FindFirstChild(IIIIlI1l(0x9F2E))
-if llIIlI1l then
-for llll1I1l, Illl1I1l in ipairs(llIIlI1l:GetChildren()) do
-if Illl1I1l:IsA(IIIIlI1l(0x9F7C)) then
-lIIIlI1l[Illl1I1l] = Illl1I1l[IIIIlI1l(0x9F75)]
-					end
-				end
-			end
-local IlIIlI1l = llll1I1l:FindFirstChild(IIIIlI1l(0x9F4C));
-I1I1lI1l[llll1I1l] = { [IIIIlI1l(0x9FCC)] = llll1I1l[IIIIlI1l(0x9F93)], [IIIIlI1l(0xA00A)] = llll1I1l[IIIIlI1l(0x9FEB)], [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[856]), I1IIlI1l(_KKA[857]) } })] = llll1I1l[IIIIlI1l(0x9F0B)], [IIIIlI1l(0xA014)] = llll1I1l[IIIIlI1l(0xA023)], [IIIIlI1l(0xA01B)] = IlIIlI1l and IlIIlI1l[IIIIlI1l(0x9FEB)] or nil, [IIIIlI1l(0xA059)] = Illl1I1l, [I1IIlI1l(_KKA[858])] = lIIIlI1l }
-		end
-local function l11llI1l(llll1I1l, Illl1I1l, ...)
-II1llI1l(llll1I1l);
-llll1I1l[IIIIlI1l(0x9F93)] = Vector3[IIIIlI1l(0x9F8E)](0B10, 0B1, 0B1);
-llll1I1l[IIIIlI1l(0x9F0B)] = 0B1
-llll1I1l[IIIIlI1l(0xA023)] = false
-llll1I1l[IIIIlI1l(0x9FEB)] = Illl1I1l[IIIIlI1l(0x9FEB)]
-local lIIIlI1l = llll1I1l:FindFirstChild(IIIIlI1l(0x9F4C))
-if lIIIlI1l then
-lIIIlI1l[IIIIlI1l(0x9FEB)] = Illl1I1l[IIIIlI1l(0x9FEB)]
-			end
-for llll1I1l in pairs(I1I1lI1l[llll1I1l][IIIIlI1l(0xA059)]) do
-if llll1I1l and llll1I1l[IIIIlI1l(0xA033)] then
-llll1I1l[IIIIlI1l(0x9FEC)] = false
-				end
-			end
-local l1IIlI1l = llll1I1l:FindFirstChild(IIIIlI1l(0x9F2E))
-if l1IIlI1l then
-for llll1I1l, Illl1I1l in ipairs(l1IIlI1l:GetChildren()) do
-if Illl1I1l:IsA(IIIIlI1l(0x9F7C)) then
-Illl1I1l[I1IIlI1l(_KKA[859])] = false
+for IIlIlI1llI1, lIlIlI1llI1 in ipairs(lIlIlI1llI1:GetDescendants()) do
+if lIlIlI1llI1[I1lIlI1llI1(-6039)] == I1lIlI1llI1(-6119) and lIlIlI1llI1:IsA(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[661]), IllIlI1llI1(_KNS[662]) } })) then
+local IIlIlI1llI1 = tonumber(lIlIlI1llI1[I1lIlI1llI1(-6202)]);
+local lllIlI1llI1 = ll1IlI1llI1({ [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[663]) } })] = lIlIlI1llI1[I1lIlI1llI1(-6117)] and lIlIlI1llI1[I1lIlI1llI1(-6117)]:FindFirstChild(I1lIlI1llI1(-6102)) }, { [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[IllIlI1llI1(_KNS[664])] = IIlIlI1llI1
+							end, [I1lIlI1llI1(-6084)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return rawget(ll1IlI1llI1, IllIlI1llI1(_KNS[664]))
+							end })
+if IIlIlI1llI1 and (lllIlI1llI1[IllIlI1llI1(_KNS[665])] and lllIlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[666]), IllIlI1llI1(_KNS[667]) } })]:IsA(I1lIlI1llI1(-6206))) then
+(IIl1lI1llI1 + IllIlI1llI1(_KNS[668]))[IIlIlI1llI1] = (IIl1lI1llI1 + I1lIlI1llI1(-6051))[IIlIlI1llI1] or {};
+(IIl1lI1llI1 + I1lIlI1llI1(-6171))[IIlIlI1llI1][#(IIl1lI1llI1 + I1lIlI1llI1(-6163))[IIlIlI1llI1] + 0B1] = lllIlI1llI1[I1lIlI1llI1(-6036)]
 					end
 				end
 			end
 		end
-local function I11llI1l(...)
-for Illl1I1l, lIIIlI1l in pairs(I1I1lI1l) do
-if Illl1I1l and Illl1I1l[IIIIlI1l(0xA033)] then
-pcall(function(...)
-Illl1I1l[I1IIlI1l(_KKA[860])] = lIIIlI1l[IIIIlI1l(0x9FCC)]
-Illl1I1l[IIIIlI1l(0x9FEB)] = lIIIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[861]), I1IIlI1l(_KKA[796]) } })]
-Illl1I1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[862]), I1IIlI1l(_KKA[863]) } })] = lIIIlI1l[IIIIlI1l(0x9F5F)]
-Illl1I1l[IIIIlI1l(0xA023)] = lIIIlI1l[IIIIlI1l(0xA014)]
-local llIIlI1l = llll1I1l({ [IIIIlI1l(0xA01E)] = Illl1I1l:FindFirstChild(IIIIlI1l(0x9F4C)) }, { [IIIIlI1l(0xA030)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA01E)] = Illl1I1l
-								end, [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[820])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0xABD1)
-											end, [I1IIlI1l(_KKA[864])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0xFDB7)
-											end, [I1IIlI1l(_KKA[865])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0x1665)
-											end, [I1IIlI1l(_KKA[840])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0xCD4F)
-											end }
-return llll1I1l[lIIIlI1l[I1IIlI1l(_KKA[840])](93549, 93574, 94032, 94371)]
-								end })
-if llIIlI1l + IIIIlI1l(0xA02A) and lIIIlI1l[IIIIlI1l(0xA01B)] then
-(llIIlI1l + IIIIlI1l(0x9EF6))[IIIIlI1l(0x9FEB)] = lIIIlI1l[IIIIlI1l(0xA01B)]
-						end
-for llll1I1l, Illl1I1l in pairs(lIIIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[793]), I1IIlI1l(_KKA[866]) } })]) do
-if llll1I1l and llll1I1l[IIIIlI1l(0xA033)] then
-llll1I1l[I1IIlI1l(_KKA[867])] = Illl1I1l
-							end
-						end
-for llll1I1l, Illl1I1l in pairs(lIIIlI1l[I1IIlI1l(_KKA[858])]) do
-if llll1I1l and llll1I1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[854]), I1IIlI1l(_KKA[404]) } })] then
-llll1I1l[I1IIlI1l(_KKA[859])] = Illl1I1l
-							end
-						end
-					end)
-				end
-			end
-I1I1lI1l = {}
-		end
-local function ll1llI1l(...)
-local lIIIlI1l = ll1IlI1l:FindFirstChild(IIIIlI1l(0x9F72));
-local l1IIlI1l = lIIIlI1l and tonumber(lIIIlI1l[I1IIlI1l(_KKA[868])]) or 0B0
-local llIIlI1l = llll1I1l({ [IIIIlI1l(0x9F3F)] = 0B1 }, { [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[838])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x8AE8)
-								end, [I1IIlI1l(_KKA[821])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0xECD7)
-								end, [I1IIlI1l(_KKA[869])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x2601)
-								end, [I1IIlI1l(_KKA[870])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x11BC)
-								end };
-llll1I1l[lIIIlI1l[I1IIlI1l(_KKA[821])](-19054, -19864, -18884, -20222)] = Illl1I1l
-					end, [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[871])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x9290)
-								end, [I1IIlI1l(_KKA[872])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0xD284)
-								end, [I1IIlI1l(_KKA[873])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x8B)
-								end, [I1IIlI1l(_KKA[874])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x8AB0)
-								end }
-return llll1I1l[lIIIlI1l[I1IIlI1l(_KKA[874])](76084, 75820, 75779, 76271)]
-					end })
-for llll1I1l, lIIIlI1l in ipairs(lllIlI1l) do
-if l1IIlI1l >= lIIIlI1l[I1IIlI1l(_KKA[800])] then
-Illl1I1l(llIIlI1l / llll1I1l)
-				end
-			end
-return llIIlI1l ^ I1IIlI1l(_KKA[875])
-		end
-local function Il1llI1l(...)
-if type(firetouchinterest) ~= IIIIlI1l(0x9F74) then
+local II1llI1llI1 = ll1IlI1llI1({ [IllIlI1llI1(_KNS[669])] = function(IIlIlI1llI1, ...)
+if lIl1lI1llI1[IIlIlI1llI1] then
 return
-			end
-local Illl1I1l = llll1I1l({ [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[876]), I1IIlI1l(_KKA[871]) } })] = lllIlI1l[I1lIlI1l[IIIIlI1l(0xA050)]] }, { [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA027)] = Illl1I1l
-					end, [IIIIlI1l(0xA030)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0xA027)]
-					end })
-if not (Illl1I1l - IIIIlI1l(0x9EFB)) then
-return
-			end
-local lIIIlI1l = llll1I1l({ [IIIIlI1l(0x9F3A)] = ll1IlI1l:FindFirstChild(l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[877]), I1IIlI1l(_KKA[878]) } })) }, { [IIIIlI1l(0xA030)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[837])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x2162)
-								end, [I1IIlI1l(_KKA[832])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0xF244)
-								end, [I1IIlI1l(_KKA[879])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0xCB)
-								end, [I1IIlI1l(_KKA[872])] = function(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l)
-return IIIIlI1l(llIIlI1l - 0xCAC3)
-								end };
-llll1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[880]) } })] = Illl1I1l
-					end, [I1IIlI1l(_KKA[814])] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F3A)]
-					end })
-if lIIIlI1l / IIIIlI1l(0x9FF4) and tonumber((lIIIlI1l / IIIIlI1l(0xA052))[I1IIlI1l(_KKA[868])]) < (Illl1I1l - I1IIlI1l(_KKA[881]))[I1IIlI1l(_KKA[800])] then
-return
-			end
-local llIIlI1l = llll1I1l({ [IIIIlI1l(0xA008)] = ll1IlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[882]), I1IIlI1l(_KKA[883]) } })] }, { [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA008)] = Illl1I1l
-					end, [IIIIlI1l(0xA01F)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[I1IIlI1l(_KKA[884])]
-					end });
-local IlIIlI1l = llll1I1l({ [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[885]), I1IIlI1l(_KKA[886]) } })] = llIIlI1l * IIIIlI1l(0xA036) and (llIIlI1l * IIIIlI1l(0xA007)):FindFirstChild(IIIIlI1l(0xA053)) }, { [IIIIlI1l(0xA01F)] = function(llll1I1l, Illl1I1l)
-llll1I1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[885]), I1IIlI1l(_KKA[886]) } })] = Illl1I1l
-					end, [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9FB5)]
-					end });
-local lI1IlI1l = llll1I1l({ [IIIIlI1l(0x9F55)] = llIIlI1l * IIIIlI1l(0x9FFC) and (llIIlI1l * IIIIlI1l(0x9FA7)):FindFirstChild(l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[887]), I1IIlI1l(_KKA[888]) } })) }, { [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-llll1I1l[I1IIlI1l(_KKA[889])] = Illl1I1l
-					end, [IIIIlI1l(0xA01F)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F55)]
-					end })
-if not IlIIlI1l ^ I1IIlI1l(_KKA[890]) or not (lI1IlI1l * IIIIlI1l(0x9EF9)) then
-return
-			end
-local II1IlI1l = l1I1lI1l[(Illl1I1l - IIIIlI1l(0xA02B))[IIIIlI1l(0x9FAD)]]
-if not II1IlI1l or #II1IlI1l == 0B0 then
-(lI1llI1l .. IIIIlI1l(0x9F4E))()
-II1IlI1l = l1I1lI1l[(Illl1I1l - IIIIlI1l(0xA002))[IIIIlI1l(0x9FAD)]]
-			end
-if not II1IlI1l then
-return
-			end
-for llll1I1l, Illl1I1l in ipairs(II1IlI1l) do
-if Illl1I1l and Illl1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[404]), I1IIlI1l(_KKA[854]) } })] then
-pcall(function(...)
-l11llI1l(Illl1I1l, IlIIlI1l ^ IIIIlI1l(0xA019));
-firetouchinterest(Illl1I1l, lI1IlI1l * IIIIlI1l(0xA046), 0B0);
-firetouchinterest(Illl1I1l, lI1IlI1l * IIIIlI1l(0x9FE7), 0B1);
-firetouchinterest(Illl1I1l, IlIIlI1l ^ l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[891]), I1IIlI1l(_KKA[886]) } }), 0B0);
-firetouchinterest(Illl1I1l, IlIIlI1l ^ IIIIlI1l(0x9FC4), 0B1)
-					end)
-				end
-			end
-		end
-local function lIlllI1l(...)
-local llll1I1l = llIIlI1l:FindFirstChild(IIIIlI1l(0xA001))
-return llll1I1l and llll1I1l:FindFirstChild(IIIIlI1l(0x9FD3))
-		end
-local function IIlllI1l(...)
-local llll1I1l = {};
-local Illl1I1l = ll1IlI1l:FindFirstChild(IIIIlI1l(0x9F19))
-if not Illl1I1l then
-return llll1I1l
-			end
-for Illl1I1l, lIIIlI1l in ipairs(Illl1I1l:GetChildren()) do
-if lIIIlI1l:IsA(IIIIlI1l(0xA05B)) then
-for Illl1I1l, lIIIlI1l in ipairs(lIIIlI1l:GetChildren()) do
-llll1I1l[#llll1I1l + 0B1] = lIIIlI1l
 					end
-				end
-			end
-return llll1I1l
-		end
-local function l1lllI1l(...)
-local llll1I1l = {};
-local Illl1I1l = {}
-for lIIIlI1l, llIIlI1l in ipairs(IIlllI1l()) do
-if not llll1I1l[llIIlI1l[IIIIlI1l(0x9EFD)]] then
-llll1I1l[llIIlI1l[I1IIlI1l(_KKA[850])]] = true
-Illl1I1l[#Illl1I1l + 0B1] = llIIlI1l[I1IIlI1l(_KKA[850])]
-				end
-			end
-table[IIIIlI1l(0xA056)](Illl1I1l)
-llI1lI1l = Illl1I1l
-if I1lIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[892]), I1IIlI1l(_KKA[893]) } })] and llll1I1l[I1lIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[894]), I1IIlI1l(_KKA[895]) } })]] then
-return
-			end
-I1lIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[892]), I1IIlI1l(_KKA[893]) } })] = nil
-for llll1I1l, Illl1I1l in ipairs(Illl1I1l) do
-if Illl1I1l == l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[896]), I1IIlI1l(_KKA[897]) } }) then
-I1lIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[898]), I1IIlI1l(_KKA[899]) } })] = Illl1I1l
-break
-				end
-			end
-I1lIlI1l[IIIIlI1l(0x9F03)] = I1lIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[900]), I1IIlI1l(_KKA[901]) } })] or Illl1I1l[0B1]
-		end
-local I1lllI1l = llll1I1l({ [IIIIlI1l(0x9FBC)] = function(...)
-local llll1I1l = lIlllI1l()
-if not llll1I1l then
-return false
-					end
-for Illl1I1l, lIIIlI1l in ipairs(IIlllI1l()) do
-pcall(function(...)
-local Illl1I1l = { [I1IIlI1l(_KKA[817])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x82F0)
-									end, [I1IIlI1l(_KKA[902])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x30BC)
-									end, [I1IIlI1l(_KKA[822])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0xD042)
-									end, [I1IIlI1l(_KKA[829])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x52EA)
-									end };
-llll1I1l:FireServer(Illl1I1l[I1IIlI1l(_KKA[822])](-12427, -12505, -13468, -12528), lIIIlI1l)
-						end)
-					end
-task[IIIIlI1l(0x9EFF)](.05)
-return true
-				end }, { [IIIIlI1l(0xA015)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[903])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x847D)
-							end, [I1IIlI1l(_KKA[874])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l + 0x3532)
-							end, [I1IIlI1l(_KKA[904])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x52DE)
-							end, [I1IIlI1l(_KKA[905])] = function(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l)
-return IIIIlI1l(llll1I1l - 0x4DF4)
-							end };
-llll1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[812]), I1IIlI1l(_KKA[906]) } })] = Illl1I1l
-				end, [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-return rawget(llll1I1l, IIIIlI1l(0x9FBC))
-				end });
-local function lllllI1l(lIIIlI1l, ...)
-if not I1lIlI1l[IIIIlI1l(0x9F03)] then
-lIIllI1l(IIIIlI1l(0xA05D), IllIlI1l[IIIIlI1l(0x9FF7)])
-return 0B0
-			end
-local llIIlI1l = lIlllI1l()
-if not llIIlI1l then
-lIIllI1l(l1IIlI1l({ 0B10, 0x4, 0B11, 0B1, { I1IIlI1l(_KKA[907]), I1IIlI1l(_KKA[908]), I1IIlI1l(_KKA[909]), I1IIlI1l(_KKA[910]) } }), IllIlI1l[IIIIlI1l(0x9FF7)])
-return 0B0
-			end;
-(I1lllI1l + IIIIlI1l(0x9F23))();
-local IlIIlI1l = llll1I1l({ [I1IIlI1l(_KKA[911])] = 0B0 }, { [I1IIlI1l(_KKA[814])] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9FDB)] = Illl1I1l
-					end, [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9FDB)]
-					end })
-for llll1I1l, lI1IlI1l in ipairs(IIlllI1l()) do
-if lI1IlI1l[IIIIlI1l(0x9EFD)] == I1lIlI1l[IIIIlI1l(0x9F03)] and (not lIIIlI1l or IlIIlI1l ^ IIIIlI1l(0xA016) < lIIIlI1l) then
-pcall(function(...)
-local llll1I1l = { [I1IIlI1l(_KKA[912])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0xEDE8)
-								end, [I1IIlI1l(_KKA[913])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0xE8D5)
-								end, [I1IIlI1l(_KKA[870])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x16C)
-								end, [I1IIlI1l(_KKA[914])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l + 0xAEFA)
-								end };
-llIIlI1l:FireServer(llll1I1l[I1IIlI1l(_KKA[912])](-20829, -20729, -18968, -19930), lI1IlI1l)
-					end);
-Illl1I1l(IlIIlI1l / (IlIIlI1l ^ IIIIlI1l(0x9F6C) + 0B1))
-				end
-			end
-lIIllI1l(l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[915]), I1IIlI1l(_KKA[916]), I1IIlI1l(_KKA[917]) } }) .. tostring(IlIIlI1l ^ IIIIlI1l(0x9FD4)), IlIIlI1l ^ IIIIlI1l(0x9F10) > 0B0 and IllIlI1l[IIIIlI1l(0x9F51)] or IllIlI1l[IIIIlI1l(0x9FF7)])
-return IlIIlI1l ^ I1IIlI1l(_KKA[918])
-		end
-local function IllllI1l(...)
-local llll1I1l = 0B0
-for Illl1I1l, lIIIlI1l in ipairs(IIlllI1l()) do
-if lIIIlI1l[IIIIlI1l(0x9EFD)] == I1lIlI1l[IIIIlI1l(0x9F03)] then
-llll1I1l = llll1I1l + 0B1
-				end
-			end
-return llll1I1l
-		end
-local function lIIII11l(...)
-local Illl1I1l = ll1IlI1l:FindFirstChild(l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[919]), I1IIlI1l(_KKA[920]) } }));
-local lIIIlI1l = Illl1I1l and Illl1I1l:FindFirstChild(IIIIlI1l(0xA038));
-local llIIlI1l = llll1I1l({ [IIIIlI1l(0x9F78)] = lIIIlI1l and tonumber(lIIIlI1l[IIIIlI1l(0xA05A)]) or 0B0 }, { [I1IIlI1l(_KKA[921])] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9F78)] = Illl1I1l
-					end, [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F78)]
-					end })
-if (llIIlI1l + IIIIlI1l(0x9FB8)) % 0B10 ~= 0B0 then
-return nil, nil, l1IIlI1l({ 0B1, 0x4, 0B11, 0B10, { I1IIlI1l(_KKA[922]), I1IIlI1l(_KKA[923]), I1IIlI1l(_KKA[924]), I1IIlI1l(_KKA[925]) } })
-			end
-local IlIIlI1l = ((llIIlI1l + IIIIlI1l(0xA03B)) + 0x14) * 12.5
-local lI1IlI1l = {};
-local II1IlI1l = 0B0
-local l11IlI1l = nil
-for llll1I1l = 0B1, 0x13, 0B1 do
-lI1IlI1l[llll1I1l] = 0x4E2 * llll1I1l
-II1IlI1l = II1IlI1l + lI1IlI1l[llll1I1l]
-if not l11IlI1l and II1IlI1l >= IlIIlI1l then
-l11IlI1l = II1IlI1l
-				end
-			end
-if not l11IlI1l then
-return 0x13, 0B0, nil
-			end
-local I11IlI1l = l11IlI1l - IlIIlI1l
-local Il1IlI1l = I11IlI1l
-for llll1I1l = 0B1, #lI1IlI1l, 0B1 do
-I11IlI1l = I11IlI1l - lI1IlI1l[llll1I1l]
-if I11IlI1l < 0B0 then
-return llll1I1l, math[I1IIlI1l(_KKA[926])](0B0, math[IIIIlI1l(0x9F53)](Il1IlI1l)), nil
-				end
-Il1IlI1l = I11IlI1l
-			end
-return 0x13, math[IIIIlI1l(0x9FF8)](0B0, math[I1IIlI1l(_KKA[776])](Il1IlI1l)), nil
-		end
-local IIIII11l = { [l1IIlI1l({ 0B1, 0B10, 0x4, 0B11, { I1IIlI1l(_KKA[927]), I1IIlI1l(_KKA[928]), I1IIlI1l(_KKA[929]), I1IIlI1l(_KKA[930]) } })] = true, [l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[931]), I1IIlI1l(_KKA[932]), I1IIlI1l(_KKA[927]) } })] = true };
-local function l1III11l(llll1I1l, ...)
-if not llll1I1l or not llll1I1l[IIIIlI1l(0x9F25)] then
-return false
-			end
-local Illl1I1l = (tostring(llll1I1l[IIIIlI1l(0x9EFD)] or IIIIlI1l(0x9F18))):lower()
-return IIIII11l[llll1I1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[933]), I1IIlI1l(_KKA[934]) } })][IIIIlI1l(0x9F38)]] or Illl1I1l:find(IIIIlI1l(0x9F9F), 0B1, true) ~= nil or Illl1I1l:find(IIIIlI1l(0xA044), 0B1, true) ~= nil
-		end
-local function I1III11l(...)
-local llll1I1l = ll1IlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[935]), I1IIlI1l(_KKA[936]) } })]
-local Illl1I1l = llll1I1l and llll1I1l:FindFirstChildOfClass(IIIIlI1l(0x9F2B))
-if not Illl1I1l then
-return
-			end
-for llll1I1l, Illl1I1l in ipairs(Illl1I1l:GetPlayingAnimationTracks()) do
-if l1III11l(Illl1I1l) then
-Illl1I1l:Stop()
-				end
-			end
-		end
-local function llIII11l(...)
-for llll1I1l, Illl1I1l in ipairs(IlI1lI1l) do
-Illl1I1l:Disconnect()
-			end
-IlI1lI1l = {}
-if not I1lIlI1l[IIIIlI1l(0x9FD5)] then
-return
-			end
-local llll1I1l = ll1IlI1l[IIIIlI1l(0xA025)]
-local Illl1I1l = llll1I1l and llll1I1l:FindFirstChildOfClass(I1IIlI1l(_KKA[833]))
-if Illl1I1l then
-IlI1lI1l[#IlI1lI1l + 0B1] = Illl1I1l[IIIIlI1l(0x9F1E)]:Connect(function(llll1I1l, ...)
-if I1lIlI1l[IIIIlI1l(0x9FD5)] and l1III11l(llll1I1l) then
-llll1I1l:Stop()
-						end
-					end);
-I1III11l()
-			end
-		end
-local function IlIII11l(...)
-if I1lIlI1l[IIIIlI1l(0x9FA0)] then
-return
-			end
-if type(firetouchinterest) ~= IIIIlI1l(0x9F74) then
-lIIllI1l(l1IIlI1l({ 0x4, 0B1, 0B101, 0B10, 0B11, { I1IIlI1l(_KKA[937]), I1IIlI1l(_KKA[938]), I1IIlI1l(_KKA[939]), I1IIlI1l(_KKA[940]), I1IIlI1l(_KKA[941]) } }), IllIlI1l[IIIIlI1l(0x9FF7)])
-return false
-			end
-I1lIlI1l[IIIIlI1l(0x9FA0)] = true;
-(lI1llI1l .. l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[942]), I1IIlI1l(_KKA[816]) } }))()
-if I1lIlI1l[IIIIlI1l(0x9FC6)] and I1lIlI1l[IIIIlI1l(0x9F03)] then
-l1l1lI1l(IIIIlI1l(0x9FB9), function(...)
-local llll1I1l = { [I1IIlI1l(_KKA[903])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x1AD8)
-							end, [I1IIlI1l(_KKA[822])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x1DDA)
-							end, [I1IIlI1l(_KKA[943])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x8B63)
-							end, [I1IIlI1l(_KKA[944])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x4D62)
-							end };
-lllllI1l(I1lIlI1l[llll1I1l[I1IIlI1l(_KKA[944])](0x5042, 0x4F3C, 0x5226, 0x5495)] == 0x8 and 0x8 or nil)
-				end)
-			end
-l1l1lI1l(IIIIlI1l(0x9F9E), function(...)
-local lIIIlI1l = llll1I1l({ [IIIIlI1l(0x9FE4)] = 0B0 }, { [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9FE4)] = Illl1I1l
-						end, [IIIIlI1l(0xA015)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[945])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x561D)
-									end, [I1IIlI1l(_KKA[871])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0xF13F)
-									end, [I1IIlI1l(_KKA[946])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x4BAD)
-									end, [I1IIlI1l(_KKA[943])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x9CF1)
-									end }
-return rawget(llll1I1l, lIIIlI1l[I1IIlI1l(_KKA[943])](81684, 81109, 81391, 80901))
-						end })
-while I1lIlI1l[I1IIlI1l(_KKA[947])] and I1lIlI1l[IIIIlI1l(0x9FA0)] do
-if I1lIlI1l[IIIIlI1l(0x9F7B)] and os[I1IIlI1l(_KKA[948])]() - lIIIlI1l[IIIIlI1l(0x9FE6)] >= .3 then
-Illl1I1l(lIIIlI1l ^ os[IIIIlI1l(0x9FB0)]());
-local llll1I1l = ll1llI1l()
-if llll1I1l ~= I1lIlI1l[IIIIlI1l(0xA050)] then
-I11llI1l();
-I1lIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[899]), I1IIlI1l(_KKA[798]) } })] = llll1I1l
-if Il11lI1l then
-Il11lI1l()
-							end
-						end
-					end
-pcall(llIllI1l);
-pcall(Il1llI1l)
-if I1lIlI1l[IIIIlI1l(0x9FD5)] then
-I1III11l()
-					end
-task[I1IIlI1l(_KKA[949])]()
-				end
-			end);
-lIIllI1l(IIIIlI1l(0x9F12), IllIlI1l[IIIIlI1l(0x9F16)])
-return true
-		end
-local function lI1II11l(...)
-I1lIlI1l[IIIIlI1l(0x9FA0)] = false
-I1l1lI1l(l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[950]), I1IIlI1l(_KKA[951]) } }));
-I1l1lI1l(IIIIlI1l(0x9FB9));
-(IlIllI1l / IIIIlI1l(0x9F6E))();
-I11llI1l();
-lIIllI1l(IIIIlI1l(0xA03D), IllIlI1l[IIIIlI1l(0x9F01)])
-		end
-local function II1II11l(...)
-if not I1lIlI1l[IIIIlI1l(0x9F33)] then
-I1l1lI1l(IIIIlI1l(0x9F33))
-return
-			end
-l1l1lI1l(IIIIlI1l(0x9F33), function(...)
-while I1lIlI1l[IIIIlI1l(0xA005)] and I1lIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[952]), I1IIlI1l(_KKA[953]) } })] do
-lllllI1l(I1lIlI1l[IIIIlI1l(0x9F88)] == 0B1000 and 0x8 or nil)
-for llll1I1l = 0B1, 0x19, 0B1 do
-if not I1lIlI1l[I1IIlI1l(_KKA[947])] or not I1lIlI1l[IIIIlI1l(0x9F33)] then
-break
-						end
-task[I1IIlI1l(_KKA[949])](.1)
-					end
-				end
-			end)
-		end
-local function l11II11l(...)
-if not I1lIlI1l[IIIIlI1l(0x9FF6)] then
-return
-			end
-if (lII1lI1l .. IIIIlI1l(0x9F95))[I1IIlI1l(_KKA[954])] then
-(lII1lI1l .. IIIIlI1l(0x9F0A))[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[955]), I1IIlI1l(_KKA[956]) } })]:Disconnect()
-			end;
-(lII1lI1l .. IIIIlI1l(0x9F71))[IIIIlI1l(0x9FF6)] = ll1IlI1l[I1IIlI1l(_KKA[957])]:Connect(function(...)
-local llll1I1l = { [I1IIlI1l(_KKA[873])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x1E33)
-							end, [I1IIlI1l(_KKA[958])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x4D73)
-							end, [I1IIlI1l(_KKA[836])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0xBDDC)
-							end, [I1IIlI1l(_KKA[879])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l + 0xAAF0)
-							end };
-pcall(function(...)
-I11IlI1l:CaptureController();
-I11IlI1l:ClickButton2(Vector2[I1IIlI1l(_KKA[959])]())
-					end)
-				end)
-		end;
-(lI1llI1l .. IIIIlI1l(0x9F64))();
-l1lllI1l();
-I1lIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[900]), I1IIlI1l(_KKA[960]) } })] = ll1llI1l();
-local I11II11l = workspace[IIIIlI1l(0x9FC3)] and workspace[IIIIlI1l(0x9FC3)][IIIIlI1l(0x9F1A)] or Vector2[IIIIlI1l(0x9F8E)](0x500, 0x2D0);
-local ll1II11l = lI1IlI1l[IIIIlI1l(0x9FD1)] and I11II11l[I1IIlI1l(_KKA[353])] <= 0x334
-local Il1II11l = math[I1IIlI1l(_KKA[926])](0x136, math[I1IIlI1l(_KKA[961])](ll1II11l and 0x172 or 0x1A4, I11II11l[I1IIlI1l(_KKA[353])] - 0x12));
-local lIlII11l = math[IIIIlI1l(0x9FF8)](0x1C2, math[IIIIlI1l(0x9F85)](ll1II11l and 0x1F4 or 0x21C, I11II11l[IIIIlI1l(0x9FFE)] - 0x22));
-local IIlII11l = ll1II11l and 0x3E or 0x44
-local l1lII11l = 0x1E
-local I1lII11l = 0x2A
-local lllII11l = (IIlII11l + l1lII11l) + I1lII11l
-local function IllII11l(Illl1I1l, lIIIlI1l, l1IIlI1l, ...)
-local llIIlI1l = llll1I1l({ [IIIIlI1l(0x9F82)] = Instance[IIIIlI1l(0x9F8E)](Illl1I1l) }, { [I1IIlI1l(_KKA[962])] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9F82)] = Illl1I1l
-					end, [I1IIlI1l(_KKA[921])] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F82)]
-					end })
-for llll1I1l, Illl1I1l in pairs(l1IIlI1l or {}) do
-(llIIlI1l * IIIIlI1l(0x9FF1))[llll1I1l] = Illl1I1l
-			end;
-(llIIlI1l * IIIIlI1l(0x9FAB))[IIIIlI1l(0xA033)] = lIIIlI1l
-return llIIlI1l * I1IIlI1l(_KKA[963])
-		end
-local function lII1I11l(llll1I1l, Illl1I1l, ...)
-return IllII11l(IIIIlI1l(0x9FE9), llll1I1l, { [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[964]), I1IIlI1l(_KKA[965]) } })] = UDim[IIIIlI1l(0x9F8E)](0B0, Illl1I1l) })
-		end
-local function III1I11l(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l, ...)
-return IllII11l(IIIIlI1l(0x9F7D), llll1I1l, { [IIIIlI1l(0xA04E)] = Enum[l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[966]), I1IIlI1l(_KKA[967]), I1IIlI1l(_KKA[796]) } })][IIIIlI1l(0x9F60)], [IIIIlI1l(0xA01A)] = Illl1I1l, [IIIIlI1l(0xA041)] = lIIIlI1l or 0B1, [IIIIlI1l(0x9F0B)] = llIIlI1l or 0B0 })
-		end
-local l1I1I11l = Il1IlI1l:FindFirstChild(l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[968]), I1IIlI1l(_KKA[969]), I1IIlI1l(_KKA[970]) } }))
-if l1I1I11l then
-l1I1I11l:Destroy()
-		end
-local I1I1I11l = IllII11l(IIIIlI1l(0x9FAA), Il1IlI1l, { [IIIIlI1l(0x9EFD)] = IIIIlI1l(0x9FCB), [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[971]), I1IIlI1l(_KKA[972]) } })] = false, [IIIIlI1l(0x9F9B)] = true, [IIIIlI1l(0x9FC7)] = 0x3E8, [IIIIlI1l(0x9FC5)] = Enum[l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[973]), I1IIlI1l(_KKA[974]), I1IIlI1l(_KKA[882]) } })][IIIIlI1l(0x9F80)] });
-local llI1I11l = IllII11l(IIIIlI1l(0x9F96), I1I1I11l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9FD6)](Il1II11l + 0x12, lIlII11l + 0x12), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](.5, -Il1II11l / 0B10 - 0x9, .5, -lIlII11l / 0B10 - 0x9), [IIIIlI1l(0x9F9A)] = IllIlI1l[I1IIlI1l(_KKA[975])], [IIIIlI1l(0x9F94)] = .3, [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0B1 });
-lII1I11l(llI1I11l, 0x12);
-local IlI1I11l = IllII11l(IIIIlI1l(0x9F96), I1I1I11l, { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9FD6)](Il1II11l, lIlII11l), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](.5, -Il1II11l / 0B10, .5, -lIlII11l / 0B10), [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0x9FEF)], [IIIIlI1l(0x9FF2)] = 0B0, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[976]), I1IIlI1l(_KKA[977]) } })] = true, [IIIIlI1l(0x9F90)] = 0B10 });
-lII1I11l(IlI1I11l, 0xF);
-local lI11I11l = III1I11l(IlI1I11l, IllIlI1l[IIIIlI1l(0x9F99)], 0B10, .02);
-IllII11l(IIIIlI1l(0xA028), IlI1I11l, { [I1IIlI1l(_KKA[978])] = ColorSequence[IIIIlI1l(0x9F8E)]({ ColorSequenceKeypoint[IIIIlI1l(0x9F8E)](0B0, Color3[IIIIlI1l(0x9FF0)](0xC, 0xB, 0x16)), ColorSequenceKeypoint[I1IIlI1l(_KKA[959])](.5, Color3[IIIIlI1l(0x9FF0)](0x7, 0x7, 0xC)), ColorSequenceKeypoint[IIIIlI1l(0x9F8E)](0B1, Color3[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[810]), I1IIlI1l(_KKA[809]) } })](0x10, 0x9, 0x19)) }), [I1IIlI1l(_KKA[979])] = 0x7D });
-local II11I11l = llll1I1l({ [IIIIlI1l(0x9F5B)] = IllII11l(I1IIlI1l(_KKA[980]), IlI1I11l, { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B0, IIlII11l), [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[981]), I1IIlI1l(_KKA[982]) } })] = Color3[IIIIlI1l(0x9FF0)](0xD, 0xC, 0x17), [l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[983]), I1IIlI1l(_KKA[984]), I1IIlI1l(_KKA[985]) } })] = 0B0, [I1IIlI1l(_KKA[973])] = 0B11 }) }, { [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-llll1I1l[I1IIlI1l(_KKA[986])] = Illl1I1l
-				end, [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F5B)]
-				end });
-lII1I11l(II11I11l + IIIIlI1l(0x9F3E), 0xF);
-IllII11l(IIIIlI1l(0x9F96), II11I11l + I1IIlI1l(_KKA[987]), { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B0, 0xF), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0B0, 0B1, -15), [IIIIlI1l(0x9F9A)] = Color3[IIIIlI1l(0x9FF0)](0B1101, 0xC, 0x17), [l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[988]), I1IIlI1l(_KKA[989]), I1IIlI1l(_KKA[816]) } })] = 0B0, [IIIIlI1l(0x9F90)] = 0B11 });
-local l111I11l = IllII11l(I1IIlI1l(_KKA[980]), II11I11l + IIIIlI1l(0xA032), { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9F8E)](0B1, -24, 0B0, 0B11), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0xC, 0B1, -4), [IIIIlI1l(0x9F9A)] = IllIlI1l[I1IIlI1l(_KKA[990])], [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x5 });
-lII1I11l(l111I11l, 0B11);
-local I111I11l = IllII11l(IIIIlI1l(0xA028), l111I11l, { [IIIIlI1l(0xA01A)] = ColorSequence[IIIIlI1l(0x9F8E)]({ ColorSequenceKeypoint[IIIIlI1l(0x9F8E)](0B0, IllIlI1l[I1IIlI1l(_KKA[991])]), ColorSequenceKeypoint[IIIIlI1l(0x9F8E)](.45, IllIlI1l[IIIIlI1l(0x9F16)]), ColorSequenceKeypoint[IIIIlI1l(0x9F8E)](.75, IllIlI1l[IIIIlI1l(0x9F6F)]), ColorSequenceKeypoint[IIIIlI1l(0x9F8E)](0B1, IllIlI1l[I1IIlI1l(_KKA[991])]) }) });
-local ll11I11l = IllII11l(l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[992]), I1IIlI1l(_KKA[993]) } }), II11I11l + l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[994]), I1IIlI1l(_KKA[847]) } }), { [I1IIlI1l(_KKA[860])] = ll1II11l and UDim2[IIIIlI1l(0x9F8E)](0B1, -96, 0B0, 0x1C) or UDim2[IIIIlI1l(0x9F8E)](0B1, -150, 0B0, 0x1C), [I1IIlI1l(_KKA[995])] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0xE, 0B0, ll1II11l and 0x8 or 0x9), [IIIIlI1l(0x9F94)] = 0B1, [IIIIlI1l(0x9F14)] = IIIIlI1l(0x9FC0), [IIIIlI1l(0x9FA4)] = IllIlI1l[IIIIlI1l(0xA017)], [IIIIlI1l(0x9FBE)] = IllIlI1l[IIIIlI1l(0x9EF7)], [IIIIlI1l(0x9EFE)] = .15, [IIIIlI1l(0x9F69)] = Enum[I1IIlI1l(_KKA[996])][IIIIlI1l(0x9FAC)], [I1IIlI1l(_KKA[997])] = ll1II11l and 0x11 or 0x16, [l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[998]), I1IIlI1l(_KKA[999]), I1IIlI1l(_KKA[1000]) } })] = Enum[IIIIlI1l(0x9F3D)][IIIIlI1l(0xA00D)], [IIIIlI1l(0x9F90)] = 0x5 });
-IllII11l(IIIIlI1l(0x9FE1), II11I11l + IIIIlI1l(0x9FE2), { [IIIIlI1l(0x9F93)] = ll1II11l and UDim2[I1IIlI1l(_KKA[959])](0B1, -96, 0B0, 0x11) or UDim2[I1IIlI1l(_KKA[959])](0B1, -150, 0B0, 0x11), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0B1110, 0B0, ll1II11l and 0x23 or 0x27), [IIIIlI1l(0x9F94)] = 0B1, [IIIIlI1l(0x9F14)] = IIIIlI1l(0x9FED), [IIIIlI1l(0x9FA4)] = IllIlI1l[I1IIlI1l(_KKA[990])], [IIIIlI1l(0x9F69)] = Enum[IIIIlI1l(0x9F69)][IIIIlI1l(0x9FA9)], [IIIIlI1l(0x9F98)] = ll1II11l and 0x9 or 0xA, [IIIIlI1l(0x9F3D)] = Enum[l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[1001]), I1IIlI1l(_KKA[1002]), I1IIlI1l(_KKA[1000]) } })][IIIIlI1l(0xA00D)], [IIIIlI1l(0x9F90)] = 0x5 });
-local Il11I11l = llll1I1l({ [IIIIlI1l(0x9F41)] = IllII11l(IIIIlI1l(0x9FE1), II11I11l + IIIIlI1l(0x9F7A), { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9FD6)](0x40, 0x16), [I1IIlI1l(_KKA[995])] = UDim2[IIIIlI1l(0x9F8E)](0B1, -140, .5, -11), [IIIIlI1l(0x9F9A)] = Color3[IIIIlI1l(0x9FF0)](0x4A, 0x31, 0xF), [IIIIlI1l(0x9F14)] = IIIIlI1l(0x9F2A), [IIIIlI1l(0x9FA4)] = IllIlI1l[IIIIlI1l(0x9F16)], [I1IIlI1l(_KKA[996])] = Enum[IIIIlI1l(0x9F69)][IIIIlI1l(0x9FAC)], [IIIIlI1l(0x9F98)] = 0xB, [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F75)] = not ll1II11l, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1003]), I1IIlI1l(_KKA[1004]) } })] = 0x6 }) }, { [I1IIlI1l(_KKA[855])] = function(llll1I1l, Illl1I1l)
-llll1I1l[I1IIlI1l(_KKA[1005])] = Illl1I1l
-				end, [I1IIlI1l(_KKA[962])] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F41)]
-				end });
-lII1I11l(Il11I11l ^ IIIIlI1l(0x9F54), 0x7);
-III1I11l(Il11I11l ^ l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1006]), I1IIlI1l(_KKA[1007]) } }), IllIlI1l[I1IIlI1l(_KKA[990])], 0B1, .1);
-local function lIl1I11l(Illl1I1l, lIIIlI1l, ...)
-local llIIlI1l = IllII11l(IIIIlI1l(0x9FE3), II11I11l + IIIIlI1l(0x9EF5), { [IIIIlI1l(0x9F93)] = UDim2[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1008]), I1IIlI1l(_KKA[1009]) } })](0x1E, 0x1E), [IIIIlI1l(0x9F6D)] = UDim2[I1IIlI1l(_KKA[959])](0B1, lIIIlI1l, .5, -15), [IIIIlI1l(0x9F9A)] = IllIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1010]), I1IIlI1l(_KKA[1011]) } })], [IIIIlI1l(0xA04C)] = false, [IIIIlI1l(0x9F14)] = Illl1I1l, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1012]), I1IIlI1l(_KKA[1013]) } })] = IllIlI1l[I1IIlI1l(_KKA[1014])], [IIIIlI1l(0x9F69)] = Enum[IIIIlI1l(0x9F69)][l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1015]), I1IIlI1l(_KKA[1016]) } })], [IIIIlI1l(0x9F98)] = 0xE, [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x8 });
-lII1I11l(llIIlI1l, 0x8);
-local IlIIlI1l = llll1I1l({ [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[871]), I1IIlI1l(_KKA[1017]) } })] = III1I11l(llIIlI1l, IllIlI1l[IIIIlI1l(0x9FA2)], 0B1, .1) }, { [IIIIlI1l(0xA01F)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9F22)] = Illl1I1l
-					end, [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F22)]
-					end });
-llIIlI1l[IIIIlI1l(0xA009)]:Connect(function(...)
-(II1IlI1l:Create(llIIlI1l, TweenInfo[IIIIlI1l(0x9F8E)](.12), { [l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[1018]), I1IIlI1l(_KKA[1019]), I1IIlI1l(_KKA[1020]) } })] = IllIlI1l[IIIIlI1l(0xA00C)] })):Play();
-(II1IlI1l:Create(IlIIlI1l ^ I1IIlI1l(_KKA[1021]), TweenInfo[IIIIlI1l(0x9F8E)](.12), { [IIIIlI1l(0xA01A)] = IllIlI1l[IIIIlI1l(0x9F99)] })):Play()
-			end);
-llIIlI1l[IIIIlI1l(0x9FFF)]:Connect(function(...)
-(II1IlI1l:Create(llIIlI1l, TweenInfo[I1IIlI1l(_KKA[959])](.12), { [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0x9FF5)] })):Play();
-(II1IlI1l:Create(IlIIlI1l ^ l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1022]), I1IIlI1l(_KKA[1023]) } }), TweenInfo[IIIIlI1l(0x9F8E)](.12), { [IIIIlI1l(0xA01A)] = IllIlI1l[IIIIlI1l(0x9FA2)] })):Play()
-			end)
-return llIIlI1l
-		end
-local IIl1I11l = llll1I1l({ [IIIIlI1l(0xA022)] = lIl1I11l(IIIIlI1l(0x9FA5), -72) }, { [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA022)] = Illl1I1l
-				end, [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[I1IIlI1l(_KKA[1024])]
-				end });
-local l1l1I11l = lIl1I11l(IIIIlI1l(0x9EF4), -38);
-local I1l1I11l = IllII11l(IIIIlI1l(0x9FE3), II11I11l + IIIIlI1l(0x9F4F), { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9F8E)](0B1, -150, 0B1, 0B0), [l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[981]), I1IIlI1l(_KKA[1025]), I1IIlI1l(_KKA[1026]) } })] = 0B1, [I1IIlI1l(_KKA[786])] = IIIIlI1l(0x9F18), [IIIIlI1l(0xA04C)] = false, [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x7 });
-local lll1I11l = IllII11l(I1IIlI1l(_KKA[980]), IlI1I11l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, -20, 0B0, l1lII11l - 0x6), [I1IIlI1l(_KKA[995])] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0xA, 0B0, IIlII11l + 0B11), [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[981]), I1IIlI1l(_KKA[982]) } })] = Color3[IIIIlI1l(0x9FF0)](0x12, 0x12, 0x1D), [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0B11 });
-lII1I11l(lll1I11l, 0x8);
-local Ill1I11l = llll1I1l({ [IIIIlI1l(0x9FDE)] = IllII11l(I1IIlI1l(_KKA[980]), lll1I11l, { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9FD6)](0x7, 0x7), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0xA, .5, -0B11), [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0x9F99)], [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x4 }) }, { [IIIIlI1l(0xA030)] = function(llll1I1l, Illl1I1l)
-llll1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[1027]) } })] = Illl1I1l
-				end, [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[879])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0xE0C2)
-							end, [I1IIlI1l(_KKA[824])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0xB7A4)
-							end, [I1IIlI1l(_KKA[873])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x52D7)
-							end, [I1IIlI1l(_KKA[812])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0xE61D)
-							end }
-return llll1I1l[I1IIlI1l(_KKA[1028])]
-				end });
-lII1I11l(Ill1I11l / IIIIlI1l(0x9F4A), 0x7)
-II11lI1l = IllII11l(IIIIlI1l(0x9FE1), lll1I11l, { [IIIIlI1l(0x9F93)] = UDim2[I1IIlI1l(_KKA[959])](0B1, -28, 0B1, 0B0), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x18, 0B0, 0B0), [IIIIlI1l(0x9F94)] = 0B1, [IIIIlI1l(0x9F14)] = l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[1029]), I1IIlI1l(_KKA[1030]), I1IIlI1l(_KKA[1031]) } }), [IIIIlI1l(0x9FA4)] = IllIlI1l[I1IIlI1l(_KKA[827])], [IIIIlI1l(0x9F69)] = Enum[I1IIlI1l(_KKA[996])][IIIIlI1l(0x9FA9)], [IIIIlI1l(0x9F98)] = ll1II11l and 0xA or 0xB, [l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[1000]), I1IIlI1l(_KKA[1002]), I1IIlI1l(_KKA[1001]) } })] = Enum[IIIIlI1l(0x9F3D)][IIIIlI1l(0xA00D)], [IIIIlI1l(0x9F90)] = 0x4 });
-local lIIlI11l = IllII11l(IIIIlI1l(0x9F96), IlI1I11l, { [IIIIlI1l(0x9F93)] = UDim2[I1IIlI1l(_KKA[959])](0B1, 0B0, 0B0, I1lII11l), [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1032]), I1IIlI1l(_KKA[788]) } })] = UDim2[I1IIlI1l(_KKA[959])](0B0, 0B0, 0B0, IIlII11l + l1lII11l), [IIIIlI1l(0x9F9A)] = Color3[IIIIlI1l(0x9FF0)](0xF, 0xF, 0x18), [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0B11 });
-local IIIlI11l = IllII11l(I1IIlI1l(_KKA[980]), IlI1I11l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B1, -lllII11l), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0B0, 0B0, lllII11l), [l1IIlI1l({ 0x4, 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[1033]), I1IIlI1l(_KKA[863]), I1IIlI1l(_KKA[1034]), I1IIlI1l(_KKA[1035]) } })] = 0B1, [IIIIlI1l(0x9FEE)] = true, [I1IIlI1l(_KKA[973])] = 0B11 });
-local l1IlI11l = {};
-local I1IlI11l = {};
-local llIlI11l = { IIIIlI1l(0x9F62), IIIIlI1l(0x9FFD), IIIIlI1l(0x9F87) };
-local IlIlI11l = math[IIIIlI1l(0x9F53)](Il1II11l / #llIlI11l);
-local function lI1lI11l(llll1I1l, ...)
-local lIIIlI1l = { [I1IIlI1l(_KKA[864])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x16F7)
-					end, [I1IIlI1l(_KKA[1036])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0x14FE)
-					end, [I1IIlI1l(_KKA[958])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x20B4)
-					end, [I1IIlI1l(_KKA[870])] = function(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l)
-return IIIIlI1l(llIIlI1l + 0x51FD)
-					end };
-local Illl1I1l = IllII11l(lIIIlI1l[I1IIlI1l(_KKA[1036])](0x8863, 0x8BC4, 0x8988, 0x8A2F), IIIlI11l, { [lIIIlI1l[I1IIlI1l(_KKA[864])](0xB3CA, 0xB68E, 0xB9A5, 0xB5F4)] = llll1I1l, [lIIIlI1l[I1IIlI1l(_KKA[864])](0xB72A, 0xB673, 0xB595, 0xB68A)] = UDim2[lIIIlI1l[I1IIlI1l(_KKA[958])](0x7BDB, 0x7E01, 0x7EDA, 0x7E97)](0B1, 0B0, 0B1, 0B0), [lIIIlI1l[I1IIlI1l(_KKA[870])](0x4FB7, 0x4F3F, 0x4F59, 0x4D97)] = 0B1, [lIIIlI1l[I1IIlI1l(_KKA[1036])](0x8E5D, 0x8944, 0x88B1, 0x8AF4)] = 0B0, [l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[1037]), I1IIlI1l(_KKA[1038]), I1IIlI1l(_KKA[1039]) } })] = 0B11, [lIIIlI1l[I1IIlI1l(_KKA[1036])](0x8971, 0x8DF9, 0x8AB3, 0x8AEA)] = IllIlI1l[lIIIlI1l[I1IIlI1l(_KKA[870])](0x4DA5, 0x4A6B, 0x4A09, 0x4D9C)], [lIIIlI1l[I1IIlI1l(_KKA[870])](0x4D0A, 0x5148, 0x4FA8, 0x4E46)] = UDim2[I1IIlI1l(_KKA[959])](0B0, 0B0, 0B0, 0B0), [lIIIlI1l[I1IIlI1l(_KKA[864])](0xB842, 0xB99A, 0xB423, 0xB62E)] = Enum[lIIIlI1l[I1IIlI1l(_KKA[864])](0xB3E5, 0xB497, 0xB932, 0xB684)][lIIIlI1l[I1IIlI1l(_KKA[1036])](0x892D, 0x8EDE, 0x8EED, 0x8B00)], [lIIIlI1l[I1IIlI1l(_KKA[864])](0xB2C7, 0xB5CD, 0xB879, 0xB66C)] = false, [lIIIlI1l[I1IIlI1l(_KKA[864])](0xB94A, 0xB380, 0xBA71, 0xB687)] = 0B11 });
-IllII11l(lIIIlI1l[I1IIlI1l(_KKA[1036])](0x8E67, 0x890F, 0x8B02, 0x8A88), Illl1I1l, { [lIIIlI1l[I1IIlI1l(_KKA[1036])](0x8B74, 0x885D, 0x8D5F, 0x8A29)] = Enum[lIIIlI1l[I1IIlI1l(_KKA[958])](0x809F, 0x817A, 0x7E73, 0x7F6E)][l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1040]), I1IIlI1l(_KKA[1041]) } })], [lIIIlI1l[I1IIlI1l(_KKA[870])](0x4F58, 0x505C, 0x4AEF, 0x4D38)] = UDim[I1IIlI1l(_KKA[959])](0B0, 0x7) });
-IllII11l(lIIIlI1l[I1IIlI1l(_KKA[958])](0x8082, 0x8180, 0x7F95, 0x7D4B), Illl1I1l, { [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1042]), I1IIlI1l(_KKA[1043]) } })] = UDim[lIIIlI1l[I1IIlI1l(_KKA[1036])](0x8B5F, 0x8E24, 0x86B0, 0x8A90)](0B0, 0xA), [lIIIlI1l[I1IIlI1l(_KKA[864])](0xB602, 0xBACB, 0xB363, 0xB737)] = UDim[I1IIlI1l(_KKA[959])](0B0, 0xA), [lIIIlI1l[I1IIlI1l(_KKA[864])](0xB347, 0xB6ED, 0xB808, 0xB735)] = UDim[lIIIlI1l[I1IIlI1l(_KKA[864])](0xB3B1, 0xB3D7, 0xB750, 0xB685)](0B0, 0B1001), [lIIIlI1l[I1IIlI1l(_KKA[1036])](0x8CDE, 0x8C96, 0x8D5F, 0x8ADB)] = UDim[lIIIlI1l[I1IIlI1l(_KKA[870])](0x50C4, 0x4C9D, 0x4D47, 0x4D91)](0B0, 0xA) });
-l1IlI11l[llll1I1l] = Illl1I1l
-return Illl1I1l
-		end
-local II1lI11l = llll1I1l({ [IIIIlI1l(0x9F28)] = function(Illl1I1l, ...)
-for llll1I1l, lIIIlI1l in pairs(l1IlI11l) do
-lIIIlI1l[IIIIlI1l(0x9F75)] = llll1I1l == Illl1I1l
-					end
-for lIIIlI1l, llIIlI1l in pairs(I1IlI11l) do
-local IlIIlI1l = llll1I1l({ [IIIIlI1l(0x9F29)] = lIIIlI1l == Illl1I1l }, { [I1IIlI1l(_KKA[842])] = function(llll1I1l, Illl1I1l)
-llll1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[829]), I1IIlI1l(_KKA[1044]) } })] = Illl1I1l
-								end, [IIIIlI1l(0x9F06)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[I1IIlI1l(_KKA[1045])]
-								end });
-llIIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1046]), I1IIlI1l(_KKA[1047]) } })] = IlIIlI1l .. IIIIlI1l(0xA020) and IllIlI1l[IIIIlI1l(0x9F16)] or IllIlI1l[IIIIlI1l(0x9F01)]
-llIIlI1l[IIIIlI1l(0x9F9A)] = IlIIlI1l .. IIIIlI1l(0x9EF8) and IllIlI1l[IIIIlI1l(0x9FF5)] or Color3[IIIIlI1l(0x9FF0)](0xF, 0xF, 0x18);
-llIIlI1l[IIIIlI1l(0x9F02)][l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[1035]), I1IIlI1l(_KKA[1048]), I1IIlI1l(_KKA[1049]) } })] = IlIIlI1l .. IIIIlI1l(0x9FA3) and 0B0 or 0B1
-					end
-				end }, { [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[1050])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l + 0xD70F)
-							end, [I1IIlI1l(_KKA[870])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0xDD9D)
-							end, [I1IIlI1l(_KKA[1007])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0xA77E)
-							end, [I1IIlI1l(_KKA[824])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x9D49)
-							end };
-llll1I1l[lIIIlI1l[I1IIlI1l(_KKA[824])](0x142, 0x28F, 0x1DF, -424)] = Illl1I1l
-				end, [IIIIlI1l(0xA030)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[I1IIlI1l(_KKA[1051])]
-				end })
-for llll1I1l, Illl1I1l in ipairs(llIlI11l) do
-local lIIIlI1l = IllII11l(IIIIlI1l(0x9FE3), lIIlI11l, { [I1IIlI1l(_KKA[850])] = Illl1I1l, [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9FD6)](IlIlI11l, I1lII11l), [IIIIlI1l(0x9F6D)] = UDim2[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1052]), I1IIlI1l(_KKA[894]) } })]((llll1I1l - 0B1) * IlIlI11l, 0B0), [IIIIlI1l(0x9F9A)] = Color3[IIIIlI1l(0x9FF0)](0xF, 0xF, 0x18), [IIIIlI1l(0xA04C)] = false, [IIIIlI1l(0x9F14)] = Illl1I1l, [IIIIlI1l(0x9FA4)] = IllIlI1l[I1IIlI1l(_KKA[827])], [IIIIlI1l(0x9F69)] = Enum[I1IIlI1l(_KKA[996])][IIIIlI1l(0x9FAC)], [IIIIlI1l(0x9F98)] = ll1II11l and 0xB or 0xC, [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x4 });
-local llIIlI1l = IllII11l(IIIIlI1l(0x9F96), lIIIlI1l, { [IIIIlI1l(0x9EFD)] = l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1053]), I1IIlI1l(_KKA[1054]) } }), [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, -18, 0B0, 0B10), [IIIIlI1l(0x9F6D)] = UDim2[I1IIlI1l(_KKA[959])](0B0, 0x9, 0B1, -0B11), [l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[1055]), I1IIlI1l(_KKA[1056]), I1IIlI1l(_KKA[1057]) } })] = IllIlI1l[IIIIlI1l(0x9F99)], [l1IIlI1l({ 0B10, 0B11, 0x4, 0B1, { I1IIlI1l(_KKA[1026]), I1IIlI1l(_KKA[1058]), I1IIlI1l(_KKA[1059]), I1IIlI1l(_KKA[1060]) } })] = 0B1, [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x5 });
-lII1I11l(llIIlI1l, 0B10);
-I1IlI11l[Illl1I1l] = lIIIlI1l
-lI1lI11l(Illl1I1l);
-lIIIlI1l[IIIIlI1l(0x9F8A)]:Connect(function(...)
-(II1lI11l - I1IIlI1l(_KKA[1061]))(Illl1I1l)
-			end)
-		end
-local l11lI11l = llll1I1l({ [I1IIlI1l(_KKA[1062])] = function(llll1I1l, Illl1I1l, lIIIlI1l, ...)
-return IllII11l(IIIIlI1l(0x9FE1), llll1I1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B0, 0x18), [IIIIlI1l(0x9F94)] = 0B1, [IIIIlI1l(0x9F14)] = Illl1I1l, [IIIIlI1l(0x9FA4)] = IllIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1063]), I1IIlI1l(_KKA[1064]) } })], [I1IIlI1l(_KKA[996])] = Enum[IIIIlI1l(0x9F69)][IIIIlI1l(0x9FAC)], [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1065]), I1IIlI1l(_KKA[1066]) } })] = ll1II11l and 0xB or 0xC, [IIIIlI1l(0x9F3D)] = Enum[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1067]), I1IIlI1l(_KKA[1002]) } })][IIIIlI1l(0xA00D)], [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1068]), I1IIlI1l(_KKA[1069]) } })] = lIIIlI1l, [I1IIlI1l(_KKA[973])] = 0x4 })
-				end }, { [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9F1D)] = Illl1I1l
-				end, [IIIIlI1l(0xA015)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[1070])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x7143)
-							end, [I1IIlI1l(_KKA[816])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0xAAB4)
-							end, [I1IIlI1l(_KKA[1071])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0xA5BD)
-							end, [I1IIlI1l(_KKA[823])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0xDA07)
-							end }
-return rawget(llll1I1l, lIIIlI1l[I1IIlI1l(_KKA[1070])](69728, 68801, 70366, 69144))
-				end });
-local I11lI11l = llll1I1l({ [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[1072]) } })] = function(Illl1I1l, lIIIlI1l, llIIlI1l, IlIIlI1l, lI1IlI1l, l11IlI1l, ...)
-local I11IlI1l = IllII11l(IIIIlI1l(0x9F96), Illl1I1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B0, 0x3A), [IIIIlI1l(0x9F9A)] = IllIlI1l[I1IIlI1l(_KKA[1073])], [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0xA051)] = IlIIlI1l, [IIIIlI1l(0x9F90)] = 0x4 });
-lII1I11l(I11IlI1l, 0x9);
-local ll1IlI1l = III1I11l(I11IlI1l, IllIlI1l[IIIIlI1l(0x9FA2)], 0B1, .15);
-IllII11l(I1IIlI1l(_KKA[980]), I11IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x5, 0B1, -14), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x9, 0B0, 0x7), [l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[1019]), I1IIlI1l(_KKA[1020]), I1IIlI1l(_KKA[1018]) } })] = IllIlI1l[I1IIlI1l(_KKA[990])], [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1074]), I1IIlI1l(_KKA[1075]) } })] = 0B0, [IIIIlI1l(0x9F90)] = 0x5 });
-IllII11l(IIIIlI1l(0x9FE1), I11IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[I1IIlI1l(_KKA[959])](0B1, -100, 0B0, 0x19), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x18, 0B0, 0x7), [IIIIlI1l(0x9F94)] = 0B1, [I1IIlI1l(_KKA[786])] = lIIIlI1l, [IIIIlI1l(0x9FA4)] = IllIlI1l[I1IIlI1l(_KKA[1014])], [IIIIlI1l(0x9F69)] = Enum[IIIIlI1l(0x9F69)][IIIIlI1l(0x9FAC)], [IIIIlI1l(0x9F98)] = ll1II11l and 0B1101 or 0xE, [IIIIlI1l(0x9F3D)] = Enum[IIIIlI1l(0x9F3D)][IIIIlI1l(0xA00D)], [I1IIlI1l(_KKA[973])] = 0x5 });
-IllII11l(l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1076]), I1IIlI1l(_KKA[1077]) } }), I11IlI1l, { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9F8E)](0B1, -100, 0B0, 0x11), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x18, 0B0, 0x21), [IIIIlI1l(0x9F94)] = 0B1, [IIIIlI1l(0x9F14)] = llIIlI1l, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1012]), I1IIlI1l(_KKA[1013]) } })] = IllIlI1l[IIIIlI1l(0x9F01)], [IIIIlI1l(0x9F69)] = Enum[I1IIlI1l(_KKA[996])][I1IIlI1l(_KKA[1078])], [IIIIlI1l(0x9F98)] = ll1II11l and 0x9 or 0B1010, [IIIIlI1l(0x9F3D)] = Enum[l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[404]), I1IIlI1l(_KKA[1079]), I1IIlI1l(_KKA[1080]) } })][IIIIlI1l(0xA00D)], [I1IIlI1l(_KKA[973])] = 0x5 });
-local Il1IlI1l = IllII11l(I1IIlI1l(_KKA[980]), I11IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9FD6)](0x36, 0x19), [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1081]), I1IIlI1l(_KKA[1082]) } })] = UDim2[IIIIlI1l(0x9F8E)](0B1, -67, .5, -12), [IIIIlI1l(0x9F9A)] = Color3[I1IIlI1l(_KKA[806])](0x2F, 0x2E, 0x3D), [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x5 });
-lII1I11l(Il1IlI1l, 0x14);
-local lIlIlI1l = llll1I1l({ [IIIIlI1l(0xA02F)] = IllII11l(I1IIlI1l(_KKA[980]), Il1IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1083]), I1IIlI1l(_KKA[1084]) } })](0x11, 0x11), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x4, .5, -8), [l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[1058]), I1IIlI1l(_KKA[1085]), I1IIlI1l(_KKA[1055]) } })] = IllIlI1l[IIIIlI1l(0x9F01)], [l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[1086]), I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[984]) } })] = 0B0, [I1IIlI1l(_KKA[973])] = 0B110 }) }, { [IIIIlI1l(0xA015)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA02F)] = Illl1I1l
-							end, [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-local lIIIlI1l = { [I1IIlI1l(_KKA[1087])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0xDD52)
-										end, [I1IIlI1l(_KKA[835])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x4933)
-										end, [I1IIlI1l(_KKA[817])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x85D7)
-										end, [I1IIlI1l(_KKA[821])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0x57A9)
+local lIlIlI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-5997)] = {} }, { [I1lIlI1llI1(-6089)] = function(ll1IlI1llI1, IIlIlI1llI1)
+local lIlIlI1llI1 = { [IllIlI1llI1(_KNS[670])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 + 0x61A5)
+										end, [IllIlI1llI1(_KNS[671])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 - 0xA8)
+										end, [IllIlI1llI1(_KNS[672])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0x64EC)
+										end, [IllIlI1llI1(_KNS[673])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, lllIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0x2ED2)
+										end };
+ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[674]), IllIlI1llI1(_KNS[675]) } })] = IIlIlI1llI1
+							end, [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+local lIlIlI1llI1 = { [IllIlI1llI1(_KNS[676])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 + 0x38F0)
+										end, [IllIlI1llI1(_KNS[677])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 + 0xAB76)
+										end, [IllIlI1llI1(_KNS[673])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 + 0x3DFF)
+										end, [IllIlI1llI1(_KNS[678])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 + 0x7043)
 										end }
-return rawget(llll1I1l, lIIIlI1l[I1IIlI1l(_KKA[835])](0x5388, 0x532D, 0x56FC, 0x5A92))
+return ll1IlI1llI1[lIlIlI1llI1[IllIlI1llI1(_KNS[676])](-20009, -20573, -20791, -20480)]
 							end });
-lII1I11l(lIlIlI1l ^ IIIIlI1l(0xA01D), 0x14);
-local IIlIlI1l = IllII11l(IIIIlI1l(0x9FE3), I11IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[I1IIlI1l(_KKA[959])](0B1, 0B0, 0B1, 0B0), [l1IIlI1l({ 0B11, 0B10, 0x4, 0B1, { I1IIlI1l(_KKA[856]), I1IIlI1l(_KKA[1088]), I1IIlI1l(_KKA[1035]), I1IIlI1l(_KKA[1089]) } })] = 0B1, [I1IIlI1l(_KKA[786])] = IIIIlI1l(0x9F18), [l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[1090]), I1IIlI1l(_KKA[1091]), I1IIlI1l(_KKA[1092]) } })] = false, [l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[1093]), I1IIlI1l(_KKA[1094]), I1IIlI1l(_KKA[1095]) } })] = 0B0, [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1004]), I1IIlI1l(_KKA[1003]) } })] = 0x8 });
-local l1lIlI1l = lI1IlI1l and true or false
-local I1lIlI1l = false
-local function lllIlI1l(llll1I1l, ...)
-local Illl1I1l = TweenInfo[IIIIlI1l(0x9F8E)](llll1I1l and 0B0 or .15, Enum[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1096]), I1IIlI1l(_KKA[1097]) } })][I1IIlI1l(_KKA[1098])]);
-(II1IlI1l:Create(I11IlI1l, Illl1I1l, { [IIIIlI1l(0x9F9A)] = l1lIlI1l and Color3[IIIIlI1l(0x9FF0)](0x28, 0x1F, 0x16) or IllIlI1l[IIIIlI1l(0x9FD0)] })):Play();
-(II1IlI1l:Create(ll1IlI1l, Illl1I1l, { [IIIIlI1l(0xA01A)] = l1lIlI1l and IllIlI1l[IIIIlI1l(0x9F99)] or IllIlI1l[I1IIlI1l(_KKA[1099])], [IIIIlI1l(0x9F0B)] = l1lIlI1l and 0B0 or .15 })):Play();
-(II1IlI1l:Create(Il1IlI1l, Illl1I1l, { [IIIIlI1l(0x9F9A)] = l1lIlI1l and Color3[IIIIlI1l(0x9FF0)](0x6F, 0x4D, 0x12) or Color3[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1100]), I1IIlI1l(_KKA[186]) } })](0x2F, 0x2E, 0x3D) })):Play();
-(II1IlI1l:Create(lIlIlI1l ^ l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1101]), I1IIlI1l(_KKA[847]) } }), Illl1I1l, { [IIIIlI1l(0x9F6D)] = l1lIlI1l and UDim2[IIIIlI1l(0x9F8E)](0B1, -21, .5, -8) or UDim2[IIIIlI1l(0x9F8E)](0B0, 0x4, .5, -8), [IIIIlI1l(0x9F9A)] = l1lIlI1l and IllIlI1l[IIIIlI1l(0x9F16)] or IllIlI1l[I1IIlI1l(_KKA[827])] })):Play()
+local lllIlI1llI1 = {}
+for ll1IlI1llI1, IIlIlI1llI1 in ipairs(IIlIlI1llI1:GetDescendants()) do
+if IIlIlI1llI1:IsA(I1lIlI1llI1(-6196)) or IIlIlI1llI1:IsA(I1lIlI1llI1(-6111)) or IIlIlI1llI1:IsA(I1lIlI1llI1(-6121)) then
+(lIlIlI1llI1 * I1lIlI1llI1(-6185))[IIlIlI1llI1] = IIlIlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[679]), IllIlI1llI1(_KNS[680]) } })]
+						elseif IIlIlI1llI1:IsA(I1lIlI1llI1(-6056)) then
+lllIlI1llI1[IIlIlI1llI1] = IIlIlI1llI1[I1lIlI1llI1(-6131)]
+						end
 					end
-local function lII1lI1l(llll1I1l, Illl1I1l, ...)
-llll1I1l = llll1I1l and true or false
-if l1lIlI1l == llll1I1l then
-return true
-						end
-if not Illl1I1l and (l11IlI1l and l11IlI1l(llll1I1l) == false) then
-return false
-						end
-l1lIlI1l = llll1I1l
-lllIlI1l(false)
-return true
-					end
-IIlIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1102]), I1IIlI1l(_KKA[1103]) } })]:Connect(function(...)
-if I1lIlI1l then
-return
-						end
-I1lIlI1l = true
-lII1lI1l(not l1lIlI1l, false);
-task[IIIIlI1l(0x9F40)](.2, function(...)
-I1lIlI1l = false
-						end)
-					end);
-lllIlI1l(true)
-return lII1lI1l
-				end }, { [IIIIlI1l(0xA030)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9FB6)] = Illl1I1l
-				end, [IIIIlI1l(0xA015)] = function(llll1I1l, Illl1I1l)
-return rawget(llll1I1l, I1IIlI1l(_KKA[1104]))
+local III1lI1llI1 = IIlIlI1llI1:FindFirstChild(l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[681]), IllIlI1llI1(_KNS[682]) } }));
+lIl1lI1llI1[IIlIlI1llI1] = { [IllIlI1llI1(_KNS[683])] = IIlIlI1llI1[IllIlI1llI1(_KNS[684])], [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[685]), IllIlI1llI1(_KNS[686]) } })] = IIlIlI1llI1[I1lIlI1llI1(-6010)], [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[687]), IllIlI1llI1(_KNS[688]) } })] = IIlIlI1llI1[I1lIlI1llI1(-6256)], [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[689]), IllIlI1llI1(_KNS[690]) } })] = IIlIlI1llI1[I1lIlI1llI1(-6054)], [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[691]), IllIlI1llI1(_KNS[692]) } })] = III1lI1llI1 and III1lI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[693]), IllIlI1llI1(_KNS[686]) } })], [I1lIlI1llI1(-6233)] = lIlIlI1llI1 * I1lIlI1llI1(-6151), [I1lIlI1llI1(-6095)] = lllIlI1llI1 }
+				end }, { [I1lIlI1llI1(-6089)] = function(ll1IlI1llI1, IIlIlI1llI1)
+local lIlIlI1llI1 = { [IllIlI1llI1(_KNS[694])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 - 0x4124)
+							end, [IllIlI1llI1(_KNS[695])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 - 0xBDEA)
+							end, [IllIlI1llI1(_KNS[677])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 - 0x8BD7)
+							end, [IllIlI1llI1(_KNS[696])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0xC4B4)
+							end };
+ll1IlI1llI1[lIlIlI1llI1[IllIlI1llI1(_KNS[694])](0x2C4B, 0x2B91, 0x2917, 0x2CD6)] = IIlIlI1llI1
+				end, [IllIlI1llI1(_KNS[642])] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[697]) } })]
 				end });
-local function ll1lI11l(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l, IlIIlI1l, ...)
-local lI1IlI1l = IllII11l(l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1105]), I1IIlI1l(_KKA[788]) } }), llll1I1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B0, 0x32), [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0x9FD0)], [IIIIlI1l(0xA04C)] = false, [I1IIlI1l(_KKA[786])] = Illl1I1l, [IIIIlI1l(0x9FA4)] = IllIlI1l[I1IIlI1l(_KKA[1014])], [IIIIlI1l(0x9FBE)] = IllIlI1l[I1IIlI1l(_KKA[975])], [IIIIlI1l(0x9EFE)] = .3, [IIIIlI1l(0x9F69)] = Enum[IIIIlI1l(0x9F69)][l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1016]), I1IIlI1l(_KKA[1015]) } })], [IIIIlI1l(0x9F98)] = ll1II11l and 0xD or 0xE, [IIIIlI1l(0x9FF2)] = 0B0, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1106]), I1IIlI1l(_KKA[1107]) } })] = lIIIlI1l, [I1IIlI1l(_KKA[973])] = 0x4 });
-lII1I11l(lI1IlI1l, 0x9);
-local l11IlI1l = III1I11l(lI1IlI1l, IllIlI1l[IIIIlI1l(0x9FA2)], 0B1, .12);
-IllII11l(IIIIlI1l(0x9F96), lI1IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x5, 0B1, -14), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0x9, 0B0, 0x7), [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[982]), I1IIlI1l(_KKA[981]) } })] = IlIIlI1l or IllIlI1l[IIIIlI1l(0x9F99)], [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x5 });
-local I11IlI1l = false
-lI1IlI1l[IIIIlI1l(0xA009)]:Connect(function(...)
-(II1IlI1l:Create(lI1IlI1l, TweenInfo[I1IIlI1l(_KKA[959])](.12), { [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0xA00C)] })):Play();
-(II1IlI1l:Create(l11IlI1l, TweenInfo[I1IIlI1l(_KKA[959])](.12), { [IIIIlI1l(0xA01A)] = IlIIlI1l or IllIlI1l[IIIIlI1l(0x9F99)] })):Play()
-			end);
-lI1IlI1l[IIIIlI1l(0x9FFF)]:Connect(function(...)
-(II1IlI1l:Create(lI1IlI1l, TweenInfo[I1IIlI1l(_KKA[959])](.12), { [l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[1035]), I1IIlI1l(_KKA[1108]), I1IIlI1l(_KKA[1055]) } })] = IllIlI1l[IIIIlI1l(0x9FD0)] })):Play();
-(II1IlI1l:Create(l11IlI1l, TweenInfo[I1IIlI1l(_KKA[959])](.12), { [IIIIlI1l(0xA01A)] = IllIlI1l[IIIIlI1l(0x9FA2)] })):Play()
-			end);
-lI1IlI1l[IIIIlI1l(0x9F8A)]:Connect(function(...)
-if I11IlI1l then
-return
-				end
-I11IlI1l = true
-if llIIlI1l then
-llIIlI1l(lI1IlI1l)
-				end
-task[I1IIlI1l(_KKA[1109])](.25, function(...)
-I11IlI1l = false
-				end)
-			end)
-return lI1IlI1l
-		end
-local function Il1lI11l(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l, IlIIlI1l, lI1IlI1l, ...)
-local II1IlI1l = IllII11l(I1IIlI1l(_KKA[980]), llll1I1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B0, 0x42), [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0x9FD0)], [l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[1110]), I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[1074]) } })] = 0B0, [IIIIlI1l(0xA051)] = lIIIlI1l, [IIIIlI1l(0x9F90)] = 0B100 });
-lII1I11l(II1IlI1l, 0x9);
-III1I11l(II1IlI1l, IllIlI1l[IIIIlI1l(0x9FA2)], 0B1, .15);
-IllII11l(IIIIlI1l(0x9FE1), II1IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9F8E)](0B1, -20, 0B0, 0x16), [I1IIlI1l(_KKA[995])] = UDim2[IIIIlI1l(0x9F8E)](0B0, 0xC, 0B0, 0x5), [IIIIlI1l(0x9F94)] = 0B1, [IIIIlI1l(0x9F14)] = Illl1I1l, [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1111]), I1IIlI1l(_KKA[1019]) } })] = IllIlI1l[IIIIlI1l(0x9F16)], [I1IIlI1l(_KKA[996])] = Enum[I1IIlI1l(_KKA[996])][l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1112]), I1IIlI1l(_KKA[1113]) } })], [IIIIlI1l(0x9F98)] = 0xB, [IIIIlI1l(0x9F3D)] = Enum[IIIIlI1l(0x9F3D)][IIIIlI1l(0xA00D)], [IIIIlI1l(0x9F90)] = 0x5 });
-local l11IlI1l = IllII11l(IIIIlI1l(0x9FE1), II1IlI1l, { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9F8E)](0B1, -90, 0B0, 0x1C), [IIIIlI1l(0x9F6D)] = UDim2[I1IIlI1l(_KKA[959])](0B0, 0x2D, 0B0, 0x1E), [IIIIlI1l(0x9F94)] = 0B1, [IIIIlI1l(0x9F14)] = IIIIlI1l(0x9F89), [IIIIlI1l(0x9FA4)] = IllIlI1l[IIIIlI1l(0xA017)], [IIIIlI1l(0x9F69)] = Enum[I1IIlI1l(_KKA[996])][IIIIlI1l(0x9FA9)], [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[796]), I1IIlI1l(_KKA[1114]) } })] = ll1II11l and 0xC or 0xD, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1067]), I1IIlI1l(_KKA[1002]) } })] = Enum[IIIIlI1l(0x9F3D)][IIIIlI1l(0xA054)], [IIIIlI1l(0x9F90)] = 0x5 });
-local I11IlI1l = IllII11l(IIIIlI1l(0x9FE3), II1IlI1l, { [I1IIlI1l(_KKA[860])] = UDim2[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[404]), I1IIlI1l(_KKA[1115]) } })](0x1E, 0x1C), [IIIIlI1l(0x9F6D)] = UDim2[I1IIlI1l(_KKA[959])](0B0, 0xA, 0B0, 0x1E), [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0x9FF5)], [IIIIlI1l(0x9F14)] = IIIIlI1l(0x9F59), [IIIIlI1l(0x9FA4)] = IllIlI1l[I1IIlI1l(_KKA[990])], [I1IIlI1l(_KKA[996])] = Enum[IIIIlI1l(0x9F69)][IIIIlI1l(0x9FAC)], [IIIIlI1l(0x9F98)] = 0xF, [l1IIlI1l({ 0B10, 0B11, 0B1, { I1IIlI1l(_KKA[1116]), I1IIlI1l(_KKA[1095]), I1IIlI1l(_KKA[1117]) } })] = 0B0, [IIIIlI1l(0x9F90)] = 0x6 });
-local ll1IlI1l = IllII11l(l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1082]), I1IIlI1l(_KKA[1118]) } }), II1IlI1l, { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9FD6)](0x1E, 0x1C), [IIIIlI1l(0x9F6D)] = UDim2[IIIIlI1l(0x9F8E)](0B1, -40, 0B0, 0x1E), [IIIIlI1l(0x9F9A)] = IllIlI1l[IIIIlI1l(0x9FF5)], [IIIIlI1l(0x9F14)] = IIIIlI1l(0x9F5C), [IIIIlI1l(0x9FA4)] = IllIlI1l[IIIIlI1l(0x9F99)], [I1IIlI1l(_KKA[996])] = Enum[I1IIlI1l(_KKA[996])][l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1119]), I1IIlI1l(_KKA[1120]) } })], [IIIIlI1l(0x9F98)] = 0xF, [IIIIlI1l(0x9FF2)] = 0B0, [IIIIlI1l(0x9F90)] = 0x6 });
-lII1I11l(I11IlI1l, 0x7);
-lII1I11l(ll1IlI1l, 0x7);
-local Il1IlI1l = llIIlI1l or {};
-local lIlIlI1l = IlIIlI1l or 0B1
-local function IIlIlI1l(...)
-if #Il1IlI1l == 0B0 then
-lIlIlI1l = 0B0
-l11IlI1l[I1IIlI1l(_KKA[786])] = IIIIlI1l(0x9EF1)
-return
-				end
-lIlIlI1l = math[IIIIlI1l(0xA010)](lIlIlI1l, 0B1, #Il1IlI1l);
-l11IlI1l[IIIIlI1l(0x9F14)] = tostring(Il1IlI1l[lIlIlI1l])
-			end
-local function l1lIlI1l(llll1I1l, ...)
-local Illl1I1l = { [I1IIlI1l(_KKA[1036])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x20DF)
-						end, [I1IIlI1l(_KKA[831])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0xC609)
-						end, [I1IIlI1l(_KKA[820])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l + 0xCB56)
-						end, [I1IIlI1l(_KKA[871])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l + 0xD2D5)
-						end }
-if #Il1IlI1l == 0B0 then
-return
-				end
-lIlIlI1l = lIlIlI1l + llll1I1l
-if lIlIlI1l < 0B1 then
-lIlIlI1l = #Il1IlI1l
-				elseif lIlIlI1l > #Il1IlI1l then
-lIlIlI1l = 0B1
-				end
-IIlIlI1l()
-if lI1IlI1l then
-lI1IlI1l(lIlIlI1l, Il1IlI1l[lIlIlI1l])
-				end
-			end
-I11IlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1121]), I1IIlI1l(_KKA[1122]) } })]:Connect(function(...)
-l1lIlI1l(-0B1)
-			end);
-ll1IlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1122]), I1IIlI1l(_KKA[1121]) } })]:Connect(function(...)
-l1lIlI1l(0B1)
-			end);
-IIlIlI1l()
-return { [l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1123]), I1IIlI1l(_KKA[742]) } })] = function(llll1I1l, Illl1I1l, ...)
-Il1IlI1l = llll1I1l or {}
-lIlIlI1l = Illl1I1l or math[IIIIlI1l(0x9F85)](math[IIIIlI1l(0x9FF8)](lIlIlI1l, 0B1), math[IIIIlI1l(0x9FF8)](#Il1IlI1l, 0B1));
-IIlIlI1l()
-				end, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1003]), I1IIlI1l(_KKA[1124]) } })] = function(llll1I1l, Illl1I1l, ...)
-lIlIlI1l = llll1I1l or 0B1
-IIlIlI1l()
-if not Illl1I1l and (lI1IlI1l and Il1IlI1l[lIlIlI1l]) then
-lI1IlI1l(lIlIlI1l, Il1IlI1l[lIlIlI1l])
+local lI1llI1llI1 = ll1IlI1llI1({ [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[698]), IllIlI1llI1(_KNS[699]) } })] = function(ll1IlI1llI1, IIlIlI1llI1, ...)
+(II1llI1llI1 - I1lIlI1llI1(-6113))(ll1IlI1llI1);
+ll1IlI1llI1[I1lIlI1llI1(-6224)] = Vector3[I1lIlI1llI1(-6191)](0B10, 0B1, 0B1);
+ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[700]), IllIlI1llI1(_KNS[701]) } })] = 0B1
+ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[702]), IllIlI1llI1(_KNS[703]) } })] = false
+ll1IlI1llI1[IllIlI1llI1(_KNS[704])] = IIlIlI1llI1[IllIlI1llI1(_KNS[704])]
+local lIlIlI1llI1 = ll1IlI1llI1:FindFirstChild(IllIlI1llI1(_KNS[705]))
+if lIlIlI1llI1 then
+lIlIlI1llI1[I1lIlI1llI1(-6010)] = IIlIlI1llI1[IllIlI1llI1(_KNS[704])]
 					end
-				end, [IIIIlI1l(0x9F0C)] = function(...)
-return lIlIlI1l
-				end }
-		end
-local function lIllI11l(llll1I1l, Illl1I1l, lIIIlI1l, ...)
-local llIIlI1l = IllII11l(I1IIlI1l(_KKA[1125]), llll1I1l, { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9F8E)](0B1, 0B0, 0B0, 0x3C), [IIIIlI1l(0x9F9A)] = Color3[IIIIlI1l(0x9FF0)](0xE, 0xE, 0x17), [l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[1074]), I1IIlI1l(_KKA[983]), I1IIlI1l(_KKA[1126]) } })] = 0B0, [IIIIlI1l(0x9F14)] = lIIIlI1l, [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1055]), I1IIlI1l(_KKA[1127]) } })] = IllIlI1l[IIIIlI1l(0x9F01)], [IIIIlI1l(0x9F69)] = Enum[IIIIlI1l(0x9F69)][IIIIlI1l(0x9FA9)], [IIIIlI1l(0x9F98)] = ll1II11l and 0xA or 0xB, [IIIIlI1l(0x9FCA)] = true, [IIIIlI1l(0xA051)] = Illl1I1l, [I1IIlI1l(_KKA[973])] = 0x4 });
-lII1I11l(llIIlI1l, 0x9);
-III1I11l(llIIlI1l, IllIlI1l[IIIIlI1l(0x9FA2)], 0B1, .2)
-return llIIlI1l
-		end
-local IIllI11l = l1IlI11l[IIIIlI1l(0x9F62)]
-l11lI11l[IIIIlI1l(0xA003)](IIllI11l, IIIIlI1l(0xA021), 0B1);
-local l1llI11l
-l1llI11l = I11lI11l[IIIIlI1l(0x9F56)](IIllI11l, l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1128]), I1IIlI1l(_KKA[1129]) } }), l1IIlI1l({ 0B1, 0B10, 0B11, 0x4, { I1IIlI1l(_KKA[1130]), I1IIlI1l(_KKA[1131]), I1IIlI1l(_KKA[1132]), I1IIlI1l(_KKA[1133]) } }), 0B10, false, function(llll1I1l, ...)
-if llll1I1l then
-local llll1I1l = IlIII11l()
-if llll1I1l == false then
-return false
-					end
-				else
-lI1II11l()
-				end
-			end);
-I11lI11l[IIIIlI1l(0x9F24)](IIllI11l, IIIIlI1l(0x9FBA), IIIIlI1l(0x9F0D), 0B11, true, function(llll1I1l, ...)
-I1lIlI1l[I1IIlI1l(_KKA[1134])] = llll1I1l
-lIIllI1l(llll1I1l and IIIIlI1l(0x9FDD) or IIIIlI1l(0xA03F), llll1I1l and IllIlI1l[IIIIlI1l(0x9F16)] or IllIlI1l[I1IIlI1l(_KKA[827])])
-		end);
-I11lI11l[I1IIlI1l(_KKA[1135])](IIllI11l, IIIIlI1l(0x9FC1), IIIIlI1l(0xA057), 0B100, true, function(llll1I1l, ...)
-I1lIlI1l[IIIIlI1l(0x9F7B)] = llll1I1l
-if llll1I1l then
-I11llI1l();
-I1lIlI1l[IIIIlI1l(0xA050)] = ll1llI1l()
-if Il11lI1l then
-Il11lI1l()
-				end
-			end
-		end);
-local I1llI11l = llll1I1l({ [IIIIlI1l(0xA04D)] = {} }, { [I1IIlI1l(_KKA[842])] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA04D)] = Illl1I1l
-				end, [IIIIlI1l(0xA015)] = function(llll1I1l, Illl1I1l)
-return rawget(llll1I1l, I1IIlI1l(_KKA[1136]))
-				end })
-for llll1I1l, Illl1I1l in ipairs(lllIlI1l) do
-I1llI11l[IIIIlI1l(0x9F26)][#I1llI11l[IIIIlI1l(0x9FAF)] + 0B1] = Illl1I1l[IIIIlI1l(0x9F45)]
-		end
-local llllI11l = Il1lI11l(IIllI11l, IIIIlI1l(0x9F32), 0x5, I1llI11l[IIIIlI1l(0xA035)], I1lIlI1l[IIIIlI1l(0xA050)], function(llll1I1l, ...)
-if llll1I1l ~= I1lIlI1l[IIIIlI1l(0xA050)] then
-I11llI1l();
-I1lIlI1l[IIIIlI1l(0xA050)] = llll1I1l
-				end
-			end)
-Il11lI1l = function(...)
-llllI11l[IIIIlI1l(0xA00F)](I1lIlI1l[IIIIlI1l(0xA050)], true)
-			end
-l111lI1l = lIllI11l(IIllI11l, 0x6, IIIIlI1l(0x9FEA));
-local IlllI11l = l1IlI11l[IIIIlI1l(0x9FFD)]
-l11lI11l[IIIIlI1l(0x9FCE)](IlllI11l, IIIIlI1l(0x9F39), 0B1);
-local lIII111l = Il1lI11l(IlllI11l, IIIIlI1l(0x9F65), 0B10, llI1lI1l, 0B1, function(llll1I1l, Illl1I1l, ...)
-I1lIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1137]), I1IIlI1l(_KKA[1138]) } })] = Illl1I1l
-			end)
-lIl1lI1l = function(...)
-local Illl1I1l = { [I1IIlI1l(_KKA[1139])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x2E38)
-						end, [I1IIlI1l(_KKA[840])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x1DBF)
-						end, [I1IIlI1l(_KKA[886])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x9725)
-						end, [I1IIlI1l(_KKA[1023])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x8C61)
-						end };
-l1lllI1l();
-local llll1I1l = 0B1
-for Illl1I1l, lIIIlI1l in ipairs(llI1lI1l) do
-if lIIIlI1l == I1lIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[894]), I1IIlI1l(_KKA[895]) } })] then
-llll1I1l = Illl1I1l
-break
-					end
-				end
-lIII111l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1140]), I1IIlI1l(_KKA[1141]) } })](llI1lI1l, llll1I1l)
-			end
-lIl1lI1l();
-I11lI11l[IIIIlI1l(0x9F81)](IlllI11l, l1IIlI1l({ 0B10, 0x4, 0B11, 0B1, { I1IIlI1l(_KKA[1142]), I1IIlI1l(_KKA[1143]), I1IIlI1l(_KKA[1144]), I1IIlI1l(_KKA[1145]) } }), IIIIlI1l(0xA00B), 0B11, true, function(llll1I1l, ...)
-I1lIlI1l[l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[793]), I1IIlI1l(_KKA[791]), I1IIlI1l(_KKA[792]) } })] = llll1I1l
-		end);
-I11lI11l[IIIIlI1l(0x9F49)](IlllI11l, IIIIlI1l(0x9FC2), IIIIlI1l(0xA04A), 0x4, false, function(llll1I1l, ...)
-I1lIlI1l[IIIIlI1l(0x9F33)] = llll1I1l
-II1II11l()
-		end);
-ll1lI11l(IlllI11l, l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1146]), I1IIlI1l(_KKA[1147]) } }), 0x5, function(...)
-I1lIlI1l[IIIIlI1l(0x9F88)] = 0x8
-l1l1lI1l(IIIIlI1l(0x9F1F), function(...)
-lllllI1l(0x8)
-			end)
-		end, IllIlI1l[IIIIlI1l(0x9F99)]);
-ll1lI11l(IlllI11l, l1IIlI1l({ 0B1, 0B11, 0B10, 0x4, { I1IIlI1l(_KKA[1148]), I1IIlI1l(_KKA[1149]), I1IIlI1l(_KKA[1150]), I1IIlI1l(_KKA[1151]) } }), 0x6, function(...)
-I1lIlI1l[IIIIlI1l(0x9F88)] = 0B0
-l1l1lI1l(IIIIlI1l(0x9F1F), function(...)
-lllllI1l(nil)
-			end)
-		end, IllIlI1l[I1IIlI1l(_KKA[991])])
-I111lI1l = lIllI11l(IlllI11l, 0x7, IIIIlI1l(0x9F20))
-ll11lI1l = lIllI11l(IlllI11l, 0x8, IIIIlI1l(0x9F8B));
-ll1lI11l(IlllI11l, IIIIlI1l(0x9F8F), 0x9, function(...)
-local llll1I1l, Illl1I1l, lIIIlI1l = lIIII11l()
-if lIIIlI1l then
-ll11lI1l[IIIIlI1l(0x9F14)] = IIIIlI1l(0xA029) .. lIIIlI1l
-ll11lI1l[IIIIlI1l(0x9FA4)] = IllIlI1l[IIIIlI1l(0x9FF7)]
-			else
-ll11lI1l[IIIIlI1l(0x9F14)] = IIIIlI1l(0x9FAE) .. (tostring(llll1I1l) .. (IIIIlI1l(0xA018) .. IIIllI1l(Illl1I1l)));
-ll11lI1l[IIIIlI1l(0x9FA4)] = IllIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1152]), I1IIlI1l(_KKA[1153]) } })]
-			end
-		end, IllIlI1l[IIIIlI1l(0x9F6F)]);
-local IIII111l = l1IlI11l[IIIIlI1l(0x9F87)]
-l11lI11l[IIIIlI1l(0x9F0F)](IIII111l, l1IIlI1l({ 0B10, 0x4, 0B1, 0B11, { I1IIlI1l(_KKA[1029]), I1IIlI1l(_KKA[1154]), I1IIlI1l(_KKA[1155]), I1IIlI1l(_KKA[1156]) } }), 0B1);
-I11lI11l[IIIIlI1l(0x9EFA)](IIII111l, IIIIlI1l(0x9FD2), IIIIlI1l(0x9F21), 0B10, false, function(llll1I1l, ...)
-local Illl1I1l = { [I1IIlI1l(_KKA[873])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0x14D4)
-					end, [I1IIlI1l(_KKA[943])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x8317)
-					end, [I1IIlI1l(_KKA[820])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x81C5)
-					end, [I1IIlI1l(_KKA[1087])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x6067)
-					end };
-I1lIlI1l[I1IIlI1l(_KKA[954])] = llll1I1l
-if llll1I1l then
-l11II11l()
-			elseif (lII1lI1l .. I1IIlI1l(_KKA[1157]))[I1IIlI1l(_KKA[954])] then
-(lII1lI1l .. Illl1I1l[I1IIlI1l(_KKA[873])](0x8824, 0x8CBE, 0x8978, 0x8ADE))[Illl1I1l[I1IIlI1l(_KKA[820])](73528, 73324, 74171, 74007)]:Disconnect();
-(lII1lI1l .. I1IIlI1l(_KKA[1158]))[Illl1I1l[I1IIlI1l(_KKA[820])](74413, 75022, 74171, 73472)] = nil
-			end
-		end);
-I11lI11l[IIIIlI1l(0x9FE5)](IIII111l, l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[1159]), I1IIlI1l(_KKA[1160]), I1IIlI1l(_KKA[1161]) } }), IIIIlI1l(0x9F5E), 0B11, false, function(llll1I1l, ...)
-I1lIlI1l[l1IIlI1l({ 0B11, 0x4, 0B1, 0B10, { I1IIlI1l(_KKA[1162]), I1IIlI1l(_KKA[742]), I1IIlI1l(_KKA[1163]), I1IIlI1l(_KKA[1130]) } })] = llll1I1l
-llIII11l()
-		end);
-ll1lI11l(IIII111l, IIIIlI1l(0x9F31), 0x4, function(...)
-(lI1llI1l .. IIIIlI1l(0x9F68))();
-lIl1lI1l();
-lIIllI1l(IIIIlI1l(0x9F1B), IllIlI1l[IIIIlI1l(0x9F6F)])
-		end, IllIlI1l[IIIIlI1l(0x9F6F)]);
-ll1lI11l(IIII111l, IIIIlI1l(0x9FD8), 0x5, function(...)
-I11llI1l();
-lIIllI1l(IIIIlI1l(0xA031), IllIlI1l[I1IIlI1l(_KKA[1164])])
-		end, IllIlI1l[IIIIlI1l(0x9F51)]);
-ll1lI11l(IIII111l, l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1165]), I1IIlI1l(_KKA[1166]) } }), 0x6, function(...)
-if l1lIlI1l[IIIIlI1l(0x9F2C)] then
-l1lIlI1l[IIIIlI1l(0x9F2C)](false)
-			end
-		end, IllIlI1l[I1IIlI1l(_KKA[811])]);
-lIllI11l(IIII111l, 0x7, l1IIlI1l({ 0x6, 0B1, 0B100, 0x8, 0B10, 0B11, 0x5, 0x7, { I1IIlI1l(_KKA[1167]), I1IIlI1l(_KKA[1168]), I1IIlI1l(_KKA[1169]), I1IIlI1l(_KKA[1170]), I1IIlI1l(_KKA[1171]), I1IIlI1l(_KKA[1172]), I1IIlI1l(_KKA[1173]), I1IIlI1l(_KKA[1174]) } }));
-(II1lI11l - IIIIlI1l(0x9F73))(l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[534]), I1IIlI1l(_KKA[1175]) } }));
-l1l1lI1l(IIIIlI1l(0x9F76), function(...)
-local lIIIlI1l = llll1I1l({ [IIIIlI1l(0xA037)] = 0B0 }, { [IIIIlI1l(0xA015)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0xA037)] = Illl1I1l
-					end, [IIIIlI1l(0x9F50)] = function(llll1I1l, Illl1I1l)
-return rawget(llll1I1l, IIIIlI1l(0xA037))
-					end });
-local l1IIlI1l = 0B0
-while I1lIlI1l[IIIIlI1l(0xA005)] do
-local llll1I1l = ll1IlI1l:FindFirstChild(IIIIlI1l(0x9F72));
-local llIIlI1l = lllIlI1l[I1lIlI1l[IIIIlI1l(0xA050)]]
-if l111lI1l then
-l111lI1l[I1IIlI1l(_KKA[786])] = IIIIlI1l(0x9FD7) .. (IIIllI1l(llll1I1l and llll1I1l[IIIIlI1l(0xA05A)] or 0B0) .. (I1IIlI1l(_KKA[1176]) .. ((llIIlI1l and llIIlI1l[IIIIlI1l(0x9F45)] or IIIIlI1l(0x9F89)) .. (IIIIlI1l(0x9F91) .. (I1lIlI1l[IIIIlI1l(0xA006)] and I1IIlI1l(_KKA[1177]) or IIIIlI1l(0xA042))))))
-				end
-if I111lI1l then
-I111lI1l[IIIIlI1l(0x9F14)] = IIIIlI1l(0xA024) .. (tostring(I1lIlI1l[IIIIlI1l(0x9F03)] or IIIIlI1l(0x9F89)) .. (IIIIlI1l(0x9FFB) .. tostring(IllllI1l())))
-				end
-if os[IIIIlI1l(0x9FB0)]() >= lIIIlI1l ^ IIIIlI1l(0xA04F) then
-Illl1I1l(lIIIlI1l[os[IIIIlI1l(0x9FB0)]() + 0B11])
-if lIl1lI1l then
-lIl1lI1l()
-					end
-				end
-if os[IIIIlI1l(0x9FB0)]() >= l1IIlI1l then
-l1IIlI1l = os[IIIIlI1l(0x9FB0)]() + 0x5;
-(lI1llI1l .. IIIIlI1l(0x9EFC))()
-				end
-task[IIIIlI1l(0x9EFF)](.25)
-			end
-		end);
-local l1II111l = false
-local I1II111l = false
-local llII111l = nil
-local IlII111l = nil
-local lI1I111l = IlI1I11l[IIIIlI1l(0x9F6D)]
-local II1I111l = llI1I11l[I1IIlI1l(_KKA[995])]
-local function l11I111l(llll1I1l, ...)
-if lI11lI1l or l1II111l == llll1I1l then
-return
-			end
-l1II111l = llll1I1l;
-(IIl1I11l ^ IIIIlI1l(0x9F57))[I1IIlI1l(_KKA[786])] = l1II111l and I1IIlI1l(_KKA[1178]) or IIIIlI1l(0x9FA5)
-if l1II111l then
-lll1I11l[IIIIlI1l(0x9F75)] = false
-lIIlI11l[IIIIlI1l(0x9F75)] = false
-IIIlI11l[IIIIlI1l(0x9F75)] = false;
-(II1IlI1l:Create(IlI1I11l, TweenInfo[IIIIlI1l(0x9F8E)](.2), { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9FD6)](Il1II11l, IIlII11l) })):Play();
-(II1IlI1l:Create(llI1I11l, TweenInfo[I1IIlI1l(_KKA[959])](.2), { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9FD6)](Il1II11l + 0x12, IIlII11l + 0x12) })):Play()
-			else
-(II1IlI1l:Create(IlI1I11l, TweenInfo[I1IIlI1l(_KKA[959])](.2), { [IIIIlI1l(0x9F93)] = UDim2[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1009]), I1IIlI1l(_KKA[1008]) } })](Il1II11l, lIlII11l) })):Play();
-(II1IlI1l:Create(llI1I11l, TweenInfo[IIIIlI1l(0x9F8E)](.2), { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9FD6)](Il1II11l + 0x12, lIlII11l + 0x12) })):Play();
-task[IIIIlI1l(0x9F40)](.18, function(...)
-if not lI11lI1l and not l1II111l then
-lll1I11l[IIIIlI1l(0x9F75)] = true
-lIIlI11l[IIIIlI1l(0x9F75)] = true
-IIIlI11l[IIIIlI1l(0x9F75)] = true
-					end
-				end)
-			end
-		end;
-(IIl1I11l ^ l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1179]), I1IIlI1l(_KKA[1180]) } }))[IIIIlI1l(0x9F8A)]:Connect(function(...)
-l11I111l(not l1II111l)
-		end);
-I1l1I11l[IIIIlI1l(0x9FBF)]:Connect(function(llll1I1l, ...)
-if llll1I1l[IIIIlI1l(0xA000)] == Enum[l1IIlI1l({ 0B11, 0B10, 0B1, { I1IIlI1l(_KKA[796]), I1IIlI1l(_KKA[1181]), I1IIlI1l(_KKA[1182]) } })][IIIIlI1l(0x9F58)] or llll1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1183]), I1IIlI1l(_KKA[1184]) } })] == Enum[IIIIlI1l(0xA000)][IIIIlI1l(0x9F17)] then
-I1II111l = true
-llII111l = llll1I1l[IIIIlI1l(0x9F6D)]
-IlII111l = IlI1I11l[IIIIlI1l(0x9F6D)]
-llll1I1l[IIIIlI1l(0x9F8C)]:Connect(function(...)
-local Illl1I1l = { [I1IIlI1l(_KKA[835])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x63C)
-							end, [I1IIlI1l(_KKA[823])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x2369)
-							end, [I1IIlI1l(_KKA[817])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x7DD9)
-							end, [I1IIlI1l(_KKA[879])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l - 0x515F)
-							end }
-if llll1I1l[Illl1I1l[I1IIlI1l(_KKA[879])](0xF09B, 0xF413, 0xF2A9, 0xF258)] == Enum[Illl1I1l[I1IIlI1l(_KKA[879])](0xF09B, 0xECE0, 0xF114, 0xF248)][I1IIlI1l(_KKA[1185])] then
-I1II111l = false
-					end
-				end)
-			end
-		end);
-IIl1lI1l(lI1IlI1l[IIIIlI1l(0x9FDA)]:Connect(function(llll1I1l, ...)
-if not I1II111l then
-return
-			end
-if llll1I1l[IIIIlI1l(0xA000)] == Enum[IIIIlI1l(0xA000)][l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1186]), I1IIlI1l(_KKA[1187]) } })] or llll1I1l[IIIIlI1l(0xA000)] == Enum[IIIIlI1l(0xA000)][I1IIlI1l(_KKA[1188])] then
-local Illl1I1l = llll1I1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1082]), I1IIlI1l(_KKA[1081]) } })] - llII111l
-local lIIIlI1l = workspace[IIIIlI1l(0x9FC3)] and workspace[IIIIlI1l(0x9FC3)][IIIIlI1l(0x9F1A)] or I11II11l
-local llIIlI1l = IlI1I11l[IIIIlI1l(0x9FCD)][IIIIlI1l(0x9EF4)]
-local IlIIlI1l = IlI1I11l[IIIIlI1l(0x9FCD)][I1IIlI1l(_KKA[325])]
-local lI1IlI1l = (lIIIlI1l[I1IIlI1l(_KKA[353])] * IlII111l[IIIIlI1l(0x9EF4)][I1IIlI1l(_KKA[1189])] + IlII111l[I1IIlI1l(_KKA[353])][l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1190]), I1IIlI1l(_KKA[404]) } })]) + Illl1I1l[IIIIlI1l(0x9EF4)]
-local II1IlI1l = (lIIIlI1l[IIIIlI1l(0x9FFE)] * IlII111l[IIIIlI1l(0x9FFE)][IIIIlI1l(0xA012)] + IlII111l[I1IIlI1l(_KKA[325])][IIIIlI1l(0xA013)]) + Illl1I1l[I1IIlI1l(_KKA[325])]
-local l11IlI1l = llIIlI1l / 0B10 + 0x8
-local I11IlI1l = (lIIIlI1l[I1IIlI1l(_KKA[353])] - llIIlI1l / 0B10) - 0x8
-local ll1IlI1l = IlIIlI1l / 0B10 + 0x8
-local Il1IlI1l = (lIIIlI1l[I1IIlI1l(_KKA[325])] - IlIIlI1l / 0B10) - 0x8
-lI1IlI1l = l11IlI1l <= I11IlI1l and math[IIIIlI1l(0xA010)](lI1IlI1l, l11IlI1l, I11IlI1l) or lIIIlI1l[IIIIlI1l(0x9EF4)] / 0B10
-II1IlI1l = ll1IlI1l <= Il1IlI1l and math[I1IIlI1l(_KKA[1191])](II1IlI1l, ll1IlI1l, Il1IlI1l) or lIIIlI1l[IIIIlI1l(0x9FFE)] / 0B10
-local lIlIlI1l = lI1IlI1l - lIIIlI1l[I1IIlI1l(_KKA[353])] * IlII111l[IIIIlI1l(0x9EF4)][I1IIlI1l(_KKA[1189])]
-local IIlIlI1l = II1IlI1l - lIIIlI1l[IIIIlI1l(0x9FFE)] * IlII111l[I1IIlI1l(_KKA[325])][IIIIlI1l(0xA012)]
-IlI1I11l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1192]), I1IIlI1l(_KKA[934]) } })] = UDim2[IIIIlI1l(0x9F8E)](IlII111l[I1IIlI1l(_KKA[353])][I1IIlI1l(_KKA[1189])], lIlIlI1l, IlII111l[IIIIlI1l(0x9FFE)][IIIIlI1l(0xA012)], IIlIlI1l);
-llI1I11l[I1IIlI1l(_KKA[995])] = UDim2[IIIIlI1l(0x9F8E)](IlII111l[IIIIlI1l(0x9EF4)][IIIIlI1l(0xA012)], lIlIlI1l - 0B1001, IlII111l[I1IIlI1l(_KKA[325])][IIIIlI1l(0xA012)], IIlIlI1l - 0x9)
-			end
-		end));
-IIl1lI1l(ll1IlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1193]), I1IIlI1l(_KKA[1194]) } })]:Connect(function(...)
-task[IIIIlI1l(0x9EFF)](0B1)
-if I1lIlI1l[l1IIlI1l({ 0B1, 0B10, 0B11, { I1IIlI1l(_KKA[1195]), I1IIlI1l(_KKA[1196]), I1IIlI1l(_KKA[1197]) } })] then
-llIII11l()
-			end
-		end));
-local I11I111l = llll1I1l({ [IIIIlI1l(0x9FFA)] = function(...)
-I1lIlI1l[IIIIlI1l(0xA005)] = false
-I1lIlI1l[IIIIlI1l(0x9FA0)] = false
-I1lIlI1l[IIIIlI1l(0x9F33)] = false
-I1lIlI1l[IIIIlI1l(0x9FF6)] = false
-I1lIlI1l[l1IIlI1l({ 0B1, 0B10, 0x4, 0B11, { I1IIlI1l(_KKA[1195]), I1IIlI1l(_KKA[1198]), I1IIlI1l(_KKA[1199]), I1IIlI1l(_KKA[1200]) } })] = false
-lll1lI1l();
-(Ill1lI1l + IIIIlI1l(0xA03A))()
-for llll1I1l, Illl1I1l in ipairs(IlI1lI1l) do
-pcall(function(...)
-local llll1I1l = { [I1IIlI1l(_KKA[818])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l - 0x24C9)
-									end, [I1IIlI1l(_KKA[1201])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(llll1I1l + 0x60AC)
-									end, [I1IIlI1l(_KKA[1139])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l + 0x532D)
-									end, [I1IIlI1l(_KKA[1070])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(lIIIlI1l - 0x7F2E)
-									end };
-Illl1I1l:Disconnect()
-						end)
-					end
-IlI1lI1l = {};
-(IlIllI1l / IIIIlI1l(0xA02C))();
-I11llI1l()
-if lIlIlI1l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1202]), I1IIlI1l(_KKA[1172]) } })] == l1lIlI1l then
-lIlIlI1l[IIIIlI1l(0x9FCB)] = nil
-					end
-				end }, { [IIIIlI1l(0x9F06)] = function(llll1I1l, Illl1I1l)
-llll1I1l[IIIIlI1l(0x9FFA)] = Illl1I1l
-				end, [IIIIlI1l(0xA039)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9FFA)]
-				end });
-local function ll1I111l(llll1I1l, Illl1I1l, ...)
-for llll1I1l, lIIIlI1l in ipairs(llll1I1l:GetDescendants()) do
-pcall(function(...)
-local llll1I1l = { [I1IIlI1l(_KKA[821])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0x8432)
-							end, [I1IIlI1l(_KKA[1036])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(Illl1I1l - 0xD595)
-							end, [I1IIlI1l(_KKA[1203])] = function(llll1I1l, Illl1I1l, lIIIlI1l, l1IIlI1l)
-return IIIIlI1l(l1IIlI1l + 0xDEA4)
-							end, [I1IIlI1l(_KKA[903])] = function(llll1I1l, Illl1I1l, lIIIlI1l, llIIlI1l)
-return IIIIlI1l(llll1I1l + 0xE50A)
-							end }
-if lIIIlI1l:IsA(llll1I1l[I1IIlI1l(_KKA[821])](74401, 74771, 75096, 74313)) or lIIIlI1l:IsA(llll1I1l[I1IIlI1l(_KKA[821])](75115, 74773, 74960, 74040)) or lIIIlI1l:IsA(l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1003]), I1IIlI1l(_KKA[1204]) } })) then
-(II1IlI1l:Create(lIIIlI1l, Illl1I1l, { [l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[1205]), I1IIlI1l(_KKA[1206]), I1IIlI1l(_KKA[1207]) } })] = 0B1, [llll1I1l[I1IIlI1l(_KKA[1203])](-17098, -15881, -16324, -16294)] = 0B1, [llll1I1l[I1IIlI1l(_KKA[903])](-17782, -17662, -17273, -17882)] = 0B1 })):Play()
-					elseif lIIIlI1l:IsA(llll1I1l[I1IIlI1l(_KKA[1203])](-16888, -16715, -15678, -16085)) or lIIIlI1l:IsA(llll1I1l[I1IIlI1l(_KKA[821])](74662, 74795, 74290, 73935)) then
-(II1IlI1l:Create(lIIIlI1l, Illl1I1l, { [llll1I1l[I1IIlI1l(_KKA[1036])](95144, 95682, 95095, 95694)] = 0B1, [llll1I1l[I1IIlI1l(_KKA[1203])](-15454, -15430, -15243, -16144)] = 0B1 })):Play()
-					elseif lIIIlI1l:IsA(llll1I1l[I1IIlI1l(_KKA[1203])](-16330, -15803, -16879, -16168)) then
-(II1IlI1l:Create(lIIIlI1l, Illl1I1l, { [llll1I1l[I1IIlI1l(_KKA[1203])](-16602, -16240, -16984, -16144)] = 0B1 })):Play()
-					elseif lIIIlI1l:IsA(llll1I1l[I1IIlI1l(_KKA[903])](-17805, -17153, -18581, -18791)) then
-(II1IlI1l:Create(lIIIlI1l, Illl1I1l, { [l1IIlI1l({ 0B10, 0B1, 0B11, { I1IIlI1l(_KKA[1208]), I1IIlI1l(_KKA[1209]), I1IIlI1l(_KKA[1210]) } })] = 0B1 })):Play()
-					end
-				end)
-			end
-		end
-local Il1I111l = llll1I1l({ [l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[1211]) } })] = function(llll1I1l, ...)
-if lI11lI1l then
-return
-					end
-lI11lI1l = true;
-(I11I111l + IIIIlI1l(0x9F00))()
-if llll1I1l then
-if I1I1I11l and I1I1I11l[IIIIlI1l(0xA033)] then
-I1I1I11l:Destroy()
+for ll1IlI1llI1 in pairs(lIl1lI1llI1[ll1IlI1llI1][I1lIlI1llI1(-6233)]) do
+if ll1IlI1llI1[I1lIlI1llI1(-6117)] then
+ll1IlI1llI1[IllIlI1llI1(_KNS[706])] = false
 						end
-return
 					end
-local Illl1I1l = TweenInfo[IIIIlI1l(0x9F8E)](.34, Enum[IIIIlI1l(0x9FA8)][IIIIlI1l(0x9F0E)], Enum[IIIIlI1l(0x9F46)][IIIIlI1l(0x9FDF)]);
-ll1I111l(IlI1I11l, Illl1I1l);
-(II1IlI1l:Create(IlI1I11l, Illl1I1l, { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9FD6)](math[IIIIlI1l(0x9F53)](IlI1I11l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[1212]), I1IIlI1l(_KKA[1213]) } })][IIIIlI1l(0x9EF4)] * .84), math[IIIIlI1l(0x9F53)](IlI1I11l[IIIIlI1l(0x9FCD)][IIIIlI1l(0x9FFE)] * .84)), [IIIIlI1l(0x9F94)] = 0B1 })):Play();
-(II1IlI1l:Create(llI1I11l, Illl1I1l, { [IIIIlI1l(0x9F94)] = 0B1 })):Play();
-(II1IlI1l:Create(lI11I11l, Illl1I1l, { [IIIIlI1l(0x9F0B)] = 0B1 })):Play();
-task[IIIIlI1l(0x9F40)](.38, function(...)
-if I1I1I11l and I1I1I11l[IIIIlI1l(0xA033)] then
-I1I1I11l:Destroy()
+for ll1IlI1llI1 in pairs(lIl1lI1llI1[ll1IlI1llI1][I1lIlI1llI1(-6095)]) do
+if ll1IlI1llI1[I1lIlI1llI1(-6117)] then
+ll1IlI1llI1[I1lIlI1llI1(-6131)] = false
+						end
+					end
+				end }, { [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6154)] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-6127)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[IllIlI1llI1(_KNS[707])]
+				end });
+local function I11llI1llI1(...)
+for ll1IlI1llI1, IIlIlI1llI1 in pairs(lIl1lI1llI1) do
+if ll1IlI1llI1 and ll1IlI1llI1[I1lIlI1llI1(-6117)] then
+pcall(function(...)
+ll1IlI1llI1[IllIlI1llI1(_KNS[684])] = IIlIlI1llI1[I1lIlI1llI1(-6034)]
+ll1IlI1llI1[I1lIlI1llI1(-6010)] = IIlIlI1llI1[I1lIlI1llI1(-6053)]
+ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[700]), IllIlI1llI1(_KNS[701]) } })] = IIlIlI1llI1[I1lIlI1llI1(-6050)]
+ll1IlI1llI1[I1lIlI1llI1(-6054)] = IIlIlI1llI1[I1lIlI1llI1(-5987)]
+local lIlIlI1llI1 = ll1IlI1llI1:FindFirstChild(I1lIlI1llI1(-6091))
+if lIlIlI1llI1 and IIlIlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[708]), IllIlI1llI1(_KNS[709]) } })] then
+lIlIlI1llI1[I1lIlI1llI1(-6010)] = IIlIlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[691]), IllIlI1llI1(_KNS[692]) } })]
+						end
+for ll1IlI1llI1, IIlIlI1llI1 in pairs(IIlIlI1llI1[I1lIlI1llI1(-6233)]) do
+if ll1IlI1llI1[IllIlI1llI1(_KNS[710])] then
+ll1IlI1llI1[I1lIlI1llI1(-6219)] = IIlIlI1llI1
+							end
+						end
+for ll1IlI1llI1, IIlIlI1llI1 in pairs(IIlIlI1llI1[I1lIlI1llI1(-6095)]) do
+if ll1IlI1llI1[IllIlI1llI1(_KNS[710])] then
+ll1IlI1llI1[I1lIlI1llI1(-6131)] = IIlIlI1llI1
+							end
 						end
 					end)
-				end }, { [I1IIlI1l(_KKA[842])] = function(llll1I1l, Illl1I1l)
-llll1I1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1214]), I1IIlI1l(_KKA[1179]) } })] = Illl1I1l
-				end, [IIIIlI1l(0x9F1C)] = function(llll1I1l, Illl1I1l)
-return llll1I1l[IIIIlI1l(0x9F63)]
+				end
+			end
+lIl1lI1llI1 = {}
+		end
+local l11llI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6263)] = function(...)
+local ll1IlI1llI1 = l1I1lI1llI1[I1lIlI1llI1(-6244)]
+local IIlIlI1llI1 = ll1IlI1llI1 and ll1IlI1llI1:FindFirstChildOfClass(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[711]), IllIlI1llI1(_KNS[712]) } }));
+local lIlIlI1llI1 = l1I1lI1llI1:FindFirstChild(IllIlI1llI1(_KNS[713]));
+local lllIlI1llI1 = ll1IlI1llI1 and ll1IlI1llI1:FindFirstChild(I1lIlI1llI1(-6077))
+if not lllIlI1llI1 and lIlIlI1llI1 then
+lllIlI1llI1 = lIlIlI1llI1:FindFirstChild(I1lIlI1llI1(-6077))
+if lllIlI1llI1 and IIlIlI1llI1 then
+IIlIlI1llI1:EquipTool(lllIlI1llI1)
+						end
+					end
+if lllIlI1llI1 then
+local ll1IlI1llI1 = lllIlI1llI1:FindFirstChild(I1lIlI1llI1(-6173))
+if ll1IlI1llI1 then
+ll1IlI1llI1[I1lIlI1llI1(-6202)] = 0B0
+						end
+					end
+return lllIlI1llI1
+				end }, { [IllIlI1llI1(_KNS[714])] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[IllIlI1llI1(_KNS[715])] = IIlIlI1llI1
+				end, [IllIlI1llI1(_KNS[716])] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6263)]
 				end });
-l1lIlI1l[IIIIlI1l(0x9F2C)] = Il1I111l / I1IIlI1l(_KKA[1215]);
-l1lIlI1l[I1IIlI1l(_KKA[1216])] = function(...)
-if not I1lIlI1l[IIIIlI1l(0x9FA0)] then
-local llll1I1l = IlIII11l()
-if llll1I1l ~= false and l1llI11l then
-l1llI11l(true, true)
-					end
+local function Il1llI1llI1(...)
+local ll1IlI1llI1 = l1I1lI1llI1[I1lIlI1llI1(-6244)]
+local IIlIlI1llI1 = ll1IlI1llI1 and ll1IlI1llI1:FindFirstChildOfClass(IllIlI1llI1(_KNS[717]))
+if not IIlIlI1llI1 then
+return
+			end
+for ll1IlI1llI1, IIlIlI1llI1 in ipairs(IIlIlI1llI1:GetPlayingAnimationTracks()) do
+local lIlIlI1llI1 = (tostring(IIlIlI1llI1[I1lIlI1llI1(-6039)])):lower();
+local lllIlI1llI1 = IIlIlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[718]), IllIlI1llI1(_KNS[719]) } })] and IIlIlI1llI1[I1lIlI1llI1(-6028)][I1lIlI1llI1(-6247)] or I1lIlI1llI1(-6129)
+if lllIlI1llI1 == I1lIlI1llI1(-5973) or lllIlI1llI1 == I1lIlI1llI1(-6014) or lIlIlI1llI1:find(IllIlI1llI1(_KNS[720]), 0B1, true) or lIlIlI1llI1:find(I1lIlI1llI1(-6261), 0B1, true) then
+IIlIlI1llI1:Stop()
 				end
 			end
-l1lIlI1l[IIIIlI1l(0x9FBD)] = function(...)
-if I1lIlI1l[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1217]), I1IIlI1l(_KKA[1218]) } })] then
-lI1II11l()
-if l1llI11l then
-l1llI11l(false, true)
-					end
+		end
+local function ll1llI1llI1(...)
+for ll1IlI1llI1, IIlIlI1llI1 in ipairs(I1l1lI1llI1) do
+IIlIlI1llI1:Disconnect()
+			end
+I1l1lI1llI1 = {};
+local ll1IlI1llI1 = l1I1lI1llI1[I1lIlI1llI1(-6244)]
+local IIlIlI1llI1 = ll1IlI1llI1 and ll1IlI1llI1:FindFirstChildOfClass(I1lIlI1llI1(-6175))
+if IIlIlI1llI1 then
+I1l1lI1llI1[#I1l1lI1llI1 + 0B1] = IIlIlI1llI1[I1lIlI1llI1(-6218)]:Connect(function(ll1IlI1llI1, ...)
+if I111lI1llI1[I1lIlI1llI1(-6000)] then
+local IIlIlI1llI1 = (tostring(ll1IlI1llI1[I1lIlI1llI1(-6039)])):lower();
+local lIlIlI1llI1 = ll1IlI1llI1[I1lIlI1llI1(-6028)] and ll1IlI1llI1[I1lIlI1llI1(-6028)][l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[721]), IllIlI1llI1(_KNS[722]) } })] or I1lIlI1llI1(-6129)
+if lIlIlI1llI1 == I1lIlI1llI1(-5973) or lIlIlI1llI1 == I1lIlI1llI1(-6014) or IIlIlI1llI1:find(I1lIlI1llI1(-5974), 0B1, true) or IIlIlI1llI1:find(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[7]), IllIlI1llI1(_KNS[723]) } }), 0B1, true) then
+ll1IlI1llI1:Stop()
+							end
+						end
+					end)
+			end
+		end
+local function IIlllI1llI1(...)
+pcall(function(...)
+local IIlIlI1llI1 = ll1IlI1llI1({ [IllIlI1llI1(_KNS[724])] = l1I1lI1llI1[I1lIlI1llI1(-6244)] }, { [I1lIlI1llI1(-5981)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6060)] = IIlIlI1llI1
+						end, [I1lIlI1llI1(-6243)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6060)]
+						end });
+local lIlIlI1llI1 = l1I1lI1llI1:FindFirstChild(I1lIlI1llI1(-6126));
+local l1lIlI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6061)] = IIlIlI1llI1 ^ I1lIlI1llI1(-6114) and (IIlIlI1llI1 ^ I1lIlI1llI1(-6152)):FindFirstChild(IllIlI1llI1(_KNS[725])) }, { [I1lIlI1llI1(-6084)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6061)] = IIlIlI1llI1
+						end, [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return rawget(ll1IlI1llI1, I1lIlI1llI1(-6061))
+						end })
+if l1lIlI1llI1 * I1lIlI1llI1(-6042) and lIlIlI1llI1 then
+(l1lIlI1llI1 * I1lIlI1llI1(-6090))[IllIlI1llI1(_KNS[710])] = lIlIlI1llI1
+				end
+			end)
+		end
+local lIlllI1llI1
+local I1lllI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6230)] = nil }, { [IllIlI1llI1(_KNS[638])] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6230)] = IIlIlI1llI1
+				end, [IllIlI1llI1(_KNS[726])] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6230)]
+				end });
+local l1lllI1llI1
+local IllllI1llI1
+local lllllI1llI1
+local function IIIII11llI1(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, ...)
+local lllIlI1llI1 = { [IllIlI1llI1(_KNS[727])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(l1lIlI1llI1 + 0xEEE)
+					end, [IllIlI1llI1(_KNS[643])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x45F3)
+					end, [IllIlI1llI1(_KNS[673])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x6A50)
+					end, [IllIlI1llI1(_KNS[544])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, lllIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0x216C)
+					end }
+if I1lllI1llI1  .. l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[728]), IllIlI1llI1(_KNS[729]) } }) then
+(I1lllI1llI1  .. lllIlI1llI1[IllIlI1llI1(_KNS[544])](0x801, 0x935, 0x6A5, 0x6C7))[IllIlI1llI1(_KNS[608])] = ll1IlI1llI1;
+(I1lllI1llI1  .. lllIlI1llI1[IllIlI1llI1(_KNS[544])](0x97E, 0x924, 0xB08, 0xD18))[lllIlI1llI1[IllIlI1llI1(_KNS[673])](-33264, -33984, -32524, -33240)] = IIlIlI1llI1 or (lI11lI1llI1 * lllIlI1llI1[IllIlI1llI1(_KNS[727])](-10442, -9723, -10145, -9831))[IllIlI1llI1(_KNS[730])]
+lIlllI1llI1[IllIlI1llI1(_KNS[731])] = lIlIlI1llI1 ~= false
+			end
+		end
+local function lIIII11llI1(...)
+lll1lI1llI1(l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[732]), IllIlI1llI1(_KNS[733]) } }), function(...)
+while I111lI1llI1[I1lIlI1llI1(-6168)] and I111lI1llI1[I1lIlI1llI1(-6000)] do
+pcall(l11llI1llI1 / l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[659]), IllIlI1llI1(_KNS[734]) } }));
+task[IllIlI1llI1(_KNS[735])](.05)
+				end
+			end);
+lll1lI1llI1(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[736]), IllIlI1llI1(_KNS[737]) } }), function(...)
+while I111lI1llI1[I1lIlI1llI1(-6168)] and I111lI1llI1[I1lIlI1llI1(-6000)] do
+pcall(function(...)
+local ll1IlI1llI1 = l1I1lI1llI1:FindFirstChild(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[738]), IllIlI1llI1(_KNS[739]) } }));
+local IIlIlI1llI1 = (l11llI1llI1 / I1lIlI1llI1(-6004))()
+if ll1IlI1llI1 then
+ll1IlI1llI1:FireServer(I1lIlI1llI1(-5974), l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[740]), IllIlI1llI1(_KNS[741]) } }));
+ll1IlI1llI1:FireServer(I1lIlI1llI1(-5974), I1lIlI1llI1(-6001))
+						end
+if IIlIlI1llI1 then
+IIlIlI1llI1:Activate()
+						end
+Il1llI1llI1()
+					end);
+task[I1lIlI1llI1(-6227)](.01)
+				end
+			end)
+		end
+local function I1III11llI1(...)
+lll1lI1llI1(I1lIlI1llI1(-6164), function(...)
+while I111lI1llI1[I1lIlI1llI1(-6168)] and I111lI1llI1[I1lIlI1llI1(-6000)] do
+pcall(function(...)
+local IIlIlI1llI1 = II11lI1llI1[I111lI1llI1[I1lIlI1llI1(-6015)]]
+local lIlIlI1llI1 = l1I1lI1llI1:FindFirstChild(I1lIlI1llI1(-6205))
+if not IIlIlI1llI1 or not lIlIlI1llI1 or tonumber(lIlIlI1llI1[IllIlI1llI1(_KNS[742])]) < IIlIlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[743]), IllIlI1llI1(_KNS[744]) } })] then
+return
+						end
+local lllIlI1llI1 = l1I1lI1llI1[I1lIlI1llI1(-6244)]
+local III1lI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6155)] = lllIlI1llI1 and lllIlI1llI1:FindFirstChild(I1lIlI1llI1(-6012)) }, { [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6155)] = IIlIlI1llI1
+								end, [IllIlI1llI1(_KNS[716])] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6155)]
+								end });
+local lII1lI1llI1 = lllIlI1llI1 and lllIlI1llI1:FindFirstChild(I1lIlI1llI1(-6069))
+if not (III1lI1llI1 / I1lIlI1llI1(-6008)) or not lII1lI1llI1 then
+return
+						end
+local I1I1lI1llI1 = (IIl1lI1llI1 + I1lIlI1llI1(-6252))[IIlIlI1llI1[I1lIlI1llI1(-6231)]]
+if not I1I1lI1llI1 or #I1I1lI1llI1 == 0B0 then
+llIllI1llI1()
+I1I1lI1llI1 = (IIl1lI1llI1 + I1lIlI1llI1(-6242))[IIlIlI1llI1[I1lIlI1llI1(-6231)]]
+						end
+for ll1IlI1llI1, IIlIlI1llI1 in ipairs(I1I1lI1llI1 or {}) do
+if IIlIlI1llI1[IllIlI1llI1(_KNS[710])] then
+(lI1llI1llI1 - I1lIlI1llI1(-5985))(IIlIlI1llI1, III1lI1llI1 / l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[745]), IllIlI1llI1(_KNS[746]) } }));
+firetouchinterest(IIlIlI1llI1, lII1lI1llI1, 0B0);
+firetouchinterest(IIlIlI1llI1, lII1lI1llI1, 0B1);
+firetouchinterest(IIlIlI1llI1, III1lI1llI1 / I1lIlI1llI1(-5970), 0B0);
+firetouchinterest(IIlIlI1llI1, III1lI1llI1 / I1lIlI1llI1(-5995), 0B1)
+							end
+						end
+					end);
+task[I1lIlI1llI1(-6227)](.001)
+				end
+			end)
+		end
+local function l1III11llI1(...)
+I111lI1llI1[I1lIlI1llI1(-6000)] = false;
+(IIIllI1llI1 - I1lIlI1llI1(-6072))(I1lIlI1llI1(-6076));
+(IIIllI1llI1 - I1lIlI1llI1(-6208))(I1lIlI1llI1(-6229));
+(IIIllI1llI1 - I1lIlI1llI1(-6184))(I1lIlI1llI1(-6164));
+IIlllI1llI1();
+I11llI1llI1();
+IIIII11llI1(I1lIlI1llI1(-6129), (lI11lI1llI1 * I1lIlI1llI1(-5972))[I1lIlI1llI1(-6160)], false)
+		end
+local function IlIII11llI1(...)
+if type(firetouchinterest) ~= l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[747]), IllIlI1llI1(_KNS[719]) } }) then
+IIIII11llI1(I1lIlI1llI1(-6237), (lI11lI1llI1 * IllIlI1llI1(_KNS[748]))[IllIlI1llI1(_KNS[749])], true)
+return false
+			end
+local ll1IlI1llI1 = II11lI1llI1[I111lI1llI1[I1lIlI1llI1(-6015)]]
+local IIlIlI1llI1 = l1I1lI1llI1:FindFirstChild(I1lIlI1llI1(-6205))
+if not ll1IlI1llI1 or not IIlIlI1llI1 then
+IIIII11llI1(I1lIlI1llI1(-6087), (lI11lI1llI1 * I1lIlI1llI1(-6147))[IllIlI1llI1(_KNS[749])], true)
+return false
+			end
+if tonumber(IIlIlI1llI1[I1lIlI1llI1(-6202)]) < ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[623]), IllIlI1llI1(_KNS[624]) } })] then
+IIIII11llI1(I1lIlI1llI1(-6161), (lI11lI1llI1 * IllIlI1llI1(_KNS[750]))[IllIlI1llI1(_KNS[749])], true)
+return false
+			end
+I111lI1llI1[IllIlI1llI1(_KNS[751])] = true
+llIllI1llI1()
+if not (IIl1lI1llI1 + l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[752]), IllIlI1llI1(_KNS[633]) } }))[ll1IlI1llI1[I1lIlI1llI1(-6231)]] then
+I111lI1llI1[I1lIlI1llI1(-6000)] = false
+IIIII11llI1(I1lIlI1llI1(-6197), (lI11lI1llI1 * l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[753]), IllIlI1llI1(_KNS[698]) } }))[I1lIlI1llI1(-6241)], true)
+return false
+			end
+ll1llI1llI1();
+lIIII11llI1();
+I1III11llI1();
+IIIII11llI1(l1lIlI1llI1({ 0B10, 0B1, 0x4, 0B11, { IllIlI1llI1(_KNS[754]), IllIlI1llI1(_KNS[755]), IllIlI1llI1(_KNS[756]), IllIlI1llI1(_KNS[757]) } }) .. ll1IlI1llI1[I1lIlI1llI1(-5965)], (lI11lI1llI1 * I1lIlI1llI1(-6064))[I1lIlI1llI1(-6140)], true)
+return true
+		end
+local function llIII11llI1(lIlIlI1llI1, ...)
+local lllIlI1llI1 = l1I1lI1llI1:FindFirstChild(I1lIlI1llI1(-6148));
+local III1lI1llI1 = lllIlI1llI1 and lllIlI1llI1:FindFirstChild(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[758]), IllIlI1llI1(_KNS[759]) } }));
+local lII1lI1llI1 = III1lI1llI1 and tonumber(III1lI1llI1[I1lIlI1llI1(-6202)])
+if not lII1lI1llI1 then
+return nil, nil, I1lIlI1llI1(-6033)
+			end
+if lII1lI1llI1 % 0B10 ~= 0B0 then
+return nil, nil, I1lIlI1llI1(-6145)
+			end
+local I1I1lI1llI1 = (lII1lI1llI1 + 0x14) * lIlIlI1llI1
+local IlI1lI1llI1 = {};
+local llI1lI1llI1 = 0B0
+local II11lI1llI1 = ll1IlI1llI1({ [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[760]), IllIlI1llI1(_KNS[761]) } })] = nil }, { [I1lIlI1llI1(-6127)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6067)] = IIlIlI1llI1
+					end, [I1lIlI1llI1(-6210)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[761]), IllIlI1llI1(_KNS[760]) } })]
+					end })
+for ll1IlI1llI1 = 0B1, 0x13, 0B1 do
+IlI1lI1llI1[ll1IlI1llI1] = 0x4E2 * ll1IlI1llI1
+llI1lI1llI1 = llI1lI1llI1 + IlI1lI1llI1[ll1IlI1llI1]
+if not (II11lI1llI1  .. I1lIlI1llI1(-6105)) and llI1lI1llI1 >= I1I1lI1llI1 then
+IIlIlI1llI1(II11lI1llI1 - llI1lI1llI1)
 				end
 			end
-lIlIlI1l[l1IIlI1l({ 0B1, 0B11, 0B10, { I1IIlI1l(_KKA[970]), I1IIlI1l(_KKA[1219]), I1IIlI1l(_KKA[1220]) } })] = l1lIlI1l
-l1l1I11l[IIIIlI1l(0x9F8A)]:Connect(function(...)
-(Il1I111l / l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[816]), I1IIlI1l(_KKA[1221]) } }))(false)
+if not (II11lI1llI1  .. I1lIlI1llI1(-6246)) then
+return nil, nil, I1lIlI1llI1(-5968)
+			end
+local lI11lI1llI1 = (II11lI1llI1  .. l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[729]), IllIlI1llI1(_KNS[762]) } })) - I1I1lI1llI1
+local I111lI1llI1 = lI11lI1llI1
+for ll1IlI1llI1 = 0B1, #IlI1lI1llI1, 0B1 do
+lI11lI1llI1 = lI11lI1llI1 - IlI1lI1llI1[ll1IlI1llI1]
+if lI11lI1llI1 < 0B0 then
+return ll1IlI1llI1, math[IllIlI1llI1(_KNS[763])](0B0, math[I1lIlI1llI1(-6094)](I111lI1llI1)), nil
+				end
+I111lI1llI1 = lI11lI1llI1
+			end
+return 0x13, math[I1lIlI1llI1(-6167)](0B0, math[I1lIlI1llI1(-6094)](I111lI1llI1)), nil
+		end
+llIllI1llI1();
+local II1II11llI1 = IlI1lI1llI1:FindFirstChild(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[764]), IllIlI1llI1(_KNS[611]) } }))
+if II1II11llI1 then
+II1II11llI1:Destroy()
+		end
+local lI1II11llI1 = workspace[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[765]), IllIlI1llI1(_KNS[766]) } })] and workspace[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[766]), IllIlI1llI1(_KNS[765]) } })][I1lIlI1llI1(-6041)] or Vector2[I1lIlI1llI1(-6191)](0x500, 0x2D0);
+local I11II11llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6070)] = III1lI1llI1[l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[711]), IllIlI1llI1(_KNS[767]), IllIlI1llI1(_KNS[768]) } })] and lI1II11llI1[IllIlI1llI1(_KNS[769])] <= 0x334 }, { [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6070)] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-6089)] = function(ll1IlI1llI1, IIlIlI1llI1)
+local lIlIlI1llI1 = { [IllIlI1llI1(_KNS[770])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x259C)
+							end, [IllIlI1llI1(_KNS[678])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0xD697)
+							end, [IllIlI1llI1(_KNS[771])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0xA09B)
+							end, [IllIlI1llI1(_KNS[772])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, lllIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0xE814)
+							end }
+return ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[773]), IllIlI1llI1(_KNS[774]) } })]
+				end });
+local l11II11llI1 = math[I1lIlI1llI1(-6025)](I11II11llI1 / I1lIlI1llI1(-6065) and 0x172 or 0x190, math[I1lIlI1llI1(-6167)](0x12C, lI1II11llI1[IllIlI1llI1(_KNS[769])] - 0x12));
+local Il1II11llI1 = math[I1lIlI1llI1(-6025)](I11II11llI1 / l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[775]), IllIlI1llI1(_KNS[544]) } }) and 0x1F4 or 0x21C, math[I1lIlI1llI1(-6167)](0x1A4, lI1II11llI1[I1lIlI1llI1(-6018)] - 0x1C));
+local ll1II11llI1 = 0x44
+local IIlII11llI1 = lIIllI1llI1(I1lIlI1llI1(-6078), IlI1lI1llI1, { [IllIlI1llI1(_KNS[776])] = l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[611]), IllIlI1llI1(_KNS[612]), IllIlI1llI1(_KNS[613]) } }), [I1lIlI1llI1(-6178)] = false, [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[777]), IllIlI1llI1(_KNS[778]) } })] = true, [I1lIlI1llI1(-6156)] = 0x3E8, [I1lIlI1llI1(-6110)] = Enum[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[779]), IllIlI1llI1(_KNS[780]) } })][I1lIlI1llI1(-6235)] });
+local lIlII11llI1 = lIIllI1llI1(IllIlI1llI1(_KNS[691]), IIlII11llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[23]), IllIlI1llI1(_KNS[781]) } })](l11II11llI1 + 0xE, Il1II11llI1 + 0xE), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6191)](.5, -l11II11llI1 / 0B10 - 0B10, .5, -Il1II11llI1 / 0B10 + 0x6), [I1lIlI1llI1(-6013)] = Color3[IllIlI1llI1(_KNS[651])](0B0, 0B0, 0B0), [I1lIlI1llI1(-5991)] = .45, [I1lIlI1llI1(-6253)] = 0B0 });
+(I1IllI1llI1 * I1lIlI1llI1(-6098))(lIlII11llI1, 0x11);
+local I1lII11llI1 = lIIllI1llI1(IllIlI1llI1(_KNS[691]), IIlII11llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[782]), IllIlI1llI1(_KNS[783]) } })](l11II11llI1, Il1II11llI1), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6191)](.5, -l11II11llI1 / 0B10, .5, -Il1II11llI1 / 0B10), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * IllIlI1llI1(_KNS[784]))[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[785]), IllIlI1llI1(_KNS[786]) } })], [I1lIlI1llI1(-6253)] = 0B0, [I1lIlI1llI1(-6174)] = true });
+(I1IllI1llI1 * I1lIlI1llI1(-5996))(I1lII11llI1, 0xF);
+local l1lII11llI1 = l1IllI1llI1(I1lII11llI1, (lI11lI1llI1 * l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[787]), IllIlI1llI1(_KNS[643]) } }))[I1lIlI1llI1(-6221)], 0B10, 0B0);
+local IllII11llI1 = lIIllI1llI1(I1lIlI1llI1(-5993), I1lII11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, 0B0, 0B0, ll1II11llI1), [l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[788]), IllIlI1llI1(_KNS[789]), IllIlI1llI1(_KNS[790]) } })] = Color3[I1lIlI1llI1(-5984)](0xA, 0xA, 0x10), [I1lIlI1llI1(-6253)] = 0B0 });
+lIIllI1llI1(I1lIlI1llI1(-5993), IllII11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, -24, 0B0, 0B10), [I1lIlI1llI1(-6055)] = UDim2[IllIlI1llI1(_KNS[651])](0B0, 0xC, 0B1, -0B10), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-6183))[I1lIlI1llI1(-6221)], [I1lIlI1llI1(-6253)] = 0B0 });
+lIIllI1llI1(I1lIlI1llI1(-6193), IllII11llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[I1lIlI1llI1(-6191)](0B1, -112, 0B0, 0x1C), [I1lIlI1llI1(-6055)] = UDim2[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[791]), IllIlI1llI1(_KNS[792]) } })](0xE, 0x9), [I1lIlI1llI1(-5991)] = 0B1, [IllIlI1llI1(_KNS[608])] = I1lIlI1llI1(-6085), [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[793]), IllIlI1llI1(_KNS[794]) } })] = (lI11lI1llI1 * I1lIlI1llI1(-6144))[IllIlI1llI1(_KNS[630])], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = I11II11llI1 / I1lIlI1llI1(-6179) and 0x12 or 0x14, [I1lIlI1llI1(-6016)] = Enum[I1lIlI1llI1(-6016)][I1lIlI1llI1(-6030)] });
+lIIllI1llI1(l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[795]), IllIlI1llI1(_KNS[796]) } }), IllII11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, -112, 0B0, 0x10), [I1lIlI1llI1(-6055)] = UDim2[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[781]), IllIlI1llI1(_KNS[23]) } })](0B1110, 0x26), [I1lIlI1llI1(-5991)] = 0B1, [I1lIlI1llI1(-6165)] = I1lIlI1llI1(-5975), [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[797]), IllIlI1llI1(_KNS[798]) } }))[I1lIlI1llI1(-6221)], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6011)], [I1lIlI1llI1(-6071)] = 0x9, [I1lIlI1llI1(-6016)] = Enum[I1lIlI1llI1(-6016)][I1lIlI1llI1(-6030)] });
+local lllII11llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6037)] = function(ll1IlI1llI1, lIlIlI1llI1, ...)
+local lllIlI1llI1 = lIIllI1llI1(I1lIlI1llI1(-6214), IllII11llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[783]), IllIlI1llI1(_KNS[782]) } })](0x1F, 0x1F), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6191)](0B1, lIlIlI1llI1, .5, -16), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[729]), IllIlI1llI1(_KNS[799]) } }))[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[18]), IllIlI1llI1(_KNS[628]) } })], [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[800]), IllIlI1llI1(_KNS[801]) } })] = false, [I1lIlI1llI1(-6165)] = ll1IlI1llI1, [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * I1lIlI1llI1(-6005))[I1lIlI1llI1(-5988)], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = 0xE, [l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[802]), IllIlI1llI1(_KNS[803]) } })] = 0B0 });
+(I1IllI1llI1 * I1lIlI1llI1(-6142))(lllIlI1llI1, 0x8);
+l1IllI1llI1(lllIlI1llI1, (lI11lI1llI1 * I1lIlI1llI1(-6182))[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[631]), IllIlI1llI1(_KNS[632]) } })], 0B1, 0B0)
+return lllIlI1llI1
+				end }, { [IllIlI1llI1(_KNS[726])] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6037)] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-6089)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6037)]
+				end });
+local III1I11llI1 = (lllII11llI1 / I1lIlI1llI1(-6258))(IllIlI1llI1(_KNS[804]), -72);
+local lII1I11llI1 = (lllII11llI1 / IllIlI1llI1(_KNS[805]))(I1lIlI1llI1(-6052), -37);
+local I1I1I11llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6083)] = lIIllI1llI1(I1lIlI1llI1(-6214), IllII11llI1, { [I1lIlI1llI1(-6224)] = UDim2[IllIlI1llI1(_KNS[651])](0B1, -82, 0B1, 0B0), [I1lIlI1llI1(-5991)] = 0B1, [I1lIlI1llI1(-6165)] = I1lIlI1llI1(-6129), [l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[806]), IllIlI1llI1(_KNS[807]), IllIlI1llI1(_KNS[808]) } })] = false }) }, { [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[677]), IllIlI1llI1(_KNS[809]) } })] = IIlIlI1llI1
+				end, [IllIlI1llI1(_KNS[642])] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6083)]
+				end });
+local l1I1I11llI1 = lIIllI1llI1(I1lIlI1llI1(-5966), I1lII11llI1, { [I1lIlI1llI1(-6224)] = UDim2[IllIlI1llI1(_KNS[651])](0B1, 0B0, 0B1, -ll1II11llI1), [I1lIlI1llI1(-6055)] = UDim2[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[791]), IllIlI1llI1(_KNS[792]) } })](0B0, ll1II11llI1), [I1lIlI1llI1(-5991)] = 0B1, [l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[810]), IllIlI1llI1(_KNS[811]), IllIlI1llI1(_KNS[812]) } })] = 0B0, [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[813]), IllIlI1llI1(_KNS[653]) } })] = 0B11, [I1lIlI1llI1(-6057)] = (lI11lI1llI1 * I1lIlI1llI1(-6096))[I1lIlI1llI1(-6221)], [I1lIlI1llI1(-6172)] = UDim2[I1lIlI1llI1(-6191)](), [l1lIlI1llI1({ 0B11, 0B10, 0B1, { IllIlI1llI1(_KNS[684]), IllIlI1llI1(_KNS[814]), IllIlI1llI1(_KNS[815]) } })] = Enum[I1lIlI1llI1(-6120)][I1lIlI1llI1(-6018)] });
+lIIllI1llI1(I1lIlI1llI1(-6024), l1I1I11llI1, { [IllIlI1llI1(_KNS[816])] = Enum[I1lIlI1llI1(-6047)][I1lIlI1llI1(-6149)], [I1lIlI1llI1(-6063)] = UDim[I1lIlI1llI1(-6191)](0B0, 0x7) });
+lIIllI1llI1(l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[817]), IllIlI1llI1(_KNS[307]) } }), l1I1I11llI1, { [I1lIlI1llI1(-6049)] = UDim[I1lIlI1llI1(-6191)](0B0, 0xA), [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[818]), IllIlI1llI1(_KNS[819]) } })] = UDim[I1lIlI1llI1(-6191)](0B0, 0xA), [I1lIlI1llI1(-5977)] = UDim[I1lIlI1llI1(-6191)](0B0, 0xA), [I1lIlI1llI1(-6248)] = UDim[I1lIlI1llI1(-6191)](0B0, 0xA) })
+lIlllI1llI1 = lIIllI1llI1(I1lIlI1llI1(-5993), l1I1I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[IllIlI1llI1(_KNS[651])](0B1, 0B0, 0B0, 0x1F), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-5971))[I1lIlI1llI1(-6187)], [l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[810]), IllIlI1llI1(_KNS[820]), IllIlI1llI1(_KNS[821]) } })] = 0B0, [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[822]), IllIlI1llI1(_KNS[648]) } })] = 0B1, [I1lIlI1llI1(-6131)] = false });
+(I1IllI1llI1 * I1lIlI1llI1(-6238))(lIlllI1llI1, 0B1000);
+IIlIlI1llI1(I1lllI1llI1 * lIIllI1llI1(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[823]) } }), lIlllI1llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[I1lIlI1llI1(-6191)](0B1, -24, 0B1, 0B0), [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[824]), IllIlI1llI1(_KNS[825]) } })] = UDim2[I1lIlI1llI1(-6088)](0xC, 0B0), [I1lIlI1llI1(-5991)] = 0B1, [IllIlI1llI1(_KNS[608])] = I1lIlI1llI1(-6129), [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[826]) } }))[I1lIlI1llI1(-6160)], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = 0B1010, [I1lIlI1llI1(-6016)] = Enum[I1lIlI1llI1(-6016)][I1lIlI1llI1(-6030)] }));
+local function IlI1I11llI1(ll1IlI1llI1, IIlIlI1llI1, ...)
+return lIIllI1llI1(I1lIlI1llI1(-6193), l1I1I11llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[I1lIlI1llI1(-6191)](0B1, 0B0, 0B0, 0x16), [l1lIlI1llI1({ 0B11, 0B10, 0B1, 0x4, { IllIlI1llI1(_KNS[827]), IllIlI1llI1(_KNS[828]), IllIlI1llI1(_KNS[829]), IllIlI1llI1(_KNS[830]) } })] = 0B1, [IllIlI1llI1(_KNS[608])] = ll1IlI1llI1, [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[831]) } }))[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[832]), IllIlI1llI1(_KNS[833]) } })], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = 0xB, [I1lIlI1llI1(-6016)] = Enum[I1lIlI1llI1(-6016)][IllIlI1llI1(_KNS[834])], [I1lIlI1llI1(-6149)] = IIlIlI1llI1 })
+		end
+local function llI1I11llI1(IIlIlI1llI1, lIlIlI1llI1, III1lI1llI1, ...)
+local lII1lI1llI1 = lIIllI1llI1(I1lIlI1llI1(-5993), l1I1I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[IllIlI1llI1(_KNS[651])](0B1, 0B0, 0B0, 0x39), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-6245))[I1lIlI1llI1(-6187)], [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[835]), IllIlI1llI1(_KNS[810]) } })] = 0B0, [I1lIlI1llI1(-6149)] = lIlIlI1llI1 });
+(I1IllI1llI1 * IllIlI1llI1(_KNS[836]))(lII1lI1llI1, 0x9);
+local I1I1lI1llI1 = l1IllI1llI1(lII1lI1llI1, (lI11lI1llI1 * I1lIlI1llI1(-6007))[I1lIlI1llI1(-6109)], 0B1, .15);
+lIIllI1llI1(I1lIlI1llI1(-5993), lII1lI1llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B0, 0x5, 0B1, -14), [I1lIlI1llI1(-6055)] = UDim2[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[23]), IllIlI1llI1(_KNS[781]) } })](0x9, 0x7), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-6159))[IllIlI1llI1(_KNS[837])], [I1lIlI1llI1(-6253)] = 0B0 });
+lIIllI1llI1(I1lIlI1llI1(-6193), lII1lI1llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, -100, 0B1, 0B0), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6088)](0x18, 0B0), [l1lIlI1llI1({ 0x4, 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[838]), IllIlI1llI1(_KNS[830]), IllIlI1llI1(_KNS[839]), IllIlI1llI1(_KNS[789]) } })] = 0B1, [I1lIlI1llI1(-6165)] = IIlIlI1llI1, [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * I1lIlI1llI1(-6044))[IllIlI1llI1(_KNS[630])], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = I11II11llI1 / I1lIlI1llI1(-6023) and 0xD or 0xE, [I1lIlI1llI1(-6016)] = Enum[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[840]), IllIlI1llI1(_KNS[841]) } })][IllIlI1llI1(_KNS[834])] });
+local l1I1lI1llI1 = lIIllI1llI1(I1lIlI1llI1(-5993), lII1lI1llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[I1lIlI1llI1(-6088)](0x37, 0x1A), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6191)](0B1, -68, .5, -13), [l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[842]), IllIlI1llI1(_KNS[843]), IllIlI1llI1(_KNS[844]) } })] = Color3[I1lIlI1llI1(-5984)](0x2D, 0x2C, 0x39), [I1lIlI1llI1(-6253)] = 0B0 });
+(I1IllI1llI1 * IllIlI1llI1(_KNS[845]))(l1I1lI1llI1, 0x14);
+local IlI1lI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6021)] = lIIllI1llI1(IllIlI1llI1(_KNS[691]), l1I1lI1llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6088)](0x12, 0x12), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6088)](0x4, 0x4), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-6139))[I1lIlI1llI1(-6160)], [I1lIlI1llI1(-6253)] = 0B0 }) }, { [IllIlI1llI1(_KNS[846])] = function(ll1IlI1llI1, IIlIlI1llI1)
+local lIlIlI1llI1 = { [IllIlI1llI1(_KNS[847])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 + 0xC103)
+								end, [IllIlI1llI1(_KNS[848])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 - 0x5ABA)
+								end, [IllIlI1llI1(_KNS[849])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 - 0x270B)
+								end, [IllIlI1llI1(_KNS[850])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 + 0xEF3C)
+								end };
+ll1IlI1llI1[IllIlI1llI1(_KNS[851])] = IIlIlI1llI1
+					end, [I1lIlI1llI1(-6127)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return rawget(ll1IlI1llI1, I1lIlI1llI1(-6021))
+					end });
+(I1IllI1llI1 * l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[852]), IllIlI1llI1(_KNS[675]) } }))(IlI1lI1llI1 - l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[729]), IllIlI1llI1(_KNS[853]) } }), 0x14);
+local llI1lI1llI1 = lIIllI1llI1(I1lIlI1llI1(-6214), lII1lI1llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, 0B0, 0B1, 0B0), [I1lIlI1llI1(-5991)] = 0B1, [I1lIlI1llI1(-6165)] = IllIlI1llI1(_KNS[3]), [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[854]), IllIlI1llI1(_KNS[855]) } })] = false });
+local II11lI1llI1 = false
+local I111lI1llI1 = false
+local l111lI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6194)] = function(IIlIlI1llI1, ...)
+local lIlIlI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6225)] = TweenInfo[I1lIlI1llI1(-6191)](IIlIlI1llI1 and 0B0 or .15) }, { [IllIlI1llI1(_KNS[638])] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[856]), IllIlI1llI1(_KNS[698]) } })] = IIlIlI1llI1
+								end, [I1lIlI1llI1(-5981)] = function(ll1IlI1llI1, IIlIlI1llI1)
+local lIlIlI1llI1 = { [IllIlI1llI1(_KNS[729])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 + 0xB89A)
+											end, [IllIlI1llI1(_KNS[857])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 - 0x5AF9)
+											end, [IllIlI1llI1(_KNS[858])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0x362A)
+											end, [IllIlI1llI1(_KNS[859])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 - 0x8D4F)
+											end }
+return ll1IlI1llI1[lIlIlI1llI1[IllIlI1llI1(_KNS[729])](-54438, -53483, -53026, -53700)]
+								end });
+((lllIlI1llI1 + l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[675]), IllIlI1llI1(_KNS[860]) } })):Create(lII1lI1llI1, lIlIlI1llI1 + l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[861]), IllIlI1llI1(_KNS[659]) } }), { [I1lIlI1llI1(-6013)] = II11lI1llI1 and Color3[I1lIlI1llI1(-5984)](0x2A, 0x1F, 0x10) or (lI11lI1llI1 * l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[698]), IllIlI1llI1(_KNS[862]) } }))[IllIlI1llI1(_KNS[628])] })):Play();
+((lllIlI1llI1 + IllIlI1llI1(_KNS[863])):Create(I1I1lI1llI1, lIlIlI1llI1 + I1lIlI1llI1(-6189), { [I1lIlI1llI1(-6035)] = II11lI1llI1 and (lI11lI1llI1 * I1lIlI1llI1(-6257))[I1lIlI1llI1(-6221)] or (lI11lI1llI1 * I1lIlI1llI1(-6177))[I1lIlI1llI1(-6109)] })):Play();
+((lllIlI1llI1 + I1lIlI1llI1(-6239)):Create(l1I1lI1llI1, lIlIlI1llI1 + IllIlI1llI1(_KNS[864]), { [I1lIlI1llI1(-6013)] = II11lI1llI1 and Color3[I1lIlI1llI1(-5984)](0x79, 0x52, 0xC) or Color3[I1lIlI1llI1(-5984)](0x2D, 0x2C, 0x39) })):Play();
+((lllIlI1llI1 + l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[698]), IllIlI1llI1(_KNS[865]) } })):Create(IlI1lI1llI1 - IllIlI1llI1(_KNS[866]), lIlIlI1llI1 + I1lIlI1llI1(-6207), { [I1lIlI1llI1(-6055)] = II11lI1llI1 and UDim2[I1lIlI1llI1(-6088)](0x21, 0x4) or UDim2[I1lIlI1llI1(-6088)](0x4, 0x4), [I1lIlI1llI1(-6013)] = II11lI1llI1 and (lI11lI1llI1 * IllIlI1llI1(_KNS[867]))[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[868]), IllIlI1llI1(_KNS[869]) } })] or (lI11lI1llI1 * IllIlI1llI1(_KNS[870]))[IllIlI1llI1(_KNS[730])] })):Play()
+					end }, { [I1lIlI1llI1(-5981)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6194)] = IIlIlI1llI1
+					end, [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[871]), IllIlI1llI1(_KNS[872]) } })] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[873]), IllIlI1llI1(_KNS[675]) } })]
+					end });
+local function Il11lI1llI1(ll1IlI1llI1, IIlIlI1llI1, ...)
+ll1IlI1llI1 = ll1IlI1llI1 and true or false
+if II11lI1llI1 == ll1IlI1llI1 then
+return true
+				end
+if not IIlIlI1llI1 and (III1lI1llI1 and III1lI1llI1(ll1IlI1llI1) == false) then
+return false
+				end
+II11lI1llI1 = ll1IlI1llI1;
+(l111lI1llI1  .. I1lIlI1llI1(-6195))(false)
+return true
+			end
+llI1lI1llI1[I1lIlI1llI1(-6228)]:Connect(function(...)
+if I111lI1llI1 then
+return
+				end
+I111lI1llI1 = true
+Il11lI1llI1(not II11lI1llI1, false);
+task[I1lIlI1llI1(-6032)](.2, function(...)
+I111lI1llI1 = false
+				end)
+			end);
+(l111lI1llI1  .. I1lIlI1llI1(-6112))(true)
+return Il11lI1llI1
+		end
+local function II11I11llI1(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, III1lI1llI1, ...)
+local lII1lI1llI1 = lIIllI1llI1(I1lIlI1llI1(-6214), l1I1I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, 0B0, 0B0, 0x30), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * IllIlI1llI1(_KNS[874]))[IllIlI1llI1(_KNS[628])], [I1lIlI1llI1(-6141)] = false, [I1lIlI1llI1(-6165)] = ll1IlI1llI1, [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[842]), IllIlI1llI1(_KNS[875]) } })] = (lI11lI1llI1 * I1lIlI1llI1(-6108))[I1lIlI1llI1(-5988)], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = 0xD, [I1lIlI1llI1(-6253)] = 0B0, [I1lIlI1llI1(-6149)] = IIlIlI1llI1 });
+(I1IllI1llI1 * I1lIlI1llI1(-6136))(lII1lI1llI1, 0x9);
+local I1I1lI1llI1 = l1IllI1llI1(lII1lI1llI1, lIlIlI1llI1 or (lI11lI1llI1 * I1lIlI1llI1(-6176))[I1lIlI1llI1(-6221)], 0B1, .1);
+lII1lI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[631]), IllIlI1llI1(_KNS[876]) } })]:Connect(function(...)
+((lllIlI1llI1 + l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[698]), IllIlI1llI1(_KNS[877]) } })):Create(lII1lI1llI1, TweenInfo[I1lIlI1llI1(-6191)](.12), { [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[878]), IllIlI1llI1(_KNS[848]) } }))[I1lIlI1llI1(-6169)] })):Play()
+			end);
+lII1lI1llI1[I1lIlI1llI1(-6211)]:Connect(function(...)
+((lllIlI1llI1 + I1lIlI1llI1(-6080)):Create(lII1lI1llI1, TweenInfo[I1lIlI1llI1(-6191)](.12), { [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-5992))[I1lIlI1llI1(-6187)] })):Play()
+			end);
+lII1lI1llI1[I1lIlI1llI1(-6228)]:Connect(function(...)
+III1lI1llI1();
+((lllIlI1llI1 + IllIlI1llI1(_KNS[879])):Create(I1I1lI1llI1, TweenInfo[IllIlI1llI1(_KNS[651])](.1), { [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[880]), IllIlI1llI1(_KNS[881]) } })] = 0B10 })):Play();
+task[I1lIlI1llI1(-6032)](.12, function(...)
+if I1I1lI1llI1[I1lIlI1llI1(-6117)] then
+((lllIlI1llI1 + I1lIlI1llI1(-6022)):Create(I1I1lI1llI1, TweenInfo[I1lIlI1llI1(-6191)](.1), { [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[881]), IllIlI1llI1(_KNS[880]) } })] = 0B1 })):Play()
+					end
+				end)
+			end)
+return lII1lI1llI1
+		end
+IlI1I11llI1(I1lIlI1llI1(-6250), 0B10);
+local lI11I11llI1 = lIIllI1llI1(I1lIlI1llI1(-5993), l1I1I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, 0B0, 0B0, 0x3F), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-6118))[I1lIlI1llI1(-6187)], [l1lIlI1llI1({ 0B11, 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[803]), IllIlI1llI1(_KNS[802]) } })] = 0B0, [I1lIlI1llI1(-6149)] = 0B11 });
+(I1IllI1llI1 * I1lIlI1llI1(-5963))(lI11I11llI1, 0x9);
+l1IllI1llI1(lI11I11llI1, (lI11lI1llI1 * I1lIlI1llI1(-6027))[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[631]), IllIlI1llI1(_KNS[632]) } })], 0B1, .15);
+lIIllI1llI1(I1lIlI1llI1(-6193), lI11I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, -20, 0B0, 0x15), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6088)](0xB, 0x5), [l1lIlI1llI1({ 0B11, 0B1, 0B10, 0x4, { IllIlI1llI1(_KNS[882]), IllIlI1llI1(_KNS[883]), IllIlI1llI1(_KNS[884]), IllIlI1llI1(_KNS[700]) } })] = 0B1, [I1lIlI1llI1(-6165)] = l1lIlI1llI1({ 0B1, 0B11, 0B10, { IllIlI1llI1(_KNS[885]), IllIlI1llI1(_KNS[886]), IllIlI1llI1(_KNS[887]) } }), [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * IllIlI1llI1(_KNS[888]))[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[833]), IllIlI1llI1(_KNS[832]) } })], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = 0xA, [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[889]), IllIlI1llI1(_KNS[890]) } })] = Enum[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[891]), IllIlI1llI1(_KNS[892]) } })][IllIlI1llI1(_KNS[834])] });
+local I111I11llI1 = lIIllI1llI1(I1lIlI1llI1(-6193), lI11I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[IllIlI1llI1(_KNS[651])](0B1, -92, 0B0, 0x1E), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6088)](0x2E, 0x1C), [I1lIlI1llI1(-5991)] = 0B1, [I1lIlI1llI1(-6165)] = II11lI1llI1[I111lI1llI1[I1lIlI1llI1(-6015)]][I1lIlI1llI1(-5965)], [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * I1lIlI1llI1(-6146))[I1lIlI1llI1(-5988)], [I1lIlI1llI1(-6254)] = Enum[IllIlI1llI1(_KNS[893])][l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[894]), IllIlI1llI1(_KNS[895]) } })], [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[896]), IllIlI1llI1(_KNS[897]) } })] = 0xD });
+local function l111I11llI1(ll1IlI1llI1, IIlIlI1llI1, ...)
+local lIlIlI1llI1 = lIIllI1llI1(l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[898]), IllIlI1llI1(_KNS[899]) } }), lI11I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6088)](0x1F, 0x1D), [I1lIlI1llI1(-6055)] = IIlIlI1llI1, [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-6143))[I1lIlI1llI1(-5964)], [IllIlI1llI1(_KNS[608])] = ll1IlI1llI1, [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[900]), IllIlI1llI1(_KNS[901]) } })] = (lI11lI1llI1 * I1lIlI1llI1(-6058))[IllIlI1llI1(_KNS[837])], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[902]), IllIlI1llI1(_KNS[895]) } })], [IllIlI1llI1(_KNS[903])] = 0xF, [I1lIlI1llI1(-6253)] = 0B0 });
+(I1IllI1llI1 * l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[695]), IllIlI1llI1(_KNS[904]) } }))(lIlIlI1llI1, 0x7)
+return lIlIlI1llI1
+		end
+local Il11I11llI1 = l111I11llI1(IllIlI1llI1(_KNS[905]), UDim2[I1lIlI1llI1(-6088)](0xA, 0x1D));
+local ll11I11llI1 = l111I11llI1(IllIlI1llI1(_KNS[906]), UDim2[IllIlI1llI1(_KNS[651])](0B1, -41, 0B0, 0x1D));
+local function IIl1I11llI1(ll1IlI1llI1, ...)
+if I111lI1llI1[I1lIlI1llI1(-6000)] then
+l1III11llI1()
+if lllllI1llI1 then
+lllllI1llI1(false, true)
+				end
+			end
+I111lI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[907]), IllIlI1llI1(_KNS[908]) } })] = I111lI1llI1[I1lIlI1llI1(-6015)] + ll1IlI1llI1
+if I111lI1llI1[I1lIlI1llI1(-6015)] < 0B1 then
+I111lI1llI1[I1lIlI1llI1(-6015)] = #II11lI1llI1
+			elseif I111lI1llI1[I1lIlI1llI1(-6015)] > #II11lI1llI1 then
+I111lI1llI1[I1lIlI1llI1(-6015)] = 0B1
+			end
+I111I11llI1[IllIlI1llI1(_KNS[608])] = II11lI1llI1[I111lI1llI1[I1lIlI1llI1(-6015)]][I1lIlI1llI1(-5965)]
+		end
+Il11I11llI1[I1lIlI1llI1(-6228)]:Connect(function(...)
+local ll1IlI1llI1 = { [IllIlI1llI1(_KNS[909])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0x9BB)
+					end, [IllIlI1llI1(_KNS[910])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(l1lIlI1llI1 + 0x5857)
+					end, [IllIlI1llI1(_KNS[911])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(l1lIlI1llI1 - 0x6088)
+					end, [IllIlI1llI1(_KNS[644])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(l1lIlI1llI1 + 0x58F7)
+					end };
+IIl1I11llI1(-0B1)
 		end);
-IIl1lI1l(I1I1I11l[IIIIlI1l(0x9F5A)]:Connect(function(llll1I1l, Illl1I1l, ...)
-if not Illl1I1l and not lI11lI1l then
-(Il1I111l / IIIIlI1l(0x9F83))(true)
+ll11I11llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[912]), IllIlI1llI1(_KNS[913]) } })]:Connect(function(...)
+IIl1I11llI1(0B1)
+		end)
+lllllI1llI1 = llI1I11llI1(I1lIlI1llI1(-6085), 0x4, function(ll1IlI1llI1, ...)
+if ll1IlI1llI1 then
+return IlIII11llI1()
+				end
+l1III11llI1()
+			end)
+l1lllI1llI1 = lIIllI1llI1(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[544]), IllIlI1llI1(_KNS[823]) } }), l1I1I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](0B1, 0B0, 0B0, 0x30), [I1lIlI1llI1(-6013)] = Color3[I1lIlI1llI1(-5984)](0xC, 0xC, 0x13), [I1lIlI1llI1(-6253)] = 0B0, [I1lIlI1llI1(-6165)] = I1lIlI1llI1(-6129), [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * I1lIlI1llI1(-6079))[IllIlI1llI1(_KNS[730])], [IllIlI1llI1(_KNS[893])] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6011)], [I1lIlI1llI1(-6071)] = 0xA, [I1lIlI1llI1(-6149)] = 0B101 });
+(I1IllI1llI1 * I1lIlI1llI1(-6128))(l1lllI1llI1, 0x9);
+l1IllI1llI1(l1lllI1llI1, (lI11lI1llI1 * l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[698]), IllIlI1llI1(_KNS[914]) } }))[IllIlI1llI1(_KNS[915])], 0B1, .2);
+IlI1I11llI1(I1lIlI1llI1(-6026), 0B110);
+local lIl1I11llI1 = lIIllI1llI1(I1lIlI1llI1(-5993), l1I1I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[IllIlI1llI1(_KNS[651])](0B1, 0B0, 0B0, 0x30), [l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[916]), IllIlI1llI1(_KNS[843]), IllIlI1llI1(_KNS[917]) } })] = (lI11lI1llI1 * I1lIlI1llI1(-6260))[I1lIlI1llI1(-6187)], [I1lIlI1llI1(-6253)] = 0B0, [I1lIlI1llI1(-6149)] = 0x7 });
+(I1IllI1llI1 * IllIlI1llI1(_KNS[918]))(lIl1I11llI1, 0x9);
+l1IllI1llI1(lIl1I11llI1, (lI11lI1llI1 * I1lIlI1llI1(-6220))[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[632]), IllIlI1llI1(_KNS[631]) } })], 0B1, .15);
+local I1l1I11llI1 = {};
+local function l1l1I11llI1(...)
+for IIlIlI1llI1, lIlIlI1llI1 in pairs(I1l1I11llI1) do
+local lllIlI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6181)] = I111lI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[919]), IllIlI1llI1(_KNS[631]) } })] == IIlIlI1llI1 }, { [I1lIlI1llI1(-5980)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6181)] = IIlIlI1llI1
+						end, [I1lIlI1llI1(-6210)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6181)]
+						end });
+lIlIlI1llI1[I1lIlI1llI1(-6013)] = lllIlI1llI1  .. I1lIlI1llI1(-6226) and Color3[I1lIlI1llI1(-5984)](0x5B, 0x3D, 0xA) or (lI11lI1llI1 * I1lIlI1llI1(-6068))[IllIlI1llI1(_KNS[920])]
+lIlIlI1llI1[I1lIlI1llI1(-6048)] = lllIlI1llI1  .. l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[921]), IllIlI1llI1(_KNS[922]) } }) and (lI11lI1llI1 * I1lIlI1llI1(-6132))[I1lIlI1llI1(-5999)] or (lI11lI1llI1 * I1lIlI1llI1(-6106))[I1lIlI1llI1(-6160)]
+			end
+		end
+for ll1IlI1llI1, IIlIlI1llI1 in ipairs({ l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[923]), IllIlI1llI1(_KNS[924]) } }), IllIlI1llI1(_KNS[617]) }) do
+local lIlIlI1llI1 = lIIllI1llI1(I1lIlI1llI1(-6214), lIl1I11llI1, { [I1lIlI1llI1(-6224)] = UDim2[I1lIlI1llI1(-6191)](.5, -7, 0B1, -10), [I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6191)](ll1IlI1llI1 == 0B1 and 0B0 or .5, ll1IlI1llI1 == 0B1 and 0x5 or 0B10, 0B0, 0x5), [I1lIlI1llI1(-6013)] = (lI11lI1llI1 * I1lIlI1llI1(-6249))[IllIlI1llI1(_KNS[920])], [IllIlI1llI1(_KNS[608])] = string[I1lIlI1llI1(-6153)](IIlIlI1llI1), [I1lIlI1llI1(-6048)] = (lI11lI1llI1 * l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[925]), IllIlI1llI1(_KNS[633]) } }))[I1lIlI1llI1(-6160)], [I1lIlI1llI1(-6254)] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[896]), IllIlI1llI1(_KNS[897]) } })] = 0B1010, [I1lIlI1llI1(-6253)] = 0B0 });
+(I1IllI1llI1 * I1lIlI1llI1(-6075))(lIlIlI1llI1, 0x7);
+I1l1I11llI1[IIlIlI1llI1] = lIlIlI1llI1
+lIlIlI1llI1[I1lIlI1llI1(-6228)]:Connect(function(...)
+I111lI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[808]), IllIlI1llI1(_KNS[926]) } })] = IIlIlI1llI1
+l1l1I11llI1();
+IllllI1llI1[I1lIlI1llI1(-6165)] = I1lIlI1llI1(-6188);
+IllllI1llI1[I1lIlI1llI1(-6048)] = (lI11lI1llI1 * I1lIlI1llI1(-5967))[I1lIlI1llI1(-6160)]
+			end)
+		end
+l1l1I11llI1();
+II11I11llI1(I1lIlI1llI1(-6236), 0x8, (lI11lI1llI1 * I1lIlI1llI1(-6138))[I1lIlI1llI1(-6221)], function(...)
+local ll1IlI1llI1 = I111lI1llI1[I1lIlI1llI1(-6135)] == I1lIlI1llI1(-6130) and 12.5 or 2.5
+local IIlIlI1llI1, lIlIlI1llI1, lllIlI1llI1 = llIII11llI1(ll1IlI1llI1)
+if lllIlI1llI1 then
+IllllI1llI1[IllIlI1llI1(_KNS[608])] = lllIlI1llI1
+IllllI1llI1[I1lIlI1llI1(-6048)] = (lI11lI1llI1 * I1lIlI1llI1(-6158))[I1lIlI1llI1(-6241)]
+			else
+IllllI1llI1[I1lIlI1llI1(-6165)] = I1lIlI1llI1(-6115) .. (tostring(IIlIlI1llI1) .. (I1lIlI1llI1(-5976) .. IlIllI1llI1[IllIlI1llI1(_KNS[927])](lIlIlI1llI1)));
+IllllI1llI1[I1lIlI1llI1(-6048)] = (lI11lI1llI1 * I1lIlI1llI1(-6038))[I1lIlI1llI1(-5999)]
+			end
+		end)
+IllllI1llI1 = lIIllI1llI1(l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[928]), IllIlI1llI1(_KNS[929]) } }), l1I1I11llI1, { [IllIlI1llI1(_KNS[684])] = UDim2[IllIlI1llI1(_KNS[651])](0B1, 0B0, 0B0, 0x41), [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[829]), IllIlI1llI1(_KNS[930]) } })] = Color3[I1lIlI1llI1(-5984)](0xC, 0xC, 0x13), [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[931]), IllIlI1llI1(_KNS[932]) } })] = 0B0, [I1lIlI1llI1(-6165)] = I1lIlI1llI1(-6188), [l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[794]), IllIlI1llI1(_KNS[793]) } })] = (lI11lI1llI1 * I1lIlI1llI1(-6017))[IllIlI1llI1(_KNS[730])], [IllIlI1llI1(_KNS[893])] = Enum[I1lIlI1llI1(-6254)][I1lIlI1llI1(-6046)], [I1lIlI1llI1(-6071)] = 0xD, [I1lIlI1llI1(-6149)] = 0x9 });
+(I1IllI1llI1 * I1lIlI1llI1(-6251))(IllllI1llI1, 0x9);
+l1IllI1llI1(IllllI1llI1, (lI11lI1llI1 * I1lIlI1llI1(-6092))[I1lIlI1llI1(-6221)], 0B1, .25);
+IlI1I11llI1(I1lIlI1llI1(-6255), 0xA);
+llI1I11llI1(IllIlI1llI1(_KNS[933]), 0xB, function(ll1IlI1llI1, ...)
+I111lI1llI1[I1lIlI1llI1(-6234)] = ll1IlI1llI1
+if ll1IlI1llI1 then
+if Il11lI1llI1[I1lIlI1llI1(-6234)] then
+Il11lI1llI1[I1lIlI1llI1(-6234)]:Disconnect()
+				end
+Il11lI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[934]), IllIlI1llI1(_KNS[935]) } })] = l1I1lI1llI1[I1lIlI1llI1(-6232)]:Connect(function(...)
+pcall(function(...)
+I1I1lI1llI1:CaptureController();
+I1I1lI1llI1:ClickButton2(Vector2[I1lIlI1llI1(-6191)]())
+						end)
+					end)
+			elseif Il11lI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[934]), IllIlI1llI1(_KNS[935]) } })] then
+Il11lI1llI1[I1lIlI1llI1(-6234)]:Disconnect();
+Il11lI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[934]), IllIlI1llI1(_KNS[935]) } })] = nil
+			end
+		end);
+II11I11llI1(I1lIlI1llI1(-6097), 0xC, (lI11lI1llI1 * I1lIlI1llI1(-6217))[IllIlI1llI1(_KNS[749])], function(...)
+if l111lI1llI1[I1lIlI1llI1(-6123)] then
+l111lI1llI1[I1lIlI1llI1(-6123)](false)
+			end
+		end);
+lll1lI1llI1(IllIlI1llI1(_KNS[936]), function(...)
+while I111lI1llI1[I1lIlI1llI1(-6168)] do
+local IIlIlI1llI1 = l1I1lI1llI1:FindFirstChild(I1lIlI1llI1(-6205));
+local lIlIlI1llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-6133)] = II11lI1llI1[I111lI1llI1[I1lIlI1llI1(-6015)]] }, { [I1lIlI1llI1(-6210)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6133)] = IIlIlI1llI1
+						end, [IllIlI1llI1(_KNS[846])] = function(ll1IlI1llI1, IIlIlI1llI1)
+return rawget(ll1IlI1llI1, I1lIlI1llI1(-6133))
+						end });
+l1lllI1llI1[I1lIlI1llI1(-6165)] = l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[937]), IllIlI1llI1(_KNS[938]) } }) .. (IlIllI1llI1[IllIlI1llI1(_KNS[939])](IIlIlI1llI1 and IIlIlI1llI1[I1lIlI1llI1(-6202)] or 0B0) .. (I1lIlI1llI1(-6150) .. lIlIlI1llI1[I1lIlI1llI1(-6059)][I1lIlI1llI1(-5965)]));
+task[I1lIlI1llI1(-6227)](.25)
+			end
+		end);
+Ill1lI1llI1(l1I1lI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[940]), IllIlI1llI1(_KNS[941]) } })]:Connect(function(...)
+local ll1IlI1llI1 = { [IllIlI1llI1(_KNS[922])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x6476)
+					end, [IllIlI1llI1(_KNS[910])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x93A3)
+					end, [IllIlI1llI1(_KNS[942])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0xA5EC)
+					end, [IllIlI1llI1(_KNS[943])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 + 0x8B96)
+					end };
+task[IllIlI1llI1(_KNS[735])](0B1)
+if I111lI1llI1[ll1IlI1llI1[IllIlI1llI1(_KNS[922])](-31718, -32133, -31824, -32303)] then
+ll1llI1llI1()
 			end
 		end));
-IIl1lI1l(IlIIlI1l[IIIIlI1l(0x9F13)]:Connect(function(llll1I1l, ...)
-I111I11l[IIIIlI1l(0x9FBB)] = (I111I11l[IIIIlI1l(0x9FBB)] + llll1I1l * 0x16) % 0x168
-local Illl1I1l = (math[IIIIlI1l(0x9F66)](os[IIIIlI1l(0x9FB0)]() * 0B10) + 0B1) * .5;
-(Ill1I11l / IIIIlI1l(0x9FDC))[l1IIlI1l({ 0B11, 0B1, 0B10, { I1IIlI1l(_KKA[1222]), I1IIlI1l(_KKA[1055]), I1IIlI1l(_KKA[1018]) } })] = IllIlI1l[I1IIlI1l(_KKA[990])]:Lerp(IllIlI1l[I1IIlI1l(_KKA[1223])], Illl1I1l)
+local Ill1I11llI1 = false
+local lll1I11llI1 = false
+local IIIlI11llI1 = ll1IlI1llI1({ [I1lIlI1llI1(-5986)] = nil }, { [IllIlI1llI1(_KNS[604])] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-5986)] = IIlIlI1llI1
+				end, [I1lIlI1llI1(-6089)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[IllIlI1llI1(_KNS[944])]
+				end });
+local lIIlI11llI1
+local function I1IlI11llI1(IIlIlI1llI1, ...)
+local III1lI1llI1 = { [IllIlI1llI1(_KNS[945])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 - 0x5D96)
+					end, [IllIlI1llI1(_KNS[946])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 - 0x41CB)
+					end, [IllIlI1llI1(_KNS[947])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0xFD5F)
+					end, [IllIlI1llI1(_KNS[948])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x7714)
+					end }
+if l1l1lI1llI1 or Ill1I11llI1 == IIlIlI1llI1 then
+return
+			end
+Ill1I11llI1 = IIlIlI1llI1
+III1I11llI1[IllIlI1llI1(_KNS[608])] = Ill1I11llI1 and III1lI1llI1[IllIlI1llI1(_KNS[946])](0x2A2F, 0x2D30, 0x299B, 0x2A2F) or IllIlI1llI1(_KNS[804]);
+l1I1I11llI1[IllIlI1llI1(_KNS[731])] = not Ill1I11llI1
+local lIlIlI1llI1 = ll1IlI1llI1({ [III1lI1llI1[IllIlI1llI1(_KNS[946])](0x2B02, 0x2A50, 0x29F6, 0x2DCA)] = Ill1I11llI1 and ll1II11llI1 or Il1II11llI1 }, { [III1lI1llI1[IllIlI1llI1(_KNS[948])](-36573, -36992, -36015, -36068)] = function(ll1IlI1llI1, IIlIlI1llI1)
+ll1IlI1llI1[I1lIlI1llI1(-6101)] = IIlIlI1llI1
+					end, [III1lI1llI1[IllIlI1llI1(_KNS[948])](-36727, -35993, -35979, -36189)] = function(ll1IlI1llI1, IIlIlI1llI1)
+return ll1IlI1llI1[I1lIlI1llI1(-6101)]
+					end });
+((lllIlI1llI1 + III1lI1llI1[IllIlI1llI1(_KNS[948])](-36467, -36911, -36975, -36484)):Create(I1lII11llI1, TweenInfo[III1lI1llI1[IllIlI1llI1(_KNS[945])](0x4567, 0x44B9, 0x42B5, 0x4773)](.2), { [III1lI1llI1[IllIlI1llI1(_KNS[946])](0x2995, 0x2C74, 0x297B, 0x2C7F)] = UDim2[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[23]), IllIlI1llI1(_KNS[781]) } })](l11II11llI1, lIlIlI1llI1 ^ III1lI1llI1[IllIlI1llI1(_KNS[946])](0x26B5, 0x2609, 0x29B5, 0x2A03)) })):Play();
+((lllIlI1llI1 + l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[698]), IllIlI1llI1(_KNS[949]) } })):Create(lIlII11llI1, TweenInfo[III1lI1llI1[IllIlI1llI1(_KNS[945])](0x4567, 0x493C, 0x47DE, 0x42DE)](.2), { [III1lI1llI1[IllIlI1llI1(_KNS[945])](0x4546, 0x43D7, 0x48BC, 0x4402)] = UDim2[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[950]), IllIlI1llI1(_KNS[951]) } })](l11II11llI1 + 0xE, lIlIlI1llI1 ^ III1lI1llI1[IllIlI1llI1(_KNS[947])](-71066, -70248, -71008, -71349) + 0xE) })):Play()
+		end
+III1I11llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[912]), IllIlI1llI1(_KNS[913]) } })]:Connect(function(...)
+local ll1IlI1llI1 = { [IllIlI1llI1(_KNS[952])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 + 0x7FB5)
+					end, [IllIlI1llI1(_KNS[678])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 + 0xC368)
+					end, [IllIlI1llI1(_KNS[849])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(IIlIlI1llI1 - 0xB4B0)
+					end, [IllIlI1llI1(_KNS[673])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 - 0x2BB)
+					end };
+I1IlI11llI1(not Ill1I11llI1)
+		end);
+(I1I1I11llI1 - l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[643]), IllIlI1llI1(_KNS[953]) } }))[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[954]), IllIlI1llI1(_KNS[955]) } })]:Connect(function(ll1IlI1llI1, ...)
+if ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[956]), IllIlI1llI1(_KNS[957]), IllIlI1llI1(_KNS[686]) } })] == Enum[I1lIlI1llI1(-6002)][l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[698]), IllIlI1llI1(_KNS[958]), IllIlI1llI1(_KNS[959]) } })] or ll1IlI1llI1[I1lIlI1llI1(-6002)] == Enum[I1lIlI1llI1(-6002)][I1lIlI1llI1(-6201)] then
+lll1I11llI1 = true
+IIlIlI1llI1(IIIlI11llI1 + ll1IlI1llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[824]), IllIlI1llI1(_KNS[825]) } })])
+lIIlI11llI1 = I1lII11llI1[I1lIlI1llI1(-6055)]
+ll1IlI1llI1[I1lIlI1llI1(-6222)]:Connect(function(...)
+if ll1IlI1llI1[I1lIlI1llI1(-5979)] == Enum[I1lIlI1llI1(-5979)][I1lIlI1llI1(-6124)] then
+lll1I11llI1 = false
+					end
+				end)
+			end
+		end);
+Ill1lI1llI1(III1lI1llI1[I1lIlI1llI1(-6223)]:Connect(function(ll1IlI1llI1, ...)
+if not lll1I11llI1 then
+return
+			end
+if ll1IlI1llI1[I1lIlI1llI1(-6002)] == Enum[I1lIlI1llI1(-6002)][I1lIlI1llI1(-6081)] or ll1IlI1llI1[I1lIlI1llI1(-6002)] == Enum[I1lIlI1llI1(-6002)][IllIlI1llI1(_KNS[681])] then
+local IIlIlI1llI1 = ll1IlI1llI1[l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[960]), IllIlI1llI1(_KNS[609]) } })] - IIIlI11llI1 / l1lIlI1llI1({ 0B1, 0B10, { IllIlI1llI1(_KNS[961]), IllIlI1llI1(_KNS[659]) } });
+local lIlIlI1llI1 = workspace[I1lIlI1llI1(-6093)] and workspace[I1lIlI1llI1(-6093)][I1lIlI1llI1(-6041)] or lI1II11llI1
+local lllIlI1llI1 = I1lII11llI1[I1lIlI1llI1(-6103)][I1lIlI1llI1(-6052)]
+local III1lI1llI1 = I1lII11llI1[I1lIlI1llI1(-6103)][I1lIlI1llI1(-6018)]
+local lII1lI1llI1 = (lIlIlI1llI1[I1lIlI1llI1(-6052)] * lIIlI11llI1[I1lIlI1llI1(-6052)][I1lIlI1llI1(-6170)] + lIIlI11llI1[I1lIlI1llI1(-6052)][IllIlI1llI1(_KNS[962])]) + IIlIlI1llI1[IllIlI1llI1(_KNS[769])]
+local I1I1lI1llI1 = (lIlIlI1llI1[I1lIlI1llI1(-6018)] * lIIlI11llI1[IllIlI1llI1(_KNS[156])][I1lIlI1llI1(-6170)] + lIIlI11llI1[I1lIlI1llI1(-6018)][I1lIlI1llI1(-6073)]) + IIlIlI1llI1[I1lIlI1llI1(-6018)]
+local l1I1lI1llI1 = lllIlI1llI1 / 0B10 + 0x6
+local IlI1lI1llI1 = (lIlIlI1llI1[IllIlI1llI1(_KNS[769])] - lllIlI1llI1 / 0B10) - 0x6
+local llI1lI1llI1 = III1lI1llI1 / 0B10 + 0B110
+local II11lI1llI1 = (lIlIlI1llI1[I1lIlI1llI1(-6018)] - III1lI1llI1 / 0B10) - 0x6
+lII1lI1llI1 = l1I1lI1llI1 <= IlI1lI1llI1 and math[I1lIlI1llI1(-6045)](lII1lI1llI1, l1I1lI1llI1, IlI1lI1llI1) or lIlIlI1llI1[I1lIlI1llI1(-6052)] / 0B10
+I1I1lI1llI1 = llI1lI1llI1 <= II11lI1llI1 and math[I1lIlI1llI1(-6045)](I1I1lI1llI1, llI1lI1llI1, II11lI1llI1) or lIlIlI1llI1[I1lIlI1llI1(-6018)] / 0B10
+I1lII11llI1[I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6191)](lIIlI11llI1[I1lIlI1llI1(-6052)][I1lIlI1llI1(-6170)], lII1lI1llI1 - lIlIlI1llI1[IllIlI1llI1(_KNS[769])] * lIIlI11llI1[I1lIlI1llI1(-6052)][IllIlI1llI1(_KNS[963])], lIIlI11llI1[I1lIlI1llI1(-6018)][I1lIlI1llI1(-6170)], I1I1lI1llI1 - lIlIlI1llI1[IllIlI1llI1(_KNS[156])] * lIIlI11llI1[I1lIlI1llI1(-6018)][I1lIlI1llI1(-6170)]);
+lIlII11llI1[I1lIlI1llI1(-6055)] = UDim2[I1lIlI1llI1(-6191)](I1lII11llI1[I1lIlI1llI1(-6055)][IllIlI1llI1(_KNS[769])][IllIlI1llI1(_KNS[963])], I1lII11llI1[I1lIlI1llI1(-6055)][I1lIlI1llI1(-6052)][I1lIlI1llI1(-6073)] - 0x7, I1lII11llI1[l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[719]), IllIlI1llI1(_KNS[964]) } })][IllIlI1llI1(_KNS[156])][I1lIlI1llI1(-6170)], I1lII11llI1[I1lIlI1llI1(-6055)][I1lIlI1llI1(-6018)][IllIlI1llI1(_KNS[962])] + 0x7)
+			end
 		end));
-local lIlI111l = math[IIIIlI1l(0x9F53)](Il1II11l * .86);
-local IIlI111l = math[IIIIlI1l(0x9F53)](lIlII11l * .86);
-IlI1I11l[I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9FD6)](lIlI111l, IIlI111l);
-IlI1I11l[IIIIlI1l(0x9F6D)] = UDim2[I1IIlI1l(_KKA[959])](lI1I111l[I1IIlI1l(_KKA[353])][IIIIlI1l(0xA012)], lI1I111l[IIIIlI1l(0x9EF4)][IIIIlI1l(0xA013)] + (Il1II11l - lIlI111l) / 0B10, lI1I111l[IIIIlI1l(0x9FFE)][IIIIlI1l(0xA012)], lI1I111l[IIIIlI1l(0x9FFE)][IIIIlI1l(0xA013)] + (lIlII11l - IIlI111l) / 0B10);
-IlI1I11l[IIIIlI1l(0x9F94)] = .18
-llI1I11l[IIIIlI1l(0x9F94)] = 0B1
-lI11I11l[l1IIlI1l({ 0B10, 0B1, { I1IIlI1l(_KKA[863]), I1IIlI1l(_KKA[862]) } })] = .65;
-(II1IlI1l:Create(IlI1I11l, TweenInfo[IIIIlI1l(0x9F8E)](.38, Enum[IIIIlI1l(0x9FA8)][IIIIlI1l(0x9F04)], Enum[l1IIlI1l({ 0B1, 0B10, { I1IIlI1l(_KKA[1224]), I1IIlI1l(_KKA[1225]) } })][IIIIlI1l(0xA05C)]), { [IIIIlI1l(0x9F93)] = UDim2[IIIIlI1l(0x9FD6)](Il1II11l, lIlII11l), [IIIIlI1l(0x9F6D)] = lI1I111l, [IIIIlI1l(0x9F94)] = 0B0 })):Play();
-(II1IlI1l:Create(llI1I11l, TweenInfo[IIIIlI1l(0x9F8E)](.38, Enum[IIIIlI1l(0x9FA8)][IIIIlI1l(0x9F04)], Enum[IIIIlI1l(0x9F46)][I1IIlI1l(_KKA[1226])]), { [I1IIlI1l(_KKA[860])] = UDim2[IIIIlI1l(0x9FD6)](Il1II11l + 0x12, lIlII11l + 0x12), [IIIIlI1l(0x9F6D)] = II1I111l, [IIIIlI1l(0x9F94)] = .3 })):Play();
-(II1IlI1l:Create(lI11I11l, TweenInfo[IIIIlI1l(0x9F8E)](.3), { [IIIIlI1l(0x9F0B)] = .02 })):Play()
+local function l1IlI11llI1(...)
+local ll1IlI1llI1 = { [IllIlI1llI1(_KNS[673])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(l1lIlI1llI1 + 0x382E)
+					end, [IllIlI1llI1(_KNS[672])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 - 0xCDED)
+					end, [IllIlI1llI1(_KNS[945])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(ll1IlI1llI1 - 0x81DE)
+					end, [IllIlI1llI1(_KNS[797])] = function(ll1IlI1llI1, IIlIlI1llI1, lIlIlI1llI1, l1lIlI1llI1)
+return I1lIlI1llI1(lIlIlI1llI1 + 0xABA2)
+					end };
+I111lI1llI1[ll1IlI1llI1[IllIlI1llI1(_KNS[945])](0x69C6, 0x660B, 0x6859, 0x6D2D)] = false
+l1III11llI1()
+for IIlIlI1llI1, lIlIlI1llI1 in pairs(ll11lI1llI1) do
+task[ll1IlI1llI1[IllIlI1llI1(_KNS[945])](0x699D, 0x69A7, 0x67AC, 0x6C65)](lIlIlI1llI1)
+			end
+ll11lI1llI1 = {}
+for ll1IlI1llI1, IIlIlI1llI1 in pairs(Il11lI1llI1) do
+pcall(function(...)
+IIlIlI1llI1:Disconnect()
+				end)
+			end
+Il11lI1llI1 = {}
+for IIlIlI1llI1, lIlIlI1llI1 in ipairs(I1l1lI1llI1) do
+pcall(function(...)
+lIlIlI1llI1:Disconnect()
+				end)
+			end
+I1l1lI1llI1 = {};
+IIlllI1llI1();
+I11llI1llI1()
+if llI1lI1llI1[ll1IlI1llI1[IllIlI1llI1(_KNS[672])](0xB5DB, 0xB48B, 0xB812, 0xB9A8)] == l111lI1llI1 then
+llI1lI1llI1[l1lIlI1llI1({ 0B1, 0B10, 0B11, { IllIlI1llI1(_KNS[611]), IllIlI1llI1(_KNS[613]), IllIlI1llI1(_KNS[612]) } })] = nil
+			end
+		end
+local function IlIlI11llI1(ll1IlI1llI1, ...)
+if l1l1lI1llI1 then
+return
+			end
+l1l1lI1llI1 = true
+l1IlI11llI1()
+if ll1IlI1llI1 then
+IIlII11llI1:Destroy()
+return
+			end;
+((lllIlI1llI1 + I1lIlI1llI1(-6262)):Create(I1lII11llI1, TweenInfo[I1lIlI1llI1(-6191)](.25), { [IllIlI1llI1(_KNS[684])] = UDim2[I1lIlI1llI1(-6088)](math[IllIlI1llI1(_KNS[599])](I1lII11llI1[I1lIlI1llI1(-6103)][IllIlI1llI1(_KNS[769])] * .86), math[I1lIlI1llI1(-6094)](I1lII11llI1[I1lIlI1llI1(-6103)][I1lIlI1llI1(-6018)] * .86)), [I1lIlI1llI1(-5991)] = 0B1 })):Play();
+((lllIlI1llI1 + I1lIlI1llI1(-6204)):Create(lIlII11llI1, TweenInfo[I1lIlI1llI1(-6191)](.25), { [l1lIlI1llI1({ 0B10, 0B1, 0B11, { IllIlI1llI1(_KNS[965]), IllIlI1llI1(_KNS[884]), IllIlI1llI1(_KNS[966]) } })] = 0B1 })):Play();
+((lllIlI1llI1 + I1lIlI1llI1(-6259)):Create(l1lII11llI1, TweenInfo[I1lIlI1llI1(-6191)](.25), { [l1lIlI1llI1({ 0B10, 0B1, { IllIlI1llI1(_KNS[967]), IllIlI1llI1(_KNS[968]) } })] = 0B1 })):Play();
+task[I1lIlI1llI1(-6032)](.28, function(...)
+if IIlII11llI1[I1lIlI1llI1(-6117)] then
+IIlII11llI1:Destroy()
+				end
+			end)
+		end
+l111lI1llI1[I1lIlI1llI1(-6123)] = IlIlI11llI1
+l111lI1llI1[I1lIlI1llI1(-6200)] = function(...)
+if not I111lI1llI1[I1lIlI1llI1(-6000)] then
+local ll1IlI1llI1 = IlIII11llI1()
+if ll1IlI1llI1 ~= false then
+lllllI1llI1(true, true)
+					end
+				end
+			end
+l111lI1llI1[I1lIlI1llI1(-6116)] = function(...)
+if I111lI1llI1[IllIlI1llI1(_KNS[751])] then
+l1III11llI1();
+lllllI1llI1(false, true)
+				end
+			end
+llI1lI1llI1[l1lIlI1llI1({ 0B10, 0B11, 0B1, { IllIlI1llI1(_KNS[231]), IllIlI1llI1(_KNS[969]), IllIlI1llI1(_KNS[970]) } })] = l111lI1llI1
+lII1I11llI1[I1lIlI1llI1(-6228)]:Connect(function(...)
+IlIlI11llI1(false)
+		end)
 	end)(...) end)(...))}

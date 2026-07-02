@@ -1,6 +1,6 @@
 -- this file is protected by Young0x Hub Obfuscator
-return{[(function(y)return y end)(0xC13)]=((function(...)
-local _aTL=function(s)
+return{[(function(y)return y*1 end)(0x33D)]=((function(...)
+local _aCZ=function(s)
 local o={};
 local i=1;
 local n=#s;while i<=n do
@@ -9,7 +9,7 @@ local v=0;for j=0,r-1 do v=v*85+(s:byte(i+j)-33)end;for j=1,5-r do v=v*85+84 end
 local nb=r-1;
 local b4={};
 local vv=v;for j=4,1,-1 do b4[j]=vv%256;vv=math.floor(vv/256)end;for j=1,nb do o[#o+1]=string.char(b4[j])end;i=i+r end;return table.concat(o)end
-local _cGP=_aTL("2/amGDI-3kCKkU_5\0923q]HT<cV-@S.\0398698&/hp.A,YM`;GA:&$4*>Lj02=8pF%o\034g/2K+DEctkMB0BUJ<%17*7ne1X>\039s0nA0Ge]4=t8*3*\039O&?$&:"); local _bHG=function(d,c)
+local _cSL=_aCZ("HpV@N=Em5[.R?Nf=&s#p8n1+u3\092`uM9m]!D3FYKl>A?5TF`034CLo)(G&f2l9/\039XS;0br4E$TORIO/DR4]>NU.5,Kn<Amfr+X9Em89\092qu5;c7fB2W+"); local _bDI=function(d,c)
 local t={}for i=1,#c do t[c:sub(i,i)]=i-1 end;
 local o={};
 local b=0;
@@ -20,25 +20,24 @@ local lsh=bit32.lshift;
 local rsh=bit32.rshift;
 local band=bit32.band;for i=1,#d do
 local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=band(bor(b,lsh(v,n)),0xFFFFFFFF);if band(v,8191)>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do o[#o+1]=string.char(band(b,255));b=rsh(b,8);n=n-8 end end end end;if v>-1 then o[#o+1]=string.char(band(bor(b,lsh(v%91,n)),255))end;return table.concat(o)end
-local _KVR={};do
-local _d=_bHG("zPY+JGZO`)v5d>e_lGhbj`AAF$iL_O7955aCx`>8Ot4E=CcRJYoWbZLbyKEbOU,>EN&rlB!5A|kN++c)3UbXzBgxe.$T8K<(>53Q[[xUdbR5_WM`zC3(cQ@?(N~`DkkFnNBx3ky^v^~D2WggTmcuRU:Bgq0v[N>hC>vV`g/P&nuo@W-%0[p(,}(;w`b^YN@~fvc&.l7+JYxLwXd2br;;iFT*S53Fb~yAe-@?^,hX.MQrZmM1LPoo9-N5vN@v#(n`pxHr&w>#<&.5Kr,ER&NWsh[dJF#Xg#x^=h(Nfa43CGmT|3J>1/P|K3]5Qm_(joo^p(ZdJ7+Pa6Y5CsV!{7cs&Zx5<4L/Lxx`24[~x5YxK<I&iSb5%^g]k@i)*##2B>Xzx`d@>o}`S600d[JY<@/fjsM>zP,({5}eRUIBp&VfeN)PP2#xroc>K<on}~g@fy[E#q*zGv](-N`IQBIZRU~|*VHf[?p3t#!+EIM>>O@51Np?4u/.RU<{v^_}q<L^Q(8ZR58{!G9M?J;Sr5j8Y5OW|PunR`31l?Ms=~w/(}CF1W9|(Rr.v^1[x`[jja;p@Tt=x`6+eocmIex:(5Vwu`n4~aGaeN7^KG%0`(C?7l/KXT@5.`XLA2<n{5H52k4/&sCg(N7]BF7K|utk&nf2RZZ^rlLo@x__Tge.Ker3T|$?i{)Gh+dom>-+e*oNlU}2E2f{o<,@LKQEIK47`l<{zBQ*!wol&ne^/Ex`|!A.?oR2q6B{Y#cohF>U_nVuv^CUsga5rrGdF2pTh=H(jor?Tn7hcvDRl(g7}[qe6n>2b:b6bS+w2>(N/.)7<5u`$/:d{|WPQRn53wa#X|5[E2kN,QI()24(`x-T6abgq^Hrn&>(Tu{5!([>j5e7xc~T#R+Ng])!l^XL537$e.kr<ff)e?R,,IXb8oMNFAU&+Ol5$r~YA8(?/@u12w<`PgCF7C:#(rSv=^^oR!hP8n;2xZbdL`e5>n.FhbRU+BT(.#[5O/P|K3&@Ebx?^?W`97.}.np(~Gse1JLC+Nl~0~P?#oQtfnGop?4[;+aeJY<@{SRX|m1W|P$J#*X5m>Tle)YN#oQtEn}o`xZ]5)HK;yWrG&0|8su5yT0N}Smbo5f!rrb{;kfyw)QkYPJYe+r~8[W`WHdlPF;*hRNXv^x#k*I5}`jtg+s`JY_2K<*n(?KeZ@1SHHUe,>8GD##`D8}L;h*5BFA?i{pv{@k(zF3t(N*`Szm<qk4BnNcMy$/og+M>^K,(Yx,8MdY$553Ft,V5F^7}7c5kLolV$=6Le.(a=;e7.?M>>NyxKLZ^JYK+kZ|>n?]rZP:e5kSg,>3wv=w/_5q`KJEZx`&x)3fWckAeJOv^li+,T5~N4[4D.AJY_2{D9Z*KzPfr^NdJ08t4w[x`?j#YRmc&yQhbx`77@37_`}FFx`v3^o~NyRr:tP8nOOE$X+R&O5g]7Fs6]&k({5xpWF~w^Y-N%2Q0l)v^}*(5i(%~ntiW+3M5C>T/g@qY)y,[>Oqs^54>.5AUTcBh9&l@ovbr1W|P7y;5&pMYv^Bz(1whYNyCv^6*75&|_/O@%%fng@+Y<4`f#8J-u5C?R@-H({g54>E]s~KYprw5K`u-%5.(<5l@aU3bY+LW1L-#B>(NYNq})5L^)tds(_X?w#qaH?a]ll!tlo`x,8Pi>X?ZLKD#zCn5I>pFzG7#Uxn?w8Z5m>P5L+sFMsuKg=[.O^Q(Z`&mF,H4![&n9=0VzP0QNXI_Mj05U.RN;oM$i?^%E5>2yApA`{1c2>uZuv8r[olfFiFBH$,+%oMN!3rk$5;5Y9BY`$M&;#1W+BT(.#fVggknT5N+ym6x]Z92|k=o3o{f:hyiwYvvN5WrM>p3n;=F&o&5o/,caYLo$G=9hv-{#`Lmbr1W|P:Qa5qW$>v^r0m{mJT%uX2>^|IOUegBdpMF0pjRtl7;@.`zC0p7W5kU1509x`D7XLU;v/<TLK;rx2)DQn<{Y+9p;zN#Y+6J/u#|C>hMy$/og+5o0>x`+`m*B(i?pnEsyxv^]n*tgoC?7lM(FF~5z^[Fv{{4{NY?8m@Nzv=HnArol?`?[UhmE{]v8oJYp2/q$<W`FbFTGs{:PCak&nfby2zPM^JdT8hDn5+N$u85F^g]k@3kLon](ad@w#]rB]N6bWuoPx(>z}`XPk8YLo2Y:6Wne.#`Vjpw&?#oV/EA6o`x/zjyC*`zHrjKc(Byu5Hh0Nz4Un>2=p4OJZRN(5&x)3fWckXu[?u3u^3o{fXqN*/`4A}5_Cg^m{(Nfa43LIUi{*M>ENsCHN}53FOCxo_>ckyz(N1/^^VtE<brd.F85nS5Hh@z6Y/(<5o><klOY+=WFal*+NHrx^MNpHgkAY04?f%SICMdi5pr0RA8`4kKhQBF(N~`DkkF8ol(>2R_7fN5MNjU=75F.oWN4[;+aeg5_CW>MN@.*`Xgrh[?8{[<1NyX+m<Be.MeZ;^D>5uo8:stc@MbH5j#aYl(1olf;kX#waZ3tUJYW-^81jHrJDXUAbO5[5V/!RA<ft&mv^d@![WW}J.3m#^5^5}>y{hoa?@mwM!g=qv^![Y+DYM=-CB>7C:#GCi57F|Mw=L3Y52gEL1N;kSm0@v^Yx;kJX+RKug0Q(e-yh-5Qmhojo|of?[5*Ko5H%}DM$Y+e=i(9/YN]%i;CQv!br:}?5o;x5(NM>Ph@.|~4~5d`5D!=wfazPiQMZuUJ|(5/8=`^,n?(aeLNQIx?Q4FbiBDeNTvndCg,Tc@JY^J*%h=sF4O7-fyj6-{faHrMF_Sq)Wi+}H`|~Y5wrH,J}a$[5&h&YLo_*fH`AoN7z.H$k6ZHI^?OS[[SUJYya</WVLKk;!qoN&hfcVKGM|mWj]ypqT?#(`xXKiE@+8SoNWjE95{8na<b;/fIXO?br#aXv)5,rsb93DYXQa^,&;ke^OL+x&Rjo,((N3QYaC0+P1AT5a5rr&U#a:_M$qn>2+{<`90=1,>+mS<M!W5R?{>T5%5YIJb/yMnD5B>$M_bHo>2l{gqKQ&*RN=vP^R2ir]]6mYo;5f9=K)nJY]a-tzY*m$$3U7@4>+5hFuOQE.nv^Qi(tLo4>$5Nk]owcU5*FCMf5`xR3Ntp8CMMFXqs.?I8.e.EaeN~_^?6=YiXzQ5&5KC={+oT5s7x`Fbb9ke6~:r(Wv^iS_-:om>,`=hY5XiMz%qY+:YOLm?nNd.9.rnl(V1HHv^I7]r95/r&U8D)Pl(Q2Q;Y+:Ya-&o4FJcK13OT#R5MNPx)5-NnBX:tkzP)1n+XQ((.5o9VYyi,`&?~p*?RgSFU[f?=5yCm3f2#->5*msYQ()_YzdYJW^UQ(j^Y5w!^s}s)8^NL,^v*L8;n?9=^cR+EB)Cs>BQK1)QK5=FBBaK:oFczP{kJ8<qDbwoU?m70o:`T9F(!ZjH4()Nw_jKx?6=;7c_I5WN>A]uxJD5FC@1tOHF$V?)oN*X,.ZeQ(fH^#Z59N_kQO6o9th5X`U?3Qtr+l|GI(v^BLv}t,CQ@f2>|!prwo^(j~*md.`Uan*Ms(f?j`LK#7!Jv7zkzP)1MsXQ-Vl5D`Euo;x%^5OWyoLoT;(H&&@.${oIyz(5fys7{sW_}F05dme*q&dIl5Xi7o4~v^e^mgh5;r&UxFn?euOxE+v^3JgfO,&lOw<{blasb1i;Q(iS[5$Wyo$#eKoN)T^z3Opr*KOSbR2>Z7!|>ZX5W|,[3}_<x?cxmo#3y|&Y&n}JvoLY|kl(<x>G$PXY)NXsN!{55SR-0:<{plMZPsHOg@2U|8>Hk<bzqYMNk[M5i?P@%q+pY+:7,<KD(NXif?)+K--{Q0i-CFT$5GYgY@e.JPk&aOk5ET.dN8RU{kJ8<qYNqyBiY?,QVwM=G5sr4AmO!sq5S#0BY50.qWo(8#lNQ;co`g}5WN4[v/2(;5@7^bA&[YC?<dQYjolaKtu`O6pnjouP^N2A>vyufWN~&nkw-t-d/kAYWzxo~u9}TP]5*KkNs>Re#3$5,r4AmO.Y6Ax`qPf5R_fRA0Dv0675tKo1b8j^8nDP85D}X!YN%;co`gniA&v^vo<S}faRRXRU0Q})=yo5=dn,T$x`:7_i6@Z7,}D#Xz]T1Qx:95sr*^#%0}b5)CI)cw2&pHjo`Yl(*f%E~AXY)NO&Uv{5i=/Yl((EFL9#lnjowY{IG>&{7l&njD^w_+(RQ(*f%E5O<OX[v^u=C(Y(uNT>l{.n;kCiHhGzj@Q(GOJ(noUfd+eTt>h--Q[NOzSvyJh^#0Q(jD^w75q|=^8ejx<tBB^NI4C5ufCAo",_cGP);
+local _KWT={};do
+local _d=_bDI(",f_z4)UG>S$|!CVaF)+<o>88I[n/aG}c||W99vy8>a{`Rqa4(y1dPCOx,6ED:Xv|8D#A8>~(pT.N[|(+c<XU/j*gjz]kJ/$x0r>|-?+K]#=Q*`7S!Lm$>V{pgg8W{w4|g%e])_r[HuTd}NB|33IW-rj.g$r|vyO_A|bpG_fZEdn`J(UP&o#A6j9M,3;i2|AiOsJ|n4mKq7RBF:oB_>Td0=f)QK%(!xk*/j#jO@]::Xf>U:+iMAoB{c;#<|ndD.zQ/b{:a|c6.W(>JpGGaOu#}R2LkgwJ3a=Z@dk|{uUD?J4_1L6>!6_`Y+%,t6|Z;PQIcHYD*3iw7*;`<BmI@(M[N@&#:xyBO$Ro9OdMti2|LlW9jde[9bKV{>rADi,Iye,$XrM>$VJ|l3pB=hQ$Xr4P}kMbcw0IA5Y9Jq-%t]@`JO7tRH5v`FoBt=-dx|LLYz6[lj%RS#jkWaDij119je*r1+<}/h9BOC}|0y(KD$9=m1E|nE~$b(9#9|~]kHY.b{!v8&q}>2A[wFxB.>%z?X*9TiBOcqs`S=*VJ`xQ^H*`C+_KR2a(oFFd(5r@k*1j,D%?zD?X#sxzO1L5M`+G_3@`1+wd}~Xd+Im(NBM[k*;;0jGHBc:X?UlNMv{zxBo][*?X*9TiX%I<c|.~=/_0Dim^Z][i>`o:2b7%1G_rKJ(3+W$x9CU*Y+i6-hDiWvNyY+>rQT^pBf,|5jBVG:0C|&%)Pf,|Da5^I^u~3vuBeryM!9k(oBdF8_%EH*@/4q;Z)|eLg>6|_cdzdOKLb~,f4I$yLwT[(BAr.9.CGC%~hfSZV=X`I+}87{!vgkDrI3B|+IA2uuW(_z517<7:_rDEuBn`]u{e.MTds>F|yT6d(2P3YI]Fn;A`T5x@:fgy3E65hDGhms`_xBj.60MylB0rs)23OhBBvpB<K:_x$xe%LpWV$s5r$xt-i|16Q0YlEuSU+|rLS`VrldwrD}OitOHJ3^Qb0548$x$jM23Bs(YFUa1%1).6V`C+7}`Um=!XFd8Y@{$x3(Wr0BX)R{-D(te|F|[Yk54_7.q(-<pS)Q|@:XTpE1bqMF/BUGE0=T(>0rA|YL&XuFe+%?bd+I]y:!L2~WFEUd{ii9u01BwrF&x6<yDiGCb46fFr1+_KR2JBPC?Rj|3AGDmsR}iV_b:lDd*|_|pwU/qrrFQCYT|(G/I|8r@NeQ-ok{HJj/^l?!9(~W]CfF~y?]YLE|f(i>obDtC;5X-dXiAq[jJ#irKI)XC`k?t}hISZB?=9V9Z-xN6wW`1+~wnQ=BSr$]6{>2vO|AZ`WiKI)?j-o9<}Br{xlbSXc$jzDrvmD>w$hN_`%R?bw+|`2rBrj#V|X)R{`9>><|*|@#bxuLI+L>?LJ,2d,IT&W9;-ayK3V|^*FtAvT3]Cg>uWff=|xc9ZR65f{!Xd0rm-RY6Tg|?E~$b(9#7db{HgC6A8q[r={F;`(|<9)z5[~@&nHJ1R82JH[1(>j11XC)=j|G}]%R{Ng&)^K<F>4_b%kpnl3E65^iFx/m1_xB<*e$fC]|RjOcU:yF4_tJJKd_{pq8LD*u]|c9d(NI>_O.:XEC5(G)BGV|Ar&XP}R2zt(|rL,|{ihXD.)4-iINpB:)m(nW&IR@EX;`W|$I[VY_C*Td^wHs8b<^%|GD<pEWKF.Q#)4d0rl2YfBMXBIIi1@^QJ$xX.!SLm2ar7k*F`X:.Cmf?(_5DFMQ4IrA{c6Ei;drrRtL[sFv_B]CNcCG1{oqD*3-.C*gxfvMwWfc_`#RICZ08L6Y]Ci6T%ty:|.?]z|;#X-d8;O!7d7o*|QTHIJOy#p)d|33GmvLfM`w4|6=,sE/0fcZrcUETdE*E0v>]_n`o.;uQh_zhN9GWTYIf+AkDro#%CQCiH*$IDlj*g+xi!|EDiAr;oidzrQTT4Yk!BmI<[@QX|1+0@%GZR_SC|3Eq|1B:XjK4=)z*r[[hBwrvlbk|mDiDCEk7Gzr/3vBG0HBero.K=fok*5R!Q<Gaf4_*9|~,-M>jVb{#R~8=^O;zlF*=|ljMp&+ea);K|v?6]1M0-<#FB}I9{$Bcr|i2L%RS#jkWa*d<`5xM|crguU#yI=&G><>mH@x;`MBvpwJmo!J$xZv~@Yh2cL%$x}+,|7l1C]yRB<:L|&%BrFitdd^AF]77]V9,Yg^U8f`nJ_&;N5B:)3dAB@Cm29D[|[BbrDs>#gWzV4Cz^yLhD-d(-QQ>su}*rN^6E)?(m$[_{xXwrgYR$CCDim^LYNwA|txhb]hk*Jp$bYAs>TdX9ft6|;pWAL!:z/BZJ>#[7wJVRKBKIbRq}eqYJwJF]_GUEbR1)yn!pqX0rYCWX/Bk*^#XVuL(^L1$?=~od]`sD,-nUW|dhyCw=|lA<(>R1];&_Ii.rV9xBG7C6f`C+_KR22[h8Fd?FSJ(>q2R-,8g~03uLkg&%]7H$EBPCdhKttb#A0BT<i2xor|4y._vRdg>rP)-mp(#|RjB:m6YV4_Zvb,<3{>S#,fw1B<5$P%$|i9dr(++uE.2Mq7U-}]~vaB~]0tHZDV4_G]&%@o0IHHyC~T]XuL%R9!n5w$`B{rk[LBxBF6s3d^oBPCZ<]ks:_z$jA[BXYCKI*Bh8O|3xT4^XoKL{DiVS=fRLx|j[(/$[#Ay$ROT,te0|qEu07+r_wrf,5V7[Di~v)fhYdrL?hKCk3bWJFd8I$>#A)v9GzNYep|7Lp>K|*}drG{KdI^oZdr]F/Dj:oBLsXrRo<>{/Tdyc=|K|kpHe)&yC:(6e&gs|nE[fwat(F|I=K?VXyKXr#6uxSrfQ!zh`b,QU/H-|^>Y(<Zfc4_nJ@l>?UEN>A.{v%NUdH|U7HGa-k*82.tKj)z:XUJc95:AF=|jZd`bRQ2t:Cl67*`N>|00::XrcpTh4:B[|i|}Ijt;G<+M|7BRBFd3=_V]|1|`EguGt^XFdxr9sk*.`&lZ(>_FdjltHCm%|3Iaw*Xwr[6=q?nDis4e(/Fd|ks/(=W$xgWfy=BmIawfSA|qds/9s#A-.pZIEPlA|}x(_4_1(bEjLlESVH>[Dh&4_D.b6y=!AL|9ph|nO44b-.#s};|ljOIksPPvjC,|BTdL662+VY$k(TdgWz|wOm&RZ-uA`SVum}VTdEELSR|VrIzBB-`JJ-o0iFdKa|8_zg|g3fL4I+>$iOFp04CO.Z{n*/B%I]H@D(>:Qp|Ix3}H1_|n`j,Ulkv(>wRa^p7){WgBrfzzJsSX:NOd|7B~mgGLdc!>r#5%i[6KI59}Vljt]Q9qAHC,fECuJ+K/o||@`pUTc|%&z^|PEHVq7b;{bJBmI?6Tnc`)zGQEwax{pbR>$E@x|b>>zCf{FJ`+qMBC.!jz@A_X5_r[[EdH|RpfS@o:XL>-[k*>39rdrP./pxNH9}WQIks/(z(K:4x-dm4$qsc{!*r(+Z}i!b6.AD:V9ED`[c^9`HONsT+0|tCBv4BK|ZvKNT)8|~wpxWeZsMik*L>nk&[EfGDWT+Hm50{]QRBPC|r`tUeTd1V*|Qb0w`Z2u_`?XZ;A:oBSxz`qd<McZ`XUEoBx_l{AF/dD.2HhL~yYB+IT}knb_k*GCG0JduXFdA5sj#AgW`(tn5ho|/fdxlIFn*|S|:3If:X25(#YwJXFdzn^k5-wBwrR3vfbf,fv);9Kse},|~]_rV1.n&&SIT]j5W9:QN!}RD|%xQK$OGP;ct|/f0Uede*V`Ls]doB%wXU:&%{n*?XcrLTr^$BV`iZDa@xQymsdmt]rRI?e=RW^n~V4_Yc%/]Ad`}4bN)ZQcT_YIlj5q:o,g)XFd[L^V{B1BoB!jyQ9|w]tx;`f|;p!8[O!BoB(KI#v|s>tTw~wJZ`M(2LZ`fkBq>(/|aCAy#bgL=K(B0rLY&yv|>|^L:QPIJY)=T|~CHKzmMqj6DiZdICk&d`A1tdxBmg+P:c*B0r=rp*6vs|aCAyFP]dcktBW)q=@:Lx]i<p$x~`$ks|drxx8_u{)toCDG_{w|rLm$(J@>8_vy4w6(rzhq_B:|:Nt2^AxB}-^J?XSxe:P@;*b|>1.n&&(>@-QgiBD.|`+sO&u|2>27Fd0rW`oRT41|#EoAB+<5&C#A?p!tDpS/J|b>.Azn!rz`?(r4b--0_`}4bNCvT*JAXr)zB4@k4{4CliGBECjqJ~8r}x:W{-<BW)awa=fn=JlESVumzjLdX_Srb@:Y9`~x{V{-T@h@FdP7cJ_z,I#kG.YC~htMv-c||a+}4vXB/B[L^V{BW9=KcFV+h`I3Mp{x$:v^,|c9^FXX*|:)T}knfB>cyX[|J|]?+}pSj;4k,fY3WepxkcZ|KCXr]I#%LHHC:F:X-97b_9ABZ`L+KISVHY71N~.CmYbSuF/BZ+X5#,droBhN+#XVoAX|qd~:nSf9CP*ruLYsM`<>tnY&K-:z",_cSL);
 local _i=1;while _i<#_d do
 local _h=_d:byte(_i);
 local _l=_d:byte(_i+1);
-local _n=_h*256+_l;_KVR[#_KVR+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
-local XBO=type
-local NF=table.insert
-local BGP=string.sub
-local NY=setmetatable
-local OB=bit32.lshift
-local MZWU=select
-local _=((MZWU('#')));
-local _=((MZWU('#')));
-local _=(MZWU('#')); local III1l1l1III
+local _n=_h*256+_l;_KWT[#_KWT+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
+local PBTB=table.remove
+local MO=table.sort
+local HE=math.min
+local BTY=math.abs
+local KN=math.floor
+local IN=select
+local _=(IN('#'));
+local _=((IN('#'))); local II1IllIl11
 do
-for lI11l1l1III = 0B1, 0x4E20, 0B1 do
+for lIIIllIl11 = 0B1, 0x4E20, 0B1 do
 pcall(function()
-game:GetService(_KVR[1])
+game:GetService(_KWT[1])
 			end)
 		end;
 (coroutine.wrap(function()
@@ -48,502 +47,510 @@ wait(0xA)
 			end
 		end))()
 if a9380 then
-error(_KVR[2])
+error(_KWT[2])
 while true do
 
 			end
 		end
 if v2354 and v2354 == z937597 then
-error(_KVR[2])
+error(_KWT[2])
 while true do
 
 			end
 		end
-local lI11l1l1III = string.byte
-local Il11l1l1III = string.char
-local ll11l1l1III = 0x96
-local I1I1l1l1III = 0xEA
-local l1I1l1l1III = 0x89
-local lII1l1l1III = {}
-function III1l1l1III(IlI1l1l1III)
-if lII1l1l1III[IlI1l1l1III] then
-return lII1l1l1III[IlI1l1l1III]
+local lIIIllIl11 = string.byte
+local I1IIllIl11 = string.char
+local l1IIllIl11 = 0xEF
+local IlIIllIl11 = 0xF9
+local llIIllIl11 = 0xD3
+local lI1IllIl11 = {}
+function II1IllIl11(I11IllIl11)
+if lI1IllIl11[I11IllIl11] then
+return lI1IllIl11[I11IllIl11]
 			end
-local llI1l1l1III = {};
-local I1l1l1l1III = l1I1l1l1III
-for l1I1l1l1III = 0B1, #IlI1l1l1III, 0B1 do
-local III1l1l1III = lI11l1l1III(IlI1l1l1III, l1I1l1l1III);
-local lII1l1l1III = ((ll11l1l1III + l1I1l1l1III * I1I1l1l1III) + I1l1l1l1III) % 0x100
-llI1l1l1III[l1I1l1l1III] = Il11l1l1III((III1l1l1III - lII1l1l1III) % 0x100)
-I1l1l1l1III = III1l1l1III
+local l11IllIl11 = {};
+local Il1IllIl11 = llIIllIl11
+for llIIllIl11 = 0B1, #I11IllIl11, 0B1 do
+local II1IllIl11 = lIIIllIl11(I11IllIl11, llIIllIl11);
+local lI1IllIl11 = ((l1IIllIl11 + llIIllIl11 * IlIIllIl11) + Il1IllIl11) % 0x100
+l11IllIl11[llIIllIl11] = I1IIllIl11((II1IllIl11 - lI1IllIl11) % 0x100)
+Il1IllIl11 = II1IllIl11
 			end
-local l1l1l1l1III = table.concat(llI1l1l1III);
-lII1l1l1III[IlI1l1l1III] = l1l1l1l1III
-return l1l1l1l1III
+local ll1IllIl11 = table.concat(l11IllIl11);
+lI1IllIl11[I11IllIl11] = ll1IllIl11
+return ll1IllIl11
 		end
 	end
-local l1I1l1l1III = function(lI11l1l1III)
-local Il11l1l1III, ll11l1l1III = lI11l1l1III[#lI11l1l1III], III1l1l1III(_KVR[3])
-for I1I1l1l1III = 0B1, #Il11l1l1III, 0B1 do
-ll11l1l1III = ll11l1l1III .. Il11l1l1III[lI11l1l1III[I1I1l1l1III]]
+local llIIllIl11 = function(lIIIllIl11)
+local I1IIllIl11, l1IIllIl11 = lIIIllIl11[#lIIIllIl11], II1IllIl11(_KWT[3])
+for IlIIllIl11 = 0B1, #I1IIllIl11, 0B1 do
+l1IIllIl11 = l1IIllIl11  .. I1IIllIl11[lIIIllIl11[IlIIllIl11]]
 			end
-return ll11l1l1III
+return l1IIllIl11
 		end
-local ll11l1l1III = { l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[4]), III1l1l1III(_KVR[5]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[6]), III1l1l1III(_KVR[7]) } }), l1I1l1l1III({ 0B10, 0B11, 0B1, { III1l1l1III(_KVR[8]), III1l1l1III(_KVR[9]), III1l1l1III(_KVR[10]) } }), l1I1l1l1III({ 0B11, 0B10, 0B1, { III1l1l1III(_KVR[11]), III1l1l1III(_KVR[12]), III1l1l1III(_KVR[13]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[14]), III1l1l1III(_KVR[15]) } }), l1I1l1l1III({ 0B1, 0x6, 0xE, 0xB, 0xD, 0xA, 0x9, 0x5, 0x4, 0B11, 0x8, 0B10, 0x7, 0xC, { III1l1l1III(_KVR[16]), III1l1l1III(_KVR[17]), III1l1l1III(_KVR[18]), III1l1l1III(_KVR[19]), III1l1l1III(_KVR[20]), III1l1l1III(_KVR[21]), III1l1l1III(_KVR[22]), III1l1l1III(_KVR[23]), III1l1l1III(_KVR[24]), III1l1l1III(_KVR[25]), III1l1l1III(_KVR[26]), III1l1l1III(_KVR[27]), III1l1l1III(_KVR[28]), III1l1l1III(_KVR[29]) } }), III1l1l1III(_KVR[30]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[31]), III1l1l1III(_KVR[32]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[33]), III1l1l1III(_KVR[34]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[35]), III1l1l1III(_KVR[36]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[37]), III1l1l1III(_KVR[38]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[39]), III1l1l1III(_KVR[40]) } }), l1I1l1l1III({ 0B11, 0B10, 0B1, { III1l1l1III(_KVR[41]), III1l1l1III(_KVR[42]), III1l1l1III(_KVR[43]) } }), III1l1l1III(_KVR[44]), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[45]), III1l1l1III(_KVR[46]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[47]), III1l1l1III(_KVR[48]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[40]), III1l1l1III(_KVR[49]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[50]), III1l1l1III(_KVR[51]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[52]), III1l1l1III(_KVR[53]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[54]), III1l1l1III(_KVR[55]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[56]), III1l1l1III(_KVR[57]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[58]), III1l1l1III(_KVR[59]) } }), l1I1l1l1III({ 0B1, 0B10, 0B11, { III1l1l1III(_KVR[60]), III1l1l1III(_KVR[61]), III1l1l1III(_KVR[62]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[63]), III1l1l1III(_KVR[64]) } }), l1I1l1l1III({ 0B11, 0x4, 0B10, 0B1, { III1l1l1III(_KVR[65]), III1l1l1III(_KVR[66]), III1l1l1III(_KVR[67]), III1l1l1III(_KVR[68]) } }), l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[69]), III1l1l1III(_KVR[70]), III1l1l1III(_KVR[71]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[72]), III1l1l1III(_KVR[73]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[74]), III1l1l1III(_KVR[75]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[76]), III1l1l1III(_KVR[77]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[78]), III1l1l1III(_KVR[79]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[80]), III1l1l1III(_KVR[81]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[82]), III1l1l1III(_KVR[83]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[84]), III1l1l1III(_KVR[85]) } }), l1I1l1l1III({ 0B1, 0B10, 0x8, 0x9, 0B11, 0x7, 0xC, 0x5, 0xA, 0x4, 0x6, 0xB, { III1l1l1III(_KVR[86]), III1l1l1III(_KVR[87]), III1l1l1III(_KVR[88]), III1l1l1III(_KVR[89]), III1l1l1III(_KVR[90]), III1l1l1III(_KVR[91]), III1l1l1III(_KVR[92]), III1l1l1III(_KVR[93]), III1l1l1III(_KVR[94]), III1l1l1III(_KVR[95]), III1l1l1III(_KVR[96]), III1l1l1III(_KVR[97]) } }), l1I1l1l1III({ 0B10, 0B1, 0B11, { III1l1l1III(_KVR[98]), III1l1l1III(_KVR[99]), III1l1l1III(_KVR[100]) } }), l1I1l1l1III({ 0B11, 0B1, 0B10, { III1l1l1III(_KVR[101]), III1l1l1III(_KVR[102]), III1l1l1III(_KVR[103]) } }), III1l1l1III(_KVR[104]), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[105]), III1l1l1III(_KVR[106]) } }), III1l1l1III(_KVR[107]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[108]), III1l1l1III(_KVR[109]) } }), III1l1l1III(_KVR[110]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[111]), III1l1l1III(_KVR[112]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[113]), III1l1l1III(_KVR[114]) } }), III1l1l1III(_KVR[115]), III1l1l1III(_KVR[116]), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[117]), III1l1l1III(_KVR[118]) } }), l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[119]), III1l1l1III(_KVR[120]), III1l1l1III(_KVR[121]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[122]), III1l1l1III(_KVR[123]) } }), l1I1l1l1III({ 0B10, 0B1, 0B11, { III1l1l1III(_KVR[124]), III1l1l1III(_KVR[125]), III1l1l1III(_KVR[126]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[127]), III1l1l1III(_KVR[128]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[129]), III1l1l1III(_KVR[130]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[131]), III1l1l1III(_KVR[132]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[133]), III1l1l1III(_KVR[50]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[134]), III1l1l1III(_KVR[135]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[136]), III1l1l1III(_KVR[137]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[138]), III1l1l1III(_KVR[139]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[140]), III1l1l1III(_KVR[141]) } }), III1l1l1III(_KVR[142]), l1I1l1l1III({ 0B11, 0B10, 0x4, 0B1, { III1l1l1III(_KVR[143]), III1l1l1III(_KVR[144]), III1l1l1III(_KVR[145]), III1l1l1III(_KVR[146]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[147]), III1l1l1III(_KVR[148]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[50]), III1l1l1III(_KVR[149]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[150]), III1l1l1III(_KVR[151]) } }), III1l1l1III(_KVR[152]), l1I1l1l1III({ 0B1, 0B10, 0B11, 0x4, { III1l1l1III(_KVR[153]), III1l1l1III(_KVR[154]), III1l1l1III(_KVR[155]), III1l1l1III(_KVR[156]) } }), III1l1l1III(_KVR[157]), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[158]), III1l1l1III(_KVR[159]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[160]), III1l1l1III(_KVR[161]) } }), III1l1l1III(_KVR[3]), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[162]), III1l1l1III(_KVR[163]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[164]), III1l1l1III(_KVR[55]) } }), III1l1l1III(_KVR[165]), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[166]), III1l1l1III(_KVR[167]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[168]), III1l1l1III(_KVR[169]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[170]), III1l1l1III(_KVR[171]) } }), l1I1l1l1III({ 0B10, 0B1, 0B11, 0x5, 0x4, { III1l1l1III(_KVR[172]), III1l1l1III(_KVR[173]), III1l1l1III(_KVR[174]), III1l1l1III(_KVR[175]), III1l1l1III(_KVR[176]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[177]), III1l1l1III(_KVR[178]) } }), III1l1l1III(_KVR[179]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[180]), III1l1l1III(_KVR[181]) } }), III1l1l1III(_KVR[182]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[183]), III1l1l1III(_KVR[184]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[185]), III1l1l1III(_KVR[186]) } }), III1l1l1III(_KVR[187]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[188]), III1l1l1III(_KVR[189]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[190]), III1l1l1III(_KVR[191]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[192]), III1l1l1III(_KVR[193]) } }), l1I1l1l1III({ 0x5, 0B11, 0B10, 0B1, 0x4, { III1l1l1III(_KVR[194]), III1l1l1III(_KVR[195]), III1l1l1III(_KVR[196]), III1l1l1III(_KVR[197]), III1l1l1III(_KVR[182]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[198]), III1l1l1III(_KVR[199]) } }), l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[200]), III1l1l1III(_KVR[201]), III1l1l1III(_KVR[202]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[203]), III1l1l1III(_KVR[204]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[205]), III1l1l1III(_KVR[127]) } }), III1l1l1III(_KVR[206]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[207]), III1l1l1III(_KVR[208]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[209]), III1l1l1III(_KVR[210]) } }), III1l1l1III(_KVR[211]), III1l1l1III(_KVR[108]), l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[212]), III1l1l1III(_KVR[213]), III1l1l1III(_KVR[214]) } }), l1I1l1l1III({ 0B11, 0B10, 0B100, 0B1, { III1l1l1III(_KVR[215]), III1l1l1III(_KVR[216]), III1l1l1III(_KVR[217]), III1l1l1III(_KVR[218]) } }), III1l1l1III(_KVR[219]), l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[220]), III1l1l1III(_KVR[221]), III1l1l1III(_KVR[222]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[223]), III1l1l1III(_KVR[224]) } }), l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[225]), III1l1l1III(_KVR[226]), III1l1l1III(_KVR[227]) } }), l1I1l1l1III({ 0B11, 0B10, 0B1, { III1l1l1III(_KVR[228]), III1l1l1III(_KVR[229]), III1l1l1III(_KVR[230]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[231]), III1l1l1III(_KVR[232]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[233]), III1l1l1III(_KVR[234]) } }), III1l1l1III(_KVR[235]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[236]), III1l1l1III(_KVR[208]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[237]), III1l1l1III(_KVR[238]) } }), III1l1l1III(_KVR[239]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[240]), III1l1l1III(_KVR[241]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[242]), III1l1l1III(_KVR[243]) } }), l1I1l1l1III({ 0B11, 0B10, 0B1, 0x4, { III1l1l1III(_KVR[244]), III1l1l1III(_KVR[245]), III1l1l1III(_KVR[246]), III1l1l1III(_KVR[247]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[8]), III1l1l1III(_KVR[248]) } }), III1l1l1III(_KVR[249]), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[171]), III1l1l1III(_KVR[250]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[251]), III1l1l1III(_KVR[252]) } }), l1I1l1l1III({ 0B10, 0x4, 0B11, 0B1, { III1l1l1III(_KVR[253]), III1l1l1III(_KVR[254]), III1l1l1III(_KVR[255]), III1l1l1III(_KVR[256]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[257]), III1l1l1III(_KVR[141]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[258]), III1l1l1III(_KVR[259]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[260]), III1l1l1III(_KVR[261]) } }), III1l1l1III(_KVR[262]), l1I1l1l1III({ 0B1, 0B10, 0B11, { III1l1l1III(_KVR[263]), III1l1l1III(_KVR[264]), III1l1l1III(_KVR[265]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[266]), III1l1l1III(_KVR[267]) } }), III1l1l1III(_KVR[268]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[269]), III1l1l1III(_KVR[8]) } }), III1l1l1III(_KVR[270]), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[271]), III1l1l1III(_KVR[272]) } }), III1l1l1III(_KVR[273]), l1I1l1l1III({ 0B100, 0B11, 0B10, 0B1, { III1l1l1III(_KVR[274]), III1l1l1III(_KVR[275]), III1l1l1III(_KVR[276]), III1l1l1III(_KVR[277]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[278]), III1l1l1III(_KVR[279]) } }), l1I1l1l1III({ 0B1, 0B10, 0B11, { III1l1l1III(_KVR[280]), III1l1l1III(_KVR[281]), III1l1l1III(_KVR[282]) } }), l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[283]), III1l1l1III(_KVR[284]) } }), l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[285]), III1l1l1III(_KVR[286]) } }) }
-for lI11l1l1III, Il11l1l1III in ipairs({ { 0B1, 0x84 }, { 0B1, 0x39 }, { 0x3A, 0x84 } }) do
-while Il11l1l1III[0B1] < Il11l1l1III[0B10] do
-ll11l1l1III[Il11l1l1III[0B1]], ll11l1l1III[Il11l1l1III[0B10]], Il11l1l1III[0B1], Il11l1l1III[0B10] = ll11l1l1III[Il11l1l1III[0B10]], ll11l1l1III[Il11l1l1III[0B1]], Il11l1l1III[0B1] + 0B1, Il11l1l1III[0B10] - 0B1
+local l1IIllIl11 = { II1IllIl11(_KWT[4]), II1IllIl11(_KWT[5]), II1IllIl11(_KWT[6]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[7]), II1IllIl11(_KWT[8]) } }), II1IllIl11(_KWT[9]), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[10]), II1IllIl11(_KWT[11]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[12]), II1IllIl11(_KWT[13]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[14]), II1IllIl11(_KWT[15]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[16]), II1IllIl11(_KWT[17]) } }), II1IllIl11(_KWT[18]), II1IllIl11(_KWT[19]), llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[20]), II1IllIl11(_KWT[21]), II1IllIl11(_KWT[22]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[23]), II1IllIl11(_KWT[24]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[25]), II1IllIl11(_KWT[26]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[27]), II1IllIl11(_KWT[28]) } }), II1IllIl11(_KWT[29]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[30]), II1IllIl11(_KWT[31]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[32]), II1IllIl11(_KWT[33]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[34]), II1IllIl11(_KWT[35]) } }), II1IllIl11(_KWT[36]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[37]), II1IllIl11(_KWT[38]) } }), llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[39]), II1IllIl11(_KWT[40]), II1IllIl11(_KWT[41]) } }), II1IllIl11(_KWT[42]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[43]), II1IllIl11(_KWT[44]) } }), llIIllIl11({ 0B10, 0B1, 0B11, 0B100, { II1IllIl11(_KWT[45]), II1IllIl11(_KWT[46]), II1IllIl11(_KWT[47]), II1IllIl11(_KWT[48]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[49]), II1IllIl11(_KWT[50]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[51]), II1IllIl11(_KWT[52]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[53]), II1IllIl11(_KWT[54]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[55]), II1IllIl11(_KWT[56]) } }), II1IllIl11(_KWT[57]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[58]), II1IllIl11(_KWT[59]) } }), II1IllIl11(_KWT[60]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[61]), II1IllIl11(_KWT[62]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[63]), II1IllIl11(_KWT[64]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[65]), II1IllIl11(_KWT[66]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[67]), II1IllIl11(_KWT[68]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[69]), II1IllIl11(_KWT[70]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[71]), II1IllIl11(_KWT[72]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[73]), II1IllIl11(_KWT[74]) } }), llIIllIl11({ 0B11, 0B1, 0B10, { II1IllIl11(_KWT[75]), II1IllIl11(_KWT[76]), II1IllIl11(_KWT[77]) } }), llIIllIl11({ 0B10, 0B1, 0x4, 0x5, 0B11, { II1IllIl11(_KWT[78]), II1IllIl11(_KWT[79]), II1IllIl11(_KWT[80]), II1IllIl11(_KWT[81]), II1IllIl11(_KWT[82]) } }), II1IllIl11(_KWT[83]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[84]), II1IllIl11(_KWT[85]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[86]), II1IllIl11(_KWT[87]) } }), II1IllIl11(_KWT[88]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[89]), II1IllIl11(_KWT[90]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[91]), II1IllIl11(_KWT[92]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[93]), II1IllIl11(_KWT[94]) } }), II1IllIl11(_KWT[95]), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[96]), II1IllIl11(_KWT[97]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[98]), II1IllIl11(_KWT[99]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[100]), II1IllIl11(_KWT[101]) } }), II1IllIl11(_KWT[3]), llIIllIl11({ 0B1, 0B10, 0x4, 0B11, { II1IllIl11(_KWT[102]), II1IllIl11(_KWT[103]), II1IllIl11(_KWT[104]), II1IllIl11(_KWT[105]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[106]), II1IllIl11(_KWT[107]) } }), II1IllIl11(_KWT[108]), II1IllIl11(_KWT[109]), llIIllIl11({ 0B1, 0B11, 0B10, { II1IllIl11(_KWT[110]), II1IllIl11(_KWT[111]), II1IllIl11(_KWT[112]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[113]), II1IllIl11(_KWT[114]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[115]), II1IllIl11(_KWT[116]) } }), llIIllIl11({ 0B10, 0B11, 0B1, { II1IllIl11(_KWT[117]), II1IllIl11(_KWT[118]), II1IllIl11(_KWT[119]) } }), II1IllIl11(_KWT[120]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[121]), II1IllIl11(_KWT[122]) } }), llIIllIl11({ 0B10, 0B1, 0B11, { II1IllIl11(_KWT[123]), II1IllIl11(_KWT[124]), II1IllIl11(_KWT[125]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[126]), II1IllIl11(_KWT[127]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[128]), II1IllIl11(_KWT[129]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[130]), II1IllIl11(_KWT[131]) } }), llIIllIl11({ 0B10, 0x5, 0B1, 0x4, 0B11, { II1IllIl11(_KWT[132]), II1IllIl11(_KWT[133]), II1IllIl11(_KWT[134]), II1IllIl11(_KWT[135]), II1IllIl11(_KWT[136]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[137]), II1IllIl11(_KWT[138]) } }), II1IllIl11(_KWT[139]), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[140]), II1IllIl11(_KWT[141]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[142]), II1IllIl11(_KWT[143]) } }), llIIllIl11({ 0B1, 0B11, 0B10, { II1IllIl11(_KWT[144]), II1IllIl11(_KWT[145]), II1IllIl11(_KWT[146]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[147]), II1IllIl11(_KWT[148]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[149]), II1IllIl11(_KWT[150]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[151]), II1IllIl11(_KWT[152]) } }), II1IllIl11(_KWT[153]), llIIllIl11({ 0x4, 0B11, 0B10, 0B1, { II1IllIl11(_KWT[154]), II1IllIl11(_KWT[155]), II1IllIl11(_KWT[156]), II1IllIl11(_KWT[157]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[114]), II1IllIl11(_KWT[158]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[159]), II1IllIl11(_KWT[160]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[161]), II1IllIl11(_KWT[162]) } }), llIIllIl11({ 0xC, 0B1, 0x9, 0B10, 0x7, 0x8, 0xB, 0xA, 0x5, 0B11, 0x4, 0x6, { II1IllIl11(_KWT[163]), II1IllIl11(_KWT[164]), II1IllIl11(_KWT[165]), II1IllIl11(_KWT[166]), II1IllIl11(_KWT[167]), II1IllIl11(_KWT[168]), II1IllIl11(_KWT[169]), II1IllIl11(_KWT[170]), II1IllIl11(_KWT[171]), II1IllIl11(_KWT[172]), II1IllIl11(_KWT[173]), II1IllIl11(_KWT[174]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[175]), II1IllIl11(_KWT[41]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[176]), II1IllIl11(_KWT[177]) } }), II1IllIl11(_KWT[178]), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[108]), II1IllIl11(_KWT[5]) } }), llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[179]), II1IllIl11(_KWT[180]), II1IllIl11(_KWT[181]) } }), llIIllIl11({ 0x6, 0B1, 0xD, 0x7, 0x9, 0x4, 0x5, 0B10, 0xB, 0x8, 0xA, 0xC, 0B11, { II1IllIl11(_KWT[182]), II1IllIl11(_KWT[183]), II1IllIl11(_KWT[184]), II1IllIl11(_KWT[185]), II1IllIl11(_KWT[186]), II1IllIl11(_KWT[187]), II1IllIl11(_KWT[188]), II1IllIl11(_KWT[189]), II1IllIl11(_KWT[190]), II1IllIl11(_KWT[191]), II1IllIl11(_KWT[192]), II1IllIl11(_KWT[193]), II1IllIl11(_KWT[194]) } }), llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[195]), II1IllIl11(_KWT[196]), II1IllIl11(_KWT[197]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[198]), II1IllIl11(_KWT[199]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[200]), II1IllIl11(_KWT[201]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[63]), II1IllIl11(_KWT[202]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[203]), II1IllIl11(_KWT[204]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[205]), II1IllIl11(_KWT[206]) } }), II1IllIl11(_KWT[207]), llIIllIl11({ 0x4, 0B1, 0B11, 0B10, { II1IllIl11(_KWT[208]), II1IllIl11(_KWT[209]), II1IllIl11(_KWT[210]), II1IllIl11(_KWT[211]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[212]), II1IllIl11(_KWT[213]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[41]), II1IllIl11(_KWT[214]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[213]), II1IllIl11(_KWT[215]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[216]), II1IllIl11(_KWT[217]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[218]), II1IllIl11(_KWT[219]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[220]), II1IllIl11(_KWT[41]) } }), II1IllIl11(_KWT[221]), II1IllIl11(_KWT[222]), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[223]), II1IllIl11(_KWT[224]) } }), II1IllIl11(_KWT[225]), llIIllIl11({ 0B1, 0B11, 0B10, { II1IllIl11(_KWT[226]), II1IllIl11(_KWT[227]), II1IllIl11(_KWT[228]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[229]), II1IllIl11(_KWT[230]) } }), llIIllIl11({ 0B1, 0B11, 0B10, { II1IllIl11(_KWT[231]), II1IllIl11(_KWT[232]), II1IllIl11(_KWT[233]) } }), llIIllIl11({ 0B11, 0B1, 0B10, { II1IllIl11(_KWT[234]), II1IllIl11(_KWT[235]), II1IllIl11(_KWT[236]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[237]), II1IllIl11(_KWT[238]) } }), II1IllIl11(_KWT[239]), llIIllIl11({ 0B10, 0B1, 0B11, { II1IllIl11(_KWT[240]), II1IllIl11(_KWT[110]), II1IllIl11(_KWT[241]) } }), II1IllIl11(_KWT[242]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[243]), II1IllIl11(_KWT[244]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[245]), II1IllIl11(_KWT[246]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[247]), II1IllIl11(_KWT[248]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[249]), II1IllIl11(_KWT[250]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[251]), II1IllIl11(_KWT[252]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[253]), II1IllIl11(_KWT[254]) } }), llIIllIl11({ 0B10, 0x4, 0B11, 0B1, { II1IllIl11(_KWT[255]), II1IllIl11(_KWT[256]), II1IllIl11(_KWT[257]), II1IllIl11(_KWT[258]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[259]), II1IllIl11(_KWT[260]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[261]), II1IllIl11(_KWT[262]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[263]), II1IllIl11(_KWT[264]) } }), llIIllIl11({ 0B11, 0B1, 0B10, { II1IllIl11(_KWT[265]), II1IllIl11(_KWT[266]), II1IllIl11(_KWT[267]) } }), II1IllIl11(_KWT[268]), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[269]), II1IllIl11(_KWT[270]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[271]), II1IllIl11(_KWT[272]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[273]), II1IllIl11(_KWT[274]) } }), llIIllIl11({ 0B10, 0B11, 0B1, { II1IllIl11(_KWT[275]), II1IllIl11(_KWT[276]), II1IllIl11(_KWT[277]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[278]), II1IllIl11(_KWT[279]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[227]), II1IllIl11(_KWT[280]) } }), llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[281]), II1IllIl11(_KWT[282]) } }), llIIllIl11({ 0B10, 0B1, 0x5, 0B11, 0x4, { II1IllIl11(_KWT[283]), II1IllIl11(_KWT[284]), II1IllIl11(_KWT[285]), II1IllIl11(_KWT[286]), II1IllIl11(_KWT[287]) } }), llIIllIl11({ 0B10, 0B1, 0B11, { II1IllIl11(_KWT[288]), II1IllIl11(_KWT[289]), II1IllIl11(_KWT[290]) } }), llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[291]), II1IllIl11(_KWT[292]) } }), II1IllIl11(_KWT[293]) }
+for lIIIllIl11, I1IIllIl11 in ipairs({ { 0B1, 0x89 }, { 0B1, 0x78 }, { 0x79, 0x89 } }) do
+while I1IIllIl11[0B1] < I1IIllIl11[0B10] do
+l1IIllIl11[I1IIllIl11[0B1]], l1IIllIl11[I1IIllIl11[0B10]], I1IIllIl11[0B1], I1IIllIl11[0B10] = l1IIllIl11[I1IIllIl11[0B10]], l1IIllIl11[I1IIllIl11[0B1]], I1IIllIl11[0B1] + 0B1, I1IIllIl11[0B10] - 0B1
 		end
 	end
-local function I1I1l1l1III(lI11l1l1III)
-return ll11l1l1III[lI11l1l1III - 0xA5A4]
+local function IlIIllIl11(lIIIllIl11)
+return l1IIllIl11[lIIIllIl11 + 0x3418]
 	end
 do
 x8 = getfenv()
 i2 = unpack
 z6 = _ENV
-local lI11l1l1III = ll11l1l1III
-local Il11l1l1III = {};
-local function I1I1l1l1III(lI11l1l1III)
-local Il11l1l1III = {};
-local ll11l1l1III = 0B1
-local I1I1l1l1III = #lI11l1l1III
-while ll11l1l1III <= I1I1l1l1III do
-local l1I1l1l1III = string[III1l1l1III(_KVR[287])](lI11l1l1III, ll11l1l1III, ll11l1l1III)
-if l1I1l1l1III == III1l1l1III(_KVR[288]) then
-table[III1l1l1III(_KVR[289])](Il11l1l1III, string[III1l1l1III(_KVR[290])](0B0, 0B0, 0B0, 0B0))
-ll11l1l1III = ll11l1l1III + 0B1
-				elseif l1I1l1l1III:match(III1l1l1III(_KVR[291])) then
-ll11l1l1III = ll11l1l1III + 0B1
+local lIIIllIl11 = l1IIllIl11
+local I1IIllIl11 = {};
+local function IlIIllIl11(lIIIllIl11)
+local I1IIllIl11 = {};
+local l1IIllIl11 = 0B1
+local IlIIllIl11 = #lIIIllIl11
+while l1IIllIl11 <= IlIIllIl11 do
+local llIIllIl11 = string[II1IllIl11(_KWT[294])](lIIIllIl11, l1IIllIl11, l1IIllIl11)
+if llIIllIl11 == II1IllIl11(_KWT[295]) then
+table[II1IllIl11(_KWT[296])](I1IIllIl11, string[II1IllIl11(_KWT[297])](0B0, 0B0, 0B0, 0B0))
+l1IIllIl11 = l1IIllIl11 + 0B1
+				elseif llIIllIl11:match(II1IllIl11(_KWT[298])) then
+l1IIllIl11 = l1IIllIl11 + 0B1
 				else
-local l1I1l1l1III = {};
-local lII1l1l1III = 0B0
-while lII1l1l1III < 0x5 and ll11l1l1III + lII1l1l1III <= I1I1l1l1III do
-local Il11l1l1III = string[III1l1l1III(_KVR[287])](lI11l1l1III, ll11l1l1III + lII1l1l1III, ll11l1l1III + lII1l1l1III)
-if Il11l1l1III == III1l1l1III(_KVR[288]) or Il11l1l1III == III1l1l1III(_KVR[292]) or Il11l1l1III == III1l1l1III(_KVR[293]) or Il11l1l1III == III1l1l1III(_KVR[294]) then
+local llIIllIl11 = {};
+local lI1IllIl11 = 0B0
+while lI1IllIl11 < 0x5 and l1IIllIl11 + lI1IllIl11 <= IlIIllIl11 do
+local I1IIllIl11 = string[II1IllIl11(_KWT[294])](lIIIllIl11, l1IIllIl11 + lI1IllIl11, l1IIllIl11 + lI1IllIl11)
+if I1IIllIl11 == II1IllIl11(_KWT[295]) or I1IIllIl11 == II1IllIl11(_KWT[299]) or I1IIllIl11 == II1IllIl11(_KWT[300]) or I1IIllIl11 == II1IllIl11(_KWT[301]) then
 break
 						end
-l1I1l1l1III[#l1I1l1l1III + 0B1] = Il11l1l1III
-lII1l1l1III = lII1l1l1III + 0B1
+llIIllIl11[#llIIllIl11 + 0B1] = I1IIllIl11
+lI1IllIl11 = lI1IllIl11 + 0B1
 					end
-local IlI1l1l1III = #l1I1l1l1III
-for lI11l1l1III = IlI1l1l1III + 0B1, 0x5, 0B1 do
-l1I1l1l1III[#l1I1l1l1III + 0B1] = III1l1l1III(_KVR[58])
+local I11IllIl11 = #llIIllIl11
+for lIIIllIl11 = I11IllIl11 + 0B1, 0x5, 0B1 do
+llIIllIl11[#llIIllIl11 + 0B1] = II1IllIl11(_KWT[302])
 					end
-local llI1l1l1III = 0B0
-for lI11l1l1III = 0B1, 0x5, 0B1 do
-llI1l1l1III = llI1l1l1III * 0x55 + (string[III1l1l1III(_KVR[295])](l1I1l1l1III[lI11l1l1III]) - 0x21)
+local l11IllIl11 = 0B0
+for lIIIllIl11 = 0B1, 0x5, 0B1 do
+l11IllIl11 = l11IllIl11 * 0x55 + (string[II1IllIl11(_KWT[303])](llIIllIl11[lIIIllIl11]) - 0x21)
 					end
-local I1l1l1l1III = IlI1l1l1III - 0B1
-for lI11l1l1III = 0B11, 0B11 - (I1l1l1l1III - 0B1), -0B1 do
-local ll11l1l1III = math[III1l1l1III(_KVR[296])](llI1l1l1III / 0x100 ^ lI11l1l1III) % 0x100
-table[III1l1l1III(_KVR[289])](Il11l1l1III, string[III1l1l1III(_KVR[290])](ll11l1l1III))
+local Il1IllIl11 = I11IllIl11 - 0B1
+for lIIIllIl11 = 0B11, 0B11 - (Il1IllIl11 - 0B1), -0B1 do
+local l1IIllIl11 = math[II1IllIl11(_KWT[304])](l11IllIl11 / 0x100 ^ lIIIllIl11) % 0x100
+table[II1IllIl11(_KWT[296])](I1IIllIl11, string[II1IllIl11(_KWT[297])](l1IIllIl11))
 					end
-ll11l1l1III = ll11l1l1III + IlI1l1l1III
+l1IIllIl11 = l1IIllIl11 + I11IllIl11
 				end
 			end
 c9 = newproxy
 y1 = setmetatable
-return table[III1l1l1III(_KVR[297])](Il11l1l1III)
+return table[II1IllIl11(_KWT[305])](I1IIllIl11)
 		end
 z9 = getmetatable
 j8 = select
 t7 = getfenv
-for Il11l1l1III = 0B1, #lI11l1l1III, 0B1 do
-local ll11l1l1III = lI11l1l1III[Il11l1l1III]
-if type(ll11l1l1III) == l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[298]), III1l1l1III(_KVR[299]) } }) then
-lI11l1l1III[Il11l1l1III] = I1I1l1l1III(ll11l1l1III)
+for I1IIllIl11 = 0B1, #lIIIllIl11, 0B1 do
+local l1IIllIl11 = lIIIllIl11[I1IIllIl11]
+if type(l1IIllIl11) == II1IllIl11(_KWT[306]) then
+lIIIllIl11[I1IIllIl11] = IlIIllIl11(l1IIllIl11)
 			end
 		end
 	end
-local lI11l1l1III = setmetatable
-local Il11l1l1III = function()
+local lIIIllIl11 = setmetatable
+local I1IIllIl11 = function()
 
 		end
 return (function(...)
-(I1I1l1l1III(0xA5FF)):gsub(I1I1l1l1III(0xA61C), function(lI11l1l1III, ...)
-_WATERMARK = lI11l1l1III
+(IlIIllIl11(-13271)):gsub(II1IllIl11(_KWT[307]), function(lIIIllIl11, ...)
+_WATERMARK = lIIIllIl11
 		end);
-local Il11l1l1III = I1I1l1l1III(0xA5E3);
-local ll11l1l1III = lI11l1l1III({ [I1I1l1l1III(0xA5C3)] = { { [I1I1l1l1III(0xA5D6)] = I1I1l1l1III(0xA5D2), [I1I1l1l1III(0xA609)] = I1I1l1l1III(0xA5A5), [I1I1l1l1III(0xA617)] = I1I1l1l1III(0xA5D9), [l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[300]), III1l1l1III(_KVR[301]) } })] = I1I1l1l1III(0xA5EC) }, { [III1l1l1III(_KVR[302])] = III1l1l1III(_KVR[303]), [III1l1l1III(_KVR[304])] = I1I1l1l1III(0xA5C0), [I1I1l1l1III(0xA617)] = l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[305]), III1l1l1III(_KVR[306]) } }), [I1I1l1l1III(0xA5B7)] = I1I1l1l1III(0xA5EC) }, { [I1I1l1l1III(0xA5D6)] = I1I1l1l1III(0xA5DB), [III1l1l1III(_KVR[304])] = I1I1l1l1III(0xA5FB), [I1I1l1l1III(0xA617)] = l1I1l1l1III({ 0B11, 0B10, 0B1, 0x4, { III1l1l1III(_KVR[307]), III1l1l1III(_KVR[308]), III1l1l1III(_KVR[309]), III1l1l1III(_KVR[310]) } }), [I1I1l1l1III(0xA5B7)] = I1I1l1l1III(0xA5EC) }, { [I1I1l1l1III(0xA5D6)] = l1I1l1l1III({ 0B11, 0B1, 0B10, { III1l1l1III(_KVR[311]), III1l1l1III(_KVR[312]), III1l1l1III(_KVR[313]) } }), [I1I1l1l1III(0xA609)] = l1I1l1l1III({ 0B11, 0B10, 0B1, { III1l1l1III(_KVR[314]), III1l1l1III(_KVR[315]), III1l1l1III(_KVR[316]) } }), [III1l1l1III(_KVR[317])] = I1I1l1l1III(0xA61D), [l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[301]), III1l1l1III(_KVR[300]) } })] = l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[318]), III1l1l1III(_KVR[319]) } }) }, { [I1I1l1l1III(0xA5D6)] = I1I1l1l1III(0xA5E1), [I1I1l1l1III(0xA609)] = I1I1l1l1III(0xA5EA), [I1I1l1l1III(0xA617)] = I1I1l1l1III(0xA5E1), [III1l1l1III(_KVR[320])] = I1I1l1l1III(0xA620) }, { [I1I1l1l1III(0xA5D6)] = I1I1l1l1III(0xA5C1), [III1l1l1III(_KVR[304])] = III1l1l1III(_KVR[321]), [I1I1l1l1III(0xA617)] = I1I1l1l1III(0xA5C1), [I1I1l1l1III(0xA5B7)] = I1I1l1l1III(0xA620) } } }, { [I1I1l1l1III(0xA626)] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[I1I1l1l1III(0xA5C3)] = Il11l1l1III
-				end, [I1I1l1l1III(0xA5CF)] = function(lI11l1l1III, Il11l1l1III)
-return lI11l1l1III[I1I1l1l1III(0xA5C3)]
-				end });
-local lII1l1l1III = game:GetService(III1l1l1III(_KVR[322]));
-local IlI1l1l1III = game:GetService(I1I1l1l1III(0xA5E0));
-local llI1l1l1III = lII1l1l1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[323]), III1l1l1III(_KVR[324]) } })]
-local I1l1l1l1III = llI1l1l1III:WaitForChild(I1I1l1l1III(0xA5E2));
-local l1l1l1l1III = lI11l1l1III({ [I1I1l1l1III(0xA5BD)] = I1I1l1l1III(0xA5AE) }, { [III1l1l1III(_KVR[325])] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[I1I1l1l1III(0xA5BD)] = Il11l1l1III
-				end, [I1I1l1l1III(0xA5B6)] = function(lI11l1l1III, Il11l1l1III)
-return lI11l1l1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[326]), III1l1l1III(_KVR[327]) } })]
-				end });
-local IIl1l1l1III = 0x208
-local lIl1l1l1III = 0x168
-local Ill1l1l1III = 0x52
-local lll1l1l1III = 0x3E
-local I11Il1l1III = 0x5
-local l11Il1l1III = 0xA
-local II1Il1l1III = Color3[I1I1l1l1III(0xA5D1)](0xB, 0xB, 0xE);
-local lI1Il1l1III = Color3[I1I1l1l1III(0xA5D1)](0x10, 0x10, 0x14);
-local Il1Il1l1III = Color3[I1I1l1l1III(0xA5D1)](0x78, 0xA0, 0xFF);
-local ll1Il1l1III = Color3[I1I1l1l1III(0xA5D1)](0x13, 0x13, 0x18);
-local I1IIl1l1III = Color3[I1I1l1l1III(0xA5D1)](0x1A, 0x1C, 0x26);
-local l1IIl1l1III = Color3[I1I1l1l1III(0xA5D1)](0x20, 0x24, 0x34);
-local IIIIl1l1III = lI11l1l1III({ [l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[328]), III1l1l1III(_KVR[329]) } })] = Color3[I1I1l1l1III(0xA5D1)](0x26, 0x26, 0x30) }, { [I1I1l1l1III(0xA626)] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[330]), III1l1l1III(_KVR[331]) } })] = Il11l1l1III
-				end, [I1I1l1l1III(0xA5CF)] = function(lI11l1l1III, Il11l1l1III)
-return lI11l1l1III[III1l1l1III(_KVR[332])]
-				end });
-local lIIIl1l1III = Color3[III1l1l1III(_KVR[333])](0x5A, 0x78, 0xC8);
-local IlIIl1l1III = Color3[III1l1l1III(_KVR[333])](0x78, 0x9B, 0xEB);
-local llIIl1l1III = Color3[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[334]), III1l1l1III(_KVR[335]) } })](0xFF, 0xFF, 0xFF);
-local I1lIl1l1III = Color3[I1I1l1l1III(0xA5D1)](0x69, 0x70, 0x8C);
-local l1lIl1l1III = Color3[I1I1l1l1III(0xA5D1)](0x46, 0x4E, 0x6C);
-local IIlIl1l1III = Color3[I1I1l1l1III(0xA5D1)](0xF0, 0xF2, 0xFF);
-local lIlIl1l1III = Color3[I1I1l1l1III(0xA5D1)](0x50, 0x56, 0x6C);
-local IllIl1l1III = Color3[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[336]), III1l1l1III(_KVR[337]) } })](0x5F, 0x66, 0x82);
-local lllIl1l1III = Color3[I1I1l1l1III(0xA5D1)](0x10, 0x16, 0x2C);
-local I11ll1l1III = Color3[III1l1l1III(_KVR[333])](0x14, 0x14, 0x1A);
-local l11ll1l1III = Color3[I1I1l1l1III(0xA5D1)](0x1A, 0x1A, 0x20);
-local II1ll1l1III = Color3[I1I1l1l1III(0xA5D1)](0x34, 0x16, 0x16);
-local lI1ll1l1III = Color3[I1I1l1l1III(0xA5D1)](0x1E, 0x1E, 0x28);
-local Il1ll1l1III = lI11l1l1III({ [I1I1l1l1III(0xA5FC)] = Color3[I1I1l1l1III(0xA5D1)](0x24, 0x24, 0x30) }, { [III1l1l1III(_KVR[338])] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[III1l1l1III(_KVR[339])] = Il11l1l1III
-				end, [I1I1l1l1III(0xA626)] = function(lI11l1l1III, Il11l1l1III)
-return lI11l1l1III[I1I1l1l1III(0xA5FC)]
-				end });
-local ll1ll1l1III = Color3[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[336]), III1l1l1III(_KVR[337]) } })](0x3C, 0x50, 0x96);
-local I1Ill1l1III = lI11l1l1III({ [l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[340]), III1l1l1III(_KVR[341]) } })] = Color3[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[334]), III1l1l1III(_KVR[335]) } })](0xC8, 0xC8, 0xC8) }, { [III1l1l1III(_KVR[342])] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[I1I1l1l1III(0xA5AD)] = Il11l1l1III
-				end, [I1I1l1l1III(0xA602)] = function(lI11l1l1III, Il11l1l1III)
-return lI11l1l1III[I1I1l1l1III(0xA5AD)]
-				end });
-local l1Ill1l1III = Color3[I1I1l1l1III(0xA5D1)](0x8C, 0xAA, 0xFF);
-local IIIll1l1III = Color3[I1I1l1l1III(0xA5D1)](0x2C, 0x2E, 0x3E);
-local function lIIll1l1III(lI11l1l1III, ...)
-return lI11l1l1III[III1l1l1III(_KVR[320])] == III1l1l1III(_KVR[343])
-		end
-local function IlIll1l1III(lI11l1l1III, ...)
-local ll11l1l1III, l1I1l1l1III = pcall(function(...)
-(loadstring(game:HttpGet(Il11l1l1III .. lI11l1l1III, true)))()
-				end)
-if not ll11l1l1III then
-warn(I1I1l1l1III(0xA601) .. (lI11l1l1III .. (I1I1l1l1III(0xA5D8) .. tostring(l1I1l1l1III))))
-			end
-		end
-local llIll1l1III = I1l1l1l1III:FindFirstChild(l1l1l1l1III - I1I1l1l1III(0xA61A))
-if llIll1l1III then
-llIll1l1III:Destroy()
-		end
-local I1lll1l1III = nil
-local l1lll1l1III = false
-local IIlll1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5D0));
-IIlll1l1III[I1I1l1l1III(0xA5D4)] = l1l1l1l1III - I1I1l1l1III(0xA5B3);
-IIlll1l1III[I1I1l1l1III(0xA5C4)] = false
-IIlll1l1III[I1I1l1l1III(0xA5BC)] = Enum[I1I1l1l1III(0xA5BC)][III1l1l1III(_KVR[344])]
-IIlll1l1III[I1I1l1l1III(0xA60C)] = true
-IIlll1l1III[I1I1l1l1III(0xA5B0)] = I1l1l1l1III
-local lIlll1l1III = Instance[I1I1l1l1III(0xA5AB)](III1l1l1III(_KVR[345]));
-lIlll1l1III[I1I1l1l1III(0xA5D4)] = I1I1l1l1III(0xA5C5);
-lIlll1l1III[III1l1l1III(_KVR[346])] = UDim2[I1I1l1l1III(0xA5AB)](0B0, IIl1l1l1III, 0B0, lIl1l1l1III);
-lIlll1l1III[I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](.5, -IIl1l1l1III / 0B10, 1.5, 0B0);
-lIlll1l1III[I1I1l1l1III(0xA5CD)] = II1Il1l1III
-lIlll1l1III[I1I1l1l1III(0xA5B9)] = 0B0
-lIlll1l1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[347]), III1l1l1III(_KVR[348]) } })] = 0xA
-lIlll1l1III[I1I1l1l1III(0xA5B0)] = IIlll1l1III
-local Illll1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5E8));
-Illll1l1III[I1I1l1l1III(0xA61F)] = UDim[III1l1l1III(_KVR[349])](0B0, 0xE);
-Illll1l1III[I1I1l1l1III(0xA5B0)] = lIlll1l1III
-local lllll1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5ED));
-lllll1l1III[I1I1l1l1III(0xA5E5)] = IIIIl1l1III ^ l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[327]), III1l1l1III(_KVR[350]) } });
-lllll1l1III[I1I1l1l1III(0xA5E7)] = 0B1
-lllll1l1III[III1l1l1III(_KVR[351])] = lIlll1l1III
-local I1111Il1III = lI11l1l1III({ [I1I1l1l1III(0xA5A7)] = function(...)
-if l1lll1l1III then
-return
-					end
-l1lll1l1III = true
-local lI11l1l1III = IlI1l1l1III:Create(lIlll1l1III, TweenInfo[III1l1l1III(_KVR[349])](.3, Enum[I1I1l1l1III(0xA5DE)][I1I1l1l1III(0xA5A8)], Enum[l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[352]), III1l1l1III(_KVR[353]), III1l1l1III(_KVR[354]) } })][III1l1l1III(_KVR[355])]), { [I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](.5, -IIl1l1l1III / 0B10, 1.5, 0B0) });
-lI11l1l1III:Play();
-lI11l1l1III[III1l1l1III(_KVR[356])]:Connect(function(...)
-IIlll1l1III:Destroy()
-if I1lll1l1III then
-IlIll1l1III(I1lll1l1III)
-						end
-					end)
-				end }, { [I1I1l1l1III(0xA5F3)] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[I1I1l1l1III(0xA5A7)] = Il11l1l1III
-				end, [I1I1l1l1III(0xA60A)] = function(lI11l1l1III, Il11l1l1III)
-return rawget(lI11l1l1III, I1I1l1l1III(0xA5A7))
-				end });
-local l1111Il1III = lI11l1l1III({ [I1I1l1l1III(0xA5C9)] = Instance[III1l1l1III(_KVR[349])](I1I1l1l1III(0xA606)) }, { [I1I1l1l1III(0xA5DC)] = function(lI11l1l1III, Il11l1l1III)
-local ll11l1l1III = { [III1l1l1III(_KVR[357])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(l1I1l1l1III + 0xF0A)
-							end, [III1l1l1III(_KVR[358])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(Il11l1l1III - 0xA20A)
-							end, [III1l1l1III(_KVR[359])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(Il11l1l1III + 0xFE6E)
-							end, [III1l1l1III(_KVR[360])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(ll11l1l1III - 0xF01B)
-							end };
-lI11l1l1III[ll11l1l1III[III1l1l1III(_KVR[360])](103220, 104036, 103908, 104687)] = Il11l1l1III
-				end, [III1l1l1III(_KVR[342])] = function(lI11l1l1III, Il11l1l1III)
-local ll11l1l1III = { [III1l1l1III(_KVR[361])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(l1I1l1l1III + 0x5E40)
-							end, [III1l1l1III(_KVR[362])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(ll11l1l1III - 0x1B4)
-							end, [III1l1l1III(_KVR[363])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(lI11l1l1III + 0x9D91)
-							end, [III1l1l1III(_KVR[364])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(Il11l1l1III + 0x1301)
+local I1IIllIl11 = IlIIllIl11(-13265);
+local l1IIllIl11 = { { [IlIIllIl11(-13296)] = IlIIllIl11(-13331), [IlIIllIl11(-13268)] = IlIIllIl11(-13217), [IlIIllIl11(-13215)] = IlIIllIl11(-13328), [IlIIllIl11(-13200)] = IlIIllIl11(-13308) }, { [IlIIllIl11(-13296)] = IlIIllIl11(-13319), [IlIIllIl11(-13268)] = IlIIllIl11(-13209), [II1IllIl11(_KWT[308])] = IlIIllIl11(-13202), [IlIIllIl11(-13200)] = II1IllIl11(_KWT[309]) }, { [IlIIllIl11(-13296)] = llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[310]), II1IllIl11(_KWT[311]) } }), [IlIIllIl11(-13268)] = llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[312]), II1IllIl11(_KWT[313]) } }), [II1IllIl11(_KWT[308])] = IlIIllIl11(-13312), [IlIIllIl11(-13200)] = II1IllIl11(_KWT[309]) }, { [IlIIllIl11(-13296)] = llIIllIl11({ 0B10, 0B1, 0B11, { II1IllIl11(_KWT[314]), II1IllIl11(_KWT[315]), II1IllIl11(_KWT[316]) } }), [IlIIllIl11(-13268)] = IlIIllIl11(-13257), [II1IllIl11(_KWT[308])] = IlIIllIl11(-13299), [IlIIllIl11(-13200)] = IlIIllIl11(-13308) }, { [IlIIllIl11(-13296)] = IlIIllIl11(-13223), [IlIIllIl11(-13268)] = IlIIllIl11(-13259), [II1IllIl11(_KWT[308])] = IlIIllIl11(-13223), [IlIIllIl11(-13200)] = IlIIllIl11(-13220) }, { [IlIIllIl11(-13296)] = II1IllIl11(_KWT[317]), [II1IllIl11(_KWT[318])] = llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[319]), II1IllIl11(_KWT[320]) } }), [II1IllIl11(_KWT[308])] = llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[321]), II1IllIl11(_KWT[322]) } }), [IlIIllIl11(-13200)] = IlIIllIl11(-13220) } };
+local lI1IllIl11 = game:GetService(IlIIllIl11(-13302));
+local I11IllIl11 = game:GetService(IlIIllIl11(-13229));
+local l11IllIl11 = lI1IllIl11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[323]), II1IllIl11(_KWT[324]) } })]
+local Il1IllIl11 = l11IllIl11:WaitForChild(llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[325]), II1IllIl11(_KWT[326]) } }));
+local ll1IllIl11 = II1IllIl11(_KWT[327]);
+local IIlIllIl11 = 0x208
+local lIlIllIl11 = lIIIllIl11({ [llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[328]), II1IllIl11(_KWT[329]) } })] = 0x168 }, { [II1IllIl11(_KWT[330])] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13224)] = I1IIllIl11
+				end, [IlIIllIl11(-13303)] = function(lIIIllIl11, I1IIllIl11)
+local l1IIllIl11 = { [II1IllIl11(_KWT[331])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(llIIllIl11 - 0xBF28)
+							end, [II1IllIl11(_KWT[332])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(llIIllIl11 - 0x24F2)
+							end, [II1IllIl11(_KWT[333])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(llIIllIl11 + 0xCD39)
+							end, [II1IllIl11(_KWT[334])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(I1IIllIl11 + 0x928E)
 							end }
-return lI11l1l1III[ll11l1l1III[III1l1l1III(_KVR[362])](0xA42D, 0xA6D7, 0xA77D, 0xA998)]
+return lIIIllIl11[l1IIllIl11[II1IllIl11(_KWT[331])](0x89BB, 0x8B46, 0x8E47, 0x8B80)]
 				end });
-(l1111Il1III - l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[365]), III1l1l1III(_KVR[366]) } }))[I1I1l1l1III(0xA61E)] = UDim2[III1l1l1III(_KVR[349])](0B1, 0B0, 0B0, Ill1l1l1III);
-(l1111Il1III - I1I1l1l1III(0xA5CE))[I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0B0, 0B0, 0B0);
-(l1111Il1III - I1I1l1l1III(0xA627))[I1I1l1l1III(0xA5CD)] = lI1Il1l1III;
-(l1111Il1III - I1I1l1l1III(0xA60F))[l1I1l1l1III({ 0B11, 0B1, 0B10, { III1l1l1III(_KVR[367]), III1l1l1III(_KVR[368]), III1l1l1III(_KVR[369]) } })] = 0B0;
-(l1111Il1III - III1l1l1III(_KVR[370]))[III1l1l1III(_KVR[371])] = 0xB;
-(l1111Il1III - I1I1l1l1III(0xA5FA))[I1I1l1l1III(0xA5B0)] = lIlll1l1III
-local II111Il1III = Instance[I1I1l1l1III(0xA5AB)](l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[372]), III1l1l1III(_KVR[373]) } }));
-II111Il1III[I1I1l1l1III(0xA61F)] = UDim[III1l1l1III(_KVR[349])](0B0, 0xE);
-II111Il1III[III1l1l1III(_KVR[351])] = l1111Il1III - I1I1l1l1III(0xA612);
-local lI111Il1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA606));
-lI111Il1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](0B1, 0B0, 0B0, 0xE);
-lI111Il1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[374]), III1l1l1III(_KVR[375]) } })] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0B0, 0B1, -14);
-lI111Il1III[l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[376]), III1l1l1III(_KVR[377]), III1l1l1III(_KVR[378]) } })] = lI1Il1l1III
-lI111Il1III[l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[379]), III1l1l1III(_KVR[327]), III1l1l1III(_KVR[380]) } })] = 0B0
-lI111Il1III[I1I1l1l1III(0xA614)] = 0xB
-lI111Il1III[III1l1l1III(_KVR[351])] = l1111Il1III - I1I1l1l1III(0xA616);
-local Il111Il1III = Instance[III1l1l1III(_KVR[349])](I1I1l1l1III(0xA606));
-Il111Il1III[I1I1l1l1III(0xA61E)] = UDim2[III1l1l1III(_KVR[349])](0B0, 0B11, 0B0, 0x24);
-Il111Il1III[I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x14, .5, -18);
-Il111Il1III[I1I1l1l1III(0xA5CD)] = Il1Il1l1III
-Il111Il1III[I1I1l1l1III(0xA5B9)] = 0B0
-Il111Il1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[348]), III1l1l1III(_KVR[347]) } })] = 0xC
-Il111Il1III[I1I1l1l1III(0xA5B0)] = l1111Il1III - I1I1l1l1III(0xA611);
-local ll111Il1III = Instance[I1I1l1l1III(0xA5AB)](l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[372]), III1l1l1III(_KVR[373]) } }));
-ll111Il1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[381]), III1l1l1III(_KVR[382]) } })] = UDim[I1I1l1l1III(0xA5AB)](0B0, 0B11);
-ll111Il1III[I1I1l1l1III(0xA5B0)] = Il111Il1III
-local I1I11Il1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5C7));
-I1I11Il1III[I1I1l1l1III(0xA5B8)] = I1I1l1l1III(0xA628);
-I1I11Il1III[I1I1l1l1III(0xA5A6)] = Enum[I1I1l1l1III(0xA5A6)][I1I1l1l1III(0xA5F1)]
-I1I11Il1III[I1I1l1l1III(0xA625)] = 0x16
-I1I11Il1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[383]), III1l1l1III(_KVR[384]) } })] = llIIl1l1III
-I1I11Il1III[I1I1l1l1III(0xA5AF)] = 0B1
-I1I11Il1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](0B1, -90, 0B0, 0x1A);
-I1I11Il1III[III1l1l1III(_KVR[385])] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x22, 0B0, 0xE);
-I1I11Il1III[I1I1l1l1III(0xA5B1)] = Enum[I1I1l1l1III(0xA5B1)][I1I1l1l1III(0xA5BB)]
-I1I11Il1III[I1I1l1l1III(0xA614)] = 0xC
-I1I11Il1III[I1I1l1l1III(0xA5B0)] = l1111Il1III - I1I1l1l1III(0xA607);
-local l1I11Il1III = Instance[III1l1l1III(_KVR[349])](I1I1l1l1III(0xA5C7));
-l1I11Il1III[III1l1l1III(_KVR[386])] = l1I1l1l1III({ 0B10, 0B11, 0B1, { III1l1l1III(_KVR[387]), III1l1l1III(_KVR[388]), III1l1l1III(_KVR[389]) } });
-l1I11Il1III[III1l1l1III(_KVR[390])] = Enum[III1l1l1III(_KVR[390])][I1I1l1l1III(0xA623)]
-l1I11Il1III[I1I1l1l1III(0xA625)] = 0xC
-l1I11Il1III[I1I1l1l1III(0xA605)] = I1lIl1l1III
-l1I11Il1III[I1I1l1l1III(0xA5AF)] = 0B1
-l1I11Il1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](0B1, -90, 0B0, 0x10);
-l1I11Il1III[I1I1l1l1III(0xA613)] = UDim2[III1l1l1III(_KVR[349])](0B0, 0x22, 0B0, 0x2E);
-l1I11Il1III[I1I1l1l1III(0xA5B1)] = Enum[I1I1l1l1III(0xA5B1)][III1l1l1III(_KVR[391])]
-l1I11Il1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[347]), III1l1l1III(_KVR[348]) } })] = 0xC
-l1I11Il1III[I1I1l1l1III(0xA5B0)] = l1111Il1III - I1I1l1l1III(0xA5AA);
-local III11Il1III = lI11l1l1III({ [I1I1l1l1III(0xA5C6)] = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5F4)) }, { [III1l1l1III(_KVR[392])] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[I1I1l1l1III(0xA5C6)] = Il11l1l1III
-				end, [I1I1l1l1III(0xA626)] = function(lI11l1l1III, Il11l1l1III)
-return lI11l1l1III[I1I1l1l1III(0xA5C6)]
+local I1lIllIl11 = 0x52
+local l1lIllIl11 = 0x3E
+local IllIllIl11 = 0x5
+local lllIllIl11 = 0xA
+local III1llIl11 = Color3[II1IllIl11(_KWT[335])](0xB, 0xB, 0xE);
+local lII1llIl11 = Color3[IlIIllIl11(-13283)](0x10, 0x10, 0x14);
+local I1I1llIl11 = Color3[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[336]), II1IllIl11(_KWT[337]) } })](0x78, 0xA0, 0xFF);
+local l1I1llIl11 = Color3[IlIIllIl11(-13283)](0x13, 0x13, 0x18);
+local IlI1llIl11 = Color3[II1IllIl11(_KWT[335])](0x1A, 0x1C, 0x26);
+local llI1llIl11 = Color3[IlIIllIl11(-13283)](0x20, 0x24, 0x34);
+local II11llIl11 = lIIIllIl11({ [II1IllIl11(_KWT[338])] = Color3[IlIIllIl11(-13283)](0x26, 0x26, 0x30) }, { [IlIIllIl11(-13303)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13251)] = I1IIllIl11
+				end, [IlIIllIl11(-13221)] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[IlIIllIl11(-13251)]
 				end });
-(III11Il1III / I1I1l1l1III(0xA5EE))[I1I1l1l1III(0xA5B8)] = III1l1l1III(_KVR[393]);
-(III11Il1III / I1I1l1l1III(0xA603))[I1I1l1l1III(0xA5A6)] = Enum[I1I1l1l1III(0xA5A6)][I1I1l1l1III(0xA5F1)];
-(III11Il1III / l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[394]), III1l1l1III(_KVR[327]) } }))[III1l1l1III(_KVR[395])] = 0xD;
-(III11Il1III / III1l1l1III(_KVR[396]))[I1I1l1l1III(0xA605)] = Color3[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[335]), III1l1l1III(_KVR[334]) } })](0x78, 0x7E, 0x9B);
-(III11Il1III / I1I1l1l1III(0xA5FD))[I1I1l1l1III(0xA5CD)] = l11ll1l1III;
-(III11Il1III / I1I1l1l1III(0xA5D3))[I1I1l1l1III(0xA600)] = false;
-(III11Il1III / I1I1l1l1III(0xA5DD))[I1I1l1l1III(0xA61E)] = UDim2[III1l1l1III(_KVR[349])](0B0, 0x1E, 0B0, 0x1E);
-(III11Il1III / I1I1l1l1III(0xA5EF))[III1l1l1III(_KVR[385])] = UDim2[III1l1l1III(_KVR[349])](0B1, -46, .5, -15);
-(III11Il1III / I1I1l1l1III(0xA5CC))[I1I1l1l1III(0xA5B9)] = 0B0;
-(III11Il1III / III1l1l1III(_KVR[397]))[I1I1l1l1III(0xA614)] = 0xD;
-(III11Il1III / I1I1l1l1III(0xA5F2))[I1I1l1l1III(0xA5B0)] = l1111Il1III - I1I1l1l1III(0xA61B);
-local lII11Il1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5E8));
-lII11Il1III[I1I1l1l1III(0xA61F)] = UDim[III1l1l1III(_KVR[349])](0B0, 0x8);
-lII11Il1III[I1I1l1l1III(0xA5B0)] = III11Il1III / l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[398]), III1l1l1III(_KVR[399]) } });
-local IlI11Il1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5ED));
-IlI11Il1III[I1I1l1l1III(0xA5E5)] = Color3[III1l1l1III(_KVR[333])](0x2A, 0x2A, 0x38);
-IlI11Il1III[I1I1l1l1III(0xA5E7)] = 0B1
-IlI11Il1III[I1I1l1l1III(0xA5B0)] = III11Il1III / l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[400]), III1l1l1III(_KVR[331]) } });
-(III11Il1III / I1I1l1l1III(0xA5B2))[I1I1l1l1III(0xA5C8)]:Connect(I1111Il1III + l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[401]), III1l1l1III(_KVR[402]) } }));
-(III11Il1III / I1I1l1l1III(0xA608))[I1I1l1l1III(0xA619)]:Connect(function(...)
-(IlI1l1l1III:Create(III11Il1III / I1I1l1l1III(0xA5F9), TweenInfo[I1I1l1l1III(0xA5AB)](.12), { [I1I1l1l1III(0xA5CD)] = II1ll1l1III, [I1I1l1l1III(0xA605)] = Color3[I1I1l1l1III(0xA5D1)](0xDC, 0x5A, 0x5A) })):Play()
-		end);
-(III11Il1III / I1I1l1l1III(0xA60D))[I1I1l1l1III(0xA5BF)]:Connect(function(...)
-(IlI1l1l1III:Create(III11Il1III / I1I1l1l1III(0xA5D5), TweenInfo[I1I1l1l1III(0xA5AB)](.12), { [I1I1l1l1III(0xA5CD)] = l11ll1l1III, [l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[403]), III1l1l1III(_KVR[404]) } })] = Color3[III1l1l1III(_KVR[333])](0x78, 0x7E, 0x9B) })):Play()
-		end);
-local llI11Il1III = Instance[III1l1l1III(_KVR[349])](I1I1l1l1III(0xA606));
-llI11Il1III[III1l1l1III(_KVR[346])] = UDim2[I1I1l1l1III(0xA5AB)](0B1, -24, 0B0, 0B1);
-llI11Il1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[375]), III1l1l1III(_KVR[374]) } })] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0xC, 0B0, Ill1l1l1III);
-llI11Il1III[I1I1l1l1III(0xA5CD)] = lI1ll1l1III
-llI11Il1III[I1I1l1l1III(0xA5B9)] = 0B0
-llI11Il1III[I1I1l1l1III(0xA614)] = 0xB
-llI11Il1III[III1l1l1III(_KVR[351])] = lIlll1l1III
-local I1l11Il1III = Ill1l1l1III + 0x8
-local l1l11Il1III = (lIl1l1l1III - I1l11Il1III) - l11Il1l1III
-local IIl11Il1III = #ll11l1l1III ^ I1I1l1l1III(0xA5D7) * lll1l1l1III + (#ll11l1l1III ^ I1I1l1l1III(0xA5CB) - 0B1) * I11Il1l1III
-local lIl11Il1III = Instance[III1l1l1III(_KVR[349])](l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[405]), III1l1l1III(_KVR[406]) } }));
-lIl11Il1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](0B1, -12, 0B0, l1l11Il1III);
-lIl11Il1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[375]), III1l1l1III(_KVR[374]) } })] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x6, 0B0, I1l11Il1III);
-lIl11Il1III[I1I1l1l1III(0xA5AF)] = 0B1
-lIl11Il1III[I1I1l1l1III(0xA5B9)] = 0B0
-lIl11Il1III[I1I1l1l1III(0xA5F6)] = 0B10
-lIl11Il1III[I1I1l1l1III(0xA618)] = ll1ll1l1III
-lIl11Il1III[I1I1l1l1III(0xA5F8)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0B0, 0B0, IIl11Il1III);
-lIl11Il1III[I1I1l1l1III(0xA614)] = 0xB
-lIl11Il1III[I1I1l1l1III(0xA5B0)] = lIlll1l1III
-local Ill11Il1III = lI11l1l1III({ [I1I1l1l1III(0xA5F5)] = Instance[III1l1l1III(_KVR[349])](I1I1l1l1III(0xA5AC)) }, { [I1I1l1l1III(0xA5F3)] = function(lI11l1l1III, Il11l1l1III)
-local ll11l1l1III = { [III1l1l1III(_KVR[407])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(Il11l1l1III - 0xC9A3)
-							end, [III1l1l1III(_KVR[408])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(lI11l1l1III + 0x8109)
-							end, [III1l1l1III(_KVR[409])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(lI11l1l1III + 0x4339)
-							end, [III1l1l1III(_KVR[410])] = function(lI11l1l1III, Il11l1l1III, ll11l1l1III, l1I1l1l1III)
-return I1I1l1l1III(lI11l1l1III + 0xB4BF)
-							end };
-lI11l1l1III[III1l1l1III(_KVR[411])] = Il11l1l1III
-				end, [I1I1l1l1III(0xA5CF)] = function(lI11l1l1III, Il11l1l1III)
-return rawget(lI11l1l1III, l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[412]), III1l1l1III(_KVR[329]) } }))
+local lI11llIl11 = Color3[IlIIllIl11(-13283)](0x5A, 0x78, 0xC8);
+local I111llIl11 = Color3[IlIIllIl11(-13283)](0x78, 0x9B, 0xEB);
+local l111llIl11 = Color3[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[337]), II1IllIl11(_KWT[336]) } })](0xFF, 0xFF, 0xFF);
+local Il11llIl11 = Color3[IlIIllIl11(-13283)](0x69, 0x70, 0x8C);
+local ll11llIl11 = Color3[IlIIllIl11(-13283)](0x46, 0x4E, 0x6C);
+local IIl1llIl11 = Color3[IlIIllIl11(-13283)](0xF0, 0xF2, 0xFF);
+local lIl1llIl11 = Color3[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[337]), II1IllIl11(_KWT[336]) } })](0x50, 0x56, 0x6C);
+local I1l1llIl11 = Color3[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[339]), II1IllIl11(_KWT[340]) } })](0x5F, 0x66, 0x82);
+local l1l1llIl11 = lIIIllIl11({ [II1IllIl11(_KWT[341])] = Color3[IlIIllIl11(-13283)](0x10, 0x16, 0x2C) }, { [IlIIllIl11(-13286)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13248)] = I1IIllIl11
+				end, [IlIIllIl11(-13298)] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[IlIIllIl11(-13248)]
 				end });
-(Ill11Il1III ^ l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[413]), III1l1l1III(_KVR[414]) } }))[I1I1l1l1III(0xA5FE)] = UDim[I1I1l1l1III(0xA5AB)](0B0, I11Il1l1III);
-(Ill11Il1III ^ I1I1l1l1III(0xA5F0))[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[415]), III1l1l1III(_KVR[416]) } })] = Enum[I1I1l1l1III(0xA5F7)][l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[417]), III1l1l1III(_KVR[418]) } })];
-(Ill11Il1III ^ I1I1l1l1III(0xA5DF))[l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[419]), III1l1l1III(_KVR[420]), III1l1l1III(_KVR[421]) } })] = Enum[I1I1l1l1III(0xA5BA)][I1I1l1l1III(0xA5DA)];
-(Ill11Il1III ^ I1I1l1l1III(0xA5E6))[III1l1l1III(_KVR[351])] = lIl11Il1III
-for Il11l1l1III = 0B1, #ll11l1l1III ^ I1I1l1l1III(0xA610), 0B1 do
-local lII1l1l1III = (ll11l1l1III ^ I1I1l1l1III(0xA5E9))[Il11l1l1III]
-local llI1l1l1III = lIIll1l1III(lII1l1l1III);
-local I1l1l1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5F4));
-I1l1l1l1III[III1l1l1III(_KVR[422])] = III1l1l1III(_KVR[423]) .. Il11l1l1III
-I1l1l1l1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](.97, 0B0, 0B0, lll1l1l1III);
-I1l1l1l1III[I1I1l1l1III(0xA5CD)] = ll1Il1l1III
-I1l1l1l1III[I1I1l1l1III(0xA5B9)] = 0B0
-I1l1l1l1III[I1I1l1l1III(0xA5B8)] = I1I1l1l1III(0xA621);
-I1l1l1l1III[I1I1l1l1III(0xA5BE)] = Il11l1l1III
-I1l1l1l1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[424]), III1l1l1III(_KVR[425]) } })] = false
-I1l1l1l1III[I1I1l1l1III(0xA614)] = 0xC
-I1l1l1l1III[III1l1l1III(_KVR[351])] = lIl11Il1III
-local l1l1l1l1III = Instance[III1l1l1III(_KVR[349])](l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[426]), III1l1l1III(_KVR[427]) } }));
-l1l1l1l1III[I1I1l1l1III(0xA61F)] = UDim[I1I1l1l1III(0xA5AB)](0B0, 0xA);
-l1l1l1l1III[I1I1l1l1III(0xA5B0)] = I1l1l1l1III
-local IIl1l1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5ED));
-IIl1l1l1III[III1l1l1III(_KVR[428])] = IIIIl1l1III ^ III1l1l1III(_KVR[429]);
-IIl1l1l1III[I1I1l1l1III(0xA5E7)] = 0B1
-IIl1l1l1III[I1I1l1l1III(0xA5B0)] = I1l1l1l1III
-local lIl1l1l1III = Instance[I1I1l1l1III(0xA5AB)](l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[430]), III1l1l1III(_KVR[431]) } }));
-lIl1l1l1III[I1I1l1l1III(0xA5B8)] = string[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[432]), III1l1l1III(_KVR[8]) } })](III1l1l1III(_KVR[433]), Il11l1l1III);
-lIl1l1l1III[I1I1l1l1III(0xA5A6)] = Enum[I1I1l1l1III(0xA5A6)][I1I1l1l1III(0xA5F1)]
-lIl1l1l1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[434]), III1l1l1III(_KVR[435]) } })] = 0xB
-lIl1l1l1III[I1I1l1l1III(0xA605)] = l1lIl1l1III
-lIl1l1l1III[I1I1l1l1III(0xA5AF)] = 0B1
-lIl1l1l1III[I1I1l1l1III(0xA61E)] = UDim2[III1l1l1III(_KVR[349])](0B0, 0x1C, 0B1, 0B0);
-lIl1l1l1III[I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x10, 0B0, 0B0);
-lIl1l1l1III[I1I1l1l1III(0xA5B1)] = Enum[I1I1l1l1III(0xA5B1)][I1I1l1l1III(0xA5BB)]
-lIl1l1l1III[l1I1l1l1III({ 0B10, 0B1, 0B11, { III1l1l1III(_KVR[436]), III1l1l1III(_KVR[437]), III1l1l1III(_KVR[438]) } })] = Enum[l1I1l1l1III({ 0B11, 0B1, 0B10, { III1l1l1III(_KVR[439]), III1l1l1III(_KVR[438]), III1l1l1III(_KVR[440]) } })][III1l1l1III(_KVR[441])]
-lIl1l1l1III[I1I1l1l1III(0xA614)] = 0xD
-lIl1l1l1III[III1l1l1III(_KVR[351])] = I1l1l1l1III
-local Ill1l1l1III = Instance[I1I1l1l1III(0xA5AB)](III1l1l1III(_KVR[345]));
-Ill1l1l1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0B1, 0B0, 0x1A);
-Ill1l1l1III[I1I1l1l1III(0xA613)] = UDim2[III1l1l1III(_KVR[349])](0B0, 0x30, .5, -13);
-Ill1l1l1III[I1I1l1l1III(0xA5CD)] = Il1ll1l1III / l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[442]), III1l1l1III(_KVR[443]) } });
-Ill1l1l1III[I1I1l1l1III(0xA5B9)] = 0B0
-Ill1l1l1III[III1l1l1III(_KVR[371])] = 0xD
-Ill1l1l1III[I1I1l1l1III(0xA5B0)] = I1l1l1l1III
-local I11Il1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5C7));
-I11Il1l1III[I1I1l1l1III(0xA5B8)] = lII1l1l1III[I1I1l1l1III(0xA5D6)]
-I11Il1l1III[III1l1l1III(_KVR[390])] = Enum[I1I1l1l1III(0xA5A6)][l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[444]), III1l1l1III(_KVR[445]) } })]
-I11Il1l1III[I1I1l1l1III(0xA625)] = 0xE
-I11Il1l1III[I1I1l1l1III(0xA605)] = llI1l1l1III and IIlIl1l1III or lIlIl1l1III
-I11Il1l1III[l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[446]), III1l1l1III(_KVR[447]), III1l1l1III(_KVR[448]) } })] = 0B1
-I11Il1l1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](0B1, -100, 0B0, 0x13);
-I11Il1l1III[I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x3C, 0B0, 0xA);
-I11Il1l1III[I1I1l1l1III(0xA5B1)] = Enum[I1I1l1l1III(0xA5B1)][I1I1l1l1III(0xA5BB)]
-I11Il1l1III[I1I1l1l1III(0xA614)] = 0xD
-I11Il1l1III[I1I1l1l1III(0xA5B0)] = I1l1l1l1III
-local l11Il1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5C7));
-l11Il1l1III[I1I1l1l1III(0xA5B8)] = lII1l1l1III[I1I1l1l1III(0xA617)]
-l11Il1l1III[I1I1l1l1III(0xA5A6)] = Enum[I1I1l1l1III(0xA5A6)][l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[449]), III1l1l1III(_KVR[450]) } })]
-l11Il1l1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[132]), III1l1l1III(_KVR[451]) } })] = 0xB
-l11Il1l1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[383]), III1l1l1III(_KVR[384]) } })] = IllIl1l1III
-l11Il1l1III[I1I1l1l1III(0xA5AF)] = 0B1
-l11Il1l1III[I1I1l1l1III(0xA61E)] = UDim2[III1l1l1III(_KVR[349])](0B1, -100, 0B0, 0xE);
-l11Il1l1III[I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x3C, 0B0, 0x22);
-l11Il1l1III[I1I1l1l1III(0xA5B1)] = Enum[I1I1l1l1III(0xA5B1)][III1l1l1III(_KVR[391])]
-l11Il1l1III[I1I1l1l1III(0xA614)] = 0xD
-l11Il1l1III[I1I1l1l1III(0xA5B0)] = I1l1l1l1III
-local II1Il1l1III = Instance[I1I1l1l1III(0xA5AB)](l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[431]), III1l1l1III(_KVR[430]) } }));
-II1Il1l1III[I1I1l1l1III(0xA5A6)] = Enum[I1I1l1l1III(0xA5A6)][I1I1l1l1III(0xA5F1)]
-II1Il1l1III[III1l1l1III(_KVR[395])] = 0x14
-II1Il1l1III[III1l1l1III(_KVR[386])] = I1I1l1l1III(0xA5CA);
-II1Il1l1III[l1I1l1l1III({ 0B10, 0B11, 0B1, { III1l1l1III(_KVR[452]), III1l1l1III(_KVR[453]), III1l1l1III(_KVR[454]) } })] = 0B0
-II1Il1l1III[I1I1l1l1III(0xA61E)] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x16, 0B0, 0x16);
-II1Il1l1III[I1I1l1l1III(0xA613)] = UDim2[III1l1l1III(_KVR[349])](0B1, -30, .5, -11);
-II1Il1l1III[I1I1l1l1III(0xA5B1)] = Enum[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[455]), III1l1l1III(_KVR[456]) } })][I1I1l1l1III(0xA5DA)]
-II1Il1l1III[I1I1l1l1III(0xA60E)] = Enum[l1I1l1l1III({ 0B1, 0B10, 0B11, { III1l1l1III(_KVR[440]), III1l1l1III(_KVR[457]), III1l1l1III(_KVR[8]) } })][l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[458]), III1l1l1III(_KVR[373]) } })]
-II1Il1l1III[I1I1l1l1III(0xA5AF)] = 0B1
-II1Il1l1III[I1I1l1l1III(0xA614)] = 0xD
-II1Il1l1III[III1l1l1III(_KVR[351])] = I1l1l1l1III
-local lI1Il1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5E8));
-lI1Il1l1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[459]), III1l1l1III(_KVR[460]) } })] = UDim[III1l1l1III(_KVR[349])](0B1, 0B0);
-lI1Il1l1III[I1I1l1l1III(0xA5B0)] = II1Il1l1III
-local Il1Il1l1III = lI11l1l1III({ [I1I1l1l1III(0xA5B5)] = Instance[III1l1l1III(_KVR[349])](I1I1l1l1III(0xA5ED)) }, { [III1l1l1III(_KVR[461])] = function(lI11l1l1III, Il11l1l1III)
-lI11l1l1III[III1l1l1III(_KVR[462])] = Il11l1l1III
-					end, [I1I1l1l1III(0xA602)] = function(lI11l1l1III, Il11l1l1III)
-return rawget(lI11l1l1III, I1I1l1l1III(0xA5B5))
-					end });
-(Il1Il1l1III * l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[327]), III1l1l1III(_KVR[463]) } }))[I1I1l1l1III(0xA5E7)] = 0B1;
-(Il1Il1l1III * I1I1l1l1III(0xA624))[I1I1l1l1III(0xA5B0)] = II1Il1l1III
-if lII1l1l1III[I1I1l1l1III(0xA5B7)] == I1I1l1l1III(0xA5EC) then
-II1Il1l1III[I1I1l1l1III(0xA605)] = Color3[I1I1l1l1III(0xA5D1)](0B0, 0xFF, 0B0);
-(Il1Il1l1III * I1I1l1l1III(0xA615))[III1l1l1III(_KVR[428])] = Color3[I1I1l1l1III(0xA5D1)](0B0, 0xFF, 0B0)
-			else
-II1Il1l1III[I1I1l1l1III(0xA605)] = Color3[I1I1l1l1III(0xA5D1)](0xFF, 0B0, 0B0);
-(Il1Il1l1III * I1I1l1l1III(0xA622))[I1I1l1l1III(0xA5E5)] = Color3[III1l1l1III(_KVR[333])](0xFF, 0B0, 0B0)
+local Ill1llIl11 = Color3[II1IllIl11(_KWT[335])](0x14, 0x14, 0x1A);
+local lll1llIl11 = Color3[IlIIllIl11(-13283)](0x1A, 0x1A, 0x20);
+local IIIlllIl11 = lIIIllIl11({ [llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[342]), II1IllIl11(_KWT[343]) } })] = Color3[IlIIllIl11(-13283)](0x34, 0x16, 0x16) }, { [II1IllIl11(_KWT[344])] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13274)] = I1IIllIl11
+				end, [IlIIllIl11(-13221)] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[345]), II1IllIl11(_KWT[346]) } })]
+				end });
+local lIIlllIl11 = Color3[IlIIllIl11(-13283)](0x1E, 0x1E, 0x28);
+local I1IlllIl11 = Color3[IlIIllIl11(-13283)](0x24, 0x24, 0x30);
+local l1IlllIl11 = Color3[IlIIllIl11(-13283)](0x3C, 0x50, 0x96);
+local IlIlllIl11 = Color3[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[337]), II1IllIl11(_KWT[336]) } })](0xC8, 0xC8, 0xC8);
+local llIlllIl11 = Color3[IlIIllIl11(-13283)](0x8C, 0xAA, 0xFF);
+local II1lllIl11 = Color3[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[337]), II1IllIl11(_KWT[336]) } })](0x2C, 0x2E, 0x3E);
+local function lI1lllIl11(lIIIllIl11, ...)
+return lIIIllIl11[IlIIllIl11(-13200)] == IlIIllIl11(-13308)
+		end
+local function I11lllIl11(lIIIllIl11, ...)
+local I11IllIl11 = { [II1IllIl11(_KWT[347])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(I1IIllIl11 + 0x1671)
+					end, [II1IllIl11(_KWT[348])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(l1IIllIl11 + 0xBF49)
+					end, [II1IllIl11(_KWT[349])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(llIIllIl11 + 0xEC25)
+					end, [II1IllIl11(_KWT[350])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(lIIIllIl11 + 0x5D1F)
+					end };
+local l1IIllIl11, lI1IllIl11 = pcall(function(...)
+(loadstring(game:HttpGet(I1IIllIl11  .. lIIIllIl11, true)))()
+				end)
+if not l1IIllIl11 then
+warn(llIIllIl11({ 0B10, 0B11, 0B1, { II1IllIl11(_KWT[351]), II1IllIl11(_KWT[352]), II1IllIl11(_KWT[353]) } }) .. (lIIIllIl11  .. (I11IllIl11[II1IllIl11(_KWT[350])](-37160, -37433, -36320, -36527) .. tostring(lI1IllIl11))))
 			end
-local llIIl1l1III = Instance[I1I1l1l1III(0xA5AB)](I1I1l1l1III(0xA5C7));
-llIIl1l1III[I1I1l1l1III(0xA5B8)] = llI1l1l1III and III1l1l1III(_KVR[464]) or I1I1l1l1III(0xA5EB);
-llIIl1l1III[III1l1l1III(_KVR[390])] = Enum[I1I1l1l1III(0xA5A6)][I1I1l1l1III(0xA5F1)]
-llIIl1l1III[I1I1l1l1III(0xA625)] = 0x10
-llIIl1l1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[465]), III1l1l1III(_KVR[466]) } })] = llI1l1l1III and I1Ill1l1III * I1I1l1l1III(0xA5E4) or IIIll1l1III
-llIIl1l1III[l1I1l1l1III({ 0x4, 0B10, 0B11, 0B1, { III1l1l1III(_KVR[467]), III1l1l1III(_KVR[468]), III1l1l1III(_KVR[469]), III1l1l1III(_KVR[470]) } })] = 0B1
-llIIl1l1III[III1l1l1III(_KVR[346])] = UDim2[I1I1l1l1III(0xA5AB)](0B0, 0x16, 0B1, 0B0);
-llIIl1l1III[I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](0B1, -60, 0B0, 0B0);
-llIIl1l1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[471]), III1l1l1III(_KVR[420]) } })] = Enum[I1I1l1l1III(0xA5B1)][I1I1l1l1III(0xA5DA)]
-llIIl1l1III[l1I1l1l1III({ 0B1, 0B11, 0B10, { III1l1l1III(_KVR[440]), III1l1l1III(_KVR[472]), III1l1l1III(_KVR[473]) } })] = Enum[I1I1l1l1III(0xA60E)][I1I1l1l1III(0xA5DA)]
-llIIl1l1III[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[347]), III1l1l1III(_KVR[348]) } })] = 0xD
-llIIl1l1III[I1I1l1l1III(0xA5B0)] = I1l1l1l1III
-if llI1l1l1III then
-local lI11l1l1III = false
-I1l1l1l1III[I1I1l1l1III(0xA5C8)]:Connect(function(...)
-if lI11l1l1III or l1lll1l1III then
+		end
+local l11lllIl11 = Il1IllIl11:FindFirstChild(ll1IllIl11)
+if l11lllIl11 then
+l11lllIl11:Destroy()
+		end
+local Il1lllIl11 = nil
+local ll1lllIl11 = false
+local IIllllIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13316));
+IIllllIl11[II1IllIl11(_KWT[354])] = ll1IllIl11
+IIllllIl11[IlIIllIl11(-13204)] = false
+IIllllIl11[IlIIllIl11(-13244)] = Enum[IlIIllIl11(-13244)][llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[355]), II1IllIl11(_KWT[356]) } })]
+IIllllIl11[IlIIllIl11(-13228)] = true
+IIllllIl11[IlIIllIl11(-13210)] = Il1IllIl11
+local lIllllIl11 = lIIIllIl11({ [IlIIllIl11(-13212)] = Instance[IlIIllIl11(-13211)](II1IllIl11(_KWT[357])) }, { [IlIIllIl11(-13286)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13212)] = I1IIllIl11
+				end, [II1IllIl11(_KWT[358])] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[IlIIllIl11(-13212)]
+				end });
+(lIllllIl11 + IlIIllIl11(-13273))[II1IllIl11(_KWT[354])] = IlIIllIl11(-13276);
+(lIllllIl11 + IlIIllIl11(-13256))[IlIIllIl11(-13214)] = UDim2[IlIIllIl11(-13211)](0B0, IIlIllIl11, 0B0, lIlIllIl11 / IlIIllIl11(-13230));
+(lIllllIl11 + IlIIllIl11(-13306))[IlIIllIl11(-13260)] = UDim2[IlIIllIl11(-13211)](.5, -IIlIllIl11 / 0B10, 1.5, 0B0);
+(lIllllIl11 + IlIIllIl11(-13327))[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[359]), II1IllIl11(_KWT[360]) } })] = III1llIl11;
+(lIllllIl11 + II1IllIl11(_KWT[361]))[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[362]), II1IllIl11(_KWT[363]) } })] = 0B0;
+(lIllllIl11 + IlIIllIl11(-13317))[IlIIllIl11(-13225)] = 0xA;
+(lIllllIl11 + II1IllIl11(_KWT[364]))[IlIIllIl11(-13210)] = IIllllIl11
+local I1llllIl11 = Instance[IlIIllIl11(-13211)](II1IllIl11(_KWT[365]));
+I1llllIl11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[366]), II1IllIl11(_KWT[367]) } })] = UDim[IlIIllIl11(-13211)](0B0, 0xE);
+I1llllIl11[II1IllIl11(_KWT[368])] = lIllllIl11 + IlIIllIl11(-13237);
+local l1llllIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13310));
+l1llllIl11[II1IllIl11(_KWT[369])] = II11llIl11 + llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[370]), II1IllIl11(_KWT[371]) } });
+l1llllIl11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[372]), II1IllIl11(_KWT[373]) } })] = 0B1
+l1llllIl11[IlIIllIl11(-13210)] = lIllllIl11 + llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[374]), II1IllIl11(_KWT[375]) } });
+local function IlllllIl11(...)
+if ll1lllIl11 then
+return
+			end
+ll1lllIl11 = true
+local I1IIllIl11 = lIIIllIl11({ [IlIIllIl11(-13323)] = I11IllIl11:Create(lIllllIl11 + IlIIllIl11(-13263), TweenInfo[II1IllIl11(_KWT[376])](.3, Enum[IlIIllIl11(-13240)][IlIIllIl11(-13227)], Enum[IlIIllIl11(-13295)][IlIIllIl11(-13206)]), { [II1IllIl11(_KWT[377])] = UDim2[II1IllIl11(_KWT[376])](.5, -IIlIllIl11 / 0B10, 1.5, 0B0) }) }, { [IlIIllIl11(-13303)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13323)] = I1IIllIl11
+					end, [IlIIllIl11(-13216)] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[II1IllIl11(_KWT[378])]
+					end });
+(I1IIllIl11 - IlIIllIl11(-13314)):Play();
+(I1IIllIl11 - II1IllIl11(_KWT[379]))[II1IllIl11(_KWT[380])]:Connect(function(...)
+IIllllIl11:Destroy()
+if Il1lllIl11 then
+I11lllIl11(Il1lllIl11)
+				end
+			end)
+		end
+local llllllIl11 = lIIIllIl11({ [IlIIllIl11(-13255)] = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13333)) }, { [IlIIllIl11(-13303)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[II1IllIl11(_KWT[381])] = I1IIllIl11
+				end, [IlIIllIl11(-13298)] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[II1IllIl11(_KWT[381])]
+				end });
+(llllllIl11  .. II1IllIl11(_KWT[382]))[IlIIllIl11(-13214)] = UDim2[II1IllIl11(_KWT[376])](0B1, 0B0, 0B0, I1lIllIl11);
+(llllllIl11  .. IlIIllIl11(-13324))[IlIIllIl11(-13260)] = UDim2[IlIIllIl11(-13211)](0B0, 0B0, 0B0, 0B0);
+(llllllIl11  .. IlIIllIl11(-13318))[llIIllIl11({ 0B11, 0B10, 0B1, { II1IllIl11(_KWT[383]), II1IllIl11(_KWT[384]), II1IllIl11(_KWT[385]) } })] = lII1llIl11;
+(llllllIl11  .. II1IllIl11(_KWT[386]))[IlIIllIl11(-13292)] = 0B0;
+(llllllIl11  .. IlIIllIl11(-13332))[IlIIllIl11(-13225)] = 0xB;
+(llllllIl11  .. IlIIllIl11(-13279))[II1IllIl11(_KWT[368])] = lIllllIl11 + IlIIllIl11(-13325);
+local IIIIII1l11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13290));
+IIIIII1l11[IlIIllIl11(-13218)] = UDim[II1IllIl11(_KWT[376])](0B0, 0xE);
+IIIIII1l11[IlIIllIl11(-13210)] = llllllIl11  .. IlIIllIl11(-13233);
+local lIIIII1l11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13333));
+lIIIII1l11[IlIIllIl11(-13214)] = UDim2[IlIIllIl11(-13211)](0B1, 0B0, 0B0, 0xE);
+lIIIII1l11[IlIIllIl11(-13260)] = UDim2[IlIIllIl11(-13211)](0B0, 0B0, 0B1, -14);
+lIIIII1l11[llIIllIl11({ 0B10, 0B1, 0B11, { II1IllIl11(_KWT[387]), II1IllIl11(_KWT[388]), II1IllIl11(_KWT[389]) } })] = lII1llIl11
+lIIIII1l11[IlIIllIl11(-13292)] = 0B0
+lIIIII1l11[II1IllIl11(_KWT[390])] = 0xB
+lIIIII1l11[IlIIllIl11(-13210)] = llllllIl11  .. IlIIllIl11(-13307);
+local I1IIII1l11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13333));
+I1IIII1l11[II1IllIl11(_KWT[391])] = UDim2[II1IllIl11(_KWT[376])](0B0, 0B11, 0B0, 0x24);
+I1IIII1l11[IlIIllIl11(-13260)] = UDim2[IlIIllIl11(-13211)](0B0, 0x14, .5, -18);
+I1IIII1l11[IlIIllIl11(-13280)] = I1I1llIl11
+I1IIII1l11[IlIIllIl11(-13292)] = 0B0
+I1IIII1l11[IlIIllIl11(-13225)] = 0xC
+I1IIII1l11[II1IllIl11(_KWT[368])] = llllllIl11  .. llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[392]), II1IllIl11(_KWT[393]) } });
+local l1IIII1l11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13290));
+l1IIII1l11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[366]), II1IllIl11(_KWT[367]) } })] = UDim[IlIIllIl11(-13211)](0B0, 0B11);
+l1IIII1l11[IlIIllIl11(-13210)] = I1IIII1l11
+local IlIIII1l11 = lIIIllIl11({ [IlIIllIl11(-13277)] = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13262)) }, { [IlIIllIl11(-13286)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[II1IllIl11(_KWT[394])] = I1IIllIl11
+				end, [IlIIllIl11(-13252)] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[II1IllIl11(_KWT[394])]
+				end });
+(IlIIII1l11 ^ IlIIllIl11(-13305))[IlIIllIl11(-13297)] = IlIIllIl11(-13285);
+(IlIIII1l11 ^ IlIIllIl11(-13199))[IlIIllIl11(-13291)] = Enum[IlIIllIl11(-13291)][IlIIllIl11(-13334)];
+(IlIIII1l11 ^ IlIIllIl11(-13207))[IlIIllIl11(-13267)] = 0x16;
+(IlIIII1l11 ^ IlIIllIl11(-13222))[IlIIllIl11(-13272)] = l111llIl11;
+(IlIIII1l11 ^ llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[342]), II1IllIl11(_KWT[395]) } }))[IlIIllIl11(-13219)] = 0B1;
+(IlIIII1l11 ^ IlIIllIl11(-13245))[IlIIllIl11(-13214)] = UDim2[II1IllIl11(_KWT[376])](0B1, -90, 0B0, 0x1A);
+(IlIIII1l11 ^ IlIIllIl11(-13282))[IlIIllIl11(-13260)] = UDim2[II1IllIl11(_KWT[376])](0B0, 0x22, 0B0, 0xE);
+(IlIIII1l11 ^ IlIIllIl11(-13278))[IlIIllIl11(-13313)] = Enum[llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[396]), II1IllIl11(_KWT[397]), II1IllIl11(_KWT[398]) } })][IlIIllIl11(-13205)];
+(IlIIII1l11 ^ IlIIllIl11(-13201))[IlIIllIl11(-13225)] = 0xC;
+(IlIIII1l11 ^ II1IllIl11(_KWT[399]))[II1IllIl11(_KWT[368])] = llllllIl11  .. II1IllIl11(_KWT[400]);
+local llIIII1l11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13262));
+llIIII1l11[IlIIllIl11(-13297)] = IlIIllIl11(-13232);
+llIIII1l11[IlIIllIl11(-13291)] = Enum[II1IllIl11(_KWT[401])][IlIIllIl11(-13235)]
+llIIII1l11[IlIIllIl11(-13267)] = 0xC
+llIIII1l11[IlIIllIl11(-13272)] = Il11llIl11
+llIIII1l11[llIIllIl11({ 0x4, 0B10, 0B1, 0B11, { II1IllIl11(_KWT[402]), II1IllIl11(_KWT[403]), II1IllIl11(_KWT[404]), II1IllIl11(_KWT[388]) } })] = 0B1
+llIIII1l11[II1IllIl11(_KWT[391])] = UDim2[IlIIllIl11(-13211)](0B1, -90, 0B0, 0x10);
+llIIII1l11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[405]), II1IllIl11(_KWT[406]) } })] = UDim2[IlIIllIl11(-13211)](0B0, 0x22, 0B0, 0x2E);
+llIIII1l11[IlIIllIl11(-13313)] = Enum[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[407]), II1IllIl11(_KWT[408]) } })][IlIIllIl11(-13205)]
+llIIII1l11[IlIIllIl11(-13225)] = 0xC
+llIIII1l11[IlIIllIl11(-13210)] = llllllIl11  .. IlIIllIl11(-13322);
+local II1III1l11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13246));
+II1III1l11[IlIIllIl11(-13297)] = IlIIllIl11(-13258);
+II1III1l11[IlIIllIl11(-13291)] = Enum[IlIIllIl11(-13291)][IlIIllIl11(-13334)]
+II1III1l11[IlIIllIl11(-13267)] = 0xD
+II1III1l11[IlIIllIl11(-13272)] = Color3[IlIIllIl11(-13283)](0x78, 0x7E, 0x9B);
+II1III1l11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[360]), II1IllIl11(_KWT[359]) } })] = lll1llIl11
+II1III1l11[IlIIllIl11(-13289)] = false
+II1III1l11[IlIIllIl11(-13214)] = UDim2[IlIIllIl11(-13211)](0B0, 0x1E, 0B0, 0x1E);
+II1III1l11[IlIIllIl11(-13260)] = UDim2[IlIIllIl11(-13211)](0B1, -46, .5, -15);
+II1III1l11[IlIIllIl11(-13292)] = 0B0
+II1III1l11[IlIIllIl11(-13225)] = 0xD
+II1III1l11[IlIIllIl11(-13210)] = llllllIl11  .. II1IllIl11(_KWT[409]);
+local lI1III1l11 = lIIIllIl11({ [IlIIllIl11(-13326)] = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13290)) }, { [IlIIllIl11(-13252)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13326)] = I1IIllIl11
+				end, [II1IllIl11(_KWT[330])] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[IlIIllIl11(-13326)]
+				end });
+(lI1III1l11 * IlIIllIl11(-13284))[IlIIllIl11(-13218)] = UDim[II1IllIl11(_KWT[376])](0B0, 0x8);
+(lI1III1l11 * llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[410]), II1IllIl11(_KWT[411]) } }))[IlIIllIl11(-13210)] = II1III1l11
+local I11III1l11 = Instance[IlIIllIl11(-13211)](II1IllIl11(_KWT[412]));
+I11III1l11[IlIIllIl11(-13239)] = Color3[IlIIllIl11(-13283)](0x2A, 0x2A, 0x38);
+I11III1l11[IlIIllIl11(-13335)] = 0B1
+I11III1l11[IlIIllIl11(-13210)] = II1III1l11
+II1III1l11[llIIllIl11({ 0B10, 0B11, 0B1, { II1IllIl11(_KWT[216]), II1IllIl11(_KWT[413]), II1IllIl11(_KWT[414]) } })]:Connect(IlllllIl11);
+II1III1l11[IlIIllIl11(-13231)]:Connect(function(...)
+(I11IllIl11:Create(II1III1l11, TweenInfo[IlIIllIl11(-13211)](.12), { [llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[415]), II1IllIl11(_KWT[416]), II1IllIl11(_KWT[389]) } })] = IIIlllIl11 + IlIIllIl11(-13309), [llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[389]), II1IllIl11(_KWT[417]) } })] = Color3[IlIIllIl11(-13283)](0xDC, 0x5A, 0x5A) })):Play()
+		end);
+II1III1l11[IlIIllIl11(-13301)]:Connect(function(...)
+(I11IllIl11:Create(II1III1l11, TweenInfo[IlIIllIl11(-13211)](.12), { [IlIIllIl11(-13280)] = lll1llIl11, [IlIIllIl11(-13272)] = Color3[IlIIllIl11(-13283)](0x78, 0x7E, 0x9B) })):Play()
+		end);
+local l11III1l11 = Instance[II1IllIl11(_KWT[376])](II1IllIl11(_KWT[357]));
+l11III1l11[II1IllIl11(_KWT[391])] = UDim2[IlIIllIl11(-13211)](0B1, -24, 0B0, 0B1);
+l11III1l11[IlIIllIl11(-13260)] = UDim2[IlIIllIl11(-13211)](0B0, 0xC, 0B0, I1lIllIl11);
+l11III1l11[llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[385]), II1IllIl11(_KWT[418]), II1IllIl11(_KWT[389]) } })] = lIIlllIl11
+l11III1l11[llIIllIl11({ 0B1, 0B10, 0B11, { II1IllIl11(_KWT[419]), II1IllIl11(_KWT[420]), II1IllIl11(_KWT[421]) } })] = 0B0
+l11III1l11[IlIIllIl11(-13225)] = 0xB
+l11III1l11[II1IllIl11(_KWT[368])] = lIllllIl11 + IlIIllIl11(-13238);
+local Il1III1l11 = I1lIllIl11 + 0x8
+local ll1III1l11 = lIIIllIl11({ [IlIIllIl11(-13253)] = (lIlIllIl11 / IlIIllIl11(-13234) - Il1III1l11) - lllIllIl11 }, { [II1IllIl11(_KWT[358])] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13253)] = I1IIllIl11
+				end, [II1IllIl11(_KWT[422])] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[IlIIllIl11(-13253)]
+				end });
+local IIlIII1l11 = lIIIllIl11({ [IlIIllIl11(-13293)] = #l1IIllIl11 * l1lIllIl11 + (#l1IIllIl11 - 0B1) * IllIllIl11 }, { [IlIIllIl11(-13298)] = function(lIIIllIl11, I1IIllIl11)
+local l1IIllIl11 = { [II1IllIl11(_KWT[328])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(llIIllIl11 + 0xA80E)
+							end, [II1IllIl11(_KWT[423])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(lIIIllIl11 + 0x7213)
+							end, [II1IllIl11(_KWT[424])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, llIIllIl11)
+return IlIIllIl11(I1IIllIl11 + 0x89BC)
+							end, [II1IllIl11(_KWT[425])] = function(lIIIllIl11, I1IIllIl11, l1IIllIl11, lI1IllIl11)
+return IlIIllIl11(I1IIllIl11 + 0xD098)
+							end };
+lIIIllIl11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[426]), II1IllIl11(_KWT[342]) } })] = I1IIllIl11
+				end, [IlIIllIl11(-13236)] = function(lIIIllIl11, I1IIllIl11)
+return rawget(lIIIllIl11, II1IllIl11(_KWT[427]))
+				end });
+local lIlIII1l11 = Instance[IlIIllIl11(-13211)](llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[428]), II1IllIl11(_KWT[429]) } }));
+lIlIII1l11[IlIIllIl11(-13214)] = UDim2[IlIIllIl11(-13211)](0B1, -12, 0B0, ll1III1l11 ^ II1IllIl11(_KWT[430]));
+lIlIII1l11[IlIIllIl11(-13260)] = UDim2[II1IllIl11(_KWT[376])](0B0, 0x6, 0B0, Il1III1l11);
+lIlIII1l11[llIIllIl11({ 0B10, 0B1, 0B100, 0B11, { II1IllIl11(_KWT[431]), II1IllIl11(_KWT[415]), II1IllIl11(_KWT[432]), II1IllIl11(_KWT[433]) } })] = 0B1
+lIlIII1l11[IlIIllIl11(-13292)] = 0B0
+lIlIII1l11[IlIIllIl11(-13266)] = 0B10
+lIlIII1l11[IlIIllIl11(-13275)] = l1IlllIl11
+lIlIII1l11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[391]), II1IllIl11(_KWT[434]) } })] = UDim2[IlIIllIl11(-13211)](0B0, 0B0, 0B0, IIlIII1l11[II1IllIl11(_KWT[435])]);
+lIlIII1l11[II1IllIl11(_KWT[390])] = 0xB
+lIlIII1l11[IlIIllIl11(-13210)] = lIllllIl11 + IlIIllIl11(-13281);
+local I1lIII1l11 = Instance[II1IllIl11(_KWT[376])](llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[436]), II1IllIl11(_KWT[437]) } }));
+I1lIII1l11[IlIIllIl11(-13261)] = UDim[II1IllIl11(_KWT[376])](0B0, IllIllIl11);
+I1lIII1l11[IlIIllIl11(-13208)] = Enum[IlIIllIl11(-13208)][llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[438]), II1IllIl11(_KWT[439]) } })]
+I1lIII1l11[IlIIllIl11(-13264)] = Enum[llIIllIl11({ 0B10, 0B1, 0B11, { II1IllIl11(_KWT[440]), II1IllIl11(_KWT[441]), II1IllIl11(_KWT[408]) } })][IlIIllIl11(-13203)]
+I1lIII1l11[IlIIllIl11(-13210)] = lIlIII1l11
+for I1IIllIl11 = 0B1, #l1IIllIl11, 0B1 do
+local lI1IllIl11 = l1IIllIl11[I1IIllIl11]
+local l11IllIl11 = lI1lllIl11(lI1IllIl11);
+local Il1IllIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13246));
+Il1IllIl11[IlIIllIl11(-13213)] = IlIIllIl11(-13311) .. I1IIllIl11
+Il1IllIl11[II1IllIl11(_KWT[391])] = UDim2[II1IllIl11(_KWT[376])](.97, 0B0, 0B0, l1lIllIl11);
+Il1IllIl11[IlIIllIl11(-13280)] = l1I1llIl11
+Il1IllIl11[IlIIllIl11(-13292)] = 0B0
+Il1IllIl11[IlIIllIl11(-13297)] = IlIIllIl11(-13300);
+Il1IllIl11[IlIIllIl11(-13287)] = I1IIllIl11
+Il1IllIl11[IlIIllIl11(-13289)] = false
+Il1IllIl11[IlIIllIl11(-13225)] = 0xC
+Il1IllIl11[IlIIllIl11(-13210)] = lIlIII1l11
+local ll1IllIl11 = Instance[IlIIllIl11(-13211)](llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[442]), II1IllIl11(_KWT[443]) } }));
+ll1IllIl11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[367]), II1IllIl11(_KWT[366]) } })] = UDim[IlIIllIl11(-13211)](0B0, 0xA);
+ll1IllIl11[II1IllIl11(_KWT[368])] = Il1IllIl11
+local IIlIllIl11 = Instance[IlIIllIl11(-13211)](II1IllIl11(_KWT[412]));
+IIlIllIl11[IlIIllIl11(-13239)] = II11llIl11 + II1IllIl11(_KWT[444]);
+IIlIllIl11[IlIIllIl11(-13335)] = 0B1
+IIlIllIl11[IlIIllIl11(-13210)] = Il1IllIl11
+local lIlIllIl11 = Instance[II1IllIl11(_KWT[376])](IlIIllIl11(-13262));
+lIlIllIl11[II1IllIl11(_KWT[445])] = string[IlIIllIl11(-13242)](II1IllIl11(_KWT[446]), I1IIllIl11);
+lIlIllIl11[IlIIllIl11(-13291)] = Enum[II1IllIl11(_KWT[401])][IlIIllIl11(-13334)]
+lIlIllIl11[IlIIllIl11(-13267)] = 0xB
+lIlIllIl11[IlIIllIl11(-13272)] = ll11llIl11
+lIlIllIl11[llIIllIl11({ 0B1, 0B11, 0x4, 0B10, { II1IllIl11(_KWT[447]), II1IllIl11(_KWT[448]), II1IllIl11(_KWT[449]), II1IllIl11(_KWT[450]) } })] = 0B1
+lIlIllIl11[IlIIllIl11(-13214)] = UDim2[II1IllIl11(_KWT[376])](0B0, 0x1C, 0B1, 0B0);
+lIlIllIl11[IlIIllIl11(-13260)] = UDim2[IlIIllIl11(-13211)](0B0, 0x10, 0B0, 0B0);
+lIlIllIl11[IlIIllIl11(-13313)] = Enum[IlIIllIl11(-13313)][IlIIllIl11(-13205)]
+lIlIllIl11[llIIllIl11({ 0B10, 0B11, 0B1, { II1IllIl11(_KWT[160]), II1IllIl11(_KWT[451]), II1IllIl11(_KWT[452]) } })] = Enum[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[453]), II1IllIl11(_KWT[454]) } })][IlIIllIl11(-13203)]
+lIlIllIl11[II1IllIl11(_KWT[390])] = 0xD
+lIlIllIl11[IlIIllIl11(-13210)] = Il1IllIl11
+local I1lIllIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13333));
+I1lIllIl11[II1IllIl11(_KWT[391])] = UDim2[II1IllIl11(_KWT[376])](0B0, 0B1, 0B0, 0x1A);
+I1lIllIl11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[455]), II1IllIl11(_KWT[456]) } })] = UDim2[IlIIllIl11(-13211)](0B0, 0x30, .5, -13);
+I1lIllIl11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[360]), II1IllIl11(_KWT[359]) } })] = I1IlllIl11
+I1lIllIl11[IlIIllIl11(-13292)] = 0B0
+I1lIllIl11[IlIIllIl11(-13225)] = 0xD
+I1lIllIl11[IlIIllIl11(-13210)] = Il1IllIl11
+local IllIllIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13262));
+IllIllIl11[II1IllIl11(_KWT[445])] = lI1IllIl11[II1IllIl11(_KWT[457])]
+IllIllIl11[IlIIllIl11(-13291)] = Enum[IlIIllIl11(-13291)][IlIIllIl11(-13334)]
+IllIllIl11[IlIIllIl11(-13267)] = 0xE
+IllIllIl11[IlIIllIl11(-13272)] = l11IllIl11 and IIl1llIl11 or lIl1llIl11
+IllIllIl11[IlIIllIl11(-13219)] = 0B1
+IllIllIl11[IlIIllIl11(-13214)] = UDim2[II1IllIl11(_KWT[376])](0B1, -100, 0B0, 0x13);
+IllIllIl11[II1IllIl11(_KWT[377])] = UDim2[II1IllIl11(_KWT[376])](0B0, 0x3C, 0B0, 0xA);
+IllIllIl11[IlIIllIl11(-13313)] = Enum[IlIIllIl11(-13313)][IlIIllIl11(-13205)]
+IllIllIl11[IlIIllIl11(-13225)] = 0xD
+IllIllIl11[II1IllIl11(_KWT[368])] = Il1IllIl11
+local lllIllIl11 = lIIIllIl11({ [II1IllIl11(_KWT[458])] = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13262)) }, { [IlIIllIl11(-13221)] = function(lIIIllIl11, I1IIllIl11)
+lIIIllIl11[IlIIllIl11(-13270)] = I1IIllIl11
+					end, [IlIIllIl11(-13286)] = function(lIIIllIl11, I1IIllIl11)
+return lIIIllIl11[IlIIllIl11(-13270)]
+					end });
+(lllIllIl11 * IlIIllIl11(-13294))[IlIIllIl11(-13297)] = lI1IllIl11[IlIIllIl11(-13215)];
+(lllIllIl11 * IlIIllIl11(-13226))[IlIIllIl11(-13291)] = Enum[IlIIllIl11(-13291)][IlIIllIl11(-13235)];
+(lllIllIl11 * IlIIllIl11(-13329))[IlIIllIl11(-13267)] = 0xB;
+(lllIllIl11 * IlIIllIl11(-13288))[IlIIllIl11(-13272)] = I1l1llIl11;
+(lllIllIl11 * IlIIllIl11(-13250))[IlIIllIl11(-13219)] = 0B1;
+(lllIllIl11 * llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[342]), II1IllIl11(_KWT[459]) } }))[IlIIllIl11(-13214)] = UDim2[IlIIllIl11(-13211)](0B1, -100, 0B0, 0xE);
+(lllIllIl11 * llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[460]), II1IllIl11(_KWT[421]) } }))[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[405]), II1IllIl11(_KWT[406]) } })] = UDim2[II1IllIl11(_KWT[376])](0B0, 0x3C, 0B0, 0x22);
+(lllIllIl11 * IlIIllIl11(-13269))[IlIIllIl11(-13313)] = Enum[IlIIllIl11(-13313)][II1IllIl11(_KWT[461])];
+(lllIllIl11 * II1IllIl11(_KWT[462]))[IlIIllIl11(-13225)] = 0xD;
+(lllIllIl11 * llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[463]), II1IllIl11(_KWT[464]) } }))[IlIIllIl11(-13210)] = Il1IllIl11
+local III1llIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13262));
+III1llIl11[IlIIllIl11(-13291)] = Enum[II1IllIl11(_KWT[401])][IlIIllIl11(-13334)]
+III1llIl11[IlIIllIl11(-13267)] = 0x14
+III1llIl11[IlIIllIl11(-13297)] = IlIIllIl11(-13247);
+III1llIl11[llIIllIl11({ 0B11, 0B1, 0B10, { II1IllIl11(_KWT[465]), II1IllIl11(_KWT[466]), II1IllIl11(_KWT[467]) } })] = 0B0
+III1llIl11[IlIIllIl11(-13214)] = UDim2[IlIIllIl11(-13211)](0B0, 0x16, 0B0, 0x16);
+III1llIl11[IlIIllIl11(-13260)] = UDim2[II1IllIl11(_KWT[376])](0B1, -30, .5, -11);
+III1llIl11[IlIIllIl11(-13313)] = Enum[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[407]), II1IllIl11(_KWT[408]) } })][IlIIllIl11(-13203)]
+III1llIl11[IlIIllIl11(-13243)] = Enum[IlIIllIl11(-13243)][IlIIllIl11(-13203)]
+III1llIl11[IlIIllIl11(-13219)] = 0B1
+III1llIl11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[468]), II1IllIl11(_KWT[469]) } })] = 0xD
+III1llIl11[IlIIllIl11(-13210)] = Il1IllIl11
+local lII1llIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13290));
+lII1llIl11[IlIIllIl11(-13218)] = UDim[II1IllIl11(_KWT[376])](0B1, 0B0);
+lII1llIl11[IlIIllIl11(-13210)] = III1llIl11
+local I1I1llIl11 = Instance[IlIIllIl11(-13211)](IlIIllIl11(-13310));
+I1I1llIl11[IlIIllIl11(-13335)] = 0B1
+I1I1llIl11[IlIIllIl11(-13210)] = III1llIl11
+if lI1IllIl11[IlIIllIl11(-13200)] == IlIIllIl11(-13308) then
+III1llIl11[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[470]), II1IllIl11(_KWT[471]) } })] = Color3[llIIllIl11({ 0B1, 0B10, { II1IllIl11(_KWT[339]), II1IllIl11(_KWT[340]) } })](0B0, 0xFF, 0B0);
+I1I1llIl11[IlIIllIl11(-13239)] = Color3[IlIIllIl11(-13283)](0B0, 0xFF, 0B0)
+			else
+III1llIl11[IlIIllIl11(-13272)] = Color3[II1IllIl11(_KWT[335])](0xFF, 0B0, 0B0);
+I1I1llIl11[IlIIllIl11(-13239)] = Color3[IlIIllIl11(-13283)](0xFF, 0B0, 0B0)
+			end
+local l111llIl11 = Instance[IlIIllIl11(-13211)](llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[421]), II1IllIl11(_KWT[472]) } }));
+l111llIl11[II1IllIl11(_KWT[445])] = l11IllIl11 and IlIIllIl11(-13304) or IlIIllIl11(-13249);
+l111llIl11[IlIIllIl11(-13291)] = Enum[IlIIllIl11(-13291)][IlIIllIl11(-13334)]
+l111llIl11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[473]), II1IllIl11(_KWT[474]) } })] = 0x10
+l111llIl11[IlIIllIl11(-13272)] = l11IllIl11 and IlIlllIl11 or II1lllIl11
+l111llIl11[llIIllIl11({ 0B10, 0x4, 0B1, 0B11, { II1IllIl11(_KWT[475]), II1IllIl11(_KWT[385]), II1IllIl11(_KWT[476]), II1IllIl11(_KWT[477]) } })] = 0B1
+l111llIl11[II1IllIl11(_KWT[391])] = UDim2[IlIIllIl11(-13211)](0B0, 0x16, 0B1, 0B0);
+l111llIl11[II1IllIl11(_KWT[377])] = UDim2[IlIIllIl11(-13211)](0B1, -60, 0B0, 0B0);
+l111llIl11[IlIIllIl11(-13313)] = Enum[IlIIllIl11(-13313)][IlIIllIl11(-13203)]
+l111llIl11[IlIIllIl11(-13243)] = Enum[llIIllIl11({ 0B1, 0B11, 0B10, { II1IllIl11(_KWT[478]), II1IllIl11(_KWT[479]), II1IllIl11(_KWT[480]) } })][IlIIllIl11(-13203)]
+l111llIl11[IlIIllIl11(-13225)] = 0xD
+l111llIl11[II1IllIl11(_KWT[368])] = Il1IllIl11
+if l11IllIl11 then
+local lIIIllIl11 = false
+Il1IllIl11[llIIllIl11({ 0B11, 0B10, 0B1, { II1IllIl11(_KWT[481]), II1IllIl11(_KWT[482]), II1IllIl11(_KWT[483]) } })]:Connect(function(...)
+if lIIIllIl11 or ll1lllIl11 then
 return
 					end
-lI11l1l1III = true;
-(IlI1l1l1III:Create(I1l1l1l1III, TweenInfo[I1I1l1l1III(0xA5AB)](.1), { [I1I1l1l1III(0xA5CD)] = l1IIl1l1III })):Play();
-(IlI1l1l1III:Create(IIl1l1l1III, TweenInfo[I1I1l1l1III(0xA5AB)](.1), { [III1l1l1III(_KVR[428])] = IlIIl1l1III })):Play()
-I1lll1l1III = lII1l1l1III[I1I1l1l1III(0xA609)]
-task[I1I1l1l1III(0xA5B4)](.12);
-(I1111Il1III + I1I1l1l1III(0xA60B))()
+lIIIllIl11 = true;
+(I11IllIl11:Create(Il1IllIl11, TweenInfo[IlIIllIl11(-13211)](.1), { [IlIIllIl11(-13280)] = llI1llIl11 })):Play();
+(I11IllIl11:Create(IIlIllIl11, TweenInfo[IlIIllIl11(-13211)](.1), { [IlIIllIl11(-13239)] = I111llIl11 })):Play()
+Il1lllIl11 = lI1IllIl11[IlIIllIl11(-13268)]
+task[IlIIllIl11(-13330)](.12);
+IlllllIl11()
 				end);
-I1l1l1l1III[l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[474]), III1l1l1III(_KVR[475]) } })]:Connect(function(...)
-(IlI1l1l1III:Create(I1l1l1l1III, TweenInfo[I1I1l1l1III(0xA5AB)](.14), { [l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[476]), III1l1l1III(_KVR[477]) } })] = I1IIl1l1III })):Play();
-(IlI1l1l1III:Create(IIl1l1l1III, TweenInfo[I1I1l1l1III(0xA5AB)](.14), { [III1l1l1III(_KVR[428])] = lIIIl1l1III })):Play();
-(IlI1l1l1III:Create(llIIl1l1III, TweenInfo[I1I1l1l1III(0xA5AB)](.14), { [l1I1l1l1III({ 0B1, 0B10, { III1l1l1III(_KVR[465]), III1l1l1III(_KVR[466]) } })] = l1Ill1l1III })):Play()
+Il1IllIl11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[438]), II1IllIl11(_KWT[484]) } })]:Connect(function(...)
+(I11IllIl11:Create(Il1IllIl11, TweenInfo[II1IllIl11(_KWT[376])](.14), { [IlIIllIl11(-13280)] = IlI1llIl11 })):Play();
+(I11IllIl11:Create(IIlIllIl11, TweenInfo[II1IllIl11(_KWT[376])](.14), { [IlIIllIl11(-13239)] = lI11llIl11 })):Play();
+(I11IllIl11:Create(l111llIl11, TweenInfo[IlIIllIl11(-13211)](.14), { [IlIIllIl11(-13272)] = llIlllIl11 })):Play()
 				end);
-I1l1l1l1III[I1I1l1l1III(0xA5BF)]:Connect(function(...)
-(IlI1l1l1III:Create(I1l1l1l1III, TweenInfo[III1l1l1III(_KVR[349])](.14), { [I1I1l1l1III(0xA5CD)] = ll1Il1l1III })):Play();
-(IlI1l1l1III:Create(IIl1l1l1III, TweenInfo[I1I1l1l1III(0xA5AB)](.14), { [I1I1l1l1III(0xA5E5)] = IIIIl1l1III ^ I1I1l1l1III(0xA5C2) })):Play();
-(IlI1l1l1III:Create(llIIl1l1III, TweenInfo[III1l1l1III(_KVR[349])](.14), { [I1I1l1l1III(0xA605)] = I1Ill1l1III * I1I1l1l1III(0xA5A9) })):Play()
+Il1IllIl11[llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[485]), II1IllIl11(_KWT[486]) } })]:Connect(function(...)
+(I11IllIl11:Create(Il1IllIl11, TweenInfo[II1IllIl11(_KWT[376])](.14), { [llIIllIl11({ 0B11, 0B10, 0B1, { II1IllIl11(_KWT[389]), II1IllIl11(_KWT[418]), II1IllIl11(_KWT[385]) } })] = l1I1llIl11 })):Play();
+(I11IllIl11:Create(IIlIllIl11, TweenInfo[IlIIllIl11(-13211)](.14), { [IlIIllIl11(-13239)] = II11llIl11 + IlIIllIl11(-13254) })):Play();
+(I11IllIl11:Create(l111llIl11, TweenInfo[II1IllIl11(_KWT[376])](.14), { [llIIllIl11({ 0B10, 0B1, { II1IllIl11(_KWT[471]), II1IllIl11(_KWT[470]) } })] = IlIlllIl11 })):Play()
 				end)
 			end
 		end
-task[I1I1l1l1III(0xA5B4)](.05);
-(IlI1l1l1III:Create(lIlll1l1III, TweenInfo[I1I1l1l1III(0xA5AB)](.42, Enum[I1I1l1l1III(0xA5DE)][III1l1l1III(_KVR[478])], Enum[l1I1l1l1III({ 0B10, 0B1, { III1l1l1III(_KVR[479]), III1l1l1III(_KVR[480]) } })][I1I1l1l1III(0xA604)]), { [I1I1l1l1III(0xA613)] = UDim2[I1I1l1l1III(0xA5AB)](.5, -IIl1l1l1III / 0B10, .5, -lIl1l1l1III / 0B10) })):Play()
+task[IlIIllIl11(-13330)](.05);
+(I11IllIl11:Create(lIllllIl11 + IlIIllIl11(-13315), TweenInfo[IlIIllIl11(-13211)](.42, Enum[IlIIllIl11(-13240)][IlIIllIl11(-13227)], Enum[IlIIllIl11(-13295)][IlIIllIl11(-13241)]), { [IlIIllIl11(-13260)] = UDim2[II1IllIl11(_KWT[376])](.5, -IIlIllIl11 / 0B10, .5, -(lIlIllIl11 / IlIIllIl11(-13320)) / 0B10) })):Play()
 	end)(...) end)(...))}

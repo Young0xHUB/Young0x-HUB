@@ -1,0 +1,401 @@
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local Lighting = game:GetService("Lighting")
+
+local LP = Players.LocalPlayer
+local PlayerGui = LP:WaitForChild("PlayerGui")
+local Env = getgenv and getgenv() or _G
+
+local previous = Env.Young0xAntiLagStandalone
+if previous and type(previous.Destroy) == "function" then
+    pcall(previous.Destroy, true)
+end
+
+local Controller = {}
+Env.Young0xAntiLagStandalone = Controller
+
+local State = {
+    running = true,
+    antiLag = false,
+    generation = 0,
+}
+
+local antiLagOriginal = {}
+local antiLagAddedConnection = nil
+local scanThread = nil
+local restoreThread = nil
+local originalLighting = nil
+local originalQuality = nil
+
+local function stopThread(thread)
+    if thread then
+        pcall(task.cancel, thread)
+    end
+end
+
+local function rememberProperty(object, property)
+    antiLagOriginal[object] = antiLagOriginal[object] or {}
+    if antiLagOriginal[object][property] == nil then
+        local ok, value = pcall(function()
+            return object[property]
+        end)
+        if ok then
+            antiLagOriginal[object][property] = value
+        end
+    end
+end
+
+local function setOptimizedProperty(object, property, value)
+    rememberProperty(object, property)
+    pcall(function()
+        object[property] = value
+    end)
+end
+
+local function optimizeObject(object)
+    if object:IsA("BasePart") then
+        setOptimizedProperty(object, "Material", Enum.Material.SmoothPlastic)
+        setOptimizedProperty(object, "Reflectance", 0)
+        setOptimizedProperty(object, "CastShadow", false)
+        if object:IsA("MeshPart") then
+            setOptimizedProperty(object, "TextureID", "")
+        end
+    elseif object:IsA("Decal") or object:IsA("Texture") then
+        setOptimizedProperty(object, "Transparency", 1)
+    elseif object:IsA("ParticleEmitter") or object:IsA("Trail") or object:IsA("Beam")
+        or object:IsA("Smoke") or object:IsA("Fire") or object:IsA("Sparkles") then
+        setOptimizedProperty(object, "Enabled", false)
+    elseif object:IsA("PointLight") or object:IsA("SpotLight") or object:IsA("SurfaceLight") then
+        setOptimizedProperty(object, "Enabled", false)
+    elseif object:IsA("BloomEffect") or object:IsA("BlurEffect") or object:IsA("ColorCorrectionEffect")
+        or object:IsA("DepthOfFieldEffect") or object:IsA("SunRaysEffect") then
+        setOptimizedProperty(object, "Enabled", false)
+    elseif object:IsA("Explosion") then
+        setOptimizedProperty(object, "BlastPressure", 0)
+        setOptimizedProperty(object, "BlastRadius", 0)
+    end
+end
+
+local function restoreAntiLag(generation)
+    local restored = 0
+
+    for object, properties in pairs(antiLagOriginal) do
+        if State.generation ~= generation or State.antiLag then
+            return false
+        end
+
+        if object and object.Parent then
+            for property, value in pairs(properties) do
+                pcall(function()
+                    object[property] = value
+                end)
+            end
+        end
+
+        restored += 1
+        if restored % 260 == 0 then
+            RunService.Heartbeat:Wait()
+        end
+    end
+
+    if State.generation ~= generation or State.antiLag then
+        return false
+    end
+
+    antiLagOriginal = {}
+
+    if originalLighting then
+        pcall(function()
+            Lighting.GlobalShadows = originalLighting.GlobalShadows
+            Lighting.FogEnd = originalLighting.FogEnd
+            Lighting.Brightness = originalLighting.Brightness
+        end)
+    end
+
+    pcall(function()
+        if originalQuality then
+            settings().Rendering.QualityLevel = originalQuality
+        end
+    end)
+
+    originalLighting = nil
+    originalQuality = nil
+    return true
+end
+
+local function setAntiLag(enabled)
+    enabled = enabled == true
+
+    if State.antiLag == enabled then
+        return
+    end
+
+    State.antiLag = enabled
+    State.generation += 1
+    local generation = State.generation
+
+    stopThread(scanThread)
+    scanThread = nil
+    stopThread(restoreThread)
+    restoreThread = nil
+
+    if antiLagAddedConnection then
+        antiLagAddedConnection:Disconnect()
+        antiLagAddedConnection = nil
+    end
+
+    if enabled then
+        originalLighting = originalLighting or {
+            GlobalShadows = Lighting.GlobalShadows,
+            FogEnd = Lighting.FogEnd,
+            Brightness = Lighting.Brightness,
+        }
+
+        Lighting.GlobalShadows = false
+        Lighting.FogEnd = 1000000000
+        Lighting.Brightness = 0
+
+        pcall(function()
+            originalQuality = originalQuality or settings().Rendering.QualityLevel
+            settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+        end)
+
+        local terrain = workspace:FindFirstChildOfClass("Terrain")
+        if terrain then
+            setOptimizedProperty(terrain, "WaterWaveSize", 0)
+            setOptimizedProperty(terrain, "WaterWaveSpeed", 0)
+            setOptimizedProperty(terrain, "WaterReflectance", 0)
+            setOptimizedProperty(terrain, "WaterTransparency", 1)
+        end
+
+        antiLagAddedConnection = workspace.DescendantAdded:Connect(function(object)
+            if State.running and State.antiLag then
+                task.defer(function()
+                    if State.running and State.antiLag then
+                        pcall(optimizeObject, object)
+                    end
+                end)
+            end
+        end)
+
+        scanThread = task.spawn(function()
+            local queue = { workspace, Lighting }
+            local head = 1
+            local processed = 0
+
+            while head <= #queue
+                and State.running
+                and State.antiLag
+                and State.generation == generation do
+
+                local parent = queue[head]
+                head += 1
+
+                local ok, children = pcall(function()
+                    return parent:GetChildren()
+                end)
+
+                if ok then
+                    for _, child in ipairs(children) do
+                        if not State.running or not State.antiLag or State.generation ~= generation then
+                            return
+                        end
+
+                        queue[#queue + 1] = child
+                        pcall(optimizeObject, child)
+                        processed += 1
+
+                        if processed % 260 == 0 then
+                            RunService.Heartbeat:Wait()
+                        end
+                    end
+                end
+            end
+        end)
+    else
+        restoreThread = task.spawn(function()
+            restoreAntiLag(generation)
+        end)
+    end
+end
+
+local oldGui = PlayerGui:FindFirstChild("Young0xAntiLagUI")
+if oldGui then
+    oldGui:Destroy()
+end
+
+local Gui = Instance.new("ScreenGui")
+Gui.Name = "Young0xAntiLagUI"
+Gui.ResetOnSpawn = false
+Gui.IgnoreGuiInset = false
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Gui.Parent = PlayerGui
+
+local Main = Instance.new("Frame")
+Main.Name = "Main"
+Main.Size = UDim2.fromOffset(220, 62)
+Main.Position = UDim2.new(0.5, -110, 0.18, 0)
+Main.BackgroundColor3 = Color3.fromRGB(12, 16, 24)
+Main.BorderSizePixel = 0
+Main.Active = true
+Main.Parent = Gui
+
+local MainCorner = Instance.new("UICorner")
+MainCorner.CornerRadius = UDim.new(0, 12)
+MainCorner.Parent = Main
+
+local Stroke = Instance.new("UIStroke")
+Stroke.Thickness = 1
+Stroke.Transparency = 0.35
+Stroke.Color = Color3.fromRGB(90, 110, 145)
+Stroke.Parent = Main
+
+local Label = Instance.new("TextLabel")
+Label.Name = "Label"
+Label.BackgroundTransparency = 1
+Label.Position = UDim2.fromOffset(16, 0)
+Label.Size = UDim2.new(1, -82, 1, 0)
+Label.Font = Enum.Font.GothamSemibold
+Label.Text = "Anti LAG"
+Label.TextColor3 = Color3.fromRGB(240, 244, 255)
+Label.TextSize = 16
+Label.TextXAlignment = Enum.TextXAlignment.Left
+Label.Parent = Main
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.AutoButtonColor = false
+Toggle.Text = ""
+Toggle.Size = UDim2.fromOffset(48, 26)
+Toggle.Position = UDim2.new(1, -62, 0.5, -13)
+Toggle.BackgroundColor3 = Color3.fromRGB(55, 62, 76)
+Toggle.BorderSizePixel = 0
+Toggle.Parent = Main
+
+local ToggleCorner = Instance.new("UICorner")
+ToggleCorner.CornerRadius = UDim.new(1, 0)
+ToggleCorner.Parent = Toggle
+
+local Knob = Instance.new("Frame")
+Knob.Name = "Knob"
+Knob.Size = UDim2.fromOffset(20, 20)
+Knob.Position = UDim2.fromOffset(3, 3)
+Knob.BackgroundColor3 = Color3.fromRGB(235, 239, 247)
+Knob.BorderSizePixel = 0
+Knob.Parent = Toggle
+
+local KnobCorner = Instance.new("UICorner")
+KnobCorner.CornerRadius = UDim.new(1, 0)
+KnobCorner.Parent = Knob
+
+local function updateToggle()
+    if State.antiLag then
+        Toggle.BackgroundColor3 = Color3.fromRGB(46, 190, 120)
+        Knob.Position = UDim2.fromOffset(25, 3)
+    else
+        Toggle.BackgroundColor3 = Color3.fromRGB(55, 62, 76)
+        Knob.Position = UDim2.fromOffset(3, 3)
+    end
+end
+
+Toggle.MouseButton1Click:Connect(function()
+    setAntiLag(not State.antiLag)
+    updateToggle()
+end)
+
+local dragging = false
+local dragInput = nil
+local dragStart = nil
+local startPosition = nil
+local moved = false
+
+Main.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1
+        or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        moved = false
+        dragStart = input.Position
+        startPosition = Main.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+Main.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement
+        or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and input == dragInput and dragStart and startPosition then
+        local delta = input.Position - dragStart
+        if delta.Magnitude > 3 then
+            moved = true
+        end
+
+        Main.Position = UDim2.new(
+            startPosition.X.Scale,
+            startPosition.X.Offset + delta.X,
+            startPosition.Y.Scale,
+            startPosition.Y.Offset + delta.Y
+        )
+    end
+end)
+
+function Controller.Set(enabled)
+    setAntiLag(enabled)
+    updateToggle()
+end
+
+function Controller.Destroy(restore)
+    if not State.running then
+        return
+    end
+
+    if restore ~= false and State.antiLag then
+        State.antiLag = false
+        State.generation += 1
+        local generation = State.generation
+
+        stopThread(scanThread)
+        stopThread(restoreThread)
+        scanThread = nil
+        restoreThread = nil
+
+        if antiLagAddedConnection then
+            antiLagAddedConnection:Disconnect()
+            antiLagAddedConnection = nil
+        end
+
+        pcall(function()
+            restoreAntiLag(generation)
+        end)
+    end
+
+    State.running = false
+
+    if antiLagAddedConnection then
+        antiLagAddedConnection:Disconnect()
+        antiLagAddedConnection = nil
+    end
+
+    stopThread(scanThread)
+    stopThread(restoreThread)
+
+    if Gui then
+        Gui:Destroy()
+    end
+
+    if Env.Young0xAntiLagStandalone == Controller then
+        Env.Young0xAntiLagStandalone = nil
+    end
+end
+
+updateToggle()

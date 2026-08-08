@@ -1,5 +1,5 @@
-return{[(function(...)return ...end)(0xABE)]=((function(...)
-local _aME=function(s)
+return{[(function(...)return ...end)(0xAF5)]=((function(...)
+local _aIK=function(s)
 local o={};
 local i=1;
 local n=#s;while i<=n do
@@ -8,7 +8,7 @@ local v=0;for j=0,r-1 do v=v*85+(s:byte(i+j)-33)end;for j=1,5-r do v=v*85+84 end
 local nb=r-1;
 local b4={};
 local vv=v;for j=4,1,-1 do b4[j]=vv%256;vv=math.floor(vv/256)end;for j=1,nb do o[#o+1]=string.char(b4[j])end;i=i+r end;return table.concat(o)end
-local _cYT=_aME("De=<0FA,Y\034?[[Ae@UheU;d1Y$Hsp,LEE-=6<`*`m2`a8M:aTI\0347ls($/nK5M8L.)HCi_:T1fmRED)#[:3@-n42/l*0?oTo,:+oa#9j128A:$*]4DSs"); local _bBO=function(d,c)
+local _cHF=_aIK(",VXXgE&\039pW6[O&/BLk*U9eA)%=a#(/5;koYF&l%N?rMA^-oiV[8T$@<?9q1Q;(6lMF]<BX5#Q2`<ED:A>!$M,5\0923`(3c-Jq>;Kt<EFWTi.k2]2G@<W"); local _bVR=function(d,c)
 local t={}for i=1,#c do t[c:sub(i,i)]=i-1 end;
 local o={};
 local b=0;
@@ -19,281 +19,284 @@ local lsh=bit32.lshift;
 local rsh=bit32.rshift;
 local band=bit32.band;for i=1,#d do
 local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=band(bor(b,lsh(v,n)),0xFFFFFFFF);if band(v,8191)>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do o[#o+1]=string.char(band(b,255));b=rsh(b,8);n=n-8 end end end end;if v>-1 then o[#o+1]=string.char(band(bor(b,lsh(v%91,n)),255))end;return table.concat(o)end
-local _KAT={};do
-local _d=_bBO("MS*}KZ6,^x:?qSk;(|q}C8@cF%1lv]*-=WdsMZZ[099?gK^;K|Jt<O>cQs0?1`:Pt5rikF/{(9(R4y#]=bQ~nvd3iees`*3Sy-f7$5p:Q(v8h]O|%C$_D2Fjx96%$tqC3_E77:W;g_vui!^;U<b6*2Mq`~]x*z3S3s-NOKRnrl^oYYbgRlfonWq`~LfUw^5/&8nT=_Vlfe+#yBy_2znnE%$of[.%18y]Sr7H9*E#nfnw&5iU%OUgR$<BcfzLD^fe3guMWpi]}tLr}E$Gq}Q$f,=|z~fS{G0J7Uy:2ojJL2Ls#WjMWpi]}tOuU$f,=|z~fS{G0J/zI5b_hLmtIu+XOW`}pW=cI(H86]&>(Ci6KZhcN[,RiO?PqB@7qoYOys~2fUBhRe>F3G`&j_*2l3^|/}OD>]w^|/Uot6q}JNEZz9L!H:+XOW`}Nl@pT9ReJ>cVBW:H:8Gz9LJ>[1dGFGf7$5J>`F4lY$XBx>y_5Nf,eg58i]Doe_i]3Ga[js<N9oTwe5iUzhYHQ`i]}tOu)0},NgER:SlGL%@zI5T9^|huv^qB-FF7GMNV^|glS#<Bl^M}Qo_ez7:{=cE|MSCK1#eGNQ;Mas.gOo.V^%MHuHI-OWNQ;Mas.gOopul9)wpt_]PvdsVo~ez7:{=clWVRU4lJdjj7R/-,~gRlUSDra#D1N]cwj~UYRq@[Wo#>j,qj)^Sr.s`y=]0|@LuA/{~|0lzLb-:*L~!i#A]9GgIuQUdin6;MMS-F</ir-F</3ZR;5jio/Vd%Al6v&,Aob!^_&,WLy!^;~f)uB82qN[WL)FnCUfb5wKmqN[88ir<4YH?$W#sWOu1W?qTo8F.(j,n%)^Do^tPEN]5j5Q0HGnE|J>rD^QyjV/QvbV`4egPESrSVN*)BjG-N[Z!uHDt!x]$-9jdsdpmzF!+u3$hCSWl/O@:@j,0lH:Uq!0U0u`nq7aRlvYUq!0U0u`bl>%v$:SS-,f55Ngln-9A5UL:UyT,__o*8@z|t%QQg{2Wt*i7}j7Vv8;W%loYY~gRlze/Vj0y_MxE,p9Z//tdte||/=Mx;W%acx]1#UfjJCK33GRN$^$T&&*tenhBMmgQ+SF9P)gvN=M#-xFPIfS@]bfLfi2IzA99MrUQ#5j$XX$b_X9OoFul9*j)^SrCfx]9PYjs2c2dqAo#RlRN[TDr^[-P=o0DZ?qAo^4Q,$(VR&`co{zi]p&HjE7g/9q~%a%TLqBQ*|/:{Pd44{H1m|Ga^q:$4Q!N[0oP4ZbXj;t[rlQkPdB@By_!i9(>[RlIu[Q)i6NryzrVVZpu;>%D@Y$hJkB80SPzrZLc26,tW^`Wm2]yi9}(ZRO{[u?j]dB@By_|tV(=%IN;t|tYDj_Vvpcj,v8D1*rSV;t)GFiD6aNfe5-q!-fq5}`^7g/qzba->mEu>BrG7@4J>18m/OzHwe?~LJB@Tv}WHfevFQ++]i&&*te}Fa!.%=?IyaGjoWeW#sWUnbNh;]9RlY$Do(V;t)GjjnxdpRqN[h,FF0G/By_$sx;@[XjTL!irDs~uwAU.%V%U4jJ#=F7UokzV~#YsQ=|5?x]>-#=L~&f1=>r&R-c0,.gc`:P&jT6nv#-xF+HWt3GqfSqCK33X918#]hJ;Gy7cZClI?OoyL4|5?LSdG0}NQ_3|z[e.o}[}[jNi]6QE2y_mb9(>%egqE(B!W16yp>ZNg:`ze,Q?j`}JNAA>%hhtyF#{Ct/=M>fs$g$`y>]2TjsFjz_[hgVUS2]Uwls6vE,6a}atIJBIWvNgwa!>[QRPEDo-7/m2]7}l/JNo_E[Rl!X,Q?j`}JNAZS(tR^13B0^80EoSFGTG59qI(Cx!XcVQbn6F/Hql,4oVrO_xHAZS(=?>O[-(f<o|B7bU0u`8Qo(Ro^rO_xHAZS(>R$t{Gp:kQFs[,=|Nw}d^;Uf4o|B7bU0u`ROxF{HMy[G**L~uAEA7?D@My[G**L~:ck{>%DK&`{G@B5Lc2iZX9J%~L7o.oA[l9~5z1dG:bOuem[,$(-g;tULS=nxu`TwPWVp~z#UyTteRgln-9A5``LUOeX$JvmnJ9Oo:8l9B`%mH]6*L~iA_3F%1l4FXB:*$Xuegq$(T!B1E#TDmN^y=c_e$u^1lGqf>JUYnnA9D.fooo<$3qBh@hmFE#am4}iAgb=F%U]f!+O2TeU4(3pcjaIug]Yj>7|Nq4Nb>5*O:J8|lsEo|FR7;MBMH9v8)DO-~fjJUY;,N[y2>O[-i$ze:j]zF|1AY$F#}f#Jj/[,$ha%SyP>wXPV/W[Apc=aq>SSh,ZLw58;@[OoGV^%MHuHI-OWnA$5gnToBj]zF|YtN*2](*@_c}_3F%1l*KR;g&dsMZ!ubm4lXL[-!WNQ_3|zMo$51p@[",_cYT);
+local _KVM={};do
+local _d=_bVR("qMK{fcjXDPSk?Man1Y?{4m%HB;Wug&K]/R+Tqcc-rZZk<fDnfYopw|,HVTrkW:S(p@=taB3*1Z1l>bd&/hVxNg+!tAAT:K!Mb]0`)@hsV1gm7&|Y;4)C8.B5PZj;)p?4!C~``SRn<Cg_tFDn6whjK.q?:x&PK}!M74JPNgB%j{R2CM4&x0&J9@t6;|6<l)wzH0VpcS.$SA,.JNG$jO{X^-ICG|?z`UHxFtlN,-kqgiR?Frvx}|0T/;m>WhEM9$#_`(lA2pTfh}QQCl{M(,TtHx%yLeQ1#)TpCYr8t=C~)I6r,|o0,CH%6p<GTtHx%yLeQ1#)Tp]]Z55C`>/0/Ff.qb(,w88j4q5FDYM$E2lY@kDWrz:5vxl`JNh-hs#Brz:5vxKcNG>Y@k2M+Ir{s3s$}jo{o[LcM1UhEK,&lrLpTfh}!Jf.qb(,HDQ{McZ$:$Rd60sL`i4}}$:ik?~YH<9Mh$vscU.&bt3}sg3mh<i)f)?z?0cA9@t6Z2mJDW(,eS/jHcs(,-+7pFDnG0IQygsN~;;mt&9,R=MM!zRr3}Q@hCZ|z:gD9,5r_`gy9X,;C@x24}lzGjSgdXL$xB@N%-N~EDBnr{bCo,@1[-DH3p~nkrbT~b-X%-/KxfEz%zGLF@:NxYUhQQoz(Ku3/fs}~Fb.Q~Wd/R]s+[/Hh-D1<fDnfYopgTGCU<qOQ_Xoi5Njnqd]*-_ks~L6k$=y,]Jh+T!|1([-R$h=5TNgz}20IuD)Bdo06ADi>}905ky2h]SK2xR21!=YOOX&rIo,(s|@&}k=h[ZNLAz`[K*Ix0z=RdTR|_dl%H/;V#x2.}5tu3SBvF/YYp#B~dJyaVVF7H]ZqO}Auoi5X`nq]LU<,%G2.}oDVLAqNZ%-tL;c,&i5)y{B+u^<D;X&rIeS(uQ@~XgZiOwgEzN0%o!iae`krm:bO9<9g{sgcWHR?:H:S(MRWxNg(+HR?:H:S(GD5`fe-TTXP$1<;U8%>b0-V03syep}p=:IZ$Q$ynOY.`D$|T_Tjg=q5Rsl}A]~l9bCIC*V~;7m$gNVppJP~$/6CrSilN5Rsl_OTIzR2=#y|R:{6imLGZ8fnp+psD7{sgcHm-=JnMM]o0h@G.WeQ14P}A+oPrq{F@2ECYru}2e095GjNgeSzl}FWUYI!Nk|+e<!xY|kH:*Io,mVC!Y}e0cO8W+~$1B`ic0ALBj:l)L9PIpA/J0Xc7cO8W[&SR|`R3Q}h-WuP&<414Vm/qNN,;,llW?sW@bC~$Xmn5ROvFCAuVa(+z%zbCFtZ1,-luQ_-VEtj[=b}=ssce_n,;8%i)7oazmrM(}=c2H.jXpRD:RU.&btZ{1cl|*-_k5&+z%zbCYps1/;Q[npYpi85CsgeH5Xgm8WK=MsnpEIBt8jv[0A@]?F]0?@{:D`<3?}hv],U~_,z=I`%>o,WmU3|}OJAkx2oz%Gg{RO0AgBV##&t99KpA{BvF^;/kQbvI5$RARdTR6Nh[7n&Zlui)8$1snpEI55NP+el?[-7XBBrI3zbC)TPn%-y5G2Ft=8Tx_JL6^;s;6>5od/B`6$a}sxdiTV/Y@kP&,]d/2x90W/,=9l]HrX^<H:S(95GjNgd]PB#ORp!I?0M?4f!!yZWmd&7onIb`Hc4uQk|$b2>Y@k2M+Ir{[VC!Y}-A^${-{-5[t&jV~.bCUhZ1,;A<?~1zFRWjbe,c[<S:}AXVk5:{o[LL,;77pbBd*4p3/q,0T)<):b,&.G5TB5}C-7<s6M.&6JuTjg~Xjv{vpQozQRg[<JvF,-Vl(~8$]`3U.&`{u3o[$C~-luFyXVk5:{o[LcM1plDW!zrDmr~$MBIGI@Z?Q14PFyHsVhNjB3O?uX>$s=|CPOLcM1/k,|-]10w$Yz`h6r_:mV$1l$D=|CPOLcM1,l)p*IeSaVBT-X/Y[J{+Dn60>$Yz`h6r_:l|PB*Oqb-IKK2x_L~L`k8%qb-IKK2xSHa*,;8f9:*I%z@2H.tcyZo;x2`$^$L-uZx@}W+ISh|_AU-X)1]<np62M/NP_:GJ(Rsex}d6bGpAl<uN]ZL@::26|Ay)ogUNoZ|$SmuZz:;UO&jK2xtLC!B;Wu>ByzSK)y_A<?)1GFzW~dG8U[Db/HCA)_DWuI?0,o6iNNLZ8^0$$$w)!?z7%7UB~dvU>{tL<h/B;6&0F#|.GA6>1!eH5vQ_<&i5,`Y[?>[h,@K|SomYuT~$YBl`nqzqOZgmE8|]x05o6inX[-b.,|-]t)}AS5&}BYWLi)Bd{0do53-X)7v;Mb(,Jy(s3R-LeH/v?,MM7Xc2J@mn%-|$IsD;qO_OQ]|RNL)@<NG$z5&}BYip[K.&1K%CH{C!B;WuKfln<9+TqcF_hU>uy2-]FR[VC!Y}q$)@We%-",_cHF);
 local _i=1;while _i<#_d do
 local _h=_d:byte(_i);
 local _l=_d:byte(_i+1);
-local _n=_h*256+_l;_KAT[#_KAT+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
-local SUHK=table.concat
-local LDQ=math.max
-local EIH=bit32.bor
-local UJO=bit32.bxor
-local OX=string.char
-local GXZ=ipairs
-local MNIB=select
-local _=(MNIB('#')); 
-local l1lllllll = _KAT[1]
-local I1lllllll = getgenv and getgenv() or _G
-local lI1llllll = { [_KAT[2]] = _KAT[3] };
-local II1llllll = { { [_KAT[4]] = _KAT[5], [_KAT[6]] = _KAT[2], [_KAT[7]] = _KAT[5], [_KAT[8]] = _KAT[9] }, { [_KAT[4]] = _KAT[10], [_KAT[6]] = _KAT[11], [_KAT[7]] = _KAT[10], [_KAT[8]] = _KAT[9] }, { [_KAT[4]] = _KAT[12], [_KAT[6]] = _KAT[13], [_KAT[7]] = _KAT[14], [_KAT[8]] = _KAT[9] }, { [_KAT[4]] = _KAT[15], [_KAT[6]] = _KAT[16], [_KAT[7]] = _KAT[17], [_KAT[8]] = _KAT[9] }, { [_KAT[4]] = _KAT[18], [_KAT[6]] = _KAT[19], [_KAT[7]] = _KAT[20], [_KAT[8]] = _KAT[9] }, { [_KAT[4]] = _KAT[21], [_KAT[6]] = _KAT[22], [_KAT[7]] = _KAT[23], [_KAT[8]] = _KAT[9] }, { [_KAT[4]] = _KAT[24], [_KAT[6]] = _KAT[25], [_KAT[7]] = _KAT[26], [_KAT[8]] = _KAT[9] } };
-local ll1llllll = game:GetService(_KAT[27]);
-local Il1llllll = game:GetService(_KAT[28]);
-local l11llllll = game:GetService(_KAT[29]);
-local I11llllll = ll1llllll[_KAT[30]]
-local lII1lllll = I11llllll:WaitForChild(_KAT[31]);
-local III1lllll = workspace[_KAT[32]]
-local llI1lllll = _KAT[33]
-local IlI1lllll = 0x1B0
-local l1I1lllll = 0x134
-local I1I1lllll = 0x3E
-local lIl1lllll = 0x34
-local IIl1lllll = 0x7
-local lll1lllll = { [_KAT[34]] = Color3[_KAT[35]](0x27, 0xCA, 0xFF), [_KAT[36]] = Color3[_KAT[35]](0x69, 0xE1, 0xFF), [_KAT[37]] = Color3[_KAT[35]](0x5, 0x14, 0x2B), [_KAT[38]] = Color3[_KAT[35]](0x6, 0x1B, 0x37), [_KAT[39]] = Color3[_KAT[35]](0x8, 0x23, 0x43), [_KAT[40]] = Color3[_KAT[35]](0B1010, 0x37, 0x5E), [_KAT[41]] = Color3[_KAT[35]](0xD, 0x44, 0x70), [_KAT[42]] = Color3[_KAT[35]](0x30, 0xD3, 0xFF), [_KAT[43]] = Color3[_KAT[35]](0x23, 0x7E, 0xFF), [_KAT[44]] = Color3[_KAT[35]](0xF8, 0xFD, 0xFF), [_KAT[45]] = Color3[_KAT[35]](0xE0, 0xF4, 0xFF), [_KAT[46]] = Color3[_KAT[35]](0x89, 0xB4, 0xCF), [_KAT[47]] = Color3[_KAT[35]](0B11, 0x19, 0x2C), [_KAT[48]] = Color3[_KAT[35]](0xFF, 0x3F, 0x5B) };
-local function Ill1lllll(l1lllllll, I1lllllll, lI1llllll, ...)
-local II1llllll = Instance.new(l1lllllll)
-for l1lllllll, I1lllllll in pairs(I1lllllll) do
-II1llllll[l1lllllll] = I1lllllll
+local _n=_h*256+_l;_KVM[#_KVM+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
+local TNM=table.sort
+local GT=math.abs
+local LU=math.min
+local EQKW=bit32.bnot
+local YWK=ipairs
+local NYRC=getmetatable
+local KT=math.floor
+local QY=string.char
+local EJS=select
+local _=((EJS('#')));
+local _=((EJS('#'))); 
+local ll1l1II1I1 = _KVM[1]
+local Il1l1II1I1 = getgenv and getgenv() or _G
+local lI1l1II1I1 = { [_KVM[2]] = _KVM[3] };
+local II1l1II1I1 = { { [_KVM[4]] = _KVM[5], [_KVM[6]] = _KVM[2], [_KVM[7]] = _KVM[5], [_KVM[8]] = _KVM[9] }, { [_KVM[4]] = _KVM[10], [_KVM[6]] = _KVM[11], [_KVM[7]] = _KVM[10], [_KVM[8]] = _KVM[9] }, { [_KVM[4]] = _KVM[12], [_KVM[6]] = _KVM[13], [_KVM[7]] = _KVM[14], [_KVM[8]] = _KVM[9] }, { [_KVM[4]] = _KVM[15], [_KVM[6]] = _KVM[16], [_KVM[7]] = _KVM[17], [_KVM[8]] = _KVM[9] }, { [_KVM[4]] = _KVM[18], [_KVM[6]] = _KVM[19], [_KVM[7]] = _KVM[20], [_KVM[8]] = _KVM[9] }, { [_KVM[4]] = _KVM[21], [_KVM[6]] = _KVM[22], [_KVM[7]] = _KVM[23], [_KVM[8]] = _KVM[9] }, { [_KVM[4]] = _KVM[24], [_KVM[6]] = _KVM[25], [_KVM[7]] = _KVM[26], [_KVM[8]] = _KVM[9] } };
+local l11l1II1I1 = game:GetService(_KVM[27]);
+local I11l1II1I1 = game:GetService(_KVM[28]);
+local lllI1II1I1 = game:GetService(_KVM[29]);
+local IllI1II1I1 = l11l1II1I1[_KVM[30]]
+local lIlI1II1I1 = IllI1II1I1:WaitForChild(_KVM[31]);
+local IIlI1II1I1 = workspace[_KVM[32]]
+local l1lI1II1I1 = _KVM[33]
+local I1lI1II1I1 = 0x1B0
+local llII1II1I1 = 0x134
+local IlII1II1I1 = 0x3E
+local lIII1II1I1 = 0x34
+local IIII1II1I1 = 0x7
+local l1II1II1I1 = { [_KVM[34]] = Color3[_KVM[35]](0x27, 0xCA, 0xFF), [_KVM[36]] = Color3[_KVM[35]](0x69, 0xE1, 0xFF), [_KVM[37]] = Color3[_KVM[35]](0B101, 0x14, 0x2B), [_KVM[38]] = Color3[_KVM[35]](0x6, 0x1B, 0x37), [_KVM[39]] = Color3[_KVM[35]](0x8, 0x23, 0x43), [_KVM[40]] = Color3[_KVM[35]](0xA, 0x37, 0x5E), [_KVM[41]] = Color3[_KVM[35]](0xD, 0x44, 0x70), [_KVM[42]] = Color3[_KVM[35]](0x30, 0xD3, 0xFF), [_KVM[43]] = Color3[_KVM[35]](0x23, 0x7E, 0xFF), [_KVM[44]] = Color3[_KVM[35]](0xF8, 0xFD, 0xFF), [_KVM[45]] = Color3[_KVM[35]](0xE0, 0xF4, 0xFF), [_KVM[46]] = Color3[_KVM[35]](0x89, 0xB4, 0xCF), [_KVM[47]] = Color3[_KVM[35]](0B11, 0x19, 0x2C), [_KVM[48]] = Color3[_KVM[35]](0xFF, 0x3F, 0x5B) };
+local function I1II1II1I1(ll1l1II1I1, Il1l1II1I1, lI1l1II1I1, ...)
+local II1l1II1I1 = Instance.new(ll1l1II1I1)
+for ll1l1II1I1, Il1l1II1I1 in pairs(Il1l1II1I1) do
+II1l1II1I1[ll1l1II1I1] = Il1l1II1I1
 			end
-II1llllll.Parent = lI1llllll
-return II1llllll
+II1l1II1I1.Parent = lI1l1II1I1
+return II1l1II1I1
 		end
-local function l1l1lllll(l1lllllll, I1lllllll, ...)
-return Ill1lllll(_KAT[49], { [_KAT[50]] = UDim.new(0B0, I1lllllll) }, l1lllllll)
+local function ll1I1II1I1(ll1l1II1I1, Il1l1II1I1, ...)
+return I1II1II1I1(_KVM[49], { [_KVM[50]] = UDim.new(0B0, Il1l1II1I1) }, ll1l1II1I1)
 		end
-local function I1l1lllll(l1lllllll, I1lllllll, lI1llllll, II1llllll, ...)
-return Ill1lllll(_KAT[51], { [_KAT[52]] = I1lllllll, [_KAT[53]] = lI1llllll or 0B1, [_KAT[54]] = II1llllll or 0B0, [_KAT[55]] = Enum[_KAT[55]].Border }, l1lllllll)
+local function Il1I1II1I1(ll1l1II1I1, Il1l1II1I1, lI1l1II1I1, II1l1II1I1, ...)
+return I1II1II1I1(_KVM[51], { [_KVM[52]] = Il1l1II1I1, [_KVM[53]] = lI1l1II1I1 or 0B1, [_KVM[54]] = II1l1II1I1 or 0B0, [_KVM[55]] = Enum[_KVM[55]].Border }, ll1l1II1I1)
 		end
-local function lI11lllll(l1lllllll, I1lllllll, lI1llllll, II1llllll, ll1llllll, ...)
-local l11llllll = Il1llllll:Create(l1lllllll, TweenInfo.new(I1lllllll, II1llllll or Enum[_KAT[56]].Quart, ll1llllll or Enum[_KAT[57]].Out), lI1llllll);
-l11llllll:Play()
-return l11llllll
+local function lI1I1II1I1(ll1l1II1I1, Il1l1II1I1, lI1l1II1I1, II1l1II1I1, l11l1II1I1, ...)
+local lllI1II1I1 = I11l1II1I1:Create(ll1l1II1I1, TweenInfo.new(Il1l1II1I1, II1l1II1I1 or Enum[_KVM[56]].Quart, l11l1II1I1 or Enum[_KVM[57]].Out), lI1l1II1I1);
+lllI1II1I1:Play()
+return lllI1II1I1
 		end
-local function II11lllll(I1lllllll, ...)
-local II1llllll, ll1llllll = pcall(function(...)
-local II1llllll = lI1llllll[I1lllllll] or l1lllllll .. I1lllllll;
-(loadstring(game:HttpGet(II1llllll, true)))()
+local function II1I1II1I1(Il1l1II1I1, ...)
+local II1l1II1I1, l11l1II1I1 = pcall(function(...)
+local II1l1II1I1 = lI1l1II1I1[Il1l1II1I1] or ll1l1II1I1  .. Il1l1II1I1;
+(loadstring(game:HttpGet(II1l1II1I1, true)))()
 				end)
-if not II1llllll then
-warn(_KAT[58] .. (I1lllllll .. (_KAT[59] .. tostring(ll1llllll))))
+if not II1l1II1I1 then
+warn(_KVM[58] .. (Il1l1II1I1  .. (_KVM[59] .. tostring(l11l1II1I1))))
 			end
-return II1llllll
+return II1l1II1I1
 		end
-for l1lllllll, I1lllllll in ipairs({ llI1lllll, _KAT[60] }) do
-local lI1llllll = lII1lllll:FindFirstChild(I1lllllll)
-if lI1llllll then
-lI1llllll:Destroy()
+for ll1l1II1I1, Il1l1II1I1 in ipairs({ l1lI1II1I1, _KVM[60] }) do
+local lI1l1II1I1 = lIlI1II1I1:FindFirstChild(Il1l1II1I1)
+if lI1l1II1I1 then
+lI1l1II1I1:Destroy()
 			end
 		end
-local ll11lllll = false
-local Il11lllll = false
-local l111lllll
-local I111lllll
-local lIII1llll = false
-local IIII1llll
-local llII1llll
-local IlII1llll
-local l1II1llll = Ill1lllll(_KAT[61], { [_KAT[62]] = llI1lllll, [_KAT[63]] = false, [_KAT[64]] = true, [_KAT[65]] = false, [_KAT[66]] = Enum[_KAT[66]][_KAT[67]], [_KAT[68]] = 999999 }, lII1lllll);
-local I1II1llll = Ill1lllll(_KAT[69], { [_KAT[62]] = _KAT[70], [_KAT[71]] = Vector2.new(.5, .5), [_KAT[72]] = UDim2[_KAT[73]](IlI1lllll, l1I1lllll), [_KAT[74]] = UDim2.new(.5, 0B0, .5, 0x12), [_KAT[75]] = 0B1, [_KAT[76]] = 0B0, [_KAT[77]] = 0xA }, l1II1llll);
-local lIlI1llll = Ill1lllll(_KAT[78], { [_KAT[79]] = 0B1 }, I1II1llll);
-local IIlI1llll = Ill1lllll(_KAT[69], { [_KAT[62]] = _KAT[80], [_KAT[72]] = UDim2.new(0B1, -0B10, 0B1, -0B10), [_KAT[74]] = UDim2[_KAT[73]](0B1, 0x7), [_KAT[81]] = Color3[_KAT[35]](0B0, 0B0, 0B0), [_KAT[75]] = .56, [_KAT[76]] = 0B0, [_KAT[77]] = 0xA }, I1II1llll);
-l1l1lllll(IIlI1llll, 0x12);
-local lllI1llll = Ill1lllll(_KAT[69], { [_KAT[62]] = _KAT[37], [_KAT[72]] = UDim2.new(0B1, -4, 0B1, -4), [_KAT[74]] = UDim2[_KAT[73]](0B10, 0B10), [_KAT[81]] = lll1lllll.Panel, [_KAT[75]] = .06, [_KAT[76]] = 0B0, [_KAT[82]] = true, [_KAT[77]] = 0xC }, I1II1llll);
-l1l1lllll(lllI1llll, 0x10);
-local IllI1llll = Ill1lllll(_KAT[69], { [_KAT[62]] = _KAT[34], [_KAT[72]] = UDim2[_KAT[83]](0B1, 0B1), [_KAT[81]] = lll1lllll.Border, [_KAT[75]] = 0B0, [_KAT[76]] = 0B0, [_KAT[77]] = 0xB }, I1II1llll);
-l1l1lllll(IllI1llll, 0x12);
-local l1lI1llll = Ill1lllll(_KAT[69], { [_KAT[62]] = _KAT[38], [_KAT[72]] = UDim2.new(0B1, 0B0, 0B0, I1I1lllll), [_KAT[81]] = lll1lllll.Header, [_KAT[75]] = .02, [_KAT[76]] = 0B0, [_KAT[84]] = true, [_KAT[77]] = 0xD }, lllI1llll);
-l1l1lllll(l1lI1llll, 0x10);
-local I1lI1llll = Ill1lllll(_KAT[69], { [_KAT[62]] = _KAT[85], [_KAT[72]] = UDim2.new(0B1, 0B0, 0B0, 0x10), [_KAT[74]] = UDim2.new(0B0, 0B0, 0B1, -16), [_KAT[81]] = lll1lllll.Header, [_KAT[75]] = .02, [_KAT[76]] = 0B0, [_KAT[77]] = 0xD }, l1lI1llll);
-local lI1I1llll = Ill1lllll(_KAT[86], { [_KAT[72]] = UDim2.new(0B1, -54, 0B0, 0x19), [_KAT[74]] = UDim2[_KAT[73]](0xC, 0B1000), [_KAT[75]] = 0B1, [_KAT[45]] = _KAT[87], [_KAT[88]] = Enum.Font[_KAT[89]], [_KAT[90]] = 0x11, [_KAT[91]] = lll1lllll.White, [_KAT[92]] = Enum[_KAT[92]].Center, [_KAT[93]] = Enum[_KAT[93]].AtEnd, [_KAT[77]] = 0xE }, l1lI1llll);
-local II1I1llll = Ill1lllll(_KAT[86], { [_KAT[72]] = UDim2.new(0B1, -54, 0B0, 0xF), [_KAT[74]] = UDim2[_KAT[73]](0xC, 0x22), [_KAT[75]] = 0B1, [_KAT[45]] = _KAT[94], [_KAT[88]] = Enum.Font[_KAT[89]], [_KAT[90]] = 0x9, [_KAT[91]] = lll1lllll.Cyan, [_KAT[92]] = Enum[_KAT[92]].Center, [_KAT[77]] = 0xE }, l1lI1llll);
-local ll1I1llll = Ill1lllll(_KAT[95], { [_KAT[62]] = _KAT[96], [_KAT[72]] = UDim2[_KAT[73]](0x1C, 0x1C), [_KAT[74]] = UDim2.new(0B1, -38, 0B0, 0xF), [_KAT[81]] = Color3[_KAT[35]](0x9, 0x2B, 0x4C), [_KAT[76]] = 0B0, [_KAT[97]] = false, [_KAT[45]] = _KAT[98], [_KAT[88]] = Enum.Font[_KAT[89]], [_KAT[90]] = 0x13, [_KAT[91]] = lll1lllll.Text, [_KAT[77]] = 0xF }, l1lI1llll);
-l1l1lllll(ll1I1llll, 0x8);
-local Il1I1llll = I1l1lllll(ll1I1llll, lll1lllll.Border, 0B1, .35);
-local l11I1llll = Ill1lllll(_KAT[69], { [_KAT[72]] = UDim2.new(0B1, -22, 0B0, 0B1), [_KAT[74]] = UDim2.new(0B0, 0B1011, 0B0, I1I1lllll - 0B1), [_KAT[81]] = lll1lllll.Cyan, [_KAT[75]] = .38, [_KAT[76]] = 0B0, [_KAT[77]] = 0xE }, l1lI1llll);
-local I11I1llll = Ill1lllll(_KAT[99], { [_KAT[62]] = _KAT[100], [_KAT[72]] = UDim2.new(0B1, -14, 0B1, -(I1I1lllll + 0x8)), [_KAT[74]] = UDim2[_KAT[73]](0B111, I1I1lllll + 0x4), [_KAT[75]] = 0B1, [_KAT[76]] = 0B0, [_KAT[101]] = Enum[_KAT[102]][_KAT[103]], [_KAT[104]] = UDim2.new(), [_KAT[105]] = 0B10, [_KAT[106]] = lll1lllll.Cyan, [_KAT[107]] = .18, [_KAT[108]] = Enum[_KAT[108]][_KAT[109]], [_KAT[110]] = Enum[_KAT[110]][_KAT[103]], [_KAT[77]] = 0xD }, lllI1llll);
-Ill1lllll(_KAT[111], { [_KAT[112]] = UDim.new(0B0, 0B11), [_KAT[113]] = UDim.new(0B0, 0x7), [_KAT[114]] = UDim.new(0B0, 0x4), [_KAT[115]] = UDim.new(0B0, 0x6) }, I11I1llll);
-Ill1lllll(_KAT[116], { [_KAT[117]] = UDim.new(0B0, IIl1lllll), [_KAT[118]] = Enum[_KAT[118]][_KAT[119]], [_KAT[120]] = Enum[_KAT[120]].Center }, I11I1llll);
-local function lIIl1llll(...)
-if ll11lllll then
+local l11I1II1I1 = false
+local I11I1II1I1 = false
+local lll11II1I1
+local Ill11II1I1
+local lIl11II1I1 = false
+local IIl11II1I1
+local l1l11II1I1
+local I1l11II1I1
+local llI11II1I1 = I1II1II1I1(_KVM[61], { [_KVM[62]] = l1lI1II1I1, [_KVM[63]] = false, [_KVM[64]] = true, [_KVM[65]] = false, [_KVM[66]] = Enum[_KVM[66]][_KVM[67]], [_KVM[68]] = 999999 }, lIlI1II1I1);
+local IlI11II1I1 = I1II1II1I1(_KVM[69], { [_KVM[62]] = _KVM[70], [_KVM[71]] = Vector2.new(.5, .5), [_KVM[72]] = UDim2[_KVM[73]](I1lI1II1I1, llII1II1I1), [_KVM[74]] = UDim2.new(.5, 0B0, .5, 0x12), [_KVM[75]] = 0B1, [_KVM[76]] = 0B0, [_KVM[77]] = 0xA }, llI11II1I1);
+local lII11II1I1 = I1II1II1I1(_KVM[78], { [_KVM[79]] = 0B1 }, IlI11II1I1);
+local III11II1I1 = I1II1II1I1(_KVM[69], { [_KVM[62]] = _KVM[80], [_KVM[72]] = UDim2.new(0B1, -0B10, 0B1, -0B10), [_KVM[74]] = UDim2[_KVM[73]](0B1, 0x7), [_KVM[81]] = Color3[_KVM[35]](0B0, 0B0, 0B0), [_KVM[75]] = .56, [_KVM[76]] = 0B0, [_KVM[77]] = 0xA }, IlI11II1I1);
+ll1I1II1I1(III11II1I1, 0x12);
+local l1I11II1I1 = I1II1II1I1(_KVM[69], { [_KVM[62]] = _KVM[37], [_KVM[72]] = UDim2.new(0B1, -4, 0B1, -4), [_KVM[74]] = UDim2[_KVM[73]](0B10, 0B10), [_KVM[81]] = l1II1II1I1.Panel, [_KVM[75]] = .06, [_KVM[76]] = 0B0, [_KVM[82]] = true, [_KVM[77]] = 0xC }, IlI11II1I1);
+ll1I1II1I1(l1I11II1I1, 0x10);
+local I1I11II1I1 = I1II1II1I1(_KVM[69], { [_KVM[62]] = _KVM[34], [_KVM[72]] = UDim2[_KVM[83]](0B1, 0B1), [_KVM[81]] = l1II1II1I1.Border, [_KVM[75]] = 0B0, [_KVM[76]] = 0B0, [_KVM[77]] = 0xB }, IlI11II1I1);
+ll1I1II1I1(I1I11II1I1, 0x12);
+local ll111II1I1 = I1II1II1I1(_KVM[69], { [_KVM[62]] = _KVM[38], [_KVM[72]] = UDim2.new(0B1, 0B0, 0B0, IlII1II1I1), [_KVM[81]] = l1II1II1I1.Header, [_KVM[75]] = .02, [_KVM[76]] = 0B0, [_KVM[84]] = true, [_KVM[77]] = 0xD }, l1I11II1I1);
+ll1I1II1I1(ll111II1I1, 0x10);
+local Il111II1I1 = I1II1II1I1(_KVM[69], { [_KVM[62]] = _KVM[85], [_KVM[72]] = UDim2.new(0B1, 0B0, 0B0, 0x10), [_KVM[74]] = UDim2.new(0B0, 0B0, 0B1, -16), [_KVM[81]] = l1II1II1I1.Header, [_KVM[75]] = .02, [_KVM[76]] = 0B0, [_KVM[77]] = 0xD }, ll111II1I1);
+local lI111II1I1 = I1II1II1I1(_KVM[86], { [_KVM[72]] = UDim2.new(0B1, -54, 0B0, 0x19), [_KVM[74]] = UDim2[_KVM[73]](0xC, 0x8), [_KVM[75]] = 0B1, [_KVM[45]] = _KVM[87], [_KVM[88]] = Enum.Font[_KVM[89]], [_KVM[90]] = 0x11, [_KVM[91]] = l1II1II1I1.White, [_KVM[92]] = Enum[_KVM[92]].Center, [_KVM[93]] = Enum[_KVM[93]].AtEnd, [_KVM[77]] = 0xE }, ll111II1I1);
+local II111II1I1 = I1II1II1I1(_KVM[86], { [_KVM[72]] = UDim2.new(0B1, -54, 0B0, 0xF), [_KVM[74]] = UDim2[_KVM[73]](0xC, 0x22), [_KVM[75]] = 0B1, [_KVM[45]] = _KVM[94], [_KVM[88]] = Enum.Font[_KVM[89]], [_KVM[90]] = 0x9, [_KVM[91]] = l1II1II1I1.Cyan, [_KVM[92]] = Enum[_KVM[92]].Center, [_KVM[77]] = 0xE }, ll111II1I1);
+local l1111II1I1 = I1II1II1I1(_KVM[95], { [_KVM[62]] = _KVM[96], [_KVM[72]] = UDim2[_KVM[73]](0x1C, 0x1C), [_KVM[74]] = UDim2.new(0B1, -38, 0B0, 0xF), [_KVM[81]] = Color3[_KVM[35]](0x9, 0x2B, 0x4C), [_KVM[76]] = 0B0, [_KVM[97]] = false, [_KVM[45]] = _KVM[98], [_KVM[88]] = Enum.Font[_KVM[89]], [_KVM[90]] = 0x13, [_KVM[91]] = l1II1II1I1.Text, [_KVM[77]] = 0xF }, ll111II1I1);
+ll1I1II1I1(l1111II1I1, 0x8);
+local I1111II1I1 = Il1I1II1I1(l1111II1I1, l1II1II1I1.Border, 0B1, .35);
+local lllll1I1I1 = I1II1II1I1(_KVM[69], { [_KVM[72]] = UDim2.new(0B1, -22, 0B0, 0B1), [_KVM[74]] = UDim2.new(0B0, 0xB, 0B0, IlII1II1I1 - 0B1), [_KVM[81]] = l1II1II1I1.Cyan, [_KVM[75]] = .38, [_KVM[76]] = 0B0, [_KVM[77]] = 0xE }, ll111II1I1);
+local Illll1I1I1 = I1II1II1I1(_KVM[99], { [_KVM[62]] = _KVM[100], [_KVM[72]] = UDim2.new(0B1, -14, 0B1, -(IlII1II1I1 + 0x8)), [_KVM[74]] = UDim2[_KVM[73]](0x7, IlII1II1I1 + 0x4), [_KVM[75]] = 0B1, [_KVM[76]] = 0B0, [_KVM[101]] = Enum[_KVM[102]][_KVM[103]], [_KVM[104]] = UDim2.new(), [_KVM[105]] = 0B10, [_KVM[106]] = l1II1II1I1.Cyan, [_KVM[107]] = .18, [_KVM[108]] = Enum[_KVM[108]][_KVM[109]], [_KVM[110]] = Enum[_KVM[110]][_KVM[103]], [_KVM[77]] = 0xD }, l1I11II1I1);
+I1II1II1I1(_KVM[111], { [_KVM[112]] = UDim.new(0B0, 0B11), [_KVM[113]] = UDim.new(0B0, 0x7), [_KVM[114]] = UDim.new(0B0, 0B100), [_KVM[115]] = UDim.new(0B0, 0x6) }, Illll1I1I1);
+I1II1II1I1(_KVM[116], { [_KVM[117]] = UDim.new(0B0, IIII1II1I1), [_KVM[118]] = Enum[_KVM[118]][_KVM[119]], [_KVM[120]] = Enum[_KVM[120]].Center }, Illll1I1I1);
+local function lIlll1I1I1(...)
+if l11I1II1I1 then
 return
 			end
-ll11lllll = true
-lIII1llll = false
-local l1lllllll = lI11lllll(I1II1llll, .2, { [_KAT[74]] = UDim2.new(I1II1llll[_KAT[74]][_KAT[121]].Scale, I1II1llll[_KAT[74]][_KAT[121]].Offset, I1II1llll[_KAT[74]][_KAT[103]].Scale, I1II1llll[_KAT[74]][_KAT[103]].Offset + 0x14) }, Enum[_KAT[56]].Quart, Enum[_KAT[57]].In);
-l1lllllll[_KAT[122]]:Connect(function(...)
-local l1lllllll = l111lllll
-if not l1lllllll then
-l1II1llll:Destroy()
+l11I1II1I1 = true
+lIl11II1I1 = false
+local ll1l1II1I1 = lI1I1II1I1(IlI11II1I1, .2, { [_KVM[74]] = UDim2.new(IlI11II1I1[_KVM[74]][_KVM[121]].Scale, IlI11II1I1[_KVM[74]][_KVM[121]].Offset, IlI11II1I1[_KVM[74]][_KVM[103]].Scale, IlI11II1I1[_KVM[74]][_KVM[103]].Offset + 0x14) }, Enum[_KVM[56]].Quart, Enum[_KVM[57]].In);
+ll1l1II1I1[_KVM[122]]:Connect(function(...)
+local ll1l1II1I1 = lll11II1I1
+if not ll1l1II1I1 then
+llI11II1I1:Destroy()
 return
 				end
-if l1lllllll ~= _KAT[2] then
-l1II1llll:Destroy();
-II11lllll(l1lllllll)
+if ll1l1II1I1 ~= _KVM[2] then
+llI11II1I1:Destroy();
+II1I1II1I1(ll1l1II1I1)
 return
 				end
-I1II1llll[_KAT[123]] = false
-II11lllll(l1lllllll)
-if lII1lllll:FindFirstChild(_KAT[124]) then
-l1II1llll:Destroy()
+IlI11II1I1[_KVM[123]] = false
+II1I1II1I1(ll1l1II1I1)
+if lIlI1II1I1:FindFirstChild(_KVM[124]) then
+llI11II1I1:Destroy()
 return
 				end
-I1lllllll[_KAT[125]] = nil
+Il1l1II1I1[_KVM[125]] = nil
 task.wait(0B10)
-l111lllll = nil
-Il11lllll = false
-ll11lllll = false
-if I111lllll then
-I111lllll()
+lll11II1I1 = nil
+I11I1II1I1 = false
+l11I1II1I1 = false
+if Ill11II1I1 then
+Ill11II1I1()
 				end
-I111lllll = nil
-I1II1llll[_KAT[74]] = UDim2.new(.5, 0B0, .5, 0x12);
-I1II1llll[_KAT[123]] = true
-lI11lllll(I1II1llll, .28, { [_KAT[74]] = UDim2.new(.5, 0B0, .5, 0B0) }, Enum[_KAT[56]].Quint)
+Ill11II1I1 = nil
+IlI11II1I1[_KVM[74]] = UDim2.new(.5, 0B0, .5, 0x12);
+IlI11II1I1[_KVM[123]] = true
+lI1I1II1I1(IlI11II1I1, .28, { [_KVM[74]] = UDim2.new(.5, 0B0, .5, 0B0) }, Enum[_KVM[56]].Quint)
 			end)
 		end
-ll1I1llll[_KAT[126]]:Connect(function(...)
-lI11lllll(ll1I1llll, .12, { [_KAT[81]] = Color3[_KAT[35]](0x75, 0x15, 0x2A), [_KAT[91]] = lll1lllll.White });
-lI11lllll(Il1I1llll, .12, { [_KAT[52]] = lll1lllll.Red, [_KAT[54]] = 0B0 })
+l1111II1I1[_KVM[126]]:Connect(function(...)
+lI1I1II1I1(l1111II1I1, .12, { [_KVM[81]] = Color3[_KVM[35]](0x75, 0x15, 0x2A), [_KVM[91]] = l1II1II1I1.White });
+lI1I1II1I1(I1111II1I1, .12, { [_KVM[52]] = l1II1II1I1.Red, [_KVM[54]] = 0B0 })
 		end);
-ll1I1llll[_KAT[127]]:Connect(function(...)
-lI11lllll(ll1I1llll, .12, { [_KAT[81]] = Color3[_KAT[35]](0x9, 0x2B, 0x4C), [_KAT[91]] = lll1lllll.Text });
-lI11lllll(Il1I1llll, .12, { [_KAT[52]] = lll1lllll.Border, [_KAT[54]] = .35 })
+l1111II1I1[_KVM[127]]:Connect(function(...)
+lI1I1II1I1(l1111II1I1, .12, { [_KVM[81]] = Color3[_KVM[35]](0x9, 0x2B, 0x4C), [_KVM[91]] = l1II1II1I1.Text });
+lI1I1II1I1(I1111II1I1, .12, { [_KVM[52]] = l1II1II1I1.Border, [_KVM[54]] = .35 })
 		end);
-ll1I1llll[_KAT[128]]:Connect(lIIl1llll);
-local function IIIl1llll(l1lllllll, I1lllllll, lI1llllll, II1llllll, ll1llllll, Il1llllll, ...)
-local l11llllll = ll1llllll == _KAT[129]
-local I11llllll = ll1llllll == _KAT[130]
-lI11lllll(l1lllllll, .13, { [_KAT[81]] = I11llllll and lll1lllll[_KAT[41]] or l11llllll and lll1lllll[_KAT[40]] or lll1lllll.Row });
-lI11lllll(I1lllllll, .13, { [_KAT[52]] = (l11llllll or I11llllll) and Il1llllll or lll1lllll.Border, [_KAT[54]] = (l11llllll or I11llllll) and 0B0 or .28 });
-lI11lllll(lI1llllll, .13, { [_KAT[72]] = UDim2.new(0B0, I11llllll and 0x5 or l11llllll and 0x4 or 0B11, 0B0, l11llllll and 0x22 or 0x1C), [_KAT[74]] = UDim2.new(0B0, 0B0, .5, l11llllll and -17 or -14) });
-lI11lllll(II1llllll, .13, { [_KAT[81]] = (l11llllll or I11llllll) and Il1llllll or Color3[_KAT[35]](0x8, 0x30, 0x52), [_KAT[91]] = (l11llllll or I11llllll) and lll1lllll[_KAT[47]] or lll1lllll.Text })
+l1111II1I1[_KVM[128]]:Connect(lIlll1I1I1);
+local function IIlll1I1I1(ll1l1II1I1, Il1l1II1I1, lI1l1II1I1, II1l1II1I1, l11l1II1I1, I11l1II1I1, ...)
+local lllI1II1I1 = l11l1II1I1 == _KVM[129]
+local IllI1II1I1 = l11l1II1I1 == _KVM[130]
+lI1I1II1I1(ll1l1II1I1, .13, { [_KVM[81]] = IllI1II1I1 and l1II1II1I1[_KVM[41]] or lllI1II1I1 and l1II1II1I1[_KVM[40]] or l1II1II1I1.Row });
+lI1I1II1I1(Il1l1II1I1, .13, { [_KVM[52]] = (lllI1II1I1 or IllI1II1I1) and I11l1II1I1 or l1II1II1I1.Border, [_KVM[54]] = (lllI1II1I1 or IllI1II1I1) and 0B0 or .28 });
+lI1I1II1I1(lI1l1II1I1, .13, { [_KVM[72]] = UDim2.new(0B0, IllI1II1I1 and 0x5 or lllI1II1I1 and 0x4 or 0B11, 0B0, lllI1II1I1 and 0x22 or 0x1C), [_KVM[74]] = UDim2.new(0B0, 0B0, .5, lllI1II1I1 and -17 or -14) });
+lI1I1II1I1(II1l1II1I1, .13, { [_KVM[81]] = (lllI1II1I1 or IllI1II1I1) and I11l1II1I1 or Color3[_KVM[35]](0x8, 0x30, 0x52), [_KVM[91]] = (lllI1II1I1 or IllI1II1I1) and l1II1II1I1[_KVM[47]] or l1II1II1I1.Text })
 		end
-for l1lllllll, I1lllllll in ipairs(II1llllll) do
-local lI1llllll = I1lllllll.status == _KAT[9]
-local II1llllll = l1lllllll % 0B10 == 0B0 and lll1lllll.Blue or lll1lllll.Cyan
-local ll1llllll = Ill1lllll(_KAT[95], { [_KAT[62]] = _KAT[131] .. l1lllllll, [_KAT[72]] = UDim2.new(0B1, 0B0, 0B0, lIl1lllll), [_KAT[81]] = lll1lllll.Row, [_KAT[75]] = lI1llllll and .04 or .22, [_KAT[76]] = 0B0, [_KAT[97]] = false, [_KAT[84]] = lI1llllll, [_KAT[45]] = _KAT[132], [_KAT[119]] = l1lllllll, [_KAT[77]] = 0xE }, I11I1llll);
-l1l1lllll(ll1llllll, 0xA);
-local Il1llllll = I1l1lllll(ll1llllll, lll1lllll.Border, 0B1, lI1llllll and .28 or .72);
-local l11llllll = Ill1lllll(_KAT[69], { [_KAT[72]] = UDim2[_KAT[73]](0B11, 0x1C), [_KAT[74]] = UDim2.new(0B0, 0B0, .5, -14), [_KAT[81]] = lI1llllll and II1llllll or lll1lllll[_KAT[46]], [_KAT[76]] = 0B0, [_KAT[77]] = 0xF }, ll1llllll);
-l1l1lllll(l11llllll, 0B11);
-local I11llllll = Ill1lllll(_KAT[86], { [_KAT[72]] = UDim2.new(0B1, -112, 0B0, 0x13), [_KAT[74]] = UDim2[_KAT[73]](0xF, 0x7), [_KAT[75]] = 0B1, [_KAT[45]] = I1lllllll.name, [_KAT[88]] = Enum.Font[_KAT[89]], [_KAT[90]] = 0xD, [_KAT[91]] = lI1llllll and lll1lllll.White or lll1lllll[_KAT[46]], [_KAT[92]] = Enum[_KAT[92]].Left, [_KAT[93]] = Enum[_KAT[93]].AtEnd, [_KAT[77]] = 0xF }, ll1llllll);
-local lII1lllll = Ill1lllll(_KAT[86], { [_KAT[72]] = UDim2.new(0B1, -112, 0B0, 0xF), [_KAT[74]] = UDim2[_KAT[73]](0xF, 0x1C), [_KAT[75]] = 0B1, [_KAT[45]] = I1lllllll.desc, [_KAT[88]] = Enum.Font[_KAT[133]], [_KAT[90]] = 0xA, [_KAT[91]] = lI1llllll and lll1lllll[_KAT[46]] or Color3[_KAT[35]](0x4A, 0x67, 0x7B), [_KAT[92]] = Enum[_KAT[92]].Left, [_KAT[93]] = Enum[_KAT[93]].AtEnd, [_KAT[77]] = 0xF }, ll1llllll);
-local III1lllll = Ill1lllll(_KAT[86], { [_KAT[72]] = UDim2[_KAT[73]](0x4C, 0x1C), [_KAT[74]] = UDim2.new(0B1, -84, .5, -14), [_KAT[81]] = lI1llllll and Color3[_KAT[35]](0x8, 0x30, 0x52) or Color3[_KAT[35]](0x14, 0x1F, 0x2C), [_KAT[75]] = .02, [_KAT[76]] = 0B0, [_KAT[45]] = lI1llllll and _KAT[134] or _KAT[135], [_KAT[88]] = Enum.Font[_KAT[89]], [_KAT[90]] = 0x9, [_KAT[91]] = lI1llllll and lll1lllll.Text or lll1lllll[_KAT[46]], [_KAT[77]] = 0xF }, ll1llllll);
-l1l1lllll(III1lllll, 0x8);
-I1l1lllll(III1lllll, lI1llllll and II1llllll or lll1lllll[_KAT[46]], 0B1, lI1llllll and .2 or .7)
-if lI1llllll then
-ll1llllll[_KAT[126]]:Connect(function(...)
-if not Il11lllll then
-IIIl1llll(ll1llllll, Il1llllll, l11llllll, III1lllll, _KAT[129], II1llllll)
+for ll1l1II1I1, Il1l1II1I1 in ipairs(II1l1II1I1) do
+local lI1l1II1I1 = Il1l1II1I1.status == _KVM[9]
+local II1l1II1I1 = ll1l1II1I1 % 0B10 == 0B0 and l1II1II1I1.Blue or l1II1II1I1.Cyan
+local l11l1II1I1 = I1II1II1I1(_KVM[95], { [_KVM[62]] = _KVM[131] .. ll1l1II1I1, [_KVM[72]] = UDim2.new(0B1, 0B0, 0B0, lIII1II1I1), [_KVM[81]] = l1II1II1I1.Row, [_KVM[75]] = lI1l1II1I1 and .04 or .22, [_KVM[76]] = 0B0, [_KVM[97]] = false, [_KVM[84]] = lI1l1II1I1, [_KVM[45]] = _KVM[132], [_KVM[119]] = ll1l1II1I1, [_KVM[77]] = 0B1110 }, Illll1I1I1);
+ll1I1II1I1(l11l1II1I1, 0xA);
+local I11l1II1I1 = Il1I1II1I1(l11l1II1I1, l1II1II1I1.Border, 0B1, lI1l1II1I1 and .28 or .72);
+local lllI1II1I1 = I1II1II1I1(_KVM[69], { [_KVM[72]] = UDim2[_KVM[73]](0B11, 0x1C), [_KVM[74]] = UDim2.new(0B0, 0B0, .5, -14), [_KVM[81]] = lI1l1II1I1 and II1l1II1I1 or l1II1II1I1[_KVM[46]], [_KVM[76]] = 0B0, [_KVM[77]] = 0xF }, l11l1II1I1);
+ll1I1II1I1(lllI1II1I1, 0B11);
+local IllI1II1I1 = I1II1II1I1(_KVM[86], { [_KVM[72]] = UDim2.new(0B1, -112, 0B0, 0x13), [_KVM[74]] = UDim2[_KVM[73]](0xF, 0x7), [_KVM[75]] = 0B1, [_KVM[45]] = Il1l1II1I1.name, [_KVM[88]] = Enum.Font[_KVM[89]], [_KVM[90]] = 0xD, [_KVM[91]] = lI1l1II1I1 and l1II1II1I1.White or l1II1II1I1[_KVM[46]], [_KVM[92]] = Enum[_KVM[92]].Left, [_KVM[93]] = Enum[_KVM[93]].AtEnd, [_KVM[77]] = 0B1111 }, l11l1II1I1);
+local lIlI1II1I1 = I1II1II1I1(_KVM[86], { [_KVM[72]] = UDim2.new(0B1, -112, 0B0, 0xF), [_KVM[74]] = UDim2[_KVM[73]](0xF, 0x1C), [_KVM[75]] = 0B1, [_KVM[45]] = Il1l1II1I1.desc, [_KVM[88]] = Enum.Font[_KVM[133]], [_KVM[90]] = 0xA, [_KVM[91]] = lI1l1II1I1 and l1II1II1I1[_KVM[46]] or Color3[_KVM[35]](0x4A, 0x67, 0x7B), [_KVM[92]] = Enum[_KVM[92]].Left, [_KVM[93]] = Enum[_KVM[93]].AtEnd, [_KVM[77]] = 0xF }, l11l1II1I1);
+local IIlI1II1I1 = I1II1II1I1(_KVM[86], { [_KVM[72]] = UDim2[_KVM[73]](0x4C, 0x1C), [_KVM[74]] = UDim2.new(0B1, -84, .5, -14), [_KVM[81]] = lI1l1II1I1 and Color3[_KVM[35]](0x8, 0x30, 0x52) or Color3[_KVM[35]](0x14, 0x1F, 0x2C), [_KVM[75]] = .02, [_KVM[76]] = 0B0, [_KVM[45]] = lI1l1II1I1 and _KVM[134] or _KVM[135], [_KVM[88]] = Enum.Font[_KVM[89]], [_KVM[90]] = 0x9, [_KVM[91]] = lI1l1II1I1 and l1II1II1I1.Text or l1II1II1I1[_KVM[46]], [_KVM[77]] = 0xF }, l11l1II1I1);
+ll1I1II1I1(IIlI1II1I1, 0x8);
+Il1I1II1I1(IIlI1II1I1, lI1l1II1I1 and II1l1II1I1 or l1II1II1I1[_KVM[46]], 0B1, lI1l1II1I1 and .2 or .7)
+if lI1l1II1I1 then
+l11l1II1I1[_KVM[126]]:Connect(function(...)
+if not I11I1II1I1 then
+IIlll1I1I1(l11l1II1I1, I11l1II1I1, lllI1II1I1, IIlI1II1I1, _KVM[129], II1l1II1I1)
 					end
 				end);
-ll1llllll[_KAT[127]]:Connect(function(...)
-if not Il11lllll then
-IIIl1llll(ll1llllll, Il1llllll, l11llllll, III1lllll, _KAT[136], II1llllll)
+l11l1II1I1[_KVM[127]]:Connect(function(...)
+if not I11I1II1I1 then
+IIlll1I1I1(l11l1II1I1, I11l1II1I1, lllI1II1I1, IIlI1II1I1, _KVM[136], II1l1II1I1)
 					end
 				end);
-ll1llllll[_KAT[137]]:Connect(function(l1lllllll, ...)
-if not Il11lllll and (l1lllllll[_KAT[138]] == Enum[_KAT[138]][_KAT[139]] or l1lllllll[_KAT[138]] == Enum[_KAT[138]].Touch) then
-IIIl1llll(ll1llllll, Il1llllll, l11llllll, III1lllll, _KAT[130], II1llllll)
+l11l1II1I1[_KVM[137]]:Connect(function(ll1l1II1I1, ...)
+if not I11I1II1I1 and (ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]][_KVM[139]] or ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]].Touch) then
+IIlll1I1I1(l11l1II1I1, I11l1II1I1, lllI1II1I1, IIlI1II1I1, _KVM[130], II1l1II1I1)
 					end
 				end);
-ll1llllll[_KAT[140]]:Connect(function(l1lllllll, ...)
-if not Il11lllll and (l1lllllll[_KAT[138]] == Enum[_KAT[138]][_KAT[139]] or l1lllllll[_KAT[138]] == Enum[_KAT[138]].Touch) then
-IIIl1llll(ll1llllll, Il1llllll, l11llllll, III1lllll, _KAT[136], II1llllll)
+l11l1II1I1[_KVM[140]]:Connect(function(ll1l1II1I1, ...)
+if not I11I1II1I1 and (ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]][_KVM[139]] or ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]].Touch) then
+IIlll1I1I1(l11l1II1I1, I11l1II1I1, lllI1II1I1, IIlI1II1I1, _KVM[136], II1l1II1I1)
 					end
 				end);
-ll1llllll[_KAT[128]]:Connect(function(...)
-if Il11lllll or ll11lllll then
+l11l1II1I1[_KVM[128]]:Connect(function(...)
+if I11I1II1I1 or l11I1II1I1 then
 return
 					end
-Il11lllll = true
-l111lllll = I1lllllll.file
-I11llllll[_KAT[91]] = lll1lllll.Cyan
-lII1lllll.Text = _KAT[141] .. I1lllllll.name
-lII1lllll[_KAT[91]] = lll1lllll.Text
-III1lllll.Text = _KAT[142]
-III1lllll[_KAT[81]] = II1llllll
-III1lllll[_KAT[91]] = lll1lllll[_KAT[47]]
-Il1llllll.Color = II1llllll
-Il1llllll[_KAT[54]] = 0B0
-I111lllll = function(...)
-I11llllll[_KAT[91]] = lll1lllll.White
-lII1lllll.Text = I1lllllll.desc
-lII1lllll[_KAT[91]] = lll1lllll[_KAT[46]]
-III1lllll.Text = _KAT[134]
-III1lllll[_KAT[81]] = Color3[_KAT[35]](0x8, 0x30, 0x52);
-III1lllll[_KAT[91]] = lll1lllll.Text
-IIIl1llll(ll1llllll, Il1llllll, l11llllll, III1lllll, _KAT[136], II1llllll)
+I11I1II1I1 = true
+lll11II1I1 = Il1l1II1I1.file
+IllI1II1I1[_KVM[91]] = l1II1II1I1.Cyan
+lIlI1II1I1.Text = _KVM[141] .. Il1l1II1I1.name
+lIlI1II1I1[_KVM[91]] = l1II1II1I1.Text
+IIlI1II1I1.Text = _KVM[142]
+IIlI1II1I1[_KVM[81]] = II1l1II1I1
+IIlI1II1I1[_KVM[91]] = l1II1II1I1[_KVM[47]]
+I11l1II1I1.Color = II1l1II1I1
+I11l1II1I1[_KVM[54]] = 0B0
+Ill11II1I1 = function(...)
+IllI1II1I1[_KVM[91]] = l1II1II1I1.White
+lIlI1II1I1.Text = Il1l1II1I1.desc
+lIlI1II1I1[_KVM[91]] = l1II1II1I1[_KVM[46]]
+IIlI1II1I1.Text = _KVM[134]
+IIlI1II1I1[_KVM[81]] = Color3[_KVM[35]](0x8, 0x30, 0x52);
+IIlI1II1I1[_KVM[91]] = l1II1II1I1.Text
+IIlll1I1I1(l11l1II1I1, I11l1II1I1, lllI1II1I1, IIlI1II1I1, _KVM[136], II1l1II1I1)
 						end
-for l1lllllll = 0B0, 0B11, 0B1 do
-III1lllll.Text = _KAT[142] .. string.rep(_KAT[143], l1lllllll);
+for ll1l1II1I1 = 0B0, 0B11, 0B1 do
+IIlI1II1I1.Text = _KVM[142] .. string.rep(_KVM[143], ll1l1II1I1);
 task.wait(.5)
 					end
-lIIl1llll()
+lIlll1I1I1()
 				end)
 			end
 		end
-l1lI1llll[_KAT[137]]:Connect(function(l1lllllll, ...)
-if l1lllllll[_KAT[138]] == Enum[_KAT[138]][_KAT[139]] or l1lllllll[_KAT[138]] == Enum[_KAT[138]].Touch then
-lIII1llll = true
-llII1llll = l1lllllll[_KAT[74]]
-IlII1llll = I1II1llll[_KAT[74]]
-l1lllllll[_KAT[144]]:Connect(function(...)
-if l1lllllll[_KAT[145]] == Enum[_KAT[145]].End then
-lIII1llll = false
+ll111II1I1[_KVM[137]]:Connect(function(ll1l1II1I1, ...)
+if ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]][_KVM[139]] or ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]].Touch then
+lIl11II1I1 = true
+l1l11II1I1 = ll1l1II1I1[_KVM[74]]
+I1l11II1I1 = IlI11II1I1[_KVM[74]]
+ll1l1II1I1[_KVM[144]]:Connect(function(...)
+if ll1l1II1I1[_KVM[145]] == Enum[_KVM[145]].End then
+lIl11II1I1 = false
 					end
 				end)
 			end
 		end);
-l1lI1llll[_KAT[146]]:Connect(function(l1lllllll, ...)
-if l1lllllll[_KAT[138]] == Enum[_KAT[138]][_KAT[147]] or l1lllllll[_KAT[138]] == Enum[_KAT[138]].Touch then
-IIII1llll = l1lllllll
+ll111II1I1[_KVM[146]]:Connect(function(ll1l1II1I1, ...)
+if ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]][_KVM[147]] or ll1l1II1I1[_KVM[138]] == Enum[_KVM[138]].Touch then
+IIl11II1I1 = ll1l1II1I1
 			end
 		end);
-l11llllll[_KAT[146]]:Connect(function(l1lllllll, ...)
-if lIII1llll and (l1lllllll == IIII1llll and not ll11lllll) then
-local I1lllllll = l1lllllll[_KAT[74]] - llII1llll
-I1II1llll[_KAT[74]] = UDim2.new(IlII1llll[_KAT[121]].Scale, IlII1llll[_KAT[121]].Offset + I1lllllll[_KAT[121]], IlII1llll[_KAT[103]].Scale, IlII1llll[_KAT[103]].Offset + I1lllllll[_KAT[103]])
+lllI1II1I1[_KVM[146]]:Connect(function(ll1l1II1I1, ...)
+if lIl11II1I1 and (ll1l1II1I1 == IIl11II1I1 and not l11I1II1I1) then
+local Il1l1II1I1 = ll1l1II1I1[_KVM[74]] - l1l11II1I1
+IlI11II1I1[_KVM[74]] = UDim2.new(I1l11II1I1[_KVM[121]].Scale, I1l11II1I1[_KVM[121]].Offset + Il1l1II1I1[_KVM[121]], I1l11II1I1[_KVM[103]].Scale, I1l11II1I1[_KVM[103]].Offset + Il1l1II1I1[_KVM[103]])
 			end
 		end);
-local function llIl1llll(...)
-III1lllll = workspace[_KAT[32]] or III1lllll
-if not III1lllll then
+local function l1lll1I1I1(...)
+IIlI1II1I1 = workspace[_KVM[32]] or IIlI1II1I1
+if not IIlI1II1I1 then
 return
 			end
-local l1lllllll = III1lllll[_KAT[148]]
-lIlI1llll.Scale = math.clamp(math.min((l1lllllll[_KAT[121]] - 0x18) / IlI1lllll, (l1lllllll[_KAT[103]] - 0x22) / l1I1lllll, 0B1), .6, 0B1)
+local ll1l1II1I1 = IIlI1II1I1[_KVM[148]]
+lII11II1I1.Scale = math.clamp(math.min((ll1l1II1I1[_KVM[121]] - 0x18) / I1lI1II1I1, (ll1l1II1I1[_KVM[103]] - 0x22) / llII1II1I1, 0B1), .6, 0B1)
 		end
-llIl1llll()
-if III1lllll then
-(III1lllll:GetPropertyChangedSignal(_KAT[148])):Connect(llIl1llll)
+l1lll1I1I1()
+if IIlI1II1I1 then
+(IIlI1II1I1:GetPropertyChangedSignal(_KVM[148])):Connect(l1lll1I1I1)
 		end;
-(workspace:GetPropertyChangedSignal(_KAT[32])):Connect(function(...)
-III1lllll = workspace[_KAT[32]]
-llIl1llll()
+(workspace:GetPropertyChangedSignal(_KVM[32])):Connect(function(...)
+IIlI1II1I1 = workspace[_KVM[32]]
+l1lll1I1I1()
 		end);
-lI11lllll(I1II1llll, .34, { [_KAT[74]] = UDim2.new(.5, 0B0, .5, 0B0) }, Enum[_KAT[56]].Quint)
+lI1I1II1I1(IlI11II1I1, .34, { [_KVM[74]] = UDim2.new(.5, 0B0, .5, 0B0) }, Enum[_KVM[56]].Quint)
 do
-local l1lllllll = I1lllllll[_KAT[125]]
-local lI1llllll = type(l1lllllll) == _KAT[149] and l1lllllll.script or nil
-local ll1llllll = false
-for l1lllllll, I1lllllll in ipairs(II1llllll) do
-if I1lllllll.status == _KAT[9] and I1lllllll.file == lI1llllll then
-ll1llllll = true
+local ll1l1II1I1 = Il1l1II1I1[_KVM[125]]
+local lI1l1II1I1 = type(ll1l1II1I1) == _KVM[149] and ll1l1II1I1.script or nil
+local l11l1II1I1 = false
+for ll1l1II1I1, Il1l1II1I1 in ipairs(II1l1II1I1) do
+if Il1l1II1I1.status == _KVM[9] and Il1l1II1I1.file == lI1l1II1I1 then
+l11l1II1I1 = true
 break
 				end
 			end
-if ll1llllll then
+if l11l1II1I1 then
 task.defer(function(...)
 task.wait(.45)
-if Il11lllll or ll11lllll or not l1II1llll.Parent then
+if I11I1II1I1 or l11I1II1I1 or not llI11II1I1.Parent then
 return
 					end
-Il11lllll = true
-l111lllll = lI1llllll
+I11I1II1I1 = true
+lll11II1I1 = lI1l1II1I1
 task.wait(.35);
-lIIl1llll()
+lIlll1I1I1()
 				end)
 			end
 		end

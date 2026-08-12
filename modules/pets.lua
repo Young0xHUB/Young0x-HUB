@@ -1,6 +1,6 @@
 -- this file is protected by Young0x Hub Obfuscator
-return{[(function(y)return y*1 end)(0x3A5)]=((function(...)
-local _aJS=function(s)
+return{[(function(y)return y end)(0x350)]=((function(...)
+local _aWR=function(s)
 local o={};
 local i=1;
 local n=#s;while i<=n do
@@ -9,7 +9,7 @@ local v=0;for j=0,r-1 do v=v*85+(s:byte(i+j)-33)end;for j=1,5-r do v=v*85+84 end
 local nb=r-1;
 local b4={};
 local vv=v;for j=4,1,-1 do b4[j]=vv%256;vv=math.floor(vv/256)end;for j=1,nb do o[#o+1]=string.char(b4[j])end;i=i+r end;return table.concat(o)end
-local _cKV=_aJS("@Snp^0.:W]2F;URGYMsCIQUOj;JgAmI:d4q5:echGu$\034^9M7f7BR2jL<A[\0398<+S4#FXo1L3`p;Q0O@Rt2.n[cHR^:4@r=hXFuLRl,sYa?-=LFQ.;;r"); local _bCL=function(d,c)
+local _cSM=_aWR("GX6.0:hN+)77/q-5Yj:>,^`orI7\092$!8gAOk.5GQd/PTYlH=&CE6t0@]1b2RLFE;/5<^.``GrKkJ3Di:+4*rY7CIi2\039<.6Gm-\034K,XEa;jO9L`D:;_2k"); local _bLZ=function(d,c)
 local t={}for i=1,#c do t[c:sub(i,i)]=i-1 end;
 local o={};
 local b=0;
@@ -20,573 +20,845 @@ local lsh=bit32.lshift;
 local rsh=bit32.rshift;
 local band=bit32.band;for i=1,#d do
 local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=band(bor(b,lsh(v,n)),0xFFFFFFFF);if band(v,8191)>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do o[#o+1]=string.char(band(b,255));b=rsh(b,8);n=n-8 end end end end;if v>-1 then o[#o+1]=string.char(band(bor(b,lsh(v%91,n)),255))end;return table.concat(o)end
-local _KNI={};do
-local _d=_bCL("+@L#xHT3X.|$X/dh^fMwy:GM_Rj24/vh;F73L%+rr<]:g01h=>.+`]K;A<{23(C-8QS,}[HdI^R*w35bs0$!x?b/~Oz%T3Z34udelK]VsyY$8}1;/Jn0xbS?C^.G01[+W[<;r<Cp4K^GujtB1]9;H<+vGE.Gx?W#e{Qfv<_wK~FZa~.Ep-SC3yOa_M64=pQ~P>{`I?FHG91P?cdeq-8Qe4pI;@vPXbGA7P52-^kZ*;R[rE/RHyh%vuA<YbQ<,m+uIEkbO/vW.Goh[6FH~3:kP2q=F9th73O%Jz+;YbZ~B<6Jl(f(`Vu7F@~6wR9A^cah{`=sGoZ%WgRol(u/&.07RvR3X.qg8^(Kx?AN@*szAgkr!ekZU+c[_E1Rr(R/E8A<1u3((Qz_4wX(]dZRC2>^Rhd8e7Z[D,l5Ie-^WG%~/v@*Z%>R%~3Ed-4hpYy%tzySob7(UP+u!el}5`hBH3P8Fmob0pv<nnqk_Elkl1NIZ%#4N$>exbpGk^vEMC`wqI9;ytA{VZ1kArA=F9thVb%G^hs6FH;@#4O$^crEeh6B&/}8UgEVK~Fb[1)I0Gl/syy!E3EC^u3^d-NFr6qAD,K;pR]e#KhjpN7@5dK;V#dkahqF=s:Pu895#{f(Of[l(Ze,X{mwX(X,xg^nL[rECpi,,JtM95%$34uq!`;yz%9#0PArl(H3qj,#4%85r<0xtVlKVy;yk@T3w3c$cI+h//`yo7HuBZ0*@,_gg:@/$}i-8Nz%$!K<Uu|EPLmC{,avd}v<t;|.>EUX&+_]W;_gP27/i(~_8YsclCk.tn0V~9&RHyjb=+s+NIZ%`X?o347?`1[6%YW;*5@77/&/4RR7_%YzXgmMYE^GfQ(QVHT3#55%Zf,G{`/48t-%0P,|~.5LDPIv_%G9Y.LTQ~rExQ`q>]ddhovejelKKFeppex6p5=bZ~ythP*/|VBhs6y!C3+5fgw(H3#_.y|@5dK;0xZj<9.1mNRvR3*Q@$k^&WbS.y!@3Z??@*szAgkr!etqi-n1~LL&::a$^0Rhmj}Oe:,Jv<1bm</56{#=YG5B&+X$]%_gXbmnwPfgJp],4R=y1$h8K;ob9Au;(JO~~9;QAqu`5SA<ouf:uq&``yo79;wPouf~xbQN@0iz9_(wtouov<KQ|V-ZUbM4HPF`Dj~Z6#VE#K]R8#EaC8#4w#VE#K]RJ?>%B;_gP27/FVZk+w$+GMr<1bsAwP3^/W<9^hr6K%]%jRVJj^HEEI/4.Pu895#{f(Of[lyfXp@,>R]jy[T9x?@,^&9;`;52IElbR?z/Dh~Xu7=rB;`;52IElbq?z/Dh~Xu7=r2}wgmgl(}-,FR7Oa}:?x^u~[$K}_Syfby:]6[@>uT2=bHpH<nnxFlE7R;y8I&}64|j|j#K4X73T{x65=.2n/ph5`73NI9;5(ZX*Oi}UXPN&v){xP3^Jp=,X{pY>](f1;YbFnV4UQF=<9n.mwG!W;`;523(>3a>5ByI&}BZEos*vP$eL[rElQ?YJ{2Z[6,b;.hl(HVfzo5%k^dht;e,1$vuE5`b#<u;$nZf,G{`=s_+$uY5InZf,G{`=sxJ+r*;/J3(X(c.{7npudm;d$Ij8A{<~lJV|al5a$34x?-XG6bb%~ww4%85r<X(6~>EwQ=Z<9rRVyfbZ8R7R*o=h:PnMc}-NFr6V#6d.g^u`$ah{`/4~1u8?g9<5FXzwQi*qIC8UP;oKcg{$Q?YJ{2Z[6rpgM=touc[,~X(GHnp085=qgx[rE[`t&Zpb6t(?o)I?GlQ?NIp18_g8g}:W}TX`6!!2}5(g2PXuhgBRkE$<;I5?gxWwE4hTs/5ydoR>YA3EAdkmw>oPd$5J4Cp>WRQXyIp18^P:4A[_E|`u+Hpb6t(0uXc#ZUQF=<9c6Wyl|x6}wfmhVKQmj}OfbD8Ts40<;eS9Pz/JV<hGy]@+,<tmgf:],8F`y`718_Ro%S^xbySk^1hsl?w]@;@P6%~2$T9=X&(C{nzr<=b9nu5-cg0x9OFAyo7=3$CBgS^dhMh8NY$G9I.,|:WA9,QKQ}IMf7k/JYEe95`&+&*03$Ctt/[.G.VkNmv@^7XQJn0Nq=X{707X(!XQJn0^,l/R7#|GMv<ve8(FV!.Ivx*>8_<obB<H</3F=<9n.^w&/+,O2xgX0kZ$j>e0GyXu,!@L&9Ave;Edh+I&(C{nzr<=",_cKV);
+local _KKJ={};do
+local _d=_bLZ("?]zc@.tl7Xqj7P`DQ#O5-yoO:}w0+P%DRWdlzr?KK|Zy{9!Di[X?mZ_RN|k0lgUahA^2JY.`=Q}H5l;x/9j<@)xP$Mbrtlpl+V`sB_Z>/-3jhJ!RPv~9@x^)UQXo9!Y?eY|RK|Uf+_QoVw8C!ZnR.|?%o1Xo@)ecskA#%|:5_$WpF$X1fa^Ul-MF:OE+ifA$G[km=)W.O~0u90dPA#CPg5N.ZrEp|vYOK|h{[sc_EA)c-<N#!;-{nU$DH}~!ex1Nm?mK>#@|u+nX%1*Wg5OCK2){nGbPI2+DX-N.zL%@g!&w%1KadlMrvb?R3xPB~|Zy&w_NL+#!6.iluy*{C$|pM^PYg_EA2)Z]Gh5}bGhg}P8af3tk&NU^Jm]96p*^Y1Sa(WMjP.~bEpmtLJ@{Nko1oN4ac%]]UffGJTbP[lHme-S7.@g+<v>1QoN:rC}P1hN|!VlgHAPPR-I%A+;;I{[sG2IUi/$rKbcx^rKbk7m%&w6x==[s9o-7YE#xrl(%e=LJE+:UN1Xo:7r~wY:OCpfkgRK|k~nZAz#As+h<A#K|7x2N%|ixufN|[3&w$p8iT=Mzkmr~wY:OE+od%WFD5Aq/a<kJE+Xi]9WpW~#$`a$A/()<*]$^>qTXLD1(TC)xs?Q*Z]!`p}3xFMu}%sM$$nRAxJ)<*]$^>qTXLD1(TCfiR?c+MjQTK1sDECLPJh4{5([s6x[UWi|nTXm-Jx6+YE(iprK|PvM$$nRA/(iZ@Em7({&wJa!w~!ex7?Y?7j5`:{l!o1fa!w~!ex2y(C#%}lrt!0QTMzPkdl4Z6lFcGf[s_N1(TC)x)yZEY]A+SySjwsc_3D>xZ2fCT!Qd:Ocx6v8On;rjq6eoI9O57gUVu6SjX19o2#oc@.B;1;wTBg}PmmV?$]EEN{({yWWxj=%W}DM@i/|r*]:{q8bPLPCUZE8uG`HR+0jsXo(A7+%t0h_RaTt/Ka`6kdM~DlUXd8ZsQor$55+rc]$^xxj<yXDGR1`a-:R-jf*]N|w081g_3Ddl4rbKK|/0>lLPS6@dr],oy}%sM$$nRAc>nkR(i8({9WoN_:-#6]$E8g}uBg|ntwXEh=hBM8FjT=cpc18ZwbZ}(P%f]2[}Zw-YtnlAt/F!Dl({m+|Q2o}AI%&%,HK|gvlgl1BAI%&%{O@|(xc|[|QVS=5#3wgpd)m!YEr3eRH;]ddPLP+}}d:r3b7{IO31Qo#AgA>.tlc;;rp#2okmP+h8ar9G2q$X;z&G=%:ron3XztA$K1@Am([Z``Du%swsB__Wsffs@Ef;ixp$-8DGHPq>CD/E-<Ul?;#{5g.lc:X-q];`_RB6pw|nz:x!6]0Jcx[UAR]8]j6Q%1sC=CM<oRP+]lze2okm%2E`}lv^;VHP7g+aJC|]72e{?V<sfa:7O5.l2ct^3x-)Z7{jwsg_+DI57g^`:{Q~zYK18R,2Vu~cB;ixW|y}&jS=FDi>N-br@l5lOu}Ysn<mkdB..hc+HMJNe*r$%)+khh5}`h66`aq}Vd?ZLJ%6Pv31sn;mL?LH9l?AUVeirw8BYEexayZEY]qFB;Fj(lq>,[I5UkXOP;Hs{P.lp6?58uVu%|8R&Xh[Tk/gO.>]f;({5gv>p6?5/Uc#4{){JNrob:@ddHXHK|CINX`DdB)5Z]R]<y+Gze6x~wqw|n`a#!/TT@OGuV>p!6G0FP}a^WP+1unO!R4GW6}Dn(=%vKihe{7x2|[|/0js-(;m&)vkzh<y+GzeE^@)z)7d}Ee{NuuQ6pUAWi|nAP/-YHCc_RBvK1>__Wsfk+c#3;AvM$&aIwJM#xX?/?a<]Ht^[3(6IDiC/--<1l!UNO=6eo1w}d#xN+iE3jc]$^V0FPVP8>KEN.~bGyk~rY:1`hs2!j%V1;D|S=LDHMs2!j%V1;r#zY;z#Am(Vm)Vw}v|tW^ni7i/#yuJ9G#{sPW>5:g5r3A#K|7xH/5Gj0WiFeU@L?)xA>6%a<Uh4{jPT=ubv!%2E`}lNv$t%YN1i7n%B..hc+Ec>1c_Z}hc1FUhc+5c>1c_Z}v)[rCR:{G0dPLPi>{!sktl?;euM$$nRAY(CHL`B;=~bPOn?w/--<1ljU+05g(aKB=C7jO~27[GjsA_2W/EW.R]Ep9i8Os^=0<sJa|App7o?78Vtk[l%|ix=ME+,ho1c_%aYE}P}EB;GVBgHAsDh*QLUfvR9VdP}PIw;C6<*Rs8){R1$pHw[sFeeW;C;x>Ae(~H|?K{Q~[s@x*^6Q!D$W8C-=UljUt0Y1QoZ6V?-=uie8m%&w827kI5.l]2KXbxR|.|uVN1g_3DV?.f]2[}:W{]:1qmV?.f]2[}DE3YIDAPtCv>G`K{rjl+TD7kI5}P>#@{EQbP5lPPm-udil{+euuQ@x2P6QtnBP-#iZ``f;4va$&aBANv#<{+@GQ+|QLDJA)*W]<`1;ztlQVDUx:N,2{>2c(N&2B;=syW$nlPg5~+KO@|r${]:1qmV?.fm2@{tx2qmRDytW1NO9m-O]R(s8Ok_TB_%an%9-O~Tyrj#$}D~?/?6.SJCp6~<V$^{~JN^2a7Ch}%;hw}B6`lB_D@kg3j0JBx6vLVgRq#{9$nMWKEi572e{?V<sfa:7kg3j0JBxouVu%|B60jtni7*){TZrc+32hQ}D|Do-Z]4V=;ix_~V;aT&wIbs7~!Hav/%@NkWi{(&>}d)=^levt0Y1QoP:Y-F%pr[}9@u6-ztw/-Xj}ljUC{^Q`DODh*3jlp]2QLg#5{I{BgJa2W}dMFui+7)up#__iCI5LPF2x^QVBgWpdl_$l(LmmEhB&2B;=s5g7o#Azk(=Uh:|Pl9eJa@)~2<]m24{5([s$p=w[sA(i7e-[Z@EBx_u0J7u#{]9B__WKEi5^r4GwTye;[f(V?/T0Jc+kwyW515A",_cSM);
 local _i=1;while _i<#_d do
 local _h=_d:byte(_i);
 local _l=_d:byte(_i+1);
-local _n=_h*256+_l;_KNI[#_KNI+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
-local XK=bit32.band
-local EKH=bit32.lshift
-local UOM=type
-local DEN=table.concat
-local BCWQ=select
-local _=(BCWQ('#'));
-local _=((BCWQ('#'))) ;
-(_KNI[1]):gsub(_KNI[2], function(I1IlII111, ...)
-_WATERMARK = I1IlII111
+local _n=_h*256+_l;_KKJ[#_KKJ+1]=_d:sub(_i+2,_i+1+_n);_i=_i+2+_n end end;
+local CKD=bit32.lshift
+local GGHQ=string.find
+local FYZJ=bit32.bor
+local NKHY=table.sort
+local YI=string.format
+local HDBH=bit32.band
+local HH=setmetatable
+local YHD=select
+local _=(YHD('#')) ;
+(_KKJ[1]):gsub(_KKJ[2], function(lI1IIll1Il, ...)
+_WATERMARK = lI1IIll1Il
 		end);
-local I1IlII111 = game:GetService(_KNI[3]);
-local l1IlII111 = game:GetService(_KNI[4]);
-local IIllII111 = game:GetService(_KNI[5]);
-local lIllII111 = game:GetService(_KNI[6]);
-local IlllII111 = game:GetService(_KNI[7]);
-local llllII111 = I1IlII111[_KNI[8]]
-local I1llII111 = llllII111:WaitForChild(_KNI[9]);
-local l1llII111 = getgenv();
-local II1lII111 = { { [_KNI[10]] = _KNI[11], [_KNI[12]] = _KNI[13] }, { [_KNI[10]] = _KNI[14], [_KNI[12]] = _KNI[15] }, { [_KNI[10]] = _KNI[16], [_KNI[12]] = _KNI[17] }, { [_KNI[10]] = _KNI[18], [_KNI[12]] = _KNI[19] } };
-local lI1lII111 = 0B1
-local Il1lII111 = 0x186
-local ll1lII111 = 0x16D
-local I11lII111 = 0x38
-local l11lII111 = { [_KNI[20]] = Color3[_KNI[21]](0x6, 0x8, 0x12), [_KNI[22]] = Color3[_KNI[21]](0xA, 0B1010, 0x1D), [_KNI[23]] = Color3[_KNI[21]](0xF, 0x13, 0x25), [_KNI[24]] = Color3[_KNI[21]](0x17, 0x1E, 0x39), [_KNI[25]] = Color3[_KNI[21]](0x1D, 0x17, 0x44), [_KNI[26]] = Color3[_KNI[21]](0x43, 0xE5, 0xFF), [_KNI[27]] = Color3[_KNI[21]](0x7E, 0x72, 0xFF), [_KNI[28]] = Color3[_KNI[21]](0x34, 0x44, 0x84), [_KNI[29]] = Color3[_KNI[21]](0xF7, 0xF9, 0xFF), [_KNI[30]] = Color3[_KNI[21]](0x9E, 0xAA, 0xCF), [_KNI[31]] = Color3[_KNI[21]](0x39, 0xF2, 0x96), [_KNI[32]] = Color3[_KNI[21]](0xFF, 0x4A, 0x71) };
-local III1II111 = ColorSequence.new({ ColorSequenceKeypoint.new(0B0, Color3[_KNI[21]](0x43, 0xE5, 0xFF)), ColorSequenceKeypoint.new(.2, Color3[_KNI[21]](0x3E, 0x91, 0xFF)), ColorSequenceKeypoint.new(.4, Color3[_KNI[21]](0x7E, 0x60, 0xFF)), ColorSequenceKeypoint.new(.6, Color3[_KNI[21]](0x36, 0xEE, 0xB8)), ColorSequenceKeypoint.new(.8, Color3[_KNI[21]](0xFF, 0xE2, 0x52)), ColorSequenceKeypoint.new(0B1, Color3[_KNI[21]](0x43, 0xE5, 0xFF)) });
-local lII1II111 = l1llII111[_KNI[33]]
-if lII1II111 and type(lII1II111[_KNI[34]]) == _KNI[35] then
-pcall(lII1II111[_KNI[34]], true)
+local lI1IIll1Il = game:GetService(_KKJ[3]);
+local II1IIll1Il = game:GetService(_KKJ[4]);
+local l11IIll1Il = game:GetService(_KKJ[5]);
+local I11IIll1Il = game:GetService(_KKJ[6]);
+local ll1IIll1Il = game:GetService(_KKJ[7]);
+local Il1IIll1Il = lI1IIll1Il[_KKJ[8]]
+local lIlIIll1Il = Il1IIll1Il:WaitForChild(_KKJ[9]);
+local IIlIIll1Il = getgenv and getgenv() or _G
+local l1lIIll1Il = { _KKJ[10], _KKJ[11], _KKJ[12], _KKJ[13], _KKJ[14], _KKJ[15], _KKJ[16], _KKJ[17] };
+local I1lIIll1Il = { _KKJ[18], _KKJ[19] };
+local lllIIll1Il = .18
+local IllIIll1Il = 0x1CA
+local lII1Ill1Il = 0x18E
+local III1Ill1Il = 0x38
+local l1I1Ill1Il = 0B0
+local I1I1Ill1Il = { [_KKJ[20]] = Color3[_KKJ[21]](0x8, 0x7, 0xD), [_KKJ[22]] = Color3[_KKJ[21]](0xE, 0xB, 0x15), [_KKJ[23]] = Color3[_KKJ[21]](0xA, 0x8, 0x10), [_KKJ[24]] = Color3[_KKJ[21]](0x12, 0xF, 0x1B), [_KKJ[25]] = Color3[_KKJ[21]](0x18, 0x14, 0x23), [_KKJ[26]] = Color3[_KKJ[21]](0x1C, 0x17, 0x28), [_KKJ[27]] = Color3[_KKJ[21]](0x25, 0x1E, 0x34), [_KKJ[28]] = Color3[_KKJ[21]](0x30, 0x22, 0x45), [_KKJ[29]] = Color3[_KKJ[21]](0xA6, 0x6F, 0xFF), [_KKJ[30]] = Color3[_KKJ[21]](0xBC, 0x90, 0xFF), [_KKJ[31]] = Color3[_KKJ[21]](0xE0, 0xCC, 0xFF), [_KKJ[32]] = Color3[_KKJ[21]](0x4C, 0x3E, 0x60), [_KKJ[33]] = Color3[_KKJ[21]](0xD5, 0x63, 0x77), [_KKJ[34]] = Color3[_KKJ[21]](0x19, 0x11, 0x19), [_KKJ[35]] = Color3[_KKJ[21]](0x2D, 0x18, 0x22), [_KKJ[36]] = Color3[_KKJ[21]](0xF7, 0xF4, 0xFA), [_KKJ[37]] = Color3[_KKJ[21]](0xE0, 0xDA, 0xE8), [_KKJ[38]] = Color3[_KKJ[21]](0x91, 0x87, 0x9E), [_KKJ[39]] = Color3[_KKJ[21]](0xB, 0x9, 0x11) };
+local llI1Ill1Il = IIlIIll1Il[_KKJ[40]]
+if llI1Ill1Il and type(llI1Ill1Il[_KKJ[41]]) == _KKJ[42] then
+pcall(llI1Ill1Il[_KKJ[41]], true)
 		end
-local IlI1II111 = {};
-local llI1II111 = { [_KNI[36]] = true, [_KNI[37]] = false, [_KNI[38]] = 0B0, [_KNI[39]] = nil };
-local I1I1II111 = {};
-local l1I1II111 = {};
-local IIl1II111 = false
-local lIl1II111 = false
-local Ill1II111
-local function lll1II111(I1IlII111, ...)
-I1I1II111[#I1I1II111 + 0B1] = I1IlII111
-return I1IlII111
+local IlI1Ill1Il = lIlIIll1Il:FindFirstChild(_KKJ[43])
+if IlI1Ill1Il then
+IlI1Ill1Il:Destroy()
 		end
-local function I1l1II111(...)
-for I1IlII111, l1IlII111 in ipairs(I1I1II111) do
+local lI11Ill1Il = {};
+local II11Ill1Il = { [_KKJ[44]] = true, [_KKJ[45]] = false, [_KKJ[46]] = false, [_KKJ[47]] = 0B0, [_KKJ[48]] = 0B0 };
+local l111Ill1Il = {};
+local I111Ill1Il = false
+local ll11Ill1Il = false
+local function Il11Ill1Il(lI1IIll1Il, ...)
+l111Ill1Il[#l111Ill1Il + 0B1] = lI1IIll1Il
+return lI1IIll1Il
+		end
+local function lIl1Ill1Il(...)
+for lI1IIll1Il, II1IIll1Il in ipairs(l111Ill1Il) do
 pcall(function(...)
-l1IlII111:Disconnect()
+II1IIll1Il:Disconnect()
 				end)
 			end
-table.clear(I1I1II111)
+table.clear(l111Ill1Il)
 		end
-local function l1l1II111(I1IlII111, ...)
+local function IIl1Ill1Il(lI1IIll1Il, ...)
 pcall(function(...)
-IlllII111:SetCore(_KNI[40], { [_KNI[41]] = _KNI[42], [_KNI[43]] = I1IlII111, [_KNI[44]] = 0B11 })
+ll1IIll1Il:SetCore(_KKJ[49], { [_KKJ[50]] = _KKJ[51], [_KKJ[52]] = lI1IIll1Il, [_KKJ[53]] = 0B11 })
 			end)
 		end
-local function II11II111(I1IlII111, l1IlII111, ...)
-local IIllII111 = Instance.new(_KNI[45]);
-IIllII111[_KNI[46]] = UDim.new(0B0, l1IlII111 or 0x8);
-IIllII111.Parent = I1IlII111
-return IIllII111
+local function l1l1Ill1Il(lI1IIll1Il, II1IIll1Il, ...)
+local l11IIll1Il = Instance.new(_KKJ[54]);
+l11IIll1Il[_KKJ[55]] = UDim.new(0B0, II1IIll1Il or 0x8);
+l11IIll1Il.Parent = lI1IIll1Il
+return l11IIll1Il
 		end
-local function lI11II111(I1IlII111, l1IlII111, IIllII111, lIllII111, ...)
-local IlllII111 = Instance.new(_KNI[47]);
-IlllII111.Color = l1IlII111
-IlllII111[_KNI[48]] = IIllII111 or 0B1
-IlllII111[_KNI[49]] = lIllII111 or 0B0
-IlllII111.Parent = I1IlII111
-return IlllII111
+local function I1l1Ill1Il(lI1IIll1Il, II1IIll1Il, l11IIll1Il, I11IIll1Il, ...)
+local ll1IIll1Il = Instance.new(_KKJ[56]);
+ll1IIll1Il.Color = II1IIll1Il
+ll1IIll1Il[_KKJ[57]] = l11IIll1Il or 0B1
+ll1IIll1Il[_KKJ[58]] = I11IIll1Il or 0B0
+ll1IIll1Il.Parent = lI1IIll1Il
+return ll1IIll1Il
 		end
-local function Il11II111(...)
-local I1IlII111 = l1IlII111:FindFirstChild(_KNI[50]);
-local IIllII111 = l1IlII111:FindFirstChild(_KNI[51])
-if not I1IlII111 or not IIllII111 or not IIllII111:IsA(_KNI[52]) then
-return nil, nil
-			end
-return I1IlII111, IIllII111
+local function lll1Ill1Il(...)
+local lI1IIll1Il = II1IIll1Il:FindFirstChild(_KKJ[59]);
+local l11IIll1Il = lI1IIll1Il and lI1IIll1Il:FindFirstChild(_KKJ[60])
+return l11IIll1Il and l11IIll1Il:FindFirstChild(_KKJ[61]) or II1IIll1Il:FindFirstChild(_KKJ[61])
 		end
-local ll11II111 = I1llII111:FindFirstChild(_KNI[53])
-if ll11II111 then
-ll11II111:Destroy()
+local function Ill1Ill1Il(...)
+local lI1IIll1Il = II1IIll1Il:FindFirstChild(_KKJ[62])
+return lI1IIll1Il and lI1IIll1Il:FindFirstChild(_KKJ[63]) or II1IIll1Il:FindFirstChild(_KKJ[63])
 		end
-local I111II111 = Instance.new(_KNI[54]);
-I111II111.Name = _KNI[53]
-I111II111[_KNI[55]] = false
-I111II111[_KNI[56]] = true
-I111II111[_KNI[57]] = 0x3E7
-I111II111[_KNI[58]] = Enum[_KNI[58]][_KNI[59]]
-pcall(function(...)
-I111II111[_KNI[60]] = false
-		end);
-I111II111.Parent = I1llII111
-local l111II111 = 0B11
-local IIIIlI111 = Instance.new(_KNI[61]);
-IIIIlI111.Name = _KNI[62]
-IIIIlI111[_KNI[63]] = Vector2.new(.5, 0B0);
-IIIIlI111[_KNI[64]] = UDim2[_KNI[65]](.5, .5);
-IIIIlI111.Size = UDim2[_KNI[66]](Il1lII111 + l111II111 * 0B10, ll1lII111 + l111II111 * 0B10);
-IIIIlI111[_KNI[67]] = l11lII111.accent
-IIIIlI111[_KNI[68]] = 0B0
-IIIIlI111[_KNI[69]] = true
-IIIIlI111.ZIndex = 0B10
-IIIIlI111.Parent = I111II111
-II11II111(IIIIlI111, 0x10);
-local lIIIlI111 = Instance.new(_KNI[61]);
-lIIIlI111.Name = _KNI[70]
-lIIIlI111[_KNI[63]] = Vector2.new(0B0, 0B0);
-lIIIlI111[_KNI[64]] = UDim2[_KNI[66]](l111II111, l111II111);
-lIIIlI111.Size = UDim2.new(0B1, -l111II111 * 0B10, 0B1, -l111II111 * 0B10);
-lIIIlI111[_KNI[67]] = l11lII111[_KNI[20]]
-lIIIlI111[_KNI[68]] = 0B0
-lIIIlI111[_KNI[69]] = true
-lIIIlI111.ZIndex = 0B11
-lIIIlI111.Parent = IIIIlI111
-II11II111(lIIIlI111, 0xD);
-local IlIIlI111 = Instance.new(_KNI[71]);
-IlIIlI111.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0B0, Color3[_KNI[21]](0xC, 0xF, 0x24)), ColorSequenceKeypoint.new(.52, Color3[_KNI[21]](0x6, 0x8, 0x13)), ColorSequenceKeypoint.new(0B1, Color3[_KNI[21]](0xF, 0x8, 0x1F)) });
-IlIIlI111[_KNI[72]] = 0x7D
-IlIIlI111.Parent = lIIIlI111
-local llIIlI111 = Instance.new(_KNI[73]);
-llIIlI111.Parent = IIIIlI111
-local I1IIlI111 = 0B1
-local function l1IIlI111(...)
-local I1IlII111 = workspace[_KNI[74]]
-local l1IlII111 = I1IlII111 and I1IlII111[_KNI[75]] or Vector2.new(0x500, 0x2D0)
-I1IIlI111 = math.min(0B1, (l1IlII111[_KNI[76]] - 0x12) / (Il1lII111 + l111II111 * 0B10), (l1IlII111[_KNI[77]] - 0x12) / (ll1lII111 + l111II111 * 0B10))
-I1IIlI111 = math.max(.68, I1IIlI111)
-if not IIl1II111 then
-llIIlI111.Scale = I1IIlI111
-			end
-		end
-l1IIlI111()
-if workspace[_KNI[74]] then
-lll1II111((workspace[_KNI[74]]:GetPropertyChangedSignal(_KNI[75])):Connect(l1IIlI111))
-		end
-local IIlIlI111 = Instance.new(_KNI[61]);
-IIlIlI111.Name = _KNI[78]
-IIlIlI111.Size = UDim2.new(0B1, 0B0, 0B0, I11lII111);
-IIlIlI111[_KNI[67]] = l11lII111.header
-IIlIlI111[_KNI[68]] = 0B0
-IIlIlI111.Active = true
-IIlIlI111.ZIndex = 0B11
-IIlIlI111.Parent = lIIIlI111
-II11II111(IIlIlI111, 0xD);
-local lIlIlI111 = Instance.new(_KNI[71]);
-lIlIlI111.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0B0, Color3[_KNI[21]](0x32, 0x16, 0x58)), ColorSequenceKeypoint.new(.5, Color3[_KNI[21]](0xF, 0x11, 0x2D)), ColorSequenceKeypoint.new(0B1, Color3[_KNI[21]](0x7, 0B1011, 0x1B)) });
-lIlIlI111.Parent = IIlIlI111
-local IllIlI111 = Instance.new(_KNI[61]);
-IllIlI111.Size = UDim2[_KNI[66]](0B11, 0x1C);
-IllIlI111[_KNI[64]] = UDim2[_KNI[66]](0xF, 0xE);
-IllIlI111[_KNI[67]] = l11lII111.accent
-IllIlI111[_KNI[68]] = 0B0
-IllIlI111.ZIndex = 0x4
-IllIlI111.Parent = IIlIlI111
-II11II111(IllIlI111, 0B11);
-local lllIlI111 = Instance.new(_KNI[71]);
-lllIlI111.Color = III1II111
-lllIlI111[_KNI[72]] = 0B0
-lllIlI111.Parent = IllIlI111;
-(IIllII111:Create(lllIlI111, TweenInfo.new(0x4, Enum[_KNI[79]].Linear, Enum[_KNI[80]].InOut, -0B1), { [_KNI[72]] = 0x168 })):Play();
-local I1lIlI111 = Instance.new(_KNI[81]);
-I1lIlI111.Size = UDim2.new(0B1, -120, 0B0, 0x14);
-I1lIlI111[_KNI[64]] = UDim2[_KNI[66]](0x1C, 0x9);
-I1lIlI111[_KNI[82]] = 0B1
-I1lIlI111.Text = _KNI[83]
-I1lIlI111[_KNI[84]] = l11lII111.text
-I1lIlI111[_KNI[85]] = Color3[_KNI[21]](0x1F, 0xA, 0x41);
-I1lIlI111[_KNI[86]] = .45
-I1lIlI111.Font = Enum.Font[_KNI[87]]
-I1lIlI111[_KNI[88]] = 0x12
-I1lIlI111[_KNI[89]] = Enum[_KNI[89]].Left
-I1lIlI111.ZIndex = 0x4
-I1lIlI111.Parent = IIlIlI111
-local l1lIlI111 = Instance.new(_KNI[81]);
-l1lIlI111.Size = UDim2.new(0B1, -120, 0B0, 0x10);
-l1lIlI111[_KNI[64]] = UDim2[_KNI[66]](0x1C, 0x1F);
-l1lIlI111[_KNI[82]] = 0B1
-l1lIlI111.Text = _KNI[90]
-l1lIlI111[_KNI[84]] = l11lII111[_KNI[27]]
-l1lIlI111.Font = Enum.Font[_KNI[91]]
-l1lIlI111[_KNI[88]] = 0xB
-l1lIlI111[_KNI[89]] = Enum[_KNI[89]].Left
-l1lIlI111.ZIndex = 0x4
-l1lIlI111.Parent = IIlIlI111
-local II1IlI111 = Instance.new(_KNI[92]);
-II1IlI111.Size = UDim2[_KNI[66]](0x20, 0x20);
-II1IlI111[_KNI[64]] = UDim2.new(0B1, -76, 0B0, 0xC);
-II1IlI111[_KNI[67]] = Color3[_KNI[21]](0x19, 0x1B, 0x3A);
-II1IlI111[_KNI[68]] = 0B0
-II1IlI111.Text = _KNI[93]
-II1IlI111[_KNI[84]] = l11lII111[_KNI[30]]
-II1IlI111.Font = Enum.Font[_KNI[91]]
-II1IlI111[_KNI[88]] = 0x12
-II1IlI111[_KNI[94]] = false
-II1IlI111.ZIndex = 0x5
-II1IlI111.Parent = IIlIlI111
-II11II111(II1IlI111, 0x8);
-local lI1IlI111 = Instance.new(_KNI[92]);
-lI1IlI111.Size = UDim2[_KNI[66]](0x20, 0x20);
-lI1IlI111[_KNI[64]] = UDim2.new(0B1, -40, 0B0, 0xC);
-lI1IlI111[_KNI[67]] = Color3[_KNI[21]](0x2D, 0x15, 0x37);
-lI1IlI111[_KNI[68]] = 0B0
-lI1IlI111.Text = _KNI[76]
-lI1IlI111[_KNI[84]] = l11lII111[_KNI[30]]
-lI1IlI111.Font = Enum.Font[_KNI[91]]
-lI1IlI111[_KNI[88]] = 0xD
-lI1IlI111[_KNI[94]] = false
-lI1IlI111.ZIndex = 0x5
-lI1IlI111.Parent = IIlIlI111
-II11II111(lI1IlI111, 0x8);
-local Il1IlI111 = Instance.new(_KNI[61]);
-Il1IlI111.Name = _KNI[95]
-Il1IlI111.Size = UDim2.new(0B1, -28, 0B1, -72);
-Il1IlI111[_KNI[64]] = UDim2[_KNI[66]](0xE, 0x41);
-Il1IlI111[_KNI[82]] = 0B1
-Il1IlI111.ZIndex = 0B11
-Il1IlI111.Parent = lIIIlI111
-local ll1IlI111 = Instance.new(_KNI[81]);
-ll1IlI111.Size = UDim2.new(0B1, 0B0, 0B0, 0x12);
-ll1IlI111[_KNI[82]] = 0B1
-ll1IlI111.Text = _KNI[96]
-ll1IlI111[_KNI[84]] = l11lII111[_KNI[30]]
-ll1IlI111.Font = Enum.Font[_KNI[91]]
-ll1IlI111[_KNI[88]] = 0xC
-ll1IlI111[_KNI[89]] = Enum[_KNI[89]].Left
-ll1IlI111.ZIndex = 0x4
-ll1IlI111.Parent = Il1IlI111
-local I11IlI111 = Instance.new(_KNI[61]);
-I11IlI111.Size = UDim2.new(0B1, 0B0, 0B0, 0xCE);
-I11IlI111[_KNI[64]] = UDim2[_KNI[66]](0B0, 0x19);
-I11IlI111[_KNI[82]] = 0B1
-I11IlI111.ZIndex = 0B11
-I11IlI111.Parent = Il1IlI111
-local l11IlI111 = Instance.new(_KNI[97]);
-l11IlI111[_KNI[98]] = UDim.new(0B0, 0x6);
-l11IlI111[_KNI[99]] = Enum[_KNI[99]][_KNI[100]]
-l11IlI111.Parent = I11IlI111
-local IIIllI111 = Instance.new(_KNI[92]);
-IIIllI111.Size = UDim2.new(.48, 0B0, 0B0, 0x2C);
-IIIllI111[_KNI[64]] = UDim2[_KNI[66]](0B0, 0xF1);
-IIIllI111[_KNI[67]] = l11lII111.row
-IIIllI111[_KNI[68]] = 0B0
-IIIllI111.Text = _KNI[101]
-IIIllI111[_KNI[84]] = l11lII111.text
-IIIllI111.Font = Enum.Font[_KNI[87]]
-IIIllI111[_KNI[88]] = 0xE
-IIIllI111[_KNI[94]] = false
-IIIllI111.ZIndex = 0x4
-IIIllI111.Parent = Il1IlI111
-II11II111(IIIllI111, 0x9);
-local lIIllI111 = lI11II111(IIIllI111, l11lII111[_KNI[28]], 0B1, .1);
-local IlIllI111 = Instance.new(_KNI[92]);
-IlIllI111.Size = UDim2.new(.48, 0B0, 0B0, 0x2C);
-IlIllI111[_KNI[64]] = UDim2.new(.52, 0B0, 0B0, 0xF1);
-IlIllI111[_KNI[67]] = l11lII111.row
-IlIllI111[_KNI[68]] = 0B0
-IlIllI111.Text = _KNI[102]
-IlIllI111[_KNI[84]] = l11lII111.text
-IlIllI111.Font = Enum.Font[_KNI[87]]
-IlIllI111[_KNI[88]] = 0xD
-IlIllI111[_KNI[94]] = false
-IlIllI111.ZIndex = 0x4
-IlIllI111.Parent = Il1IlI111
-II11II111(IlIllI111, 0x9);
-local llIllI111 = lI11II111(IlIllI111, l11lII111.accent, 0B1, .1);
-local function I1IllI111(...)
-for I1IlII111, l1IlII111 in pairs(l1I1II111) do
-local lIllII111 = llI1II111[_KNI[39]] and llI1II111[_KNI[39]].remote == I1IlII111
-local IlllII111 = TweenInfo.new(.16, Enum[_KNI[79]].Quart, Enum[_KNI[80]].Out);
-(IIllII111:Create(l1IlII111.row, IlllII111, { [_KNI[67]] = lIllII111 and l11lII111[_KNI[25]] or l11lII111.row })):Play();
-(IIllII111:Create(l1IlII111.stroke, IlllII111, { [_KNI[103]] = lIllII111 and l11lII111[_KNI[27]] or l11lII111[_KNI[28]], [_KNI[49]] = lIllII111 and 0B0 or .5 })):Play();
-(IIllII111:Create(l1IlII111.name, IlllII111, { [_KNI[84]] = lIllII111 and l11lII111[_KNI[27]] or l11lII111.text })):Play();
-(IIllII111:Create(l1IlII111.toggle, IlllII111, { [_KNI[67]] = lIllII111 and l11lII111.accent or Color3[_KNI[21]](0x2A, 0x2F, 0x48) })):Play();
-(IIllII111:Create(l1IlII111.knob, IlllII111, { [_KNI[64]] = lIllII111 and UDim2[_KNI[66]](0x16, 0B11) or UDim2[_KNI[66]](0B11, 0B11), [_KNI[67]] = lIllII111 and l11lII111.text or l11lII111[_KNI[30]] })):Play()
-			end
-		end
-for I1IlII111, l1IlII111 in ipairs(II1lII111) do
-local lIllII111 = Instance.new(_KNI[92]);
-lIllII111.Name = _KNI[104] .. I1IlII111
-lIllII111.Size = UDim2.new(0B1, 0B0, 0B0, 0x2F);
-lIllII111[_KNI[67]] = l11lII111.row
-lIllII111[_KNI[68]] = 0B0
-lIllII111.Text = _KNI[105]
-lIllII111[_KNI[94]] = false
-lIllII111[_KNI[100]] = I1IlII111
-lIllII111.ZIndex = 0x4
-lIllII111.Parent = I11IlI111
-II11II111(lIllII111, 0B1001);
-local IlllII111 = lI11II111(lIllII111, l11lII111[_KNI[28]], 0B1, .5);
-local llllII111 = Instance.new(_KNI[81]);
-llllII111.Size = UDim2.new(0B1, -88, 0B1, 0B0);
-llllII111[_KNI[64]] = UDim2[_KNI[66]](0xF, 0B0);
-llllII111[_KNI[82]] = 0B1
-llllII111.Text = l1IlII111[_KNI[10]]
-llllII111[_KNI[84]] = l11lII111.text
-llllII111.Font = Enum.Font[_KNI[91]]
-llllII111[_KNI[88]] = 0xE
-llllII111[_KNI[89]] = Enum[_KNI[89]].Left
-llllII111.ZIndex = 0x5
-llllII111.Parent = lIllII111
-local I1llII111 = Instance.new(_KNI[61]);
-I1llII111.Size = UDim2[_KNI[66]](0x2A, 0x16);
-I1llII111[_KNI[64]] = UDim2.new(0B1, -56, .5, -11);
-I1llII111[_KNI[67]] = Color3[_KNI[21]](0x2A, 0x2F, 0x48);
-I1llII111[_KNI[68]] = 0B0
-I1llII111.ZIndex = 0x5
-I1llII111.Parent = lIllII111
-II11II111(I1llII111, 0xB);
-local l1llII111 = Instance.new(_KNI[61]);
-l1llII111.Size = UDim2[_KNI[66]](0x10, 0x10);
-l1llII111[_KNI[64]] = UDim2[_KNI[66]](0B11, 0B11);
-l1llII111[_KNI[67]] = l11lII111[_KNI[30]]
-l1llII111[_KNI[68]] = 0B0
-l1llII111.ZIndex = 0x6
-l1llII111.Parent = I1llII111
-II11II111(l1llII111, 0x8);
-l1I1II111[l1IlII111.remote] = { [_KNI[23]] = lIllII111, [_KNI[106]] = IlllII111, [_KNI[107]] = llllII111, [_KNI[108]] = I1llII111, [_KNI[109]] = l1llII111 };
-lll1II111(lIllII111[_KNI[110]]:Connect(function(...)
-if llI1II111[_KNI[39]] and llI1II111[_KNI[39]].remote == l1IlII111.remote then
-llI1II111[_KNI[39]] = nil
-if llI1II111[_KNI[37]] then
-Ill1II111(false)
-					end
-				else
-llI1II111[_KNI[39]] = l1IlII111
+local function lIIlIll1Il(lI1IIll1Il, ...)
+local II1IIll1Il = {};
+local l11IIll1Il = lll1Ill1Il()
+for lI1IIll1Il, I11IIll1Il in ipairs(lI1IIll1Il) do
+if not l11IIll1Il or l11IIll1Il:FindFirstChild(I11IIll1Il) then
+II1IIll1Il[#II1IIll1Il + 0B1] = I11IIll1Il
 				end
-I1IllI111()
-			end));
-lll1II111(lIllII111[_KNI[111]]:Connect(function(...)
-if not llI1II111[_KNI[39]] or llI1II111[_KNI[39]].remote ~= l1IlII111.remote then
-(IIllII111:Create(lIllII111, TweenInfo.new(.1), { [_KNI[67]] = l11lII111[_KNI[24]] })):Play()
-				end
-			end));
-lll1II111(lIllII111[_KNI[112]]:Connect(function(...)
-if not llI1II111[_KNI[39]] or llI1II111[_KNI[39]].remote ~= l1IlII111.remote then
-(IIllII111:Create(lIllII111, TweenInfo.new(.1), { [_KNI[67]] = l11lII111.row })):Play()
-				end
-			end))
+			end
+return II1IIll1Il
 		end
-local function l1IllI111(I1IlII111, ...)
-if not llI1II111[_KNI[39]] then
-if I1IlII111 then
-l1l1II111(_KNI[113])
+local function IIIlIll1Il(lI1IIll1Il, II1IIll1Il, ...)
+if type(lI1IIll1Il) ~= _KKJ[64] or lI1IIll1Il == _KKJ[65] then
+if II1IIll1Il then
+IIl1Ill1Il(_KKJ[66])
 				end
 return false
 			end
-local l1IlII111, IIllII111 = Il11II111()
-if not l1IlII111 or not IIllII111 then
-if I1IlII111 then
-l1l1II111(_KNI[114])
+local l11IIll1Il = lll1Ill1Il();
+local I11IIll1Il = Ill1Ill1Il();
+local ll1IIll1Il = l11IIll1Il and l11IIll1Il:FindFirstChild(lI1IIll1Il)
+if not l11IIll1Il or not ll1IIll1Il or not I11IIll1Il or not I11IIll1Il:IsA(_KKJ[67]) then
+if II1IIll1Il then
+IIl1Ill1Il(_KKJ[68])
 				end
 return false
 			end
-local lIllII111 = l1IlII111:FindFirstChild(llI1II111[_KNI[39]].remote)
-if not lIllII111 then
-if I1IlII111 then
-l1l1II111(_KNI[115])
-				end
-return false
-			end
-local IlllII111, llllII111 = pcall(function(...)
-IIllII111:InvokeServer(lIllII111)
+local Il1IIll1Il, lIlIIll1Il = pcall(function(...)
+return I11IIll1Il:InvokeServer(ll1IIll1Il)
 				end)
-if not IlllII111 then
-warn(_KNI[116] .. tostring(llllII111))
-if I1IlII111 then
-l1l1II111(_KNI[117])
+if not Il1IIll1Il then
+warn(_KKJ[69] .. tostring(lIlIIll1Il))
+if II1IIll1Il then
+IIl1Ill1Il(_KKJ[70])
 				end
 			end
-return IlllII111
+return Il1IIll1Il and lIlIIll1Il == true
 		end
-local function IIlllI111(...)
-if llI1II111[_KNI[37]] then
-IlIllI111.Text = _KNI[118]
-IlIllI111[_KNI[67]] = Color3[_KNI[21]](0x14, 0x63, 0x4A);
-llIllI111.Color = l11lII111.green
-			else
-IlIllI111.Text = _KNI[102]
-IlIllI111[_KNI[67]] = l11lII111.row
-llIllI111.Color = l11lII111[_KNI[28]]
+local l1IlIll1Il = Instance.new(_KKJ[71]);
+l1IlIll1Il.Name = _KKJ[43]
+l1IlIll1Il[_KKJ[72]] = false
+l1IlIll1Il[_KKJ[73]] = true
+l1IlIll1Il[_KKJ[74]] = 0x3E7
+l1IlIll1Il[_KKJ[75]] = Enum[_KKJ[75]][_KKJ[76]]
+pcall(function(...)
+l1IlIll1Il[_KKJ[77]] = false
+		end);
+l1IlIll1Il.Parent = lIlIIll1Il
+local I1IlIll1Il = Instance.new(_KKJ[78]);
+I1IlIll1Il.Name = _KKJ[79]
+I1IlIll1Il[_KKJ[80]] = Vector2.new(.5, 0B0);
+I1IlIll1Il[_KKJ[81]] = UDim2.new(.5, 0B0, .5, -math.floor(lII1Ill1Il / 0B10));
+I1IlIll1Il.Size = UDim2[_KKJ[82]](IllIIll1Il + l1I1Ill1Il * 0B10, lII1Ill1Il + l1I1Ill1Il * 0B10);
+I1IlIll1Il[_KKJ[83]] = I1I1Ill1Il.base
+I1IlIll1Il[_KKJ[84]] = 0B0
+I1IlIll1Il[_KKJ[85]] = true
+I1IlIll1Il.ZIndex = 0B10
+I1IlIll1Il.Parent = l1IlIll1Il
+l1l1Ill1Il(I1IlIll1Il, 0x14);
+I1l1Ill1Il(I1IlIll1Il, I1I1Ill1Il.accent, 0B1, .38);
+local llIlIll1Il = Instance.new(_KKJ[78]);
+llIlIll1Il.Name = _KKJ[86]
+llIlIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](l1I1Ill1Il, l1I1Ill1Il);
+llIlIll1Il.Size = UDim2.new(0B1, -l1I1Ill1Il * 0B10, 0B1, -l1I1Ill1Il * 0B10);
+llIlIll1Il[_KKJ[83]] = I1I1Ill1Il.base
+llIlIll1Il[_KKJ[84]] = 0B0
+llIlIll1Il[_KKJ[85]] = true
+llIlIll1Il.ZIndex = 0B11
+llIlIll1Il.Parent = I1IlIll1Il
+l1l1Ill1Il(llIlIll1Il, 0x14);
+local IlIlIll1Il = Instance.new(_KKJ[87]);
+IlIlIll1Il.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0B0, I1I1Ill1Il[_KKJ[22]]), ColorSequenceKeypoint.new(.58, I1I1Ill1Il.base), ColorSequenceKeypoint.new(0B1, Color3[_KKJ[21]](0x5, 0x4, 0x9)) });
+IlIlIll1Il[_KKJ[88]] = 0x69
+IlIlIll1Il.Parent = llIlIll1Il
+local lI1lIll1Il = Instance.new(_KKJ[89]);
+lI1lIll1Il.Parent = I1IlIll1Il
+local II1lIll1Il = 0B1
+local function l11lIll1Il(...)
+local lI1IIll1Il = workspace[_KKJ[90]]
+local II1IIll1Il = lI1IIll1Il and lI1IIll1Il[_KKJ[91]] or Vector2.new(0x500, 0x2D0)
+II1lIll1Il = math.min(0B1, (II1IIll1Il[_KKJ[92]] - 0x12) / (IllIIll1Il + l1I1Ill1Il * 0B10), (II1IIll1Il[_KKJ[93]] - 0x12) / (lII1Ill1Il + l1I1Ill1Il * 0B10))
+II1lIll1Il = math.max(.64, II1lIll1Il)
+if not I111Ill1Il then
+lI1lIll1Il.Scale = II1lIll1Il
 			end
 		end
-Ill1II111 = function(I1IlII111, ...)
-if I1IlII111 and not llI1II111[_KNI[39]] then
-l1l1II111(_KNI[113])
+l11lIll1Il()
+if workspace[_KKJ[90]] then
+Il11Ill1Il((workspace[_KKJ[90]]:GetPropertyChangedSignal(_KKJ[91])):Connect(l11lIll1Il))
+		end
+local I11lIll1Il = Instance.new(_KKJ[78]);
+I11lIll1Il.Name = _KKJ[94]
+I11lIll1Il.Size = UDim2.new(0B1, 0B0, 0B0, III1Ill1Il);
+I11lIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](0B0, 0B0);
+I11lIll1Il[_KKJ[83]] = I1I1Ill1Il.header
+I11lIll1Il[_KKJ[95]] = .2
+I11lIll1Il[_KKJ[84]] = 0B0
+I11lIll1Il.Active = true
+I11lIll1Il.ZIndex = 0x4
+I11lIll1Il.Parent = llIlIll1Il
+l1l1Ill1Il(I11lIll1Il, 0x14);
+local ll1lIll1Il = Instance.new(_KKJ[78]);
+ll1lIll1Il.Size = UDim2.new(0B1, 0B0, 0B0, 0x14);
+ll1lIll1Il[_KKJ[81]] = UDim2.new(0B0, 0B0, 0B1, -20);
+ll1lIll1Il[_KKJ[83]] = I1I1Ill1Il.header
+ll1lIll1Il[_KKJ[95]] = .2
+ll1lIll1Il[_KKJ[84]] = 0B0
+ll1lIll1Il.ZIndex = 0x4
+ll1lIll1Il.Parent = I11lIll1Il
+local Il1lIll1Il = Instance.new(_KKJ[78]);
+Il1lIll1Il.Size = UDim2[_KKJ[82]](0B11, 0x14);
+Il1lIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](0x11, 0x12);
+Il1lIll1Il[_KKJ[83]] = I1I1Ill1Il.accent
+Il1lIll1Il[_KKJ[84]] = 0B0
+Il1lIll1Il.ZIndex = 0x5
+Il1lIll1Il.Parent = I11lIll1Il
+l1l1Ill1Il(Il1lIll1Il, 0B11);
+local lIllIll1Il = Instance.new(_KKJ[96]);
+lIllIll1Il.Size = UDim2.new(0B1, -46, 0B1, 0B0);
+lIllIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](0x1D, 0B0);
+lIllIll1Il[_KKJ[95]] = 0B1
+lIllIll1Il.Text = _KKJ[51]
+lIllIll1Il[_KKJ[97]] = I1I1Ill1Il.white
+lIllIll1Il.Font = Enum.Font[_KKJ[98]]
+lIllIll1Il[_KKJ[99]] = 0x12
+lIllIll1Il[_KKJ[100]] = Enum[_KKJ[100]].Left
+lIllIll1Il.ZIndex = 0x5
+lIllIll1Il.Parent = I11lIll1Il
+local IIllIll1Il = Instance.new(_KKJ[78]);
+IIllIll1Il.Size = UDim2.new(0B1, -32, 0B0, 0B1);
+IIllIll1Il[_KKJ[81]] = UDim2.new(0B0, 0x10, 0B1, -0B1);
+IIllIll1Il[_KKJ[83]] = I1I1Ill1Il.border
+IIllIll1Il[_KKJ[95]] = .48
+IIllIll1Il[_KKJ[84]] = 0B0
+IIllIll1Il.ZIndex = 0x5
+IIllIll1Il.Parent = I11lIll1Il
+local l1llIll1Il = Instance.new(_KKJ[101]);
+l1llIll1Il.Size = UDim2[_KKJ[102]](0B1, 0B1);
+l1llIll1Il[_KKJ[95]] = 0B1
+l1llIll1Il[_KKJ[84]] = 0B0
+l1llIll1Il.Text = _KKJ[65]
+l1llIll1Il[_KKJ[103]] = false
+l1llIll1Il.ZIndex = 0x6
+l1llIll1Il.Parent = I11lIll1Il
+local I1llIll1Il = Instance.new(_KKJ[104]);
+I1llIll1Il.Name = _KKJ[105]
+I1llIll1Il.Size = UDim2.new(0B1, -24, 0B1, -68);
+I1llIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](0xC, 0x3E);
+I1llIll1Il[_KKJ[95]] = 0B1
+I1llIll1Il[_KKJ[84]] = 0B0
+I1llIll1Il[_KKJ[106]] = 0B10
+I1llIll1Il[_KKJ[107]] = I1I1Ill1Il.accent
+I1llIll1Il[_KKJ[108]] = UDim2.new();
+I1llIll1Il[_KKJ[109]] = Enum[_KKJ[110]][_KKJ[93]]
+I1llIll1Il[_KKJ[111]] = Enum[_KKJ[111]][_KKJ[93]]
+I1llIll1Il.ZIndex = 0x4
+I1llIll1Il.Parent = llIlIll1Il
+local llllIll1Il = Instance.new(_KKJ[112]);
+llllIll1Il[_KKJ[113]] = UDim.new(0B0, 0B11);
+llllIll1Il[_KKJ[114]] = UDim.new(0B0, 0x5);
+llllIll1Il[_KKJ[115]] = UDim.new(0B0, 0B1);
+llllIll1Il[_KKJ[116]] = UDim.new(0B0, 0x4);
+llllIll1Il.Parent = I1llIll1Il
+local IlllIll1Il = Instance.new(_KKJ[117]);
+IlllIll1Il[_KKJ[118]] = UDim.new(0B0, 0x9);
+IlllIll1Il[_KKJ[119]] = Enum[_KKJ[119]][_KKJ[120]]
+IlllIll1Il.Parent = I1llIll1Il
+local lIII1ll1Il
+local IIII1ll1Il
+local l1II1ll1Il = 0B0
+local function I1II1ll1Il(lI1IIll1Il, ...)
+if lIII1ll1Il then
+lIII1ll1Il:Cancel()
+			end
+local II1IIll1Il = math.max(0B0, I1llIll1Il[_KKJ[121]][_KKJ[93]] - I1llIll1Il[_KKJ[122]][_KKJ[93]]);
+local I11IIll1Il = math.clamp(lI1IIll1Il, 0B0, II1IIll1Il)
+lIII1ll1Il = l11IIll1Il:Create(I1llIll1Il, TweenInfo.new(.24, Enum[_KKJ[123]].Quart, Enum[_KKJ[124]].Out), { [_KKJ[125]] = Vector2.new(I1llIll1Il[_KKJ[125]][_KKJ[92]], I11IIll1Il) });
+lIII1ll1Il:Play()
+		end
+local function llII1ll1Il(lI1IIll1Il, II1IIll1Il, ...)
+l1II1ll1Il = l1II1ll1Il + 0B1
+local l11IIll1Il = l1II1ll1Il
+if lI1IIll1Il then
+IIII1ll1Il = I1llIll1Il[_KKJ[125]]
+task.defer(function(...)
+task.wait()
+if l11IIll1Il ~= l1II1ll1Il or not II1IIll1Il.Parent then
 return
+					end
+local lI1IIll1Il = II1IIll1Il[_KKJ[126]][_KKJ[93]] - I1llIll1Il[_KKJ[126]][_KKJ[93]]
+I1II1ll1Il((I1llIll1Il[_KKJ[125]][_KKJ[93]] + lI1IIll1Il) - 0x18)
+				end)
+			elseif IIII1ll1Il then
+local lI1IIll1Il = IIII1ll1Il
+IIII1ll1Il = nil
+task.defer(function(...)
+if l11IIll1Il == l1II1ll1Il then
+I1II1ll1Il(lI1IIll1Il[_KKJ[93]])
+					end
+				end)
+			end
+		end
+local IlII1ll1Il = 0B0
+local function lI1I1ll1Il(...)
+IlII1ll1Il = IlII1ll1Il + 0B1
+return IlII1ll1Il
+		end
+local function II1I1ll1Il(lI1IIll1Il, ...)
+local II1IIll1Il = Instance.new(_KKJ[78]);
+II1IIll1Il.Size = UDim2.new(0B1, -5, 0B0, 0B0);
+II1IIll1Il[_KKJ[110]] = Enum[_KKJ[110]][_KKJ[93]]
+II1IIll1Il[_KKJ[83]] = I1I1Ill1Il.panel
+II1IIll1Il[_KKJ[84]] = 0B0
+II1IIll1Il[_KKJ[120]] = lI1I1ll1Il();
+II1IIll1Il.ZIndex = 0x5
+II1IIll1Il.Parent = I1llIll1Il
+l1l1Ill1Il(II1IIll1Il, 0xF);
+I1l1Ill1Il(II1IIll1Il, I1I1Ill1Il.border, 0B1, .42);
+local l11IIll1Il = Instance.new(_KKJ[87]);
+l11IIll1Il.Color = ColorSequence.new(I1I1Ill1Il[_KKJ[25]], I1I1Ill1Il.panel);
+l11IIll1Il[_KKJ[88]] = 0x5A
+l11IIll1Il.Parent = II1IIll1Il
+local I11IIll1Il = Instance.new(_KKJ[112]);
+I11IIll1Il[_KKJ[113]] = UDim.new(0B0, 0xB);
+I11IIll1Il[_KKJ[114]] = UDim.new(0B0, 0xB);
+I11IIll1Il[_KKJ[115]] = UDim.new(0B0, 0xB);
+I11IIll1Il[_KKJ[116]] = UDim.new(0B0, 0xB);
+I11IIll1Il.Parent = II1IIll1Il
+local ll1IIll1Il = Instance.new(_KKJ[117]);
+ll1IIll1Il[_KKJ[118]] = UDim.new(0B0, 0x7);
+ll1IIll1Il[_KKJ[119]] = Enum[_KKJ[119]][_KKJ[120]]
+ll1IIll1Il.Parent = II1IIll1Il
+local Il1IIll1Il = Instance.new(_KKJ[96]);
+Il1IIll1Il.Size = UDim2.new(0B1, 0B0, 0B0, 0x11);
+Il1IIll1Il[_KKJ[95]] = 0B1
+Il1IIll1Il.Text = lI1IIll1Il
+Il1IIll1Il[_KKJ[97]] = I1I1Ill1Il[_KKJ[31]]
+Il1IIll1Il.Font = Enum.Font[_KKJ[127]]
+Il1IIll1Il[_KKJ[99]] = 0xC
+Il1IIll1Il[_KKJ[100]] = Enum[_KKJ[100]].Left
+Il1IIll1Il[_KKJ[120]] = lI1I1ll1Il();
+Il1IIll1Il.ZIndex = 0x6
+Il1IIll1Il.Parent = II1IIll1Il
+return II1IIll1Il
+		end
+local function l11I1ll1Il(lI1IIll1Il, II1IIll1Il, l11IIll1Il, I11IIll1Il, ll1IIll1Il, ...)
+lI1IIll1Il.Size = ll1IIll1Il or UDim2.new(0B1, 0B0, 0B0, II1IIll1Il);
+lI1IIll1Il[_KKJ[83]] = I1I1Ill1Il.row
+lI1IIll1Il[_KKJ[84]] = 0B0
+lI1IIll1Il[_KKJ[120]] = lI1I1ll1Il();
+lI1IIll1Il.ZIndex = 0x5
+lI1IIll1Il.Parent = I11IIll1Il or I1llIll1Il
+l1l1Ill1Il(lI1IIll1Il, 0xA);
+I1l1Ill1Il(lI1IIll1Il, l11IIll1Il or I1I1Ill1Il.border, 0B1, .34)
+return lI1IIll1Il
+		end
+local function I11I1ll1Il(lI1IIll1Il, ...)
+local II1IIll1Il = Instance.new(_KKJ[78]);
+II1IIll1Il.Size = UDim2.new(0B1, 0B0, 0B0, 0x26);
+II1IIll1Il[_KKJ[95]] = 0B1
+II1IIll1Il[_KKJ[84]] = 0B0
+II1IIll1Il[_KKJ[120]] = lI1I1ll1Il();
+II1IIll1Il.ZIndex = 0x5
+II1IIll1Il.Parent = lI1IIll1Il
+local l11IIll1Il = Instance.new(_KKJ[117]);
+l11IIll1Il[_KKJ[128]] = Enum[_KKJ[128]][_KKJ[129]]
+l11IIll1Il[_KKJ[118]] = UDim.new(0B0, 0x7);
+l11IIll1Il[_KKJ[119]] = Enum[_KKJ[119]][_KKJ[120]]
+l11IIll1Il.Parent = II1IIll1Il
+return II1IIll1Il
+		end
+local ll1I1ll1Il = {};
+local function Il1I1ll1Il(lI1IIll1Il, II1IIll1Il, I11IIll1Il, ll1IIll1Il, Il1IIll1Il, lIlIIll1Il, ...)
+local IIlIIll1Il = Instance.new(_KKJ[78]);
+IIlIIll1Il[_KKJ[85]] = true
+l11I1ll1Il(IIlIIll1Il, 0x2A, I11IIll1Il, Il1IIll1Il);
+local l1lIIll1Il = Instance.new(_KKJ[101]);
+l1lIIll1Il.Size = UDim2.new(0B1, 0B0, 0B0, 0x2A);
+l1lIIll1Il[_KKJ[95]] = 0B1
+l1lIIll1Il[_KKJ[84]] = 0B0
+l1lIIll1Il.Text = _KKJ[65]
+l1lIIll1Il[_KKJ[103]] = false
+l1lIIll1Il.ZIndex = 0x6
+l1lIIll1Il.Parent = IIlIIll1Il
+local I1lIIll1Il = Instance.new(_KKJ[96]);
+I1lIIll1Il.Size = UDim2.new(.38, -10, 0B1, 0B0);
+I1lIIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](0xC, 0B0);
+I1lIIll1Il[_KKJ[95]] = 0B1
+I1lIIll1Il.Text = lI1IIll1Il
+I1lIIll1Il[_KKJ[97]] = I1I1Ill1Il.soft
+I1lIIll1Il.Font = Enum.Font[_KKJ[127]]
+I1lIIll1Il[_KKJ[99]] = 0xC
+I1lIIll1Il[_KKJ[100]] = Enum[_KKJ[100]].Left
+I1lIIll1Il.ZIndex = 0x7
+I1lIIll1Il.Parent = l1lIIll1Il
+local lllIIll1Il = Instance.new(_KKJ[96]);
+lllIIll1Il.Size = UDim2.new(.62, -38, 0B1, 0B0);
+lllIIll1Il[_KKJ[81]] = UDim2.new(.38, 0B0, 0B0, 0B0);
+lllIIll1Il[_KKJ[95]] = 0B1
+lllIIll1Il[_KKJ[97]] = ll1IIll1Il
+lllIIll1Il.Font = Enum.Font[_KKJ[127]]
+lllIIll1Il[_KKJ[99]] = 0xC
+lllIIll1Il[_KKJ[130]] = true
+lllIIll1Il[_KKJ[100]] = Enum[_KKJ[100]].Right
+lllIIll1Il.ZIndex = 0x7
+lllIIll1Il.Parent = l1lIIll1Il
+local IllIIll1Il = Instance.new(_KKJ[96]);
+IllIIll1Il.Size = UDim2[_KKJ[82]](0x19, 0x2A);
+IllIIll1Il[_KKJ[81]] = UDim2.new(0B1, -29, 0B0, 0B0);
+IllIIll1Il[_KKJ[95]] = 0B1
+IllIIll1Il.Text = _KKJ[131]
+IllIIll1Il[_KKJ[97]] = I11IIll1Il
+IllIIll1Il.Font = Enum.Font[_KKJ[127]]
+IllIIll1Il[_KKJ[99]] = 0xD
+IllIIll1Il.ZIndex = 0x7
+IllIIll1Il.Parent = l1lIIll1Il
+local lII1Ill1Il = Instance.new(_KKJ[104]);
+lII1Ill1Il.Size = UDim2.new(0B1, -12, 0B0, 0B0);
+lII1Ill1Il[_KKJ[81]] = UDim2[_KKJ[82]](0x6, 0x2A);
+lII1Ill1Il[_KKJ[83]] = I1I1Ill1Il.base
+lII1Ill1Il[_KKJ[95]] = 0B0
+lII1Ill1Il[_KKJ[84]] = 0B0
+lII1Ill1Il[_KKJ[106]] = 0B10
+lII1Ill1Il[_KKJ[107]] = I11IIll1Il
+lII1Ill1Il[_KKJ[108]] = UDim2.new();
+lII1Ill1Il[_KKJ[132]] = false
+lII1Ill1Il.ZIndex = 0x7
+lII1Ill1Il.Parent = IIlIIll1Il
+l1l1Ill1Il(lII1Ill1Il, 0xA);
+I1l1Ill1Il(lII1Ill1Il, I11IIll1Il, 0B1, .28);
+local III1Ill1Il = Instance.new(_KKJ[117]);
+III1Ill1Il[_KKJ[119]] = Enum[_KKJ[119]][_KKJ[120]]
+III1Ill1Il[_KKJ[118]] = UDim.new(0B0, 0B11);
+III1Ill1Il.Parent = lII1Ill1Il
+local l1I1Ill1Il = Instance.new(_KKJ[112]);
+l1I1Ill1Il[_KKJ[113]] = UDim.new(0B0, 0x4);
+l1I1Ill1Il[_KKJ[114]] = UDim.new(0B0, 0x4);
+l1I1Ill1Il[_KKJ[115]] = UDim.new(0B0, 0x4);
+l1I1Ill1Il[_KKJ[116]] = UDim.new(0B0, 0x4);
+l1I1Ill1Il.Parent = lII1Ill1Il
+local llI1Ill1Il = { [_KKJ[133]] = II1IIll1Il or {}, [_KKJ[134]] = 0B1, [_KKJ[135]] = false };
+local function IlI1Ill1Il(...)
+return llI1Ill1Il.values[llI1Ill1Il.index]
+			end
+local function lI11Ill1Il(...)
+lllIIll1Il.Text = IlI1Ill1Il() or _KKJ[136]
+			end
+local function II11Ill1Il(...)
+for lI1IIll1Il, II1IIll1Il in ipairs(ll1I1ll1Il) do
+if II1IIll1Il ~= llI1Ill1Il and II1IIll1Il.IsOpen() then
+II1IIll1Il[_KKJ[137]](false)
+					end
 				end
-llI1II111[_KNI[37]] = I1IlII111 == true
-llI1II111[_KNI[38]] = llI1II111[_KNI[38]] + 0B1
-local l1IlII111 = llI1II111[_KNI[38]]
-IIlllI111()
-if llI1II111[_KNI[37]] then
-task.spawn(function(...)
-while llI1II111[_KNI[36]] and (llI1II111[_KNI[37]] and llI1II111[_KNI[38]] == l1IlII111) do
-l1IllI111(false);
-task.wait(lI1lII111)
+			end
+local l111Ill1Il
+local function I111Ill1Il(lI1IIll1Il, ...)
+local II1IIll1Il = llI1Ill1Il.open
+if lI1IIll1Il then
+II11Ill1Il()
+				end
+llI1Ill1Il.open = lI1IIll1Il == true and #llI1Ill1Il.values > 0B0
+local l11IIll1Il = math.min(#llI1Ill1Il.values, 0x5) * 0x1F + 0x8
+lII1Ill1Il[_KKJ[132]] = llI1Ill1Il.open
+lII1Ill1Il.Size = UDim2.new(0B1, -12, 0B0, llI1Ill1Il.open and l11IIll1Il or 0B0);
+IIlIIll1Il.Size = UDim2.new(0B1, 0B0, 0B0, 0x2A + (llI1Ill1Il.open and l11IIll1Il or 0B0));
+IllIIll1Il.Text = llI1Ill1Il.open and _KKJ[138] or _KKJ[131]
+if II1IIll1Il ~= llI1Ill1Il.open and lIlIIll1Il then
+lIlIIll1Il(llI1Ill1Il.open, IIlIIll1Il)
+				end
+			end
+l111Ill1Il = function(...)
+for lI1IIll1Il, II1IIll1Il in ipairs(lII1Ill1Il:GetChildren()) do
+if II1IIll1Il:IsA(_KKJ[101]) then
+II1IIll1Il:Destroy()
 						end
-					end)
-				end
-			end
-local function lIlllI111(I1IlII111, ...)
-local l1IlII111 = TweenInfo.new(.24, Enum[_KNI[79]].Quart, Enum[_KNI[80]].Out);
-(IIllII111:Create(IIIIlI111, l1IlII111, { [_KNI[119]] = UDim2[_KNI[66]](Il1lII111 + l111II111 * 0B10, I1IlII111 + l111II111 * 0B10) })):Play()
-		end
-local function IllllI111(I1IlII111, ...)
-if IIl1II111 or lIl1II111 == I1IlII111 then
-return
-			end
-lIl1II111 = I1IlII111
-II1IlI111.Text = lIl1II111 and _KNI[120] or _KNI[93]
-if lIl1II111 then
-lIlllI111(I11lII111);
-task.delay(.18, function(...)
-if lIl1II111 and not IIl1II111 then
-Il1IlI111[_KNI[121]] = false
 					end
-				end)
-			else
-Il1IlI111[_KNI[121]] = true
-lIlllI111(ll1lII111)
-			end
-		end
-local lllllI111 = false
-local I1lllI111 = nil
-local l1lllI111 = nil
-lll1II111(IIlIlI111[_KNI[122]]:Connect(function(I1IlII111, ...)
-if I1IlII111[_KNI[123]] == Enum[_KNI[123]][_KNI[124]] or I1IlII111[_KNI[123]] == Enum[_KNI[123]].Touch then
-lllllI111 = true
-I1lllI111 = I1IlII111[_KNI[64]]
-l1lllI111 = IIIIlI111[_KNI[64]]
-			end
-		end));
-lll1II111(lIllII111[_KNI[125]]:Connect(function(I1IlII111, ...)
-if lllllI111 and (I1IlII111[_KNI[123]] == Enum[_KNI[123]][_KNI[126]] or I1IlII111[_KNI[123]] == Enum[_KNI[123]].Touch) then
-local l1IlII111 = I1IlII111[_KNI[64]] - I1lllI111
-local IIllII111 = UDim2.new(l1lllI111[_KNI[76]].Scale, l1lllI111[_KNI[76]].Offset + l1IlII111[_KNI[76]], l1lllI111[_KNI[77]].Scale, l1lllI111[_KNI[77]].Offset + l1IlII111[_KNI[77]]);
-IIIIlI111[_KNI[64]] = IIllII111
-			end
-		end));
-lll1II111(lIllII111[_KNI[127]]:Connect(function(I1IlII111, ...)
-if I1IlII111[_KNI[123]] == Enum[_KNI[123]][_KNI[124]] or I1IlII111[_KNI[123]] == Enum[_KNI[123]].Touch then
-lllllI111 = false
-			end
-		end));
-local function II1llI111(I1IlII111, l1IlII111, ...)
-for I1IlII111, lIllII111 in ipairs(I1IlII111:GetDescendants()) do
-pcall(function(...)
-if lIllII111:IsA(_KNI[81]) or lIllII111:IsA(_KNI[92]) or lIllII111:IsA(_KNI[128]) then
-(IIllII111:Create(lIllII111, l1IlII111, { [_KNI[129]] = 0B1, [_KNI[86]] = 0B1, [_KNI[82]] = 0B1 })):Play()
-					elseif lIllII111:IsA(_KNI[130]) or lIllII111:IsA(_KNI[131]) then
-(IIllII111:Create(lIllII111, l1IlII111, { [_KNI[132]] = 0B1, [_KNI[82]] = 0B1 })):Play()
-					elseif lIllII111:IsA(_KNI[133]) then
-(IIllII111:Create(lIllII111, l1IlII111, { [_KNI[82]] = 0B1 })):Play()
-					elseif lIllII111:IsA(_KNI[47]) then
-(IIllII111:Create(lIllII111, l1IlII111, { [_KNI[49]] = 0B1 })):Play()
+for lI1IIll1Il, II1IIll1Il in ipairs(llI1Ill1Il.values) do
+local Il1IIll1Il = Instance.new(_KKJ[101]);
+Il1IIll1Il.Size = UDim2.new(0B1, -8, 0B0, 0x1C);
+Il1IIll1Il[_KKJ[83]] = lI1IIll1Il == llI1Ill1Il.index and I1I1Ill1Il[_KKJ[28]] or I1I1Ill1Il[_KKJ[25]]
+Il1IIll1Il[_KKJ[84]] = 0B0
+Il1IIll1Il.Text = II1IIll1Il
+Il1IIll1Il[_KKJ[97]] = lI1IIll1Il == llI1Ill1Il.index and ll1IIll1Il or I1I1Ill1Il.soft
+Il1IIll1Il.Font = Enum.Font[_KKJ[127]]
+Il1IIll1Il[_KKJ[99]] = 0xB
+Il1IIll1Il[_KKJ[130]] = true
+Il1IIll1Il[_KKJ[103]] = false
+Il1IIll1Il[_KKJ[120]] = lI1IIll1Il
+Il1IIll1Il.ZIndex = 0x8
+Il1IIll1Il.Parent = lII1Ill1Il
+l1l1Ill1Il(Il1IIll1Il, 0x8);
+I1l1Ill1Il(Il1IIll1Il, lI1IIll1Il == llI1Ill1Il.index and I11IIll1Il or I1I1Ill1Il.border, 0B1, .32);
+Il11Ill1Il(Il1IIll1Il[_KKJ[139]]:Connect(function(...)
+llI1Ill1Il.index = lI1IIll1Il
+lI11Ill1Il();
+I111Ill1Il(false);
+l111Ill1Il()
+						end));
+Il11Ill1Il(Il1IIll1Il[_KKJ[140]]:Connect(function(...)
+(l11IIll1Il:Create(Il1IIll1Il, TweenInfo.new(.08), { [_KKJ[83]] = lI1IIll1Il == llI1Ill1Il.index and I1I1Ill1Il[_KKJ[28]] or I1I1Ill1Il[_KKJ[27]] })):Play()
+						end));
+Il11Ill1Il(Il1IIll1Il[_KKJ[141]]:Connect(function(...)
+(l11IIll1Il:Create(Il1IIll1Il, TweenInfo.new(.08), { [_KKJ[83]] = lI1IIll1Il == llI1Ill1Il.index and I1I1Ill1Il[_KKJ[28]] or I1I1Ill1Il[_KKJ[25]] })):Play()
+						end))
 					end
-				end)
-			end
-		end
-local function lI1llI111(I1IlII111, ...)
-if IIl1II111 then
-return
-			end
-IIl1II111 = true
-llI1II111[_KNI[36]] = false
-llI1II111[_KNI[37]] = false
-llI1II111[_KNI[38]] = llI1II111[_KNI[38]] + 0B1
-I1l1II111()
-if l1llII111[_KNI[33]] == IlI1II111 then
-l1llII111[_KNI[33]] = nil
-			end
-if I1IlII111 then
-I111II111:Destroy()
-return
-			end
-local l1IlII111 = TweenInfo.new(.32, Enum[_KNI[79]].Quart, Enum[_KNI[80]].In);
-local lIllII111 = IIIIlI111.Size[_KNI[76]].Offset
-local IlllII111 = IIIIlI111.Size[_KNI[77]].Offset
-local llllII111 = math.floor(lIllII111 * .84);
-local I1llII111 = math.floor(IlllII111 * .84);
-local II1lII111 = UDim2.new(IIIIlI111[_KNI[64]][_KNI[76]].Scale, IIIIlI111[_KNI[64]][_KNI[76]].Offset, IIIIlI111[_KNI[64]][_KNI[77]].Scale, IIIIlI111[_KNI[64]][_KNI[77]].Offset + ((IlllII111 - I1llII111) * I1IIlI111) / 0B10);
-II1llI111(IIIIlI111, l1IlII111);
-(IIllII111:Create(IIIIlI111, l1IlII111, { [_KNI[119]] = UDim2[_KNI[66]](llllII111, I1llII111), [_KNI[64]] = II1lII111, [_KNI[82]] = 0B1 })):Play();
-task.delay(.35, function(...)
-if I111II111 and I111II111.Parent then
-I111II111:Destroy()
+lII1Ill1Il[_KKJ[108]] = UDim2[_KKJ[82]](0B0, #llI1Ill1Il.values * 0x1F + 0x8)
 				end
-			end)
-		end
-IlI1II111[_KNI[34]] = lI1llI111
-IlI1II111[_KNI[134]] = Ill1II111
-IlI1II111[_KNI[135]] = function(...)
-return l1IllI111(false)
+function llI1Ill1Il.Get(...)
+return IlI1Ill1Il()
 			end
-IlI1II111[_KNI[136]] = function(I1IlII111, ...)
-for l1IlII111, IIllII111 in ipairs(II1lII111) do
-if IIllII111[_KNI[10]] == I1IlII111 or IIllII111.remote == I1IlII111 then
-llI1II111[_KNI[39]] = IIllII111
-I1IllI111()
+function llI1Ill1Il.Set(lI1IIll1Il, ...)
+for II1IIll1Il, l11IIll1Il in ipairs(llI1Ill1Il.values) do
+if l11IIll1Il == lI1IIll1Il then
+llI1Ill1Il.index = II1IIll1Il
+lI11Ill1Il();
+l111Ill1Il()
 return true
 					end
 				end
 return false
 			end
-l1llII111[_KNI[33]] = IlI1II111
-lll1II111(II1IlI111[_KNI[110]]:Connect(function(...)
-IllllI111(not lIl1II111)
-		end));
-lll1II111(lI1IlI111[_KNI[110]]:Connect(function(...)
-lI1llI111(false)
-		end));
-lll1II111(IIIllI111[_KNI[110]]:Connect(function(...)
-l1IllI111(true)
-		end));
-lll1II111(IlIllI111[_KNI[110]]:Connect(function(...)
-Ill1II111(not llI1II111[_KNI[37]])
-		end));
-lll1II111(IIIllI111[_KNI[111]]:Connect(function(...)
-(IIllII111:Create(IIIllI111, TweenInfo.new(.1), { [_KNI[67]] = l11lII111[_KNI[24]] })):Play();
-(IIllII111:Create(lIIllI111, TweenInfo.new(.1), { [_KNI[103]] = l11lII111.accent })):Play()
-		end));
-lll1II111(IIIllI111[_KNI[112]]:Connect(function(...)
-(IIllII111:Create(IIIllI111, TweenInfo.new(.1), { [_KNI[67]] = l11lII111.row })):Play();
-(IIllII111:Create(lIIllI111, TweenInfo.new(.1), { [_KNI[103]] = l11lII111[_KNI[28]] })):Play()
-		end));
-lll1II111(II1IlI111[_KNI[111]]:Connect(function(...)
-(IIllII111:Create(II1IlI111, TweenInfo.new(.1), { [_KNI[67]] = Color3[_KNI[21]](0x27, 0x34, 0x66), [_KNI[84]] = l11lII111.accent })):Play()
-		end));
-lll1II111(II1IlI111[_KNI[112]]:Connect(function(...)
-(IIllII111:Create(II1IlI111, TweenInfo.new(.1), { [_KNI[67]] = Color3[_KNI[21]](0x19, 0x1B, 0x3A), [_KNI[84]] = l11lII111[_KNI[30]] })):Play()
-		end));
-lll1II111(lI1IlI111[_KNI[111]]:Connect(function(...)
-(IIllII111:Create(lI1IlI111, TweenInfo.new(.1), { [_KNI[67]] = Color3[_KNI[21]](0x5B, 0x19, 0x3A), [_KNI[84]] = l11lII111.red })):Play()
-		end));
-lll1II111(lI1IlI111[_KNI[112]]:Connect(function(...)
-(IIllII111:Create(lI1IlI111, TweenInfo.new(.1), { [_KNI[67]] = Color3[_KNI[21]](0x2D, 0x15, 0x37), [_KNI[84]] = l11lII111[_KNI[30]] })):Play()
-		end));
-lll1II111(IlIllI111[_KNI[111]]:Connect(function(...)
-local I1IlII111 = llI1II111[_KNI[37]] and Color3[_KNI[21]](0x1B, 0x7E, 0x5A) or l11lII111[_KNI[24]];
-(IIllII111:Create(IlIllI111, TweenInfo.new(.1), { [_KNI[67]] = I1IlII111 })):Play()
-		end));
-lll1II111(IlIllI111[_KNI[112]]:Connect(function(...)
-IIlllI111()
-		end));
-lll1II111(I111II111[_KNI[137]]:Connect(function(I1IlII111, l1IlII111, ...)
-if not l1IlII111 and not IIl1II111 then
-lI1llI111(true)
+function llI1Ill1Il.SetValues(lI1IIll1Il, II1IIll1Il, ...)
+local l11IIll1Il = II1IIll1Il and IlI1Ill1Il() or nil
+llI1Ill1Il.values = lI1IIll1Il or {};
+llI1Ill1Il.index = 0B1
+if l11IIll1Il then
+for lI1IIll1Il, II1IIll1Il in ipairs(llI1Ill1Il.values) do
+if II1IIll1Il == l11IIll1Il then
+llI1Ill1Il.index = lI1IIll1Il
+break
+						end
+					end
+				end
+I111Ill1Il(false);
+lI11Ill1Il();
+l111Ill1Il()
+			end
+function llI1Ill1Il.SetOpen(lI1IIll1Il, ...)
+I111Ill1Il(lI1IIll1Il)
+			end
+function llI1Ill1Il.IsOpen(...)
+return llI1Ill1Il.open
+			end
+Il11Ill1Il(l1lIIll1Il[_KKJ[139]]:Connect(function(...)
+I111Ill1Il(not llI1Ill1Il.open)
+			end));
+Il11Ill1Il(l1lIIll1Il[_KKJ[140]]:Connect(function(...)
+(l11IIll1Il:Create(IIlIIll1Il, TweenInfo.new(.1), { [_KKJ[83]] = I1I1Ill1Il[_KKJ[27]] })):Play()
+			end));
+Il11Ill1Il(l1lIIll1Il[_KKJ[141]]:Connect(function(...)
+(l11IIll1Il:Create(IIlIIll1Il, TweenInfo.new(.1), { [_KKJ[83]] = I1I1Ill1Il.row })):Play()
+			end));
+ll1I1ll1Il[#ll1I1ll1Il + 0B1] = llI1Ill1Il
+lI11Ill1Il();
+l111Ill1Il()
+return llI1Ill1Il
+		end
+local function lIlI1ll1Il(lI1IIll1Il, II1IIll1Il, I11IIll1Il, ...)
+I11IIll1Il = I11IIll1Il or {};
+local ll1IIll1Il = I11IIll1Il.normal or I1I1Ill1Il.accent
+local Il1IIll1Il = I11IIll1Il.hover or I1I1Ill1Il[_KKJ[30]]
+local lIlIIll1Il = I11IIll1Il.text or I1I1Ill1Il.base
+local IIlIIll1Il = I11IIll1Il[_KKJ[142]] or I11IIll1Il.accent or I1I1Ill1Il[_KKJ[31]]
+local l1lIIll1Il = Instance.new(_KKJ[101]);
+l11I1ll1Il(l1lIIll1Il, I11IIll1Il.height or 0x26, I11IIll1Il.stroke or I11IIll1Il.accent or I1I1Ill1Il.border, I11IIll1Il.parent, I11IIll1Il.size);
+l1lIIll1Il[_KKJ[83]] = ll1IIll1Il
+l1lIIll1Il.Text = lI1IIll1Il
+l1lIIll1Il[_KKJ[97]] = lIlIIll1Il
+l1lIIll1Il.Font = Enum.Font[_KKJ[127]]
+l1lIIll1Il[_KKJ[99]] = 0xC
+l1lIIll1Il[_KKJ[103]] = false
+Il11Ill1Il(l1lIIll1Il[_KKJ[139]]:Connect(II1IIll1Il));
+Il11Ill1Il(l1lIIll1Il[_KKJ[140]]:Connect(function(...)
+(l11IIll1Il:Create(l1lIIll1Il, TweenInfo.new(.1), { [_KKJ[83]] = Il1IIll1Il, [_KKJ[97]] = IIlIIll1Il })):Play()
+			end));
+Il11Ill1Il(l1lIIll1Il[_KKJ[141]]:Connect(function(...)
+(l11IIll1Il:Create(l1lIIll1Il, TweenInfo.new(.1), { [_KKJ[83]] = ll1IIll1Il, [_KKJ[97]] = lIlIIll1Il })):Play()
+			end))
+return l1lIIll1Il
+		end
+local function IIlI1ll1Il(lI1IIll1Il, II1IIll1Il, I11IIll1Il, ll1IIll1Il, Il1IIll1Il, lIlIIll1Il, ...)
+local IIlIIll1Il = Instance.new(_KKJ[101]);
+l11I1ll1Il(IIlIIll1Il, 0x26, I1I1Ill1Il.border, Il1IIll1Il, lIlIIll1Il);
+IIlIIll1Il.Text = _KKJ[65]
+IIlIIll1Il[_KKJ[103]] = false
+local l1lIIll1Il = Instance.new(_KKJ[96]);
+l1lIIll1Il.Size = UDim2.new(0B1, -63, 0B1, 0B0);
+l1lIIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](0xB, 0B0);
+l1lIIll1Il[_KKJ[95]] = 0B1
+l1lIIll1Il.Text = lI1IIll1Il
+l1lIIll1Il[_KKJ[97]] = I1I1Ill1Il.soft
+l1lIIll1Il.Font = Enum.Font[_KKJ[127]]
+l1lIIll1Il[_KKJ[99]] = 0xB
+l1lIIll1Il[_KKJ[100]] = Enum[_KKJ[100]].Left
+l1lIIll1Il.ZIndex = 0x6
+l1lIIll1Il.Parent = IIlIIll1Il
+local I1lIIll1Il = Instance.new(_KKJ[78]);
+I1lIIll1Il.Size = UDim2[_KKJ[82]](0x28, 0x16);
+I1lIIll1Il[_KKJ[81]] = UDim2.new(0B1, -50, .5, -11);
+I1lIIll1Il[_KKJ[83]] = I1I1Ill1Il.track
+I1lIIll1Il[_KKJ[84]] = 0B0
+I1lIIll1Il.ZIndex = 0x6
+I1lIIll1Il.Parent = IIlIIll1Il
+l1l1Ill1Il(I1lIIll1Il, 0xB);
+I1l1Ill1Il(I1lIIll1Il, I1I1Ill1Il.border, 0B1, .42);
+local lllIIll1Il = Instance.new(_KKJ[78]);
+lllIIll1Il.Size = UDim2[_KKJ[82]](0x10, 0x10);
+lllIIll1Il[_KKJ[81]] = UDim2[_KKJ[82]](0B11, 0B11);
+lllIIll1Il[_KKJ[83]] = I1I1Ill1Il.dim
+lllIIll1Il[_KKJ[84]] = 0B0
+lllIIll1Il.ZIndex = 0x7
+lllIIll1Il.Parent = I1lIIll1Il
+l1l1Ill1Il(lllIIll1Il, 0x8);
+local IllIIll1Il = false
+local lII1Ill1Il = {};
+local function III1Ill1Il(...)
+(l11IIll1Il:Create(I1lIIll1Il, TweenInfo.new(.14), { [_KKJ[83]] = IllIIll1Il and I11IIll1Il or I1I1Ill1Il.track })):Play();
+(l11IIll1Il:Create(lllIIll1Il, TweenInfo.new(.14), { [_KKJ[81]] = IllIIll1Il and UDim2[_KKJ[82]](0x15, 0B11) or UDim2[_KKJ[82]](0B11, 0B11), [_KKJ[83]] = IllIIll1Il and I1I1Ill1Il.white or I1I1Ill1Il.dim })):Play();
+l1lIIll1Il[_KKJ[97]] = IllIIll1Il and ll1IIll1Il or I1I1Ill1Il.dim
+			end
+function lII1Ill1Il.Set(lI1IIll1Il, l11IIll1Il, ...)
+IllIIll1Il = lI1IIll1Il == true
+III1Ill1Il()
+if not l11IIll1Il then
+pcall(II1IIll1Il, IllIIll1Il)
+				end
+			end
+function lII1Ill1Il.Get(...)
+return IllIIll1Il
+			end
+Il11Ill1Il(IIlIIll1Il[_KKJ[139]]:Connect(function(...)
+lII1Ill1Il.Set(not IllIIll1Il, false)
+			end));
+Il11Ill1Il(IIlIIll1Il[_KKJ[140]]:Connect(function(...)
+(l11IIll1Il:Create(IIlIIll1Il, TweenInfo.new(.1), { [_KKJ[83]] = I1I1Ill1Il[_KKJ[27]] })):Play()
+			end));
+Il11Ill1Il(IIlIIll1Il[_KKJ[141]]:Connect(function(...)
+(l11IIll1Il:Create(IIlIIll1Il, TweenInfo.new(.1), { [_KKJ[83]] = I1I1Ill1Il.row })):Play()
+			end));
+III1Ill1Il()
+return lII1Ill1Il
+		end
+local l1lI1ll1Il = function(...)
+
+			end
+local I1lI1ll1Il = II1I1ll1Il(_KKJ[143]);
+local lllI1ll1Il = Il1I1ll1Il(_KKJ[144], lIIlIll1Il(l1lIIll1Il), I1I1Ill1Il.accent, I1I1Ill1Il[_KKJ[31]], I1lI1ll1Il);
+local IllI1ll1Il = I11I1ll1Il(I1lI1ll1Il);
+lIlI1ll1Il(_KKJ[145], function(...)
+IIIlIll1Il(lllI1ll1Il.Get(), true)
+		end, { [_KKJ[29]] = I1I1Ill1Il.accent, [_KKJ[146]] = I1I1Ill1Il.accent, [_KKJ[147]] = I1I1Ill1Il[_KKJ[30]], [_KKJ[148]] = I1I1Ill1Il.base, [_KKJ[142]] = I1I1Ill1Il.base, [_KKJ[149]] = I1I1Ill1Il.accent, [_KKJ[150]] = IllI1ll1Il, [_KKJ[151]] = UDim2.new(.43, -4, 0B1, 0B0) });
+local lII11ll1Il
+lII11ll1Il = IIlI1ll1Il(_KKJ[152], function(lI1IIll1Il, ...)
+if lI1IIll1Il and not lllI1ll1Il.Get() then
+IIl1Ill1Il(_KKJ[153]);
+lII11ll1Il.Set(false, true)
+return
+				end
+II11Ill1Il[_KKJ[45]] = lI1IIll1Il
+II11Ill1Il[_KKJ[47]] = II11Ill1Il[_KKJ[47]] + 0B1
+local II1IIll1Il = II11Ill1Il[_KKJ[47]]
+if lI1IIll1Il then
+task.spawn(function(...)
+while II11Ill1Il[_KKJ[44]] and (II11Ill1Il[_KKJ[45]] and II11Ill1Il[_KKJ[47]] == II1IIll1Il) do
+IIIlIll1Il(lllI1ll1Il.Get(), false);
+task.wait(lllIIll1Il)
+						end
+					end)
+				end
+			end, I1I1Ill1Il.accent, I1I1Ill1Il[_KKJ[31]], IllI1ll1Il, UDim2.new(.57, -0B11, 0B1, 0B0));
+local III11ll1Il = II1I1ll1Il(_KKJ[154]);
+local l1I11ll1Il = Il1I1ll1Il(_KKJ[155], lIIlIll1Il(I1lIIll1Il), I1I1Ill1Il.accent, I1I1Ill1Il[_KKJ[31]], III11ll1Il, llII1ll1Il);
+local I1I11ll1Il = I11I1ll1Il(III11ll1Il);
+lIlI1ll1Il(_KKJ[156], function(...)
+IIIlIll1Il(l1I11ll1Il.Get(), true)
+		end, { [_KKJ[29]] = I1I1Ill1Il.accent, [_KKJ[146]] = I1I1Ill1Il.accent, [_KKJ[147]] = I1I1Ill1Il[_KKJ[30]], [_KKJ[148]] = I1I1Ill1Il.base, [_KKJ[142]] = I1I1Ill1Il.base, [_KKJ[149]] = I1I1Ill1Il.accent, [_KKJ[150]] = I1I11ll1Il, [_KKJ[151]] = UDim2.new(.43, -4, 0B1, 0B0) });
+local llI11ll1Il
+llI11ll1Il = IIlI1ll1Il(_KKJ[152], function(lI1IIll1Il, ...)
+if lI1IIll1Il and not l1I11ll1Il.Get() then
+IIl1Ill1Il(_KKJ[157]);
+llI11ll1Il.Set(false, true)
+return
+				end
+II11Ill1Il[_KKJ[46]] = lI1IIll1Il
+II11Ill1Il[_KKJ[48]] = II11Ill1Il[_KKJ[48]] + 0B1
+local II1IIll1Il = II11Ill1Il[_KKJ[48]]
+if lI1IIll1Il then
+task.spawn(function(...)
+while II11Ill1Il[_KKJ[44]] and (II11Ill1Il[_KKJ[46]] and II11Ill1Il[_KKJ[48]] == II1IIll1Il) do
+IIIlIll1Il(l1I11ll1Il.Get(), false);
+task.wait(lllIIll1Il)
+						end
+					end)
+				end
+			end, I1I1Ill1Il.accent, I1I1Ill1Il[_KKJ[31]], I1I11ll1Il, UDim2.new(.57, -0B11, 0B1, 0B0));
+lIlI1ll1Il(_KKJ[158], function(...)
+l1lI1ll1Il()
+		end, { [_KKJ[146]] = I1I1Ill1Il.danger, [_KKJ[147]] = I1I1Ill1Il[_KKJ[35]], [_KKJ[148]] = I1I1Ill1Il.red, [_KKJ[142]] = I1I1Ill1Il.white, [_KKJ[29]] = I1I1Ill1Il.border, [_KKJ[149]] = I1I1Ill1Il.border, [_KKJ[159]] = 0x22, [_KKJ[150]] = I1llIll1Il, [_KKJ[151]] = UDim2.new(0B1, -5, 0B0, 0x22) });
+local function IlI11ll1Il(...)
+lllI1ll1Il[_KKJ[160]](lIIlIll1Il(l1lIIll1Il), true);
+l1I11ll1Il[_KKJ[160]](lIIlIll1Il(I1lIIll1Il), true)
+if not lllI1ll1Il.Get() and lII11ll1Il.Get() then
+lII11ll1Il.Set(false, false)
+			end
+if not l1I11ll1Il.Get() and llI11ll1Il.Get() then
+llI11ll1Il.Set(false, false)
+			end
+		end
+local lI111ll1Il = lll1Ill1Il()
+if lI111ll1Il then
+Il11Ill1Il(lI111ll1Il[_KKJ[161]]:Connect(function(...)
+task.defer(IlI11ll1Il)
+			end));
+Il11Ill1Il(lI111ll1Il[_KKJ[162]]:Connect(function(...)
+task.defer(IlI11ll1Il)
+			end))
+		else
+Il11Ill1Il(II1IIll1Il[_KKJ[163]]:Connect(function(lI1IIll1Il, ...)
+if lI1IIll1Il.Name == _KKJ[61] then
+task.defer(IlI11ll1Il)
+				end
+			end))
+		end
+local function II111ll1Il(lI1IIll1Il, ...)
+(l11IIll1Il:Create(I1IlIll1Il, TweenInfo.new(.24, Enum[_KKJ[123]].Quart, Enum[_KKJ[124]].Out), { [_KKJ[164]] = UDim2[_KKJ[82]](IllIIll1Il + l1I1Ill1Il * 0B10, lI1IIll1Il + l1I1Ill1Il * 0B10) })):Play()
+		end
+local function l1111ll1Il(lI1IIll1Il, ...)
+if I111Ill1Il or ll11Ill1Il == lI1IIll1Il then
+return
+			end
+ll11Ill1Il = lI1IIll1Il
+if ll11Ill1Il then
+for lI1IIll1Il, II1IIll1Il in ipairs(ll1I1ll1Il) do
+II1IIll1Il[_KKJ[137]](false)
+				end
+ll1lIll1Il[_KKJ[132]] = false
+IIllIll1Il[_KKJ[132]] = false
+II111ll1Il(III1Ill1Il);
+task.delay(.18, function(...)
+if ll11Ill1Il and not I111Ill1Il then
+I1llIll1Il[_KKJ[132]] = false
+					end
+				end)
+			else
+ll1lIll1Il[_KKJ[132]] = true
+IIllIll1Il[_KKJ[132]] = true
+I1llIll1Il[_KKJ[132]] = true
+II111ll1Il(lII1Ill1Il)
+			end
+		end
+local I1111ll1Il = false
+local ll111ll1Il
+local Il111ll1Il
+local lIl11ll1Il = false
+Il11Ill1Il(l1llIll1Il[_KKJ[165]]:Connect(function(lI1IIll1Il, ...)
+if lI1IIll1Il[_KKJ[166]] == Enum[_KKJ[166]][_KKJ[167]] or lI1IIll1Il[_KKJ[166]] == Enum[_KKJ[166]].Touch then
+I1111ll1Il = true
+lIl11ll1Il = false
+ll111ll1Il = lI1IIll1Il[_KKJ[81]]
+Il111ll1Il = I1IlIll1Il[_KKJ[81]]
 			end
 		end));
-IIlllI111();
-I1IllI111();
-local Il1llI111 = Il1lII111 + l111II111 * 0B10
-local ll1llI111 = ll1lII111 + l111II111 * 0B10
-local I11llI111 = -(ll1llI111 * I1IIlI111) / 0B10
-local l11llI111 = UDim2.new(.5, 0B0, .5, I11llI111);
-local III1lI111 = math.floor(Il1llI111 * .86);
-local lII1lI111 = math.floor(ll1llI111 * .86);
-local IlI1lI111 = UDim2.new(.5, 0B0, .5, I11llI111 + ((ll1llI111 - lII1lI111) * I1IIlI111) / 0B10);
-llIIlI111.Scale = I1IIlI111
-IIIIlI111.Size = UDim2[_KNI[66]](III1lI111, lII1lI111);
-IIIIlI111[_KNI[64]] = IlI1lI111
-IIIIlI111[_KNI[82]] = .65
-lIIIlI111[_KNI[82]] = .18
-local llI1lI111 = TweenInfo.new(.36, Enum[_KNI[79]].Back, Enum[_KNI[80]].Out);
-(IIllII111:Create(IIIIlI111, llI1lI111, { [_KNI[119]] = UDim2[_KNI[66]](Il1llI111, ll1llI111), [_KNI[64]] = l11llI111, [_KNI[82]] = 0B0 })):Play();
-(IIllII111:Create(lIIIlI111, llI1lI111, { [_KNI[82]] = 0B0 })):Play()
+Il11Ill1Il(I11IIll1Il[_KKJ[168]]:Connect(function(lI1IIll1Il, ...)
+if I1111ll1Il and (lI1IIll1Il[_KKJ[166]] == Enum[_KKJ[166]][_KKJ[169]] or lI1IIll1Il[_KKJ[166]] == Enum[_KKJ[166]].Touch) then
+local II1IIll1Il = lI1IIll1Il[_KKJ[81]] - ll111ll1Il
+if II1IIll1Il[_KKJ[170]] > 0x6 then
+lIl11ll1Il = true
+				end
+I1IlIll1Il[_KKJ[81]] = UDim2.new(Il111ll1Il[_KKJ[92]].Scale, Il111ll1Il[_KKJ[92]].Offset + II1IIll1Il[_KKJ[92]], Il111ll1Il[_KKJ[93]].Scale, Il111ll1Il[_KKJ[93]].Offset + II1IIll1Il[_KKJ[93]])
+			end
+		end));
+Il11Ill1Il(I11IIll1Il[_KKJ[171]]:Connect(function(lI1IIll1Il, ...)
+if lI1IIll1Il[_KKJ[166]] == Enum[_KKJ[166]][_KKJ[167]] or lI1IIll1Il[_KKJ[166]] == Enum[_KKJ[166]].Touch then
+I1111ll1Il = false
+			end
+		end));
+Il11Ill1Il(l1llIll1Il[_KKJ[139]]:Connect(function(...)
+if not lIl11ll1Il then
+l1111ll1Il(not ll11Ill1Il)
+			end
+		end));
+local function IIl11ll1Il(lI1IIll1Il, II1IIll1Il, ...)
+for lI1IIll1Il, I11IIll1Il in ipairs(lI1IIll1Il:GetDescendants()) do
+pcall(function(...)
+if I11IIll1Il:IsA(_KKJ[96]) or I11IIll1Il:IsA(_KKJ[101]) then
+(l11IIll1Il:Create(I11IIll1Il, II1IIll1Il, { [_KKJ[172]] = 0B1, [_KKJ[95]] = 0B1 })):Play()
+					elseif I11IIll1Il:IsA(_KKJ[173]) then
+(l11IIll1Il:Create(I11IIll1Il, II1IIll1Il, { [_KKJ[95]] = 0B1 })):Play()
+					elseif I11IIll1Il:IsA(_KKJ[56]) then
+(l11IIll1Il:Create(I11IIll1Il, II1IIll1Il, { [_KKJ[58]] = 0B1 })):Play()
+					end
+				end)
+			end
+		end
+local function l1l11ll1Il(lI1IIll1Il, ...)
+if I111Ill1Il then
+return
+			end
+I111Ill1Il = true
+II11Ill1Il[_KKJ[44]] = false
+II11Ill1Il[_KKJ[45]] = false
+II11Ill1Il[_KKJ[46]] = false
+II11Ill1Il[_KKJ[47]] = II11Ill1Il[_KKJ[47]] + 0B1
+II11Ill1Il[_KKJ[48]] = II11Ill1Il[_KKJ[48]] + 0B1
+lIl1Ill1Il()
+if IIlIIll1Il[_KKJ[40]] == lI11Ill1Il then
+IIlIIll1Il[_KKJ[40]] = nil
+			end
+if lI1IIll1Il then
+l1IlIll1Il:Destroy()
+return
+			end
+local II1IIll1Il = TweenInfo.new(.28, Enum[_KKJ[123]].Quart, Enum[_KKJ[124]].In);
+IIl11ll1Il(I1IlIll1Il, II1IIll1Il);
+(l11IIll1Il:Create(I1IlIll1Il, II1IIll1Il, { [_KKJ[164]] = UDim2[_KKJ[82]](math.floor(I1IlIll1Il.Size[_KKJ[92]].Offset * .86), math.floor(I1IlIll1Il.Size[_KKJ[93]].Offset * .86)), [_KKJ[95]] = 0B1 })):Play();
+task.delay(.31, function(...)
+if l1IlIll1Il.Parent then
+l1IlIll1Il:Destroy()
+				end
+			end)
+		end
+l1lI1ll1Il = function(...)
+l1l11ll1Il(false)
+			end
+lI11Ill1Il[_KKJ[41]] = l1l11ll1Il
+lI11Ill1Il[_KKJ[174]] = IlI11ll1Il
+lI11Ill1Il.BuyPet = function(...)
+return IIIlIll1Il(lllI1ll1Il.Get(), false)
+			end
+lI11Ill1Il[_KKJ[175]] = function(...)
+return IIIlIll1Il(l1I11ll1Il.Get(), false)
+			end
+lI11Ill1Il[_KKJ[176]] = function(lI1IIll1Il, ...)
+return lllI1ll1Il.Set(lI1IIll1Il)
+			end
+lI11Ill1Il[_KKJ[177]] = function(lI1IIll1Il, ...)
+return l1I11ll1Il.Set(lI1IIll1Il)
+			end
+lI11Ill1Il[_KKJ[178]] = function(lI1IIll1Il, ...)
+lII11ll1Il.Set(lI1IIll1Il, false)
+			end
+lI11Ill1Il[_KKJ[179]] = function(lI1IIll1Il, ...)
+llI11ll1Il.Set(lI1IIll1Il, false)
+			end
+lI11Ill1Il[_KKJ[180]] = l1111ll1Il
+IIlIIll1Il[_KKJ[40]] = lI11Ill1Il
+Il11Ill1Il(l1IlIll1Il[_KKJ[181]]:Connect(function(lI1IIll1Il, II1IIll1Il, ...)
+if not II1IIll1Il and not I111Ill1Il then
+l1l11ll1Il(true)
+			end
+		end));
+I1IlIll1Il.Size = UDim2[_KKJ[82]](math.floor((IllIIll1Il + l1I1Ill1Il * 0B10) * .9), math.floor((lII1Ill1Il + l1I1Ill1Il * 0B10) * .9));
+lI1lIll1Il.Scale = II1lIll1Il * .96;
+(l11IIll1Il:Create(I1IlIll1Il, TweenInfo.new(.35, Enum[_KKJ[123]].Back, Enum[_KKJ[124]].Out), { [_KKJ[164]] = UDim2[_KKJ[82]](IllIIll1Il + l1I1Ill1Il * 0B10, lII1Ill1Il + l1I1Ill1Il * 0B10) })):Play();
+(l11IIll1Il:Create(lI1lIll1Il, TweenInfo.new(.35, Enum[_KKJ[123]].Quart, Enum[_KKJ[124]].Out), { [_KKJ[182]] = II1lIll1Il })):Play()
 	end)(...))}

@@ -1,5 +1,5 @@
-local _KTB;do
-local _aCC=function(s)
+local _KRP;do
+local _aGK=function(s)
 local o={};
 local i=1;
 local n=#s;while i<=n do
@@ -8,376 +8,379 @@ local v=0;for j=0,r-1 do v=v*85+(s:byte(i+j)-33)end;for j=1,5-r do v=v*85+84 end
 local nb=r-1;
 local b4={};
 local vv=v;for j=4,1,-1 do b4[j]=vv%256;vv=math.floor(vv/256)end;for j=1,nb do o[#o+1]=string.char(b4[j])end;i=i+r end;return table.concat(o)end
-local _cQI=_aCC("FX\039b\034FEoN`2g[_E4X!d$<Gctn,tD<%EBH<R@R5H\0340n!)/95@H[.R\092StBJj0GBl5M4A8b%e=!U7H2J+^<Ea(ON/3kXK/mUe=F)X`I;Ccon79E_\0923ak_"); local _bRH=function(d,c)
+local _cVQ=_aGK("=`-)^7o(C.:i^\092p-sA]6;0t\092c;eKAo/monaFF6hsH:g_WGV:a+@4c4C2g7u*E,e0#Da$g#3]M11.r0<=>?#3[9LBsl<_6e8-:WDJ?Saej/6G5U4_7U"); local _bKO=function(d,c)
 local t={}for i=1,#c do t[c:sub(i,i)]=i-1 end;
 local o={};
 local b=0;
 local n=0;
 local v=-1;for i=1,#d do
-local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=b+v*(2^n);if v%8192>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do o[#o+1]=string.char(b%256);b=math.floor(b/256);n=n-8 end end end end;if v>-1 then o[#o+1]=string.char((b+(v%91)*(2^n))%256)end;return table.concat(o)end ;_KTB={};do
-local _d=_bRH("uu(&~4H6%plVFQ$%02^SfA/t<I!B]DMd5d$6_*uL~tuu$yc?>uuuW=ijFR05btUBdF&W~ff^E%_4DfRBRD>o?y,~Co&=uu`_Wr(w9xqagDQu#5%^VU=wrYX-&5:@#uuukCKS39^?8WTU>O+VQa?@b]wluuC3gjNTbs#5EN9S7|`<A3R?`uuue83Y!C|fieruVzG6LyuujPxFh-~P{~_GPa5;uu(&K%`Hib?*8Qtvh#qyuuEtA4kcT1#?uuuuLy;,x#uuS`N3iJ%./i$3uu`_5D)ydGp=Q?Quuui_v5,Er[Q#8uuuIEhkq<i=r=ycwuuuh7on0[KX}wiuuubu1c0j;ikeuuQMr1fXGV4aS(yuuu0#?mz[uuQM`_j3>Y#0R@#uQM=96oh[kuuuS`;3&.v&1vEluu/T6h<iTSyuuuB}PS{!@Quu$y*`aARDL%X$uu(&dtn7e{)5#uuuAsFBY<)Pk;=uuuV<&RDORtuu$yD5]g^9tX>euuQM3PxNg5gV2`/uuuBJ@#;8P*$uHuuu=uo.6@pI7uuuhEx{exnv=8iuuuru?mcQ*w+3U#uu$y,`m#q@P2Snuu@}1r?RtuQMZ,JE5ht#uu@#A~!&3Tuu(&t?O0z06<97uulw]@wfEBluQMn&FFV/fQuuzQ)2<A4S^U#uuuxb%afFtL{uuu&gB*O8uuQMgzCUbq;m/%K[xW>{uulwKhX4}N#uuuCfgN5-Z/>cL>LjA8uuqW1R&Y~:ea23k4Auuu6WHQ:L@MS^34yuQMtY@+^kZVS|hW4wyuuuLKp&},;iCO1Pk@7uuuXy!,q@FwhYO6Ca~jQh/uuu!egaTM2quuuu|K7_bdTBuuQM_RZHOIQ/.CL%0J1v1#uuX#[,v(`s+y>WlCXuuudtaN:>R*F#5|25Yt(>uu@}2aG}8,Y_[<T<k1QuQM)?%R_Z90i9j`NDg>A$#u`_oBv>1v/V3{>ddQfshuuuY3Q4db`e%>`eC&C),l^=uu(&hO4y}erdxI~i]Lr9Lkuu(&-&%VZs4g@~O(ZUy$VMe$bAKK+rHm-I=2Xx~d;wuujPmkzL!<;o*GQP4zuu@}Dj2k09IXu?2PV~UX~V}biJ|6=zvB{pcJao~VFs}w7?R+}Aftuu~/Z%m@ka}EI`b#uux>6sEt|px)z2Pu_uh61T9>|k.DTE{.lFp-z[Rluu%tj<sf@*EQuu*71s9fsSh#uuF-Lc&OAk,:r_xy>WKZ~|MyPituuu*E&p(guu(&c>/Hj|RZwQuu*7*sn*a?,guuxz{fP&FZyUYP%lC@r9n}yuuum50LWoluQM0EgNt]lU*xuuRUXn)4b*ywuuRU;Gj9K)I<IZ(IKKt:77AcjK46uu#5E,Uh0GuuLgaXm~eDYsH#uuy#c[fH,axQuuEtA7klQxhzK%C92?c=Fuuu9MmvU9#uuu{MI@IJmTHUuuRU0c*}2p:QuuKE,K[1zXqukb]UXV8Ryf1uuu2_RXr}uuQMx^A/|=;kIxuuRUe|X>qsA<uuQM3|$@|aBE*YI=gF[f/6V!uuQMom$}&%uuLglC[`YE_?8#uuy#z[YbqBA#uudt[ycss*U(b6zrs|{@uu#5cCC?2TuuLg5aDZn0T:2uuun5Lp,!^%}#uu;Qii!;Xk8Edf<^IcqSuu`_|jep:Quup{>ZdL?6v.wuuuQV9H`LqQquuu0Op5LZ3F.9^?1ic^|{h7uu#5>VZ;A/uuLgg?ZL)jf[`uuuiu0U$b*l>uuu?3n8IR#!*0/iH6r%luuu7e1:3{uu^0`ZTjt*-qZ#uuzQ}PF*HeX`!uuuGz!U^uuuwO7r%yA</2uu#5t5=5P$mF4-BkW8hoiWuu#5Pb=5*X]FycF{l)AWj3uu`_K!VAG~{fmGMH1gyyouuuZJS]NQQuQMsJ@VTxJ1CJes}|Us>uuu2_tZuu`_rY49Lv}uuu-Mme~K0Izuuu?&6^p>1S{uuu|&[4uuqWbhh;p$LuuuquywK0k~muuu@y-,4&T2HuuuH36Suu^02_X96sGXl#uu@#uL)InuuuqWJ_4GcS`uuum5n`ZxwuuuB*-py;uu`_Vptheben&W-<>#uuH(p~OKW!n#W7J/VQituuF-a@}i[{;7*>&uuu8330,*#42zw&#u`_K!WBL16^?gLUNGU#zuuuUu=wLIQu#58C{.v|>mP;h;uu#5EC7/]IvD#u#5pJ>!3m?xk$nZm}iO*z)uuu!{TK~<)(Nz%IS&[R|Suu(&q~u@e72&]ze`Cs#uuuxb[BCx{n4LuSFFq^uu(&A$J<~7=R!3<@N5o#uu->cgW9N}f&WX=1b{Z1|l#uuun<VRGELb(LygLXOLaR@gqoKp+~uu`_%8)Dv}6Gm-pzCs^rV8mzCzVLbuuukne<sRdbXii}2[OAj3IWsh^.W`QNo7Mt3uuudo>/Cn#inaMe$[PuuuPm,FHw#GI0_I&C4+g#uu&w+YoaAl$JOo-QS=uu`_|g{tIZ>u-<#uQMEB9-pO3Lz]:[1F<4_y1bI]@ZEQuu*7u%O7@~lkIj+7?o#uuuy${QYj_mz,hD!>?O`~|jODFUuu~)e0X?{l7)(a$4?O<&+9tIe1m~(H8TD#dQuuEtbF!_K#QV#iVog1A?X#uuEt8$qyy`lVc)Qo)8FiX#uuPltd5E=@Ew&%Quuuuqf+}^~hpHiv.E`|Qq1Z:2Tuuufyi%:quu`_c>i%R(u#uu_`o~lhxtYruuuuz`s]j_cnm-^uuujO[ea.D1f,8_~Lk/$9)%7#uu>Qu2nFw@NQuuBQ;hvv;#uuruv.N:/uuuQ4aAWq[xb<uuF-2Z9rf1,L1uq>uu=bX{tHonaQK**]T@o8k<S2W|>?_uuu0O4)&$3zZ=J%}(E9^4EXuu)JQrk$^1u`Ocnca(-4znY%k(MHZ!D#m#uuG#Q,qV~|K}#uQMALBG`?-uuuru../C=uuu8Tqqff40_{ZmPz?)r%RoK6uu`_5Pixt0~v&|1Vuu#5AsHPv,3yQHA/p1`7uu*7FM|McJzuuu(l=op=Von4:y2M#u`_{JTSrss$`[^$e_Nk#uuu^O-)qFb1(#cGYq:y!{%uuu^]f#/oz$ybd-}nnuuuM_!vb.D/TzJN_Epuuuj8EP/W{sD!|VW$%#uuPlK1mn;[!yQ-vuuuRu#7^Vv^}4Xvt*uu=b3P#~y|yuuu@y`[K1Y$quuuvJo6!sK[xuuu8][l;tZ>uup{ej>sT%SzTuuuh,W^{>e[4xqR#L:n0orJ6Jc%qviyuuuuE((V#/oQ*fIRuu#5|Ky%x^0w)luu/TYP`B0UTuuuVzKmTSO2>538E#kN!%(CTuuu/V/T&qQ&L<uu`_?duNp~2{WqQkw9VScuuu&O5@-G5o,+{._6oproJ<(<bIu2gituuu}3O=bc)%[f%I!Quu9;EW<5Ac*kbX!:%RSloXJ.VVmwuuqWC&}hsL=)FP0#Oq*f;rb?S#]/Ruuu&8}TaNy2/)5yjU>q]-kuuul8pR}IU(ASE3u*_qQu#5BJ6F4qt;w<)wuu(&}<}:|gH4ap+-{A$X-Iy&Z$QeQuQMNGMeqUk0Qgx;PuuuS`VO8!f7L;f/uu=b~`X.==Q%Q@Hk~uuu}3[v-b9luu6==E](?+8(w!ZQuu->X<BfzCesbP=W}sPe#iluuuMUksBq)Ju?>NWuuu(l{|g_5kluuu})6CtTy_F;}R121muuLg$fPCtcL/Huuu!#y;$dssW]ldw?as1!uu/T|H+C|_#uuusrKSPzxz*h)g^-1Ouu#5No!d<l_aB*;VS[Lji<WF*<2f{yuu6=f42290T_Tnzc[Xz}4}ne[?QuuuJ(2C%X!^A@PPc4W/uu/Tr7el@SluuusJfojpJ{tuuuf+U8Lq>=u{quuu%,-6Rb(1T,r7uu83~J}CcBoIp~uuuuS#qFE9w%MT#uuuA3DY6J3/luuuY(0V_+4!0>UuuuBMd`o-;j}e(B>uuue+B:3qJYQuuuUTFz1gI:7E>{B/uu/TTFQ/>3RfiQRLluuu]rzvt`7W%GF0luQMvUu2R,;>lCtmoQuuPle~G~Z7BqutiuuuK,U;CmNWE+D<N%uu`_4SIfaYf>=&/p!uuut,W^Je5m4uuuMM}$B$|b|B+T4W#uuuj8;QLi_v{LE{[E|Quu>Q]@8csDtyuu(l=W:GTbQuuu,;W(h3l2!z!uuuqbBi>b-gguuu*WFX}JpqMLm#uu%tEh/m:dcxmn2>YH~uuu!5:o)%}s7uuu1bIi-q*@k,TM1wuuRUNO@uWU3k{of%DfbuuulO>BPbY-8uuuY&vSab>@sxXZluuuRJ;O%UH*Dc%$(wuu/TBFy]JY:x@f^9=uuuLya*aPM^luuuNJ4U$o3Quu$yzz3fB(iT&`uuQMsb=AJ.Z{gotuQMYUqd/a^wS%uu`_66*OcUQKov#uuus9:6k8<A^?TuuuL&31_K]ICs:#uuzQoPnV%eQ<#uuuS)8Fw1H;-.|uuug8`P5pk/[cB{uu*7<}Mh9rC%uuLgiW/-hNn;<uuuH8()r}BoFz0SPuuuxuX&88?ck!:A#u#5V1QrwxWQuu>QtdE6]28QuulwMbg@#UR8iB&pluuu{d19)IIjU)YnSluu~/A$H(9r01L[L#uu(l3Us?8(e$B3bYuu#58C`T{h8nZFnG#uQMYBXJZK6TKxg)tou#uu*7A<CAn?B3uuA<5[q+kq6uESguuu%tAj-gu_Za^&/W&H<uuu<]AiSlJ&{uuu%uP.?[@Vl4vvGyuulwx9PmBAwuuudBaWa7uuqW>GlDrP.WyU3SxPVg8uuu=2-/oR^--)B!QQ>uuuWW4w]IHng-cuuuBQ7$kOneIG]yuu#5&0E.yACx2j/uuuZUxgIykOGsI~zGTuuudK4&KQ`sB.Gek(6TR6uuQMM,lXR5D=$lE{zJ&N9uuuFMt(jxRz]}uu(&q3,-G6A)+luu/Tv)TU+VHY>Lt5QuuuTe6Cdd]I#~uu#5eO~L[+x*D`tuQM`60?!T;uuuk#e|,:G%K-Wtuu`_bE@,y_i5;3uu#5%^8S)lTXjU&}BZ>uuu+(/}g@<NtuuuEQk4w7w:3p]%6{uu6=;Bfd3AO2j(0yuulw>b:$tWLJbRR%wuQMv(#}bd;B8`SABAMkG{<uuu$ypDL]8R-GkLuuqWDoVz4!Guuu(O;]Yz@q^?ab)avoTW=F3]QuuusXU_~/Qk#uQM})`[[@M0dluu/T9M+&f/uuuur=%2qBJclPUuuu>Vu<GsrF/_,tuu$y!D*2CRcGbxuuQM?eKfe=Fi;!wuuuV)C:&Nv]bl^uuu6Wg#Y?y+1[M6tuuuCQmF@(9);{/Xq>FKB#uu%tX,i#4|na^akZeUuuuu{5nom7QuQM,?HdG(=vQuQM,?:ZB{HQuuuugf*ps6=r@jluuu`EqSJOpwuu83FzM/[4S4T_#u(&J{%QeVY<q7uu{G0jWo1>!gi+va15S#334uuua}OWoU5sI&(4LQuu@}O&?H;tYDT*gN{FKuuu[5:{vK<uuua}b$ra0C!eLW##uuA<E=L2OK_M=F|yuu(l%KO)j#Qu#5F:#r<Bl#uudtnLp-}0,NjXf|8j#>uu@},0Z8y$(&HG)?GW#uuu0%wu1fz*a}P;+0f{uu`_3^F`C2T[ZO<L@.ta.D1tuu)JXn3`AmC==tuulw&AO@;}yJ3PFsQuQM&gnTe9b-z-R:uu`_+{<dG}DqJ~Da4x_m2[pdCquu)J;VI<E?<oaP[LQf7Hs^uu`_4YU`yyuujP!D`Z<KM=`fS/O^uu+f>vw2bNmt2s0K,R#u#5xInhfP1FJsCy^]1cDRsq@<]uuuru7w75+xcT4QuulwzIQ$,oM>e)gZluuu4xj}kAF-5yHEbuuu(le^0O@.;BZ#{3luQM)d>AE)XmhaQgCuuuZ`$2Ok0e9)uw2JTuuuOl3^M)0-f[7~Bjj#uu6=e^0wZa8X${mQuuEt,TD_ndA}<uuuzEPBy#uuy#.Ij#x/6#uudtk2[LP1Oz![]1@a_$uu83T6aE6,l*(i5mIxn{/zzVFxuuRUP&0;!nc^uu@}sb,@yt43uu@}>GuUYD)]jSmE+%lu#5n&%=Gt7uuu<oyszJX1e<K(Y%):rVuQ>xh4z-qY&jyx&7p2K*,}HU.ywa.&e~_x#*cyO5i=uuA<M-NV{hd`/@ZQuu83cOleQPJS[7uu#5p(BgHptWiaD7juuuo#|TDFpsSm(LyuuuC&o4~9#(-EN4]huuqWB9p5x~Jeo5fi0uuuxV<%<4z9/~]r!7uuqWfD:Fv[CI?r#Z!uuugO@6t3sw;g~YxtuuqWePuQ?W[j.GW.Auuuu,#HY:!lGJsTMa;uuuj80sQ&mK}Npi4yfQuuOlP^vvu&cx!UNh8>uujP4jk{[,#%UJ!{:Quu+fI`HV44S:U>M*E:#u(&uS{DBmX`%eSgnMuu#5Yf?m*j%#uuy#[TvGuuA<#XII(UL/Jo9yuu$y4l8pGuuuo#ftE}O*8@:MwuuuY}e[;&b*)Guu)J{GcRlZ9]Kyuu&wz%cc:ksAbb,0LUuu=bakMU5]zOCSNyTuuu<]0:m(Zx7uuuH]ztR]=n-xuu)J@}lV0E&rYluu$yj3_@EjM0Vsuu#5I~kfq7uudKUr[d0C#nk4]Cc37$luQM#sR;>hY8-NBjd/Quuu:f[>wXJ.YDuu(&K,i&*;+zU2l/csnyuu$yPPC:h&ghWsuuuu,|_#|8*wW)I)?X:G:O7AQuQM&r6Co7Is35p*VqTlAXuu`_~LffA@w18?;.nQ|/AuuuL32^-}qal.=+!UuuF-zQ/!B~>/[w}_uuN(7ij!HylHNC*W850cE6H;Mtuup{DPF^O[kJ^wmmG#gCUyuuBQX4WX%#uuZ`0-rUs>zcbru$JQuu$yp!q5|>C0miuu)J::WJ3q!Hutuu>Q&4ewuu83J{p*!@F3(]+5!,~nxH~VT<QuuuFWCK_`1a3Z$r+x?z[%c91l#uQMNenhbGWF=@35?Aj[%^?8E_]uuuru=w.5%!deTyuulwDc{vh8!?f:dDtuuu.?l)1P0w9>VoNluulw8@.Z1^(Su]A&uuuu4x6Gy1ARyX~!g#uu&w#?Y@[R<Gq09zPUuuZ~<yBHSj^NSf7ZNWuu83LSLsB<{#>7y7uu@}O&L}_q^VuuqWmRKZnp<H0+nn(bH{QuuuG5M5C>1v>9k`f%uuA<(c8#8$YgT?97uuY8|8H_13>=0tU1PQ#p&_HH[QuuPlA{tbL%&1%dKuuu&8VRM)<Z>e^l#KX8ERSuuum5Kdis/uQMf:xd^Oe}da_tFWuuuuq]g28p4_CXA`E{;uuuG5itYjGbf6Xnoguu=b7ql{4R_HgODBwuuuj3Q+xG=cis9&/{uu=b?l!;t/RRohaY>uuuVb6ZjYb`=F:!>RWuuu55`n+9`lOd>Ky]y#uuG#M<;?iK=)luuuy5zFjX9Yb1Uuuuc3;*#/s$]:#u(&6=9jtuuu~WtvzAiq{uuuqbQ942Z.?I5~X:b{uu#5]G[{o!uuRU_S[i<^)wuuqW9;4xB0C{n!}neuuuy#*x5Gf=XCd>nse+U65c]xfgV#?0;yUuuu>QvK4j]}2x!TxxOB}8/@vK~0/d8eJ0h#uu(l=3Ns}.zSGRl[QuQM9r<zH/A[>W&h7Quu%t5{ON>/%qWZ`CEc;uuu_b1Cr6=wuuk#n#uu*7U1Btpl<%uuLgQBxxbdD8Yuuu]5Vd;N]L<pPJ=uuu:JtFxZ,=4aRZyuuu;n+=VB)CbXFB>tuu~/0$I:8L;|cN>QuuPl$~*^f5}l/39uuuY8u)@0eU-j,F:SG&Q&@!Pluu(lyl5vPIuuQMhP*wjX]4#u#5l55OerD#uuzQh>!g5B]STuuu&yUmdZ::?[*;eluulwegU+}ouuuu;nY=VB)CbXFB>tuu~/gH^&?OnQ+dgQuu(l9P]s4N@TKlyE#u#5SE1*L9gQuuPl-=A0n0<`Mi,uuuj8x?<_MQl@5>7O~Quu@#r2m8-[uu`_J]$etm=#uu@#JTcgD=SQ[<+puu#5%8c7.>*0luQMRIY*t]iJJO8^i#uu<y1Pjsk&AYY1mSC[oIYhQuQMP]=796X#uu@#,2{^Nv#u`_vUDbr?h5${o;uu(&xf#:m.aC%}~?M#R8/Juu)JC3(H%3yyItuu&w[<tq7.@BKyG!i#uu@}-MVvl|^x:e~Ng[Quuua50i!ki!os+|tSC#uu&wOUmb=NJUYD+tDyS*>ENXqCK.G;^#uuj(VNU28Z5dX;+pHONUwuuu2``n!?k[mP8P.Ne<kveQZ/K]%#uuS`!Wh*414a->uu=bI~&FTc0A}&~SGuuuTuTqLjSRD%uuQMj|n}I;BJP2aO7sMW=l..#u`_F@#A+XAuuut,Ck>S<E(uuu.uSwra?4-.2eyuuu^<^>(nS,uuuuqCZKahgluu$y^jZFmZBFv{uu#5twIpr`,C3$:LvQjtuu/TB)j}]At_rj),tuuurgyuuu>ear4-S-Quuuz`ZSaU;b:f}uuuIMlt&i^w62KM!8@+/#uuPl#TVkU5z82d:uuuh,W;{+XQ-C0~^TU#uuPlzzW*9L_,@qVuuu]5p|_AU`38W#UuuuZ-2%G%Xq}a0.E7@m)S>uuu1CE6}r1,Y}sGK8`kiuuuBQh~SE2Ax/L_DiXQ`7/GD/uu832>9LF5><vZ#u#53GqdoERmVi;@c#uuayg65qifE0/YuOEg~<U@iQ8uuuQV>gC,/iquuuY&O8)L>>:jO-yuuux]^D6+btuu%tl^u0:/ruuu!{8y~!zJ;xlHmNYwU#uu`_3X!r*@i_JW1luu#5sb0g2{uu=b**GKV|J/h9,0GuuuWETBky}+s5|d=_uuA<&(x7T(]j.%}luuLg88~UcNHc~1r^N<j3ltuujPbKEs3)l%rJc>9Kuu`_Ol<[P3uu/Tg8j9I{1gf<#Y/uuuRJgOKU`hr2(W-wuu6=yAfr7^5%X6uuuuaysA?_N3:#y0}N->LVor$]6uuuO39^C<GD)FPcyPx]It#uuuG]n#Y+#u#5S0fmHU/C}=uu83<G{]gyuu~/m<wPhrlI_Oy#uuru-;uuQMP{<-y6DKKTm|duuurumVp~yuuu?rgY7D!0dGuu^0!{z!Q*hh}#uuk#k5?VAuuu7,7q><rtwWxJCu#<ttuu~/cXCX$gg%EL@#uuk#>(1zuuuuA5zc)D=|C7uuuu>X`!jX0!r}/uuuK)]1jQ4)wuuuf+v[cmD&Z`tuuu/`1|C$zT*nG#byZ~wuQM`6%F9/#uuu/`+wb:+SfuuuI`{=d8e$T16CSuuu&&?j-33{uu`_Z_2w^BbFOF#uQM;vjyuuEt9~yAhnh`xuuu85|(}d,0aesR(Gluuu|3dSo8g.j!jyuuk#X4Puuu)g{vHF1IiUuu#5W.Rv:2Zl-HtuuuoK97uup{z2,*lk[|/uuuHOdL+.8ckT+%Ba]y#uuudB#H;N#bRLuuuu*E.buu^0!$h-&Ww%Buuu3(x]!G[UxKw,Qh<Hwuuuco=tA%z@P^aW:7uuLg5XZGx5j{}Nu?D#J|+uuulw+X<A8jq}xU}O#uuu];|qg[-Jz?Hwb?BaBy#uQMey{OUThA7)aS)Quu@#b[nE2I#uQMl0{yMUuu^0N(usc;]Uf#Ks6_Ao@7uuZ~2)[pVq@za|QU5#uu#5X+66b{uu$y8eIuuu7uyyuuqWq.K]H7Y;+y*!guuuZJ<]1lyuQMHW`3{rM(WmuuZ~UWBcxUKD=,o-iiuu`_%KtQuuzQYP22t3`(tuuu^WlRBT_mB0t/~(%uuu*Em}uuqWKE<zqNnAqZiy4uuuc3c^*]v04@uu(&1cqs7D(7QQuu6=j4U)6gfds_<tuu~/-UzC8c%nVGp#uu@#|[|@@>#uQMsb~_I{uuA<btMsFZ+=?65#uu*7OewG5;m%uu83]yoyMuuulwVb9Y>?G{:XT|#uQM6->X<<[#uu%tv==94@Z_N)mS:ftuuuPmmIP@4^CCG7F6uaTQuu->#[}a|ci81G8_&&lh_S/uuuYJ1VN~g<aa@)&ZK7+uuuFQm*<-_RW`@L=_jj)u<iuu(&e:0Z[m$?$W|O2c[w^i=tuu$yv~JXQQRENouu)Jf<rI|0st##uulw`U`wnHff-m@#uuuuaNrY<huu(&|N&LB?-~#u`_:N.<2_q#uuru]}3}>uuud0d]yxMQtmjJ)/;=#d5l+>#uuuTD9-hqKY3q{uuu_ToCm^{@`G2wYXqdnxlT0uuudWB:9#a`K>#u(&f=@1k$y9Ituu$yv/&plQuu>QC_ZwCG(yuu(lhb+Ru:uu#5IAO_Jd.|~lV{$ITuuuPTsjb`sCpT_uuu(&uYCZ-%mLP>uup{%ipLJZ,<muuu#$bR,eAGE;GWZAuG~;EpPl#uQMjo*tumxuuu/`6^lZU8S#uu77X3jA^]zQ}@Kk>*+0xjIb`!5&^JcO#uuu:t#:uhr2ds%OV1SJjPX_{uuuQ4NHZEsW@xuu^0KKoh*$oDO#uuPld9bTs|tRqjm#uu;Q3wHC]xv|[<F9L})=uu`_|ju.yluu/T5mYQ:1C[^SJ6wuuu`o,;+q[tuu83uST~e~-jiCmz&(Ha$h|kuu#52/jY=qvB=aluuu3eqj&L}eDZ3uuuO&843UZ}F}.Quu->Le^G^wcLCG-gG7oiSoluuulsa?}dyVnbuu#5V>4wEls1QpQuQMYI`xBk{=,LlvS`uuuub]=j/X_0r0W}Mg&6/D&3uuRU``JDVJ%PuuqWy#%O$2<B~P`3tuuuxVfThVt-i0h*kwuu$yT_uuqWG}dyE,f36)<@tuuu55Md}R$+6pXwAe~uuu[5O6W_Z9;LxtuulwR.M1X!tuQM;xuu#5xRUUkj4#uu9MCl#u#5MNve(~6Dbxuu=bDous2I02.DyQTuuu00M_uu=bePn@c}wuuu|0Qpv3y=rVmu7yuujP4?{C0c9TH1awgkuu#5W*1}hbtTS1wuuu:N`#uulwy]FR%RuuQMN(#u#5qnMR;v:L/>uuRU!]&-qQ1Guu@}!]F1,:1ouu)JYC@a]_[<kluu~/|g-7;=wIQ@6uuu>Q]]br[@3$kcR1w{uuuuK<lOF&PiwKuu`_VF)i7#uuLgF-t)V;#>A/m29Q}~-/uup{.1$4%UU3Fuuut,uK&ZZ$ij^48o@]Qu#5v{jC>=SD~%[![[tuuu%eiz>?<{!coTbxHMPuuuL&v*uu`_24!J)VS(gXB42);Cjuuup}lGuuQMWq2>eJhq<_tuuu5oFkq!`6[?4uuuxVpmT=)OLkciR}uuqWUiGP~i36n8K+UuuuhW9E{1L7uuRU.Uz@3E4luu@}Pl($K;N9uuQMMVk?1#D1?Xtuuu/w03AH=7tuQM^):jspIk3]q_S7Tuuu$KK,vpTuuu@#oAndc@uu(&wJI9g^!ib>uulwj?V%&XtuQM.JeFNm.#uu>QFq$Mx_Muuuk#{`^ktuuuZ_TN4}s[uJ-pSVuu=b770Y/Qluuu@y9m[S}juuuuU2HIIqfV6i+dKn1G$tuu->_,K{;zQNIT.h[s5py6/uuuWo]H3m[6V|WWbc_p(+Dyuu`_aAeS;rlX*x#u#5<C1Tc*,$hRH>U[0&2uuuA#H7LI^nsof6YF*9(x?R#u(&(Zh*!F/1Z{uu/TY4coOYBBS;at#uuuUbL:^I#u#5l;1ULB[S#u#5:~Hk].5#uuzQke:)~05)yuuuR(~|Xv#yuu&wN(m^vp5Siz!T}#uuA<!n=1&i_<Hc1luu$yTQ:``#uuayJ3[KiGWeh?RT-.V=X(dD4uuuVMmwelt.z+quuuttMy&%Au1WA+,4k{C]sSbBVi(6e%`Wuuuuq3*`G<FA;B^o:sKd)Fp&uu#5e:igK)tB7>uuLg&(]a>~<j>#uu9MYJoNwuuuS<`>QM7c<|cA#u`_24-.8vE|d/jgpg@2Duuu2_*E@Syuuu8t;@J}H1tuQMjo;k`y!#uu(lozV5KD5~a#KjQu#5F:j~*YA#uuOlPqqFz8EINdB~kluu6=:qE>R0Jn+}Euuuk#P(k*fuuuq,yq8.C3U,Nj>H!nubuTcjtuQM,??+wuuu)W$OO=d>Br5Cxg&@C[6$|DFOMiMnHtuu#5A#q&w83gOr7;`I@o=Nxvuu(&K0`m>QJQiuuuC3O4WsL>4fB#/)E3d<bU]_Suuu38rR=TG4;jluuu/}x>/VuuF-$oT8f=}/Ub_guudKMz1eVL1`>,,J#W3zQuuu7T~a{Huu#5z9@+#yuuZ~%,TGaW#mtGv,Vbuu(&bhTXu>mU#uQMY|{yK3uu83uUVJ,Quu$yg(EQ9GSOeKuu#5ruP3uQuu838lP>qI$J{OuuQMAa*:R!uu`_T_j5#a;+`3Qu#5]}==x2.c}:5?uuQM83:7=%uuRU:7)KS]1Vuu=b==a!Kq7uuu/V:W_1y(0^g+d5*;/;luuu57[nh:1uuuOlv8tIe=[-g(V~v/uu6=(HjAj~i2<b5uuuPlPo:S`#JY@;b#uutta/6g?rn5q?&xLgoWza&6Z/Upr81b#uuuxU~v)n+QWU.bjFlFkJV@luQMAx`paqZ%FmuuZ~-V|xnPVhJs:rkvuu)J:W3&_>p=<yuuEtQU-4S#S]<uuuaf7ey@lu#5+{/oCry7N(MIuu`_homeTC):[n~iB6?x6uuuZJb]Rluuuul5v^rRuu830J)^|infWOh~uuQM..Xm]i1+z{#I-@3~33Y-uuuuq~bk2xP9c+9jk^Q]}fxQwuQM})vr+@8!)!uuRUUq_]+T(yuu`_HPr~|luu/TX@e[!fHS{<.e{uuu6&#(mq>yw%v5T86K)#uudtM*3$RY*C}Z/-&C=uuu!]c0D>?=3$va,O;ZK$/uuuLy!DvmXltuuu3ea8.m#u(&}c$QH8%=^1Ytt/QuuuMNd)ob$[Quuu`6)TbmuuqWxBKc<muuuuX}Abc-yuQMcAgM9){#uuruv}v43uuuu47c5<1uuuPlo$TT:b8B2dvuuu]5[$V4N`tp;@;uuuNy/[m@#Z4tdqluuu8txl:(*w/uuuqnPlOQ!7/uQM$j5~4SQQuuOl+q%r@sVsp5EB.wuu6=:b%Zt(Pt2T`#uuBQ}ly6%uuuL&ADuu#5Xth;vDy$uuQMAa7tuuEtn{h^pZ]L%uuuEUh>uu@}[p&k31wOuu`_qq@QuuzQ1n<r%KlawuuuF0-]rmxM?rG0KlyI/SML/~SCxKg=,tuu(lYA2Nacuu#5?;r)D.Z{^x]VB17uuuW&T@94K*N74euu#54LEGqOt:%lTO#u`_X,2tX;;#uuZ`H=6pA/1<c8sTFuuuPlxcUHY}l#nlQuuu1uMUTPyuuubLu3uu*7f$vRsxwwuu$yG$TuuudWJEebXvG<uu#5Z~kluu%t&4*gcz->uuBQZzPuuuP5>i;1<zd5uu)J`6K1Twf_(3fSvmoe2v$S^NtrO7GunuuusWLZNL-uS^fg`ycs~uuuk#f`A^quuuiuV#*]qwfMAtEY&fuuqW=6[<p[ouuuzV#Tm#2uK-;>,<CM,G(qUuuu2_)]ts#uQMz7&l)e9uuuX#c$X8Oa)4<,NiOuuuPlqcR}zTQ?iHsuuun@c<DN}j3lMrl;t9@XO8fLX)>_WGh{uu#5|N>-i7uu@}np~D@{oBI6w9O[8uuu+5rc)F:^uuuu_nj7]2-7-!GQvaDcj_`xluuuvf+_n4uu=bRi%V,1%uuu@&WAf<:ke;KhJEmuuuY&wA/PPs^9rRtuuuWKZ8*X#uQM{77!)?kV6DeO<N${uulwc|**&FQuuuY(;4Fj]qH>z?lx`ND&#f%uuu%bhz/3lu#5vUdcWuguuuh,{c=R0neQ!x/~ouuuo#;;EW~a47VL`uuui,tqw.Bw&3[Drt8Hfj*}RPq@[Z0{-#uu`_^8^LXluu;x=.&+T*PQx|.O1k(p#uuuhOb47quu@}zVq,+g@XuuqW(l&|@QiuuuTVUg#)J-A[w0{uuuL-,xF2lluuBQ_Qh+~uuu5#^l,/7;xB;^#j@AYeirq&=uuu9-S%fB1vB^!#uuynDcxL*/wgub%~3ZI@%wSYLcx[]b69uuuuk?{[T=EomEct7H>kWD|=tuQMQYE!EgmN)muuN(Wqd|=[%cbrZ#}`7,D|ScjQuuEtbUj~G9/{/uuu[yK)Y!#u#5O(a4>qh]xL-]uu`_YUV3>]ThMIkm#0>/2uuum5!2=f/uuuTb5D?xuu@}t?Mwh[B}^^LG:]QuQM64c.mKT&Quuu>GOZ=yuu`_:q%h[{uu83G{.P|{<EBW#uQMJZ>-]guu`_jP_b=*OZ)O#uuu^FKdsKuu#5|3Tx|^+Gh5uuuu:~LYQauuQM/~|C<!YRoRQuQM:,RSZ*mB?]@quuQMLcx;VxuuRU#y7ZlCrGuu=b>VV-_3Quuuk5R`C!yZaVSzQLpE)=o~)9x>uulwBFyORNwuQMfyxXCpk&Llp$uu`_pG_{]>s}QNSq&y!N7dJ(D~uu#5<yx/YVR|@Mlu#5n`f6uQ58K&S8YSEFQyk_>02P+COb+#uu83q;/tZf(s-h|/L#-g5r&uuuLg5mG`}Udt}uuu380Rc=8SPs#uuuD7@[,luu+fe(RmLI+gt7C(vpuu#5~<mev=/>uuuu`DKdEguu`_`/^Ld{uu83z/QyoH+<LzuuQM2)66n%uu`_.uo%{0hqgluu`_O]*gXeikuE%xuu#5<k4&txuu=bTITXx-C;{Cu*buuuMU~{=CZtuu$yjl6M1uuuH8]RIw/-Nb:#Uuuuj06+J`lu#5D)KC5e}5@5KJu(65cYH$_.vgdk=^BQuu(l1K`k*2luQMGtQ~uAX&luQMzo!1wyje#u#557y6N$_Q5gk7=*Puuu^ziYoboiwr3/DR;L<GMHIA#uuu]7FBO<3UI8=uuu+-~DFeftQNc%jf}3o&v6ZBc8P^5%;#uulwitY/I=wuQM{et%$Fe#uuOlM8Ww(>C2?P#Wc>uu6=L&0mSQc&:KTtuu->{^Lu/S8$FQ~3quQzF*lu#5m9?Z3eC+8E=wVfIB`A,wuup{<[F/[s(KcuuuU,<~631r2k2Jk9JBILg7uu)J~<d)`{!HR<jRhr6}dtHuuuG#Ew!xz4FCwuQM1<D:Wx&c~xuuLgyn3joXjQuuuub,!0{5fRxjNf>uuuF_z8[=!OUuuu:UYeklQuQMw}<6-.z.lS:U;uuuH(:Nmp6lp#*219]qV%uu`_q*^L-{uujPcNIrsd,T31K{C<uu=bNPOHUt%uuuyOmF|(QaBa({d{99:tuu(l:1xX.7Quuuf=fh<guu^0)myCyAe<%ZYdNpo2&]EF;S;.k_*c4uuuhW-ZAQ6TuuBQ:Uuu#5YCMv-.w8dgRLH4?*7Q{A#uuu2=);vcf+p6^PNBAxbU(QyuQM&rsv[=)-j%uuLgCepktj0ghuuu1u=m$TQuuuQYb@@_U}QuQMn&`OQC{#uuzQ,2VW%VRPuuuuXUhwMbtuuuPlloe<>DE}C87#uu9MuOMsPuuu!s,<>1#n!Vfx.<}QhAvwsv#uuu{*z+.a+29$>uuud<}4^;znWQPqm.m0R{ZV%_V4p,}F5tuu`_mn+a_=B[ip!PV>GHmj;xuu)JV;a<o|gDTyuuC3&Ad)S(<V.7!85wep0(z8?uuu$5gFTKO~e,luuu*Hg>0buu=b!a{l3tbuuuafgeo@Qu#5D#<U*2}aB%A/uuQM&0ePt=uuN(9>j-St$Kyk[;W<fPnpyIWQuuEtrqL#SlYuwuuuVz:+}xW&{0PqO}aIcr1Tfuuuc3rjj`UL>Uuu(&t?%&1s5o[7uu$y//0opuuu/`6W?/fJ@Quu@#C6`<wuuu#52S*:_7uuA<J`,*})OhR2S#uu$yT/_1Guuuyn2-5W_;XDI;3N]a|5ug5X9cEg:hQ.#u`_F2Jwc:NP*x*{OeBeEpfb^guu^04l5^%A#:tQuuzQ#o=d0rU8/uuu3sLtwW[GLXIdH6HT?:O7uu/TF;l~Ni{uuuc&)?#nuu(&B}aU90P#D~Yc|$vq*o&s~e~nDx,3IQuu2/?62a8%dD*JZ)Mz@mB>I;8E6uuu^w<e[OSt8p$CWlEgza:;HF0hKwI7uu`_k}Jtq/uu9;/F{4.5x@BIW[ZcuT_c+7(N?wuuDo#kXWtn~[xD1h6}Gi;P>AmfPTuu83o[V#uuN(c|K3VU{rxrZ*;#:{DfHwuu`_OY4lV#43?9OeLgrvXmM4uu)JZ+!th],vwZG(vpK_An8QuuOlOTAVr,hy}c~5]tuu=b|^f[S@$}0zIbN<^2F_v-a)v0~uuu=,|8=v#581Gsc/QnB./uuu*Ea1uuQM[!C2q=B4?e61@^N(G1/5#uuu|~|Y5/<jV&Quuu~3;+*z|3WVuu^0:q8Z]Zty>Quuk#/`lV$uuu~VSg%i3(q^UVj(+{tuuulwF~<6i}jZanH7luuu:8U-(XFG<&:iAyuu*7N+=v1v]p4{YnKz4uuu>V.mh+!W]ybtuuBQ8#b?Euuu+5Af-{q&3~F+&/uu#5PZ|}7[Y$x@oQl*Sluu;xAAEZzZsyp(HQ3kXCuuuu{*b4BAuu+f6h_D|tGjd_5G=Z#u#5ZCg&]Ml!Z)k%XvyW&+uu#5Z2x;!wuuN(FQ&>?n]gSTC44b/E)Bgzt#uu$y&(}3@hsCR(uuQMO&9*j+d4W~luQM4tO=THF,R$1j[6Ap?.ygV6X;Ap~*EuuuOl5Lz=HTe4)5]i>{uu*7Fxa>Gz,muu`_J2-ab63DZfuu#5ydehwuuu`bxXK~NML8(RQNn.DBWUa5#u`_uYjFY[b#uuk#4NP&y^h0qwuu`_nG?Xn&@Z<Hlu#5bnPqjsM<IzWB@{9FOG|uuuBQUtS&JuuuJ_43OdtuuuAz-YGb!*@YkYG^UuuuVWWkrRKyuu$ym{j@{uuuI`W?`xt5F(pPyuuuX}}bDi#uQMts.+H%l(56nHou|0?=C.^_uu#50e&XqEnsTb#uQM^WX}U,]#po.qub)9+Pn[AV6o7VV,*luu(lqVtG[<uu#5?;P+Q[p8.U(8_>tuuu%bPh~e=wj01uuu#@`S,`THa]CoU+a>PX)nIP7uuu/lEpbV=i)-eMQmlga5L,4ncwDMfqq#uu@#L_ji38#u`_~<=s?!<uuua5E-~#>u$cP,G1luuuBMsd[R/u2/Tv#uuuS)vr+@8!?Fbr0we:V:K/!uuuEJmfZcO<keuu)J)`|}Z;;.=uuuk#5(Nbjuuu?&V<`Vw)uuuua}Qmw>:7uu*7y+{t#u`_[uf*YPmuuu6W}X7l$NkT.l=uuu5odA($uu`_5o.rJKK`p<6I]^ES5@JH{kuuQM#yT+JQ+GPI|;YHIzt,wI#u(&q35m>gZQhyuuA<zv&B(C<^QL!Vq%+w<0TLQr/uuuL$I2wkuu`_s(d)-{em3BpF_#uu+5NNl9kLuu)JO]J92l(3f607qOQmM[*f&,jHwAe71uuu*uvw*^mUuuZ~)`V$Wu01BrkT(4uu#5G#nJ<qC<8+luQMf+f[{Zy5daba-}E~MG9UUwuuQMPlPL*SJ9s5/uQMn`:SaU6_e+A5#m3g<5AB~tcwkMpqfQuu@#c_6$Q2#u`_$q?2!D3#uuX#+3,MKhCL)lA74#uuPl52!U%F2{hpYuuu~`$6Vq/r{cx`%CBFaPet#u(&MNX7]G17K0B_X$qAVsz#uuEtqb!Xf@(C=uuuiW^+X$k8PY(5Ngz/#u(&*HA:-9Ss!#uu$yo{fg-#uuPl09pT_Sk3i?*uuul8U?4J#Cb#uuS`>=Dp#(E)q>uu=b--nda1+C%tg8luuuH5vlli@#emKM38o+jQuuk#x5WbQuuu(3]K`,8)2uuu&&AbCh.wuu$y_IAuuu_M&l8@8/uu$yPl8Az#uuay&3C4Sz%,cC?v2by/X|UOtuuuv_TZHY[*P@J@3uuuF05]GxI#Hb)p]/#Lps~1?TNEJn)q2/uu`_MI((4+~$9Gc!6uVN+[h/uu(&A{PWAJ_:^o~*CPXQuuEtH3vm^1tQ<uuu{5oohwQu#58C};cx~N8[tO#u`_+IHRqpV_?(W^[?6U|uuu2_kEGSQuuuRIK%JWuu83D*OWJ9QEx+<=uu@}q.:Jx4|}uu)J6sof]W1lf#uulwlkP1bF_9o;m]yuQM-6S(Typ83dhww(s5nuuuRuMwlV*H`7~E/*uu=bXnDc^)uuuu43HClruu#5}<QjYAgGLGI6uuQMCNao1muurr,t5hq`j74e%qyMcQWX2^gIi:e{]`Quuu*0/~s(&Quu&w1K`k*2>enx`w6wuu/T@n|vS)7uuu8TUaG5J5_RCJjz=Pa[nh)juuuuL)FB?z`PR_uuuuRy4D[T!#yF%[zfY}F,Sdqdc80#QG47uulwewC_a0#uQM=9UDxI%uuuX#o=Vl!mU.M>_0Hluu~/BK_0vT@%GT{Quu<y,2[3,Ca_^><Orc(@brwuQMgbJm=>3P%RHOt8trF28{uulwG].^+Ntuuua8:SDEf^%MyAENituuLgPl0rA#,0w#uu_`k?Q8&<uxtuuu/w&17T&sQuQMj`(bXqU|WQ-kQ3tuuu0)i1==ya<UY}lu#5#@26Vq!86(&uDg6JtDhM3=uu`_~I/9Kt=GzruuuuCCY9_l%*MBSdw[#a#.q@3uuu?rl0KbGf~muu^0/T`#b0HJ%uuu[5i8UPTuuu:JAPV]L1E@s`tuQM{w7|Zm|%93<y(zBAu#uu[5^8[P{uuu@yAx4V_kwuuu`W.*ETDh87^|fC1uuuv_C];efOiYeVyuuu_zO*+5#u`_m]aUuVxu<UrbuwEPaMnbs/uu*7.%~O`eIPuu#5x>L/VTK%^Pc~zd<yNki&uu(&OISZvbD?.#uup{gHPo2KJLUuuu*W.yy.#uQMpXR>z]>o_&7Quu`_L={So$>9cn-|5lj=!uuu*W9yu?luuu)?yP9~8{QuuuL=hn699huuQM6-9BJS&uuuG#E-:Bx$F`tuQM.;K(1fw<zoTDvn4cDuuu-MHrPs|+Fuuu)MB5jQ#lE,O{u_MAQUewTEuuuu|2vo[tuu#5vzv@,dR(.Uluuu1<|aL*1s/uQMD#HU*2}aB%A/uuQMmf*:x7uuZ~RrG1@<WyoqY=g[uuqW^wCHjI7uuu7,h~$vq~O->,+5$}C7uulwx2+4e_yuQM,yI0D2_Q_&;~.,|d)6TFjTT4Oj~`:luuruQuuuN(Nn`PA;HRNspk>%/-SlCuuu83HHNl#Iy|+bPdTuHqxtFmuuLgX{36nR`wYuuu38zR+P1b&r#uQM=9h#SDkG4[24W#uu>QDP|h<m|luuBQ{#.XH#uuX#348|1e,mkh`=R#uu(lxt}J1jluQM*.Wluu(lB1fI3XQuuuEC`]3>uu$yl>IdC;[KI*aI)6yX::@81yuu6=ZF|m$i!ww|huuu77#=Nh%^4^G&Ye*Z46JP0vB!5zxL|CuuuuBJs}:uz(0B%-KFY,)Np<tuQM^p.Zd)bQuuOlVLrwm^<*Q22;q>uu83ZQ?SR;TkWCuu`_9SKj;^EOtz-LQh4w|H*b_Huu#5o}-ID_=Q}K/uQMG9)ZHeH@tp/iGX$VS,|)0E~Zbyak]QuuC3;VPS[O9$rdB4j0DUL{xhEuuuzMZ(BD*3uu/TEt.TEWQuuuZ(GI4[*tNN;z)otuuuxu(q&o+u/PniuuuujoO(:FbT#f473z^!G-`5/uuuJ*qazdfNT$;ZpVwAuu(&CHp>{Hr:QK>~c6/luuEtB=(KY~Rq3uuu[yS)J=lu#5V)a46`nB[IO-uu`_5V&qh24>LQ/Ezh(F4uuum5g2VetuuuyMm5UI3H#u#5IKK{IztQuuk#<5RjnuuuSM4iPrSZ626byuuuk0`DG~uu83ek[<+[W0(V@DaKhzbknqp#uu8383w-v#uu83&8MQ&KvMa:F?,{tI=S/wuuLg^wED-yqmvuuuFM$cIDv-nz#u`_7Jn?h6Xl8~~huuqWC~L-`K0_2qg4`gllPuuuI_ys=Nuuuu:N@[g;uuF-^CT86@Z!dxG{uu#5E,[5&Q+Zfsl|#U.wngLE#uuu$j)?3P#|/^5!T7j~Ah#<QuQMyM9yE>nbotuu*73e-`WL8xuuLgu7}Uf.#gu#uu)`7s,(O&`P7_AZuu`_ho/v2z2_RHvrK~^h/uuu&3!0E`n;P@/%yX/uuud,Wqh:A:zc}A{?Y5/uuut5=Kfv:1tuQMk<KC,T/`F2&}M`=[!?=IH)uuQM+A6*fz-h65wuuuO(g|y6sXf%KuuuiWRwp:csduuuQVU!7UuZ8uuuL&J*e*luQMQsA;C4SQcrQi.O>5Fuuut,!f~hoR}uuu5#TlRyQy)2oDh[$]G9FF^xwuuu*E[pQ>uu(&S%#0<]BR6:D~|W/uuuWB5pi+U_/gp1`kxGuu@}c0$ZQ?6Xuu83)}{,{a`/.PFyuu@})Jp(`Q~Kuu#5~)<[K>uuLg1UYvv}ruluuuw8qNeAexwH|?vD_8|wuu*7&?dI{)G=uuN($!Z]dkE{D7&b#:0p7jycaluuBQ@H<=auuuPll_hoc$,?S<,?[;Adj}n?<Nuu(&~/>E;~Zn#u(&T(oX!GFD2EP$hd,Yykytuu->&k+z*7E1.f_qS>dhb,uuuu%]VmTL(hUzuuF-b=QNGdS]HKxQuuZ~G$C9We%R>8;~12uu(&OltP+k:uuu83h9w0$9$y8O%w0zGa:s8Qu>uuA<M;49q~h3m4R7uu*74wad2I]luu`_q7h~V3q?Nhuu#5^ph~4.xQuuk#75`17uuuTV)mp.m]v368!uuu2-2:@suu`_CCTJ!j:3>BzeJEh:dLr#`zuuF-yn^*O_^o~*WUuu#5PN`J`$vO165nI?S+0iRruuuu(DbkDwL9:v^1k^6J<f>M#u#5{TRr(!0!7#uuRU>VvA0nH#uu^0}Am&]cR;`uuuH(gsDN-c#@|d<G`_Q}uu83~I4#uuRuQPe>|8uu$yf=8nO(!50wl[5l?|i5mb${uu6=~9&5Vy)=:1n#uuUUJ_hs6bDo>=zNb@Aj4Gca(HE*je3Vyuuu+(b%Ki9/5(/8!QM*uu^0]yGN%,w6j#uuzQ@c_63JitluuuE(h>v_lU:3TkQu#5#4-)WNRj4#86%WzU/uuuJ_r3p|!uuu0)h>rWy*CA0KuuQM+Rs5W/5huu#56yzx.YL$jPuu=buW+t7cqc0fS~wuuuYyB%FIny)P|X^_KCVtuulwe^8;!LglmF,>uuQMYfccn53#uuPl-c]1<Ot#7;w#uu9MRJRp=uuuror<c{C(g%yzK4vDv|q^koOo0opRzuuu&wlkF4!{qj(<SobluuRU(H$8B4_4uu$yFk#~y|mb]j|5-[1FJ~4+r{uu83TM+DDFcL$juu)JjX.zMn^m![]G>3icjbHD!{rt2`&vguuuZ_&]<P/Tuu=bWq-Z:1%uuu`Wq^O5S#,e.OUf<uuuv_1Nte]7J>){!uuuXJr^Fz[1<]v5[c0n7^e7uu/Tx9E@kq!uuu4W;+nC[!emuu^00H:^.^!&n#uuk#K5=;tuuu?&K<JVnJ1uuuhW~Z[P}guuA<moudy?G3|m&uuuC3`q5Lvsu<]@<b@|JD.|2$;uuu%,Pcm+]AD~jyuu`_pn-9MESMV,Qci%Q:(|3Guu^0C3jFsz$abuuuI`iJ7#]0[^V(%uuu~VG!l47XRO)2@NlQDuuuBQny`|P#uu/`bWT#6}@Quu@#=6u1fGuuQMFvg?}tuuN(n!zyW#oKkkR83iqT|pio%#uuEtH?YxiM88#uuu{Mt=3&EXItuu83Yw40{luu~/?j;yVtUH,|/QuudtKPua77>srrY%6gqfuu@}8~{BkFJ3g^&byxuuQM:Nxe$xl3#uuu?JXmW/uu`_4l{!m{uulw$5<{caluuui_+^~Fuu(&7*C^y0@q#u(&O]qe>LpH]n<!>n/uQMH3oOoSJrqwLw#u`_f@0c3KaJ@suh1~J)NA!-i/uu@}n5lNdmX&uuuu;G;.,y|jvUjrN|xXT`*mlu#5Fj(gj<4][PuuA<]@M#xXJ1esv>uu;x(e)Z8iHp{%ovR+E/uuuu@dKdx4uu`_sb*UPyuu6=p+@4JV0Ph@qyuu83x%$g++MgYTH+!AOC7=bUuuQMrRA{PHFf|:b-}s8xHP[&#u(&F@U*GDgm=>uu*7T9y@g2Gxuu83;MDY0#uu(l=LC%_$WAOt1vlu#5-6^(at8<VLhw7(,5_#uu/`Gw#aB|V#uu@#3r}7zd#u(&aWVzx`VdY/uup{5+C89<:khuuu9_>N7.=yuu834lO|4#uu~/NPYFaC^}Ub4#uuk#159K1uuuu=3^/fU1BxL!aS72JA%3v4tuuu(_!#uu$y]aeBx#uudty3Yk]g9&KDv_}|=Fuu`_BQ;uuuy#^o5^e7F#uu>QkqT_R,$tuu~/o3Hra}A/8Rn#uu9MM+uu#5z#:PcFPQhmi$KG!uuu-E2wLM_uAOJ=1|!+dl#u`_W+e<D.wqM%W]%IQ<muuuRWOZ9R0#s`ESs|Y|AWmuuuZ-a%MmOld[TC`}|f1]Quuu/u@V8Aa4luQMqC7kgj[_@ueQCvwuuu{M(5L=t8uYT589/OFvuu#5pQAlQSm,?E&ry:OBV6uu`_eq;=$:JFXe>#Py[seuuuVVVgSWhTt>v6zfuM0fluuuD]oj#*-lXMi4:!k+;ktuuuW+U:d:rJwuQM)rykh%/85%o;$7KIQuuuG#$Us(8>d=Qw_H8WxKGuuu^O5rp3(Q)6&=G-eG<FPuuuA5LQK2=_xbd`vh92a(3uuuH]CxSOIy8XTLgh6?PUyuuugb6/d7k(/?hm{Zu?JAluQM39;ZtQ0SQu#5vI>r^i4jnl[r#u#5om2Quu&wT9DDn6EKa8Eb1/uu^00YwQnyak$Uu[_cbn]/uu^0BB@:z;d#w.,LFYkTx7uudKnpNWnGuOD#bJE.v)Quuu8R,H_n?&iaZ:KoD6KruuQM(6Sq50GM>zl:ztmE5@uu(&]o}PtQZ!#u#5EC,--y@ZuuuuLSx>r0uuqWF92Eu;3AFF:Y=uuuG5:-)gx_uuA<L3Mpi.Ci||u7uu;xj|2,-m0Q8$8/}kDbQu#5h`8Ya>5K~RPm6>3fPuuu~`8oH>6Z2?8%q)+jN3k9uu#5o|U62i*YOx#Ouuuu[5v_GgAuuu^3q^PXih%uuu_bgCGfi7uujP1*!#fqUnS_jdB4uu=b.W|<`yxuuuuV^xO+#zKy/J])IuuuY&>AIPJ:CIk+{uuu*E}pc%uu`_O(.r%4=`W}!PkO]quq<8X0uu#5mArbAK{JW#QuQMY*;9VDG8NL<BLOh&-nsmCZxY0Ze/Nluu83,;{8k,.~Y@Rw2gph,j}~uu#5hhQTh`yU*|#uQM;3!5kA+a.tuuLg:W`V:LZHVuuuJ_~35|3uuuS<j>Uuxov6EBuu`_6yV3sf$ja(,b#0juguuuhEW+FQuu#5h71;z^~z,c2Juuuua3gU63JjxEqb(@XpWH#5yuuuf+srzRMZK[SON>xKc%Zt>uuu-EM]:kGd3_uu(&#52y/y#]uuQMt%C?o!uu=b-96YuWMEaPi<8uuu]&D;o)sQX4N@!Lo0q#uuBQ?#,Otuuuj8xEWq>TSMSBr/muuul8x?LJ;-8uuu%,J-++[#@BFQuu83=74IKS,^=iuuuuPIA+rOs:SlluuuW&Aqp}T=Cd<duuQMNQMQ`Oq.lu#5{eV{![;uuuI`&)LP9&F(dtGuuuZJ~]GtQuQMLj5x?Gw@)ipih3U6OT{MZwuu`_?3@L9yuu`_aoG[8odtBB%T@V:q@9~uuu^0v;9d/J`kIuuu_`Sn@aHrY=luuuB*aWU[uu83niMwICUDFSHtuu!]W.eX_*p!LQ[d:n?Ktuuu00^ps[#uQM`_:7v7uuZ~ONDs=801xtx]myuu(&vB<K|InJ#uQM>Q0jWUuu838g]mbyuu(lc8HyFPuuuu<WZmwAuu=b+fwmlpyuuuI_{ssNuu#5k0&B@HW#uuk#s`hAPuuu<5X(n!G]buuu_V|<Z*V,y$17ovQuuu1uum~P/uQMj0d08/##B[FZ|?3a7ihcgLuu#5$@9I4Puu#5)ThOTf!;_vP8.9c?,8B3#u(&*H){VxXK7uuuEtAg;iMC<-Huuu|&7s&~uu#56:7o`o3/>d29uu`_]Tc.4[=|;wA+q9`[kuuum5+fvewuuuywaW14uu`_YzXYjGgB8~PF/#uu+56BHr<Guu83EC,>o98yC(c8uu^0>k}^9]jC0mpF{NsaMo}@R0$eRp~f-uuuMJqrOqKtuu#5O&<y`zymH+FxF<zdp{dSuu(&l5=c^!w8;nMDV1Quuu$+g|Jl|E~ghuuu`V%gJ&Ru%@F^is)@*j%6i)Quuuf4*3q:gp1-/uuuqVT6E-iuDsGIeFG2v,U&X#o,R;>[;wuulwDy^>nwQuQM;WWWKJ%QuuOlM_H3&oVB7j}}2tuu6=5p1-ON+^<c!luu->+}=j?m^I{pr,l=NT^V>uuu&K!aC&$]`ds[R&9_i!m_uu/T|cbf)Q3uuueKLh%5>$,huu^03ONV/3-UFuuuG#(;j,JF=)#uuu!9XB2-a~luQMaN,l%khQuuk#=(yk-uuuv_UBMe7B(SDk#uuu>TZ8+2#u`_7dLj&#)_.HV&vqtD]R=]]kuu`_FxA0}7uu11v`gl5r8f6tfF$n;&~U//J|^N?dXFluuu*WUVK>C8Q4jJ5FO}]*VmWuuu/V_GQ@uot~uu(&(_o_W4~h2#uup{;~:VvimcPuuuL3iD65Qz~SF.LTuu=byndvKl#uuu=2r=K[Aj6uc##6Tuuur_&):D-vG?F-#uQM.$66{!W_xL0={K/C;y6TDJL6T,}Bsuuu@#!rTl&P#u`_,;VqyEZG0%bPuu@}39ztoU~VI?r};yQu#5cA&&(nsuuuuizsaQ9ZC&Um8nIrcO06|?{uuuB-uq)o,]#ctuuuttu1B`fKZ2YWOPgiiGo5h?aU1u$p2euuqWy#^4^{luuuG5Pir0JyuuZ~p#]^F!SEGQm:ePuu834/ES0wB}W@Z}uuKE%t;^IwU!j|-ll{C/)qAuuuN8-Y?u9^#~~Yc#GM_qOGuu=b]yNtM5~uuuH]KaIuge?Huu^00esO$QLfKQuuzQEd9-o~KH#uuuEU*pzjuu#5,;l~}/9=a2[mluuu+51Nv9F0uu838~Jsm[i.hi|Quu^0t0jGc{*0_~6d2Wa>tfBwchU_ov?=`uuuhWFZYur#uu6=dbv=tHl|!n$luu&wFV.jy^WmR;y/$!uuRUWqjaL:E=uu$yEwo-Kp}e>>xIUg:;lGxDewuu11<]J.zB}!+d.^qx-*fsn.]5Kl?E;D=uuu=eaCHRttuu(lknA{oTQu#5;nH@mR#(84kLLi/uuu>4A.CU}]i?:<<qCNyF}/uuxzRW2f03p>]>I{y:*1#!7uuu<58d6kc9nuuuB_VpK$s6%uuu)J`_HWhtu&_Quu%t-1,OVA`Quu83U*$$wp#kna#u`_[Ya{708mxlWguu#54/~NBH.b)L3]DYf/uulw*ryOMDwuuuafD]b^},gQt^ezKILjlrPuuuKW.R~!ZZ=uuuFb_XLA0/^Q#?MeV&=mP$S>,2or`Hoguu/T7q$4[qQuuubCE0Ga+.%tw|uu#5vICg]|JVnlgf#uQMmRRX-bNE5x|Yv:k7uulwb6VR9]luuu;ze<#YnqB/H1Dr+YCGDW_uuu^39R|FlvtuuuiMY&r,*u<|zFx<<.]Pe6~ce7F<f8?luu(l4|94&Xuu#5r=m23+k+<y!+uu`_X,u]RbQuuun5fvS*N)1uuu=,q^SeQPOKuuuu!(WA4@PgI*Guuu/2MI[^9rfM!uuu}5=Oj]3uuu=5,<nGn<Dxv4H0Auuu6E(AW_G3@N`eM_)D#u`_)}a&vM6uuuru8#ABOy93jHZBciSCe:Zuuuiu3t/l,,yuuuw8bN1~/!7..,JDI8Btuulwk!&i]XluQM.?@+>;SV}iU,P>=uuu=59<mG9_C*v4A0!uuu6EzA!8V#2rg6C_tCuu`_t?T0o17uuu-Mxn$-ZE!uuu~V!gDDCTW_kW>0lcJuuu(lyc(QPPQu#5L-5xLSKFJI.p8x{uuu$Kq()J/yuulwXec@sxB@CNmZluuu%RQmMWM+qabuuu7,>^lU?H6W;c,)?!-Quu83z/GZt(7<wCuu#5mUkto6a(lu#50psrZ);.`k+HqCSU1uuuZ_}YWM!3uuLg]y:/]mIFcuuuN8y-cK:n3p!RN|X])1Be#u#5E8OSa]qk#uQM%8`<~Wz)luQMVcxocVD:W#w;$cYW4=#u`_?d4w{AHKyM]3-Y_X%uuuOyy)OX6|x(8)k0wuuugObFu3Xs{F23fGuu$y2{EY`7b[kD<Kz]xF&lp~87uu6=bh6hmEv*QAguuuOl7z8hwO(`.lg,Jluu114008@H*a!loe7GQe!:ReCJJC7qz3wuuuV<_KHOcuuu*7p>,|(=sx^v<9OP@B;3NBoa+CLK8#A#uulww(^.?YyuQM$+iCKvgLB|SOuuuuU6^f?uD?*1i`2QY/e<r0|Ev]mIJrR`v:^Y*^PF_@uu(&%,C^&hfquu`_D7-ze*)uuuA#IP^TwUyFO3Tfip}H??#u`_FyM&Mgwuuu#@#;GBs!q67&LlALVdq`mpTuuuvQt$OngkAu{uuuru,5gC~|W)v:c1z3+Y&HWuuud,110pN#V{rNI]hv/uQMyM`m,w3lytuup{v~k&zU[9QuuuZJV]Xt/uQM-_-,~G]~adF4#u`_x^{S=RP&VdO15lT#fuuu2_fENKQuuu:~[YQauu83+UF0#xJh!69Guu@}I`2bNNkyuu`_/#Gc/1yT.m?=x#uu;Q04M;]+Pc<Tz>z`Vbuu@}m!SzK0W?uuqWe44Q6|`uuu2_|EoStuQM2-xXl}r9A{m!uuQMEK66b{uuN(5#tPI6>wY%^<*(uMeH1OStuuEt2;t_Qj_d_uuue]xX5NYQqNyH&iEaUx}?@p@22N$;HPuu#5]!3zGiatG1q;eN:%,Cozuu(&K05m>QJQiuuuEt`UdyRwLHAuuu4]2Cz`rRM8p5QuQMwdKhO2^xm/uu=bFFzaQf1Tz#/0/uuuO}/PTFAtuu6=^H/UV@d=#?htuuUUE_mYg{S}>KDbvsj_@/Q[?;IRa%P~QuQMNJ%=`P$55#CtXf3uuuK]~Dmv3Mdaba-}Y}@V~b]4.Wk[V>kQuu(lo5lH(suu#5sQw%0QSuuuX#_=1/.j+k`w;U5yuu~/0^lVv,dKUdv#uu<y4L1t$M/5HuF7c^OT;^#u(&~Lppk%$NAV(`l(,<SCNluuEt9bRZ=_,TluuuSW,YPbQAn3uu)Je4^fhsBp_#uuEtbih:aR?jTuuu:U_e#<#uuuALcJy;6QBQUuuuiWsO^[*s+#^Y$*d)#uQMqW:7=%uu`_mo2@akl>A/lu#5-_6O~xiO-1Cy#uuuQ!Lo?rFX%qQuuup(<wuuRUbhzhRX:=uu832_Duuu1u7m&U/uuuxR$2Deuu(&77:Yv~~,#u#56s$tuuBQ7M#jKuuum5Q2xeluuu/wV=p~|-tuQMTG.ZxTu)YqA&K_{uuuh7IA/=uu`_P9mF9VXIYZVTL*DEp^|!^kO~y<=uuuT2A7TUS&6nbJ/H@H#uQM{*vwx*;UM&bE-RZuuuEt]!2#uy--4uuuqb5#D8>}xuuu#co_S;jY33FcV26rM~%`1lQuQM4)t+J~b-luQM$q`d:#a!luuuU{x2m2(6x6nf0%Z3uuA<e0-[Lg1NTA.{uujP=sS2t_gh[gfOaTuu+f%KSw=zSQ@WA|)c#u`_SEs0$ix*Vxhouu83:NErn^<%.dwSuu=b%%k9Mq8uuu!5VnfzW9tuuu_bq:NMyyuu%t#(#_vD7tuulw<p=FBJQuuu~Lm_a]VkyuQMALF8dE3#uulwB34G)$V[=?}c3&oL*x?bJx.W#uuuG5C;#KY]6({GvL;VM3FG1:ALL^uu`_gMw0}|C5=rPL=oc)`Q_BBLg7.uuuxQm^YGwINaGRlU]tdx#.vAf!b*kXYzf~QuQMdAF,~d{=GmuuLgzVqz(ZIH}uuu6,`6lOyPu52K+~OaYuuup{m!E$;9=oxuuum$0`RV~6X9[7_8joj<Yk40F2uR.uuuBQsc7RhO6>;}uu#5A{ZaI3@#I+wuQMQYM^2}If<_uuqW$52QmB[[6B*FB8sY)%3iVwP|Yuuuc88QM-InqLupQ9mFtuuu4n^ka>)f?kD*D&>&8mOgB/Ld!Quu~)kn@XEasZkKBL>kuj?`)bFN1h]H[?DJe#uulw`c8@3:>1JiaXYe9n6RM+G`Bj=uuuG5Z;nK~NS+]GOLgOL=(Sg*N,5!uuF-~{rj:=y!Z+thYhq{vGO0I9M5ZT9G$QS#uu!{Y}18:XEvfc7[8?F^uuuuTDkCa<z;2s#uuuD]oCoO!p~c;[`144Q>aE0ld/4xr]<EgF;|xmuuqWe(<$~*%+(F>$F5~[Y6k]U{fX[uuu@#W^4%{f21}a-SAi(U:jh>j>9*Qu#5@;S;@?2$>GuuqWPc(8JjD(+=%eobf%_|76oLR{xuuu38[mF<6%X0#u#5ooqU`;ukPj6Q~wUYyBgQji{=|R(ay:+Duu#5DGNFBa&tZ?uuQMoB0a]QwT7uuu;x!@Qu{)Q*i%?r1Oktuu(&Vp2(F6C2Z/uup{nG]_.1`Iouuu/Vo4}^UMD0uu)JKd$r@1D)WluuK%Z*fu)SZx?rDF&Dos}-0Xx0_Pq]gkAKfyAK]PuuqW1Ww0}|C5=rPL=oc)`Q{[Fwyo?uuu<@s$,a>-AwuPnG=k:lBgm&Q}m=Qu#5PbUogmvOgguu`_F-Akrxy&x(Qu#5^1ID?H$6Y#uu~)N|jNX~g?xd2W]v{6,/blGNIQG!,#-?%uuukn_;9ED4w;68C%k~W#%`3k7.P#CZGi1-{uuu43TS}Q-spvWuuu[5{F:2BvXY%luup{^4DlJCXOhuuu>`.2B{IhgEz*brM,lnc|EKN/aoHa$Ca)luuu4x:|K.BLXG81j)]sTeN~QB~5=yuup{C3/YCjm&huuudue{ei.@f]!lv3fQG#uuEt^oxA7ZQi;uuu?yKG_c@imGuu)JLgKOT]}zD#uuEtN|]u5fI$>uuu7iTq<@`8Sns#HDrikdc2NC0WNvR1fg;uuuwOz[ZmEi-a64nTnqTQ{uuuH]tanC})^?N?7|:]N5yuQM5`}Uo=/9K)jx)Y3xv5U#uuS`BF++bo75MvQ]A^6FiBW*x;1jw3?dpQ*=dvMNS^`,`uuu6W>l$,H_MT5>Quuuul~|d;n(_h.1)%(b!G%_;]uu#5wJv[cACQQuQM&M_1h61]#u(&/dv>]eSV6B9O+~uuQM4<L[9A%uuuT/uy}WF0>yF&`*Jt|lEsh]gAw+/%Z.a+Pr&8&~k5MdW30uuuKu=`#{[M-sjP#u#5bnC(l/c}3Jxwr9{g50]/uu{Gmk{$*(7iB@.rJK9IGM#uuuXJKeH6vGwv}=%[.&C$e3uu@}a@yaVq3k<U3VJnruuuiih;Zv4O%l4Kv[,}qT*VX0>,-a/uQMd_+@H$.md6Cu_^Tm_uuu|3`c=[dHRc`tuu/TC3&i-yrXu8x0*4[@Vk&ZNY^|muuubV7[UU%2/nZ{bA[m6_7k`Fki-B7ar]+I#uQMl;LfPH>+l{kX_<+#uu6=)I0$E.~$B8VQuu%tu`90B!FwuuRU/VyD_m6/2JXf/{l#uue($t[UbJ7<&(Tr%)H8XeQu#5J(5[4(4*[uuuRUn]3x5h`8q6b_--u#uuo#b~`i0eu6!TPuuu6WaX{qTm7ltvQuuuN}ERip94tuuuYgMXo}_4l6g@{z8HwVxP&>RIX/uu(&73W~>|7Q^_<@&gkO!hV_:D&IW=u)KoTj$Fguuul8CEM3T@Zuuuc(PEu)h3z^<G4[A9pBc.h{@Irg}2NJ$Pn&42;uuu|31T}vj^83R%g2Qcuv$x^GGA0{D+rR}/J(DCf@p7ZrPuuu)rLS;Dhp3uuu[-W:V+3XO8uu@}n!?(JTQfuu(&L)C?cZu;]As2rTacZruu)JtwUhr<H%$d:.(]5xQvd#uulwacFOOGRmT|=gdU9}jN/}1`V%Puuu^eY_YCI}E+^=vw$dV1r)i|TjJTEUv0#3L.K7uu/TRq4G}f3uuurKAucCiJ;+]6LXYzuuKEl|jVCA,IAGFJQEg()w3uuuA#@q:4?sWl9t5;LMH|oLuu#51SKzP84?XB#`W953_9p}lVtt^#uu/TX!q@,j@^;%<S!}D&E60,_Etd~uuumcB)DJK$#k3S}+9kZ?i04y-45W09POx2uuuuvl^f{=;}(*=g1<X7FZk`0^yg@6n[5`QuQMP{P}h|k_]^.DHuuuMQNT:f7?=L66[ioq.@?XfWxuuu`W:Z$Q0d^3ZfyY4uuu4Oh.>fE1lm4&~Bptfuuu!{hvw&AlS5z][xgNWZ#u(&3GBDllJ/tF(fE%#uQM??s$#{+;QVQeuu#5BG}:7Uyluuuu*`$GJl?B++{uuuY}?mKdo})6uu(&9FOGRON|uu#5Avz0<5a35k}H.GEOd-uuuu1YtbBgJ41mwuuu-7~.|E#{m.!$+wuujPJ)/,?(Tno/i{BDuu(&WW6k}_7Ti4ybGrY#uu(lRxeqF8uu#5X{)ZEQ;.)DMu]CTs@#E+<;uuqWN*_%b$+GPY4-ctE~xA}=m%|izQ]>xjNH]FwTtuQM57EK+nzmSMW%+^Quuu%Rx2+cgdq=1uuuJ_ustfO4/y-tuuBQ#y/(Fuuu+556+HhFJVo1g#uuqWc8IT&oAuuuY3g*(qhdaSifg|XL2sS7uuqW8ND,n[7uuuX}%baituQMmG5x8aQ,P$i?h3vi4T<t_Huu)JuSK1xwQ8~TPUvmceJv%kFZtrJ7AumuuujO9$+Be3k9F/V5o*I.S=2Quu@#*rF>n2uu(&1zRgmN9]8-C*v/B@bvy-CVn!8#UB0@79Vw3[bsb2TP=9!xtONdFDPt{UI^5r/C3V{3w^[Sj>_QuujPop(AMxqN>/H!@Vuu#5nAz^-M;4l$#u#5k<2[-AF`!:XI9~_<w_6GmRuuQMsb08]YQy|qluQMt@aSr03<SEF_Qmb~{5rNuScwayWn0uuu@#X_M$6)uu`_.e5a/%##uuZ`OWr`(amp7-..S#uu~/]}bg8]vR|1jQuu%t*rF>n2WijP<gFvguuulOOF#+R<QZs_mTUxuu(&Xt@{s*;ki7uup{AAEZ.SWd7uuuZJT]GtQuQMkp7oGzk7y5fp#u`_sG$l{fWpO7{xc}u|=uuum5%2-eyuQM4L+>}WXg~9LV#u#5mUFlK{MaQu#56y5x:Y;W%tuu=brr#s>9#ft&q<muuutV<PFkDy>_)==n15juuu}!Zc2,def^hbfG!|{r/irm`#|S@wt;_8Zm0A=g,C]GA9uZ.g/uuuG5ln-2TPxYy*u%uuxzym-r[J+iwl-<>!8lmi{uuuG5kdclITuuN(]G3Qn_7u)#!e,m{Kj0JA1#uuBQg81cCY]Dv{uu=bMxGQDy~uuuIMAM|Xb:VbRq~03+?ks.6w]Ogk[}f!50=uuuh,~Scnet1hMxX]}uuu/`M^rXnTjQuuay(2p>5GulZ<G{sS-PRyp[kuuuJ_r+.b|L2gy#uuUUokm=)Eg8tE_rD=d1:.Wb!,w3TjoewuQMi_eWKhtQuu@#r8*ogcuu(&a3cFrS?MR>^-9c#u#5O(f[<d;`0_B8#u(&/wpp%{]N!hp=l(dz`C=luu->MSLV)EC5O[N&Qg6l|Sluuuk)Zodv<Cz8uu(&vMdyXVIGz<3!GgPQuuBQ^@[0?x:DA7uu^0$k3aFoEmA#uuzQC-ifM2IVPuuu]rTUuX|=p}l9uu#5(oo)A7ijxtdkGWeHH#uuI`2po#]TuX:H!uuu9M-5i*@?8BY$o8-?7Ee>m#uuBQftq5Lj.9H#=s~sr~!`o>uup{9IyG3@n(;uuu;MCM]mAhQuuu,r!DwFuu#56-#,EfeS#C:Y>uuuH(ps,,1?p#gcU9g;l{uu+fri>^bQSe{AE6cxuu#5hPHR,KP}#uuu?T`]lHuu#5*7hWqR[Yi@luuu&gonrsEX~T7uuum5y29e/uQMus:eOKy7$Zcc#u#5T{}U?$~0Qu#5xR2.cd$#uuk#S`60<uuu*W/w|~yuQM4tJ=~Ht)$`1jr6Gpw.0!}PX;<p2*&luu83wH03)e4{T{~c0=GA2p4zuu^0**>hg5[2quuuo#*16diX#N1_juuuw8|@z%H]vHONyWPg{yuu$y,7lX}uuu/`[~_^xecQuuzQFd]c.|[#yuuui75H~XbsGsQ#uu9MwOSNTuuuZ(/OPR%-fNCQOp{uuu?&J8Sc$wb[&1hY<_#u`_EC!0htRuuuS`1-c)JyAoEF$L6ksEMg~tuu%t>9Oc^CNluuY8ti<aO-1c+:$er~=}yLjW/#uuBQmq:d@sX75Vuu`_eP~~s#uujPzSlLI<J95!=&ibuu=bjOC]+4Auuuhb6*qWZQd*8j!Vr/[zm.suuul8fN^ABsLuuu6,US!+.1?8UqT}d=VTuu/T>;%ZRRtuuu8b5z5k]M!X3MS(#uQMiP9K=IA,WpK1Y=Tuuu7s`lh5Vtz+{ZAeVPuuqW->*8q&nuuuzV+!/Q,Gx_OgJ]W`2Ro!)#uu>Q71:1R1AluuC3s_}e79K;#r_A8eE^qwq93#uuS`-=G]p^~.etuuZ~{pLYw}%^(6ezU(uu#5?`nQw?t,&a6`N@Owuulw22E-_Xwuuui76<}n}q5g:[q&6aPG!$Quuu#m&dGg{X#uuuPme{c[;lGuCK?{%^:#uu@#})Z%YAuu(&rSU9hRvVqD:dfBluQMSET7u.zQuuk#e(pK{uuu(3IKa&TRTuuuG5X-y_`{uudKBx$%5Sp6Tfx:k%?ctuQM3Gz~:PVQuuEt?>];3DH_Yf~N~s<=2uuuj(#-fPHNPG(Z{Pmk/0|uuuL&ID#uuu)dAkNLgi43rT<RDeR|!,/uuu!e~%fe8w-IV3Ztgquu^0Xm>hg5[2quuu;Qc1S$r[&#Rt>9&%2TuuqW^?6zE:#bcEjI7uuuzM[l390:<`F%muuuRUW,fU*0WFf#+{}-P#uuS`D?G`}kVRKguuRUn!|;t+ajuu#5|et!uz<=^,luQMr$!BfS5!Y>uuLg^(!qK-(%quuuFM!FUE<WT/uu(&Q5[,`xtX9yuup{%s|oqNN[LuuuO&jK7GD$B%*luuEty^H2kO>yTuuuvJ6[01j!quuuafse:9luuu%zd[[J3PRoquuuTuNtGB[,mVuu^0Ocvi-bi%_uuu_`_4R[wOsq/uQML=>BSY.=nUuuRU@$LhVJPTuu#5$o)wpYCbfMuu#5-P=qNzB<)1:xC/5rh_H#uu;xSF9iwd37QD8c9KCwQuQMrgC4;|e=lu#5~xTukG49=vhIuu83E8UD|Gat;2d>uu!]1iT%*sFPmojH=vay3uuu$KQG`2PtuuK%wPEnhCrdiNACb7m9y%/z0aUh6QOe`#^PYHm}uu`_L^a}0/uu/TF/W0_,~o4W/eQuuuE(l=twJYyR4GQu#5-_<q`F#r=<K,uu`_Xz#3/nlZx_o@}x-HQuuuA#.2rpyBJ&)V}&e:eJqOc/ol(Q9ZS]A2MHmwcRQuQMJ*qGScx+05fZEqZgiuuu#@|kAp*KE:ZKCgG.)Jm,M;luuu^<EpOW8P#uuu.gYKsX;.mw5>lu#5_t!+jz;uuuMQeS06>3kq#7vcI:K;Xk=4AuuuIE}BgietUiB+tuQM?}G=|69Quu&w_{.$c?6?1+Z[0mxT.!|Xbor?mH.uuu/`I(Z28nk)ho^Iw^QuQMNJG=2Pl(,=CtZfluuu*3,^#[lwOYqJcTXBw.&@]3#u`_JQ.r=405MHT6kOpq1q7;0muu#5A<hWEX]YN,wuQMtu;OxQnae4=puu(&bsV$b&&>#u#5l;7mgKbQQu#5`7H;~I/QS&4<?OHWzuuuO&DiHHwuuu^)?W)g]uuu5{J-C)Z,r5l0sa3C;B~{GqzXe=yiy`tH*[D#uuayC7kRua$(-$KK0yjgw}h@iuuu1u;c}zEW,9s#uudtF7gKB+Yi1(V;l_.muuQMo#w(xI9t4>QuQMB*IhiWH#uu$yQ>]fK}t;&AE=n&I%H(cuuuRULjr7}`gn7V}Wmbg#uuX#Z4@i>S;v{.Qq9tuu$y8naARDL%X$uu83]HLG|i}XKI(C@:BT(5O:KUuuN(G{]i7$R*=[<8!rFh_}.3-uuuBQz8#(z8`pFDuuF-@+T8<NlTOmvTuuRUl4{ikVjKuu@}S`^^O.w[uuqW39lDrP.WyU3SxPVg8uuu50neuQr/uu*7_xue;#(#uuKEy$(OgtDA8v1Rwv0,Y)?E4qUn}ln98h(00|@wx#uuEtb%zFw2ZNPuuu=2D{MP2dhC?y^-guuu9_cN@W5Guu^0D!k*OatG^eIL~tIjP7uu^0zxA7jAlb>pyF2/{i5#uuN(E6-+)}aXU<Dz^6o6fByyGyuuUUm<$$|8T{?smBY]Qx7z>6@HMS;!8`/uuuEfu/4^4I#uQMq]o0v0m#=o:d.,4ZefK2B<T4AS/`*uuuaye!m8D3Inp6*k+_;qz:5X5uuu*W!wQAtuQM3eC4#DHj|nh.#u#5bL7S/mbJluuutw8&u3uu^0f<HoQ.Z,}#uuEtU${1*r2&qmVN326(`#uu>Q3fg,Hx9uuu@#X?xPI<uuQM[!(OP{uu/Tg8]rS+#uuu>s<lq--55NK&s,A~LcluQMiP/l+FRqj?a*#N/uuuw5g.;_{{#uuuLKhM>0A@f&-P./yuuuTeO:zRwK7xuu+fn5FW:y^)[%7AM[uu`_ERZOloFOYt`A|YF>802)>=uu@}9zl.Mqx=uu(&aWtgoW<5BEq4F08b*[uuqWl?XYet<uuu(8K]jQn6F^ByhWN~ICAe8Y-NTwxhb!uuF-x>RD8hiCt].Guu@}FM=~@QH/z|5fx(RuuuMMHF4}DyhUCi@O%#uu+5^Kr##Buu(&hb[61MFzuu)Jf$E;kBr:ptuu(lD|sHJvuu#5G]c/#cwMcIa&Fz+[_}_5UVuu@}g8VNf{2luu#5:3U+=eVdB95>4&ItuulwV)lnAD/uQM/Y|_):R*PcNhyGe.gR1wuu6=F)NN1)=biv{luuUUmPl`|EcNKX9zIR(f+cNc>|-V+}gXQuuuKpXBCf`4yuQM=9urvc^#uudt+sRyso2y^Fpz)71!uuqWPl2X9xAuuu*W+yN)QuQMno?+IC^(9$%-du#VO=_.-yuu^0wT@?<n[&b7AdKTcsNRtCnV~=r<YQ3uuujO[$[BSw:{T>a&]E3s^A%uuu>QQ%Nm@&bQhm<`I{3uuu?rUYqD,kN1uu`_03sdJ7uu6=5arZ?4ocR1|luu!{vb*`=3Em%T:Df1gwuuQM(&:7v7uuA<=s_!1q@QR)R>uu*75$N4:&dmuu/TxMQ`3[yuuuB}#`^W}J(N_|Guuudt-LfWd#kno{ij-iz6uu#5SJ{y13uu=b6dmEp=%4T<dKTuuu35sl0@h>uu6=6bP<6g[dm8z#uuBQMMmKkuuulOesk:lK7uuu`V7gc,]mklz,M2RnyEEdDdluuu(P2)ifJmC7|uuuQ`uonR4x^|uf?v}$!w^zyL_tsJbY?_uu=bT_B`&.#uuu$0oAABeuGF]<ntTuuuNyN[$,_/6w2Iyuuu|A|hw5X^)lqwSP2uuuxz*r.(<kw7`Gw{$q|j{%wuuuSVxgA)(k_Y;P>wu^a(keuu)JRR#=18_-Ouuu<yM2GGq5)y8,bKr6(vZoluQML:.Zp+SE2g+NQ&3D,~%{uup{le%rZGIjuuuuB_LpOWGie3uu(&,w5*S@m4,yuu$yEu/+suuu^8{YuQ:|Z~jd1AuuqWRig/R!UuuuM_W+x~JB}01gbX+uuu}5bO;s3uuuFoL<^{VnC71Dk4x+8b0/BiuuuuQ1{[.mho/vvj{.E0@Z-3QuQM`6T+e7(#uuOl]L7/^z!]*vpi!luu83/Qv@Yn4Ve7uu`_xIH_vU7$<j/T9sW/:YUs*guu#5P^a}5Ekf1@tuQMfB|hTuu$}S843}Y>e5AkomlPri{+euuuvMtc=VEHuu=b9zr6R`Guuu_u,uEgf@6znWU!!uuuHzdYoboi=mppuuQM^FI`qRsQ#u#5*#,f.-OAzmuuLgZ/h$*3JP]uuu=,r^N6JlOK#u#52-mB`tbA/i3i#u`_=G;RD:x_gn;@[?8_(uuuxM(oswuu#54x~>sqwWEqeI6>7uuu2y?x/x4Quu&w}5B*_}{h+g|UUtuu83jwxI}luuUU[HrFBi5]^}4~|J`gb~[`xH`:W~+*/uuu+IcdrSf>#uuuzEF]u$K4)5G>++}!uu83}R4V.Z&XTC:ik,Go1@w;vExuuuSWrYObK8-Wuu)Jo+,7:m(#xyuuEtTUChnd4}{uuu[yh)Y!#u#5^)D42[Jp=17K12PuuuZf-w*B:tuu&wXnX8|JzSDCpT_xuuA<ZI?Ou<JU(X^wuu*7DDv$(p&7uuLgKt;0j;?<.uuu=,?z:n8mfilu#5/wkhIm2mB3uuRU!d@+xN.s-Q-F9j#1:dPsXD,5A$LD.fm.)-!XYt`Bc|^JB;auuu>Q9)pR5fvuuu!{ucvQ:UV%e`08JGD:`RE0:?[F.G>p8s~_uuqWs6XU,%|uuu03X-6H#uQMf:]Zf+3Gh}QgWm>uuuNJUR6Hmyuup{XfZGxMs^5g:iAhhaV#uuPlgozb?x9KB=YuuuruUT)/:L4EzyuuUU08`Bq,il%{ZN1v1*vh4?GHgjDq6(yuuu{52&k@,7/K-jco40(1Im<uuu`E!pi$btuu@}sb*b5>hOy$`opO=qW$*8j#vVk/B0%huu+fhhdyZ,27HqG6Svuu#5YzxcrI~q#u#5:UJmR:iuWY|[fHML:aMy%zuu#5E%t1QG@@wVluQM9j]ZdKe@<B,)_Xq8I,%@@-~Z%_/S7Quu(le5&}/$#u#56-<2,HC#uuOluqUUN+h4fVr14tuu6=hs/,?(T]~TBluu->UKLV)EC5O[N&Qg6l|Sluuuy2/~^)E4TX9mY>)Az+x/uuLgyDg9pC.(Kuuu38;Rw!py&rluuuXtg>Ryuu!]S`1)z6Y|M3xdqp35{uuum]f:B{uu`_ry68R803wUWW!vpqcke-#<AKNlu]|&Xsbj`HuuuuF<lFdNn#7nK_:X/yASOSForL!Ud}8I![$z)9_uuuY&J~_=JOEoVaTuuu#4qlol[a!uuunEod>Zwlr~wBmN5WB#uu~/QhZtswd>arOoO|,b]hjIc6#u#5(ZIXIPyR#u#5$KyW}WlCK|pFS5tuuu{5*Q3m&vAlHuuu:uu7gV2sZ?HoI)BuuuZ__Of904uu)J<Gf9$-y`f+c*-c4x,yuu=b<X;12oluuuIE0s.FraD7TV#uQM=dA9jdP<$e;L`v$(tk&{e3uuQMx;}<+2WZ)$uuQM(Eo0Uc[#m6aDW?c@gf<6!%Ps=Dm#gQuu83TxjY/RNsNR$UQC&xh<=muu=bP^HR,tguuu`MDCO^k(gk)(p<s7zs/jX3//>7sjlu#5TG.ZxTMqyQVBlcwuuu1WsTN^g+tbEuuuuqSYHtJ%MJ|7]qr}n]g~NR=uuuk<aW/.D^@K9uuun@|Si5FzL0/WhFR!g>jYV#l4L*l?LfuuqW:W(HpW<uuua}1TbA]%uuZ~==@Cru[4S%#*0=uuF-HP}Jr<vrP)/{uuLgITy_|&*4suuuH8AE_#NKTm>1/uuu2EUA~S2Y`iUWj:@O(QuuBQ{y+)Quuu.u;7f^_,;Oz23uuuqzdT^PQZwuuu8z8mhD%QuulwvV3;#ym0c}wAQuQMr-3BUAZ`~I>/a$7Y%uuuo#!3n@-:Hw;m^QkV[~}QJe,kuu@};Qo-@?1)uu(&1g3}:x_F]1O?W>,SL8uu`_hPsVF@<NBpA;guuuj?uFHiO(}s-q#Pq>0/2vnb@^#Hajr;6Ps<Dpx6VdHHB]i:Y+Xd0e>EA9{#uu/`f^^YBt+uuuiiey*;h`jK[<(u(Llw+c,I.vbcuu#5;z/i}YgU(w[{9#u,T2}B]uuu`_(^}lu#uulw5};hX(tuuun6bqqt<r0F_-Euuu77W=(87%l?~sv+[^Z#=p4AO!og)o4clu#53d)>Fr3|=A-O,{(oK&Ituuakl&[0G)Y:qSv3WY^5Ca:I<<EFbc,K6lU%j{uu9;66+Y-ci8HwBP]eoVu$$i@9Htuu=b%d9{1qBALNXV7uuuVbV:T#{Z]g0zcE^uuuWW@ZyM!+a3cuuuMQ74Zc/qa.Tp}N?so5z~r|%uuu#8S?U*ywhh*A{~?y~-fAgI3QT]=Z~tuuZ~oabz8xEWrDF2Cjuu#5#1_O8E3(0D?D,6=wuuA<3^e`BsjC!.hVd~KD1:d%T&tuQMi60(CNE9CF36uu`_`P!!1SO5s8L`vEN}!uuu-MP/^7Z01v[`58bOuu(&R]v($x=0OYB>y9Glm4Syuu->8m@$JQtn9FBs@TN-!KuuuuhWGS;(DB]IB>yf`mC=q72vAx|Suu`_#UX65&hd5UXbo~u}V!tQZ*9O9Quu.7C-i:5=JwiaLDXW$5P85J%IB#V?Um^t~uuu._WNHF<Gd%5y3~3br#uulwg4/Is!,`H0l4yuuuj`&63t~jxat>NtuuC3gfj+}]Jov^E6iQM;IP7ocuuu]50(WA4dtKXfbuuu85`/!E2#A0t5M&kuuun5$(tT;_UBVLDIhaluQMS[1y0;7CuuuuIBF6z.qW2oG~S><A(JzA7uuut5h,nuuuo51`Ot=b[0O.zo1mDwuuBQ?HluuuU2bcVZ[3f|XZ=br0uyuuk#m[yuuuLy*[`<Rfyuuu#44/;b[3uuuuS<o1G$nXAhaOQuQMrr^luu%t@4&Kn/+luu6=`;s`^Q){/vT#uuk#Q6luuujE$ADpG9*UuuF-2S6|G)?NbM=wuuBQ:*guuu@yd%M~C#8uuu%M{@r{@*ebQvluQMLY3tuuEtg{:#zyqX!uuuSWlvqI_@Q[uu)Jb-$n<&}2a}RmR(`RDAVyG@|8V%E;muuu6,jS7YGV1=n~]|p$*{uu/Tj4W0P=7uuu(Em{jxy&]U66tD!uuuNyT[m@#Z4tdqluQMG95xaj=).2P;h3*B@;LxmA0tA)pmatuu&w?5=7,$Dx8GqedTuu/T}AJy2PPuuu`0T{dLnLphrUtDmuuuo0~s(!}YPTBJ/uuu7eI{uu*7rWmjYy`7uu$yZ2SuuuwOz28d-NbUuu#5Q;(yuu%tU1Rlt4ruuuk#o[#uuuCU$A`>/LHguu^0Ewng5~tiLXDc9:{9(2Z=gjv1Cr3$guuuIM:l7nItPX?#<`f]9uuu>QNmnTlGqQuuEt>Un>:^%@Tuuum5bnPrYL}$8uuuk#3^8L_fp7wQuu`_y{v%Qi+|Afluuu)w8@G~lv1A%Ou6&=uu@}k+p=N|t@kYt[^Awuuu+5,.`]I`uu@}oKC&&&(~75_p$j#uuu_8Tip3xeo~7~5yQ=uu@}URMkL~#Y0Hsr_7E#uu@#2IxF}puu`_)}a&MQK#uuZ`==x.;>vY440v8tuu*7{C&YY)T0Oi<W,x%uuul8w)4+[y]lzCdveJlu#5V1RdaG9Quu@#neD0.x#u(&(D1Rkr+n;nGV#6Quuu00jXoG=T]Omuuu>V#%!.@}A`kluuBQuQ:?A#uu3(iG:}1k=>-h=T4#/uuue&25wTj5#i/]da{]uuqWQFfQwU^uuuhWGZ=TRluuZ~p#L$*4.ClApWPkuu#5,?AZ^#w@2K(KX|guuu(l&GGTg*lu#5=e_|T?(sXx5!EGtuuu~z_xJDkfR3nKP$#Vuu#5~$xO;C,3hDLZ}gAluulwbh)dk0luQM6-ccqVIuuuX#K$9APt`C:NK;jtuu&wK9Cy@xaNWpb0?luu^0xv%H0){wqnNr{~{vLUuu^0*.mb==pQmG:W_+Z|aPuudKIJ1]]r~]Y8B,X!Wtwuuu8R&HSnm@<JZ:^o}6LLuuQMa~AlxG{,NOE+Dhfp:Tuu#5kE}mw{*fuu#5kp{r@)MzK/&zuu`_0[:|1bYaB-vyuuQMRRz.&[STG{luQMgbf/,7u`AvhmzRpq#_!>uu{G8Yl@GmEU)Y]pq2A?b<Puuu437R!vlu#5HnTFrYb(y7}NZ[>|~#uuzQa1wt[HQFO31pu9U)8#uuzQ]1q#t-QFrMkSH1@*$uuuVVLUe@#j!|wFOFFN0wtuuu*bcjoE%tg*kxU0S-,p=uuu?yaxS3_y0[j*-SpvoTluuu8te!ChW7yuQMUbmXb>y&-/P^#u#5.T<-Lmo0KAi#+#uu9MR+Qu#5D`@YG{T3L!uu$yVF/uuu7u?tuu^0X[r.oDQL|uuu}5HEQu#5QShFbsCj8t_k#u#5BQKluu%tlA-P20v>uuBQdh3uuu<]_j!{`/luuuIE}s&$OZC~c^wuQM]}IOC6A&l>lN#uQM:W~_<Puu$yhd2uuuJJu9uu(&!Dr(8%P2#u`_Tbtmv0dI0]KxuuqWj(<rT(iuuu@59duihu*s&l{?tpZXO#^lluQM,?ndD/HkluQMYzH_$y-3#u#5c_^F$6Xqe(UYPk3uuu$Kxa=,[tuu%tgkDVssUluujP:tjyQ>JIh4AeTUuuF-ADBj/=EJ?T5u",_cQI);
+local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=b+v*(2^n);if v%8192>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do o[#o+1]=string.char(b%256);b=math.floor(b/256);n=n-8 end end end end;if v>-1 then o[#o+1]=string.char((b+(v%91)*(2^n))%256)end;return table.concat(o)end ;_KRP={};do
+local _d=_bKO("YYbyNh9+SF@Hs58S2v~0k|$G`KZcI-Uowo8+]aYdNGYY8O4EuYYY?6W^`O(Cy*@Dj[VD(}y6M/%y{SX<{k5%(C9g~lgnYYM]vBC3yF-sK*5Ynwq+}j>[jb=]SlL_ZYYY31?mLHta_haousCCp|:8bCvYYYeO[5:|?q%p.gy>V_DR<BJ69YYY>wBpJM~1qlEJS|iW+YYYyR,+4)cMW[?<&lEQYYCJ==6ih2T3s[!wZr`nYYj503d5t@(@ZYYYkAn6PYYYJwjf7S>emqe@YY8OssUrmufV_eYY5U>qd6{2ci5E$Y5U+=(>_Xlxv9e>YYYYIai]U!Xi9tOYYY),qJ1JF|JlYYnw@ECl%)jW4+YYYYBLr7>IYY5U#<j(#0)+4+GY5UWI]c7885YYc5G#xF-1$=3(YY(tsHk?}z(YYYXJ8P-O2=G2nYYY3w<X{DhpYY5U|8rwu0N2N@nYYY^x}S#aZRRYYYUNcR?6^7tzzYYYgwMrkGz(YYM]!Bym1[z_R]@YYY1kGc,z($l?PYYYQYWZe^{D$fMYYYGLqj~(6/9nYY/n=o$,,T%[c$YYM]keWc9p*S?@nYYY*O]bC}L9t8{YYY>youtnYY_Yi%676OYY(tuf3B=&{YYY%J{:q1c)#qYY.:z[_9}[OYYYyy<7)KlQYYd1.z*8`kzNSnYY$M#DALL+t5YY/na+YT0YYY@6Qh<xLhB$]-T<`HYYnw@wz!G,DYYYu5m]55SR7k^C:<_F;YYY|m9)q;8KRV9VxRYY+(1?-ErB+k3*f@YYyR=P(&AT=uw(ghjQYYBNFTj$6vz2K#$Jg&YYby)H?W;ilX{AA00NI1L[YYbyZIT!jZ/<nYnw:)vz:7q%@YnwMPION&.}]@Xs(D)mjYYY7Ll!wf0*.WHtaQS5YYoGP{<?[nzqp_$k_mniYYCJd0,Wtx}v{>5TEMnY5U1QNxo,,eZ>7z7d9(+xYYM]*=y|ly[_2Dv=,ZG&vYYYQL5Lt]YB=PW@:oMfbZRXYYbyBqpkf4XR/:LD;bE+<rYYbymxr.=Ft~=UZWT,VKn%E9xg-(JJRPM{g;A=qsjOYY)WtoDvACFK&fTf.NYYCJ$L)w,XiC2x_Br~jK$nqFal?v}C-HCylb(uXb5A0>i(vp3s.5YYN$O%i~cazlUeCYYYuAS<V)*HWMQeG]aD~<yl-8)D@w?49(JO${FLXRYYaPrg:Yqh1lYYaPt76V%&A5YYsAGL+HVZeEd8UQzyLI5KN8sRZYYYa,vLyxnYby.l3/Io*xArYYaPY=5ZSFG{YYDj/`)rLA#.w!X}?|?5LeYYYYDUH*twnYnw#l,F2g[|@OYY_Qx,4r,T]JYY_Q$TGR(^tTZl^,X{|}`2dsUb/HYYnwiWK^s;YYd18w@RlBw+RnYYOnJuPxmS`YYY)bVMB31,mE6(neHF`%|nYY[YF?2O(YYYmQEoX]^/}xYYCJjf<R,a;4YY!}6vrp>)-7:1v.k-=zNZ&YYYTwKed6RYYYWwk.~aVtdjYYby1mI05X$znYYYuV.9%]y4b8Yh?WFBVHCOOYYY(fxa}wYY!}R92>(&N@C5YYSGe^lpJk$OYY#D2~JQm2U1<]tHu,>?YYYYuXQDiZYY~2BNNzQeWKeYYYu52<H6moe5YYZroNx=|e8Z5q|*w]u=YY5Ub@mjEZYYd1Igq0geUcJnYYOnT}p/Rf15YY`Ou]}y?u.A&(<?U]7M?AGYYY#:m_;YYY~2!N_*|,`;b5YYu5}7G<sB@YYYSGWF]x#_N2YuNyQj6YYY)2~cy!YYnwn0C`S3-5LDYYd1F{)W:.st&YYYEyZC;5YY,GreyHV3Kt{YYYo:nzcj`txH[m0@g|!AYYYYGv`n694+M!$7f5-{_5YY5U9qq2R1*X|lf?X`#/YnYYTw|Q_^|YYY%OBC*S,t)ZML0|Ght5YY/n0DYYYYi}9zDlO5YYSGL&#?0}4GYYaP#cCbz(41YY8OW%MYYYgwntdj?$YY_Qr/}DFjNZYYCJy6>O>bsxYYM]+(s5YYj5:PLNeb9`ZYYYM>gt<t3nYYb@;v@c%znYYYugoC;~YYM]Eii:,YYY@RAa%2Po8S2^79nY5U9qGoJN:=zHpd;;RiIYYYtLY%A`l;-&e@$YYYcAVM?s>Ml$+5YYoG}_-+Ah(V[ih2%]F@YYnwwIZBm5YY|`UcAF<zo4tt|PYYaP8F+k1@3DYYDj[.[SZlL^txSv1$yG*~8YYYNHN{(#W6Qz&FMtd*?$YY)WIIH<Wb*eCWQ,jDYYbyfjp/.PI)=Gu=o%LnYYaPgnqr4UM8JjmJ|*@YYYhw*]ipaP$){ZM-BT(4r1YYM]J_/C(m?X6xK$q()jMukQ-Rqx]YYYb@[=jGO`I),,X|W,o8z&I[{;U!@Y5Uqn+l-9.Z,OURfO4VokX-6H$s?_IWZQX@YY3k>n|){.`x[-w5Y3YYM]PJ>mWgd4b)aB9#>0MYYY6?YLk]{IsO(xj?GnYY/nM1:(6SWvO(YY.:9heAU4LN|)jN39|n^:,oy`CxYnYYu5GXs%p_-]]xaj7BlYYY!xF+7gAeS$&X/#k[~95tW/wGYY>{lIa$GG,-I*|+^xla6pP_D?@7sD)7:(4YYY(L:qC;Xtbo#v6PzQjZPYYYDvY*z2LeI%~^,QP8cTlYYYW;c#xC`-p/KUYYM]LY:r3s:NRt@W5NH=uhuM$OYY6l[P|::GYYb@:[_&ennYnw_rZ?I.ZaODYYM]^lU>byF$t7YYYYu;6D`?QWHv0RwpM#)BdLuYYYDt5a9Pk>@YYYl*O6bMYY5U)Wj!7;YYd1&+DPoh`f.YYY96dx>xkxg@,=nYYYaYID>@kHj7,|$dtKV[fKarb]6tYYx,yEV}i{7i<v}MHQo6gn2YYY55jT|Iu-mQn*pHE|P)6`=[B,SlI[(0YY!}PaF&B|BQY5YYb@;7`7t?@YYYWK(zO/YY8OK3[zCoZn=NZ(6LgQvhnQJGYY+(XC~+}CIZpiJ@YYaP},cQYZ5XETP9HGpYYYp:G`H@gD`YYYaYEQ$P#n8N0oe@YYox<#tH3KsDb`A!{(=eRYYY@&^udmFobft#ww)D@;@Ynw%K*b5Ul?VsLZ#MRY5UjnGwcWjgUw7T>grYYYHl76^oQ2vaW3{y;YYY=}^vbzb~VONORYYY.mNZ,z=tGsf8wGYYb@5otbI,5Y5Uk(=BKVk&5Y5UtdnB_<~SnYnwiXoF-$I5YYj53D,0}/xfrYYY~IHBv!RmsKK=rH{R1,EV!iE6<&o~YYnwZg$<3LPJWltQYYby7?irDz}_{PYY@RpxRnuLGYYYL(3!Zs4I!Q2-@%*T&hUNSYYYVA/>Duz]~KYY.:9A<h({q(6hEG9RI?9YYYHvgI>!og|/rvHm#~FBxyUVKn_HzJGYYYf8BuFL#Ic@kR%nYYJZjVDy`djagYChDCgf$+Q43C;@YY$;Gp%%!.~Tmk_#Mg>N(LX|>M|fGYYY4lCpo`w6%iA[@geT6auYYY&[,_jDv$(,fpaK@&YY6lD|gGSya*/6G~YY_QhBK%upPXa;f!xVSX!8<b99edYYM]Xxy6k4^[NwK@.nYY0M/GebQa777OYY(tW%-(MEGS311bDYYY?J[}UDUPYY+(0Ma(|;,sjeKOYYAujN0PK<IVoFk8/Rvl6quYYY,5?V$Vth3DiBSYYYb@=_._L,@YYY#isdE$J+R(|mIop5YYd1o72+M,,)aYYY+LW?t@C]&?cu2B2$cWYY$;^*l6e!ZYYY1*3=L_/_gV}:,]OpYYnw755;Pob4D+v>HY1:Et#}|$!`.nYYN$:tn@XXmeyC]}pO9u}&?c!0YY5UTYE7q(]{DgYa#PA5YYb@1hw]klnYYYgGk`/xYYx,hyK<b^}m%t;_.X@JaZjYYY16`0x;$3*i}@YY6le/;uVcbM5AYYYYs/]nuoT%X:OYYY=QV5*cXF%+/YYY@6D@Bl[j.YYYSLF8w0Q[/d$lYY+(|/-A,.6G243@YYSG{T$3CBNYYY@RvpS2TNJOzep,5YYY+)=3G3!|K^nKtYYYW@I^Hv.~(*HH6YYY~60&#WD)bY+V>;YYsA>3,X,t`ibehPYY(t*R7]fNh0~)kIRYYYr{Y&;)`#+!#xnQYY_Q*6=Y?0MYYY)WHu#Z}q+>|C%NOQYY3k8Oe|Y(KpbIPjcRnYnwSma-JTF!nYnwL#1w*aqnYYc5aWcR>c#2g|YYCJ_Y-7!Z1tYYnwW~UVgsU9}`5YYYmk&hhCfEJ;!r,d]zYYCJid6Z@+JYYY.:B}<rTZ99UNoo4YYYqwAM~kB7L5#cCC^u@Y5U9DZ}FL=f@YnwL[8D/M+HoRzyYYnw?rOg#qmJ8P[|`nYYb@{1hYs_5sNDF[nYnw#/Xuhwm|@YnwKxkGzBTnYYc5Z[/MHK;h8#YYnwEizLwt2]aAOY5U6Gb@dMC/VSYYM]|e!j|kOHJznYYYpB~Y`qDQ[olYYYrw9UIBjpkPuYYYiyL0SaR,IOYYYY)5uwVo.}EWGYYYV[<;^25BA53YYY3wfFzAl|y4I>?8YYby8CN2-|mVYYbyWKr}K:FB#OYY+(/{CauL~uummnYYN$hhD7?HqMz]-YYY_Y;z&]B6YYCJI>!-N[YwYYM]7W0&y7CxAC8{OnYY!M<tkz_dqbSU1=YY6lRMx@e^[P?ux(YY.:U5yJK+hkwI^k:YYY%y[$G1T+@R6_5YYY*yh8QzirB`][R)k}YYby29L/;j2QYYM](fIAdtN{ewA}YYnw(W-17BmGc?F@*fWPYYaPC3e|D%/;YY(t%6p[A$+gdi;q;YYYLA`Qa,iYYYc5pf8#~nYY#5[e/HDf~c2r)A}A7rYY3ky6BH6MSlf(*f+0YYYYIVakqACL*CPYYYq>yJa%K>sPAYYYTwz8G3sl(kJ$YY_Qa[&PMvYL**Z$RK(YYYZnUGV<h}6!BCQH/V`@YYox>-6D<[l<(2uDcZ1KGY5U#lc1vXevIgYYd1DsUlM1n/aYYY~6)Tr?N@-.E,hyYY!}F-D<I!)@wnYY,G2l!c}q^$hYYY$v.?9zdfzVlYYY<U4_=iSQYYnw.P:^ukOQ?u$YYY!#2e$x`+pEKYYYww`+O&}c*?<zv*KYYY@6d^/4Q`$YYY_Y1(Hl[l7>Q9rgYYsA^*@izh]5~>#ZYY(t,x_NDr,lh1e49YYY)I#OSy0S?fy#Qx<~(hqaYYnwAj_+Lsxnd;OY5UgmSBp!aYYYYpzq*`e{|Fh_rMD4Gfv%#xNYYY!AJ,v8vw9YYYkyDqPV6/=6YY.:8CrtsAwYYYzY@=qaR_dt8YYY/nhL8r[fa`/OYYM]W*&e)i)mignYYYh`2]V&Ol;g]YYY42sq>j.ste4YYY>n{v+EB}0$zYRYYYk2s|lT>3%RxiYd6b]@YYaPN}!b!v;kWePR{K7YYYa:ulE.$YYY|DFS+1t9@YYYy[I~sO[$RYYYm6,HOK4_Hq:YYYeJXaMuRnYYM]|T^5e1jM+P5Ynwiab$Z{OO_WYYDj!;>l1e0O>?ew^j>3[W:YYYaY&[:wtHsMAF$PYYCJ5A_BU!A6&zyvQpGnYY/ng6%5$YYY[:zR.|YkT:eLFzYYsAwe>7:P4!YpWRYY$;jjXqazRYYYC[@?tGpYYYoGHE305A?&0bF*%6BKYYCJ#C0o}ggO6k)(5`5YYYq]p~Q@VPA_Gn2$zuYYnwNMZo:@dx.vPF>(uV*|bknYnw;tC[n8:vD4oMH5YYW@4AG(qn#HNaiYYYMMBZr0|hE;u&?fJ%iMrH$cOYYY/l-@pT.VmQ~S85X36w@YYYCE/nmlYYCJ%j+a=Z4mwqjn*AYYnw4]6L/4}]9{>vrI(YYYNtDxueEs^qnSzU{xIE.lhUJYYYSL.kcmIFsyhOYY$;)4%)i{(ZYA-K(YYYUQ&OzYBzH0V;,nYY@RieMh1V=($=UcGYYYG%B)OO?7IAD$?5YYyRof5QL9ceMQPB.@YYBNge@xEDwAP/^tJ^YY6lgLaS<z*RkstJYY~2Hc]oSe54[YYYpYe8p5YYSGBt>4)DTPYY#DE%,fpTg`I^KbI;]aYYnwE1a@fvJp]arfdepJFL/(AuYYby->6,P(b}nYnwOotrYn2ZnYnw=6=(Y*Z7V|Q_+l$YYYa2_6p=vnYYOJAovKx7TeJifUHtBsIj<mfPN#zrwv8vDoIeOA6K~)`/vbD<dFOj<aIn!TcgYYsA@m41&)z+jbygYYM]%b&e)i)mignY5UX6n{P&6nNrqd!5YYW@9r%>+~>kw@^YYY~6]{M;H8MUecuOYY.:j5WMsC$z+V5i`YYY[:1;<$%2ey8c4NYY.:>3L=.af!W5aPnYYYDHa[qB[F%L$w=xYY.:1E%0|xQM726k8YYY7YZ^qci(>XyRf7NYYYyl%?1P-_7VvkGFsYYY7L<gr2ZK97wJFt25YY?@Ddm;UJ}U+gM;_@YYyR-Oe@RMT4#0*2?@YYBN8XcCB<xw%SgO5%YY.:(+hQS%vYYY3JnH6YYYKM!TxNkzy5=g1YYYdyL**[GY5UbW92v&y9CJAPYYby]qq{M+4X,@YYFr{>]GrK}#nYYYyl><d,Y`5XrD3v-YYY~6aHZT5@SlTP5jYYby>3*Pu)AgnYbyFtfw7B%#r@YYFrd9S.,^vk5YYYuH(k[iygFi]nYYc5,B_qnnYY#5kWQ=lm<@C-$rPpmGYY3kW~{FX5=zj?|Wk@YYbyuX0Mts,E3OYY_QQLH<Wbbg;|:,KLlYYYSLkh_8OGmWtOYYM]{>5,NY&uRy!Jyg;dY|CWYY!}#fJG%noGfSpHYSuI;;YYZIr>B1^?Ti1f(Z<!tLnYYY:]JIJ@-!S5:$[$YY+(:=1e34sf}f_GYYmlCeN1H`9zZ>ctD#0;rq;,0YYYy6080v+(P|cCg-j]6s7YYYDU4ju(5Ynw_bdyTVCJ!S{4%]PYYY=QqNG/F%Hn>YYYl6=?Zu6:_H5Ynw1j3/9YYY/w}LNpBIKv=XKDS(+,(fkyquYY%6m~#o#C8u|~--E8nh}!g0cYYYW@YOUE*{~|nsJ}pzWb_6kOv<YY5UXq{JA`nL8TYYYYYh(RblBzyzgW5GYY@RylEJ&&J^o;X[nYYYjnu0#8oFBf9v$5YY@RJI{z,G{dlfP.OY5Us39,K:b+)Qh_4unYYYR&U!)^y7VN[*GdnYYYPva}XtSK-YEi@Y5U0Tn=Ll&6@YnwZ*-Ilz})E%[/:9cR;YYY_YCHE(!l+>C`zzYYsArC8ZS6d13WmnYYibP=?/2WTD&%VI,t<8K;..oOYYN$LV_/XMC8hL5nYY,GCp.ir4c]E;8N03&oDYYYTw=,|&uYYYl{%-T,jV&JP5RnYYYYL:FtW`JdIIKU7n]YYYdl*OBc|H]HmFo/YY.:N]y{?iOk#j||QYYY1?kJ;dOVY~cqfzYY.:a:fk#~dr8[Lo^YYYMU3cVO-DxcM$6)$YYYU]z0.wF]P1X(u*=YYY8ww[*X&iS{YYYYjV=KMIe]0OtYYY+]`duA}j2_YYCJMKOTGYYYF5_=P(+xnYYY[Av]{ilt|UNVRh#$YY6lM0;y_5YYSGz5qhl?quYY$;AH<nY]yG]+4XOYYYbla$8PMJ<.0iokr,OP:PyoQ9o62t#sWYYYkIXl?*V=%l50d]0SA.[6B`7uw`4?QTHYYYB]dc{H$FkPuyVQYY.:X{^FL^bAZkA<|YYYqwFx<6.c.<-v2p135Ynwn%7007H5YYHUHnYY$M[5hD/%b5YYj5:i?}<6wxrYYYyA|#Cz>kH^8SnYnw4yTTrcPv!c`fYYnwou`XdL_;n!OV:5YYW@)rhpo~+:]StnYYKM,.G$BY#K=EDYYYl?4V-$y_u^Cz(r5Ezy8,}YYYmy]`C0#GYYCJ$MmDJT73YY.:f#w=={DYYYtY4>.!#6FYYY.:;$?:Fn;EI?iAhYYYf](EJkTZYY(t]$Oy2hTzG=$L1YYYhILmw$/R*ATp5YYY~!j~IOb5&n=x:YYYCnPW&Q%*nYM](52a>WqI$TTlYYCJ_~m>*=Kr?[PdGpYYnwd83eg&gYYY<U/-0JUGYY.:=:maD<cjd@O<(YYY@?Z;<yT%gYYYQL3u(C.@=5G60/E<{r]sYY.:~2UL9rWYYYU}ZKnHeWYY|`M!{Klfc+UZ(rYYd1:V;~=NhXoc7UqUSXO5YYj5I3ZS*tb}$YYYdxX(cBUS_-hcX;|YYY*2:#r:4MORZF=kTmnYbyuaN*V|]_]`O0BRGYYYr04cV](Ph/]<.(oRX~y)OXS8PXJ]YYnwSkdyQIIADymp,2/`~XnYbyMH7|`Pz$scQ4nmS|tf}=<(Kf5YYY{~>TiEaAH8YYYY)lQM>LPuscDs1]YYd1weDcfmI61nYYibTbGQaVnA>Nx9*K|]bjR@YY@RXTW]b05YYYz`Fu)anY@Ynw7PX7b]1Ne$_)nYnw}IY;ds5%@Ynw{~O/!VK5YYc5`cJTxr[}gSYYbyGS`0j.7B~&7p%605YY@R,=uv%{JLB{NWYY5UFrYY5UcgoFnDJ4@YYY*Ojo}|I^><|YYYQvl@<8Z7V^I_?*~}e@YYN$(oz@#@$Em6[nYY?@j8BNPbZ#ure^MPYY+(49tX5BbriZSGYYN$tHn77=<@/>>nYY,GA8_-l+|bQM(|DPY85nYYoG{>yR}lXszMICu/[@YYYYB{hY@UWsb1@FFvC{@idKYY5UgqB7KtM<5~nYYY#qO]N:*S8iuz)OYYml|/>x@!VZBd/VFKg_I:F)GnYY$M(Z%~wDE5YYW@v1c](`x3y>|nYY3w+cp<2zYYby->YIP(U@YYM]:{.>Rq_=o)38cCA<NYYY;HQ6907mWl5jnYYY,QWoF9YYnwY0^D[8W85uzR-nYYb@I2Wut#d]5.-4@YnwS_8{RvqybhLWnYnw*=j6B(c]<|xe=C9^~!nYbyg6s;BQJ/c9]tQ.YYYYwWvcsGYYM];Iix<Fe:?K98#nYY!MG8%iooyCXS,FnYM]q@FAoW_yvT(1YY6l_]V9<b7t.t(WU&AqLc!HkGYY~2&G-hAgr}DQ+$D^rD{{YY6lE)y|LnYY,Gi2:,W]gMSYYYPYu!$sYYM]]LyIC_z$!qxtYYM]sD*5YYb@7x9MSnahVDZ.YYYYXGj2};YY~2HsO5$==@GYYY]MS_mZveP6OYYY{~5,+OYY.:?K|GE`c{kvi-!O(5@YYYSU!s=rzA1zfmYYYY.iy-7ZYYnw+(:6]~S;fOnYYY~z(?YA5SRYYYY&E@K~?(I[>YYYAU;iDfDaZ!t6;]lUYY.:MK?P[X+YYYblLE3vCn1YYY%yX:-y8I)<,zRYYYYhHVqZbYYYc5+v~7AZ(RbrYY6l!NvYYYsUbTUFh*aIYYbyBGze1rvP$-bPaw@YYYUNUUZca4cE5YYYIJ2JYY~2~2sZyxXCH5YY?@$}}^QSm*C]O`qYYY8OYxZfL#R{fBYYM]x,%YYY]M#vQ(Nc6~@YYY5&7);}sg1eOWGvu.YYnw9WsASa6irxYYYYx2JYYY,GH0f,4Gr$QYYYEy#%aEz/bkUW9&mmnYnw-9n(J2Ur+sI;SnYY,GULxwW7R0{~zNq)?n^5YYb@!X.EJ-0%mJ;knY5UCU86}*0R]ks^^!UTUHYYM]Mrr4Wk*J7zHCYnYY<U($bOC6YYM]__GAnlYYd1~mbWqL=u_=0fGwSz,GYY)WeIQ)5M,ZDfLE/lYYM]7+MVbnYYc5uj]YYYA]+PYY.:8O@T6zXxAP-j$YYYQYX%0`5Ynw$Ra:A;1Y?$YY)W**;mAHr^oeeg4WYY6l4E!YYY8w/qlXhH^UYYby$oHSE7$az:Gw7lRYYYv8(YYY@Rw*DTmxbco_%gRY5Uy[w~yR1)ArYY|`.=Glc;*{^Be$YY+(-8_?=o9o@t+@YYb@LpauDu5YYYlfrv@zYYsARiC7Tdkzek35YY_QzPi-~$wzYYM]z_R7LRYY$;XwR|FlR8*.T;(YYYa2K?fI_YYYSG*Kq|DZ/!G>5Wx$#YYYQvb3yv*FhmTZzOF$%5YYAu:L5.@cQIinZL`neFR(uYYYxlB.Kyzu~W~Th3vFZYYYs5`bbZZgN~Evu</.d%|nnYnwlo/=Ywtp8OuBaWkjfG5uYY6lH#n^pAY&n9nYby+hv&CyFB<uYY$;8X,#R<n%ycjJ5YYY{I9mU=YYnwsOqM*!q?5Ynwca&OqDt5YY/neu[UDYYY_]|f<>J[7nMyUZmf:eri8gYYYYCEVn`4ty=DtYYYeO=FN_|2`f{&0/CiqNFA/YYY:YKmC#-}]TYYbyK{riZBXN1uYY8O5ska2nYYu5HTrV()cnYYb@*CtD:#5Ynw)M2>(7boj?FC|TnYYY%5L&!tU3Yq3&nYYYv8.vU.YY~2}KQV,pP6lYYY]M.A6<pFA)5Y5Usc;%V|sj$JfJH@U%bC&_g>YY.:Z-=Lt8.YYY!]w<2_H*+YYY`8NM+8PEB2PeAztS{tZjj<H_n0j@X5YY5U]!OGp3p))Zo*oUR[s{[JYY!}U<o^0lSJH5YY,GI{#o/fQ^1YYYhl*>UT@Ynwxze]x#l,=2PXYYM]n0e8,knnC:[R~+8g@YYYa:UVyL5YYYFatO4(j%5~%4DYYYCn;VbujtnYYY+D(*VC9E@=;3Ys!4C_iHYYYYJ`u,pB0,-Q#YYY::yi|Usp+N?nYYc5[Q&k;.-{uJYYx,]v^sDWWyfe|,e&RrHcLYYYl66L&uf};_nYYY5[cS,;Nn*&nYYY?Ov^D*U0xM>aJT|YYYblfq0kw6nYYY[:7weF@dX-DkbOYY.:W@TtY7~Pc=2!DYYY4y#YYYyyw^jM.V]0a$1QYYBNVVX4AyL0arlLcDYY5UP:0Dtp&{n{nY5U8)1+OG$5YYzY$YYYB]xe@+-zYY6l&+rYYYsUx1j>jcJ@nYnwt<Mb=dy`i$u+onYY[Y*)YYnwORaH1#:YYY!M*5ax?).L-*)FnYbyt<[N)]TmR4#CCq$YYYl*0ghCOCelvYYY^yOfYY.:[zq+{G^YYY4yuYYYVAt%O*7y?3YYbyY[gnUl_dYYnw9Dje%f3YYYbyWKi7AknI&$YY+(`Jz_+8DPhO?@YYaPztaxa/7K@<H7,MHYYYR?>-JzzccfnY5UPPZ-}GYY~2[V3Bc&E.P76cBvOVjnYYd1b9T6pFD|+YYY46Erku]4:c<v1Bh]nY5Ua2VDZz[rd|&;=c(YYY;w>cG7@?$;J8C__>gYYYJw,LnYnw%rD=Jl$H4k5H*{xBcYYY{wBPYYYY-V>SLkW%QOnYYY%b;_P$f!p(8YYY<U:5!<M1GtXZf@YY.:!Nf;Nq0u4eRdrYYYp:c42i0TMYYY#U?OXd%aDYYY42b)+.~<N_MnYYu5Q^ADcd.nYYyRPo!Q/NC-?8fb#@YY$;/-G8}&5YYY|:QjFfpGYY,G9|I=tImu1YYYUQLyMsc@YY@Re/dRrfYYYYOUp;-_<)@YYYif%-a$YY.:b12WmK2^4e@d-YYYp:4afc@8]YYY&:Zd2LQ40YNs,QN/%5YYAumhT_Ka)4FRO6`n|T7wPYYYUbM_iV5>jP_x<.Zr=&RZYYM]ufjjQR&bJ&5Ynw[A3T):QO,D?z<eYA$YYYi6|oVyG(:`D{,_`i.F~FnYby1jJu?m%+*PYY$;|kgUR[^0*nY}GYYY@wM)J4YYbyU</.AHSwYYM]2MW-A]`nYYgn*Ser@;z.@Y5UX6W$-G^nYY?@}<)?^BUggE7*)@YY+((xP`&$co*{TnYYc5UKCG4YYYMM(G~+n%xaG3ZqIrx=Y!=BRYYYrw|u+}QD[KvYYYqCfk%nbMUw`m?+`|H:,eWi.cp`z>e1YYYY7d~BL!e<H;^7{dk}>4e/YYnw>c1,+Jtp.lYYd1GL2X^=|20YYYHUz.?tGY5U{IRL=yzgZ=wlYYM]~zFkzmiyU+=|%+4UnYYYTO48dYYYnw@#$.6M;p5Ynw]Gzx,0=YYYCnh|w3B#[[~Rd5nYM]fw1A3RIYYY7Lvi0rI~v)t0g*~YYYKMt>T^L{F20+{YYYQY6}E!YYnw|q*%7PyhK|07Xb}y_DX)85YYCJby%#GY5Upn2=3=&S<j6:KGS+5#4GpgH=*JxISGYY6l-JlC%[-uBpYrQ9B&Wz}xYY~2Xq:VjMJA7YYYU5o<{GmV~E*SY=O4+B~jcpPYYY)2QL?t@Ynwc}ji3j;)<%<}nYM]!R>xjXF/GaH%AOm{~YYYDUqia@5YnwL1+&&,:A03I.xMrYYYx!ZM+`}}nYYYc}ue<DYY5U#<mNq1YYM]Djj{@TowZjYYYYbBs2cRYYnw4m%yR/w5+`@YYYV}W/pHYY5Uld<{(a[lPT5Y5Uc}$1(V2f9]aaYY5UIgW}vgYY_Q<j<kyF{gYY(tS,kG&u1YYYR?^e9y|seJ#?0+@uQtGYYYs3UOy3:GYYyR,P2,G2|HG6GXb{YY|`p.gx?l9.QgyPYY+(g3mua$hAb@JnYYQQ|dqx*8hU*eh.QI)wY]j9Tck%2QKUnYYYX6P@f>@_|-fIKdm[|z{,OY5UJ!]o5^$!RGYYBN~^:w,GBhLECL6lYY!}xo.ey5K?YYYYj5-0k~.y=nnYYYL[33CxYYM]w?I+XT9.M{0*YY.:$TXX7/wWkB@y%Zmq{YYYStiif?@YYYLR;)Z5YYsAK;Jp{oK@B5[;YYnwUDS(U9NT5k@ZCf{1,(u)YYYY`i?E^5GlumeK#Pm&#AopnY5UWtEZ_LPAJZYY_QwnVg$`txYYM]Yp-G/$YY$;V(v]cmB,60C|rYYYhj+^jL+S3BqXuE@*UnYYoGk#/NifR7,cEm.V1hYY.:-VJ<,<?ocEx;(MOR9YYYn{f}N(W2@YYYTObcOMYYnwwPAy+YubXe&HZ!OYYYo|(C>+svYYYY)>|)>sYYnwUAsml;YY$;Tw)m]WlYYY4y:XOCnYM]3QI}HVmYYYJwsL&3RYYYs3RZPj=GYYN$64z*W-k[qP`YYYKMljWwtaiX<q8YYY0U.!K*Zo6L1BOYYYeN|NLgtJOYYYn0j!;_Z;@Y5U|dKnDRt5YY?@_)[``Nq-iI!{85YY+(|gErxo{4xb<nYYc5.B41{nYYzYb}nYnw]qz,(rF.nY5U0Mn5YY,G9ldsBiW(WYYYkO-;YYCJjDw@S`o3YYM]X32nYYj5YaHC<;h$WYYY&3dF]@P=cEJycnouA|<Dng6mPMWw4uYY@RSpx`zoYY5Us3y$ET=8I-g1b2@YYYlU436=(Hq`#enYM]P}`]A-4<6eg5YY.:<jy8@+zYYYwwne3g(]iC_T<MEYYY96/MtnP/VrI&DYYY}}No|zYY5UrXyYYYu5_~-j&XMYYY[Y<EnYnwy[[:p3hH#rYY8OC8GYYY5Hwl$t2iKYYY^y-DYY!}JZ8%YJ{S0GYYQQ2TUZK:CPKgdpOwun^j.f/*dEmzaYnYnwJdC|BMa7O6$rc_giUYYYTwmVJoGYYY3OR26]P,{BiejX<cYYM]p@j,SrSYYY%6vq22@^BR(y{|LC8Kh&i5YYc5.M0`GnYY3wY8mGk{YYCJ@#GbmCUxg4#9oF@Ynw9l.<R+A_Htg7nYbyH`+g+6I-~m4[$*B6_QVs-/|O&+R}!5YY/n2jir]YYYEl.Oj=/ec*o=3f)<@YnwX6ieqzZnYY8O%CEN/c$ocvLN!Vp%|n)OYY6l|{<]$OYYb@O@fOdE@YnwT(wp=+r$.<Z`kTRYYYW;*co]4~RdthnYYYM-aj|NYYbyW1Bbl]^[/[:1%s/YYYCn<!ho+2nYYYU.(c}xcodSD=mG4sUI@~5YYYFba4*zYY.:ox=}mTaYYY6?.=Jq8447ID3KTYYYIw?B,}]HX/)}`YYY<,?4YnC2!]}et]Ua:35tJde%xL,l$1YY6llhyi25YYZr`e6>DXm6N)L[M/i/YY5U7+HruOYY_QZ-+I/c-`YY(t?yUu@U;YYY]I!tzEV14KlL@YnwOR,Uv{-YYY}]$J}pRYYYM`K<R&w7XLhg-nEdpE[}#2YYYY:iOHr%<YDyRY5U{;|a?&##kenOlL:?sAnLR5dh)JNRHOYY6lGz1C:TiGX@YrS99Fz|z;YY~2b4ue6:G4[YYYU5@E%G|OX`tgI/8u4BTSJMSYYY@{=%QNaWu{YYnw5#$J[5YYox~^z-4^3}zd[?TRO~YYYY{~sekAYYCJ!JAB@q_/]g?!m]nY5U,6/:]HzMnYYYcgf7BtYYnw]M6Dh/1HwfYYYY|dA36;YY5UFIs(qjT#.k@YYYqy_7~XYY5UzpTar2]T0mGYYY50mb`<a``%1YYYW?Qm()V/hc:RYYYYUNJE>PnYnwuXF]AA-WYYnw;tamxgD5YYN$Q}4*1d$v6=Lds1im3;.X;DYYM]7?wq3~IYYYzY,zFAYY5UA]Z_gK(H-jk=YY5U?y#m[OYYib(,XgMM{lQo(QmA0/b,~QfGYY8OM}XLD%(e3|YY!}PM1SVR-i1^;:Z?wS0N)(F4~,fI{5`nYYc5;5mjZAq.%<;]n}TBGm!@YYFrm?G!f~:5MYYYR?;sP2.`OwYYbylggxLxt`q=q8=C5YYY]m}6g#PL5YYY+As2##YY5U0M|?{j-cixGYYY)>[/oZYY5UJwVL+~LZJ#$Y5U+=%vcVe+vp1nnY5UM]Q^MDYY(tmi8X{!?-DGqPQYYYLAA9ZXcYYYN$9>-.8`qC0=Y5YY/nMTHP7YYYb6}dZc6N+j-2Huw4OwH#NQz&RTksWrYY(tQ_|xFMgYYYZw=!;s&dGYYYp,5VPQ^TrYYY(vK!3E?7=)iP$!lYYY@?Qg{$>D9YYY.LOt*<]|5})HAAp()YpPq,@YYY;tsp0yL9<vrYYY!:A8+oa{;JfD0-SM9$/d/pPU~g^uK@YY@R2mW4v-5Y5Un%^W3M:5YY?@p)l?7,eA8xVjAOYY+(<;P7.3NEziKGYYAuC{C+jv7UHDTR8;WBwtGY5U_XX[u,kZZM7*oM9,uQZGYYFr>w#_VG1e9YYY0HZ?craJYG]z>?|I1Ob[YY!}.)g,dnxn[v?{?n4F)`mYYYgnjmvhq{#u@Y5UMW/XDci%8uYYd1:VFI%,9n1nYYTw8Jir;YYYDYv:zXd9I[te5Y5UWK2%[ubr5YYYA||mXZYY.:aVf{u3Q*0?!yWYYYB}=H-s@Y5U4]0D?PylavYF6h;YYY_bPXg~*5YYZrCebQ73GjKN}bBy0_nYM]}ILbtQrYYYqCr,pU9LyyBmZx9*1INyg/YXV~+#QgYY(tKM$P@M@YYYWIuYYYlhfkJhO,#)%Z7+ab$ob5pYYYfUTy00M{0*+r;jW=r]nyuYYY(LnOL{xs[HnYnw3KAds0Wp8OYY6ly6Zm3nYYSGG]7VXaPrYY@R5D7x~6@Y5Uf1!*a8->zWYY$;fs?>V($YYY?}V_8M+.4*zjYYYYNe|)uaYY8O9<y9[n17+=/VQ/*&v[*M+YYY8Oq9l(j}~#2CYY!}xUKg7O:b(,7|]UWO!c+2:8J2{j1u.YYYJw1vE%p{dxnu92iSr]i^#YYY(LNJ8fQb^8YYnw9mTXlCE:0:8:Nd^/+}1h]oYY!}Jwy<@3J#{YYY/nSr%l>YYY`w#u!!GDtYYY)l]G^~_(YY6l*m[JGGYYN$IX/]Fp)h?dV5YY/njexn#YYYb?/>Hb]LW6gmv--3Pk_B<1nY5U,klSUv5GxZYYnw&7+{b_;(^9@)O5j/EaWDYYbygGc[oNRO|5YYFry*bCpmoP.YYY{w7-siGY5U0,:K~5RnYY/n_1IQaYYY+:c,/5Soz9z/ZYYYdP,<hv7dy33e+PY|tdirhK;j6V4{SuYY%6;AbEN=f|cyyjg!;dZ.xz]5YYj5~/{xNTL]YYYYbP{2E<yoDjYYM]1^*Wf5YYrg}u_*#a=9JY/B{3~n3(GYYY$w#;.gLYYY/nb&@5WYYY`8nDKlt<G{1X@-Uj{t?NX3|I[qsY}rYY->^@ubt%?y#o=gI[M(/H;Gb_3tYY(tz1ej*VQgdKWcd{%~3L}:TPE(=]nYYYT1{e(`YYCJ*C{m$4)&Gs*JW-@=?~s[rm{gnYbyy1;/3r#?L!#O!;<!k($sl!ZK5Y5Ux,GGYY6lF?(O:,JYF|N5`Xe~i+|{YYnwfuQc)!N..]:)k,s{Z0nmnYbykAreRAWEcU[`So1=./@YYYXnrW-NPtN[$/*E]YYY/nQ#}^>YYY((g#@wU6tEUhe~Fa89/Ld&-2FjYYnw.q=%)(Wy7*^f4{N1C%YYnw`/wOYY6l]a#Xw)BA8m{;NmYFQKt`YYnwc<VEJ|`md[nY5U+O4-bI`eL$YYd14E:v+eVNKYYYJwZao0(YYYK>#*|T44q]B?x%*?.nYYb@5[XR=ugTiL&9nY5UCE88%bZMTmW+znYYSGQO<5hh:]Nrr|l5uYYYttMmzAxZ47.nYY/npmDDAYYYdlw9JlW4c<KBg-YYby}KW.en-O)kN=x_TGYYZrND<8kw9t?2KG]-9?nY5U}K2uBRYYBNo72+2O/a+Fi/iwYYnwd19K8PYY~2u#>)lGS{4+_TWfocT;YY6lpV9]>GYYmlyR@aD?/K9`$yW?5F?[pd^YYYTw$8/S8%Jf#GYY6l[G3ETTJwa$nYbyo@j,Sr|gJ[sQsw*a*d:5wQDgssP{QYYYXna^-swq9#x=Y!lnYYSGDLsh:9=nYY6l|Zq09_sGiknYbysA#u(YYYiATmfo~^qVYlz^o8AJ:`HenYM]w+4/g:(nYY/n7T_IzxoD@WYYM]E9W:tl8md$@Ynw6_Q$^>t`mR~mf7Pyej~GYY8O~)(m{nYY?@]k+_tTZksB_]/$YY@RjfV9&.GY5UT1$Kh6fYYYfUUY0_ZYYY72wL]e)MKf.S5YYY(bD7$OYY8OMIn%wRhS?^$Xgm1IrbPi:OYYzz+a]:m6)]-ER>,5`5},GHBOZqCS,GWYYY|:0a^8{OYYyR_NjKdaxT>kPqPrYYM]NByLSCi`f.@Ynw+x~;v_}##P{9J^$hcJL#7zYY5UDs>,E2a*j)@Y5UF#QfeHtzjqCfWt-xK9]SH<|srbC4bnYYb@]71&?1@Ynw+AeTq8a5YY?@)j3ynX~oj`Vj{lYY+(8/m>}J-&Ha%YYY8OGh,9s=)L:4qxk/>0,@91YYd1+7(x+C,ZBYYY:Y;2AFW_F3YY5UVPb=/nYY_Qr/MU}/cnYY$;16!^`pPYYYOU<1tYYY8yTG}PhGYY8OHBqAFnYYW@pkB(D~W<B7yYYYwnT6&}lf;t6=wbrT0=s-$m5YYYE1~$x`2Cm+.YYY0M&TB,r>yw@)Er#qz=c*!GYY,Ge>1L=,!>lYYY%Jq^`ewBBEYYM]ZWS5t%s&9OGMsf;1zjKidtSYYY-wPF5OMKohYW8WYY(tGS2tR`YYYY7,d*3$@Ynw{;[H}h##TeJOX!u8sA@L<nrJf7NRJOYYb@<oVB$XYYnw<r3+<TrrV<W`H=@YYY^yP-Yc60aevYYYwnK1gR([vP@c/E[~mUEx=H@YYYxzF4N{s@bm|YYYb6}N=*^6@er/`dOC^(=5@Pon1|^2_1YY(tAsr!/!`YYY:][V2qVrYY)WV7+z|!X)Hj#ZISYYsACT85a^ZL^xOOYYDj7xyr>!pn-@Cx4,E+:88YYYW6/>HkPM?:|LoDPNOy#aYY!}oLd~mjknROYYaP61^71a{G@_~dl>-YYYtYycJ__eQfYY!}v!1<o?=/[@YYN$m3`C!2|oBcn5YYu5lL*;?`PGYY8OM[X_PQ8x7[YYM]B{JYE?Y3fdtaZYYY&:4R}+ScRVr!>Z!%URYY8O61Wz)nYYu5C7E,R=;OYYb@qdh@`H@Y5U5U@YYY3w6I<p,tYYnw]vh=-PYYibttv-hb0g]VbjT=T0{c3/I5YYN$Q,}1eK&FAKSYYYGG.sS}F1LlLX_^Fn.YiZgzLE9HfIQ^YYYY+?Y1f&<?c0B.Nc:cX%&GnYYYyYaEEZ)a6$eQylrlYYFrb)ur!)NnlYYY+:e_^e-HI)Zb(YYYzmY8:)e;KAP1l;N_qnYY/ny*GT$YYY2l]>jb@Y5U22CL0w]HN!PynYnw?Ks8B|O?@Ynw2,wgU$5GUDYY(t?9o2oBm+>!:QhYYYO?2Pv9<ZqT<lffa$QnYYc5}7U9aYYY_Y^6$ImpMmpW(YYY$;_[7*]ZYYYYfO$B[W$U*H-FnY5UE9n]O$YY[[hi:}dMNz~1q{hlg@yyQ4&k37,-PnSYYY_}t!@mz@YY)W9*KoS3(jzyC$:(YY(tX3GC44OYYYZ?8[=aK;HQ_QGtKtSY?K3mYYYY~U|$$j_d@:5Y5UV8Vk}NnTEpLz[}|$7eF8]K5?,vj+4OYYb@R^pi4=nYnwwWn{4_:5YY?@V!L#`IP}5D|?o5YY+(N0|h|x.?GDT@YYAu_7)mE{.$pD,V,]4<KWZYYYA2u~p=2~#li{)M57.29;YY$;B]QrE(GYYY5vMxQz:z0!i?uu/IYY!}/nx^HDNyvnYY,GFeupl]DoNYYY}}^d:h@Y5ULR/!p%<SYYnw{~GG8=DYYYBM3G[Q,@.jyX0U=nYYW@wg)+/CuZ1xSnYYYpGAIbP;yLM%$d1c`[ffM_DYYY42lcpf,xE=enYY8OMmg-*fA6nT_dq?p0i#t$YYd1,tO)/mUh,YYYzY6V{$RY5UUN,L,z6zVcnYYY.:`:{4N)*3O4E?k[bMnYYY7,&mA45Y5U3_C!:C[jnYnwn%,G>>+5YY?@+>9x$P/=],kLv@YY+(Qa]PNPGo6n25YYc5yXBZLYYYY.co!VXXAlYXOL2*(zs7EalYYY[A?C>P@(;YYYM!Z|qc7yy%T%x1qK.Wp,;YYYiyU|/<5!**nYby0n`^#M+J-OYY8OsfK(G5YYW@ZN0_cVbx!u+YYY+Lr6)0n-l]NyXP!J|(YY6ldiU^KnYYSG4rtP]{UYYYaP=.H$}:%@YY$;F3Os.BRYYYbP<6n+Qm.6YYZI#<$FWp(kWe=cNsYJ@YYY3b;F=E@W@YYYb!~XrK779_Wg_52RpE~,D2nY5UY[>=7uYYM])?xXQqWxN;@Y5U,m27p5JWYYnw50C~}c9>OmQ9nY5U@E$J[5YY6lE%9]>GYYyRtK[B!XStMP&l&YYY@Ro(gPK]nY5UiJF0,Y%*CGI=p0v<5YYYf]$[!cgYYYzz(a8Ab6T;bT{u0l/5I%+P1N@*nfQYYY5U+AUWj{K5YYHU$nYYc5`n##o:#cf]:_Q!aYfl&@YY6lGB?pLjN4W4;2vcI&C^DDYY~2L,F%JbOfM5YYj5;zsBzJAL$YYYXbLuCF/xqrX`dGYYaPCwVTZC91YY6lgJQPQGYYyR}v8M$vVi5x2DJuYY$;=a>Olb;YYYEJX;YY$;9R#U{>@Y5UXr^<LAq>8xN]cpr^(N52iZYY6l@sp(?I1v*N=GYY~2Q%SyH@k[!0R~v]j$-wh(+JVeF%Q5aYYY)?#bJlA+kG$KJdO)6tr055YYCnrJl#.&nYbyV;uz(lleY?DdW]YYYY/F+K5Xs@#&ZYYY!UHTwZid8-md)jr/y]oWz{nYYYFbJMVLFQ/*$YYY<,Q%]QGj=:dXI0E0HT2ec;.b9yI@kGYYibcjlFg!4p7t2Cr5bh]|%a6@YYb@;[RB9TYYnw8)DSZ7%nYY?@aQ<~9${NZ9e4yOYY+(Ok{-X}H,PI5YYY8OEu#|P7>y,oC.o~H0^A~;YYCJi?o=/CntJqbI4FlnYYSGXx-&=1dVv;W4/66YYY/lvVoi2)2_YY!}8CPI(I#yknYYc5$[tW1nYY>n.nC+rjc4zSzYYYKUL2DXL4Lah;##A~.YYY/nbP?lgYYYbl!7Y7R:;YYYyyF^Vo${YY6l]B`}LGYYN$RFqY`_c}9z.nYYTw`JIrNYYYgIqv8_nYYYJ`/u!tO!.=b8#2e]s1qiWYYY+3I?eu/rStYYM]^*5JrlYY+(?4~Qzy)^!o>GYYZrA0kDJ3Xx3M<eL:%PYY5Uh1{]bgYY6l4?xyOnYYN$i@&?%{N$@D?YYYibnE!_SC9]`Q}BfpoLbwi$YYM]A}{N#l~L|K4j1hMPX@/AYY!}:.XV8A6+/nYYSGt_u7jIKGYYFrn-mWX,W{9YYYjU?`9-9$(+RR!gYYox$0H~}L(GeB+f;}?+OY5UL1I>>g-$hd{c^1ZYYY~lG1#{,Ek<[v]:>;YYbyJw6f/{ZsnYM]UNV{0)^d{%B-qsq)-]vP2xYYnw6iv:QxQFDWnYYY7PEYavtyNZGYYY5v(&L`GLPYYY5vM](w4zGYYY^y!+d+YYnw9q4];TZF^J6TtHr:UYYY$MS3``_E1nYY/nU!<m5YYYL:]J,7|1kC*yI7~YYY$MMmU#rRjjIov6Y+GYYYmLSeU_poOY5Urwo-y9Ik@eHk&`&LZl`WQ2YY5UV=3AW/$Z.rOY5UA]APz6QX)=gpYYnwWKM2J1H+5Y5Uk(bsy2hnnYYY,64XJ2YY~2ZeBi;C:OrnYYoG!K%!1S]W,S.0W*&DYYby[[}hWrE:YY5Ug3(JdlYYsAoG|&RTM[jPax^#{p)LuHDv5YYYRw_)mTWLuYYYg;@N}gp.}RWti@>A]FH]YYDjB0TTL!k]`*;09wW+qvgYYYo:B(Y(EA4uYYM]`lgK2GE|{Su/YYCJ,mtq>;7X4FUMLE@Y5Uw+*)l8|+5YnwscL=IcsjuJHJ>UyNCH2a[#YYsA3Z>Xw<bq;GU{YY_Q7LGSmF^5YYnwSo?Q@z8)O$YY5U_KxRhwAYYYTwxz1G$YYY1wGmX;;oOM;XnYYY;tS0#<YY6l#.*=}Wk^{z0>pLmssI%SG5YY6l<#sJ1GYYN$bbVTSDpr%pbYYYc5EJf(}co>~gb84:ZMvX$@YYM]u5pv)sF3k-,o7Q8Pmbt9YYby|8ldgGB8nYbyIar4kro-AuYY#DE%8^]?_w$x^B?+2iYYYY#/y,HGYYCJcfkl%+}JYY.:)WVm(nDYYYK]:BYY.:E9@b9q7YYY{wIn`N$Y5UHD0<=8OetNR}gUy/bLpjjWYYsA{ZZ{sXBL{9cSYY[[;0mBGpVW_#_xNgwOPVof5.lNqd8K5YYYHU[|g>BAk8POhs/0O:JxqYYYAUDs|)*X^`y.zWn}YYbyY%,f$xPALuYYFrlyusO=tGzYYY{wPso|OY5U?bKLnb-u>,3]nYM]AyQWW[`Il(HC,/`;@YYYa:Q,@LOYYYeiT7g5YY6lG2~>GWLnEKn~YYCJM0ih}bpLYY!}wr!*ST6:nOYY@R`g&%6gKx=67fnY5UdO@i93U0qF!*<WYy#YYY}]?u`ArYYY$&wz:ZOt,rJ*!rYY@R8FwMiO$YYYWIx~B;YY6lTzHF#qA0]g~#YYM][[/9GOYYzzN]GdjLE$MJiek@XnAj2r;CP@9r&yZYYYBbN|@AcjYFs9t3DYYYs]|3vl*yGYYYC2No#,2x/6c,4H7W9;s@K$nYYYf[nM_<+%e8PYYYn6aBFC+fm_G[B.GzVtJ!q!rucM0&`5YY$;4?{M=}YYYYn&}xlqgOYYN$R>TsvXmX)|*5YY`OT>@x|hWA-n2>/{1BZt5Y5UrUp>^zi3KG`fhH+-s8ZOYYb@}t)kg@5Ynw:3zHO5mht{YYd1aVR(dX]$hnYYTwFrgl.YYY3J?1Acso#YYYJl+rx<PYYYc55=NPtYYYtL5qjEXPISiI.YYY~wxI1j4kfc+TsUsNtyY2yJYYYYrVesx&Er<dOYYY?1QN,hOaV&7QMD#]nGg}1YYYR?oQ|}86-tYYbyE;GFk>8DRnYY+(9i:@/]/d7Xd@YYZrPU5kWc2med%8`qpqYYnwJF5rD1YY_Q$B2m^FNOYY(t^9V}aN#YYY^yVp)<nYnw=Q57Z1{/KmR,*`0><7!lBVYYnw|eO=urYYnw$Bw<-%MO^nVdz{Y/27sQnYbyb]7Dt0yJPlYYFr:SZ9;e;n$YYY{wxRXc@Y5U`qStwXM*993QYYM]02Y(o^)4XgO5L/`g@YYYv]st.-5YYYD_D3htYYCJ%j~d<oM4bm9?.8@Y5Uv8|kg{hn@Ynw2noJ~SLnYYCn9L1_mMYY5U->K>9;YY_Qn|QHJ}UGYY(t3|[IC`QYYYL]s9^^Ol-(Qh7<1YYY*lf;v6,8cWX0RYYY!3N%<br=zqny8G#VnG7cKknYnwSmWm3E+h5YYY4ypreDL8;?*L;%XHn;{N$YYYPwE&pa,7TuYY~2~E|_EX<eqnYY/nEjng$YYY/w4W=5I_f|9nrYYYK>hdI+os~>/[uS;fqnYY/n@IP>nYYY<]B[H+={l{s,5YYY2l%~tL4f^*>(7T%jnhy7{YYYfUkA._.a3?P`=~i(n{X_vYYY(L.O.I%V(|YY5U}I;3R(gm@YYYJzxXxnYY.:~EVO_XF=mL,E.YYY@?rh#iKGDYYYSYJ?q3BnYYFrk{nQR&RiKYYY$H?{.(fv%wYYM]h$Zq=GrYYYzY1emoRY5UND+))tD[h?mWYY5UaaCfpQYYib9Wa>wV%|m2IV.#z*I|F!2nYY/n?FYYYYl*X4J*nYM]q]X{{2![yUmXv=Es5YYY9l!GYYCJB;}+H>!(YYbyt&5m~?IYYY6lmN2=Xw*mUN@lYY6lMKqYYY=Yrh17^`|jn)8q.YYY]M[A-PsL.(fw-9M~jplYYY:Yh69im8gw_(%&nYoI@Y5U^|*R`]YnBgV/27.,:YYY]M`HbKj8cH0oi-0lap|YYY(LiJD#B2p,=9gc~tgC(YYYb2DClpTCWYYYHtv_s|a<K]i=F-^YYYsUch6RKd=}z(cCzl(8;YYYf3MOS}cG)GVcAeMA]nYY,G8b*)4qywS~>hwpXZz5YY,G^?<~hV4OPOAp-r@;^nYYu5:&:DBL-OYYZr{*}!{9D{}NnSqP}<YYnw.q5U24M8]M[hwfpeWbYYbyOSYsV+eGls79hq@X1%YYbyY4o]a?tvV4F%81P)l:YYbyqQu_PK}Z6%:-%W,XQ&YYbyL2psWvr,S+[09Ol_ozYYby1m/utdDHnYM]SjleMUR@CF0OYY6lKMOnYYXn#Y+-nXygxYQ`DYYY]M=QAu1M+:7>&uW_-pWYYY8w)q3/!jjl!]z&OHS.(YYY9wf.QsGi0o=<,=0a9OYYFrl8hetF!AeG7Y}z=sD5YY,Gm?k.WVhnC0Ap&@BZt5YYu5(IRby~qGYYSGn3K#dO@PYY$;mygk88H*Y(P`PYYYtl+mlS/GYYN$vcF%Zqa?RBLYYY#5Dx#h>N7xOQPk&7}YYYoxNN+Xs-b%`+<Aorl/GY5U5h,UD9](;viPrX;btFunYY,G;Bs>}g#K#YYY:,KSVz(i??@iAGYY6l~6,o7@YYSGPol*ed{$YY@RM;BsZ`@Y5UVEnayMLtj:XN2!uYYY{t9S{o?5YYyRC1L%tQ~Xe7,wB(YY|`8|:Nal8QBW&uYY8O3eRtPYYYYp6]qGo`(wXIAE}$D[;:^XQYYY$vhHO*LlSd`5YYPPj)zS=A*ndMP>:NdwVjthkf)8n]485YYY+.>Nzr(ekWWWDq-H_{b7RYYYW*0V6w|.OG/YYYsUS*{`H$D%YYby;I=Oo%YOXRYY+(.tO86Swo5qpYYYoGj[C@^XQ[HX6eA!/GYYnwN!O:_OYY|`Igueq!`6]]SlYYM]SzU+KlV<AXT[]R&P9n|FYYYYd]#-v4idqAY&F{!JF{zV5YnwMW7yq~s7*lYY_Qw{eED#z0YYM]0MeF<RYY$;6%wM1j#3/{VSPYYYxlvT,9UF^mQ|H6*g>YYYXnKa#s[uw[EVyiu5YYSG39#xS$V@YY6lI3bdsJVeLNnY5Uzz5rD1YYM]W~~v,v-vIBYYYY4|k5$k1}?QRYYY[]SC;NM==W!!5YYYh`;aeGYYbyH#I}MN-unYM][%>nY{`YYYIwvi8?:lM<%ynYYYekoCqv5YnwTO3Hs.^%bIX0<6C}x]KgAAYYnwppmjs(YYnwZ3}*u%/PY!e+1$g0>H7AYYby]qYv$PRO95YYFrE4Kzh68v1YYYiybr]eB<(rnYM]Wrbs7yxZn;s!YY.:4jp,g#wW+Bly1Z>^{YYY}}uC`&YYnwg_)|!/=fc.cokE$YYY![nAP4O8@YYYL[+!CxnYM]R;f_PXtnYY[YV@4+GYYYoyP{B*,@YYc5BulN2YYYB]Qb=RCQYYM]R*O9&RYYaP,(6w}/cnYY$;`Z(Hml@YYY(w|u+}9n8*bkv3lYYYhI&yqLL&?CrvGY5UY.ieqz&SR#W:tO$c.s!X}-YYnw0}6z<nYYnw^y*TZ<N9Xi}Z*jI0nNMNnYbyLRTjr/,BtOYYFrj!t*P!%w:YYYa:k7k]RY5UNDU#m7I#5t64nYM]4pv35<rT6=7uOVCR~YYY[:p~37/1DL.:djYY(tUHPLmN$YYYK,ypeQhN9Qo{GY5Uu%>=k3;}V#ie>bF,Zrwp!G:fw/<m>nYYb@p,.wYD@YYYNDh)rqQ*+tjnR`Y*K45jZYYY6t:h+pT>]C$QC)$YYYQYpR:uQDp=}YYYMMRIS|CC!j3y$jhM,Yb:<_$Y5UBb.({ij!z]NVM4TPPCy2M?I.]K1ktOYYb@|yCclTYYnwSj{f|AvYYYXnEi{yB5kQM$R<;5YYN$tK[B!XgXH(qYYY*b61/_BK<}p(GlR)+TvTYYnwF}(1T!5Ns{/m4V)dL5%PYY@R+,Tm^oOY5U-MG3R!M#?rYYd1RlbPbMP;?YYY:Y+}3z<L)*YYnw+hi`nfJEYYnwSjM^n8fYYY>n~JshjHvAM[RYYY2l#xTUnYnwd)bm%JXr&J@yjprC8Rg)J3YYnw5sTK:@YY[[~?!kJw=P#5s88x@OiiGTWx_$6BT@RYYYwIMpY5ujg%8&q223Ai5p`YYY8w7S]zc%mA@Ynw:3lApq*6;DYYd1d%R(dX]$hnYYTwd0)K1YYYFOtbLu_$Z{biS1YY$;o(0:(WlYYY$hr@w$nH.!v9Va;YYYFJ%EK>@Ynwgf9%o]Xr~29yJMKf/TxMukdgXJ7`XnYYb@OX_A@{nYnwm64w@6z{1r4xnYby{~+r,hy8Rs/#0^YY5UD_>RILHYYYU5%KG[/q6BKv(27OcnHMfA9YYYDU%W9JQD6FNYYYp.<S|jOA<*qV2ubu-3X!R8vrhk6yEgYY.:^l4G?o~YYY7:j50q_$YYBNsHiJMb~Ib>0GoTYY6lTzq+{G/]])v]YYx,ooX-<orHsN8mZw5ha|lYYYNMX7ei?~,wu:ktw/P7&nnYM]U/4o8;eYYYgnS>Id?Kz8@Y5U~z1OyYj!*uYY$;-/1<*H.ZQ-!w(YYYvO}DbDGYYY/n-}*R^YYYb6z.Etp-@T%-|Zb|PwL<;Q@efP)kX;YYsAfs7l,(^X_DRDYYBN5HR)/!TfBVS*_9YYbySLGfk<MMnYM].G0PGxqbj@mCK9LoV}8:lJYYnweCgn2/E7rA5Y5U8]i(_>4*_D5%G$^/-D^33tyM}TY;n@YYb@=fRB9TYYnwv(zZ.p;YYYXnvNfsU5|QsSS*o@YYN$FT4dvv_/slIYYYs5|qEZMWw6VRB*0Kl=x+YYnwYC**n`)~fsmxzwGfHVG5YYaPIg3TspH5YYd1ge~QiLd@oYYY8w|&d9+|a=YYnwB6+:CjjWx$YY_Qf5J2y;#rYY~2oo+NGBKhQYYY0M/SAT.MyEyrYY6l=.l!enYYN$IR|+3T[EQF$nYYSGtM:#0|TKzkc1$5QYYYyOzN>w<OYYM],./K)Vq/0bm-{6CdFoO%YYbylb7=N*NvnYbycJ)g[N%i$3sN.ZN7CJ&;HrR9U:`[K5YYCnvnf!mNYYM];tjS/]@xE1#TYYnw`O^St{YY|`}ByCw%7l?MlnYY_Q(Vyv5EK)WflIOaZYYYmyyyN!RDYY5UO8s~]:a>%gi)PgM0KRgvnYnwIaXeu7qYYYbyvOtD#][ok?h>PZ%tbyNlZ)[V(fe_]5YYCnb1q-7jYYM](fwyMh~ocsz@YY.:h1zxfS1YYY5Hky|v3(2YYY::ivhGnSJL-GYY8O]N=7wpL7HzYYnwd4jyBuYYBNZ`2aI?O|1^PeJ8YYnw5F%|C9jx2+k1]0H5YY@Rgw)>F{5YYY_a|J|>yf5<Tp![RCImePuYYY`Ibf^$hiDYYYIyq0q}h+{cqsp:`rWnYYb@)O3I`vYYnwtlbWPf]V%IcD+TWYYY}5&IhYYYCJo^[E;qg#IatBaq5YYY.qG,7KPxpbQ>[j!1YY$;z[b>F/OYYYw`TKV7?e}p)onj*,Pd;]$YYY#US_~=CARYYYGH#2+qA12rE(jpE{QnYYb@e6F%eQ5Ynw#qovYNK=QH4M/mYYYY$w>Yg<+YYY!MknlM3-9:qxq#YYYYBqlywcmEvGPYYY)!;=a,AAl0KMVs(gbnYYc57#,qBn|[[)YYCJnF{/`,%/YY.:iHrh6{[>8CH*Xi9.{YYY_}cik-H@YYFrgT1sk}]EPYYYQLl{?u+M6&,hhnwurFtzYYby`/?N.B!ZnYnwM-sxLIRo5Y5UmLvm=(0]Xfoy?L;WB6nYM]Z5JBj`>{]7RNxEE6MYYYL:Kg2_1mwwiHrI%YYYMM)i]?:j^<?Fzi5Q&Mi]qI@YYYO&)3Z/uVGHAcnYnw@0smrHDj0Zuks,;YYY>!M$+&PwS%.b$[kdd(oa([2zBP#(z$YY@RA0^KSTRYYY,a5O6ZZ52<JnT,VOt/Pz$5#+sfLoFFrYYYdA(!%;?YYYW@Ew+e{wG3LQnnYYsAKRhj^HBQkIc<,cqhr?[Fywg{~{)t6eG/+P?FD+SnYY/nEqu+4YYYEyAtE*gWZYYY7:Yt6t,GYYDjPzMnM2E?CbZ:-c^>PoQYYY2l*bI5$YYYND_^q~;24i]YYYmlrFCVK}`m#y~_(Q$kxH)YYYlb#[_>O9gxr(@6A#rYYY1t)E-E%dVYYYd1]}DcfmI61nYYKMepR0%Z>[N@0YYY%yH:x0~(/IemYYYY|lY>qgW9(YYY{IE!PJYYnw|dR.]%g$+@p$g5YYoG[ja=}jM+RQRJBWdDYYbyx,-L`t+OYYM]v8,9jgnYYYnC8QfG4Mswc}J0_Vlzr,8j5YYYbPP~n+Wmz6YY~2O,vQnOE,P&Fm_P$r8CB>`o!TD0NgJYYYSL5e>78#=yYDBF9CSe-o8YYYKM;idp%v2-a>nYYYiyDq>7vER&YY5U?~X&~@YY(td)>#3E^]fHvN1YYYyOxZr{2$YY+(ilx=,onbgx7YYYCn<@_VymYYbylgRPlOin~8B<%P@Y5U0!vZ&Dj!pO]VDo4]tleNQuYY5U}B_YlTZ:h.5YnwgfSyy<MuX[F=%zDGhQ<ZQEW(Lbmw>5YYb@ihG+dj5YnwM+1;SZ:5YY?@%P93|vjRv0qEYPYY+(k3Ktx~=_RWEGYYAuoSC+jv7UHDTR8;WBwtGY5UaFrT]FQL-o@@QO,d6er@YYFrXO*zW@@cwYYY$H!5?P]|nvYYbyh!3R`4l,GuYYFrNj;:`9w3SYYYv]4I.-$YYYQt:gL2b2v/8YYYEl)0sq&x><WF7<cu@YYY<_xF9H6X?BOYYYj:L?TD+:wTC?nYYYy1WQ3Fc$m)PYYY^y>#YYnw|8/fuPYY_Q:Q#[i1R.YY6l)?@YYYJwp(T?PYYYsxuXZ9JA$YYY`lA{YY6l%?3urOYYc5TrmnhYYYGLsmDW1/]YYY)6E<PezkVZAQL@!nYY/n6:7@8YYYQ(ifey{dCU(UT}!4;ESh]TvtAZ$nYYu5b|f>t]r)rtbv-U@YYYiJ%Fw7Q~rh@Og|tuYY~2LL9>C_btu5YYu5fV+HFQq5YYml=D<+2ZHDOyby1p[y#AiS:YYYqwI:7@vxHYYYGLv:%J|@KYYYsU:5MrTX%`YY5U~UpBvd=*Hlz^l|kYYYW@D[t`}@sztY#YYY+:z~y[tB!UowYY5UpWXkH%|AM}Y={$RYYYi[j73;04&B5-&;PYYYTynVOsj;a6iJYY5U1~x)/J{:#S0`nYM]k&BtT51nYYOnVnee]ylnYYCnw!AX+jnYnwY%he6,7r@Y5UlfdeW!#hYYnwlgOqRf]5YY@R6u>B^3I$-?<9fboi-xCm}vYR;YYY^2ehT!G3_$fq+sGnF;]zR8.S[0YYM]py1on%Qa;1TM9/}j6RlpfrV)vnYYVP~J!$eVr-EF(hFN``<-nxEqTFI~YpCErYYY@{(a>Jp,=GYY!}k8HxR<+a=GYYZr@riMllp+=dpR9q]SnYby%j9brLg,V@YYq|z:WR.lqxS6>Ns:ds1;Hv=`)MRBnYYY*DY@}!CPZ9ZYYYgIOHshyxq)TYYY:Y,7jnMp8JnY5UbrW#we-,6w5JXZe=v}RTGO~71@YYaPrIaJ+w%#pDBsq#xYYYZ8Q6+dfg4xwThe8Obj-/9Wo$:uYYM]*3UtmK^xdEya=;A%Z(`I#gBJv)q+](#PYY.:h9Sda2.m5n+rx&8grbD]O6Q`ZYYY..E4=3.z0G*auCt?RX2-ih7;^^@YnwB5zk`f|vWkv5%i^qvdY;.<MY/~R;!LHWYYoxMB8qRaoCb9RpxfO3YYYYT8H(*e?:CP1YYY]M}jx-q[u:iHG.Srw5^4a_nhK@XO@-VBWeLOYYnw]LF<R,>+#WdUUhm2jNCM(Jy4oYYYb@/ejGO`I),,X|W,o8z&I[{;U!@Y5U,kIK[d>#`;YY.:Vzrn@)[C#|z^x?.SYs_]~:1fdYYY8wSNP4e!7<@Ynwi1Kfz~bawp1`;F@L0RrQ,`2w#coURn;DYYM]1EW)O-;Mip5Ynwy[L:fnWaXlYYox*?9fIjM3%)UR@Bm?YY5U+O)p?MYI)lYYd1hyGpH1S1unYY]M>?*/860dYY5UBa>D``qQmX5R)D`v.)Q6OS`^GA/mP:fVU^&[1YYYNvO>=x@nvEv}raY$E=E,Y3?eL{YYnwScd#-LAIJb]7MsO,Gt#::f[yK@YY,G*wn%9AZ!#YYY42Bw(pa5brOnYYj5DWmf@2BvOYYYVyEam}sW0Pf9is9kuEa.f{*M/qfIbo5yYY6l(gVkuE<|H,=P,R-_[:UxhkGa7fWJbcNnYY6lHH<qVSF<xdnYYY0n%+Ne%D43nYYYZ;Y.QV2CcjYYM]7?,|jX/TZB2fN#?2Wh=3;lA+3YYY/q+_[CA1+P5F(<9C$_$/#]Po%1;yV)`xOYYYI3PhyWmV|S1kM(X88um;Lphb+1YY~2>JFyX/kJvYYY9b]~6]]!v3w#$RJZ>9YY~2u5Ov,0>*HYYYgn8m2v)|fOYY5Ugj&wNv7/b$YYd19d9je1Cx;nYYSGRA<3Uphfi,Lmm,8[QiB.#&CJf5=jB5YYFrBKq8Ns.|,oJN]L}~r@YYFrkd/?]~3EQo.3,|a~?YYY`OGV#$ad3/&a>8;$[O0w@Y5UV=xR$E|^.#`B-b0BlEOtE]Q,4Bkxgj-Fn&:$M<f$eYYY|`]!dJ)S[oA6+$YY%63C8]<pj`9F`$qOsEz`U2@nYYu5Jy:~m5$YYYu5FFt6G&1OYYyRsKFv{bWV9OR8%$YY$;rC`(<VYYYYD@HbEy{pgRHV@[O_aSCKX)/Q2]Y]X:k-:q6%m{0^neKX5YnwbW|:J0Xu8(vQYYby>c(,R2`XZo~o!<tk1K=@YYAu|~h.k6sF,&_,:?cWQwuYYYX}0T%Dc5b~f$3k-R$p{]YYCJP[A.W@Q-CKJ|=]YnYY@R[k*^gkifh!+yeu$!lo9z,!985YYYj`3s|FYc;8fBjubQTnYYc5FeWS#ADBZnYYM]EM;-JBr3>$;v[r0j!uTjnblB/YYYxGXg+PS!ojBF5B-%482hG]ypiE)rv|V_lYYY`I]`L#.!12>[!v4WYY6l|&Fu}NO*o9}tYYCJa=3+Q<L1YYby5#(}{bydYY5U?]HP8O`-$H{Q+b($YYrg&.rX`w%[`u/+E3&hYu(YYYA,0K?-.D$HYYnw=l&`x-xT?kc-]o$GYY+(?R%@A*m7{2XGYYN$s,FqJx4L${SYYYOn|dw~f}5YYYppax(}M1nr7X.;3yG_]/4;9;2[$YYYF17=qSRXXDH%&xDSat4bkWl*(o6+Rn)N8FulYYaPDDOlHmDZYY>3{Z&&=rnoXRH`BVkrociyF5/yL/{:KO:Ejj4)YYM]3Xc!Y|&~<=R(%}Vz{IkVL#fn4?!&OV224|i5FJ<A^PYYaPk{aOLepOYYd1nC+^9K4X4YYYqwUw{mLJ%YYY]MlzyJF8{WV0^VYz%#.YYY%l_pgj5369&S]QXg^RN+YYnw1|d#-LAIJb]7MsO,GtT1mg5yo@YYd1LBlN=[U):/A,hgq2w_8l.KJe8el+daq.&;$YYYmbos@6(+!Z@aY{C/YY!}fF]ox$i~m<=g]CWE(DYYYY*be[;MTAv[9;q0;7wEeHnYYYk=IczL6Svz)(i3!31#*4Vx<qjOYY(tZgP4}[U3SS4`+Pzu]9Z;L4q?`YYYrnf}2U*`F9`^.a^f1oWF$xU@YE&ZE{YeYYYY/U@%Scp70-C62,3(8<:}mR.H0?jje,nYnwz$Q)Kmq)(tk=DYYYU5BE~I!vMt/*>ftip@vyT:9YYY6wKC=hUDSgcax3NYYYPL*iXchd(om&!b5(b5YY#Df;N,:YBEc45I#K/anYbys=aD!D)R8Vcf)uRY5U,Q==H6uX>f$FYYnwFt+}*~an5YYYaMz-2#1j2O{YYY9II;?ygS0DYYby6iLq_#x{nYnw:3vI6pPm_wo#Z/0xV[nYnw-9Oc#71{VM}@BYYYXnV^2s|qC-`J^_C5YYc56ewxxYYY46CG6jW^9PMmNd3$@Y5Uqy!EGtDYYYYpZ.da}=&p.=CE<VQN=B]K]YYYb{(A2!Gt]gS4d?hVm?_8ds~;1>r`+HcrSgDoZnYYBM+7trVMD3ZkrX=YYYc5~P)^T&.Iy~YYnw8XkVU9MP>vGYYYgmexL-YYM]{Qe5|]L|:~-;BYYYi6Hcze?!ULDlk:t8DzM8YY5UcfW}vgYYibo&KkEMfj>n*8<3t2xC@;}YYYc5[x#<iBVj%{YY~2uCGyHu/P$0&6^yerNvY8@tg]V<:u.YYYjHSy[WPm5@7f[sM}OQx@&nYYCnozn)p&nYby,}CdV8LZw]EOVi{L;-(cQ?&MAK7bW/xXM.<jz+f.5cCcM$__-Yd8e<JA<{XfPk!Lx+hB8+_`*nYYyR*)t*d{`{r7v^oDYYM]}BYcjVUum|5Ynw_a7:Ek8eJkSu7F%|mj/^mXYY5Uk85_4xa|ixYY5U6to;cIQ,K;C+NPvZ[|#<zaEU!|$F~5YYCn]^A9MFYYM]5w[NZNWYYYew0$DuXXydG>I3UYYYW@N=}J7>2SO>nnYYlbZ.da}=t8ng{IB0uYYY~l)j;9]e+=g(tw;1YY!}7tc)zS(|OnYY,Gt}6EI)or5YYYDY|va|lej%[y5YnwBQQ9fcyH!]RE7}s~$YYY?yob+]nYYY?b<mvynYM]{~I/*S_HiHqQYYbyQp#B~UIgYY!}mi]qaboXU5YY@R%d~sP]p~v)gmOY5UzD^z..a7NH3PS<3dUYYYv$Bzcr_0^b#[8*T|rw/Q+cIb$=}`:jTyy)3q~l9[xW8}8+D/(YYY{*r7<eGbs]{/uYYYb@t&JP`lYYnwZ;pX<%7)my5=_A&c)1YlYY@RZ`@VdO@Y5Uo+WmYp;}:)%e3M5T~-PHD`YY5U(+ewyx>A@GGY5U_J@0]}~W,c>Q_#+cYYy(:S_VP*Sb(YYY3wLb<7i)YYM]s)O8Dr;&v<36RK$(SPxh8BGS-|5O|]):ZYYY~I>4yga=C_|K=X-YYYblF].-MGQYYYb?{/;FFVUM&%~_kh>tHo7(5Y5U{;U(nb}#d5`9kKS{onb~Z(e.#bI9HYYYCnyWd_2gnYM]#/[ubj2YYYewP~->TcsB*wttcYYYKM!C))<=hSDxxYYYQLVkz%C4^U9~EORfq}E2YYx,MBvZPoet=Yh+;gw+B*0YYYo:/n[(LA&^nYYY^q7/Ovx3piv%+(Z[)0G^RYYYuo`SOo*@5z)wnwtrYYnwd4<u!t8Zg5OY5U-M53R!M#?rYYd1qFj$.X>)NYYYzY_qKRnY5UbWBt|8<WZN4vnYM]Xj%?.v9)D3Lz>VQr~YYY<]z*TWL$0,YX$YYY|IZ9$+B-6s>H`TvV![X|DYYY16/Dg+EFeoNp$3vS$?y|IYYYgn`P8mE%.bRYYY~FX)I_YYM]gGbx@i&OGI=y?YYYZn5xgX)Vr@?^oKI*+GYYBNh@.VD_s2GJ(%,1YYbyf#V$;D9;YYYYxR-s5ivS0yPYYYk3eDL@t}%qkYYYtLt7T).[@3[{(YYY8ywgSKhGYY%6UD^82CJuo99-P84[M~_`85YY/nKmAN1YYY.(@GeH%mt4<=!]NK1tO`R%(3{u_qvOYY5U*h=:>%Jg@y4,izB/%xuWnYby)HCcG^fRVPYY+({OkZ2f.8MAYYYYoGI2Euaa^vXCWJ#E]GYYbyaV;zhdQ.YYby0TUi,A&-uPYY6le3-#toG,?MnYbyCEI|obb59Pu*q8@YYY[AoEUP#k2D)9Rj%tYY(t5#9v2&#YYYg{:jT+d/Vz^+lmEmksPahnYYOn7|t`g855YYeO|&U$tI~qI^h.#:M0T=hFkYYY::}-#;])@[cGYYyRiyTScWx4lpx(vDYYCJ-O#ueKH_T{U&xOs5YY8O_|t}3{k}$K*FY^M0d8;PYY_Q@d)3O(?SYYZIW%p#Iq]3`2s/&)m|lYYY.m^Ql[wGYYyRd@`1$k+MsMQ.orYYBN8k44z[)]A!29!>YYnwEMdOVtKVP0wO5VBrYY@R9E(CtvOYYY%bpI[g~AO)-S:-SyA(CEZYYYx:[^{<NGPYYYZ?E^f`N(5V-]|U/+Gl1.MynYYYTz,8*I#ztTlYYYkO;%Y}YYby{~azlFS~mnJ`ZZ5YYY>ySER6kxTOzA7a+.YY(t[QU]TySYYYg{4;OQ[/]uA*rIy1+sUtcYYY@6Zo,]mP%YYYZneoI7y%`E&K4X3%fGYY$;YPVm[CYYYY3}%jn5wi*hI?=q@YYYlw*r&_9PYYaPUf%xt2zDYY$;3C7sDqZYYY>PPtp%HN^0#TO`~3^nYYCn)H)SE(nYnw+OQ~8t^9aZ(kzBTRoBnYnwvh);U621Ae$5O|j(BpnYnw~2]nYYQQxBP~)lF$Im)+(bcU.j1-xF!:s7>l@YYY#lA&75n^=)yxZ~NPYYd1<j{bXE{D}YYY:Y$I6}P_LxYYM]qBoQ%~KZmL?1|SnBtYYYmy9JiwgD%Rwy`9YY.:+(epy_Z.MhW3lYYYGL_Z`ocV`wOMt-,55YYYf[($O|[zusZYYYZw:!%2HXnYYYa:}KJ(`2@rUnYYj5&f]^!D]+PYYYj2Og+dliG7YY~2uDE?wAaR+YYY]Mh_!R.Ef2OY5U)P~M|/e%BRYYM]O{qi7&&IdR5Ynw$RN5})uz.SYY_Q3kO`LW7aYYM]EitkfOYYFrjA@3i)AzAYYY}]:>8]4}Uv_nYY,GAf.5{<kN]YYY9Ikh16]S3XYY!}]NzZK4USx@YY,G>{UG[3_tGYYYx:|,mqkQ#YYY{wA?;{[Xe,;nYY`Ob4Qp_uu0j0Gs5mAOL=nY5U&}8@2z.V/LW~T31wrYYYGL;~H41iunYY>n[4JV7lxoh(KYYY*l<j5Y#iAe*n@Y5UA+>^_CDj_`9DrZ0VIYYYB]l77azHYYZIoE0Gmy/$c0hfGQY<5K<>j.7B;So/Tt[pJ36D5YYY;IHl=2YY.:1^a+<6^kU<u%$YYY/wGk@F0&vKatYYYYrYP|xczh_s7EnYM]xZcf,+sU?VPQJYKePYYY+!Q}NV0Hy&mb?xq@E;l$aza5CNchR|UbqB%iAZnYM]and)#M:1gHwhIAW4-YYYb?Fbww0!8TfhUF@vq9Uf7{RYYY1_4(p1@@nY5UvA*<b(ZAoF}4YYM]K{{N2);YYYMMm1x%p|TvBoemk5KJ;f)QWYYYtmBt<@)TGtv}nYnwr*EWN.qnYYyRB2?)vC.<6ousRKwZW{*.WQMB_EIYYYOn9lIYfUyCEH7up8YYby_KHR9J&M&T8/4POY5Uc#6<&[yh%6M7]bFA3d(-vbYY5UQ_5_4xa|ixYY5U`qStrnVt]|b9YYnwfw^%+@2TYY5UWKKJ{QmH5YnwV#0z7hZFnthT]2`,UYYYTw%fK3rYYYlwfl?|&RYYe/}Dj#EX>1M8g_hhue#<53{.$H5F#!D9QZd$YY%6LVb>]L/q)_pC-:cC}DW425YYc5D!v}=_!F16YYZII/u%?4&X<sR01#k8PYYYk3GX,}(9ir5nYY3wk.O~B=YYYY4uTej79kcv/ohYIBF$g`nY5U5F].WO~-k=4T9wK5YY)We/imP~*j=:1erQYY8OHFa~SpKZiN;@(M#vH[NM_$YY%6X8}/KL;Uuq#^PFhFt{Hb?YYY[Y,DW)CV92WGYYN$K:h&e,A>n<{5YYu5$cX[]*:@YYSGjH-Gu*]$YY#DQ+8$mH|T|z%h=^Yi5Ynw$oC0!>2nYYu5^1PAlN{GYYrgT4#7wjNo8*.vC+S0MoVKIkwM0l<frMi/GR=8HYYY(LWg++r0(@@Ynw=64wl)JFnt-pp9@YYYi}B.%w~5YYFr/)DN?-8|FzZCes9rMYYY,G27H5+Tt*`#Jndug<+YYYU5E7![VEY0.,j!{0[R^sTp{YYY!AtPU=sJgYYY3y~_,hCsB88f&r:^:ey_3gnYYYi5I)Q7YYsA5#uS04F=ufy5YY6l]!%N#@YY,G<[wk0jtp6YYY9wK;?7Zdw68sMk#<WnYYFr!aBnR-f.>G)6l@McIYYYu5&oJU9L9nYYCneR.j?[nY5U=.z>sZYY$;JOlvmZ;YYY/l|b^yXF^13~3U.`;J@Ynw|:n.Jmlk+1)`<-RYYYmk^}tUl>@Y5U0F@FA<6rl+~h2vlYYYKy4)<B5SASYY3kQQOp+h?zgM0wX9nYM]y1xpAKfDf(k%nSGprrX|u`YYCJ_pDR*o(GYYby%uR1E^iZb/!yw{-#KGYY.:8OlV15lYYY5MVdTx*C8)D:;Fe!Zb}c}kgmKQI#>#YYsAcA<o@0S,6_RrYYCJB!ziMkMtq_z8K?InYYN$WsA8ecN1~wOC)})^qe^BQMnY5U7?}=LNw?K2G_SQXRYY@RDDgPK]nY5U;tI3/fD5YYu5TOOf8tEGYYSGG+wOb:<rYY)W8q6}6|m!ozZL_jYY(t@2lU|EOYYYTygwJ{gz=9?n;k+2-tX&[5-5YYaPqyImlxv[n4$)^8kYYYf]94{50SYY$;f<vidblYYY$UDFBqYY.:oL`3yn~YYYU}36kD(5YY$;<5~@Z!uYYYR&`:g.lvygA{EJgYYY*yz^Ct.IlYYYky6Ff#6/bMYY.:ml*w1SRYYY.L;Or>3#y47c{&AmkuSKuXYYYY%Q[kt?ITYYYYA+ip~]r*7T7N/B2|YY(t7&eX>MWYYYf,,{WySW>M,bBabye9;|YYsAqFIR4-%^3HT;YY[[DHyi7_b5|b]IfhsVUis@Y0jzx@w>tYYYZw<{CCg$lYYY?JE+OHxRYY#D/n%5dAr_)+>fUf]0YYnw~FVPn?AYYYYp(,t4?xX][i@_q|D[_7RX;YYYtt<6_NU+H)g5YYPPd7M@O4=Ux<v@[Qd]gf):%f-cnl[IYYYY4|FGeAb(yj#4)[qdo)R<YYYYk)i;QY7ND[d2/w8OYYd1A<MOC!}uJnYY>nc,rQ#PwNfSSYYY&:&XqRyvC00i}C88Q$YY8O]Ho1(YYYTw=W<^ZYYYPvzhV9!Nd+h]@YYY)PJ9LT7.RY5UFbEcpxWYYYCnLGHy0O>JxoGtnYM]o|@3/u}_.-F8!iF#ZYYY{w-C?tYYYY+){+OG&_Ul^o(YYYCne_h$PZYYM]^34,g@~cws#JYY!}v&q&HQR|DDNM/a7D0M1aTlJPQim|#YYYB]SqoX&0YY3kp[*1z^B41})jh]nYnw;r3[jXK8YYnwz:T{G/mWYQ/0[O^@DIDcIEYY5U1mxHk0~({<@Y5Usy:WAh4*4RA%-R.#-D]m;|ab`+n*DYYYCnj0=y;fYYbyLU9(YZ(]7OiR-jnYnwjM`sJ3/gT}iLYY5UMrl<:DYwOe/`Uv[PYYrg!Dw^y_bPko<gI}.i?c5YYYFyA%M569E>p_&$%L@:H0YY~2}]Pn6]mO.nYY`OlpmBEmo|XdvtRwT-Df$Y5U>]i(_>a&2/w)FFczvE<nYYFr>I#:Up:3GYYY$HkG9;ZjklnYnwcaVOk$>@(&zXrnYYCnBa?>KMYYM]9lRS?-%ivBfN4(Y#PI]4ujYY5U:.o(73]0kg<}#^3xF]a/nYby}t[JX/n^[?nR}TOYYYa,IG0>tFS/nYYYMHQ4!>Lef(Z_s>NS^t&8hl@YYY3r2AvIs@,3/YYYE?NTDJO,{C$<RV<zTalfU|yn.y^RW)YY(txLB6rErYYYJl:M=uDlYY)WRmzDbL1N]t2~)1YYsAt&%.Uo4js*&RYY_Q..+nN7*(YY~2/Tc#:^0y(YYYgn*+_?qQN~nYYY&5y0NkYY6l/,wXzLxyj{pPYYZIuH-;]{V>2+j%;E/VYYYYH!9eNlnY5U@RAroSYYBNjDwu(NYcE*5L_7YYCJlfu`:Cf,2z$5EfYYnw1~N)1j>2Se(0nY5U7tGe?5YY[[x&Feob+5F|hZy,=5FC,l9Z#`a-ouDYYYx:DQy+-q#YYYZ{/)U8`EqWroP[=snYnw;5-8Kd0&o1:rIP8BfTqiZunYYYl6JNwB|i{w@YnwGw8j^h)yS]YYd1b9N=u=J#oYYYJwwao0(YYYa`[+P=*Q{1L#j)GYYYM:VWE%}4uzsF,,wYYYW?XcH~[+0z4xPYYY7Pbi`SnYnwXL}3b^_$@Ynw!EZBHM//~ZYYd1(tY!_!T#vYYYsUqbMrCX4`YYnwn..k8:=R5EaS5oAh7N*RONA;nV>C*s>8hkl7=Nwv*$TznNxrYY_QCrm_,QnxYY.:py=gNC#G2$,Nf^F>SNMe=HD7!E)]pezV$YYYcJ4$!hM5YYyR+K4iKX8|zj]Zv{YY$;2%x>WA@YYY9I[$i?yjqf6(>>^F){$YYY&5C0NkYY6lfw5y=MCJ+P?-YYM],LNV4PYY%6JZ^82CJuo99-P84[M~_`85YYc55TZ-Vi3v)uYY~2DFzJCR[4?@bxWt=RM}y,=FSx],_WvYYY=:VHiCRoL=sA=I/E.IY.JnYYCn7f_a5rYYYYI}onN</Sz/f6h&X85_^fM/Xj3&pMCUYYbyU:]hhnS}r3Nc@fYYYYmLv0;JeMnYYYEE6bRS}Eb_6YYYnn_L$I/#ZQ(x*&2i^8]w1o2OcK@]H~YY(tHcc8=FOYYYYvkwQo)uYY)W)~5%O!fHB5Ik}HYYsAK}0Dtpc6[>BrYYDjp_GclV($QLw8XK:*ef;YYYkwBpepIT+,IVUgRCO]7TYY!}SL!Y8Q=A.nYYj5JVqJEe9p$YYY,QyCIEYYM]BLr/nMgA|m`:YY.:.i[cH`pUr00C.WpEYYYYA]H=RbYYM]WalG@/c=/4`V=!.H1&j#{BSP|q=Cvu)^QXNwOYYYx*YZBDK-nH>dbS3G`(w;)oS|@N]=]2ZP%`enKYYY?y1H}K>i6:^GYYN$WkuTMXNqF!EYYYOn:T39jdaYYY!M;jy2fe/mD[H(nYnw^^%@ToWc?5d_T=Xh|w[ZYdnnYYOnv+TDg%5nYY?@;x^x22K*%<OV[rYY6l64k2|L{:{lnYbyfY.WC;<Wnt}{UM5YnwD_xa(8f5YY,G#}71Sor<N3%5(-]$snYYCnpt1+0CnYM]kh2Tx`rz@H$PYY6l)>%utP}p]-$q5498Qme!{GYYM]!!FxOdt}I+@YnwR&W/.67G`=$tL!pBx,yik~|FJh@.D5YY6lxs]{y6V!)!L?}M)nQ6?YYY$;:zz=uERYYYCyBeh?Xcs&eo-#ux.MTv,3cP^.O$YYnwRUp>^z#oBQ1FYF$YYYL[-nv$1=M|GYYYY(%zC[O!Ecd<e%+!^I4F`8$Y5U$o@Sn4}YYY3w:klTSkYYCJv`!lqlyJH@:-<mYYnw50O[7|f}$X5(nYbyif7-x-coUOYYFrB}ild7(]`YYY+:0b<=aH<=6qGYYYj`Q+DRmJ/cOBMl]IqnYY/n_#<^gYYY*l/kMSu>?!Aa@YYY&}K43Fz.RYYYoyOvl[}@YY@ROX/4Df%283u:nY5U9q>];TZF^J6TtHr:UYYYW@HvlDZ+H+0x-sCKbjQ9?yL4YYby:.:O!$.nnYnw4p`Km-;Z*^>{(QrJMRYYnw0,9`<v3]H|qI.nYYiW7@4L+n|C#5lZU93SRzl&UX/k%W4M,mh~v*I`2ykt$2z#LwO{6vqD2UO5YYu5ws%AyZtGYY$;7f&dB<,&NnmSW/D9/v@ieDhHnYYYttSD&c=+Yg>5YYeO[nB{Z!D|S:m8]{aUr0gz1YYYFJ]1(g@Ynwv(ITmW-YYY!MNIK3a#yDH.rEYYbyDI%Q-J[o#X2>~(wHM]Z;{)zVk8)s&YYY*bX4pVaVI%~&tdd=v]?xYYnwPhwc%(F~t_QPLKL`pJ&ljrY~=[}6Ory4&|5YnwBr[zf{<,F2.5jY5Qxb!oDlXQYY5Un%puT-[<.}j$!5YY?@F5;,4mXZkyF2y$YY6ljv#BG3US4DYYM]3I3N2W,}&nkr],cEf:,H_tYY~2fk!Dbw|Mkd+JQ#e?+RG;n//~&IvxZYYYYL0D&K>;h(?fW>6YYYOnDvx=%YAuHjZAMG5Y5U/Z=+,8/hx]CK4uV%g=B&qz3YYYtL%c[d)7+293YYYY2Ip6u>ym}CcJ0A?oe@YYaPZqKaZY`:9~5Yt|nYYY:>h+.jB3Rz${#1n;}=CRYYDjg{~q@@|`z?8PwRBkhlRYYYxLK=j8|T8A|g~8&!/*BGrp6EaPYY5U-*rp,eTx[CgZf.ymp=ML>*>I,nYY>{LNS0$Jd0C]/5Z1$A>;_iuU8[K07hEyGYYY,AP+D42n8shQ(2CnRGYYyR?>lt:Ybpchc%vYYY@RS+RQ8R@pm=/wGYYYT(NBWXPm.:|m/YYYeO#f0A[(ZZ)]hpa1(RQ!#HlYYY;HPA,ZWRj6wtlYYYb,P:rh^R2W9Ii_1YYY<AJxX7feQiYUiV_aYYnw]q|,ElnFnYYYbWl?|Er3:ke={S7.0?iHuYYY#l83rYYYPLbqbo(+mOMq~_D1mYYY/n/gOYYY=b<%eNy5AHzw(-hPsnYY[Y_:nY5U+hI<OIXsnY5U|7TH@k~[nYnwOwQm])(Hw`X=nYnw29YnYYSG#VMwP<EPYY+(Yawxt$U:b|(@YY/nF^5YYY*x>x/XK+u)YYsAa=uVo#P#C)/{YY8OyRNYYY@?Fb`@IC.YYY<]}6{DMlcc+<5YYY#:k(YYd15sSE6zHq_YYY(L&/7FeVqwnYnwqMU?1f&SkhR:HYa.nZPA3uq7Y*D*[YYY9by|!8L#eDdGzr1vBhYY(tM0ew/#NYYYwl?|Ik1Mo=C&!_/YYY+:;$[n6orV*xOYYYZv:XpMeP:Ba^Fw@0E}Mk[E2y]X$p0GYY@R(YIJREnYnwq+Hq,`Y{%L+ZIgWYYY0`E%R{W?OF-&YYnwY0u5.&+5YY?@hz2#J>X=~c3:QRYY8O.,RtPYYYHUABYYby%j@Rd+*/h5YYc5s5tYYYp,3#eLAa]YYYIJWaYY~2!;(>3sy>!nYYPP<rWl`tLMR+2_aVswdTia%(PHs9!]YYnw-2yLj[K<yc-;qWQ3#YYYGLl~v2`1TYYY(L<juzVk.L@Ynw%Q(]J|chxYYY6lb2+LPo1_.eYYYY-agu2*R?:<nYYY#j[VbhXp}Q@YYY$M~wqq(E+i%)`s9,@YYYg~ohyJX7IdnUDDSuYY(t_Qwr~95YYY;v2RCPj:v*_^M3cBYY5U4jVA.`gls_-]%qnlYY@Rg|-$gPYY5U%kS>~sRnYY?@(+dC_-_QHkuqnRYY_Q(Vk?0(T.sHHd9ehYYYoL+d?D2q[dU_R;oX$Y5Ur*wqP#2nYY?@oJYzLog=s8>(nuYY6lRm&S?4H&XaYYYYjgy&?K<!)8@YYY`Ib>E,;T*TR,2mmFYYnwR}F-DHa$$LF/=gCRYY@R{`96y$$Y5UCEGRR*6nYY?@|}{|g>eeFKyHm5YY_Qy^Wb+:Yw#bY>,s,YYY46P7V,tfBi@XfW`NGY5UFbxLvE+5YYCnv$gy6.YYbyGULyMcWwH&N-F7YYYY7?)e02YYbyW@wTJw5zGyJJMk/5YYaP/O]>&s/1dzs2(GzYYYU}(xWqG@YY$;;;:I8ZrYYYBbY;XSnWA8}q]2lYYYCyu&~zs+u0BgX#QYYYl65S>qG6!t5#=^f26C9YYYBAaOAVy?q|W3o_#u{E$YYYr&nWUs@I6h@R*3]|]nYY,GD.iJ7GPq}5I1nocZMYYYj5@YY4m?%?MK?C3s)pnYYY`wlqEL%1#YYY*l|ShLsMq0>0@YYY^y2m[!^3D;GYYY|n<x5|Nciwaq{rAt8nyfnYby]6h#7{QJs9-z2R{kH0OYYY/n;Ro.KYYYNH.[~V[Fvv|}M&[t;OYYd1cA,171%SQ&oWo)b^PYYYFr=}<*GhfMKSo:f>RtP@YYFr:GdpuQ_P*}l)Cv41q@YYFrbkzkSFw4R]^b,vb9BnYYFrs+_fm&>>kV7Y]9_sPYYYOnGl2A@M,YYYCnI{T*8p?NU8#cnYnwY[U@YY,G}s_^fiq1nYYYkOm1YY6laaHYYY(L,[Ii3{MdYY5U9dknYY/n_$uYYYDt@KJN=oZYYY-2Wd?.A$$YYYyA@V~0$Un|3FYYM]s.s1Y(-ph,e~YY6lMI-z!wMfEdh)YYM])?KGR$YYc5x:PYYY5vYhH3h)gYYYvAylYYCJ,xGgM#L*YY6luX~hi@|eCa>WYY8O}r@HeZmn8VT6wQxQl(?BFGYYaPv0Kfg(y5YY_QZe|MfVd2YY3k&+$Nwlm2cSL@17nYM]A|<RW(!YYY@6`)%aBq)YYY7L0PT1@pBJTSN-<nYYW@20<2v5QjZb1",_cVQ);
 local _i=1;while _i+3<=#_d do
 local _a,_b,_c,_e=_d:byte(_i,_i+3);
-local _n=((_a*256+_b)*256+_c)*256+_e;_KTB[#_KTB+1]=_d:sub(_i+4,_i+3+_n);_i=_i+4+_n end end end;(_KTB[1]):gsub(_KTB[2], function(l1I11II1lI1)
-_llIIl11lllllIIIIlI1lIIIl = l1I11II1lI1
+local _n=((_a*256+_b)*256+_c)*256+_e;_KRP[#_KRP+1]=_d:sub(_i+4,_i+3+_n);_i=_i+4+_n end end end;(_KRP[1]):gsub(_KRP[2], function(I11lIl1I1I)
+_IIII1l1l1lIlI11ll1llIlIl = I11lIl1I1I
 	end);
-local I1IIl1I1lI1
+local l11111lI1I
 do
-function I1IIl1I1lI1(l1I11II1lI1)
-local IlI11II1lI1 = string.byte(l1I11II1lI1, 0B1) or 0B0
-local llI11II1lI1 = {};
-local II111II1lI1 = (0x91 + IlI11II1lI1 * 0x5F) % 0x100
-for lI111II1lI1 = 0B10, #l1I11II1lI1, 0B1 do
-local I1111II1lI1 = lI111II1lI1 - 0B1
-local l1111II1lI1 = string.byte(l1I11II1lI1, lI111II1lI1);
-local Il111II1lI1 = (((0x35 + I1111II1lI1 * 0xFC) + IlI11II1lI1) + II111II1lI1) % 0x100
-llI11II1lI1[I1111II1lI1] = string.char((l1111II1lI1 - Il111II1lI1) % 0x100)
-II111II1lI1 = ((l1111II1lI1 + IlI11II1lI1) + I1111II1lI1) % 0x100
+function l11111lI1I(I11lIl1I1I)
+local ll1lIl1I1I = string.byte(I11lIl1I1I, 0B1) or 0B0
+local Il1lIl1I1I = {};
+local lI1lIl1I1I = (0xD5 + ll1lIl1I1I * 0x69) % 0x100
+for II1lIl1I1I = 0B10, #I11lIl1I1I, 0B1 do
+local l1llIl1I1I = II1lIl1I1I - 0B1
+local I1llIl1I1I = string.byte(I11lIl1I1I, II1lIl1I1I);
+local llllIl1I1I = (((0xA4 + l1llIl1I1I * 0x36) + ll1lIl1I1I) + lI1lIl1I1I) % 0x100
+Il1lIl1I1I[l1llIl1I1I] = string.char((I1llIl1I1I - llllIl1I1I) % 0x100)
+lI1lIl1I1I = ((I1llIl1I1I + ll1lIl1I1I) + l1llIl1I1I) % 0x100
 			end
-return table.concat(llI11II1lI1)
+return table.concat(Il1lIl1I1I)
 		end
 	end
-if _llIIl11lllllIIIIlI1lIIIl ~= I1IIl1I1lI1(_KTB[3]) then
+if _IIII1l1l1lIlI11ll1llIlIl ~= l11111lI1I(_KRP[3]) then
 return
 	end
-local l1I11II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[4]));
-local IlI11II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[5]));
-local llI11II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[6]));
-local II111II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[7]));
-local lI111II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[8]));
-local I1111II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[9]));
-local l1111II1lI1 = l1I11II1lI1[I1IIl1I1lI1(_KTB[10])]
-local Il111II1lI1 = { [I1IIl1I1lI1(_KTB[11])] = { [I1IIl1I1lI1(_KTB[12])] = Color3[I1IIl1I1lI1(_KTB[13])](0x6, 0xA, 0x16), [I1IIl1I1lI1(_KTB[14])] = Color3[I1IIl1I1lI1(_KTB[15])](0xA, 0x11, 0x23), [I1IIl1I1lI1(_KTB[16])] = Color3[I1IIl1I1lI1(_KTB[17])](0xE, 0x18, 0x30), [I1IIl1I1lI1(_KTB[18])] = Color3[I1IIl1I1lI1(_KTB[19])](0x3B, 0x57, 0x92), [I1IIl1I1lI1(_KTB[20])] = Color3[I1IIl1I1lI1(_KTB[21])](0x49, 0xDD, 0xFF), [I1IIl1I1lI1(_KTB[22])] = Color3[I1IIl1I1lI1(_KTB[23])](0x7E, 0x5C, 0xFF), [I1IIl1I1lI1(_KTB[24])] = Color3[I1IIl1I1lI1(_KTB[13])](0x49, 0xDD, 0xFF), [I1IIl1I1lI1(_KTB[25])] = Color3[I1IIl1I1lI1(_KTB[26])](0xAE, 0x60, 0xFF), [I1IIl1I1lI1(_KTB[27])] = Color3[I1IIl1I1lI1(_KTB[28])](0x4B, 0xEC, 0xB0), [I1IIl1I1lI1(_KTB[29])] = Color3[I1IIl1I1lI1(_KTB[30])](0xF4, 0xF8, 0xFF), [I1IIl1I1lI1(_KTB[31])] = Color3[I1IIl1I1lI1(_KTB[32])](0xAE, 0xBE, 0xDC), [I1IIl1I1lI1(_KTB[33])] = Color3[I1IIl1I1lI1(_KTB[34])](0xFF, 0xFF, 0xFF), [I1IIl1I1lI1(_KTB[35])] = Color3[I1IIl1I1lI1(_KTB[36])](0x1A, 0x27, 0x44) }, [I1IIl1I1lI1(_KTB[37])] = { [I1IIl1I1lI1(_KTB[38])] = 0x1B8, [I1IIl1I1lI1(_KTB[39])] = 0x14A, [I1IIl1I1lI1(_KTB[40])] = 0x34, [I1IIl1I1lI1(_KTB[41])] = 0x26, [I1IIl1I1lI1(_KTB[42])] = 0x32 }, [I1IIl1I1lI1(_KTB[43])] = { [I1IIl1I1lI1(_KTB[44])] = TweenInfo[I1IIl1I1lI1(_KTB[45])](.12, Enum[I1IIl1I1lI1(_KTB[46])][I1IIl1I1lI1(_KTB[47])]), [I1IIl1I1lI1(_KTB[48])] = .18, [I1IIl1I1lI1(_KTB[49])] = .05, [I1IIl1I1lI1(_KTB[50])] = .7, [I1IIl1I1lI1(_KTB[51])] = 1.2, [I1IIl1I1lI1(_KTB[52])] = .5, [I1IIl1I1lI1(_KTB[53])] = 0B11 }, [I1IIl1I1lI1(_KTB[54])] = { [I1IIl1I1lI1(_KTB[55])] = I1IIl1I1lI1(_KTB[56]), [I1IIl1I1lI1(_KTB[57])] = I1IIl1I1lI1(_KTB[58]), [I1IIl1I1lI1(_KTB[59])] = I1IIl1I1lI1(_KTB[60]), [I1IIl1I1lI1(_KTB[61])] = I1IIl1I1lI1(_KTB[62]), [I1IIl1I1lI1(_KTB[63])] = I1IIl1I1lI1(_KTB[64]), [I1IIl1I1lI1(_KTB[65])] = I1IIl1I1lI1(_KTB[66]), [I1IIl1I1lI1(_KTB[67])] = I1IIl1I1lI1(_KTB[68]) }, [I1IIl1I1lI1(_KTB[69])] = { { [I1IIl1I1lI1(_KTB[70])] = I1IIl1I1lI1(_KTB[71]), [I1IIl1I1lI1(_KTB[72])] = 25000000, [I1IIl1I1lI1(_KTB[73])] = 25000000 }, { [I1IIl1I1lI1(_KTB[74])] = I1IIl1I1lI1(_KTB[75]), [I1IIl1I1lI1(_KTB[76])] = 10000000, [I1IIl1I1lI1(_KTB[77])] = 10000000 }, { [I1IIl1I1lI1(_KTB[78])] = I1IIl1I1lI1(_KTB[79]), [I1IIl1I1lI1(_KTB[80])] = 5000000, [I1IIl1I1lI1(_KTB[81])] = 5000000 }, { [I1IIl1I1lI1(_KTB[82])] = I1IIl1I1lI1(_KTB[83]), [I1IIl1I1lI1(_KTB[84])] = 1000000, [I1IIl1I1lI1(_KTB[85])] = 1000000 }, { [I1IIl1I1lI1(_KTB[86])] = I1IIl1I1lI1(_KTB[87]), [I1IIl1I1lI1(_KTB[88])] = 750000, [I1IIl1I1lI1(_KTB[89])] = 750000 }, { [I1IIl1I1lI1(_KTB[90])] = I1IIl1I1lI1(_KTB[91]), [I1IIl1I1lI1(_KTB[92])] = 400000, [I1IIl1I1lI1(_KTB[93])] = 400000 }, { [I1IIl1I1lI1(_KTB[94])] = I1IIl1I1lI1(_KTB[95]), [I1IIl1I1lI1(_KTB[96])] = 150000, [I1IIl1I1lI1(_KTB[97])] = 150000 }, { [I1IIl1I1lI1(_KTB[98])] = I1IIl1I1lI1(_KTB[99]), [I1IIl1I1lI1(_KTB[100])] = 0x1388, [I1IIl1I1lI1(_KTB[101])] = 0x1388 }, { [I1IIl1I1lI1(_KTB[102])] = I1IIl1I1lI1(_KTB[103]), [I1IIl1I1lI1(_KTB[104])] = 0x64, [I1IIl1I1lI1(_KTB[105])] = 0x64 }, { [I1IIl1I1lI1(_KTB[106])] = I1IIl1I1lI1(_KTB[107]), [I1IIl1I1lI1(_KTB[108])] = 0B0, [I1IIl1I1lI1(_KTB[109])] = 0B0 } } };
-local ll111II1lI1 = Il111II1lI1[I1IIl1I1lI1(_KTB[110])]
-local IIl11II1lI1 = Il111II1lI1[I1IIl1I1lI1(_KTB[111])]
-local lIl11II1lI1 = Il111II1lI1[I1IIl1I1lI1(_KTB[112])]
-local I1l11II1lI1 = nil
-local l1l11II1lI1 = nil
-local Ill11II1lI1 = nil
-local lll11II1lI1 = nil
-local IIIl1II1lI1 = nil
-local lIIl1II1lI1 = {};
-local function I1Il1II1lI1(l1I11II1lI1)
-lIIl1II1lI1[#lIIl1II1lI1 + 0B1] = l1I11II1lI1
-return l1I11II1lI1
+local I11lIl1I1I = game:GetService(l11111lI1I(_KRP[4]));
+local ll1lIl1I1I = game:GetService(l11111lI1I(_KRP[5]));
+local Il1lIl1I1I = game:GetService(l11111lI1I(_KRP[6]));
+local lI1lIl1I1I = game:GetService(l11111lI1I(_KRP[7]));
+local II1lIl1I1I = game:GetService(l11111lI1I(_KRP[8]));
+local l1llIl1I1I = game:GetService(l11111lI1I(_KRP[9]));
+local I1llIl1I1I = I11lIl1I1I[l11111lI1I(_KRP[10])]
+local llllIl1I1I = { [l11111lI1I(_KRP[11])] = { [l11111lI1I(_KRP[12])] = Color3[l11111lI1I(_KRP[13])](0x6, 0xA, 0x16), [l11111lI1I(_KRP[14])] = Color3[l11111lI1I(_KRP[15])](0xA, 0x11, 0x23), [l11111lI1I(_KRP[16])] = Color3[l11111lI1I(_KRP[17])](0xE, 0x18, 0x30), [l11111lI1I(_KRP[18])] = Color3[l11111lI1I(_KRP[19])](0x3B, 0x57, 0x92), [l11111lI1I(_KRP[20])] = Color3[l11111lI1I(_KRP[21])](0x49, 0xDD, 0xFF), [l11111lI1I(_KRP[22])] = Color3[l11111lI1I(_KRP[23])](0x7E, 0x5C, 0xFF), [l11111lI1I(_KRP[24])] = Color3[l11111lI1I(_KRP[25])](0x49, 0xDD, 0xFF), [l11111lI1I(_KRP[26])] = Color3[l11111lI1I(_KRP[27])](0xAE, 0x60, 0xFF), [l11111lI1I(_KRP[28])] = Color3[l11111lI1I(_KRP[29])](0x4B, 0xEC, 0xB0), [l11111lI1I(_KRP[30])] = Color3[l11111lI1I(_KRP[31])](0xF4, 0xF8, 0xFF), [l11111lI1I(_KRP[32])] = Color3[l11111lI1I(_KRP[33])](0xAE, 0xBE, 0xDC), [l11111lI1I(_KRP[34])] = Color3[l11111lI1I(_KRP[35])](0xFF, 0xFF, 0xFF), [l11111lI1I(_KRP[36])] = Color3[l11111lI1I(_KRP[37])](0x1A, 0x27, 0x44) }, [l11111lI1I(_KRP[38])] = { [l11111lI1I(_KRP[39])] = 0x1B8, [l11111lI1I(_KRP[40])] = 0x14A, [l11111lI1I(_KRP[41])] = 0x34, [l11111lI1I(_KRP[42])] = 0x26, [l11111lI1I(_KRP[43])] = 0x32 }, [l11111lI1I(_KRP[44])] = { [l11111lI1I(_KRP[45])] = TweenInfo[l11111lI1I(_KRP[46])](.12, Enum[l11111lI1I(_KRP[47])][l11111lI1I(_KRP[48])]), [l11111lI1I(_KRP[49])] = .18, [l11111lI1I(_KRP[50])] = .05, [l11111lI1I(_KRP[51])] = .7, [l11111lI1I(_KRP[52])] = 1.2, [l11111lI1I(_KRP[53])] = .5, [l11111lI1I(_KRP[54])] = 0B11 }, [l11111lI1I(_KRP[55])] = { [l11111lI1I(_KRP[56])] = l11111lI1I(_KRP[57]), [l11111lI1I(_KRP[58])] = l11111lI1I(_KRP[59]), [l11111lI1I(_KRP[60])] = l11111lI1I(_KRP[61]), [l11111lI1I(_KRP[62])] = l11111lI1I(_KRP[63]), [l11111lI1I(_KRP[64])] = l11111lI1I(_KRP[65]), [l11111lI1I(_KRP[66])] = l11111lI1I(_KRP[67]), [l11111lI1I(_KRP[68])] = l11111lI1I(_KRP[69]) }, [l11111lI1I(_KRP[70])] = { { [l11111lI1I(_KRP[71])] = l11111lI1I(_KRP[72]), [l11111lI1I(_KRP[73])] = 25000000, [l11111lI1I(_KRP[74])] = 25000000 }, { [l11111lI1I(_KRP[75])] = l11111lI1I(_KRP[76]), [l11111lI1I(_KRP[77])] = 10000000, [l11111lI1I(_KRP[78])] = 10000000 }, { [l11111lI1I(_KRP[79])] = l11111lI1I(_KRP[80]), [l11111lI1I(_KRP[81])] = 5000000, [l11111lI1I(_KRP[82])] = 5000000 }, { [l11111lI1I(_KRP[83])] = l11111lI1I(_KRP[84]), [l11111lI1I(_KRP[85])] = 1000000, [l11111lI1I(_KRP[86])] = 1000000 }, { [l11111lI1I(_KRP[87])] = l11111lI1I(_KRP[88]), [l11111lI1I(_KRP[89])] = 750000, [l11111lI1I(_KRP[90])] = 750000 }, { [l11111lI1I(_KRP[91])] = l11111lI1I(_KRP[92]), [l11111lI1I(_KRP[93])] = 400000, [l11111lI1I(_KRP[94])] = 400000 }, { [l11111lI1I(_KRP[95])] = l11111lI1I(_KRP[96]), [l11111lI1I(_KRP[97])] = 150000, [l11111lI1I(_KRP[98])] = 150000 }, { [l11111lI1I(_KRP[99])] = l11111lI1I(_KRP[100]), [l11111lI1I(_KRP[101])] = 0x1388, [l11111lI1I(_KRP[102])] = 0x1388 }, { [l11111lI1I(_KRP[103])] = l11111lI1I(_KRP[104]), [l11111lI1I(_KRP[105])] = 0x64, [l11111lI1I(_KRP[106])] = 0x64 }, { [l11111lI1I(_KRP[107])] = l11111lI1I(_KRP[108]), [l11111lI1I(_KRP[109])] = 0B0, [l11111lI1I(_KRP[110])] = 0B0 } } };
+local IlllIl1I1I = llllIl1I1I[l11111lI1I(_KRP[111])]
+local lIllIl1I1I = llllIl1I1I[l11111lI1I(_KRP[112])]
+local IIllIl1I1I = llllIl1I1I[l11111lI1I(_KRP[113])]
+local l1IlIl1I1I = nil
+local I1IlIl1I1I = nil
+local llIlIl1I1I = nil
+local IlIlIl1I1I = nil
+local lIIlIl1I1I = nil
+local IIIlIl1I1I = {};
+local function l11IIl1I1I(I11lIl1I1I)
+IIIlIl1I1I[#IIIlIl1I1I + 0B1] = I11lIl1I1I
+return I11lIl1I1I
 	end
-local function l1Il1II1lI1()
-for l1I11II1lI1, IlI11II1lI1 in ipairs(lIIl1II1lI1) do
-if IlI11II1lI1 then
+local function I11IIl1I1I()
+for I11lIl1I1I, ll1lIl1I1I in ipairs(IIIlIl1I1I) do
+if ll1lIl1I1I then
 pcall(function()
-IlI11II1lI1:Disconnect()
+ll1lIl1I1I:Disconnect()
 				end)
 			end
 		end
-lIIl1II1lI1 = {}
+IIIlIl1I1I = {}
 	end
-local IlIl1II1lI1 = workspace[I1IIl1I1lI1(_KTB[113])] and workspace[I1IIl1I1lI1(_KTB[114])][I1IIl1I1lI1(_KTB[115])] or Vector2[I1IIl1I1lI1(_KTB[116])](0x500, 0x2D0);
-local llIl1II1lI1 = II111II1lI1[I1IIl1I1lI1(_KTB[117])] and IlIl1II1lI1[I1IIl1I1lI1(_KTB[118])] <= 0x334
-if llIl1II1lI1 then
-IIl11II1lI1[I1IIl1I1lI1(_KTB[119])] = math[I1IIl1I1lI1(_KTB[120])](math[I1IIl1I1lI1(_KTB[121])](IlIl1II1lI1[I1IIl1I1lI1(_KTB[122])] * .88, 0x124, 0x17C));
-IIl11II1lI1[I1IIl1I1lI1(_KTB[123])] = math[I1IIl1I1lI1(_KTB[124])](math[I1IIl1I1lI1(_KTB[125])](IlIl1II1lI1[I1IIl1I1lI1(_KTB[126])] * .56, 0x140, 0x14A));
-IIl11II1lI1[I1IIl1I1lI1(_KTB[127])] = 0x34
-IIl11II1lI1[I1IIl1I1lI1(_KTB[128])] = 0x26
-IIl11II1lI1[I1IIl1I1lI1(_KTB[129])] = 0x32
+local ll1IIl1I1I = workspace[l11111lI1I(_KRP[114])] and workspace[l11111lI1I(_KRP[115])][l11111lI1I(_KRP[116])] or Vector2[l11111lI1I(_KRP[117])](0x500, 0x2D0);
+local Il1IIl1I1I = lI1lIl1I1I[l11111lI1I(_KRP[118])] and ll1IIl1I1I[l11111lI1I(_KRP[119])] <= 0x334
+if Il1IIl1I1I then
+lIllIl1I1I[l11111lI1I(_KRP[120])] = math[l11111lI1I(_KRP[121])](math[l11111lI1I(_KRP[122])](ll1IIl1I1I[l11111lI1I(_KRP[123])] * .88, 0x124, 0x17C));
+lIllIl1I1I[l11111lI1I(_KRP[124])] = math[l11111lI1I(_KRP[125])](math[l11111lI1I(_KRP[126])](ll1IIl1I1I[l11111lI1I(_KRP[127])] * .56, 0x140, 0x14A));
+lIllIl1I1I[l11111lI1I(_KRP[128])] = 0x34
+lIllIl1I1I[l11111lI1I(_KRP[129])] = 0x26
+lIllIl1I1I[l11111lI1I(_KRP[130])] = 0x32
 	end;
-(getgenv())[I1IIl1I1lI1(_KTB[130])] = {};
-local II1l1II1lI1 = (getgenv())[I1IIl1I1lI1(_KTB[131])]
-II1l1II1lI1[I1IIl1I1lI1(_KTB[132])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[133])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[134])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[135])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[136])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[137])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[138])] = 0xA
-II1l1II1lI1[I1IIl1I1lI1(_KTB[139])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[140])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[141])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[142])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[143])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[144])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[145])] = 0B0
-II1l1II1lI1[I1IIl1I1lI1(_KTB[146])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[147])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[148])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[149])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[150])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[151])] = nil
-local lI1l1II1lI1 = llI11II1lI1:WaitForChild(I1IIl1I1lI1(_KTB[152]));
-local I11l1II1lI1 = lI1l1II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[153]));
-local l11l1II1lI1 = lI1l1II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[154]));
-local Il1l1II1lI1 = lI1l1II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[155]));
-local ll1l1II1lI1 = lI1l1II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[156]));
-II1l1II1lI1[I1IIl1I1lI1(_KTB[157])] = lI1l1II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[158]));
-local IIll1II1lI1 = nil
-local lIll1II1lI1 = nil
+(getgenv())[l11111lI1I(_KRP[131])] = {};
+local lI1IIl1I1I = (getgenv())[l11111lI1I(_KRP[132])]
+lI1IIl1I1I[l11111lI1I(_KRP[133])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[134])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[135])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[136])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[137])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[138])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[139])] = 0xA
+lI1IIl1I1I[l11111lI1I(_KRP[140])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[141])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[142])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[143])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[144])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[145])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[146])] = 0B0
+lI1IIl1I1I[l11111lI1I(_KRP[147])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[148])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[149])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[150])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[151])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[152])] = nil
+local II1IIl1I1I = Il1lIl1I1I:WaitForChild(l11111lI1I(_KRP[153]));
+local l1lIIl1I1I = II1IIl1I1I:FindFirstChild(l11111lI1I(_KRP[154]));
+local I1lIIl1I1I = II1IIl1I1I:FindFirstChild(l11111lI1I(_KRP[155]));
+local lllIIl1I1I = II1IIl1I1I:FindFirstChild(l11111lI1I(_KRP[156]));
+local IllIIl1I1I = II1IIl1I1I:FindFirstChild(l11111lI1I(_KRP[157]));
+lI1IIl1I1I[l11111lI1I(_KRP[158])] = II1IIl1I1I:FindFirstChild(l11111lI1I(_KRP[159]));
+local lIlIIl1I1I = nil
+local IIlIIl1I1I = nil
 pcall(function()
-IIll1II1lI1 = (require(llI11II1lI1[I1IIl1I1lI1(_KTB[159])][I1IIl1I1lI1(_KTB[160])]))[I1IIl1I1lI1(_KTB[161])](I1IIl1I1lI1(_KTB[162]))
+lIlIIl1I1I = (require(Il1lIl1I1I[l11111lI1I(_KRP[160])][l11111lI1I(_KRP[161])]))[l11111lI1I(_KRP[162])](l11111lI1I(_KRP[163]))
 	end);
 pcall(function()
-lIll1II1lI1 = require(llI11II1lI1[I1IIl1I1lI1(_KTB[163])][I1IIl1I1lI1(_KTB[164])][I1IIl1I1lI1(_KTB[165])])
+IIlIIl1I1I = require(Il1lIl1I1I[l11111lI1I(_KRP[164])][l11111lI1I(_KRP[165])][l11111lI1I(_KRP[166])])
 	end);
-local function I1ll1II1lI1(l1I11II1lI1, IlI11II1lI1)
-if type(l1I11II1lI1) ~= I1IIl1I1lI1(_KTB[166]) then
+local function l1IIIl1I1I(I11lIl1I1I, ll1lIl1I1I)
+if type(I11lIl1I1I) ~= l11111lI1I(_KRP[167]) then
 return false
 		end
-for l1I11II1lI1, llI11II1lI1 in pairs(l1I11II1lI1) do
-local II111II1lI1 = tonumber(l1I11II1lI1) or tonumber((tostring(l1I11II1lI1)):match(I1IIl1I1lI1(_KTB[167])));
-local lI111II1lI1 = tonumber(llI11II1lI1) or tonumber((tostring(llI11II1lI1)):match(I1IIl1I1lI1(_KTB[168])))
-if lI111II1lI1 == IlI11II1lI1 or II111II1lI1 == IlI11II1lI1 and llI11II1lI1 ~= nil then
+for I11lIl1I1I, Il1lIl1I1I in pairs(I11lIl1I1I) do
+local lI1lIl1I1I = tonumber(I11lIl1I1I) or tonumber((tostring(I11lIl1I1I)):match(l11111lI1I(_KRP[168])));
+local II1lIl1I1I = tonumber(Il1lIl1I1I) or tonumber((tostring(Il1lIl1I1I)):match(l11111lI1I(_KRP[169])))
+if II1lIl1I1I == ll1lIl1I1I or lI1lIl1I1I == ll1lIl1I1I and Il1lIl1I1I ~= nil then
 return true
 			end
 		end
 return false
 	end
-local function l1ll1II1lI1()
-local l1I11II1lI1 = {};
-local IlI11II1lI1 = llI11II1lI1[I1IIl1I1lI1(_KTB[169])][I1IIl1I1lI1(_KTB[170])]:FindFirstChild(I1IIl1I1lI1(_KTB[171]))
-if not IlI11II1lI1 then
-return l1I11II1lI1
+local function I1IIIl1I1I()
+local I11lIl1I1I = {};
+local ll1lIl1I1I = Il1lIl1I1I[l11111lI1I(_KRP[170])][l11111lI1I(_KRP[171])]:FindFirstChild(l11111lI1I(_KRP[172]))
+if not ll1lIl1I1I then
+return I11lIl1I1I
 		end
-local II111II1lI1 = nil
-local lI111II1lI1 = nil
-if IIll1II1lI1 then
+local lI1lIl1I1I = nil
+local II1lIl1I1I = nil
+if lIlIIl1I1I then
 pcall(function()
-II111II1lI1 = IIll1II1lI1:TryIndex({ I1IIl1I1lI1(_KTB[172]) })
-lI111II1lI1 = IIll1II1lI1:TryIndex({ I1IIl1I1lI1(_KTB[173]) })
+lI1lIl1I1I = lIlIIl1I1I:TryIndex({ l11111lI1I(_KRP[173]) })
+II1lIl1I1I = lIlIIl1I1I:TryIndex({ l11111lI1I(_KRP[174]) })
 			end)
 		end
-if typeof(II111II1lI1) == I1IIl1I1lI1(_KTB[174]) then
-for IlI11II1lI1, llI11II1lI1 in ipairs(IlI11II1lI1:GetChildren()) do
-local I1111II1lI1 = tonumber(llI11II1lI1[I1IIl1I1lI1(_KTB[175])]:match(I1IIl1I1lI1(_KTB[176])));
-local l1111II1lI1 = llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[177]))
-if I1111II1lI1 and (l1111II1lI1 and ((l1111II1lI1:IsA(I1IIl1I1lI1(_KTB[178])) or l1111II1lI1:IsA(I1IIl1I1lI1(_KTB[179]))) and (II111II1lI1 >= l1111II1lI1[I1IIl1I1lI1(_KTB[180])] * 0x3C and not I1ll1II1lI1(lI111II1lI1, I1111II1lI1)))) then
-l1I11II1lI1[#l1I11II1lI1 + 0B1] = I1111II1lI1
+if typeof(lI1lIl1I1I) == l11111lI1I(_KRP[175]) then
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(ll1lIl1I1I:GetChildren()) do
+local l1llIl1I1I = tonumber(Il1lIl1I1I[l11111lI1I(_KRP[176])]:match(l11111lI1I(_KRP[177])));
+local I1llIl1I1I = Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[178]))
+if l1llIl1I1I and (I1llIl1I1I and ((I1llIl1I1I:IsA(l11111lI1I(_KRP[179])) or I1llIl1I1I:IsA(l11111lI1I(_KRP[180]))) and (lI1lIl1I1I >= I1llIl1I1I[l11111lI1I(_KRP[181])] * 0x3C and not l1IIIl1I1I(II1lIl1I1I, l1llIl1I1I)))) then
+I11lIl1I1I[#I11lIl1I1I + 0B1] = l1llIl1I1I
 				end
 			end
 		else
-local IlI11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[181])]:FindFirstChild(I1IIl1I1lI1(_KTB[182]));
-local llI11II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[183]));
-local II111II1lI1 = llI11II1lI1 and llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[184]))
-if II111II1lI1 then
-for IlI11II1lI1, llI11II1lI1 in ipairs(II111II1lI1:GetChildren()) do
-local II111II1lI1 = llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[185]));
-local lI111II1lI1 = llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[186]))
-if II111II1lI1 and (II111II1lI1:IsA(I1IIl1I1lI1(_KTB[187])) and (lI111II1lI1 and (lI111II1lI1:IsA(I1IIl1I1lI1(_KTB[188])) and (lI111II1lI1[I1IIl1I1lI1(_KTB[189])]:upper()):find(I1IIl1I1lI1(_KTB[190]), 0B1, true)))) then
-l1I11II1lI1[#l1I11II1lI1 + 0B1] = II111II1lI1[I1IIl1I1lI1(_KTB[191])]
+local ll1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[182])]:FindFirstChild(l11111lI1I(_KRP[183]));
+local Il1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[184]));
+local lI1lIl1I1I = Il1lIl1I1I and Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[185]))
+if lI1lIl1I1I then
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(lI1lIl1I1I:GetChildren()) do
+local lI1lIl1I1I = Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[186]));
+local II1lIl1I1I = Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[187]))
+if lI1lIl1I1I and (lI1lIl1I1I:IsA(l11111lI1I(_KRP[188])) and (II1lIl1I1I and (II1lIl1I1I:IsA(l11111lI1I(_KRP[189])) and (II1lIl1I1I[l11111lI1I(_KRP[190])]:upper()):find(l11111lI1I(_KRP[191]), 0B1, true)))) then
+I11lIl1I1I[#I11lIl1I1I + 0B1] = lI1lIl1I1I[l11111lI1I(_KRP[192])]
 					end
 				end
 			end
 		end
-table[I1IIl1I1lI1(_KTB[192])](l1I11II1lI1)
-return l1I11II1lI1
+table[l11111lI1I(_KRP[193])](I11lIl1I1I)
+return I11lIl1I1I
 	end
-local function Illl1II1lI1()
-local l1I11II1lI1 = {};
-local IlI11II1lI1 = l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[193]))
-if not IlI11II1lI1 or not lIll1II1lI1 or type(lIll1II1lI1[I1IIl1I1lI1(_KTB[194])]) ~= I1IIl1I1lI1(_KTB[195]) then
-return l1I11II1lI1
+local function llIIIl1I1I()
+local I11lIl1I1I = {};
+local ll1lIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[194]))
+if not ll1lIl1I1I or not IIlIIl1I1I or type(IIlIIl1I1I[l11111lI1I(_KRP[195])]) ~= l11111lI1I(_KRP[196]) then
+return I11lIl1I1I
 		end
-for IlI11II1lI1, llI11II1lI1 in ipairs(IlI11II1lI1:GetChildren()) do
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[196])) and llI11II1lI1[I1IIl1I1lI1(_KTB[197])] ~= I1IIl1I1lI1(_KTB[198]) then
-for IlI11II1lI1, llI11II1lI1 in ipairs(llI11II1lI1:GetChildren()) do
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[199])) and llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[200])) then
-local IlI11II1lI1, II111II1lI1 = pcall(lIll1II1lI1[I1IIl1I1lI1(_KTB[201])], llI11II1lI1)
-if IlI11II1lI1 and II111II1lI1 then
-l1I11II1lI1[#l1I11II1lI1 + 0B1] = llI11II1lI1
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(ll1lIl1I1I:GetChildren()) do
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[197])) and Il1lIl1I1I[l11111lI1I(_KRP[198])] ~= l11111lI1I(_KRP[199]) then
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(Il1lIl1I1I:GetChildren()) do
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[200])) and Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[201])) then
+local ll1lIl1I1I, lI1lIl1I1I = pcall(IIlIIl1I1I[l11111lI1I(_KRP[202])], Il1lIl1I1I)
+if ll1lIl1I1I and lI1lIl1I1I then
+I11lIl1I1I[#I11lIl1I1I + 0B1] = Il1lIl1I1I
 						end
 					end
 				end
 			end
 		end
-return l1I11II1lI1
+return I11lIl1I1I
 	end
-local function llll1II1lI1()
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[202])]:FindFirstChild(I1IIl1I1lI1(_KTB[203]));
-local IlI11II1lI1 = l1I11II1lI1 and l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[204]));
-local llI11II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[205]));
-local II111II1lI1 = llI11II1lI1 and llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[206]));
-local lI111II1lI1 = llI11II1lI1 and llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[207]));
-local I1111II1lI1 = lI111II1lI1 and lI111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[208]))
-return II111II1lI1 ~= nil and (II111II1lI1:IsA(I1IIl1I1lI1(_KTB[209])) and (II111II1lI1[I1IIl1I1lI1(_KTB[210])] and (I1111II1lI1 ~= nil and (I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[211])) and (I1111II1lI1[I1IIl1I1lI1(_KTB[212])]:lower()):find(I1IIl1I1lI1(_KTB[213]), 0B1, true) ~= nil))))
+local function IlIIIl1I1I()
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[203])]:FindFirstChild(l11111lI1I(_KRP[204]));
+local ll1lIl1I1I = I11lIl1I1I and I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[205]));
+local Il1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[206]));
+local lI1lIl1I1I = Il1lIl1I1I and Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[207]));
+local II1lIl1I1I = Il1lIl1I1I and Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[208]));
+local l1llIl1I1I = II1lIl1I1I and II1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[209]))
+return lI1lIl1I1I ~= nil and (lI1lIl1I1I:IsA(l11111lI1I(_KRP[210])) and (lI1lIl1I1I[l11111lI1I(_KRP[211])] and (l1llIl1I1I ~= nil and (l1llIl1I1I:IsA(l11111lI1I(_KRP[212])) and (l1llIl1I1I[l11111lI1I(_KRP[213])]:lower()):find(l11111lI1I(_KRP[214]), 0B1, true) ~= nil))))
 	end
-local function IIIIlII1lI1()
-return (#l1ll1II1lI1() + #Illl1II1lI1()) + (llll1II1lI1() and 0B1 or 0B0)
+local function lIIIIl1I1I()
+return (#I1IIIl1I1I() + #llIIIl1I1I()) + (IlIIIl1I1I() and 0B1 or 0B0)
 	end
-local function lIIIlII1lI1()
-local l1I11II1lI1 = 0B0
-if I11l1II1lI1 and I11l1II1lI1:IsA(I1IIl1I1lI1(_KTB[214])) then
-for IlI11II1lI1, llI11II1lI1 in ipairs(l1ll1II1lI1()) do
-local II111II1lI1, lI111II1lI1 = pcall(function()
-return I11l1II1lI1:InvokeServer(I1IIl1I1lI1(_KTB[215]), llI11II1lI1)
+local function IIIIIl1I1I()
+local I11lIl1I1I = 0B0
+if l1lIIl1I1I and l1lIIl1I1I:IsA(l11111lI1I(_KRP[215])) then
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(I1IIIl1I1I()) do
+local lI1lIl1I1I, II1lIl1I1I = pcall(function()
+return l1lIIl1I1I:InvokeServer(l11111lI1I(_KRP[216]), Il1lIl1I1I)
 					end)
-if II111II1lI1 and lI111II1lI1 == true then
-l1I11II1lI1 = l1I11II1lI1 + 0B1
+if lI1lIl1I1I and II1lIl1I1I == true then
+I11lIl1I1I = I11lIl1I1I + 0B1
 				end
-task[I1IIl1I1lI1(_KTB[216])](.1)
+task[l11111lI1I(_KRP[217])](.1)
 			end
 		end
-if l11l1II1lI1 and l11l1II1lI1:IsA(I1IIl1I1lI1(_KTB[217])) then
-for IlI11II1lI1, llI11II1lI1 in ipairs(Illl1II1lI1()) do
-if llI11II1lI1[I1IIl1I1lI1(_KTB[218])] then
-l11l1II1lI1:FireServer(I1IIl1I1lI1(_KTB[219]), llI11II1lI1)
-l1I11II1lI1 = l1I11II1lI1 + 0B1
-task[I1IIl1I1lI1(_KTB[220])](.1)
+if I1lIIl1I1I and I1lIIl1I1I:IsA(l11111lI1I(_KRP[218])) then
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(llIIIl1I1I()) do
+if Il1lIl1I1I[l11111lI1I(_KRP[219])] then
+I1lIIl1I1I:FireServer(l11111lI1I(_KRP[220]), Il1lIl1I1I)
+I11lIl1I1I = I11lIl1I1I + 0B1
+task[l11111lI1I(_KRP[221])](.1)
 				end
 			end
 		end
-if llll1II1lI1() and (ll1l1II1lI1 and ll1l1II1lI1:IsA(I1IIl1I1lI1(_KTB[221]))) then
-ll1l1II1lI1:FireServer(I1IIl1I1lI1(_KTB[222]))
-l1I11II1lI1 = l1I11II1lI1 + 0B1
+if IlIIIl1I1I() and (IllIIl1I1I and IllIIl1I1I:IsA(l11111lI1I(_KRP[222]))) then
+IllIIl1I1I:FireServer(l11111lI1I(_KRP[223]))
+I11lIl1I1I = I11lIl1I1I + 0B1
 		end
-return l1I11II1lI1
+return I11lIl1I1I
 	end
-local function I1IIlII1lI1()
-local l1I11II1lI1 = l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[223]))
-if not l1I11II1lI1 then
+local function l1111I1I1I(I11lIl1I1I)
+local ll1lIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[224]))
+if not ll1lIl1I1I then
 return nil
 		end
-for l1I11II1lI1, IlI11II1lI1 in ipairs(l1I11II1lI1:GetChildren()) do
-if IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[224])) and (IlI11II1lI1[I1IIl1I1lI1(_KTB[225])]:lower()):match(I1IIl1I1lI1(_KTB[226])) then
-return IlI11II1lI1
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(ll1lIl1I1I:GetChildren()) do
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[225])) then
+local ll1lIl1I1I = Il1lIl1I1I[l11111lI1I(_KRP[226])]:lower()
+if not ll1lIl1I1I:find(l11111lI1I(_KRP[227]), 0B1, true) and (ll1lIl1I1I ~= l11111lI1I(_KRP[228]) and not (I11lIl1I1I and I11lIl1I1I[ll1lIl1I1I])) then
+return Il1lIl1I1I
+				end
 			end
 		end
 return nil
 	end
-local l1IIlII1lI1 = { [I1IIl1I1lI1(_KTB[227])] = false, [I1IIl1I1lI1(_KTB[228])] = nil, [I1IIl1I1lI1(_KTB[229])] = nil };
-local function IlIIlII1lI1()
-l1IIlII1lI1[I1IIl1I1lI1(_KTB[230])] = task[I1IIl1I1lI1(_KTB[231])](function()
-while l1IIlII1lI1[I1IIl1I1lI1(_KTB[232])] do
+local I1111I1I1I = { [l11111lI1I(_KRP[229])] = false, [l11111lI1I(_KRP[230])] = nil, [l11111lI1I(_KRP[231])] = nil };
+local function ll111I1I1I()
+I1111I1I1I[l11111lI1I(_KRP[232])] = task[l11111lI1I(_KRP[233])](function()
+while I1111I1I1I[l11111lI1I(_KRP[234])] do
 pcall(function()
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[233])]:FindFirstChild(I1IIl1I1lI1(_KTB[234]))
-if l1I11II1lI1 and (l1111II1lI1[I1IIl1I1lI1(_KTB[235])] and l1111II1lI1[I1IIl1I1lI1(_KTB[236])]:FindFirstChild(I1IIl1I1lI1(_KTB[237]))) then
-l1111II1lI1[I1IIl1I1lI1(_KTB[238])][I1IIl1I1lI1(_KTB[239])]:EquipTool(l1I11II1lI1)
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[235])]:FindFirstChild(l11111lI1I(_KRP[236]))
+if I11lIl1I1I and (I1llIl1I1I[l11111lI1I(_KRP[237])] and I1llIl1I1I[l11111lI1I(_KRP[238])]:FindFirstChild(l11111lI1I(_KRP[239]))) then
+I1llIl1I1I[l11111lI1I(_KRP[240])][l11111lI1I(_KRP[241])]:EquipTool(I11lIl1I1I)
 						end
-local IlI11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[240])] and l1111II1lI1[I1IIl1I1lI1(_KTB[241])]:FindFirstChild(I1IIl1I1lI1(_KTB[242]))
-if IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[243])) then
-IlI11II1lI1[I1IIl1I1lI1(_KTB[244])][I1IIl1I1lI1(_KTB[245])] = 0B0
+local ll1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[242])] and I1llIl1I1I[l11111lI1I(_KRP[243])]:FindFirstChild(l11111lI1I(_KRP[244]))
+if ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[245])) then
+ll1lIl1I1I[l11111lI1I(_KRP[246])][l11111lI1I(_KRP[247])] = 0B0
 						end
 					end);
-task[I1IIl1I1lI1(_KTB[246])](.05)
+task[l11111lI1I(_KRP[248])](.05)
 				end
 			end);
-l1IIlII1lI1[I1IIl1I1lI1(_KTB[247])] = task[I1IIl1I1lI1(_KTB[248])](function()
-while l1IIlII1lI1[I1IIl1I1lI1(_KTB[249])] do
+I1111I1I1I[l11111lI1I(_KRP[249])] = task[l11111lI1I(_KRP[250])](function()
+while I1111I1I1I[l11111lI1I(_KRP[251])] do
 pcall(function()
-l1111II1lI1[I1IIl1I1lI1(_KTB[250])]:FireServer(I1IIl1I1lI1(_KTB[251]), I1IIl1I1lI1(_KTB[252]));
-l1111II1lI1[I1IIl1I1lI1(_KTB[253])]:FireServer(I1IIl1I1lI1(_KTB[254]), I1IIl1I1lI1(_KTB[255]));
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[256])] and l1111II1lI1[I1IIl1I1lI1(_KTB[257])]:FindFirstChild(I1IIl1I1lI1(_KTB[258]))
-if l1I11II1lI1 then
-l1I11II1lI1:Activate()
+I1llIl1I1I[l11111lI1I(_KRP[252])]:FireServer(l11111lI1I(_KRP[253]), l11111lI1I(_KRP[254]));
+I1llIl1I1I[l11111lI1I(_KRP[255])]:FireServer(l11111lI1I(_KRP[256]), l11111lI1I(_KRP[257]));
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[258])] and I1llIl1I1I[l11111lI1I(_KRP[259])]:FindFirstChild(l11111lI1I(_KRP[260]))
+if I11lIl1I1I then
+I11lIl1I1I:Activate()
 						end
 					end);
-task[I1IIl1I1lI1(_KTB[259])](.01)
+task[l11111lI1I(_KRP[261])](.01)
 				end
 			end)
 	end
-local function llIIlII1lI1()
-l1IIlII1lI1[I1IIl1I1lI1(_KTB[260])] = false
-if l1IIlII1lI1[I1IIl1I1lI1(_KTB[261])] then
-task[I1IIl1I1lI1(_KTB[262])](l1IIlII1lI1[I1IIl1I1lI1(_KTB[263])]);
-l1IIlII1lI1[I1IIl1I1lI1(_KTB[264])] = nil
+local function Il111I1I1I()
+I1111I1I1I[l11111lI1I(_KRP[262])] = false
+if I1111I1I1I[l11111lI1I(_KRP[263])] then
+task[l11111lI1I(_KRP[264])](I1111I1I1I[l11111lI1I(_KRP[265])]);
+I1111I1I1I[l11111lI1I(_KRP[266])] = nil
 		end
-if l1IIlII1lI1[I1IIl1I1lI1(_KTB[265])] then
-task[I1IIl1I1lI1(_KTB[266])](l1IIlII1lI1[I1IIl1I1lI1(_KTB[267])]);
-l1IIlII1lI1[I1IIl1I1lI1(_KTB[268])] = nil
+if I1111I1I1I[l11111lI1I(_KRP[267])] then
+task[l11111lI1I(_KRP[268])](I1111I1I1I[l11111lI1I(_KRP[269])]);
+I1111I1I1I[l11111lI1I(_KRP[270])] = nil
 		end
 pcall(function()
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[241])]
-if l1I11II1lI1 then
-local IlI11II1lI1 = l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[269]))
-if IlI11II1lI1 then
-IlI11II1lI1[I1IIl1I1lI1(_KTB[270])] = l1111II1lI1[I1IIl1I1lI1(_KTB[271])]
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[271])]
+if I11lIl1I1I then
+local ll1lIl1I1I = I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[272]))
+if ll1lIl1I1I then
+ll1lIl1I1I[l11111lI1I(_KRP[273])] = I1llIl1I1I[l11111lI1I(_KRP[274])]
 				end
 			end
 		end)
 	end
-local function II1IlII1lI1()
-for l1I11II1lI1, IlI11II1lI1 in pairs(l1111II1lI1[I1IIl1I1lI1(_KTB[272])]:GetChildren()) do
-if IlI11II1lI1[I1IIl1I1lI1(_KTB[273])] == I1IIl1I1lI1(_KTB[274]) and (l1111II1lI1[I1IIl1I1lI1(_KTB[275])] and l1111II1lI1[I1IIl1I1lI1(_KTB[276])]:FindFirstChild(I1IIl1I1lI1(_KTB[277]))) then
-l1111II1lI1[I1IIl1I1lI1(_KTB[278])][I1IIl1I1lI1(_KTB[279])]:EquipTool(IlI11II1lI1)
+local function lI111I1I1I()
+for I11lIl1I1I, ll1lIl1I1I in pairs(I1llIl1I1I[l11111lI1I(_KRP[275])]:GetChildren()) do
+if ll1lIl1I1I[l11111lI1I(_KRP[276])] == l11111lI1I(_KRP[277]) and (I1llIl1I1I[l11111lI1I(_KRP[278])] and I1llIl1I1I[l11111lI1I(_KRP[279])]:FindFirstChild(l11111lI1I(_KRP[280]))) then
+I1llIl1I1I[l11111lI1I(_KRP[281])][l11111lI1I(_KRP[282])]:EquipTool(ll1lIl1I1I)
 			end
 		end
 pcall(function()
-l1111II1lI1[I1IIl1I1lI1(_KTB[280])]:FireServer(I1IIl1I1lI1(_KTB[281]), I1IIl1I1lI1(_KTB[282]));
-l1111II1lI1[I1IIl1I1lI1(_KTB[283])]:FireServer(I1IIl1I1lI1(_KTB[284]), I1IIl1I1lI1(_KTB[285]))
+I1llIl1I1I[l11111lI1I(_KRP[283])]:FireServer(l11111lI1I(_KRP[284]), l11111lI1I(_KRP[285]));
+I1llIl1I1I[l11111lI1I(_KRP[286])]:FireServer(l11111lI1I(_KRP[287]), l11111lI1I(_KRP[288]))
 		end)
 	end
-local function lI1IlII1lI1(l1I11II1lI1, IlI11II1lI1)
-if not l1I11II1lI1 or not IlI11II1lI1 then
+local function II111I1I1I(I11lIl1I1I, ll1lIl1I1I)
+if not I11lIl1I1I or not ll1lIl1I1I then
 return
 		end
 pcall(function()
-l1I11II1lI1[I1IIl1I1lI1(_KTB[286])] = Vector3[I1IIl1I1lI1(_KTB[287])](0B10, 0B1, 0B1);
-l1I11II1lI1[I1IIl1I1lI1(_KTB[288])] = 0B1
-l1I11II1lI1[I1IIl1I1lI1(_KTB[289])] = false
-if l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[290])) then
-for l1I11II1lI1, IlI11II1lI1 in pairs(l1I11II1lI1[I1IIl1I1lI1(_KTB[291])]:GetChildren()) do
-IlI11II1lI1[I1IIl1I1lI1(_KTB[292])] = false
+I11lIl1I1I[l11111lI1I(_KRP[289])] = Vector3[l11111lI1I(_KRP[290])](0B10, 0B1, 0B1);
+I11lIl1I1I[l11111lI1I(_KRP[291])] = 0B1
+I11lIl1I1I[l11111lI1I(_KRP[292])] = false
+if I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[293])) then
+for I11lIl1I1I, ll1lIl1I1I in pairs(I11lIl1I1I[l11111lI1I(_KRP[294])]:GetChildren()) do
+ll1lIl1I1I[l11111lI1I(_KRP[295])] = false
 				end
 			end
-for IlI11II1lI1, llI11II1lI1 in ipairs({ I1IIl1I1lI1(_KTB[293]), I1IIl1I1lI1(_KTB[294]), I1IIl1I1lI1(_KTB[295]) }) do
-if l1I11II1lI1:FindFirstChild(llI11II1lI1) then
-l1I11II1lI1[llI11II1lI1]:Destroy()
+for ll1lIl1I1I, Il1lIl1I1I in ipairs({ l11111lI1I(_KRP[296]), l11111lI1I(_KRP[297]), l11111lI1I(_KRP[298]) }) do
+if I11lIl1I1I:FindFirstChild(Il1lIl1I1I) then
+I11lIl1I1I[Il1lIl1I1I]:Destroy()
 				end
 			end
-l1I11II1lI1[I1IIl1I1lI1(_KTB[296])] = IlI11II1lI1[I1IIl1I1lI1(_KTB[297])]
-local llI11II1lI1 = l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[298]))
-if llI11II1lI1 then
-llI11II1lI1[I1IIl1I1lI1(_KTB[297])] = IlI11II1lI1[I1IIl1I1lI1(_KTB[299])]
+I11lIl1I1I[l11111lI1I(_KRP[299])] = ll1lIl1I1I[l11111lI1I(_KRP[300])]
+local Il1lIl1I1I = I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[301]))
+if Il1lIl1I1I then
+Il1lIl1I1I[l11111lI1I(_KRP[302])] = ll1lIl1I1I[l11111lI1I(_KRP[303])]
 			end
 		end)
 	end
-local function I11IlII1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1, II111II1lI1)
+local function l1l11I1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I, lI1lIl1I1I)
 return function()
-while l1I11II1lI1[I1IIl1I1lI1(_KTB[300])] do
-task[I1IIl1I1lI1(_KTB[301])](II111II1lI1 or .001)
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[302])] then
+while I11lIl1I1I[l11111lI1I(_KRP[304])] do
+task[l11111lI1I(_KRP[305])](lI1lIl1I1I or .001)
+if not I11lIl1I1I[l11111lI1I(_KRP[306])] then
 break
 				end
 pcall(function()
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[303])] then
+if not I11lIl1I1I[l11111lI1I(_KRP[307])] then
 return
 					end
-if l1111II1lI1[I1IIl1I1lI1(_KTB[304])][I1IIl1I1lI1(_KTB[305])] < llI11II1lI1 then
+if I1llIl1I1I[l11111lI1I(_KRP[308])][l11111lI1I(_KRP[309])] < Il1lIl1I1I then
 return
 					end
-local II111II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[306])]
-if not II111II1lI1 then
+local lI1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[310])]
+if not lI1lIl1I1I then
 return
 					end
-local lI111II1lI1 = II111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[307]));
-local I1111II1lI1 = II111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[308]))
-if not lI111II1lI1 or not I1111II1lI1 then
+local II1lIl1I1I = lI1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[311]));
+local l1llIl1I1I = lI1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[312]))
+if not II1lIl1I1I or not l1llIl1I1I then
 return
 					end
-for llI11II1lI1, II111II1lI1 in pairs(workspace[I1IIl1I1lI1(_KTB[309])]:GetDescendants()) do
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[310])] then
+for Il1lIl1I1I, lI1lIl1I1I in pairs(workspace[l11111lI1I(_KRP[313])]:GetDescendants()) do
+if not I11lIl1I1I[l11111lI1I(_KRP[314])] then
 break
 						end
-if II111II1lI1[I1IIl1I1lI1(_KTB[311])] == I1IIl1I1lI1(_KTB[312]) and II111II1lI1[I1IIl1I1lI1(_KTB[313])] == IlI11II1lI1 then
-local IlI11II1lI1 = II111II1lI1[I1IIl1I1lI1(_KTB[314])]:FindFirstChild(I1IIl1I1lI1(_KTB[315]))
-if IlI11II1lI1 then
-lI1IlII1lI1(IlI11II1lI1, lI111II1lI1)
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[316])] then
+if lI1lIl1I1I[l11111lI1I(_KRP[315])] == l11111lI1I(_KRP[316]) and lI1lIl1I1I[l11111lI1I(_KRP[317])] == ll1lIl1I1I then
+local ll1lIl1I1I = lI1lIl1I1I[l11111lI1I(_KRP[318])]:FindFirstChild(l11111lI1I(_KRP[319]))
+if ll1lIl1I1I then
+II111I1I1I(ll1lIl1I1I, II1lIl1I1I)
+if not I11lIl1I1I[l11111lI1I(_KRP[320])] then
 break
 								end
-firetouchinterest(IlI11II1lI1, I1111II1lI1, 0B0)
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[317])] then
+firetouchinterest(ll1lIl1I1I, l1llIl1I1I, 0B0)
+if not I11lIl1I1I[l11111lI1I(_KRP[321])] then
 break
 								end
-firetouchinterest(IlI11II1lI1, I1111II1lI1, 0B1)
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[318])] then
+firetouchinterest(ll1lIl1I1I, l1llIl1I1I, 0B1)
+if not I11lIl1I1I[l11111lI1I(_KRP[322])] then
 break
 								end
-firetouchinterest(IlI11II1lI1, lI111II1lI1, 0B0)
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[319])] then
+firetouchinterest(ll1lIl1I1I, II1lIl1I1I, 0B0)
+if not I11lIl1I1I[l11111lI1I(_KRP[323])] then
 break
 								end
-firetouchinterest(IlI11II1lI1, lI111II1lI1, 0B1)
-if not l1I11II1lI1[I1IIl1I1lI1(_KTB[320])] then
+firetouchinterest(ll1lIl1I1I, II1lIl1I1I, 0B1)
+if not I11lIl1I1I[l11111lI1I(_KRP[324])] then
 break
 								end
-II1IlII1lI1()
+lI111I1I1I()
 							end
 						end
 					end
@@ -385,2171 +388,2211 @@ II1IlII1lI1()
 			end
 		end
 	end
-local l11IlII1lI1 = nil
-local Il1IlII1lI1 = {};
-local function ll1IlII1lI1()
-if l11IlII1lI1 then
-l11IlII1lI1:Stop()
-l11IlII1lI1 = nil
+local I1l11I1I1I = nil
+local lll11I1I1I = {};
+local function Ill11I1I1I()
+if I1l11I1I1I then
+I1l11I1I1I:Stop()
+I1l11I1I1I = nil
 		end
-for l1I11II1lI1, IlI11II1lI1 in ipairs(Il1IlII1lI1) do
-IlI11II1lI1(false, true)
+for I11lIl1I1I, ll1lIl1I1I in ipairs(lll11I1I1I) do
+ll1lIl1I1I(false, true)
 		end
-II1l1II1lI1[I1IIl1I1lI1(_KTB[321])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[322])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[325])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[326])] = nil
 	end
-local IIlIlII1lI1 = nil
-local lIlIlII1lI1 = nil
-local function I1lIlII1lI1()
-if IIlIlII1lI1 and lIlIlII1lI1 then
+local lIl11I1I1I = nil
+local IIl11I1I1I = nil
+local function l1I11I1I1I()
+if lIl11I1I1I and IIl11I1I1I then
 return
 		end
-local l1I11II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[323]));
-local function IlI11II1lI1()
+local I11lIl1I1I = game:GetService(l11111lI1I(_KRP[327]));
+local function ll1lIl1I1I()
 pcall(function()
-l1I11II1lI1:CaptureController();
-l1I11II1lI1:ClickButton2(Vector2[I1IIl1I1lI1(_KTB[324])]())
+I11lIl1I1I:CaptureController();
+I11lIl1I1I:ClickButton2(Vector2[l11111lI1I(_KRP[328])]())
 			end)
 		end
 pcall(function()
-IIlIlII1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[325])]:Connect(function()
-IlI11II1lI1()
+lIl11I1I1I = I1llIl1I1I[l11111lI1I(_KRP[329])]:Connect(function()
+ll1lIl1I1I()
 				end)
 		end)
-lIlIlII1lI1 = task[I1IIl1I1lI1(_KTB[326])](function()
-while II1l1II1lI1[I1IIl1I1lI1(_KTB[327])] do
-IlI11II1lI1();
-task[I1IIl1I1lI1(_KTB[328])](0x37)
+IIl11I1I1I = task[l11111lI1I(_KRP[330])](function()
+while lI1IIl1I1I[l11111lI1I(_KRP[331])] do
+ll1lIl1I1I();
+task[l11111lI1I(_KRP[332])](0x37)
 				end
-lIlIlII1lI1 = nil
+IIl11I1I1I = nil
 			end)
 	end
-local function l1lIlII1lI1()
-II1l1II1lI1[I1IIl1I1lI1(_KTB[329])] = false
-if IIlIlII1lI1 then
-IIlIlII1lI1:Disconnect()
-IIlIlII1lI1 = nil
+local function I1I11I1I1I()
+lI1IIl1I1I[l11111lI1I(_KRP[333])] = false
+if lIl11I1I1I then
+lIl11I1I1I:Disconnect()
+lIl11I1I1I = nil
 		end
-if lIlIlII1lI1 then
-task[I1IIl1I1lI1(_KTB[330])](lIlIlII1lI1)
-lIlIlII1lI1 = nil
+if IIl11I1I1I then
+task[l11111lI1I(_KRP[334])](IIl11I1I1I)
+IIl11I1I1I = nil
 		end
 	end
-local IllIlII1lI1 = nil
-local lllIlII1lI1 = nil
-local III1lII1lI1 = nil
-local lII1lII1lI1 = nil
-local I1I1lII1lI1 = nil
-local l1I1lII1lI1 = nil
-local IlI1lII1lI1 = I1IIl1I1lI1(_KTB[331]);
-local function llI1lII1lI1(l1I11II1lI1)
-if not l1I11II1lI1 then
+local llI11I1I1I = nil
+local IlI11I1I1I = nil
+local lII11I1I1I = nil
+local III11I1I1I = nil
+local l11l1I1I1I = nil
+local I11l1I1I1I = nil
+local ll1l1I1I1I = l11111lI1I(_KRP[335]);
+local function Il1l1I1I1I(I11lIl1I1I)
+if not I11lIl1I1I then
 return
 		end
-for l1I11II1lI1, IlI11II1lI1 in ipairs(l1I11II1lI1:GetPlayingAnimationTracks()) do
-local llI11II1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[332])]
-if llI11II1lI1 and llI11II1lI1[I1IIl1I1lI1(_KTB[333])]:match(I1IIl1I1lI1(_KTB[334])) == IlI1lII1lI1 then
-IlI11II1lI1:Stop(0B0)
+for I11lIl1I1I, ll1lIl1I1I in ipairs(I11lIl1I1I:GetPlayingAnimationTracks()) do
+local Il1lIl1I1I = ll1lIl1I1I[l11111lI1I(_KRP[336])]
+if Il1lIl1I1I and Il1lIl1I1I[l11111lI1I(_KRP[337])]:match(l11111lI1I(_KRP[338])) == ll1l1I1I1I then
+ll1lIl1I1I:Stop(0B0)
 			end
 		end
 	end
-local function II11lII1lI1(l1I11II1lI1)
-local IlI11II1lI1 = {}
-for l1I11II1lI1, llI11II1lI1 in ipairs(l1I11II1lI1) do
-IlI11II1lI1[llI11II1lI1:lower()] = true
+local function lI1l1I1I1I(I11lIl1I1I)
+local ll1lIl1I1I = {}
+for I11lIl1I1I, Il1lIl1I1I in ipairs(I11lIl1I1I) do
+ll1lIl1I1I[Il1lIl1I1I:lower()] = true
 		end
-for l1I11II1lI1, llI11II1lI1 in ipairs({ l1111II1lI1[I1IIl1I1lI1(_KTB[335])], l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[336])) }) do
-if llI11II1lI1 then
-for l1I11II1lI1, llI11II1lI1 in ipairs(llI11II1lI1:GetChildren()) do
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[337])) and IlI11II1lI1[llI11II1lI1[I1IIl1I1lI1(_KTB[338])]:lower()] then
-return llI11II1lI1
+for I11lIl1I1I, Il1lIl1I1I in ipairs({ I1llIl1I1I[l11111lI1I(_KRP[339])], I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[340])) }) do
+if Il1lIl1I1I then
+for I11lIl1I1I, Il1lIl1I1I in ipairs(Il1lIl1I1I:GetChildren()) do
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[341])) and ll1lIl1I1I[Il1lIl1I1I[l11111lI1I(_KRP[342])]:lower()] then
+return Il1lIl1I1I
 					end
 				end
 			end
 		end
 return nil
 	end
-local function lI11lII1lI1()
-local l1I11II1lI1 = III1lII1lI1
-local IlI11II1lI1 = I1I1lII1lI1
-local llI11II1lI1 = l1I1lII1lI1
-II1l1II1lI1[I1IIl1I1lI1(_KTB[339])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[340])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[341])] = false
-l1111II1lI1:SetAttribute(I1IIl1I1lI1(_KTB[342]), false)
-if IllIlII1lI1 then
-pcall(task[I1IIl1I1lI1(_KTB[343])], IllIlII1lI1)
-IllIlII1lI1 = nil
+local function II1l1I1I1I()
+local I11lIl1I1I = lII11I1I1I
+local ll1lIl1I1I = l11l1I1I1I
+local Il1lIl1I1I = I11l1I1I1I
+lI1IIl1I1I[l11111lI1I(_KRP[343])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[344])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[345])] = false
+I1llIl1I1I:SetAttribute(l11111lI1I(_KRP[346]), false)
+if llI11I1I1I then
+pcall(task[l11111lI1I(_KRP[268])], llI11I1I1I)
+llI11I1I1I = nil
 		end
-if lllIlII1lI1 then
-lllIlII1lI1:Disconnect()
-lllIlII1lI1 = nil
+if IlI11I1I1I then
+IlI11I1I1I:Disconnect()
+IlI11I1I1I = nil
 		end
-if lII1lII1lI1 then
+if III11I1I1I then
 pcall(function()
-lII1lII1lI1:Stop(.05);
-lII1lII1lI1:Destroy()
+III11I1I1I:Stop(.05);
+III11I1I1I:Destroy()
 			end)
-lII1lII1lI1 = nil
+III11I1I1I = nil
 		end
-III1lII1lI1 = nil
-I1I1lII1lI1 = nil
-l1I1lII1lI1 = nil
-local function II111II1lI1()
-local II111II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[344])]
-local lI111II1lI1 = II111II1lI1 and II111II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[345]));
-local I1111II1lI1 = II111II1lI1 and II111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[346]))
-if lI111II1lI1 then
-lI111II1lI1:UnequipTools();
-lI111II1lI1[I1IIl1I1lI1(_KTB[347])] = false
-lI111II1lI1[I1IIl1I1lI1(_KTB[348])] = false
-lI111II1lI1[I1IIl1I1lI1(_KTB[349])] = l1I11II1lI1 and l1I11II1lI1[I1IIl1I1lI1(_KTB[350])] ~= false or true
-lI111II1lI1:ChangeState(Enum[I1IIl1I1lI1(_KTB[351])][I1IIl1I1lI1(_KTB[352])])
-if l1I11II1lI1 then
-lI111II1lI1[I1IIl1I1lI1(_KTB[353])] = l1I11II1lI1[I1IIl1I1lI1(_KTB[354])]
-lI111II1lI1[I1IIl1I1lI1(_KTB[355])] = l1I11II1lI1[I1IIl1I1lI1(_KTB[356])]
-lI111II1lI1[I1IIl1I1lI1(_KTB[357])] = l1I11II1lI1[I1IIl1I1lI1(_KTB[358])]
+lII11I1I1I = nil
+l11l1I1I1I = nil
+I11l1I1I1I = nil
+local function lI1lIl1I1I()
+local lI1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[347])]
+local II1lIl1I1I = lI1lIl1I1I and lI1lIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[348]));
+local l1llIl1I1I = lI1lIl1I1I and lI1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[349]))
+if II1lIl1I1I then
+II1lIl1I1I:UnequipTools();
+II1lIl1I1I[l11111lI1I(_KRP[350])] = false
+II1lIl1I1I[l11111lI1I(_KRP[351])] = false
+II1lIl1I1I[l11111lI1I(_KRP[352])] = I11lIl1I1I and I11lIl1I1I[l11111lI1I(_KRP[353])] ~= false or true
+II1lIl1I1I:ChangeState(Enum[l11111lI1I(_KRP[354])][l11111lI1I(_KRP[355])])
+if I11lIl1I1I then
+II1lIl1I1I[l11111lI1I(_KRP[356])] = I11lIl1I1I[l11111lI1I(_KRP[357])]
+II1lIl1I1I[l11111lI1I(_KRP[358])] = I11lIl1I1I[l11111lI1I(_KRP[359])]
+II1lIl1I1I[l11111lI1I(_KRP[360])] = I11lIl1I1I[l11111lI1I(_KRP[361])]
 				end
 			end
-if I1111II1lI1 then
-I1111II1lI1[I1IIl1I1lI1(_KTB[359])] = false
+if l1llIl1I1I then
+l1llIl1I1I[l11111lI1I(_KRP[362])] = false
 			end
-if IlI11II1lI1 and (IlI11II1lI1[I1IIl1I1lI1(_KTB[360])] and llI11II1lI1) then
-IlI11II1lI1[I1IIl1I1lI1(_KTB[361])] = llI11II1lI1
+if ll1lIl1I1I and (ll1lIl1I1I[l11111lI1I(_KRP[363])] and Il1lIl1I1I) then
+ll1lIl1I1I[l11111lI1I(_KRP[364])] = Il1lIl1I1I
 			end
 		end
-pcall(II111II1lI1);
-task[I1IIl1I1lI1(_KTB[362])](.15, function()
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[363])] == nil then
-pcall(II111II1lI1)
+pcall(lI1lIl1I1I);
+task[l11111lI1I(_KRP[365])](.15, function()
+if lI1IIl1I1I[l11111lI1I(_KRP[366])] == nil then
+pcall(lI1lIl1I1I)
 			end
 		end)
 	end
-local function I111lII1lI1(l1I11II1lI1, II111II1lI1)
-if not II11lII1lI1(II111II1lI1) then
-I1111II1lI1:SetCore(I1IIl1I1lI1(_KTB[364]), { [I1IIl1I1lI1(_KTB[365])] = Il111II1lI1[I1IIl1I1lI1(_KTB[366])][I1IIl1I1lI1(_KTB[367])], [I1IIl1I1lI1(_KTB[368])] = I1IIl1I1lI1(_KTB[369]), [I1IIl1I1lI1(_KTB[370])] = 0B11 })
+local function l1ll1I1I1I(I11lIl1I1I, lI1lIl1I1I)
+if not lI1l1I1I1I(lI1lIl1I1I) then
+l1llIl1I1I:SetCore(l11111lI1I(_KRP[367]), { [l11111lI1I(_KRP[368])] = llllIl1I1I[l11111lI1I(_KRP[369])][l11111lI1I(_KRP[370])], [l11111lI1I(_KRP[371])] = l11111lI1I(_KRP[372]), [l11111lI1I(_KRP[373])] = 0B11 })
 return false
 		end
-lI11lII1lI1()
-if IIIl1II1lI1 then
-IIIl1II1lI1(false, true)
+II1l1I1I1I()
+if lIIlIl1I1I then
+lIIlIl1I1I(false, true)
 		end
-lll11II1lI1();
-l1IIlII1lI1[I1IIl1I1lI1(_KTB[371])] = false
-llIIlII1lI1();
-ll1IlII1lI1();
-local lI111II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[372])]
-local ll111II1lI1 = lI111II1lI1 and lI111II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[373]))
-if not ll111II1lI1 then
+IlIlIl1I1I();
+I1111I1I1I[l11111lI1I(_KRP[374])] = false
+Il111I1I1I();
+Ill11I1I1I();
+local II1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[375])]
+local IlllIl1I1I = II1lIl1I1I and II1lIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[376]))
+if not IlllIl1I1I then
 return false
 		end
-III1lII1lI1 = { [I1IIl1I1lI1(_KTB[374])] = ll111II1lI1[I1IIl1I1lI1(_KTB[375])] > 0B0 and ll111II1lI1[I1IIl1I1lI1(_KTB[376])] or 0x10, [I1IIl1I1lI1(_KTB[377])] = ll111II1lI1[I1IIl1I1lI1(_KTB[378])] > 0B0 and ll111II1lI1[I1IIl1I1lI1(_KTB[379])] or 0x32, [I1IIl1I1lI1(_KTB[380])] = ll111II1lI1[I1IIl1I1lI1(_KTB[381])] > 0B0 and ll111II1lI1[I1IIl1I1lI1(_KTB[382])] or 7.2, [I1IIl1I1lI1(_KTB[383])] = ll111II1lI1[I1IIl1I1lI1(_KTB[384])] };
-local IIl11II1lI1 = lI111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[385]))
-I1I1lII1lI1 = IIl11II1lI1 and IIl11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[386]))
-l1I1lII1lI1 = I1I1lII1lI1 and I1I1lII1lI1[I1IIl1I1lI1(_KTB[387])] or nil
+lII11I1I1I = { [l11111lI1I(_KRP[377])] = IlllIl1I1I[l11111lI1I(_KRP[378])] > 0B0 and IlllIl1I1I[l11111lI1I(_KRP[379])] or 0x10, [l11111lI1I(_KRP[380])] = IlllIl1I1I[l11111lI1I(_KRP[381])] > 0B0 and IlllIl1I1I[l11111lI1I(_KRP[382])] or 0x32, [l11111lI1I(_KRP[383])] = IlllIl1I1I[l11111lI1I(_KRP[384])] > 0B0 and IlllIl1I1I[l11111lI1I(_KRP[385])] or 7.2, [l11111lI1I(_KRP[386])] = IlllIl1I1I[l11111lI1I(_KRP[387])] };
+local lIllIl1I1I = II1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[388]))
+l11l1I1I1I = lIllIl1I1I and lIllIl1I1I:FindFirstChild(l11111lI1I(_KRP[389]))
+I11l1I1I1I = l11l1I1I1I and l11l1I1I1I[l11111lI1I(_KRP[390])] or nil
 pcall(function()
-local IlI11II1lI1 = ll111II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[388])) or Instance[I1IIl1I1lI1(_KTB[389])](I1IIl1I1lI1(_KTB[390]), ll111II1lI1);
-local II111II1lI1 = llI11II1lI1[I1IIl1I1lI1(_KTB[391])][I1IIl1I1lI1(_KTB[392])][I1IIl1I1lI1(_KTB[393])][I1IIl1I1lI1(_KTB[394])][I1IIl1I1lI1(_KTB[395])]
-local lI111II1lI1 = II111II1lI1:FindFirstChild(l1I11II1lI1 == I1IIl1I1lI1(_KTB[396]) and I1IIl1I1lI1(_KTB[397]) or I1IIl1I1lI1(_KTB[398]));
-local I1111II1lI1 = lI111II1lI1 and lI111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[399]))
-if I1111II1lI1 then
-lII1lII1lI1 = IlI11II1lI1:LoadAnimation(I1111II1lI1)
+local ll1lIl1I1I = IlllIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[391])) or Instance[l11111lI1I(_KRP[392])](l11111lI1I(_KRP[393]), IlllIl1I1I);
+local lI1lIl1I1I = Il1lIl1I1I[l11111lI1I(_KRP[394])][l11111lI1I(_KRP[395])][l11111lI1I(_KRP[396])][l11111lI1I(_KRP[397])][l11111lI1I(_KRP[398])]
+local II1lIl1I1I = lI1lIl1I1I:FindFirstChild(I11lIl1I1I == l11111lI1I(_KRP[399]) and l11111lI1I(_KRP[400]) or l11111lI1I(_KRP[401]));
+local l1llIl1I1I = II1lIl1I1I and II1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[402]))
+if l1llIl1I1I then
+III11I1I1I = ll1lIl1I1I:LoadAnimation(l1llIl1I1I)
 			end
 		end);
-II1l1II1lI1[I1IIl1I1lI1(_KTB[400])] = l1I11II1lI1
-II1l1II1lI1[I1IIl1I1lI1(_KTB[401])] = l1I11II1lI1 == I1IIl1I1lI1(_KTB[402]);
-II1l1II1lI1[I1IIl1I1lI1(_KTB[403])] = l1I11II1lI1 == I1IIl1I1lI1(_KTB[404]);
-l1111II1lI1:SetAttribute(I1IIl1I1lI1(_KTB[405]), false)
-lllIlII1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[406])]:Connect(function()
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[407])] ~= l1I11II1lI1 then
+lI1IIl1I1I[l11111lI1I(_KRP[403])] = I11lIl1I1I
+lI1IIl1I1I[l11111lI1I(_KRP[404])] = I11lIl1I1I == l11111lI1I(_KRP[405]);
+lI1IIl1I1I[l11111lI1I(_KRP[406])] = I11lIl1I1I == l11111lI1I(_KRP[407]);
+I1llIl1I1I:SetAttribute(l11111lI1I(_KRP[408]), false)
+IlI11I1I1I = ll1lIl1I1I[l11111lI1I(_KRP[409])]:Connect(function()
+if lI1IIl1I1I[l11111lI1I(_KRP[410])] ~= I11lIl1I1I then
 return
 				end
-local IlI11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[408])]
-local llI11II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[409]));
-local II111II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[410]))
-if llI11II1lI1 then
-llI11II1lI1[I1IIl1I1lI1(_KTB[411])] = false
-llI11II1lI1[I1IIl1I1lI1(_KTB[412])] = false
-llI11II1lI1[I1IIl1I1lI1(_KTB[413])] = true
-if l1I11II1lI1 == I1IIl1I1lI1(_KTB[414]) then
-llI1lII1lI1(llI11II1lI1)
-if I1I1lII1lI1 and (I1I1lII1lI1[I1IIl1I1lI1(_KTB[415])] and l1I1lII1lI1) then
-I1I1lII1lI1[I1IIl1I1lI1(_KTB[416])] = l1I1lII1lI1
+local ll1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[411])]
+local Il1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[412]));
+local lI1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[413]))
+if Il1lIl1I1I then
+Il1lIl1I1I[l11111lI1I(_KRP[414])] = false
+Il1lIl1I1I[l11111lI1I(_KRP[415])] = false
+Il1lIl1I1I[l11111lI1I(_KRP[416])] = true
+if I11lIl1I1I == l11111lI1I(_KRP[417]) then
+Il1l1I1I1I(Il1lIl1I1I)
+if l11l1I1I1I and (l11l1I1I1I[l11111lI1I(_KRP[418])] and I11l1I1I1I) then
+l11l1I1I1I[l11111lI1I(_KRP[419])] = I11l1I1I1I
 						end
 					end
-if llI11II1lI1:GetState() == Enum[I1IIl1I1lI1(_KTB[417])][I1IIl1I1lI1(_KTB[418])] then
-llI11II1lI1:ChangeState(Enum[I1IIl1I1lI1(_KTB[419])][I1IIl1I1lI1(_KTB[420])])
+if Il1lIl1I1I:GetState() == Enum[l11111lI1I(_KRP[420])][l11111lI1I(_KRP[421])] then
+Il1lIl1I1I:ChangeState(Enum[l11111lI1I(_KRP[422])][l11111lI1I(_KRP[423])])
 					end
-if III1lII1lI1 then
-llI11II1lI1[I1IIl1I1lI1(_KTB[421])] = III1lII1lI1[I1IIl1I1lI1(_KTB[422])]
-llI11II1lI1[I1IIl1I1lI1(_KTB[423])] = III1lII1lI1[I1IIl1I1lI1(_KTB[424])]
-llI11II1lI1[I1IIl1I1lI1(_KTB[425])] = III1lII1lI1[I1IIl1I1lI1(_KTB[426])]
+if lII11I1I1I then
+Il1lIl1I1I[l11111lI1I(_KRP[424])] = lII11I1I1I[l11111lI1I(_KRP[425])]
+Il1lIl1I1I[l11111lI1I(_KRP[426])] = lII11I1I1I[l11111lI1I(_KRP[427])]
+Il1lIl1I1I[l11111lI1I(_KRP[428])] = lII11I1I1I[l11111lI1I(_KRP[429])]
 					end
 				end
-if II111II1lI1 then
-II111II1lI1[I1IIl1I1lI1(_KTB[427])] = false
+if lI1lIl1I1I then
+lI1lIl1I1I[l11111lI1I(_KRP[430])] = false
 				end
 			end)
-IllIlII1lI1 = task[I1IIl1I1lI1(_KTB[428])](function()
-local llI11II1lI1 = 0B0
-while II1l1II1lI1[I1IIl1I1lI1(_KTB[429])] == l1I11II1lI1 do
+llI11I1I1I = task[l11111lI1I(_KRP[431])](function()
+local Il1lIl1I1I = 0B0
+while lI1IIl1I1I[l11111lI1I(_KRP[432])] == I11lIl1I1I do
 pcall(function()
-local IlI11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[430])]
-local lI111II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[431]));
-local I1111II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[432]));
-local Il111II1lI1 = II11lII1lI1(II111II1lI1)
-if lI111II1lI1 and Il111II1lI1 then
-if I1111II1lI1 then
-I1111II1lI1[I1IIl1I1lI1(_KTB[433])] = false
+local ll1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[433])]
+local II1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[434]));
+local l1llIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[435]));
+local llllIl1I1I = lI1l1I1I1I(lI1lIl1I1I)
+if II1lIl1I1I and llllIl1I1I then
+if l1llIl1I1I then
+l1llIl1I1I[l11111lI1I(_KRP[436])] = false
 							end
-lI111II1lI1[I1IIl1I1lI1(_KTB[434])] = false
-lI111II1lI1[I1IIl1I1lI1(_KTB[435])] = false
-lI111II1lI1[I1IIl1I1lI1(_KTB[436])] = III1lII1lI1 and III1lII1lI1[I1IIl1I1lI1(_KTB[437])] ~= false or true
-if III1lII1lI1 then
-lI111II1lI1[I1IIl1I1lI1(_KTB[438])] = III1lII1lI1[I1IIl1I1lI1(_KTB[439])]
-lI111II1lI1[I1IIl1I1lI1(_KTB[440])] = III1lII1lI1[I1IIl1I1lI1(_KTB[441])]
-lI111II1lI1[I1IIl1I1lI1(_KTB[442])] = III1lII1lI1[I1IIl1I1lI1(_KTB[443])]
+II1lIl1I1I[l11111lI1I(_KRP[437])] = false
+II1lIl1I1I[l11111lI1I(_KRP[438])] = false
+II1lIl1I1I[l11111lI1I(_KRP[439])] = lII11I1I1I and lII11I1I1I[l11111lI1I(_KRP[440])] ~= false or true
+if lII11I1I1I then
+II1lIl1I1I[l11111lI1I(_KRP[441])] = lII11I1I1I[l11111lI1I(_KRP[442])]
+II1lIl1I1I[l11111lI1I(_KRP[443])] = lII11I1I1I[l11111lI1I(_KRP[444])]
+II1lIl1I1I[l11111lI1I(_KRP[445])] = lII11I1I1I[l11111lI1I(_KRP[446])]
 							end
-if Il111II1lI1[I1IIl1I1lI1(_KTB[444])] ~= IlI11II1lI1 then
-lI111II1lI1:EquipTool(Il111II1lI1)
+if llllIl1I1I[l11111lI1I(_KRP[447])] ~= ll1lIl1I1I then
+II1lIl1I1I:EquipTool(llllIl1I1I)
 							end
-if l1I11II1lI1 == I1IIl1I1lI1(_KTB[445]) then
-llI1lII1lI1(lI111II1lI1)
-if I1I1lII1lI1 and (I1I1lII1lI1[I1IIl1I1lI1(_KTB[446])] and l1I1lII1lI1) then
-I1I1lII1lI1[I1IIl1I1lI1(_KTB[447])] = l1I1lII1lI1
+if I11lIl1I1I == l11111lI1I(_KRP[448]) then
+Il1l1I1I1I(II1lIl1I1I)
+if l11l1I1I1I and (l11l1I1I1I[l11111lI1I(_KRP[449])] and I11l1I1I1I) then
+l11l1I1I1I[l11111lI1I(_KRP[450])] = I11l1I1I1I
 								end
 							end
-if os[I1IIl1I1lI1(_KTB[448])]() - llI11II1lI1 >= .2 then
-local l1I11II1lI1 = l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[449]))
-if l1I11II1lI1 then
-l1I11II1lI1:FireServer(I1IIl1I1lI1(_KTB[450]))
-if lII1lII1lI1 then
-lII1lII1lI1:Play(.03, 0B1, 2.8)
+if os[l11111lI1I(_KRP[451])]() - Il1lIl1I1I >= .2 then
+local I11lIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[452]))
+if I11lIl1I1I then
+I11lIl1I1I:FireServer(l11111lI1I(_KRP[453]))
+if III11I1I1I then
+III11I1I1I:Play(.03, 0B1, 2.8)
 									end
-llI11II1lI1 = os[I1IIl1I1lI1(_KTB[451])]()
+Il1lIl1I1I = os[l11111lI1I(_KRP[454])]()
 								end
 							end
 						end
 					end);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[452])]:Wait()
+ll1lIl1I1I[l11111lI1I(_KRP[455])]:Wait()
 				end
 			end)
 return true
 	end
-local l111lII1lI1 = { [I1IIl1I1lI1(_KTB[453])] = true, [I1IIl1I1lI1(_KTB[454])] = true };
-local function Il11lII1lI1(l1I11II1lI1)
-if not l1I11II1lI1 or not l1I11II1lI1[I1IIl1I1lI1(_KTB[455])] then
+local I1ll1I1I1I = { [l11111lI1I(_KRP[456])] = true, [l11111lI1I(_KRP[457])] = true };
+local function llll1I1I1I(I11lIl1I1I)
+if not I11lIl1I1I or not I11lIl1I1I[l11111lI1I(_KRP[458])] then
 return false
 		end
-local IlI11II1lI1 = l1I11II1lI1[I1IIl1I1lI1(_KTB[456])][I1IIl1I1lI1(_KTB[457])]
-local llI11II1lI1 = (tostring(l1I11II1lI1[I1IIl1I1lI1(_KTB[458])] or I1IIl1I1lI1(_KTB[459]))):lower()
-return l111lII1lI1[IlI11II1lI1] or llI11II1lI1:find(I1IIl1I1lI1(_KTB[460]), 0B1, true) ~= nil or llI11II1lI1:find(I1IIl1I1lI1(_KTB[461]), 0B1, true) ~= nil
+local ll1lIl1I1I = I11lIl1I1I[l11111lI1I(_KRP[459])][l11111lI1I(_KRP[460])]
+local Il1lIl1I1I = (tostring(I11lIl1I1I[l11111lI1I(_KRP[461])] or l11111lI1I(_KRP[462]))):lower()
+return I1ll1I1I1I[ll1lIl1I1I] or Il1lIl1I1I:find(l11111lI1I(_KRP[463]), 0B1, true) ~= nil or Il1lIl1I1I:find(l11111lI1I(_KRP[464]), 0B1, true) ~= nil
 	end
-local function ll11lII1lI1(l1I11II1lI1)
-if not l1I11II1lI1 or not l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[462])) then
+local function Illl1I1I1I(I11lIl1I1I)
+if not I11lIl1I1I or not I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[465])) then
 return
 		end
-for l1I11II1lI1, IlI11II1lI1 in pairs(l1I11II1lI1[I1IIl1I1lI1(_KTB[463])]:GetPlayingAnimationTracks()) do
-if Il11lII1lI1(IlI11II1lI1) then
-IlI11II1lI1:Stop()
+for I11lIl1I1I, ll1lIl1I1I in pairs(I11lIl1I1I[l11111lI1I(_KRP[466])]:GetPlayingAnimationTracks()) do
+if llll1I1I1I(ll1lIl1I1I) then
+ll1lIl1I1I:Stop()
 			end
 		end
 	end
-local IIl1lII1lI1 = false
-local lIl1lII1lI1 = nil
-local I1l1lII1lI1 = nil
-local l1l1lII1lI1 = nil
-local Ill1lII1lI1 = nil
-local lll1lII1lI1 = {};
-local function IIIllII1lI1()
-if not IIl1lII1lI1 then
+local lIll1I1I1I = false
+local IIll1I1I1I = nil
+local l1Il1I1I1I = nil
+local I1Il1I1I1I = nil
+local llIl1I1I1I = nil
+local IlIl1I1I1I = {};
+local function lIIl1I1I1I()
+if not lIll1I1I1I then
 return
 		end
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[464])]
-if not l1I11II1lI1 or not l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[465])) then
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[467])]
+if not I11lIl1I1I or not I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[468])) then
 return
 		end
-ll11lII1lI1(l1I11II1lI1)
-if lIl1lII1lI1 then
-lIl1lII1lI1:Disconnect()
+Illl1I1I1I(I11lIl1I1I)
+if IIll1I1I1I then
+IIll1I1I1I:Disconnect()
 		end
-lIl1lII1lI1 = l1I11II1lI1[I1IIl1I1lI1(_KTB[466])][I1IIl1I1lI1(_KTB[467])]:Connect(function(l1I11II1lI1)
-if IIl1lII1lI1 and Il11lII1lI1(l1I11II1lI1) then
-l1I11II1lI1:Stop()
+IIll1I1I1I = I11lIl1I1I[l11111lI1I(_KRP[469])][l11111lI1I(_KRP[470])]:Connect(function(I11lIl1I1I)
+if lIll1I1I1I and llll1I1I1I(I11lIl1I1I) then
+I11lIl1I1I:Stop()
 				end
 			end)
 	end
-local function lIIllII1lI1(l1I11II1lI1)
-if not IIl1lII1lI1 or not l1I11II1lI1 or not (l1I11II1lI1[I1IIl1I1lI1(_KTB[468])] == I1IIl1I1lI1(_KTB[469]) or l1I11II1lI1[I1IIl1I1lI1(_KTB[470])]:match(I1IIl1I1lI1(_KTB[471]))) then
+local function IIIl1I1I1I(I11lIl1I1I)
+if not lIll1I1I1I or not I11lIl1I1I or not (I11lIl1I1I[l11111lI1I(_KRP[471])] == l11111lI1I(_KRP[472]) or I11lIl1I1I[l11111lI1I(_KRP[473])]:match(l11111lI1I(_KRP[474]))) then
 return
 		end
-if lll1lII1lI1[l1I11II1lI1] then
+if IlIl1I1I1I[I11lIl1I1I] then
 return
 		end
-local IlI11II1lI1 = l1I11II1lI1[I1IIl1I1lI1(_KTB[472])]:Connect(function()
-task[I1IIl1I1lI1(_KTB[473])](.05)
-if IIl1lII1lI1 then
-ll11lII1lI1(l1111II1lI1[I1IIl1I1lI1(_KTB[474])])
+local ll1lIl1I1I = I11lIl1I1I[l11111lI1I(_KRP[475])]:Connect(function()
+task[l11111lI1I(_KRP[476])](.05)
+if lIll1I1I1I then
+Illl1I1I1I(I1llIl1I1I[l11111lI1I(_KRP[477])])
 				end
 			end);
-lll1lII1lI1[l1I11II1lI1] = IlI11II1lI1
+IlIl1I1I1I[I11lIl1I1I] = ll1lIl1I1I
 	end
-local function I1IllII1lI1()
-if IIl1lII1lI1 then
+local function l11I1I1I1I()
+if lIll1I1I1I then
 return
 		end
-IIl1lII1lI1 = true
-IIIllII1lI1()
-for l1I11II1lI1, IlI11II1lI1 in pairs(l1111II1lI1[I1IIl1I1lI1(_KTB[475])]:GetChildren()) do
-lIIllII1lI1(IlI11II1lI1)
+lIll1I1I1I = true
+lIIl1I1I1I()
+for I11lIl1I1I, ll1lIl1I1I in pairs(I1llIl1I1I[l11111lI1I(_KRP[478])]:GetChildren()) do
+IIIl1I1I1I(ll1lIl1I1I)
 		end
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[476])]
-if l1I11II1lI1 then
-for l1I11II1lI1, IlI11II1lI1 in pairs(l1I11II1lI1:GetChildren()) do
-if IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[477])) then
-lIIllII1lI1(IlI11II1lI1)
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[479])]
+if I11lIl1I1I then
+for I11lIl1I1I, ll1lIl1I1I in pairs(I11lIl1I1I:GetChildren()) do
+if ll1lIl1I1I:IsA(l11111lI1I(_KRP[480])) then
+IIIl1I1I1I(ll1lIl1I1I)
 				end
 			end
 		end
-l1l1lII1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[478])][I1IIl1I1lI1(_KTB[479])]:Connect(function(l1I11II1lI1)
-if l1I11II1lI1:IsA(I1IIl1I1lI1(_KTB[480])) then
-task[I1IIl1I1lI1(_KTB[481])](.1);
-lIIllII1lI1(l1I11II1lI1)
+I1Il1I1I1I = I1llIl1I1I[l11111lI1I(_KRP[481])][l11111lI1I(_KRP[482])]:Connect(function(I11lIl1I1I)
+if I11lIl1I1I:IsA(l11111lI1I(_KRP[483])) then
+task[l11111lI1I(_KRP[484])](.1);
+IIIl1I1I1I(I11lIl1I1I)
 				end
 			end);
-local llI11II1lI1 = 0B0
-I1l1lII1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[482])]:Connect(function()
-if IIl1lII1lI1 then
-local l1I11II1lI1 = os[I1IIl1I1lI1(_KTB[483])]()
-if l1I11II1lI1 - llI11II1lI1 >= .5 then
-llI11II1lI1 = l1I11II1lI1
-ll11lII1lI1(l1111II1lI1[I1IIl1I1lI1(_KTB[484])])
+local Il1lIl1I1I = 0B0
+l1Il1I1I1I = ll1lIl1I1I[l11111lI1I(_KRP[485])]:Connect(function()
+if lIll1I1I1I then
+local I11lIl1I1I = os[l11111lI1I(_KRP[486])]()
+if I11lIl1I1I - Il1lIl1I1I >= .5 then
+Il1lIl1I1I = I11lIl1I1I
+Illl1I1I1I(I1llIl1I1I[l11111lI1I(_KRP[258])])
 					end
 				end
 			end)
-Ill1lII1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[485])]:Connect(function(l1I11II1lI1)
-if IIl1lII1lI1 then
-task[I1IIl1I1lI1(_KTB[486])](0B1);
-IIIllII1lI1()
-for l1I11II1lI1, IlI11II1lI1 in pairs(l1I11II1lI1:GetChildren()) do
-if IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[487])) then
-lIIllII1lI1(IlI11II1lI1)
+llIl1I1I1I = I1llIl1I1I[l11111lI1I(_KRP[487])]:Connect(function(I11lIl1I1I)
+if lIll1I1I1I then
+task[l11111lI1I(_KRP[488])](0B1);
+lIIl1I1I1I()
+for I11lIl1I1I, ll1lIl1I1I in pairs(I11lIl1I1I:GetChildren()) do
+if ll1lIl1I1I:IsA(l11111lI1I(_KRP[489])) then
+IIIl1I1I1I(ll1lIl1I1I)
 						end
 					end
 				end
 			end)
 	end
-local function l1IllII1lI1()
-IIl1lII1lI1 = false
-for l1I11II1lI1, IlI11II1lI1 in pairs({ lIl1lII1lI1, I1l1lII1lI1, l1l1lII1lI1, Ill1lII1lI1 }) do
-if IlI11II1lI1 then
-IlI11II1lI1:Disconnect()
+local function I11I1I1I1I()
+lIll1I1I1I = false
+for I11lIl1I1I, ll1lIl1I1I in pairs({ IIll1I1I1I, l1Il1I1I1I, I1Il1I1I1I, llIl1I1I1I }) do
+if ll1lIl1I1I then
+ll1lIl1I1I:Disconnect()
 			end
 		end
-lIl1lII1lI1 = nil
-I1l1lII1lI1 = nil
-l1l1lII1lI1 = nil
-Ill1lII1lI1 = nil
-for l1I11II1lI1, IlI11II1lI1 in pairs(lll1lII1lI1) do
-if IlI11II1lI1 then
-IlI11II1lI1:Disconnect()
+IIll1I1I1I = nil
+l1Il1I1I1I = nil
+I1Il1I1I1I = nil
+llIl1I1I1I = nil
+for I11lIl1I1I, ll1lIl1I1I in pairs(IlIl1I1I1I) do
+if ll1lIl1I1I then
+ll1lIl1I1I:Disconnect()
 			end
 		end
-lll1lII1lI1 = {}
+IlIl1I1I1I = {}
 	end
-local function IlIllII1lI1()
+local function ll1I1I1I1I()
 pcall(function()
-local l1I11II1lI1 = game:GetService(I1IIl1I1lI1(_KTB[488]));
-l1I11II1lI1[I1IIl1I1lI1(_KTB[489])] = false
-l1I11II1lI1[I1IIl1I1lI1(_KTB[490])] = 9000000000
-l1I11II1lI1[I1IIl1I1lI1(_KTB[491])] = 0B1
-for l1I11II1lI1, IlI11II1lI1 in pairs(l1I11II1lI1:GetChildren()) do
-if IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[492])) or IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[493])) or IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[494])) or IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[495])) or IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[496])) then
-IlI11II1lI1[I1IIl1I1lI1(_KTB[497])] = false
+local I11lIl1I1I = game:GetService(l11111lI1I(_KRP[490]));
+I11lIl1I1I[l11111lI1I(_KRP[491])] = false
+I11lIl1I1I[l11111lI1I(_KRP[492])] = 9000000000
+I11lIl1I1I[l11111lI1I(_KRP[493])] = 0B1
+for I11lIl1I1I, ll1lIl1I1I in pairs(I11lIl1I1I:GetChildren()) do
+if ll1lIl1I1I:IsA(l11111lI1I(_KRP[494])) or ll1lIl1I1I:IsA(l11111lI1I(_KRP[495])) or ll1lIl1I1I:IsA(l11111lI1I(_KRP[496])) or ll1lIl1I1I:IsA(l11111lI1I(_KRP[497])) or ll1lIl1I1I:IsA(l11111lI1I(_KRP[498])) then
+ll1lIl1I1I[l11111lI1I(_KRP[499])] = false
 				end
 			end
 		end);
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[498])]
-local llI11II1lI1 = workspace:GetChildren();
-local II111II1lI1 = 0B1
-local lI111II1lI1 = 0B0
-while II111II1lI1 <= #llI11II1lI1 do
-local I1111II1lI1 = llI11II1lI1[II111II1lI1]
-II111II1lI1 = II111II1lI1 + 0B1
-if I1111II1lI1 and I1111II1lI1[I1IIl1I1lI1(_KTB[499])] then
-for l1I11II1lI1, IlI11II1lI1 in ipairs(I1111II1lI1:GetChildren()) do
-llI11II1lI1[#llI11II1lI1 + 0B1] = IlI11II1lI1
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[500])]
+local Il1lIl1I1I = workspace:GetChildren();
+local lI1lIl1I1I = 0B1
+local II1lIl1I1I = 0B0
+while lI1lIl1I1I <= #Il1lIl1I1I do
+local l1llIl1I1I = Il1lIl1I1I[lI1lIl1I1I]
+lI1lIl1I1I = lI1lIl1I1I + 0B1
+if l1llIl1I1I and l1llIl1I1I[l11111lI1I(_KRP[501])] then
+for I11lIl1I1I, ll1lIl1I1I in ipairs(l1llIl1I1I:GetChildren()) do
+Il1lIl1I1I[#Il1lIl1I1I + 0B1] = ll1lIl1I1I
 				end
-if not (l1I11II1lI1 and I1111II1lI1:IsDescendantOf(l1I11II1lI1)) then
+if not (I11lIl1I1I and l1llIl1I1I:IsDescendantOf(I11lIl1I1I)) then
 pcall(function()
-if I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[500])) or I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[501])) or I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[502])) or I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[503])) or I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[504])) or I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[505])) then
-I1111II1lI1[I1IIl1I1lI1(_KTB[506])] = false
+if l1llIl1I1I:IsA(l11111lI1I(_KRP[502])) or l1llIl1I1I:IsA(l11111lI1I(_KRP[503])) or l1llIl1I1I:IsA(l11111lI1I(_KRP[504])) or l1llIl1I1I:IsA(l11111lI1I(_KRP[505])) or l1llIl1I1I:IsA(l11111lI1I(_KRP[506])) or l1llIl1I1I:IsA(l11111lI1I(_KRP[507])) then
+l1llIl1I1I[l11111lI1I(_KRP[508])] = false
 						end
-if I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[507])) then
-I1111II1lI1[I1IIl1I1lI1(_KTB[508])] = I1IIl1I1lI1(_KTB[509])
+if l1llIl1I1I:IsA(l11111lI1I(_KRP[509])) then
+l1llIl1I1I[l11111lI1I(_KRP[510])] = l11111lI1I(_KRP[511])
 						end
-if I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[510])) or I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[511])) then
-I1111II1lI1[I1IIl1I1lI1(_KTB[512])] = 0B1
+if l1llIl1I1I:IsA(l11111lI1I(_KRP[512])) or l1llIl1I1I:IsA(l11111lI1I(_KRP[513])) then
+l1llIl1I1I[l11111lI1I(_KRP[514])] = 0B1
 						end
-if I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[513])) then
-I1111II1lI1[I1IIl1I1lI1(_KTB[514])] = false
-I1111II1lI1[I1IIl1I1lI1(_KTB[515])] = Enum[I1IIl1I1lI1(_KTB[516])][I1IIl1I1lI1(_KTB[517])]
+if l1llIl1I1I:IsA(l11111lI1I(_KRP[515])) then
+l1llIl1I1I[l11111lI1I(_KRP[516])] = false
+l1llIl1I1I[l11111lI1I(_KRP[517])] = Enum[l11111lI1I(_KRP[518])][l11111lI1I(_KRP[519])]
 						end
-if I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[518])) or I1111II1lI1:IsA(I1IIl1I1lI1(_KTB[519])) then
-I1111II1lI1[I1IIl1I1lI1(_KTB[520])] = false
+if l1llIl1I1I:IsA(l11111lI1I(_KRP[520])) or l1llIl1I1I:IsA(l11111lI1I(_KRP[521])) then
+l1llIl1I1I[l11111lI1I(_KRP[522])] = false
 						end
 					end)
 				end
-lI111II1lI1 = lI111II1lI1 + 0B1
-if lI111II1lI1 % 0x50 == 0B0 then
-IlI11II1lI1[I1IIl1I1lI1(_KTB[521])]:Wait()
+II1lIl1I1I = II1lIl1I1I + 0B1
+if II1lIl1I1I % 0x50 == 0B0 then
+ll1lIl1I1I[l11111lI1I(_KRP[523])]:Wait()
 				end
 			end
 		end
-I1111II1lI1:SetCore(I1IIl1I1lI1(_KTB[522]), { [I1IIl1I1lI1(_KTB[523])] = I1IIl1I1lI1(_KTB[524]), [I1IIl1I1lI1(_KTB[525])] = Il111II1lI1[I1IIl1I1lI1(_KTB[526])][I1IIl1I1lI1(_KTB[527])], [I1IIl1I1lI1(_KTB[528])] = 0B11 })
+l1llIl1I1I:SetCore(l11111lI1I(_KRP[524]), { [l11111lI1I(_KRP[525])] = l11111lI1I(_KRP[526]), [l11111lI1I(_KRP[527])] = llllIl1I1I[l11111lI1I(_KRP[528])][l11111lI1I(_KRP[529])], [l11111lI1I(_KRP[530])] = 0B11 })
 	end
-local llIllII1lI1 = nil
-local II1llII1lI1 = nil
-local lI1llII1lI1 = nil
-lll11II1lI1 = function()
-II1l1II1lI1[I1IIl1I1lI1(_KTB[529])] = false
-if llIllII1lI1 then
-llIllII1lI1:Disconnect()
-llIllII1lI1 = nil
+local Il1I1I1I1I = nil
+local lI1I1I1I1I = nil
+local II1I1I1I1I = nil
+IlIlIl1I1I = function()
+lI1IIl1I1I[l11111lI1I(_KRP[531])] = false
+if Il1I1I1I1I then
+Il1I1I1I1I:Disconnect()
+Il1I1I1I1I = nil
 			end
-if II1llII1lI1 then
-II1llII1lI1:Destroy()
-II1llII1lI1 = nil
+if lI1I1I1I1I then
+lI1I1I1I1I:Destroy()
+lI1I1I1I1I = nil
 			end
-if lI1llII1lI1 then
-lI1llII1lI1:Destroy()
-lI1llII1lI1 = nil
+if II1I1I1I1I then
+II1I1I1I1I:Destroy()
+II1I1I1I1I = nil
 			end
 pcall(function()
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[530])] and l1111II1lI1[I1IIl1I1lI1(_KTB[531])]:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[532]))
-if l1I11II1lI1 then
-l1I11II1lI1[I1IIl1I1lI1(_KTB[533])] = false
-l1I11II1lI1[I1IIl1I1lI1(_KTB[534])] = true
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[532])] and I1llIl1I1I[l11111lI1I(_KRP[533])]:FindFirstChildWhichIsA(l11111lI1I(_KRP[534]))
+if I11lIl1I1I then
+I11lIl1I1I[l11111lI1I(_KRP[535])] = false
+I11lIl1I1I[l11111lI1I(_KRP[536])] = true
 				end
 			end)
 		end
-local function I11llII1lI1()
-lll11II1lI1();
-II1l1II1lI1[I1IIl1I1lI1(_KTB[535])] = true
-llIllII1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[536])]:Connect(function()
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[537])]
-local IlI11II1lI1 = l1I11II1lI1 and l1I11II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[538]));
-local llI11II1lI1 = l1I11II1lI1 and l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[539]));
-local lI111II1lI1 = workspace[I1IIl1I1lI1(_KTB[540])]
-if not II1l1II1lI1[I1IIl1I1lI1(_KTB[541])] or not IlI11II1lI1 or not llI11II1lI1 or not lI111II1lI1 then
+local function l1lI1I1I1I()
+IlIlIl1I1I();
+lI1IIl1I1I[l11111lI1I(_KRP[537])] = true
+Il1I1I1I1I = ll1lIl1I1I[l11111lI1I(_KRP[538])]:Connect(function()
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[539])]
+local ll1lIl1I1I = I11lIl1I1I and I11lIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[540]));
+local Il1lIl1I1I = I11lIl1I1I and I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[541]));
+local II1lIl1I1I = workspace[l11111lI1I(_KRP[542])]
+if not lI1IIl1I1I[l11111lI1I(_KRP[543])] or not ll1lIl1I1I or not Il1lIl1I1I or not II1lIl1I1I then
 return
 				end
-if not II1llII1lI1 or II1llII1lI1[I1IIl1I1lI1(_KTB[542])] ~= llI11II1lI1 then
-if II1llII1lI1 then
-II1llII1lI1:Destroy()
+if not lI1I1I1I1I or lI1I1I1I1I[l11111lI1I(_KRP[544])] ~= Il1lIl1I1I then
+if lI1I1I1I1I then
+lI1I1I1I1I:Destroy()
 					end
-II1llII1lI1 = Instance[I1IIl1I1lI1(_KTB[543])](I1IIl1I1lI1(_KTB[544]));
-II1llII1lI1[I1IIl1I1lI1(_KTB[545])] = 0x2328
-II1llII1lI1[I1IIl1I1lI1(_KTB[546])] = Vector3[I1IIl1I1lI1(_KTB[547])](9000000000, 9000000000, 9000000000);
-II1llII1lI1[I1IIl1I1lI1(_KTB[548])] = llI11II1lI1
+lI1I1I1I1I = Instance[l11111lI1I(_KRP[545])](l11111lI1I(_KRP[546]));
+lI1I1I1I1I[l11111lI1I(_KRP[547])] = 0x2328
+lI1I1I1I1I[l11111lI1I(_KRP[548])] = Vector3[l11111lI1I(_KRP[549])](9000000000, 9000000000, 9000000000);
+lI1I1I1I1I[l11111lI1I(_KRP[550])] = Il1lIl1I1I
 				end
-if not lI1llII1lI1 or lI1llII1lI1[I1IIl1I1lI1(_KTB[549])] ~= llI11II1lI1 then
-if lI1llII1lI1 then
-lI1llII1lI1:Destroy()
+if not II1I1I1I1I or II1I1I1I1I[l11111lI1I(_KRP[551])] ~= Il1lIl1I1I then
+if II1I1I1I1I then
+II1I1I1I1I:Destroy()
 					end
-lI1llII1lI1 = Instance[I1IIl1I1lI1(_KTB[550])](I1IIl1I1lI1(_KTB[551]));
-lI1llII1lI1[I1IIl1I1lI1(_KTB[552])] = Vector3[I1IIl1I1lI1(_KTB[553])](9000000000, 9000000000, 9000000000);
-lI1llII1lI1[I1IIl1I1lI1(_KTB[554])] = llI11II1lI1
+II1I1I1I1I = Instance[l11111lI1I(_KRP[552])](l11111lI1I(_KRP[553]));
+II1I1I1I1I[l11111lI1I(_KRP[554])] = Vector3[l11111lI1I(_KRP[555])](9000000000, 9000000000, 9000000000);
+II1I1I1I1I[l11111lI1I(_KRP[501])] = Il1lIl1I1I
 				end
-local I1111II1lI1 = 0B0
-if II111II1lI1:IsKeyDown(Enum[I1IIl1I1lI1(_KTB[555])][I1IIl1I1lI1(_KTB[556])]) then
-I1111II1lI1 = 0B1
-				elseif II111II1lI1:IsKeyDown(Enum[I1IIl1I1lI1(_KTB[557])][I1IIl1I1lI1(_KTB[558])]) then
-I1111II1lI1 = -0B1
+local l1llIl1I1I = 0B0
+if lI1lIl1I1I:IsKeyDown(Enum[l11111lI1I(_KRP[556])][l11111lI1I(_KRP[557])]) then
+l1llIl1I1I = 0B1
+				elseif lI1lIl1I1I:IsKeyDown(Enum[l11111lI1I(_KRP[558])][l11111lI1I(_KRP[559])]) then
+l1llIl1I1I = -0B1
 				end
-if IlI11II1lI1[I1IIl1I1lI1(_KTB[559])] then
-I1111II1lI1 = 0B1
+if ll1lIl1I1I[l11111lI1I(_KRP[560])] then
+l1llIl1I1I = 0B1
 				end
-local Il111II1lI1 = math[I1IIl1I1lI1(_KTB[560])](II1l1II1lI1[I1IIl1I1lI1(_KTB[561])] or 0B1, 0B1, 0x14);
-local ll111II1lI1 = 0x96 + (Il111II1lI1 - 0B1) * 7.5
-local IIl11II1lI1 = Vector3[I1IIl1I1lI1(_KTB[562])]
-if II111II1lI1:IsKeyDown(Enum[I1IIl1I1lI1(_KTB[563])][I1IIl1I1lI1(_KTB[564])]) then
-IIl11II1lI1 = IIl11II1lI1 + lI111II1lI1[I1IIl1I1lI1(_KTB[565])][I1IIl1I1lI1(_KTB[566])]
+local llllIl1I1I = math[l11111lI1I(_KRP[561])](lI1IIl1I1I[l11111lI1I(_KRP[562])] or 0B1, 0B1, 0x14);
+local IlllIl1I1I = 0x96 + (llllIl1I1I - 0B1) * 7.5
+local lIllIl1I1I = Vector3[l11111lI1I(_KRP[563])]
+if lI1lIl1I1I:IsKeyDown(Enum[l11111lI1I(_KRP[564])][l11111lI1I(_KRP[565])]) then
+lIllIl1I1I = lIllIl1I1I + II1lIl1I1I[l11111lI1I(_KRP[566])][l11111lI1I(_KRP[567])]
 				end
-if II111II1lI1:IsKeyDown(Enum[I1IIl1I1lI1(_KTB[567])][I1IIl1I1lI1(_KTB[568])]) then
-IIl11II1lI1 = IIl11II1lI1 - lI111II1lI1[I1IIl1I1lI1(_KTB[569])][I1IIl1I1lI1(_KTB[566])]
+if lI1lIl1I1I:IsKeyDown(Enum[l11111lI1I(_KRP[568])][l11111lI1I(_KRP[569])]) then
+lIllIl1I1I = lIllIl1I1I - II1lIl1I1I[l11111lI1I(_KRP[570])][l11111lI1I(_KRP[571])]
 				end
-if II111II1lI1:IsKeyDown(Enum[I1IIl1I1lI1(_KTB[570])][I1IIl1I1lI1(_KTB[571])]) then
-IIl11II1lI1 = IIl11II1lI1 + lI111II1lI1[I1IIl1I1lI1(_KTB[572])][I1IIl1I1lI1(_KTB[573])]
+if lI1lIl1I1I:IsKeyDown(Enum[l11111lI1I(_KRP[572])][l11111lI1I(_KRP[573])]) then
+lIllIl1I1I = lIllIl1I1I + II1lIl1I1I[l11111lI1I(_KRP[574])][l11111lI1I(_KRP[575])]
 				end
-if II111II1lI1:IsKeyDown(Enum[I1IIl1I1lI1(_KTB[574])][I1IIl1I1lI1(_KTB[575])]) then
-IIl11II1lI1 = IIl11II1lI1 - lI111II1lI1[I1IIl1I1lI1(_KTB[576])][I1IIl1I1lI1(_KTB[577])]
+if lI1lIl1I1I:IsKeyDown(Enum[l11111lI1I(_KRP[576])][l11111lI1I(_KRP[577])]) then
+lIllIl1I1I = lIllIl1I1I - II1lIl1I1I[l11111lI1I(_KRP[578])][l11111lI1I(_KRP[579])]
 				end
-if IIl11II1lI1[I1IIl1I1lI1(_KTB[578])] < .05 and IlI11II1lI1[I1IIl1I1lI1(_KTB[579])][I1IIl1I1lI1(_KTB[580])] > .05 then
-IIl11II1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[581])]
+if lIllIl1I1I[l11111lI1I(_KRP[580])] < .05 and ll1lIl1I1I[l11111lI1I(_KRP[581])][l11111lI1I(_KRP[582])] > .05 then
+lIllIl1I1I = ll1lIl1I1I[l11111lI1I(_KRP[583])]
 				end
-if IIl11II1lI1[I1IIl1I1lI1(_KTB[582])] > 0B0 then
-IIl11II1lI1 = IIl11II1lI1[I1IIl1I1lI1(_KTB[583])]
+if lIllIl1I1I[l11111lI1I(_KRP[584])] > 0B0 then
+lIllIl1I1I = lIllIl1I1I[l11111lI1I(_KRP[585])]
 				end
-local lIl11II1lI1 = IIl11II1lI1 * ll111II1lI1 + Vector3[I1IIl1I1lI1(_KTB[584])](0B0, I1111II1lI1 * ll111II1lI1, 0B0);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[585])] = true
-IlI11II1lI1[I1IIl1I1lI1(_KTB[586])] = false
-local I1l11II1lI1 = Vector3[I1IIl1I1lI1(_KTB[587])](IIl11II1lI1[I1IIl1I1lI1(_KTB[588])], 0B0, IIl11II1lI1[I1IIl1I1lI1(_KTB[589])])
-if I1l11II1lI1[I1IIl1I1lI1(_KTB[590])] < .05 then
-I1l11II1lI1 = Vector3[I1IIl1I1lI1(_KTB[591])](lI111II1lI1[I1IIl1I1lI1(_KTB[592])][I1IIl1I1lI1(_KTB[593])][I1IIl1I1lI1(_KTB[594])], 0B0, lI111II1lI1[I1IIl1I1lI1(_KTB[595])][I1IIl1I1lI1(_KTB[596])][I1IIl1I1lI1(_KTB[597])])
+local IIllIl1I1I = lIllIl1I1I * IlllIl1I1I + Vector3[l11111lI1I(_KRP[586])](0B0, l1llIl1I1I * IlllIl1I1I, 0B0);
+ll1lIl1I1I[l11111lI1I(_KRP[587])] = true
+ll1lIl1I1I[l11111lI1I(_KRP[588])] = false
+local l1IlIl1I1I = Vector3[l11111lI1I(_KRP[589])](lIllIl1I1I[l11111lI1I(_KRP[590])], 0B0, lIllIl1I1I[l11111lI1I(_KRP[591])])
+if l1IlIl1I1I[l11111lI1I(_KRP[592])] < .05 then
+l1IlIl1I1I = Vector3[l11111lI1I(_KRP[593])](II1lIl1I1I[l11111lI1I(_KRP[594])][l11111lI1I(_KRP[595])][l11111lI1I(_KRP[596])], 0B0, II1lIl1I1I[l11111lI1I(_KRP[597])][l11111lI1I(_KRP[598])][l11111lI1I(_KRP[599])])
 				end
-if I1l11II1lI1[I1IIl1I1lI1(_KTB[598])] > .05 then
-II1llII1lI1[I1IIl1I1lI1(_KTB[599])] = CFrame[I1IIl1I1lI1(_KTB[600])](llI11II1lI1[I1IIl1I1lI1(_KTB[601])], llI11II1lI1[I1IIl1I1lI1(_KTB[602])] + I1l11II1lI1[I1IIl1I1lI1(_KTB[603])], Vector3[I1IIl1I1lI1(_KTB[604])](0B0, 0B1, 0B0))
+if l1IlIl1I1I[l11111lI1I(_KRP[600])] > .05 then
+lI1I1I1I1I[l11111lI1I(_KRP[300])] = CFrame[l11111lI1I(_KRP[601])](Il1lIl1I1I[l11111lI1I(_KRP[602])], Il1lIl1I1I[l11111lI1I(_KRP[603])] + l1IlIl1I1I[l11111lI1I(_KRP[604])], Vector3[l11111lI1I(_KRP[605])](0B0, 0B1, 0B0))
 				end
-lI1llII1lI1[I1IIl1I1lI1(_KTB[605])] = lIl11II1lI1
+II1I1I1I1I[l11111lI1I(_KRP[606])] = IIllIl1I1I
 			end)
 	end
-local l11llII1lI1 = nil
-local function Il1llII1lI1(l1I11II1lI1)
-II1l1II1lI1[I1IIl1I1lI1(_KTB[606])] = l1I11II1lI1
-if not l1I11II1lI1 then
+local I1lI1I1I1I = nil
+local function lllI1I1I1I(I11lIl1I1I)
+lI1IIl1I1I[l11111lI1I(_KRP[607])] = I11lIl1I1I
+if not I11lIl1I1I then
 pcall(function()
-IlI11II1lI1:Set3dRenderingEnabled(true)
+ll1lIl1I1I:Set3dRenderingEnabled(true)
 			end)
-if l11llII1lI1 then
-l11llII1lI1:Destroy()
-l11llII1lI1 = nil
+if I1lI1I1I1I then
+I1lI1I1I1I:Destroy()
+I1lI1I1I1I = nil
 			end
 return
 		end
-if l11llII1lI1 then
-l11llII1lI1:Destroy()
+if I1lI1I1I1I then
+I1lI1I1I1I:Destroy()
 		end
 pcall(function()
-IlI11II1lI1:Set3dRenderingEnabled(false)
+ll1lIl1I1I:Set3dRenderingEnabled(false)
 		end)
-l11llII1lI1 = Instance[I1IIl1I1lI1(_KTB[607])](I1IIl1I1lI1(_KTB[608]));
-l11llII1lI1[I1IIl1I1lI1(_KTB[609])] = I1IIl1I1lI1(_KTB[610]);
-l11llII1lI1[I1IIl1I1lI1(_KTB[611])] = false
-l11llII1lI1[I1IIl1I1lI1(_KTB[612])] = true
-l11llII1lI1[I1IIl1I1lI1(_KTB[613])] = 0x3E5
-l11llII1lI1[I1IIl1I1lI1(_KTB[614])] = Enum[I1IIl1I1lI1(_KTB[615])][I1IIl1I1lI1(_KTB[616])]
-l11llII1lI1[I1IIl1I1lI1(_KTB[617])] = l1111II1lI1[I1IIl1I1lI1(_KTB[618])]
-local llI11II1lI1 = Instance[I1IIl1I1lI1(_KTB[619])](I1IIl1I1lI1(_KTB[620]));
-llI11II1lI1[I1IIl1I1lI1(_KTB[621])] = UDim2[I1IIl1I1lI1(_KTB[622])](0B1, 0B0, 0B1, 0B0);
-llI11II1lI1[I1IIl1I1lI1(_KTB[623])] = Color3[I1IIl1I1lI1(_KTB[624])](0B0, 0B0, 0B0);
-llI11II1lI1[I1IIl1I1lI1(_KTB[625])] = 0B0
-llI11II1lI1[I1IIl1I1lI1(_KTB[626])] = 0B1
-llI11II1lI1[I1IIl1I1lI1(_KTB[627])] = l11llII1lI1
-for l1I11II1lI1 = 0B1, llIl1II1lI1 and 0x46 or 0x78, 0B1 do
-local IlI11II1lI1 = Instance[I1IIl1I1lI1(_KTB[628])](I1IIl1I1lI1(_KTB[629]));
-local II111II1lI1 = l1I11II1lI1 % 0x9 == 0B0 and 0B11 or l1I11II1lI1 % 0x4 == 0B0 and 0B10 or 0B1
-IlI11II1lI1[I1IIl1I1lI1(_KTB[630])] = UDim2[I1IIl1I1lI1(_KTB[631])](II111II1lI1, II111II1lI1);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[632])] = UDim2[I1IIl1I1lI1(_KTB[547])](math[I1IIl1I1lI1(_KTB[633])](), 0B0, math[I1IIl1I1lI1(_KTB[634])](), 0B0);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[635])] = l1I11II1lI1 % 0x7 == 0B0 and ll111II1lI1[I1IIl1I1lI1(_KTB[636])] or ll111II1lI1[I1IIl1I1lI1(_KTB[637])]
-IlI11II1lI1[I1IIl1I1lI1(_KTB[638])] = l1I11II1lI1 % 0x5 == 0B0 and .25 or 0B0
-IlI11II1lI1[I1IIl1I1lI1(_KTB[639])] = 0B0
-IlI11II1lI1[I1IIl1I1lI1(_KTB[640])] = 0B10
-IlI11II1lI1[I1IIl1I1lI1(_KTB[641])] = llI11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[628])](I1IIl1I1lI1(_KTB[642]), IlI11II1lI1))[I1IIl1I1lI1(_KTB[643])] = UDim[I1IIl1I1lI1(_KTB[644])](0B1, 0B0)
+I1lI1I1I1I = Instance[l11111lI1I(_KRP[608])](l11111lI1I(_KRP[609]));
+I1lI1I1I1I[l11111lI1I(_KRP[610])] = l11111lI1I(_KRP[611]);
+I1lI1I1I1I[l11111lI1I(_KRP[612])] = false
+I1lI1I1I1I[l11111lI1I(_KRP[613])] = true
+I1lI1I1I1I[l11111lI1I(_KRP[614])] = 0x3E5
+I1lI1I1I1I[l11111lI1I(_KRP[615])] = Enum[l11111lI1I(_KRP[616])][l11111lI1I(_KRP[617])]
+I1lI1I1I1I[l11111lI1I(_KRP[618])] = I1llIl1I1I[l11111lI1I(_KRP[619])]
+local Il1lIl1I1I = Instance[l11111lI1I(_KRP[620])](l11111lI1I(_KRP[621]));
+Il1lIl1I1I[l11111lI1I(_KRP[622])] = UDim2[l11111lI1I(_KRP[623])](0B1, 0B0, 0B1, 0B0);
+Il1lIl1I1I[l11111lI1I(_KRP[624])] = Color3[l11111lI1I(_KRP[625])](0B0, 0B0, 0B0);
+Il1lIl1I1I[l11111lI1I(_KRP[626])] = 0B0
+Il1lIl1I1I[l11111lI1I(_KRP[627])] = 0B1
+Il1lIl1I1I[l11111lI1I(_KRP[628])] = I1lI1I1I1I
+for I11lIl1I1I = 0B1, Il1IIl1I1I and 0x46 or 0x78, 0B1 do
+local ll1lIl1I1I = Instance[l11111lI1I(_KRP[629])](l11111lI1I(_KRP[630]));
+local lI1lIl1I1I = I11lIl1I1I % 0B1001 == 0B0 and 0B11 or I11lIl1I1I % 0x4 == 0B0 and 0B10 or 0B1
+ll1lIl1I1I[l11111lI1I(_KRP[631])] = UDim2[l11111lI1I(_KRP[632])](lI1lIl1I1I, lI1lIl1I1I);
+ll1lIl1I1I[l11111lI1I(_KRP[633])] = UDim2[l11111lI1I(_KRP[634])](math[l11111lI1I(_KRP[635])](), 0B0, math[l11111lI1I(_KRP[636])](), 0B0);
+ll1lIl1I1I[l11111lI1I(_KRP[637])] = I11lIl1I1I % 0x7 == 0B0 and IlllIl1I1I[l11111lI1I(_KRP[638])] or IlllIl1I1I[l11111lI1I(_KRP[639])]
+ll1lIl1I1I[l11111lI1I(_KRP[640])] = I11lIl1I1I % 0x5 == 0B0 and .25 or 0B0
+ll1lIl1I1I[l11111lI1I(_KRP[641])] = 0B0
+ll1lIl1I1I[l11111lI1I(_KRP[642])] = 0B10
+ll1lIl1I1I[l11111lI1I(_KRP[643])] = Il1lIl1I1I;
+(Instance[l11111lI1I(_KRP[644])](l11111lI1I(_KRP[645]), ll1lIl1I1I))[l11111lI1I(_KRP[646])] = UDim[l11111lI1I(_KRP[647])](0B1, 0B0)
 		end
 	end
-local ll1llII1lI1 = {};
-local IIlllII1lI1 = nil
-local function lIlllII1lI1(l1I11II1lI1, IlI11II1lI1)
-if l1I11II1lI1 and (l1I11II1lI1:IsA(I1IIl1I1lI1(_KTB[645])) and l1I11II1lI1[I1IIl1I1lI1(_KTB[646])] == I1IIl1I1lI1(_KTB[647])) then
-if IlI11II1lI1 then
-if ll1llII1lI1[l1I11II1lI1] == nil then
-ll1llII1lI1[l1I11II1lI1] = l1I11II1lI1[I1IIl1I1lI1(_KTB[648])]
+local IllI1I1I1I = {};
+local lIlI1I1I1I = nil
+local function IIlI1I1I1I(I11lIl1I1I, ll1lIl1I1I)
+if I11lIl1I1I and (I11lIl1I1I:IsA(l11111lI1I(_KRP[648])) and I11lIl1I1I[l11111lI1I(_KRP[649])] == l11111lI1I(_KRP[650])) then
+if ll1lIl1I1I then
+if IllI1I1I1I[I11lIl1I1I] == nil then
+IllI1I1I1I[I11lIl1I1I] = I11lIl1I1I[l11111lI1I(_KRP[651])]
 				end
-l1I11II1lI1[I1IIl1I1lI1(_KTB[649])] = false
-			elseif ll1llII1lI1[l1I11II1lI1] ~= nil then
-l1I11II1lI1[I1IIl1I1lI1(_KTB[650])] = ll1llII1lI1[l1I11II1lI1]
-ll1llII1lI1[l1I11II1lI1] = nil
+I11lIl1I1I[l11111lI1I(_KRP[652])] = false
+			elseif IllI1I1I1I[I11lIl1I1I] ~= nil then
+I11lIl1I1I[l11111lI1I(_KRP[653])] = IllI1I1I1I[I11lIl1I1I]
+IllI1I1I1I[I11lIl1I1I] = nil
 			end
 		end
 	end
-local function I1lllII1lI1(l1I11II1lI1)
-II1l1II1lI1[I1IIl1I1lI1(_KTB[651])] = l1I11II1lI1
-if not l1I11II1lI1 then
-for l1I11II1lI1, IlI11II1lI1 in pairs(ll1llII1lI1) do
-if l1I11II1lI1 and l1I11II1lI1[I1IIl1I1lI1(_KTB[652])] then
+local function l1II1I1I1I(I11lIl1I1I)
+lI1IIl1I1I[l11111lI1I(_KRP[654])] = I11lIl1I1I
+if not I11lIl1I1I then
+for I11lIl1I1I, ll1lIl1I1I in pairs(IllI1I1I1I) do
+if I11lIl1I1I and I11lIl1I1I[l11111lI1I(_KRP[655])] then
 pcall(function()
-l1I11II1lI1[I1IIl1I1lI1(_KTB[653])] = IlI11II1lI1
+I11lIl1I1I[l11111lI1I(_KRP[656])] = ll1lIl1I1I
 					end)
 				end
 			end
-ll1llII1lI1 = {}
+IllI1I1I1I = {}
 return
 		end
-for l1I11II1lI1, IlI11II1lI1 in ipairs(llI11II1lI1:GetChildren()) do
-lIlllII1lI1(IlI11II1lI1, true)
+for I11lIl1I1I, ll1lIl1I1I in ipairs(Il1lIl1I1I:GetChildren()) do
+IIlI1I1I1I(ll1lIl1I1I, true)
 		end
-if not IIlllII1lI1 then
-IIlllII1lI1 = llI11II1lI1[I1IIl1I1lI1(_KTB[654])]:Connect(function(l1I11II1lI1)
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[655])] then
-task[I1IIl1I1lI1(_KTB[656])](function()
-lIlllII1lI1(l1I11II1lI1, true)
+if not lIlI1I1I1I then
+lIlI1I1I1I = Il1lIl1I1I[l11111lI1I(_KRP[657])]:Connect(function(I11lIl1I1I)
+if lI1IIl1I1I[l11111lI1I(_KRP[654])] then
+task[l11111lI1I(_KRP[658])](function()
+IIlI1I1I1I(I11lIl1I1I, true)
 						end)
 					end
 				end)
 		end
-for l1I11II1lI1, IlI11II1lI1 in ipairs(l1111II1lI1[I1IIl1I1lI1(_KTB[657])]:GetDescendants()) do
-if IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[658])) and not IlI11II1lI1:IsDescendantOf(I1l11II1lI1) then
-local l1I11II1lI1 = I1IIl1I1lI1(_KTB[659])
-if IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[660])) or IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[661])) or IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[662])) then
-l1I11II1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[663])] or I1IIl1I1lI1(_KTB[664])
+for I11lIl1I1I, ll1lIl1I1I in ipairs(I1llIl1I1I[l11111lI1I(_KRP[659])]:GetDescendants()) do
+if ll1lIl1I1I:IsA(l11111lI1I(_KRP[660])) and not ll1lIl1I1I:IsDescendantOf(l1IlIl1I1I) then
+local I11lIl1I1I = l11111lI1I(_KRP[661])
+if ll1lIl1I1I:IsA(l11111lI1I(_KRP[662])) or ll1lIl1I1I:IsA(l11111lI1I(_KRP[663])) or ll1lIl1I1I:IsA(l11111lI1I(_KRP[664])) then
+I11lIl1I1I = ll1lIl1I1I[l11111lI1I(_KRP[665])] or l11111lI1I(_KRP[666])
 				end
-local llI11II1lI1 = (IlI11II1lI1[I1IIl1I1lI1(_KTB[665])] .. (I1IIl1I1lI1(_KTB[666]) .. l1I11II1lI1)):lower();
-local II111II1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[667])]
-while II111II1lI1 and II111II1lI1 ~= l1111II1lI1[I1IIl1I1lI1(_KTB[668])] do
-llI11II1lI1 = llI11II1lI1  .. (I1IIl1I1lI1(_KTB[669]) .. II111II1lI1[I1IIl1I1lI1(_KTB[670])]:lower())
-if II111II1lI1:IsA(I1IIl1I1lI1(_KTB[671])) or II111II1lI1:IsA(I1IIl1I1lI1(_KTB[672])) or II111II1lI1:IsA(I1IIl1I1lI1(_KTB[673])) then
-llI11II1lI1 = llI11II1lI1  .. (I1IIl1I1lI1(_KTB[674]) .. (II111II1lI1[I1IIl1I1lI1(_KTB[675])] or I1IIl1I1lI1(_KTB[676])):lower())
+local Il1lIl1I1I = (ll1lIl1I1I[l11111lI1I(_KRP[667])] .. (l11111lI1I(_KRP[668]) .. I11lIl1I1I)):lower();
+local lI1lIl1I1I = ll1lIl1I1I[l11111lI1I(_KRP[669])]
+while lI1lIl1I1I and lI1lIl1I1I ~= I1llIl1I1I[l11111lI1I(_KRP[670])] do
+Il1lIl1I1I = Il1lIl1I1I .. (l11111lI1I(_KRP[671]) .. lI1lIl1I1I[l11111lI1I(_KRP[672])]:lower())
+if lI1lIl1I1I:IsA(l11111lI1I(_KRP[673])) or lI1lIl1I1I:IsA(l11111lI1I(_KRP[674])) or lI1lIl1I1I:IsA(l11111lI1I(_KRP[675])) then
+Il1lIl1I1I = Il1lIl1I1I .. (l11111lI1I(_KRP[676]) .. (lI1lIl1I1I[l11111lI1I(_KRP[677])] or l11111lI1I(_KRP[678])):lower())
 					end
-II111II1lI1 = II111II1lI1[I1IIl1I1lI1(_KTB[677])]
+lI1lIl1I1I = lI1lIl1I1I[l11111lI1I(_KRP[679])]
 				end
-local lI111II1lI1 = llI11II1lI1:find(I1IIl1I1lI1(_KTB[678])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[679])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[680])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[681])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[682])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[683])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[684])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[685])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[686]));
-local I1111II1lI1 = llI11II1lI1:find(I1IIl1I1lI1(_KTB[687])) or llI11II1lI1:find(I1IIl1I1lI1(_KTB[688]));
-local Il111II1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[689])][I1IIl1I1lI1(_KTB[690])] <= 0x168 and IlI11II1lI1[I1IIl1I1lI1(_KTB[691])][I1IIl1I1lI1(_KTB[692])] <= 0xA0
-if I1111II1lI1 and (Il111II1lI1 and not lI111II1lI1) then
-if ll1llII1lI1[IlI11II1lI1] == nil then
-ll1llII1lI1[IlI11II1lI1] = IlI11II1lI1[I1IIl1I1lI1(_KTB[693])]
+local II1lIl1I1I = Il1lIl1I1I:find(l11111lI1I(_KRP[680])) or Il1lIl1I1I:find(l11111lI1I(_KRP[681])) or Il1lIl1I1I:find(l11111lI1I(_KRP[682])) or Il1lIl1I1I:find(l11111lI1I(_KRP[683])) or Il1lIl1I1I:find(l11111lI1I(_KRP[684])) or Il1lIl1I1I:find(l11111lI1I(_KRP[685])) or Il1lIl1I1I:find(l11111lI1I(_KRP[686])) or Il1lIl1I1I:find(l11111lI1I(_KRP[687])) or Il1lIl1I1I:find(l11111lI1I(_KRP[688]));
+local l1llIl1I1I = Il1lIl1I1I:find(l11111lI1I(_KRP[689])) or Il1lIl1I1I:find(l11111lI1I(_KRP[690]));
+local llllIl1I1I = ll1lIl1I1I[l11111lI1I(_KRP[691])][l11111lI1I(_KRP[692])] <= 0x168 and ll1lIl1I1I[l11111lI1I(_KRP[693])][l11111lI1I(_KRP[694])] <= 0xA0
+if l1llIl1I1I and (llllIl1I1I and not II1lIl1I1I) then
+if IllI1I1I1I[ll1lIl1I1I] == nil then
+IllI1I1I1I[ll1lIl1I1I] = ll1lIl1I1I[l11111lI1I(_KRP[695])]
 					end
-IlI11II1lI1[I1IIl1I1lI1(_KTB[694])] = false
+ll1lIl1I1I[l11111lI1I(_KRP[696])] = false
 				end
 			end
 		end
 	end
-for l1I11II1lI1, IlI11II1lI1 in ipairs(l1111II1lI1[I1IIl1I1lI1(_KTB[695])]:GetChildren()) do
-if IlI11II1lI1:IsA(I1IIl1I1lI1(_KTB[696])) then
-local l1I11II1lI1 = IlI11II1lI1[I1IIl1I1lI1(_KTB[697])]:lower()
-if l1I11II1lI1:find(I1IIl1I1lI1(_KTB[698])) or l1I11II1lI1:find(I1IIl1I1lI1(_KTB[699])) or l1I11II1lI1:find(I1IIl1I1lI1(_KTB[700])) or l1I11II1lI1:find(I1IIl1I1lI1(_KTB[701])) or l1I11II1lI1:find(I1IIl1I1lI1(_KTB[702])) then
-IlI11II1lI1:Destroy()
+for I11lIl1I1I, ll1lIl1I1I in ipairs(I1llIl1I1I[l11111lI1I(_KRP[697])]:GetChildren()) do
+if ll1lIl1I1I:IsA(l11111lI1I(_KRP[698])) then
+local I11lIl1I1I = ll1lIl1I1I[l11111lI1I(_KRP[176])]:lower()
+if I11lIl1I1I:find(l11111lI1I(_KRP[699])) or I11lIl1I1I:find(l11111lI1I(_KRP[700])) or I11lIl1I1I:find(l11111lI1I(_KRP[701])) or I11lIl1I1I:find(l11111lI1I(_KRP[702])) or I11lIl1I1I:find(l11111lI1I(_KRP[703])) then
+ll1lIl1I1I:Destroy()
 			end
 		end
 	end
-local l1lllII1lI1 = IIl11II1lI1[I1IIl1I1lI1(_KTB[703])]
-local IllllII1lI1 = IIl11II1lI1[I1IIl1I1lI1(_KTB[704])]
-local lllllII1lI1 = IIl11II1lI1[I1IIl1I1lI1(_KTB[705])]
-local IIIII1I1lI1 = IIl11II1lI1[I1IIl1I1lI1(_KTB[706])]
-local lIIII1I1lI1 = IIl11II1lI1[I1IIl1I1lI1(_KTB[707])]
-local I1III1I1lI1 = math[I1IIl1I1lI1(_KTB[708])](l1lllII1lI1 / 0B11);
-local l1III1I1lI1 = (lIIII1I1lI1 + IIIII1I1lI1) + 0B1
-I1l11II1lI1 = Instance[I1IIl1I1lI1(_KTB[709])](I1IIl1I1lI1(_KTB[710]));
-I1l11II1lI1[I1IIl1I1lI1(_KTB[711])] = I1IIl1I1lI1(_KTB[712]);
-I1l11II1lI1[I1IIl1I1lI1(_KTB[713])] = false
-I1l11II1lI1[I1IIl1I1lI1(_KTB[714])] = Enum[I1IIl1I1lI1(_KTB[715])][I1IIl1I1lI1(_KTB[716])]
-I1l11II1lI1[I1IIl1I1lI1(_KTB[717])] = 0x3E7
-I1l11II1lI1[I1IIl1I1lI1(_KTB[718])] = true
-I1l11II1lI1[I1IIl1I1lI1(_KTB[719])] = l1111II1lI1[I1IIl1I1lI1(_KTB[720])]
-local IlIII1I1lI1 = Instance[I1IIl1I1lI1(_KTB[721])](I1IIl1I1lI1(_KTB[722]));
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[723])] = I1IIl1I1lI1(_KTB[724]);
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[725])] = UDim2[I1IIl1I1lI1(_KTB[726])](l1lllII1lI1 + 0xA, IllllII1lI1 + 0xA);
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[727])] = UDim2[I1IIl1I1lI1(_KTB[728])](.5, -(l1lllII1lI1 / 0B10) - 0x5, .5, -(IllllII1lI1 / 0B10) - 0x5);
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[729])] = Color3[I1IIl1I1lI1(_KTB[730])](0B10, 0x5, 0x10);
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[731])] = .72
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[732])] = 0B0
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[733])] = 0B1
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[734])] = I1l11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[735])](I1IIl1I1lI1(_KTB[736]), IlIII1I1lI1))[I1IIl1I1lI1(_KTB[737])] = UDim[I1IIl1I1lI1(_KTB[738])](0B0, 0x10);
-local llIII1I1lI1 = Instance[I1IIl1I1lI1(_KTB[721])](I1IIl1I1lI1(_KTB[739]));
-llIII1I1lI1[I1IIl1I1lI1(_KTB[740])] = I1IIl1I1lI1(_KTB[741]);
-llIII1I1lI1[I1IIl1I1lI1(_KTB[742])] = UDim2[I1IIl1I1lI1(_KTB[743])](l1lllII1lI1, IllllII1lI1);
-llIII1I1lI1[I1IIl1I1lI1(_KTB[744])] = UDim2[I1IIl1I1lI1(_KTB[745])](.5, -l1lllII1lI1 / 0B10, .5, -IllllII1lI1 / 0B10);
-llIII1I1lI1[I1IIl1I1lI1(_KTB[746])] = ll111II1lI1[I1IIl1I1lI1(_KTB[747])]
-llIII1I1lI1[I1IIl1I1lI1(_KTB[748])] = .16
-llIII1I1lI1[I1IIl1I1lI1(_KTB[749])] = 0B0
-llIII1I1lI1[I1IIl1I1lI1(_KTB[750])] = 0B10
-llIII1I1lI1[I1IIl1I1lI1(_KTB[751])] = true
-llIII1I1lI1[I1IIl1I1lI1(_KTB[752])] = I1l11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[753])](I1IIl1I1lI1(_KTB[754]), llIII1I1lI1))[I1IIl1I1lI1(_KTB[755])] = UDim[I1IIl1I1lI1(_KTB[756])](0B0, 0xD);
-local II1II1I1lI1 = Instance[I1IIl1I1lI1(_KTB[757])](I1IIl1I1lI1(_KTB[758]), llIII1I1lI1);
-II1II1I1lI1[I1IIl1I1lI1(_KTB[759])] = ColorSequence[I1IIl1I1lI1(_KTB[760])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[761])](0B0, Color3[I1IIl1I1lI1(_KTB[762])](0x15, 0x1B, 0x43)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[763])](.48, Color3[I1IIl1I1lI1(_KTB[764])](0x7, 0xD, 0x1D)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[765])](0B1, Color3[I1IIl1I1lI1(_KTB[766])](0x18, 0xF, 0x3A)) });
-II1II1I1lI1[I1IIl1I1lI1(_KTB[767])] = 0x7D
-local lI1II1I1lI1 = Instance[I1IIl1I1lI1(_KTB[768])](I1IIl1I1lI1(_KTB[769]));
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[770])] = I1IIl1I1lI1(_KTB[771]);
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[772])] = UDim2[I1IIl1I1lI1(_KTB[773])](l1lllII1lI1, IllllII1lI1);
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[774])] = llIII1I1lI1[I1IIl1I1lI1(_KTB[775])]
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[776])] = 0B1
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[777])] = 0B0
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[778])] = false
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[779])] = false
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[780])] = 0x64
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[781])] = I1l11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[782])](I1IIl1I1lI1(_KTB[783]), lI1II1I1lI1))[I1IIl1I1lI1(_KTB[784])] = UDim[I1IIl1I1lI1(_KTB[785])](0B0, 0xD);
-local I11II1I1lI1 = Instance[I1IIl1I1lI1(_KTB[786])](I1IIl1I1lI1(_KTB[787]), lI1II1I1lI1);
-I11II1I1lI1[I1IIl1I1lI1(_KTB[788])] = Enum[I1IIl1I1lI1(_KTB[789])][I1IIl1I1lI1(_KTB[790])]
-I11II1I1lI1[I1IIl1I1lI1(_KTB[791])] = ll111II1lI1[I1IIl1I1lI1(_KTB[792])]
-I11II1I1lI1[I1IIl1I1lI1(_KTB[793])] = 1.8
-I11II1I1lI1[I1IIl1I1lI1(_KTB[794])] = .04
-I11II1I1lI1[I1IIl1I1lI1(_KTB[795])] = Enum[I1IIl1I1lI1(_KTB[796])][I1IIl1I1lI1(_KTB[797])]
-local l11II1I1lI1 = Instance[I1IIl1I1lI1(_KTB[798])](I1IIl1I1lI1(_KTB[799]), I11II1I1lI1);
-l11II1I1lI1[I1IIl1I1lI1(_KTB[800])] = ColorSequence[I1IIl1I1lI1(_KTB[801])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[738])](0B0, ll111II1lI1[I1IIl1I1lI1(_KTB[802])]), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[803])](.5, ll111II1lI1[I1IIl1I1lI1(_KTB[804])]), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[805])](0B1, ll111II1lI1[I1IIl1I1lI1(_KTB[806])]) });
-l11II1I1lI1[I1IIl1I1lI1(_KTB[807])] = 0x18
-local Il1II1I1lI1 = llIII1I1lI1[I1IIl1I1lI1(_KTB[808])]
-local ll1II1I1lI1 = IlIII1I1lI1[I1IIl1I1lI1(_KTB[809])]
-local IIlII1I1lI1 = math[I1IIl1I1lI1(_KTB[810])](l1lllII1lI1 * .86);
-local lIlII1I1lI1 = math[I1IIl1I1lI1(_KTB[811])](IllllII1lI1 * .86);
-local function I1lII1I1lI1()
-llIII1I1lI1[I1IIl1I1lI1(_KTB[812])] = UDim2[I1IIl1I1lI1(_KTB[813])](IIlII1I1lI1, lIlII1I1lI1);
-llIII1I1lI1[I1IIl1I1lI1(_KTB[814])] = UDim2[I1IIl1I1lI1(_KTB[815])](Il1II1I1lI1[I1IIl1I1lI1(_KTB[816])][I1IIl1I1lI1(_KTB[817])], Il1II1I1lI1[I1IIl1I1lI1(_KTB[818])][I1IIl1I1lI1(_KTB[819])] + (l1lllII1lI1 - IIlII1I1lI1) / 0B10, Il1II1I1lI1[I1IIl1I1lI1(_KTB[820])][I1IIl1I1lI1(_KTB[821])], Il1II1I1lI1[I1IIl1I1lI1(_KTB[822])][I1IIl1I1lI1(_KTB[823])] + (IllllII1lI1 - lIlII1I1lI1) / 0B10);
-llIII1I1lI1[I1IIl1I1lI1(_KTB[824])] = .42
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[825])] = UDim2[I1IIl1I1lI1(_KTB[826])](IIlII1I1lI1, lIlII1I1lI1);
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[827])] = llIII1I1lI1[I1IIl1I1lI1(_KTB[828])]
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[829])] = UDim2[I1IIl1I1lI1(_KTB[830])](IIlII1I1lI1 + 0xA, lIlII1I1lI1 + 0xA);
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[831])] = UDim2[I1IIl1I1lI1(_KTB[832])](ll1II1I1lI1[I1IIl1I1lI1(_KTB[833])][I1IIl1I1lI1(_KTB[834])], ll1II1I1lI1[I1IIl1I1lI1(_KTB[835])][I1IIl1I1lI1(_KTB[836])] + (l1lllII1lI1 - IIlII1I1lI1) / 0B10, ll1II1I1lI1[I1IIl1I1lI1(_KTB[837])][I1IIl1I1lI1(_KTB[838])], ll1II1I1lI1[I1IIl1I1lI1(_KTB[839])][I1IIl1I1lI1(_KTB[840])] + (IllllII1lI1 - lIlII1I1lI1) / 0B10);
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[841])] = 0B1
-I11II1I1lI1[I1IIl1I1lI1(_KTB[842])] = .65;
-(lI111II1lI1:Create(llIII1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[843])](.36, Enum[I1IIl1I1lI1(_KTB[844])][I1IIl1I1lI1(_KTB[845])], Enum[I1IIl1I1lI1(_KTB[846])][I1IIl1I1lI1(_KTB[847])]), { [I1IIl1I1lI1(_KTB[848])] = UDim2[I1IIl1I1lI1(_KTB[849])](l1lllII1lI1, IllllII1lI1), [I1IIl1I1lI1(_KTB[850])] = Il1II1I1lI1, [I1IIl1I1lI1(_KTB[851])] = .16 })):Play();
-(lI111II1lI1:Create(lI1II1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[852])](.36, Enum[I1IIl1I1lI1(_KTB[853])][I1IIl1I1lI1(_KTB[854])], Enum[I1IIl1I1lI1(_KTB[855])][I1IIl1I1lI1(_KTB[856])]), { [I1IIl1I1lI1(_KTB[857])] = UDim2[I1IIl1I1lI1(_KTB[858])](l1lllII1lI1, IllllII1lI1), [I1IIl1I1lI1(_KTB[859])] = Il1II1I1lI1 })):Play();
-(lI111II1lI1:Create(IlIII1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[860])](.36, Enum[I1IIl1I1lI1(_KTB[861])][I1IIl1I1lI1(_KTB[862])], Enum[I1IIl1I1lI1(_KTB[863])][I1IIl1I1lI1(_KTB[864])]), { [I1IIl1I1lI1(_KTB[865])] = UDim2[I1IIl1I1lI1(_KTB[866])](l1lllII1lI1 + 0xA, IllllII1lI1 + 0xA), [I1IIl1I1lI1(_KTB[867])] = ll1II1I1lI1, [I1IIl1I1lI1(_KTB[868])] = .72 })):Play();
-(lI111II1lI1:Create(I11II1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[869])](.28), { [I1IIl1I1lI1(_KTB[870])] = 0B0 })):Play()
+local I1II1I1I1I = lIllIl1I1I[l11111lI1I(_KRP[704])]
+local llII1I1I1I = lIllIl1I1I[l11111lI1I(_KRP[705])]
+local IlII1I1I1I = lIllIl1I1I[l11111lI1I(_KRP[706])]
+local lIII1I1I1I = lIllIl1I1I[l11111lI1I(_KRP[707])]
+local IIII1I1I1I = lIllIl1I1I[l11111lI1I(_KRP[708])]
+local l111lI1I1I = math[l11111lI1I(_KRP[709])](I1II1I1I1I / 0B11);
+local I111lI1I1I = (IIII1I1I1I + lIII1I1I1I) + 0B1
+l1IlIl1I1I = Instance[l11111lI1I(_KRP[710])](l11111lI1I(_KRP[711]));
+l1IlIl1I1I[l11111lI1I(_KRP[198])] = l11111lI1I(_KRP[712]);
+l1IlIl1I1I[l11111lI1I(_KRP[713])] = false
+l1IlIl1I1I[l11111lI1I(_KRP[714])] = Enum[l11111lI1I(_KRP[715])][l11111lI1I(_KRP[716])]
+l1IlIl1I1I[l11111lI1I(_KRP[717])] = 0x3E7
+l1IlIl1I1I[l11111lI1I(_KRP[718])] = true
+l1IlIl1I1I[l11111lI1I(_KRP[719])] = I1llIl1I1I[l11111lI1I(_KRP[720])]
+local ll11lI1I1I = Instance[l11111lI1I(_KRP[721])](l11111lI1I(_KRP[722]));
+ll11lI1I1I[l11111lI1I(_KRP[723])] = l11111lI1I(_KRP[724]);
+ll11lI1I1I[l11111lI1I(_KRP[725])] = UDim2[l11111lI1I(_KRP[726])](I1II1I1I1I + 0xA, llII1I1I1I + 0xA);
+ll11lI1I1I[l11111lI1I(_KRP[727])] = UDim2[l11111lI1I(_KRP[728])](.5, -(I1II1I1I1I / 0B10) - 0x5, .5, -(llII1I1I1I / 0B10) - 0x5);
+ll11lI1I1I[l11111lI1I(_KRP[729])] = Color3[l11111lI1I(_KRP[730])](0B10, 0x5, 0x10);
+ll11lI1I1I[l11111lI1I(_KRP[731])] = .72
+ll11lI1I1I[l11111lI1I(_KRP[732])] = 0B0
+ll11lI1I1I[l11111lI1I(_KRP[733])] = 0B1
+ll11lI1I1I[l11111lI1I(_KRP[734])] = l1IlIl1I1I;
+(Instance[l11111lI1I(_KRP[735])](l11111lI1I(_KRP[736]), ll11lI1I1I))[l11111lI1I(_KRP[737])] = UDim[l11111lI1I(_KRP[738])](0B0, 0x10);
+local Il11lI1I1I = Instance[l11111lI1I(_KRP[589])](l11111lI1I(_KRP[739]));
+Il11lI1I1I[l11111lI1I(_KRP[740])] = l11111lI1I(_KRP[741]);
+Il11lI1I1I[l11111lI1I(_KRP[742])] = UDim2[l11111lI1I(_KRP[743])](I1II1I1I1I, llII1I1I1I);
+Il11lI1I1I[l11111lI1I(_KRP[744])] = UDim2[l11111lI1I(_KRP[745])](.5, -I1II1I1I1I / 0B10, .5, -llII1I1I1I / 0B10);
+Il11lI1I1I[l11111lI1I(_KRP[746])] = IlllIl1I1I[l11111lI1I(_KRP[747])]
+Il11lI1I1I[l11111lI1I(_KRP[748])] = .16
+Il11lI1I1I[l11111lI1I(_KRP[749])] = 0B0
+Il11lI1I1I[l11111lI1I(_KRP[750])] = 0B10
+Il11lI1I1I[l11111lI1I(_KRP[751])] = true
+Il11lI1I1I[l11111lI1I(_KRP[219])] = l1IlIl1I1I;
+(Instance[l11111lI1I(_KRP[752])](l11111lI1I(_KRP[753]), Il11lI1I1I))[l11111lI1I(_KRP[754])] = UDim[l11111lI1I(_KRP[290])](0B0, 0xD);
+local lI11lI1I1I = Instance[l11111lI1I(_KRP[755])](l11111lI1I(_KRP[756]), Il11lI1I1I);
+lI11lI1I1I[l11111lI1I(_KRP[757])] = ColorSequence[l11111lI1I(_KRP[758])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[759])](0B0, Color3[l11111lI1I(_KRP[760])](0x15, 0x1B, 0x43)), ColorSequenceKeypoint[l11111lI1I(_KRP[761])](.48, Color3[l11111lI1I(_KRP[762])](0x7, 0xD, 0x1D)), ColorSequenceKeypoint[l11111lI1I(_KRP[763])](0B1, Color3[l11111lI1I(_KRP[764])](0x18, 0xF, 0x3A)) });
+lI11lI1I1I[l11111lI1I(_KRP[765])] = 0x7D
+local II11lI1I1I = Instance[l11111lI1I(_KRP[766])](l11111lI1I(_KRP[767]));
+II11lI1I1I[l11111lI1I(_KRP[768])] = l11111lI1I(_KRP[769]);
+II11lI1I1I[l11111lI1I(_KRP[770])] = UDim2[l11111lI1I(_KRP[771])](I1II1I1I1I, llII1I1I1I);
+II11lI1I1I[l11111lI1I(_KRP[772])] = Il11lI1I1I[l11111lI1I(_KRP[773])]
+II11lI1I1I[l11111lI1I(_KRP[774])] = 0B1
+II11lI1I1I[l11111lI1I(_KRP[775])] = 0B0
+II11lI1I1I[l11111lI1I(_KRP[776])] = false
+II11lI1I1I[l11111lI1I(_KRP[777])] = false
+II11lI1I1I[l11111lI1I(_KRP[778])] = 0x64
+II11lI1I1I[l11111lI1I(_KRP[779])] = l1IlIl1I1I;
+(Instance[l11111lI1I(_KRP[780])](l11111lI1I(_KRP[781]), II11lI1I1I))[l11111lI1I(_KRP[782])] = UDim[l11111lI1I(_KRP[783])](0B0, 0xD);
+local l1l1lI1I1I = Instance[l11111lI1I(_KRP[784])](l11111lI1I(_KRP[785]), II11lI1I1I);
+l1l1lI1I1I[l11111lI1I(_KRP[786])] = Enum[l11111lI1I(_KRP[787])][l11111lI1I(_KRP[788])]
+l1l1lI1I1I[l11111lI1I(_KRP[789])] = IlllIl1I1I[l11111lI1I(_KRP[790])]
+l1l1lI1I1I[l11111lI1I(_KRP[791])] = 1.8
+l1l1lI1I1I[l11111lI1I(_KRP[792])] = .04
+l1l1lI1I1I[l11111lI1I(_KRP[793])] = Enum[l11111lI1I(_KRP[794])][l11111lI1I(_KRP[795])]
+local I1l1lI1I1I = Instance[l11111lI1I(_KRP[796])](l11111lI1I(_KRP[797]), l1l1lI1I1I);
+I1l1lI1I1I[l11111lI1I(_KRP[798])] = ColorSequence[l11111lI1I(_KRP[799])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[800])](0B0, IlllIl1I1I[l11111lI1I(_KRP[801])]), ColorSequenceKeypoint[l11111lI1I(_KRP[802])](.5, IlllIl1I1I[l11111lI1I(_KRP[803])]), ColorSequenceKeypoint[l11111lI1I(_KRP[804])](0B1, IlllIl1I1I[l11111lI1I(_KRP[805])]) });
+I1l1lI1I1I[l11111lI1I(_KRP[806])] = 0x18
+local lll1lI1I1I = Il11lI1I1I[l11111lI1I(_KRP[807])]
+local Ill1lI1I1I = ll11lI1I1I[l11111lI1I(_KRP[808])]
+local lIl1lI1I1I = math[l11111lI1I(_KRP[809])](I1II1I1I1I * .86);
+local IIl1lI1I1I = math[l11111lI1I(_KRP[810])](llII1I1I1I * .86);
+local function l1I1lI1I1I()
+Il11lI1I1I[l11111lI1I(_KRP[811])] = UDim2[l11111lI1I(_KRP[812])](lIl1lI1I1I, IIl1lI1I1I);
+Il11lI1I1I[l11111lI1I(_KRP[813])] = UDim2[l11111lI1I(_KRP[814])](lll1lI1I1I[l11111lI1I(_KRP[815])][l11111lI1I(_KRP[816])], lll1lI1I1I[l11111lI1I(_KRP[817])][l11111lI1I(_KRP[818])] + (I1II1I1I1I - lIl1lI1I1I) / 0B10, lll1lI1I1I[l11111lI1I(_KRP[819])][l11111lI1I(_KRP[820])], lll1lI1I1I[l11111lI1I(_KRP[821])][l11111lI1I(_KRP[822])] + (llII1I1I1I - IIl1lI1I1I) / 0B10);
+Il11lI1I1I[l11111lI1I(_KRP[823])] = .42
+II11lI1I1I[l11111lI1I(_KRP[824])] = UDim2[l11111lI1I(_KRP[825])](lIl1lI1I1I, IIl1lI1I1I);
+II11lI1I1I[l11111lI1I(_KRP[826])] = Il11lI1I1I[l11111lI1I(_KRP[827])]
+ll11lI1I1I[l11111lI1I(_KRP[828])] = UDim2[l11111lI1I(_KRP[829])](lIl1lI1I1I + 0xA, IIl1lI1I1I + 0xA);
+ll11lI1I1I[l11111lI1I(_KRP[830])] = UDim2[l11111lI1I(_KRP[831])](Ill1lI1I1I[l11111lI1I(_KRP[832])][l11111lI1I(_KRP[833])], Ill1lI1I1I[l11111lI1I(_KRP[834])][l11111lI1I(_KRP[835])] + (I1II1I1I1I - lIl1lI1I1I) / 0B10, Ill1lI1I1I[l11111lI1I(_KRP[836])][l11111lI1I(_KRP[837])], Ill1lI1I1I[l11111lI1I(_KRP[838])][l11111lI1I(_KRP[839])] + (llII1I1I1I - IIl1lI1I1I) / 0B10);
+ll11lI1I1I[l11111lI1I(_KRP[840])] = 0B1
+l1l1lI1I1I[l11111lI1I(_KRP[841])] = .65;
+(II1lIl1I1I:Create(Il11lI1I1I, TweenInfo[l11111lI1I(_KRP[842])](.36, Enum[l11111lI1I(_KRP[843])][l11111lI1I(_KRP[844])], Enum[l11111lI1I(_KRP[845])][l11111lI1I(_KRP[846])]), { [l11111lI1I(_KRP[847])] = UDim2[l11111lI1I(_KRP[848])](I1II1I1I1I, llII1I1I1I), [l11111lI1I(_KRP[849])] = lll1lI1I1I, [l11111lI1I(_KRP[850])] = .16 })):Play();
+(II1lIl1I1I:Create(II11lI1I1I, TweenInfo[l11111lI1I(_KRP[851])](.36, Enum[l11111lI1I(_KRP[852])][l11111lI1I(_KRP[853])], Enum[l11111lI1I(_KRP[854])][l11111lI1I(_KRP[855])]), { [l11111lI1I(_KRP[856])] = UDim2[l11111lI1I(_KRP[857])](I1II1I1I1I, llII1I1I1I), [l11111lI1I(_KRP[858])] = lll1lI1I1I })):Play();
+(II1lIl1I1I:Create(ll11lI1I1I, TweenInfo[l11111lI1I(_KRP[859])](.36, Enum[l11111lI1I(_KRP[860])][l11111lI1I(_KRP[861])], Enum[l11111lI1I(_KRP[862])][l11111lI1I(_KRP[863])]), { [l11111lI1I(_KRP[864])] = UDim2[l11111lI1I(_KRP[865])](I1II1I1I1I + 0xA, llII1I1I1I + 0xA), [l11111lI1I(_KRP[866])] = Ill1lI1I1I, [l11111lI1I(_KRP[867])] = .72 })):Play();
+(II1lIl1I1I:Create(l1l1lI1I1I, TweenInfo[l11111lI1I(_KRP[868])](.28), { [l11111lI1I(_KRP[869])] = 0B0 })):Play()
 	end
-local l1lII1I1lI1 = Instance[I1IIl1I1lI1(_KTB[871])](I1IIl1I1lI1(_KTB[872]));
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[873])] = I1IIl1I1lI1(_KTB[874]);
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[875])] = UDim2[I1IIl1I1lI1(_KTB[876])](0B1, 0B0, 0B0, lllllII1lI1);
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[877])] = Color3[I1IIl1I1lI1(_KTB[878])](0xD, 0x15, 0x30);
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[879])] = .1
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[880])] = 0B0
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[881])] = 0B11
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[882])] = true
-l1lII1I1lI1[I1IIl1I1lI1(_KTB[883])] = llIII1I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[884])](I1IIl1I1lI1(_KTB[885]), l1lII1I1lI1))[I1IIl1I1lI1(_KTB[886])] = UDim[I1IIl1I1lI1(_KTB[887])](0B0, 0xD);
-local IllII1I1lI1 = Instance[I1IIl1I1lI1(_KTB[888])](I1IIl1I1lI1(_KTB[889]), l1lII1I1lI1);
-IllII1I1lI1[I1IIl1I1lI1(_KTB[890])] = ColorSequence[I1IIl1I1lI1(_KTB[891])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[892])](0B0, Color3[I1IIl1I1lI1(_KTB[893])](0x19, 0x2B, 0x5B)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[894])](.38, Color3[I1IIl1I1lI1(_KTB[895])](0x24, 0x1C, 0x59)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[896])](.75, Color3[I1IIl1I1lI1(_KTB[897])](0x13, 0x19, 0x3D)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[898])](0B1, Color3[I1IIl1I1lI1(_KTB[899])](0xA, 0x13, 0x28)) });
-IllII1I1lI1[I1IIl1I1lI1(_KTB[900])] = 0x12
-local lllII1I1lI1 = Instance[I1IIl1I1lI1(_KTB[901])](I1IIl1I1lI1(_KTB[902]));
-lllII1I1lI1[I1IIl1I1lI1(_KTB[903])] = I1IIl1I1lI1(_KTB[904]);
-lllII1I1lI1[I1IIl1I1lI1(_KTB[905])] = UDim2[I1IIl1I1lI1(_KTB[543])](0B1, 0B0, 0B0, 0xC);
-lllII1I1lI1[I1IIl1I1lI1(_KTB[906])] = UDim2[I1IIl1I1lI1(_KTB[884])](0B0, 0B0, 0B0, lIIII1I1lI1 - 0xC);
-lllII1I1lI1[I1IIl1I1lI1(_KTB[907])] = Color3[I1IIl1I1lI1(_KTB[908])](0xA, 0x12, 0x27);
-lllII1I1lI1[I1IIl1I1lI1(_KTB[909])] = .1
-lllII1I1lI1[I1IIl1I1lI1(_KTB[910])] = 0B0
-lllII1I1lI1[I1IIl1I1lI1(_KTB[911])] = 0x4
-lllII1I1lI1[I1IIl1I1lI1(_KTB[912])] = llIII1I1lI1
-local III1I1I1lI1 = Instance[I1IIl1I1lI1(_KTB[913])](I1IIl1I1lI1(_KTB[914]), lllII1I1lI1);
-III1I1I1lI1[I1IIl1I1lI1(_KTB[915])] = ColorSequence[I1IIl1I1lI1(_KTB[916])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[917])](0B0, Color3[I1IIl1I1lI1(_KTB[918])](0x1A, 0x1D, 0x48)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[919])](0B1, Color3[I1IIl1I1lI1(_KTB[920])](0xA, 0x12, 0x27)) });
-III1I1I1lI1[I1IIl1I1lI1(_KTB[921])] = 0x5A
-local lII1I1I1lI1 = Instance[I1IIl1I1lI1(_KTB[922])](I1IIl1I1lI1(_KTB[923]));
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[924])] = UDim2[I1IIl1I1lI1(_KTB[925])](0B1, -24, 0B1, 0B0);
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[926])] = UDim2[I1IIl1I1lI1(_KTB[927])](0B0, 0xC, 0B0, 0B0);
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[928])] = 0B1
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[929])] = Il111II1lI1[I1IIl1I1lI1(_KTB[930])][I1IIl1I1lI1(_KTB[931])]
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[932])] = ll111II1lI1[I1IIl1I1lI1(_KTB[637])]
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[933])] = Color3[I1IIl1I1lI1(_KTB[934])](0x18, 0x10, 0x44);
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[935])] = .3
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[936])] = Enum[I1IIl1I1lI1(_KTB[937])][I1IIl1I1lI1(_KTB[938])]
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[939])] = llIl1II1lI1 and 0xE or 0x10
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[940])] = Enum[I1IIl1I1lI1(_KTB[941])][I1IIl1I1lI1(_KTB[942])]
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[943])] = Enum[I1IIl1I1lI1(_KTB[944])][I1IIl1I1lI1(_KTB[945])]
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[946])] = 0x6
-lII1I1I1lI1[I1IIl1I1lI1(_KTB[947])] = l1lII1I1lI1
-local I1I1I1I1lI1 = Instance[I1IIl1I1lI1(_KTB[756])](I1IIl1I1lI1(_KTB[948]), lII1I1I1lI1);
-I1I1I1I1lI1[I1IIl1I1lI1(_KTB[949])] = ll111II1lI1[I1IIl1I1lI1(_KTB[950])]
-I1I1I1I1lI1[I1IIl1I1lI1(_KTB[951])] = .8
-I1I1I1I1lI1[I1IIl1I1lI1(_KTB[952])] = .82
-local l1I1I1I1lI1 = Instance[I1IIl1I1lI1(_KTB[953])](I1IIl1I1lI1(_KTB[954]));
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[955])] = I1IIl1I1lI1(_KTB[956]);
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[957])] = UDim2[I1IIl1I1lI1(_KTB[958])](0B1, 0B0, 0B1, 0B0);
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[959])] = 0B1
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[960])] = I1IIl1I1lI1(_KTB[961]);
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[962])] = false
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[963])] = 0B0
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[964])] = 0B111
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[965])] = l1lII1I1lI1
-local IlI1I1I1lI1 = Instance[I1IIl1I1lI1(_KTB[966])](I1IIl1I1lI1(_KTB[967]));
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[968])] = I1IIl1I1lI1(_KTB[969]);
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[970])] = UDim2[I1IIl1I1lI1(_KTB[760])](0B1, 0B0, 0B0, IIIII1I1lI1);
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[971])] = UDim2[I1IIl1I1lI1(_KTB[972])](0B0, 0B0, 0B0, lIIII1I1lI1);
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[973])] = ll111II1lI1[I1IIl1I1lI1(_KTB[974])]
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[975])] = .14
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[976])] = 0B0
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[977])] = 0B11
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[978])] = true
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[979])] = llIII1I1lI1
-local llI1I1I1lI1 = Instance[I1IIl1I1lI1(_KTB[980])](I1IIl1I1lI1(_KTB[769]));
-llI1I1I1lI1[I1IIl1I1lI1(_KTB[981])] = UDim2[I1IIl1I1lI1(_KTB[982])](0B1, 0B0, 0B0, 0B1);
-llI1I1I1lI1[I1IIl1I1lI1(_KTB[983])] = UDim2[I1IIl1I1lI1(_KTB[984])](0B0, 0B0, 0B1, 0B0);
-llI1I1I1lI1[I1IIl1I1lI1(_KTB[985])] = ll111II1lI1[I1IIl1I1lI1(_KTB[986])]
-llI1I1I1lI1[I1IIl1I1lI1(_KTB[987])] = 0B0
-llI1I1I1lI1[I1IIl1I1lI1(_KTB[988])] = 0x4
-llI1I1I1lI1[I1IIl1I1lI1(_KTB[989])] = IlI1I1I1lI1
-local II11I1I1lI1 = Instance[I1IIl1I1lI1(_KTB[990])](I1IIl1I1lI1(_KTB[991]));
-II11I1I1lI1[I1IIl1I1lI1(_KTB[992])] = UDim2[I1IIl1I1lI1(_KTB[993])](0B1, 0B0, 0B1, -l1III1I1lI1);
-II11I1I1lI1[I1IIl1I1lI1(_KTB[994])] = UDim2[I1IIl1I1lI1(_KTB[995])](0B0, 0B0, 0B0, l1III1I1lI1);
-II11I1I1lI1[I1IIl1I1lI1(_KTB[996])] = 0B1
-II11I1I1lI1[I1IIl1I1lI1(_KTB[997])] = true
-II11I1I1lI1[I1IIl1I1lI1(_KTB[998])] = 0B10
-II11I1I1lI1[I1IIl1I1lI1(_KTB[999])] = llIII1I1lI1
-local lI11I1I1lI1 = {};
-local I111I1I1lI1 = {};
-local l111I1I1lI1 = 0B0
-local function Il11I1I1lI1()
-local l1I11II1lI1 = Instance[I1IIl1I1lI1(_KTB[995])](I1IIl1I1lI1(_KTB[1000]));
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1001])] = UDim2[I1IIl1I1lI1(_KTB[1002])](0B1, 0B0, 0B1, 0B0);
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1003])] = 0B1
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1004])] = 0B11
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1005])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1006])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1007])] = Enum[I1IIl1I1lI1(_KTB[1008])][I1IIl1I1lI1(_KTB[1009])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1010])] = Enum[I1IIl1I1lI1(_KTB[1011])][I1IIl1I1lI1(_KTB[1012])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1013])] = UDim2[I1IIl1I1lI1(_KTB[927])](0B0, 0B0, 0B0, 0B0);
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1014])] = Enum[I1IIl1I1lI1(_KTB[1015])][I1IIl1I1lI1(_KTB[1016])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1017])] = 0B0
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1018])] = false
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1019])] = 0B10
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1020])] = II11I1I1lI1
-local IlI11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1021])](I1IIl1I1lI1(_KTB[1022]), l1I11II1lI1);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[1023])] = Enum[I1IIl1I1lI1(_KTB[1024])][I1IIl1I1lI1(_KTB[1025])]
-IlI11II1lI1[I1IIl1I1lI1(_KTB[1026])] = UDim[I1IIl1I1lI1(_KTB[628])](0B0, 0x4);
-local llI11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1027])](I1IIl1I1lI1(_KTB[1028]), l1I11II1lI1);
-llI11II1lI1[I1IIl1I1lI1(_KTB[1029])] = UDim[I1IIl1I1lI1(_KTB[805])](0B0, 0x8);
-llI11II1lI1[I1IIl1I1lI1(_KTB[1030])] = UDim[I1IIl1I1lI1(_KTB[1031])](0B0, 0x8);
-llI11II1lI1[I1IIl1I1lI1(_KTB[1032])] = UDim[I1IIl1I1lI1(_KTB[843])](0B0, 0x7);
-llI11II1lI1[I1IIl1I1lI1(_KTB[1033])] = UDim[I1IIl1I1lI1(_KTB[1034])](0B0, 0x7)
-return l1I11II1lI1
+local I1I1lI1I1I = Instance[l11111lI1I(_KRP[870])](l11111lI1I(_KRP[871]));
+I1I1lI1I1I[l11111lI1I(_KRP[872])] = l11111lI1I(_KRP[873]);
+I1I1lI1I1I[l11111lI1I(_KRP[874])] = UDim2[l11111lI1I(_KRP[875])](0B1, 0B0, 0B0, IlII1I1I1I);
+I1I1lI1I1I[l11111lI1I(_KRP[876])] = Color3[l11111lI1I(_KRP[877])](0xD, 0x15, 0x30);
+I1I1lI1I1I[l11111lI1I(_KRP[878])] = .1
+I1I1lI1I1I[l11111lI1I(_KRP[879])] = 0B0
+I1I1lI1I1I[l11111lI1I(_KRP[880])] = 0B11
+I1I1lI1I1I[l11111lI1I(_KRP[881])] = true
+I1I1lI1I1I[l11111lI1I(_KRP[882])] = Il11lI1I1I;
+(Instance[l11111lI1I(_KRP[883])](l11111lI1I(_KRP[781]), I1I1lI1I1I))[l11111lI1I(_KRP[884])] = UDim[l11111lI1I(_KRP[831])](0B0, 0xD);
+local llI1lI1I1I = Instance[l11111lI1I(_KRP[885])](l11111lI1I(_KRP[886]), I1I1lI1I1I);
+llI1lI1I1I[l11111lI1I(_KRP[887])] = ColorSequence[l11111lI1I(_KRP[888])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[589])](0B0, Color3[l11111lI1I(_KRP[889])](0x19, 0x2B, 0x5B)), ColorSequenceKeypoint[l11111lI1I(_KRP[890])](.38, Color3[l11111lI1I(_KRP[891])](0x24, 0x1C, 0x59)), ColorSequenceKeypoint[l11111lI1I(_KRP[892])](.75, Color3[l11111lI1I(_KRP[893])](0x13, 0x19, 0x3D)), ColorSequenceKeypoint[l11111lI1I(_KRP[784])](0B1, Color3[l11111lI1I(_KRP[894])](0xA, 0x13, 0x28)) });
+llI1lI1I1I[l11111lI1I(_KRP[895])] = 0x12
+local IlI1lI1I1I = Instance[l11111lI1I(_KRP[896])](l11111lI1I(_KRP[897]));
+IlI1lI1I1I[l11111lI1I(_KRP[898])] = l11111lI1I(_KRP[899]);
+IlI1lI1I1I[l11111lI1I(_KRP[900])] = UDim2[l11111lI1I(_KRP[901])](0B1, 0B0, 0B0, 0xC);
+IlI1lI1I1I[l11111lI1I(_KRP[902])] = UDim2[l11111lI1I(_KRP[903])](0B0, 0B0, 0B0, IIII1I1I1I - 0xC);
+IlI1lI1I1I[l11111lI1I(_KRP[904])] = Color3[l11111lI1I(_KRP[905])](0xA, 0x12, 0x27);
+IlI1lI1I1I[l11111lI1I(_KRP[906])] = .1
+IlI1lI1I1I[l11111lI1I(_KRP[907])] = 0B0
+IlI1lI1I1I[l11111lI1I(_KRP[908])] = 0x4
+IlI1lI1I1I[l11111lI1I(_KRP[909])] = Il11lI1I1I
+local lII1lI1I1I = Instance[l11111lI1I(_KRP[738])](l11111lI1I(_KRP[910]), IlI1lI1I1I);
+lII1lI1I1I[l11111lI1I(_KRP[911])] = ColorSequence[l11111lI1I(_KRP[912])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[759])](0B0, Color3[l11111lI1I(_KRP[913])](0x1A, 0x1D, 0x48)), ColorSequenceKeypoint[l11111lI1I(_KRP[914])](0B1, Color3[l11111lI1I(_KRP[915])](0xA, 0x12, 0x27)) });
+lII1lI1I1I[l11111lI1I(_KRP[916])] = 0x5A
+local III1lI1I1I = Instance[l11111lI1I(_KRP[917])](l11111lI1I(_KRP[918]));
+III1lI1I1I[l11111lI1I(_KRP[919])] = UDim2[l11111lI1I(_KRP[605])](0B1, -24, 0B1, 0B0);
+III1lI1I1I[l11111lI1I(_KRP[920])] = UDim2[l11111lI1I(_KRP[921])](0B0, 0xC, 0B0, 0B0);
+III1lI1I1I[l11111lI1I(_KRP[922])] = 0B1
+III1lI1I1I[l11111lI1I(_KRP[923])] = llllIl1I1I[l11111lI1I(_KRP[924])][l11111lI1I(_KRP[925])]
+III1lI1I1I[l11111lI1I(_KRP[926])] = IlllIl1I1I[l11111lI1I(_KRP[927])]
+III1lI1I1I[l11111lI1I(_KRP[928])] = Color3[l11111lI1I(_KRP[929])](0x18, 0x10, 0x44);
+III1lI1I1I[l11111lI1I(_KRP[930])] = .3
+III1lI1I1I[l11111lI1I(_KRP[931])] = Enum[l11111lI1I(_KRP[932])][l11111lI1I(_KRP[933])]
+III1lI1I1I[l11111lI1I(_KRP[934])] = Il1IIl1I1I and 0xE or 0x10
+III1lI1I1I[l11111lI1I(_KRP[935])] = Enum[l11111lI1I(_KRP[936])][l11111lI1I(_KRP[937])]
+III1lI1I1I[l11111lI1I(_KRP[938])] = Enum[l11111lI1I(_KRP[939])][l11111lI1I(_KRP[940])]
+III1lI1I1I[l11111lI1I(_KRP[941])] = 0x6
+III1lI1I1I[l11111lI1I(_KRP[942])] = I1I1lI1I1I
+local l11llI1I1I = Instance[l11111lI1I(_KRP[943])](l11111lI1I(_KRP[944]), III1lI1I1I);
+l11llI1I1I[l11111lI1I(_KRP[945])] = IlllIl1I1I[l11111lI1I(_KRP[946])]
+l11llI1I1I[l11111lI1I(_KRP[947])] = .8
+l11llI1I1I[l11111lI1I(_KRP[291])] = .82
+local I11llI1I1I = Instance[l11111lI1I(_KRP[948])](l11111lI1I(_KRP[949]));
+I11llI1I1I[l11111lI1I(_KRP[950])] = l11111lI1I(_KRP[951]);
+I11llI1I1I[l11111lI1I(_KRP[952])] = UDim2[l11111lI1I(_KRP[745])](0B1, 0B0, 0B1, 0B0);
+I11llI1I1I[l11111lI1I(_KRP[953])] = 0B1
+I11llI1I1I[l11111lI1I(_KRP[954])] = l11111lI1I(_KRP[955]);
+I11llI1I1I[l11111lI1I(_KRP[956])] = false
+I11llI1I1I[l11111lI1I(_KRP[957])] = 0B0
+I11llI1I1I[l11111lI1I(_KRP[958])] = 0x7
+I11llI1I1I[l11111lI1I(_KRP[959])] = I1I1lI1I1I
+local ll1llI1I1I = Instance[l11111lI1I(_KRP[960])](l11111lI1I(_KRP[961]));
+ll1llI1I1I[l11111lI1I(_KRP[962])] = l11111lI1I(_KRP[963]);
+ll1llI1I1I[l11111lI1I(_KRP[964])] = UDim2[l11111lI1I(_KRP[620])](0B1, 0B0, 0B0, lIII1I1I1I);
+ll1llI1I1I[l11111lI1I(_KRP[965])] = UDim2[l11111lI1I(_KRP[966])](0B0, 0B0, 0B0, IIII1I1I1I);
+ll1llI1I1I[l11111lI1I(_KRP[967])] = IlllIl1I1I[l11111lI1I(_KRP[968])]
+ll1llI1I1I[l11111lI1I(_KRP[969])] = .14
+ll1llI1I1I[l11111lI1I(_KRP[970])] = 0B0
+ll1llI1I1I[l11111lI1I(_KRP[971])] = 0B11
+ll1llI1I1I[l11111lI1I(_KRP[972])] = true
+ll1llI1I1I[l11111lI1I(_KRP[973])] = Il11lI1I1I
+local Il1llI1I1I = Instance[l11111lI1I(_KRP[974])](l11111lI1I(_KRP[975]));
+Il1llI1I1I[l11111lI1I(_KRP[976])] = UDim2[l11111lI1I(_KRP[977])](0B1, 0B0, 0B0, 0B1);
+Il1llI1I1I[l11111lI1I(_KRP[978])] = UDim2[l11111lI1I(_KRP[979])](0B0, 0B0, 0B1, 0B0);
+Il1llI1I1I[l11111lI1I(_KRP[980])] = IlllIl1I1I[l11111lI1I(_KRP[981])]
+Il1llI1I1I[l11111lI1I(_KRP[982])] = 0B0
+Il1llI1I1I[l11111lI1I(_KRP[983])] = 0x4
+Il1llI1I1I[l11111lI1I(_KRP[984])] = ll1llI1I1I
+local lI1llI1I1I = Instance[l11111lI1I(_KRP[985])](l11111lI1I(_KRP[722]));
+lI1llI1I1I[l11111lI1I(_KRP[986])] = UDim2[l11111lI1I(_KRP[987])](0B1, 0B0, 0B1, -I111lI1I1I);
+lI1llI1I1I[l11111lI1I(_KRP[988])] = UDim2[l11111lI1I(_KRP[977])](0B0, 0B0, 0B0, I111lI1I1I);
+lI1llI1I1I[l11111lI1I(_KRP[989])] = 0B1
+lI1llI1I1I[l11111lI1I(_KRP[990])] = true
+lI1llI1I1I[l11111lI1I(_KRP[991])] = 0B10
+lI1llI1I1I[l11111lI1I(_KRP[992])] = Il11lI1I1I
+local II1llI1I1I = {};
+local l1lllI1I1I = {};
+local I1lllI1I1I = 0B0
+local function lllllI1I1I()
+local I11lIl1I1I = Instance[l11111lI1I(_KRP[993])](l11111lI1I(_KRP[994]));
+I11lIl1I1I[l11111lI1I(_KRP[995])] = UDim2[l11111lI1I(_KRP[996])](0B1, 0B0, 0B1, 0B0);
+I11lIl1I1I[l11111lI1I(_KRP[997])] = 0B1
+I11lIl1I1I[l11111lI1I(_KRP[998])] = 0B11
+I11lIl1I1I[l11111lI1I(_KRP[999])] = IlllIl1I1I[l11111lI1I(_KRP[1000])]
+I11lIl1I1I[l11111lI1I(_KRP[1001])] = Enum[l11111lI1I(_KRP[1002])][l11111lI1I(_KRP[1003])]
+I11lIl1I1I[l11111lI1I(_KRP[1004])] = Enum[l11111lI1I(_KRP[1005])][l11111lI1I(_KRP[1006])]
+I11lIl1I1I[l11111lI1I(_KRP[1007])] = UDim2[l11111lI1I(_KRP[1008])](0B0, 0B0, 0B0, 0B0);
+I11lIl1I1I[l11111lI1I(_KRP[1009])] = Enum[l11111lI1I(_KRP[1010])][l11111lI1I(_KRP[1011])]
+I11lIl1I1I[l11111lI1I(_KRP[1012])] = 0B0
+I11lIl1I1I[l11111lI1I(_KRP[1013])] = false
+I11lIl1I1I[l11111lI1I(_KRP[1014])] = 0B10
+I11lIl1I1I[l11111lI1I(_KRP[1015])] = lI1llI1I1I
+local ll1lIl1I1I = Instance[l11111lI1I(_KRP[1016])](l11111lI1I(_KRP[1017]), I11lIl1I1I);
+ll1lIl1I1I[l11111lI1I(_KRP[1018])] = Enum[l11111lI1I(_KRP[1019])][l11111lI1I(_KRP[1020])]
+ll1lIl1I1I[l11111lI1I(_KRP[1021])] = UDim[l11111lI1I(_KRP[804])](0B0, 0x4);
+local Il1lIl1I1I = Instance[l11111lI1I(_KRP[1022])](l11111lI1I(_KRP[1023]), I11lIl1I1I);
+Il1lIl1I1I[l11111lI1I(_KRP[1024])] = UDim[l11111lI1I(_KRP[1016])](0B0, 0x8);
+Il1lIl1I1I[l11111lI1I(_KRP[1025])] = UDim[l11111lI1I(_KRP[1026])](0B0, 0x8);
+Il1lIl1I1I[l11111lI1I(_KRP[1027])] = UDim[l11111lI1I(_KRP[1028])](0B0, 0x7);
+Il1lIl1I1I[l11111lI1I(_KRP[1029])] = UDim[l11111lI1I(_KRP[1030])](0B0, 0x7)
+return I11lIl1I1I
 	end
-local function ll11I1I1lI1(l1I11II1lI1)
-for IlI11II1lI1, llI11II1lI1 in pairs(lI11I1I1lI1) do
-local II111II1lI1 = IlI11II1lI1 == l1I11II1lI1
-llI11II1lI1[I1IIl1I1lI1(_KTB[1035])] = II111II1lI1 and Color3[I1IIl1I1lI1(_KTB[1036])](0x14, 0x31, 0x4E) or ll111II1lI1[I1IIl1I1lI1(_KTB[1037])]
-llI11II1lI1[I1IIl1I1lI1(_KTB[1038])] = II111II1lI1 and .04 or .16
-llI11II1lI1[I1IIl1I1lI1(_KTB[1039])] = II111II1lI1 and ll111II1lI1[I1IIl1I1lI1(_KTB[1040])] or ll111II1lI1[I1IIl1I1lI1(_KTB[1041])]
-local lI111II1lI1 = llI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1042]))
-if lI111II1lI1 then
-lI111II1lI1[I1IIl1I1lI1(_KTB[1043])] = II111II1lI1 and ll111II1lI1[I1IIl1I1lI1(_KTB[1044])] or ll111II1lI1[I1IIl1I1lI1(_KTB[1045])]
+local function IllllI1I1I(I11lIl1I1I)
+for ll1lIl1I1I, Il1lIl1I1I in pairs(II1llI1I1I) do
+local lI1lIl1I1I = ll1lIl1I1I == I11lIl1I1I
+Il1lIl1I1I[l11111lI1I(_KRP[1031])] = lI1lIl1I1I and Color3[l11111lI1I(_KRP[1032])](0x14, 0x31, 0x4E) or IlllIl1I1I[l11111lI1I(_KRP[1033])]
+Il1lIl1I1I[l11111lI1I(_KRP[1034])] = lI1lIl1I1I and .04 or .16
+Il1lIl1I1I[l11111lI1I(_KRP[1035])] = lI1lIl1I1I and IlllIl1I1I[l11111lI1I(_KRP[1036])] or IlllIl1I1I[l11111lI1I(_KRP[1037])]
+local II1lIl1I1I = Il1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1038]))
+if II1lIl1I1I then
+II1lIl1I1I[l11111lI1I(_KRP[1039])] = lI1lIl1I1I and IlllIl1I1I[l11111lI1I(_KRP[1040])] or IlllIl1I1I[l11111lI1I(_KRP[1041])]
 			end
 		end
-for IlI11II1lI1, llI11II1lI1 in pairs(I111I1I1lI1) do
-local II111II1lI1 = IlI11II1lI1 == l1I11II1lI1
-llI11II1lI1[I1IIl1I1lI1(_KTB[1046])] = II111II1lI1
-if II111II1lI1 then
-llI11II1lI1[I1IIl1I1lI1(_KTB[1047])] = Vector2[I1IIl1I1lI1(_KTB[1048])](0B0, 0B0)
+for ll1lIl1I1I, Il1lIl1I1I in pairs(l1lllI1I1I) do
+local lI1lIl1I1I = ll1lIl1I1I == I11lIl1I1I
+Il1lIl1I1I[l11111lI1I(_KRP[1042])] = lI1lIl1I1I
+if lI1lIl1I1I then
+Il1lIl1I1I[l11111lI1I(_KRP[1043])] = Vector2[l11111lI1I(_KRP[1044])](0B0, 0B0)
 			end
 		end
 	end
-local function IIl1I1I1lI1(l1I11II1lI1)
-local IlI11II1lI1 = l111I1I1lI1
-l111I1I1lI1 = l111I1I1lI1 + 0B1
-local llI11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1049])](I1IIl1I1lI1(_KTB[1050]));
-llI11II1lI1[I1IIl1I1lI1(_KTB[273])] = l1I11II1lI1
-llI11II1lI1[I1IIl1I1lI1(_KTB[1051])] = UDim2[I1IIl1I1lI1(_KTB[1052])](.33333333333333, 0B0, 0B0, IIIII1I1lI1);
-llI11II1lI1[I1IIl1I1lI1(_KTB[1053])] = UDim2[I1IIl1I1lI1(_KTB[1054])](IlI11II1lI1 / 0B11, 0B0, 0B0, 0B0);
-llI11II1lI1[I1IIl1I1lI1(_KTB[1055])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1056])]
-llI11II1lI1[I1IIl1I1lI1(_KTB[1057])] = .16
-llI11II1lI1[I1IIl1I1lI1(_KTB[1058])] = l1I11II1lI1
-llI11II1lI1[I1IIl1I1lI1(_KTB[1059])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1060])]
-llI11II1lI1[I1IIl1I1lI1(_KTB[1061])] = Color3[I1IIl1I1lI1(_KTB[730])](0B0, 0B0, 0B0);
-llI11II1lI1[I1IIl1I1lI1(_KTB[1062])] = .35
-llI11II1lI1[I1IIl1I1lI1(_KTB[1063])] = Enum[I1IIl1I1lI1(_KTB[1064])][I1IIl1I1lI1(_KTB[1065])]
-llI11II1lI1[I1IIl1I1lI1(_KTB[1066])] = llIl1II1lI1 and 0xD or 0xF
-llI11II1lI1[I1IIl1I1lI1(_KTB[1067])] = 0B0
-llI11II1lI1[I1IIl1I1lI1(_KTB[1068])] = 0x4
-llI11II1lI1[I1IIl1I1lI1(_KTB[1069])] = IlI1I1I1lI1
-local II111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1070])](I1IIl1I1lI1(_KTB[1071]));
-II111II1lI1[I1IIl1I1lI1(_KTB[1072])] = I1IIl1I1lI1(_KTB[1073]);
-II111II1lI1[I1IIl1I1lI1(_KTB[1074])] = UDim2[I1IIl1I1lI1(_KTB[805])](0B1, 0B0, 0B0, 0B10);
-II111II1lI1[I1IIl1I1lI1(_KTB[1075])] = UDim2[I1IIl1I1lI1(_KTB[1076])](0B0, 0B0, 0B1, -0B10);
-II111II1lI1[I1IIl1I1lI1(_KTB[1077])] = ll111II1lI1[I1IIl1I1lI1(_KTB[14])]
-II111II1lI1[I1IIl1I1lI1(_KTB[1078])] = 0B0
-II111II1lI1[I1IIl1I1lI1(_KTB[1079])] = 0x5
-II111II1lI1[I1IIl1I1lI1(_KTB[549])] = llI11II1lI1
-local lI111II1lI1 = Il11I1I1lI1();
-lI11I1I1lI1[l1I11II1lI1] = llI11II1lI1
-I111I1I1lI1[l1I11II1lI1] = lI111II1lI1
-llI11II1lI1[I1IIl1I1lI1(_KTB[1080])]:Connect(function()
-ll11I1I1lI1(l1I11II1lI1)
+local function lIlllI1I1I(I11lIl1I1I)
+local ll1lIl1I1I = I1lllI1I1I
+I1lllI1I1I = I1lllI1I1I + 0B1
+local Il1lIl1I1I = Instance[l11111lI1I(_KRP[1026])](l11111lI1I(_KRP[1045]));
+Il1lIl1I1I[l11111lI1I(_KRP[1046])] = I11lIl1I1I
+Il1lIl1I1I[l11111lI1I(_KRP[1047])] = UDim2[l11111lI1I(_KRP[1048])](.33333333333333, 0B0, 0B0, lIII1I1I1I);
+Il1lIl1I1I[l11111lI1I(_KRP[1049])] = UDim2[l11111lI1I(_KRP[1050])](ll1lIl1I1I / 0B11, 0B0, 0B0, 0B0);
+Il1lIl1I1I[l11111lI1I(_KRP[1051])] = IlllIl1I1I[l11111lI1I(_KRP[1033])]
+Il1lIl1I1I[l11111lI1I(_KRP[1052])] = .16
+Il1lIl1I1I[l11111lI1I(_KRP[1053])] = I11lIl1I1I
+Il1lIl1I1I[l11111lI1I(_KRP[1054])] = IlllIl1I1I[l11111lI1I(_KRP[1055])]
+Il1lIl1I1I[l11111lI1I(_KRP[1056])] = Color3[l11111lI1I(_KRP[1057])](0B0, 0B0, 0B0);
+Il1lIl1I1I[l11111lI1I(_KRP[1058])] = .35
+Il1lIl1I1I[l11111lI1I(_KRP[1059])] = Enum[l11111lI1I(_KRP[1060])][l11111lI1I(_KRP[1061])]
+Il1lIl1I1I[l11111lI1I(_KRP[1062])] = Il1IIl1I1I and 0xD or 0xF
+Il1lIl1I1I[l11111lI1I(_KRP[1063])] = 0B0
+Il1lIl1I1I[l11111lI1I(_KRP[1064])] = 0x4
+Il1lIl1I1I[l11111lI1I(_KRP[1065])] = ll1llI1I1I
+local lI1lIl1I1I = Instance[l11111lI1I(_KRP[1066])](l11111lI1I(_KRP[1067]));
+lI1lIl1I1I[l11111lI1I(_KRP[1068])] = l11111lI1I(_KRP[1069]);
+lI1lIl1I1I[l11111lI1I(_KRP[1070])] = UDim2[l11111lI1I(_KRP[1071])](0B1, 0B0, 0B0, 0B10);
+lI1lIl1I1I[l11111lI1I(_KRP[1072])] = UDim2[l11111lI1I(_KRP[1044])](0B0, 0B0, 0B1, -0B10);
+lI1lIl1I1I[l11111lI1I(_KRP[1073])] = IlllIl1I1I[l11111lI1I(_KRP[1074])]
+lI1lIl1I1I[l11111lI1I(_KRP[1075])] = 0B0
+lI1lIl1I1I[l11111lI1I(_KRP[1076])] = 0x5
+lI1lIl1I1I[l11111lI1I(_KRP[1077])] = Il1lIl1I1I
+local II1lIl1I1I = lllllI1I1I();
+II1llI1I1I[I11lIl1I1I] = Il1lIl1I1I
+l1lllI1I1I[I11lIl1I1I] = II1lIl1I1I
+Il1lIl1I1I[l11111lI1I(_KRP[1078])]:Connect(function()
+IllllI1I1I(I11lIl1I1I)
 		end)
-return lI111II1lI1
+return II1lIl1I1I
 	end
-local function lIl1I1I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1)
-local II111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1081])](I1IIl1I1lI1(_KTB[1082]));
-II111II1lI1[I1IIl1I1lI1(_KTB[1083])] = UDim2[I1IIl1I1lI1(_KTB[389])](0B1, 0B0, 0B0, 0x14);
-II111II1lI1[I1IIl1I1lI1(_KTB[1084])] = 0B1
-II111II1lI1[I1IIl1I1lI1(_KTB[1085])] = IlI11II1lI1
-II111II1lI1[I1IIl1I1lI1(_KTB[1086])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1087])]
-II111II1lI1[I1IIl1I1lI1(_KTB[1088])] = Color3[I1IIl1I1lI1(_KTB[1089])](0B0, 0B0, 0B0);
-II111II1lI1[I1IIl1I1lI1(_KTB[1090])] = .42
-II111II1lI1[I1IIl1I1lI1(_KTB[1091])] = Enum[I1IIl1I1lI1(_KTB[1092])][I1IIl1I1lI1(_KTB[1093])]
-II111II1lI1[I1IIl1I1lI1(_KTB[1094])] = llIl1II1lI1 and 0xD or 0B1110
-II111II1lI1[I1IIl1I1lI1(_KTB[1095])] = Enum[I1IIl1I1lI1(_KTB[1096])][I1IIl1I1lI1(_KTB[1097])]
-II111II1lI1[I1IIl1I1lI1(_KTB[1098])] = llI11II1lI1
-II111II1lI1[I1IIl1I1lI1(_KTB[1019])] = 0B10
-II111II1lI1[I1IIl1I1lI1(_KTB[1099])] = l1I11II1lI1
-local lI111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1100])](I1IIl1I1lI1(_KTB[1101]), II111II1lI1);
-lI111II1lI1[I1IIl1I1lI1(_KTB[1102])] = Color3[I1IIl1I1lI1(_KTB[1103])](0xA, 0xA, 0xA);
-lI111II1lI1[I1IIl1I1lI1(_KTB[1104])] = 0B1
-lI111II1lI1[I1IIl1I1lI1(_KTB[1105])] = .5
+local function IIlllI1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I)
+local lI1lIl1I1I = Instance[l11111lI1I(_KRP[892])](l11111lI1I(_KRP[1079]));
+lI1lIl1I1I[l11111lI1I(_KRP[1080])] = UDim2[l11111lI1I(_KRP[1081])](0B1, 0B0, 0B0, 0x14);
+lI1lIl1I1I[l11111lI1I(_KRP[1082])] = 0B1
+lI1lIl1I1I[l11111lI1I(_KRP[1083])] = ll1lIl1I1I
+lI1lIl1I1I[l11111lI1I(_KRP[1084])] = IlllIl1I1I[l11111lI1I(_KRP[1085])]
+lI1lIl1I1I[l11111lI1I(_KRP[1086])] = Color3[l11111lI1I(_KRP[1087])](0B0, 0B0, 0B0);
+lI1lIl1I1I[l11111lI1I(_KRP[1088])] = .42
+lI1lIl1I1I[l11111lI1I(_KRP[1089])] = Enum[l11111lI1I(_KRP[1090])][l11111lI1I(_KRP[1091])]
+lI1lIl1I1I[l11111lI1I(_KRP[1092])] = Il1IIl1I1I and 0xD or 0xE
+lI1lIl1I1I[l11111lI1I(_KRP[1093])] = Enum[l11111lI1I(_KRP[1094])][l11111lI1I(_KRP[1095])]
+lI1lIl1I1I[l11111lI1I(_KRP[1096])] = Il1lIl1I1I
+lI1lIl1I1I[l11111lI1I(_KRP[1097])] = 0B10
+lI1lIl1I1I[l11111lI1I(_KRP[1098])] = I11lIl1I1I
+local II1lIl1I1I = Instance[l11111lI1I(_KRP[710])](l11111lI1I(_KRP[1099]), lI1lIl1I1I);
+II1lIl1I1I[l11111lI1I(_KRP[1100])] = Color3[l11111lI1I(_KRP[1101])](0xA, 0xA, 0xA);
+II1lIl1I1I[l11111lI1I(_KRP[1102])] = 0B1
+II1lIl1I1I[l11111lI1I(_KRP[1103])] = .5
 	end
-local function I1l1I1I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1, II111II1lI1)
-local I1111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1106])](I1IIl1I1lI1(_KTB[1107]));
-I1111II1lI1[I1IIl1I1lI1(_KTB[1108])] = I1IIl1I1lI1(_KTB[1109]) .. llI11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1110])] = UDim2[I1IIl1I1lI1(_KTB[1111])](0B1, 0B0, 0B0, 0x2E);
-I1111II1lI1[I1IIl1I1lI1(_KTB[1112])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1113])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[1114])] = .16
-I1111II1lI1[I1IIl1I1lI1(_KTB[1115])] = 0B0
-I1111II1lI1[I1IIl1I1lI1(_KTB[1116])] = llI11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[750])] = 0B10
-I1111II1lI1[I1IIl1I1lI1(_KTB[1117])] = l1I11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1118])](I1IIl1I1lI1(_KTB[1119]), I1111II1lI1))[I1IIl1I1lI1(_KTB[1120])] = UDim[I1IIl1I1lI1(_KTB[1121])](0B0, 0x6);
-local l1111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1122])](I1IIl1I1lI1(_KTB[1123]), I1111II1lI1);
-l1111II1lI1[I1IIl1I1lI1(_KTB[1124])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1125])]
-l1111II1lI1[I1IIl1I1lI1(_KTB[1126])] = 0B1
-l1111II1lI1[I1IIl1I1lI1(_KTB[1127])] = .35
-local Il111II1lI1 = Instance[I1IIl1I1lI1(_KTB[782])](I1IIl1I1lI1(_KTB[1128]));
-Il111II1lI1[I1IIl1I1lI1(_KTB[1129])] = UDim2[I1IIl1I1lI1(_KTB[1130])](0B1, -58, 0B1, 0B0);
-Il111II1lI1[I1IIl1I1lI1(_KTB[1131])] = UDim2[I1IIl1I1lI1(_KTB[1132])](0B0, 0xC, 0B0, 0B0);
-Il111II1lI1[I1IIl1I1lI1(_KTB[1133])] = 0B1
-Il111II1lI1[I1IIl1I1lI1(_KTB[1134])] = IlI11II1lI1
-Il111II1lI1[I1IIl1I1lI1(_KTB[1135])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1136])]
-Il111II1lI1[I1IIl1I1lI1(_KTB[1137])] = Color3[I1IIl1I1lI1(_KTB[1138])](0B0, 0B0, 0B0);
-Il111II1lI1[I1IIl1I1lI1(_KTB[1139])] = .32
-Il111II1lI1[I1IIl1I1lI1(_KTB[1140])] = Enum[I1IIl1I1lI1(_KTB[1141])][I1IIl1I1lI1(_KTB[1142])]
-Il111II1lI1[I1IIl1I1lI1(_KTB[1143])] = 0xF
-Il111II1lI1[I1IIl1I1lI1(_KTB[1144])] = Enum[I1IIl1I1lI1(_KTB[1145])][I1IIl1I1lI1(_KTB[1146])]
-Il111II1lI1[I1IIl1I1lI1(_KTB[1147])] = true
-Il111II1lI1[I1IIl1I1lI1(_KTB[1148])] = 0B11
-Il111II1lI1[I1IIl1I1lI1(_KTB[1149])] = I1111II1lI1
-local IIl11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1100])](I1IIl1I1lI1(_KTB[1150]));
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1129])] = UDim2[I1IIl1I1lI1(_KTB[1151])](0x24, 0x12);
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1152])] = UDim2[I1IIl1I1lI1(_KTB[1121])](0B1, -46, .5, -9);
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1153])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1154])]
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1155])] = 0B0
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1156])] = 0B11
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1157])] = I1111II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1158])](I1IIl1I1lI1(_KTB[1159]), IIl11II1lI1))[I1IIl1I1lI1(_KTB[1160])] = UDim[I1IIl1I1lI1(_KTB[324])](0B1, 0B0);
-local I1l11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1161])](I1IIl1I1lI1(_KTB[1162]));
-I1l11II1lI1[I1IIl1I1lI1(_KTB[992])] = UDim2[I1IIl1I1lI1(_KTB[1163])](0xC, 0xC);
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1164])] = UDim2[I1IIl1I1lI1(_KTB[1165])](0B0, 0B11, .5, -6);
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1166])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1167])]
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1168])] = 0B0
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1169])] = 0B100
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1170])] = IIl11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1171])](I1IIl1I1lI1(_KTB[1172]), I1l11II1lI1))[I1IIl1I1lI1(_KTB[1173])] = UDim[I1IIl1I1lI1(_KTB[1174])](0B1, 0B0);
-local l1l11II1lI1 = false
-local Ill11II1lI1 = 0B0
-local lll11II1lI1 = .22
-local function IIIl1II1lI1(l1I11II1lI1, IlI11II1lI1)
-if l1l11II1lI1 == l1I11II1lI1 then
+local function l1IllI1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I, lI1lIl1I1I)
+local l1llIl1I1I = Instance[l11111lI1I(_KRP[1104])](l11111lI1I(_KRP[1105]));
+l1llIl1I1I[l11111lI1I(_KRP[1106])] = l11111lI1I(_KRP[1107]) .. Il1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1108])] = UDim2[l11111lI1I(_KRP[1109])](0B1, 0B0, 0B0, 0x2E);
+l1llIl1I1I[l11111lI1I(_KRP[1110])] = IlllIl1I1I[l11111lI1I(_KRP[1111])]
+l1llIl1I1I[l11111lI1I(_KRP[1112])] = .16
+l1llIl1I1I[l11111lI1I(_KRP[1113])] = 0B0
+l1llIl1I1I[l11111lI1I(_KRP[1114])] = Il1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[627])] = 0B10
+l1llIl1I1I[l11111lI1I(_KRP[1115])] = I11lIl1I1I;
+(Instance[l11111lI1I(_KRP[979])](l11111lI1I(_KRP[1116]), l1llIl1I1I))[l11111lI1I(_KRP[1117])] = UDim[l11111lI1I(_KRP[1118])](0B0, 0x6);
+local I1llIl1I1I = Instance[l11111lI1I(_KRP[1119])](l11111lI1I(_KRP[1120]), l1llIl1I1I);
+I1llIl1I1I[l11111lI1I(_KRP[1121])] = IlllIl1I1I[l11111lI1I(_KRP[1122])]
+I1llIl1I1I[l11111lI1I(_KRP[1123])] = 0B1
+I1llIl1I1I[l11111lI1I(_KRP[1124])] = .35
+local llllIl1I1I = Instance[l11111lI1I(_KRP[1125])](l11111lI1I(_KRP[1126]));
+llllIl1I1I[l11111lI1I(_KRP[1127])] = UDim2[l11111lI1I(_KRP[1125])](0B1, -58, 0B1, 0B0);
+llllIl1I1I[l11111lI1I(_KRP[1128])] = UDim2[l11111lI1I(_KRP[1129])](0B0, 0xC, 0B0, 0B0);
+llllIl1I1I[l11111lI1I(_KRP[1130])] = 0B1
+llllIl1I1I[l11111lI1I(_KRP[1131])] = ll1lIl1I1I
+llllIl1I1I[l11111lI1I(_KRP[1132])] = IlllIl1I1I[l11111lI1I(_KRP[1133])]
+llllIl1I1I[l11111lI1I(_KRP[1134])] = Color3[l11111lI1I(_KRP[1135])](0B0, 0B0, 0B0);
+llllIl1I1I[l11111lI1I(_KRP[1136])] = .32
+llllIl1I1I[l11111lI1I(_KRP[1137])] = Enum[l11111lI1I(_KRP[1138])][l11111lI1I(_KRP[1139])]
+llllIl1I1I[l11111lI1I(_KRP[1140])] = 0xF
+llllIl1I1I[l11111lI1I(_KRP[1141])] = Enum[l11111lI1I(_KRP[1142])][l11111lI1I(_KRP[1143])]
+llllIl1I1I[l11111lI1I(_KRP[1144])] = true
+llllIl1I1I[l11111lI1I(_KRP[1145])] = 0B11
+llllIl1I1I[l11111lI1I(_KRP[1146])] = l1llIl1I1I
+local lIllIl1I1I = Instance[l11111lI1I(_KRP[1147])](l11111lI1I(_KRP[1148]));
+lIllIl1I1I[l11111lI1I(_KRP[1149])] = UDim2[l11111lI1I(_KRP[1150])](0x24, 0x12);
+lIllIl1I1I[l11111lI1I(_KRP[1151])] = UDim2[l11111lI1I(_KRP[948])](0B1, -46, .5, -9);
+lIllIl1I1I[l11111lI1I(_KRP[1152])] = IlllIl1I1I[l11111lI1I(_KRP[1153])]
+lIllIl1I1I[l11111lI1I(_KRP[1154])] = 0B0
+lIllIl1I1I[l11111lI1I(_KRP[1097])] = 0B11
+lIllIl1I1I[l11111lI1I(_KRP[1155])] = l1llIl1I1I;
+(Instance[l11111lI1I(_KRP[1156])](l11111lI1I(_KRP[1157]), lIllIl1I1I))[l11111lI1I(_KRP[1158])] = UDim[l11111lI1I(_KRP[1159])](0B1, 0B0);
+local l1IlIl1I1I = Instance[l11111lI1I(_KRP[1028])](l11111lI1I(_KRP[1160]));
+l1IlIl1I1I[l11111lI1I(_KRP[1161])] = UDim2[l11111lI1I(_KRP[1162])](0B1100, 0xC);
+l1IlIl1I1I[l11111lI1I(_KRP[1163])] = UDim2[l11111lI1I(_KRP[1164])](0B0, 0B11, .5, -6);
+l1IlIl1I1I[l11111lI1I(_KRP[1165])] = IlllIl1I1I[l11111lI1I(_KRP[1166])]
+l1IlIl1I1I[l11111lI1I(_KRP[1167])] = 0B0
+l1IlIl1I1I[l11111lI1I(_KRP[1168])] = 0x4
+l1IlIl1I1I[l11111lI1I(_KRP[1169])] = lIllIl1I1I;
+(Instance[l11111lI1I(_KRP[1170])](l11111lI1I(_KRP[1171]), l1IlIl1I1I))[l11111lI1I(_KRP[1172])] = UDim[l11111lI1I(_KRP[1173])](0B1, 0B0);
+local I1IlIl1I1I = false
+local llIlIl1I1I = 0B0
+local IlIlIl1I1I = .22
+local function lIIlIl1I1I(I11lIl1I1I, ll1lIl1I1I)
+if I1IlIl1I1I == I11lIl1I1I then
 return
 			end
-if not IlI11II1lI1 and II111II1lI1 then
-local IlI11II1lI1 = II111II1lI1(l1I11II1lI1)
-if IlI11II1lI1 == false then
+if not ll1lIl1I1I and lI1lIl1I1I then
+local ll1lIl1I1I = lI1lIl1I1I(I11lIl1I1I)
+if ll1lIl1I1I == false then
 return
 				end
 			end
-l1l11II1lI1 = l1I11II1lI1;
-(lI111II1lI1:Create(l1111II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1175])], { [I1IIl1I1lI1(_KTB[1176])] = l1I11II1lI1 and ll111II1lI1[I1IIl1I1lI1(_KTB[1177])] or ll111II1lI1[I1IIl1I1lI1(_KTB[1178])], [I1IIl1I1lI1(_KTB[1179])] = l1I11II1lI1 and .04 or .35 })):Play();
-(lI111II1lI1:Create(IIl11II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1180])], { [I1IIl1I1lI1(_KTB[1181])] = l1I11II1lI1 and ll111II1lI1[I1IIl1I1lI1(_KTB[1182])] or ll111II1lI1[I1IIl1I1lI1(_KTB[1183])] })):Play();
-(lI111II1lI1:Create(I1l11II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1184])], { [I1IIl1I1lI1(_KTB[1185])] = l1I11II1lI1 and UDim2[I1IIl1I1lI1(_KTB[1021])](0B1, -15, .5, -6) or UDim2[I1IIl1I1lI1(_KTB[709])](0B0, 0B11, .5, -6) })):Play()
+I1IlIl1I1I = I11lIl1I1I;
+(II1lIl1I1I:Create(I1llIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1174])], { [l11111lI1I(_KRP[1175])] = I11lIl1I1I and IlllIl1I1I[l11111lI1I(_KRP[1176])] or IlllIl1I1I[l11111lI1I(_KRP[1177])], [l11111lI1I(_KRP[1178])] = I11lIl1I1I and .04 or .35 })):Play();
+(II1lIl1I1I:Create(lIllIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1179])], { [l11111lI1I(_KRP[1180])] = I11lIl1I1I and IlllIl1I1I[l11111lI1I(_KRP[1181])] or IlllIl1I1I[l11111lI1I(_KRP[1182])] })):Play();
+(II1lIl1I1I:Create(l1IlIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1183])], { [l11111lI1I(_KRP[1184])] = I11lIl1I1I and UDim2[l11111lI1I(_KRP[1185])](0B1, -15, .5, -6) or UDim2[l11111lI1I(_KRP[1125])](0B0, 0B11, .5, -6) })):Play()
 		end
-local lIIl1II1lI1 = Instance[I1IIl1I1lI1(_KTB[1186])](I1IIl1I1lI1(_KTB[1187]));
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1188])] = I1IIl1I1lI1(_KTB[1189]);
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1190])] = UDim2[I1IIl1I1lI1(_KTB[1100])](0B1, 0B0, 0B1, 0B0);
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1191])] = 0B1
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[663])] = I1IIl1I1lI1(_KTB[1192]);
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1193])] = false
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1194])] = 0B0
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1195])] = 0x5
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1196])] = I1111II1lI1
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1197])]:Connect(function()
-local l1I11II1lI1 = os[I1IIl1I1lI1(_KTB[1198])]()
-if l1I11II1lI1 - Ill11II1lI1 < lll11II1lI1 then
+local IIIlIl1I1I = Instance[l11111lI1I(_KRP[1186])](l11111lI1I(_KRP[1187]));
+IIIlIl1I1I[l11111lI1I(_KRP[1188])] = l11111lI1I(_KRP[1189]);
+IIIlIl1I1I[l11111lI1I(_KRP[1190])] = UDim2[l11111lI1I(_KRP[780])](0B1, 0B0, 0B1, 0B0);
+IIIlIl1I1I[l11111lI1I(_KRP[1191])] = 0B1
+IIIlIl1I1I[l11111lI1I(_KRP[1192])] = l11111lI1I(_KRP[1193]);
+IIIlIl1I1I[l11111lI1I(_KRP[1194])] = false
+IIIlIl1I1I[l11111lI1I(_KRP[1195])] = 0B0
+IIIlIl1I1I[l11111lI1I(_KRP[1196])] = 0x5
+IIIlIl1I1I[l11111lI1I(_KRP[1197])] = l1llIl1I1I
+IIIlIl1I1I[l11111lI1I(_KRP[1198])]:Connect(function()
+local I11lIl1I1I = os[l11111lI1I(_KRP[1199])]()
+if I11lIl1I1I - llIlIl1I1I < IlIlIl1I1I then
 return
 			end
-Ill11II1lI1 = l1I11II1lI1
-IIIl1II1lI1(not l1l11II1lI1)
+llIlIl1I1I = I11lIl1I1I
+lIIlIl1I1I(not I1IlIl1I1I)
 		end)
-return I1111II1lI1, IIIl1II1lI1
+return l1llIl1I1I, lIIlIl1I1I
 	end
-local function l1l1I1I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1, II111II1lI1)
-local I1111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1199])](I1IIl1I1lI1(_KTB[1200]));
-I1111II1lI1[I1IIl1I1lI1(_KTB[1201])] = I1IIl1I1lI1(_KTB[1202]) .. llI11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1203])] = UDim2[I1IIl1I1lI1(_KTB[1204])](0B1, 0B0, 0B0, 0x32);
-I1111II1lI1[I1IIl1I1lI1(_KTB[1205])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1206])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[1207])] = .16
-I1111II1lI1[I1IIl1I1lI1(_KTB[1208])] = false
-I1111II1lI1[I1IIl1I1lI1(_KTB[1209])] = IlI11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1210])] = Color3[I1IIl1I1lI1(_KTB[1211])](0xF5, 0xF5, 0xF5);
-I1111II1lI1[I1IIl1I1lI1(_KTB[1212])] = Color3[I1IIl1I1lI1(_KTB[1213])](0B0, 0B0, 0B0);
-I1111II1lI1[I1IIl1I1lI1(_KTB[1214])] = .26
-I1111II1lI1[I1IIl1I1lI1(_KTB[1215])] = 0B0
-I1111II1lI1[I1IIl1I1lI1(_KTB[1216])] = Enum[I1IIl1I1lI1(_KTB[1217])][I1IIl1I1lI1(_KTB[1218])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[1219])] = 0xF
-I1111II1lI1[I1IIl1I1lI1(_KTB[1220])] = 0B0
-I1111II1lI1[I1IIl1I1lI1(_KTB[1221])] = llI11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1222])] = true
-I1111II1lI1[I1IIl1I1lI1(_KTB[964])] = 0B10
-I1111II1lI1[I1IIl1I1lI1(_KTB[1223])] = l1I11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1224])](I1IIl1I1lI1(_KTB[1225]), I1111II1lI1))[I1IIl1I1lI1(_KTB[1226])] = UDim[I1IIl1I1lI1(_KTB[798])](0B0, 0x6);
-local l1111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1227])](I1IIl1I1lI1(_KTB[1228]));
-l1111II1lI1[I1IIl1I1lI1(_KTB[1229])] = UDim2[I1IIl1I1lI1(_KTB[1230])](0B0, 0x4, 0B1, -12);
-l1111II1lI1[I1IIl1I1lI1(_KTB[1231])] = UDim2[I1IIl1I1lI1(_KTB[1232])](0B0, 0x8, 0B0, 0x6);
-l1111II1lI1[I1IIl1I1lI1(_KTB[1233])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1234])]
-l1111II1lI1[I1IIl1I1lI1(_KTB[1235])] = 0B0
-l1111II1lI1[I1IIl1I1lI1(_KTB[1236])] = 0B11
-l1111II1lI1[I1IIl1I1lI1(_KTB[1237])] = I1111II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[925])](I1IIl1I1lI1(_KTB[1238]), l1111II1lI1))[I1IIl1I1lI1(_KTB[1239])] = UDim[I1IIl1I1lI1(_KTB[1240])](0B1, 0B0);
-local Il111II1lI1 = Instance[I1IIl1I1lI1(_KTB[1241])](I1IIl1I1lI1(_KTB[1242]), I1111II1lI1);
-Il111II1lI1[I1IIl1I1lI1(_KTB[1243])] = Enum[I1IIl1I1lI1(_KTB[1244])][I1IIl1I1lI1(_KTB[1245])]
-Il111II1lI1[I1IIl1I1lI1(_KTB[1246])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1247])]
-Il111II1lI1[I1IIl1I1lI1(_KTB[1248])] = 0B1
-Il111II1lI1[I1IIl1I1lI1(_KTB[1249])] = .08
-I1111II1lI1[I1IIl1I1lI1(_KTB[1250])]:Connect(function()
-local l1I11II1lI1 = I1111II1lI1:GetAttribute(I1IIl1I1lI1(_KTB[1251]));
-(lI111II1lI1:Create(I1111II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1252])], { [I1IIl1I1lI1(_KTB[1253])] = l1I11II1lI1 and Color3[I1IIl1I1lI1(_KTB[1254])](0x1A, 0x3A, 0x58) or Color3[I1IIl1I1lI1(_KTB[1255])](0x17, 0x25, 0x44) })):Play();
-(lI111II1lI1:Create(Il111II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1256])], { [I1IIl1I1lI1(_KTB[1257])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1258])], [I1IIl1I1lI1(_KTB[1259])] = .02 })):Play();
-(lI111II1lI1:Create(l1111II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1260])], { [I1IIl1I1lI1(_KTB[1261])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1262])] })):Play()
+local function I1IllI1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I, lI1lIl1I1I)
+local l1llIl1I1I = Instance[l11111lI1I(_KRP[1200])](l11111lI1I(_KRP[1201]));
+l1llIl1I1I[l11111lI1I(_KRP[1202])] = l11111lI1I(_KRP[1203]) .. Il1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1204])] = UDim2[l11111lI1I(_KRP[1016])](0B1, 0B0, 0B0, 0x32);
+l1llIl1I1I[l11111lI1I(_KRP[1205])] = IlllIl1I1I[l11111lI1I(_KRP[1206])]
+l1llIl1I1I[l11111lI1I(_KRP[1207])] = .16
+l1llIl1I1I[l11111lI1I(_KRP[1208])] = false
+l1llIl1I1I[l11111lI1I(_KRP[1209])] = ll1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1210])] = Color3[l11111lI1I(_KRP[1211])](0xF5, 0xF5, 0xF5);
+l1llIl1I1I[l11111lI1I(_KRP[1212])] = Color3[l11111lI1I(_KRP[1213])](0B0, 0B0, 0B0);
+l1llIl1I1I[l11111lI1I(_KRP[1214])] = .26
+l1llIl1I1I[l11111lI1I(_KRP[1215])] = 0B0
+l1llIl1I1I[l11111lI1I(_KRP[1216])] = Enum[l11111lI1I(_KRP[1217])][l11111lI1I(_KRP[1218])]
+l1llIl1I1I[l11111lI1I(_KRP[1219])] = 0xF
+l1llIl1I1I[l11111lI1I(_KRP[1220])] = 0B0
+l1llIl1I1I[l11111lI1I(_KRP[1221])] = Il1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1222])] = true
+l1llIl1I1I[l11111lI1I(_KRP[1223])] = 0B10
+l1llIl1I1I[l11111lI1I(_KRP[1224])] = I11lIl1I1I;
+(Instance[l11111lI1I(_KRP[1225])](l11111lI1I(_KRP[1226]), l1llIl1I1I))[l11111lI1I(_KRP[1227])] = UDim[l11111lI1I(_KRP[814])](0B0, 0x6);
+local I1llIl1I1I = Instance[l11111lI1I(_KRP[1228])](l11111lI1I(_KRP[1229]));
+I1llIl1I1I[l11111lI1I(_KRP[1230])] = UDim2[l11111lI1I(_KRP[1231])](0B0, 0x4, 0B1, -12);
+I1llIl1I1I[l11111lI1I(_KRP[1232])] = UDim2[l11111lI1I(_KRP[1233])](0B0, 0x8, 0B0, 0x6);
+I1llIl1I1I[l11111lI1I(_KRP[1073])] = IlllIl1I1I[l11111lI1I(_KRP[1234])]
+I1llIl1I1I[l11111lI1I(_KRP[1235])] = 0B0
+I1llIl1I1I[l11111lI1I(_KRP[1236])] = 0B11
+I1llIl1I1I[l11111lI1I(_KRP[363])] = l1llIl1I1I;
+(Instance[l11111lI1I(_KRP[1237])](l11111lI1I(_KRP[1238]), I1llIl1I1I))[l11111lI1I(_KRP[1239])] = UDim[l11111lI1I(_KRP[1240])](0B1, 0B0);
+local llllIl1I1I = Instance[l11111lI1I(_KRP[1241])](l11111lI1I(_KRP[1242]), l1llIl1I1I);
+llllIl1I1I[l11111lI1I(_KRP[1243])] = Enum[l11111lI1I(_KRP[1244])][l11111lI1I(_KRP[1245])]
+llllIl1I1I[l11111lI1I(_KRP[1246])] = IlllIl1I1I[l11111lI1I(_KRP[1247])]
+llllIl1I1I[l11111lI1I(_KRP[1248])] = 0B1
+llllIl1I1I[l11111lI1I(_KRP[1249])] = .08
+l1llIl1I1I[l11111lI1I(_KRP[1250])]:Connect(function()
+local I11lIl1I1I = l1llIl1I1I:GetAttribute(l11111lI1I(_KRP[1251]));
+(II1lIl1I1I:Create(l1llIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1252])], { [l11111lI1I(_KRP[1253])] = I11lIl1I1I and Color3[l11111lI1I(_KRP[1254])](0x1A, 0x3A, 0x58) or Color3[l11111lI1I(_KRP[1255])](0x17, 0x25, 0x44) })):Play();
+(II1lIl1I1I:Create(llllIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1256])], { [l11111lI1I(_KRP[1257])] = IlllIl1I1I[l11111lI1I(_KRP[1258])], [l11111lI1I(_KRP[1259])] = .02 })):Play();
+(II1lIl1I1I:Create(I1llIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1260])], { [l11111lI1I(_KRP[980])] = IlllIl1I1I[l11111lI1I(_KRP[1261])] })):Play()
 		end);
-I1111II1lI1[I1IIl1I1lI1(_KTB[1263])]:Connect(function()
-local l1I11II1lI1 = I1111II1lI1:GetAttribute(I1IIl1I1lI1(_KTB[1264]));
-(lI111II1lI1:Create(I1111II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1265])], { [I1IIl1I1lI1(_KTB[1233])] = l1I11II1lI1 and Color3[I1IIl1I1lI1(_KTB[13])](0x12, 0x2D, 0x49) or ll111II1lI1[I1IIl1I1lI1(_KTB[1266])] })):Play();
-(lI111II1lI1:Create(Il111II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1252])], { [I1IIl1I1lI1(_KTB[1267])] = l1I11II1lI1 and ll111II1lI1[I1IIl1I1lI1(_KTB[1268])] or ll111II1lI1[I1IIl1I1lI1(_KTB[1269])], [I1IIl1I1lI1(_KTB[1270])] = l1I11II1lI1 and .04 or .08 })):Play();
-(lI111II1lI1:Create(l1111II1lI1, lIl11II1lI1[I1IIl1I1lI1(_KTB[1271])], { [I1IIl1I1lI1(_KTB[1272])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1273])] })):Play()
+l1llIl1I1I[l11111lI1I(_KRP[1262])]:Connect(function()
+local I11lIl1I1I = l1llIl1I1I:GetAttribute(l11111lI1I(_KRP[1263]));
+(II1lIl1I1I:Create(l1llIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1264])], { [l11111lI1I(_KRP[1265])] = I11lIl1I1I and Color3[l11111lI1I(_KRP[1266])](0x12, 0x2D, 0x49) or IlllIl1I1I[l11111lI1I(_KRP[1267])] })):Play();
+(II1lIl1I1I:Create(llllIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1268])], { [l11111lI1I(_KRP[1269])] = I11lIl1I1I and IlllIl1I1I[l11111lI1I(_KRP[1270])] or IlllIl1I1I[l11111lI1I(_KRP[1271])], [l11111lI1I(_KRP[1272])] = I11lIl1I1I and .04 or .08 })):Play();
+(II1lIl1I1I:Create(I1llIl1I1I, IIllIl1I1I[l11111lI1I(_KRP[1273])], { [l11111lI1I(_KRP[1051])] = IlllIl1I1I[l11111lI1I(_KRP[1274])] })):Play()
 		end);
-local IIl11II1lI1 = false
-I1111II1lI1[I1IIl1I1lI1(_KTB[1274])]:Connect(function()
-if IIl11II1lI1 then
+local lIllIl1I1I = false
+l1llIl1I1I[l11111lI1I(_KRP[1275])]:Connect(function()
+if lIllIl1I1I then
 return
 			end
-IIl11II1lI1 = true
-if II111II1lI1 then
-II111II1lI1()
+lIllIl1I1I = true
+if lI1lIl1I1I then
+lI1lIl1I1I()
 			end
-task[I1IIl1I1lI1(_KTB[1275])](.25, function()
-IIl11II1lI1 = false
+task[l11111lI1I(_KRP[1276])](.25, function()
+lIllIl1I1I = false
 			end)
 		end)
-return I1111II1lI1
+return l1llIl1I1I
 	end
-local function Ill1I1I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1)
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1276])] = Enum[I1IIl1I1lI1(_KTB[1277])][I1IIl1I1lI1(_KTB[1278])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1279])] = llIl1II1lI1 and 0xF or 0x10
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1280])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1281])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1282])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1283])]
-local II111II1lI1 = l1I11II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[1284]))
-if II111II1lI1 then
-II111II1lI1[I1IIl1I1lI1(_KTB[1285])] = true
-II111II1lI1[I1IIl1I1lI1(_KTB[1286])] = UDim2[I1IIl1I1lI1(_KTB[1287])](0B0, 0x5, 0B1, -14);
-II111II1lI1[I1IIl1I1lI1(_KTB[1288])] = UDim2[I1IIl1I1lI1(_KTB[1289])](0B0, 0x9, 0B0, 0B111);
-II111II1lI1[I1IIl1I1lI1(_KTB[1290])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1234])]
+local function llIllI1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I)
+I11lIl1I1I[l11111lI1I(_KRP[1277])] = Enum[l11111lI1I(_KRP[1278])][l11111lI1I(_KRP[1279])]
+I11lIl1I1I[l11111lI1I(_KRP[1280])] = Il1IIl1I1I and 0xF or 0x10
+I11lIl1I1I[l11111lI1I(_KRP[1281])] = IlllIl1I1I[l11111lI1I(_KRP[1282])]
+I11lIl1I1I[l11111lI1I(_KRP[1283])] = IlllIl1I1I[l11111lI1I(_KRP[1284])]
+local lI1lIl1I1I = I11lIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[1285]))
+if lI1lIl1I1I then
+lI1lIl1I1I[l11111lI1I(_KRP[1286])] = true
+lI1lIl1I1I[l11111lI1I(_KRP[1287])] = UDim2[l11111lI1I(_KRP[1288])](0B0, 0x5, 0B1, -14);
+lI1lIl1I1I[l11111lI1I(_KRP[1289])] = UDim2[l11111lI1I(_KRP[1290])](0B0, 0x9, 0B0, 0x7);
+lI1lIl1I1I[l11111lI1I(_KRP[1291])] = IlllIl1I1I[l11111lI1I(_KRP[1292])]
 		end
-local lI111II1lI1 = l1I11II1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[1291]))
-if lI111II1lI1 then
-lI111II1lI1[I1IIl1I1lI1(_KTB[1292])] = Enum[I1IIl1I1lI1(_KTB[1293])][I1IIl1I1lI1(_KTB[1294])]
-lI111II1lI1[I1IIl1I1lI1(_KTB[1295])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1296])]
-lI111II1lI1[I1IIl1I1lI1(_KTB[1297])] = .08
+local II1lIl1I1I = I11lIl1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[1293]))
+if II1lIl1I1I then
+II1lIl1I1I[l11111lI1I(_KRP[1294])] = Enum[l11111lI1I(_KRP[1295])][l11111lI1I(_KRP[1245])]
+II1lIl1I1I[l11111lI1I(_KRP[1296])] = IlllIl1I1I[l11111lI1I(_KRP[1297])]
+II1lIl1I1I[l11111lI1I(_KRP[1298])] = .08
 		end
-return l1I11II1lI1
+return I11lIl1I1I
 	end
-local function lll1I1I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1, lI111II1lI1, I1111II1lI1, l1111II1lI1, Il111II1lI1)
-local IIl11II1lI1 = Instance[I1IIl1I1lI1(_KTB[916])](I1IIl1I1lI1(_KTB[1150]));
-IIl11II1lI1[I1IIl1I1lI1(_KTB[338])] = I1IIl1I1lI1(_KTB[1298]) .. llI11II1lI1
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1299])] = UDim2[I1IIl1I1lI1(_KTB[958])](0B1, 0B0, 0B0, 0x3E);
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1300])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1301])]
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1302])] = .16
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1155])] = 0B0
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1303])] = llI11II1lI1
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1304])] = 0B10
-IIl11II1lI1[I1IIl1I1lI1(_KTB[1305])] = l1I11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1027])](I1IIl1I1lI1(_KTB[1306]), IIl11II1lI1))[I1IIl1I1lI1(_KTB[1307])] = UDim[I1IIl1I1lI1(_KTB[1106])](0B0, 0x6);
-local lIl11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1308])](I1IIl1I1lI1(_KTB[1309]), IIl11II1lI1);
-lIl11II1lI1[I1IIl1I1lI1(_KTB[1310])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1311])]
-lIl11II1lI1[I1IIl1I1lI1(_KTB[1312])] = 0B1
-lIl11II1lI1[I1IIl1I1lI1(_KTB[1313])] = .08
-local I1l11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1308])](I1IIl1I1lI1(_KTB[1314]));
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1315])] = UDim2[I1IIl1I1lI1(_KTB[1227])](0B1, -24, 0B0, 0x18);
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1316])] = UDim2[I1IIl1I1lI1(_KTB[1317])](0B0, 0xC, 0B0, 0x6);
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1318])] = 0B1
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1319])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1320])]
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1321])] = Color3[I1IIl1I1lI1(_KTB[1322])](0B0, 0B0, 0B0);
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1323])] = .22
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1324])] = Enum[I1IIl1I1lI1(_KTB[1325])][I1IIl1I1lI1(_KTB[1326])]
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1327])] = 0xF
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1095])] = Enum[I1IIl1I1lI1(_KTB[1328])][I1IIl1I1lI1(_KTB[1329])]
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1330])] = 0B11
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1331])] = IIl11II1lI1
-local l1l11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1332])](I1IIl1I1lI1(_KTB[1333]));
-l1l11II1lI1[I1IIl1I1lI1(_KTB[1334])] = UDim2[I1IIl1I1lI1(_KTB[1049])](0B1, -28, 0B0, 0x8);
-l1l11II1lI1[I1IIl1I1lI1(_KTB[1335])] = UDim2[I1IIl1I1lI1(_KTB[966])](0B0, 0xE, 0B1, -22);
-l1l11II1lI1[I1IIl1I1lI1(_KTB[1336])] = Color3[I1IIl1I1lI1(_KTB[1337])](0x20, 0x2F, 0x4C);
-l1l11II1lI1[I1IIl1I1lI1(_KTB[1338])] = 0B0
-l1l11II1lI1[I1IIl1I1lI1(_KTB[964])] = 0B11
-l1l11II1lI1[I1IIl1I1lI1(_KTB[1339])] = IIl11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[898])](I1IIl1I1lI1(_KTB[1340]), l1l11II1lI1))[I1IIl1I1lI1(_KTB[1341])] = UDim[I1IIl1I1lI1(_KTB[1048])](0B1, 0B0);
-local Ill11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1342])](I1IIl1I1lI1(_KTB[1343]));
-Ill11II1lI1[I1IIl1I1lI1(_KTB[1344])] = UDim2[I1IIl1I1lI1(_KTB[1345])](0B0, 0B0, 0B1, 0B0);
-Ill11II1lI1[I1IIl1I1lI1(_KTB[1346])] = ll111II1lI1[I1IIl1I1lI1(_KTB[792])]
-Ill11II1lI1[I1IIl1I1lI1(_KTB[1067])] = 0B0
-Ill11II1lI1[I1IIl1I1lI1(_KTB[1347])] = 0x4
-Ill11II1lI1[I1IIl1I1lI1(_KTB[1348])] = l1l11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1349])](I1IIl1I1lI1(_KTB[1350]), Ill11II1lI1))[I1IIl1I1lI1(_KTB[1351])] = UDim[I1IIl1I1lI1(_KTB[607])](0B1, 0B0);
-local lll11II1lI1 = Instance[I1IIl1I1lI1(_KTB[815])](I1IIl1I1lI1(_KTB[1352]), Ill11II1lI1);
-lll11II1lI1[I1IIl1I1lI1(_KTB[1353])] = ColorSequence[I1IIl1I1lI1(_KTB[1354])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1355])](0B0, ll111II1lI1[I1IIl1I1lI1(_KTB[1356])]), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1357])](0B1, ll111II1lI1[I1IIl1I1lI1(_KTB[806])]) });
-local IIIl1II1lI1 = Instance[I1IIl1I1lI1(_KTB[913])](I1IIl1I1lI1(_KTB[1358]));
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[1315])] = UDim2[I1IIl1I1lI1(_KTB[1359])](0x12, 0x12);
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[1360])] = UDim2[I1IIl1I1lI1(_KTB[1308])](0B0, -9, .5, -9);
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[1361])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1362])]
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[1363])] = 0B0
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[1364])] = 0x5
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[446])] = l1l11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[843])](I1IIl1I1lI1(_KTB[1365]), IIIl1II1lI1))[I1IIl1I1lI1(_KTB[1366])] = UDim[I1IIl1I1lI1(_KTB[1367])](0B1, 0B0);
-local lIIl1II1lI1 = Instance[I1IIl1I1lI1(_KTB[1368])](I1IIl1I1lI1(_KTB[1369]), IIIl1II1lI1);
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1370])] = Enum[I1IIl1I1lI1(_KTB[1371])][I1IIl1I1lI1(_KTB[1372])]
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1373])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1374])]
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1375])] = 1.5
-lIIl1II1lI1[I1IIl1I1lI1(_KTB[1376])] = .08
-local l1Il1II1lI1 = math[I1IIl1I1lI1(_KTB[1377])](l1111II1lI1, lI111II1lI1, I1111II1lI1);
-local IlIl1II1lI1 = false
-local function llIl1II1lI1()
-local l1I11II1lI1 = (l1Il1II1lI1 - lI111II1lI1) / (I1111II1lI1 - lI111II1lI1);
-I1l11II1lI1[I1IIl1I1lI1(_KTB[1378])] = string[I1IIl1I1lI1(_KTB[1379])](I1IIl1I1lI1(_KTB[1380]), IlI11II1lI1, l1Il1II1lI1);
-Ill11II1lI1[I1IIl1I1lI1(_KTB[1381])] = UDim2[I1IIl1I1lI1(_KTB[1382])](l1I11II1lI1, 0B0, 0B1, 0B0);
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[1383])] = UDim2[I1IIl1I1lI1(_KTB[1384])](l1I11II1lI1, -9, .5, -9)
+local function IlIllI1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I, II1lIl1I1I, l1llIl1I1I, I1llIl1I1I, llllIl1I1I)
+local lIllIl1I1I = Instance[l11111lI1I(_KRP[1299])](l11111lI1I(_KRP[1300]));
+lIllIl1I1I[l11111lI1I(_KRP[1301])] = l11111lI1I(_KRP[1302]) .. Il1lIl1I1I
+lIllIl1I1I[l11111lI1I(_KRP[1303])] = UDim2[l11111lI1I(_KRP[1304])](0B1, 0B0, 0B0, 0x3E);
+lIllIl1I1I[l11111lI1I(_KRP[1305])] = IlllIl1I1I[l11111lI1I(_KRP[1306])]
+lIllIl1I1I[l11111lI1I(_KRP[1307])] = .16
+lIllIl1I1I[l11111lI1I(_KRP[1308])] = 0B0
+lIllIl1I1I[l11111lI1I(_KRP[1309])] = Il1lIl1I1I
+lIllIl1I1I[l11111lI1I(_KRP[1310])] = 0B10
+lIllIl1I1I[l11111lI1I(_KRP[1311])] = I11lIl1I1I;
+(Instance[l11111lI1I(_KRP[1312])](l11111lI1I(_KRP[1313]), lIllIl1I1I))[l11111lI1I(_KRP[1314])] = UDim[l11111lI1I(_KRP[1315])](0B0, 0x6);
+local IIllIl1I1I = Instance[l11111lI1I(_KRP[1316])](l11111lI1I(_KRP[1317]), lIllIl1I1I);
+IIllIl1I1I[l11111lI1I(_KRP[1318])] = IlllIl1I1I[l11111lI1I(_KRP[1319])]
+IIllIl1I1I[l11111lI1I(_KRP[1320])] = 0B1
+IIllIl1I1I[l11111lI1I(_KRP[1321])] = .08
+local l1IlIl1I1I = Instance[l11111lI1I(_KRP[1322])](l11111lI1I(_KRP[1323]));
+l1IlIl1I1I[l11111lI1I(_KRP[1324])] = UDim2[l11111lI1I(_KRP[1325])](0B1, -24, 0B0, 0x18);
+l1IlIl1I1I[l11111lI1I(_KRP[1326])] = UDim2[l11111lI1I(_KRP[1327])](0B0, 0xC, 0B0, 0x6);
+l1IlIl1I1I[l11111lI1I(_KRP[1328])] = 0B1
+l1IlIl1I1I[l11111lI1I(_KRP[1329])] = IlllIl1I1I[l11111lI1I(_KRP[1330])]
+l1IlIl1I1I[l11111lI1I(_KRP[1331])] = Color3[l11111lI1I(_KRP[1332])](0B0, 0B0, 0B0);
+l1IlIl1I1I[l11111lI1I(_KRP[1333])] = .22
+l1IlIl1I1I[l11111lI1I(_KRP[1334])] = Enum[l11111lI1I(_KRP[1335])][l11111lI1I(_KRP[1139])]
+l1IlIl1I1I[l11111lI1I(_KRP[1336])] = 0xF
+l1IlIl1I1I[l11111lI1I(_KRP[1337])] = Enum[l11111lI1I(_KRP[1338])][l11111lI1I(_KRP[1339])]
+l1IlIl1I1I[l11111lI1I(_KRP[1340])] = 0B11
+l1IlIl1I1I[l11111lI1I(_KRP[1341])] = lIllIl1I1I
+local I1IlIl1I1I = Instance[l11111lI1I(_KRP[1342])](l11111lI1I(_KRP[1343]));
+I1IlIl1I1I[l11111lI1I(_KRP[1344])] = UDim2[l11111lI1I(_KRP[1345])](0B1, -28, 0B0, 0x8);
+I1IlIl1I1I[l11111lI1I(_KRP[1346])] = UDim2[l11111lI1I(_KRP[758])](0B0, 0xE, 0B1, -22);
+I1IlIl1I1I[l11111lI1I(_KRP[1347])] = Color3[l11111lI1I(_KRP[1348])](0x20, 0x2F, 0x4C);
+I1IlIl1I1I[l11111lI1I(_KRP[1349])] = 0B0
+I1IlIl1I1I[l11111lI1I(_KRP[1350])] = 0B11
+I1IlIl1I1I[l11111lI1I(_KRP[1351])] = lIllIl1I1I;
+(Instance[l11111lI1I(_KRP[804])](l11111lI1I(_KRP[1352]), I1IlIl1I1I))[l11111lI1I(_KRP[1353])] = UDim[l11111lI1I(_KRP[1354])](0B1, 0B0);
+local llIlIl1I1I = Instance[l11111lI1I(_KRP[549])](l11111lI1I(_KRP[1355]));
+llIlIl1I1I[l11111lI1I(_KRP[1356])] = UDim2[l11111lI1I(_KRP[1357])](0B0, 0B0, 0B1, 0B0);
+llIlIl1I1I[l11111lI1I(_KRP[1358])] = IlllIl1I1I[l11111lI1I(_KRP[1359])]
+llIlIl1I1I[l11111lI1I(_KRP[1360])] = 0B0
+llIlIl1I1I[l11111lI1I(_KRP[1361])] = 0x4
+llIlIl1I1I[l11111lI1I(_KRP[1362])] = I1IlIl1I1I;
+(Instance[l11111lI1I(_KRP[1363])](l11111lI1I(_KRP[1364]), llIlIl1I1I))[l11111lI1I(_KRP[1365])] = UDim[l11111lI1I(_KRP[1366])](0B1, 0B0);
+local IlIlIl1I1I = Instance[l11111lI1I(_KRP[1367])](l11111lI1I(_KRP[1368]), llIlIl1I1I);
+IlIlIl1I1I[l11111lI1I(_KRP[1369])] = ColorSequence[l11111lI1I(_KRP[800])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[1325])](0B0, IlllIl1I1I[l11111lI1I(_KRP[1370])]), ColorSequenceKeypoint[l11111lI1I(_KRP[644])](0B1, IlllIl1I1I[l11111lI1I(_KRP[1371])]) });
+local lIIlIl1I1I = Instance[l11111lI1I(_KRP[1372])](l11111lI1I(_KRP[1373]));
+lIIlIl1I1I[l11111lI1I(_KRP[1374])] = UDim2[l11111lI1I(_KRP[1375])](0x12, 0x12);
+lIIlIl1I1I[l11111lI1I(_KRP[1376])] = UDim2[l11111lI1I(_KRP[586])](0B0, -9, .5, -9);
+lIIlIl1I1I[l11111lI1I(_KRP[1377])] = IlllIl1I1I[l11111lI1I(_KRP[1378])]
+lIIlIl1I1I[l11111lI1I(_KRP[1379])] = 0B0
+lIIlIl1I1I[l11111lI1I(_KRP[1380])] = 0x5
+lIIlIl1I1I[l11111lI1I(_KRP[1381])] = I1IlIl1I1I;
+(Instance[l11111lI1I(_KRP[1382])](l11111lI1I(_KRP[1383]), lIIlIl1I1I))[l11111lI1I(_KRP[1384])] = UDim[l11111lI1I(_KRP[888])](0B1, 0B0);
+local IIIlIl1I1I = Instance[l11111lI1I(_KRP[1385])](l11111lI1I(_KRP[1386]), lIIlIl1I1I);
+IIIlIl1I1I[l11111lI1I(_KRP[1387])] = Enum[l11111lI1I(_KRP[1388])][l11111lI1I(_KRP[1389])]
+IIIlIl1I1I[l11111lI1I(_KRP[1390])] = IlllIl1I1I[l11111lI1I(_KRP[1391])]
+IIIlIl1I1I[l11111lI1I(_KRP[1392])] = 1.5
+IIIlIl1I1I[l11111lI1I(_KRP[869])] = .08
+local I11IIl1I1I = math[l11111lI1I(_KRP[1393])](I1llIl1I1I, II1lIl1I1I, l1llIl1I1I);
+local ll1IIl1I1I = false
+local function Il1IIl1I1I()
+local I11lIl1I1I = (I11IIl1I1I - II1lIl1I1I) / (l1llIl1I1I - II1lIl1I1I);
+l1IlIl1I1I[l11111lI1I(_KRP[1394])] = string[l11111lI1I(_KRP[1395])](l11111lI1I(_KRP[1396]), ll1lIl1I1I, I11IIl1I1I);
+llIlIl1I1I[l11111lI1I(_KRP[1397])] = UDim2[l11111lI1I(_KRP[1398])](I11lIl1I1I, 0B0, 0B1, 0B0);
+lIIlIl1I1I[l11111lI1I(_KRP[1399])] = UDim2[l11111lI1I(_KRP[1400])](I11lIl1I1I, -9, .5, -9)
 		end
-local function II1l1II1lI1(l1I11II1lI1)
-local IlI11II1lI1 = l1l11II1lI1[I1IIl1I1lI1(_KTB[1385])][I1IIl1I1lI1(_KTB[1386])]
-local llI11II1lI1 = math[I1IIl1I1lI1(_KTB[1387])](l1l11II1lI1[I1IIl1I1lI1(_KTB[1388])][I1IIl1I1lI1(_KTB[1389])], 0B1);
-local II111II1lI1 = math[I1IIl1I1lI1(_KTB[1390])]((l1I11II1lI1 - IlI11II1lI1) / llI11II1lI1, 0B0, 0B1)
-l1Il1II1lI1 = math[I1IIl1I1lI1(_KTB[1391])]((lI111II1lI1 + (I1111II1lI1 - lI111II1lI1) * II111II1lI1) + .5);
-llIl1II1lI1()
-if Il111II1lI1 then
-Il111II1lI1(l1Il1II1lI1)
+local function lI1IIl1I1I(I11lIl1I1I)
+local ll1lIl1I1I = I1IlIl1I1I[l11111lI1I(_KRP[1401])][l11111lI1I(_KRP[1402])]
+local Il1lIl1I1I = math[l11111lI1I(_KRP[1403])](I1IlIl1I1I[l11111lI1I(_KRP[1404])][l11111lI1I(_KRP[1405])], 0B1);
+local lI1lIl1I1I = math[l11111lI1I(_KRP[1406])]((I11lIl1I1I - ll1lIl1I1I) / Il1lIl1I1I, 0B0, 0B1)
+I11IIl1I1I = math[l11111lI1I(_KRP[1407])]((II1lIl1I1I + (l1llIl1I1I - II1lIl1I1I) * lI1lIl1I1I) + .5);
+Il1IIl1I1I()
+if llllIl1I1I then
+llllIl1I1I(I11IIl1I1I)
 			end
 		end
-local function lI1l1II1lI1(l1I11II1lI1)
-IlIl1II1lI1 = true
-II1l1II1lI1(l1I11II1lI1[I1IIl1I1lI1(_KTB[1392])][I1IIl1I1lI1(_KTB[1393])])
+local function II1IIl1I1I(I11lIl1I1I)
+ll1IIl1I1I = true
+lI1IIl1I1I(I11lIl1I1I[l11111lI1I(_KRP[1408])][l11111lI1I(_KRP[1409])])
 		end
-l1l11II1lI1[I1IIl1I1lI1(_KTB[1394])]:Connect(function(l1I11II1lI1)
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[1395])] == Enum[I1IIl1I1lI1(_KTB[1395])][I1IIl1I1lI1(_KTB[1396])] or l1I11II1lI1[I1IIl1I1lI1(_KTB[1397])] == Enum[I1IIl1I1lI1(_KTB[1398])][I1IIl1I1lI1(_KTB[1399])] then
-lI1l1II1lI1(l1I11II1lI1)
+I1IlIl1I1I[l11111lI1I(_KRP[1410])]:Connect(function(I11lIl1I1I)
+if I11lIl1I1I[l11111lI1I(_KRP[1411])] == Enum[l11111lI1I(_KRP[1412])][l11111lI1I(_KRP[1413])] or I11lIl1I1I[l11111lI1I(_KRP[1414])] == Enum[l11111lI1I(_KRP[1415])][l11111lI1I(_KRP[1416])] then
+II1IIl1I1I(I11lIl1I1I)
 			end
 		end);
-IIIl1II1lI1[I1IIl1I1lI1(_KTB[1400])]:Connect(function(l1I11II1lI1)
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[1401])] == Enum[I1IIl1I1lI1(_KTB[1402])][I1IIl1I1lI1(_KTB[1403])] or l1I11II1lI1[I1IIl1I1lI1(_KTB[1404])] == Enum[I1IIl1I1lI1(_KTB[1405])][I1IIl1I1lI1(_KTB[1406])] then
-lI1l1II1lI1(l1I11II1lI1)
+lIIlIl1I1I[l11111lI1I(_KRP[1417])]:Connect(function(I11lIl1I1I)
+if I11lIl1I1I[l11111lI1I(_KRP[1415])] == Enum[l11111lI1I(_KRP[1418])][l11111lI1I(_KRP[1419])] or I11lIl1I1I[l11111lI1I(_KRP[1420])] == Enum[l11111lI1I(_KRP[1421])][l11111lI1I(_KRP[1422])] then
+II1IIl1I1I(I11lIl1I1I)
 			end
 		end);
-I1Il1II1lI1(II111II1lI1[I1IIl1I1lI1(_KTB[1407])]:Connect(function(l1I11II1lI1)
-if IlIl1II1lI1 and (l1I11II1lI1[I1IIl1I1lI1(_KTB[1408])] == Enum[I1IIl1I1lI1(_KTB[1409])][I1IIl1I1lI1(_KTB[1410])] or l1I11II1lI1[I1IIl1I1lI1(_KTB[1411])] == Enum[I1IIl1I1lI1(_KTB[1412])][I1IIl1I1lI1(_KTB[1413])]) then
-II1l1II1lI1(l1I11II1lI1[I1IIl1I1lI1(_KTB[1414])][I1IIl1I1lI1(_KTB[1415])])
+l11IIl1I1I(lI1lIl1I1I[l11111lI1I(_KRP[1423])]:Connect(function(I11lIl1I1I)
+if ll1IIl1I1I and (I11lIl1I1I[l11111lI1I(_KRP[1424])] == Enum[l11111lI1I(_KRP[1425])][l11111lI1I(_KRP[1426])] or I11lIl1I1I[l11111lI1I(_KRP[1427])] == Enum[l11111lI1I(_KRP[1428])][l11111lI1I(_KRP[1429])]) then
+lI1IIl1I1I(I11lIl1I1I[l11111lI1I(_KRP[1430])][l11111lI1I(_KRP[1431])])
 			end
 		end));
-I1Il1II1lI1(II111II1lI1[I1IIl1I1lI1(_KTB[1416])]:Connect(function(l1I11II1lI1)
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[1417])] == Enum[I1IIl1I1lI1(_KTB[1418])][I1IIl1I1lI1(_KTB[1419])] or l1I11II1lI1[I1IIl1I1lI1(_KTB[1420])] == Enum[I1IIl1I1lI1(_KTB[1421])][I1IIl1I1lI1(_KTB[1422])] then
-IlIl1II1lI1 = false
+l11IIl1I1I(lI1lIl1I1I[l11111lI1I(_KRP[1432])]:Connect(function(I11lIl1I1I)
+if I11lIl1I1I[l11111lI1I(_KRP[1433])] == Enum[l11111lI1I(_KRP[1434])][l11111lI1I(_KRP[1435])] or I11lIl1I1I[l11111lI1I(_KRP[1436])] == Enum[l11111lI1I(_KRP[1437])][l11111lI1I(_KRP[1438])] then
+ll1IIl1I1I = false
 			end
 		end));
-llIl1II1lI1()
-if Il111II1lI1 then
-Il111II1lI1(l1Il1II1lI1)
+Il1IIl1I1I()
+if llllIl1I1I then
+llllIl1I1I(I11IIl1I1I)
 		end
-return IIl11II1lI1, function(l1I11II1lI1)
-l1Il1II1lI1 = math[I1IIl1I1lI1(_KTB[1423])](l1I11II1lI1, lI111II1lI1, I1111II1lI1);
-llIl1II1lI1()
+return lIllIl1I1I, function(I11lIl1I1I)
+I11IIl1I1I = math[l11111lI1I(_KRP[1439])](I11lIl1I1I, II1lIl1I1I, l1llIl1I1I);
+Il1IIl1I1I()
 		end
 	end
-local IIIlI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1424])](I1IIl1I1lI1(_KTB[1425]));
-IIIlI1I1lI1[I1IIl1I1lI1(_KTB[1426])] = I1IIl1I1lI1(_KTB[1427]);
-IIIlI1I1lI1[I1IIl1I1lI1(_KTB[1428])] = false
-IIIlI1I1lI1[I1IIl1I1lI1(_KTB[1429])] = 0x3E6
-IIIlI1I1lI1[I1IIl1I1lI1(_KTB[1430])] = true
-IIIlI1I1lI1[I1IIl1I1lI1(_KTB[554])] = l1111II1lI1[I1IIl1I1lI1(_KTB[1431])]
-local lIIlI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1432])](I1IIl1I1lI1(_KTB[1433]));
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1434])] = I1IIl1I1lI1(_KTB[1435]);
-local I1IlI1I1lI1 = llIl1II1lI1 and 0xE4 or 0xFC
-local l1IlI1I1lI1 = 0x4E
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1436])] = UDim2[I1IIl1I1lI1(_KTB[1437])](I1IlI1I1lI1, l1IlI1I1lI1);
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1438])] = UDim2[I1IIl1I1lI1(_KTB[1439])](0B1, -I1IlI1I1lI1 - 0x10, 0B1, -l1IlI1I1lI1 - 0x40);
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1440])] = Color3[I1IIl1I1lI1(_KTB[1441])](0x6, 0xC, 0x1C);
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1442])] = .12
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1443])] = 0B0
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1444])] = false
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1445])] = false
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1446])] = IIIlI1I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1447])](I1IIl1I1lI1(_KTB[1448]), lIIlI1I1lI1))[I1IIl1I1lI1(_KTB[1449])] = UDim[I1IIl1I1lI1(_KTB[1450])](0B0, 0xC);
-local IlIlI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[922])](I1IIl1I1lI1(_KTB[1451]), lIIlI1I1lI1);
-IlIlI1I1lI1[I1IIl1I1lI1(_KTB[1452])] = Enum[I1IIl1I1lI1(_KTB[1453])][I1IIl1I1lI1(_KTB[1454])]
-IlIlI1I1lI1[I1IIl1I1lI1(_KTB[1455])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1456])]
-IlIlI1I1lI1[I1IIl1I1lI1(_KTB[1457])] = 0B10
-IlIlI1I1lI1[I1IIl1I1lI1(_KTB[1458])] = 0B0
-local llIlI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1459])](I1IIl1I1lI1(_KTB[1460]), lIIlI1I1lI1);
-llIlI1I1lI1[I1IIl1I1lI1(_KTB[1461])] = ColorSequence[I1IIl1I1lI1(_KTB[1459])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[798])](0B0, Color3[I1IIl1I1lI1(_KTB[1462])](0x1B, 0x19, 0x45)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1111])](.5, Color3[I1IIl1I1lI1(_KTB[1463])](0x8, 0x11, 0x23)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1308])](0B1, Color3[I1IIl1I1lI1(_KTB[1464])](0x7, 0xD, 0x1D)) });
-llIlI1I1lI1[I1IIl1I1lI1(_KTB[1465])] = 0x87
-local II1lI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[622])](I1IIl1I1lI1(_KTB[1466]));
-II1lI1I1lI1[I1IIl1I1lI1(_KTB[1467])] = UDim2[I1IIl1I1lI1(_KTB[553])](0B1, -24, 0B0, 0B11);
-II1lI1I1lI1[I1IIl1I1lI1(_KTB[1468])] = UDim2[I1IIl1I1lI1(_KTB[1469])](0B0, 0xC, 0B0, 0B0);
-II1lI1I1lI1[I1IIl1I1lI1(_KTB[1470])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1471])]
-II1lI1I1lI1[I1IIl1I1lI1(_KTB[1472])] = 0B0
-II1lI1I1lI1[I1IIl1I1lI1(_KTB[1473])] = 0B11
-II1lI1I1lI1[I1IIl1I1lI1(_KTB[1474])] = false
-II1lI1I1lI1[I1IIl1I1lI1(_KTB[617])] = lIIlI1I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1475])](I1IIl1I1lI1(_KTB[1476]), II1lI1I1lI1))[I1IIl1I1lI1(_KTB[1477])] = UDim[I1IIl1I1lI1(_KTB[1478])](0B1, 0B0);
-local lI1lI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1479])](I1IIl1I1lI1(_KTB[1480]), II1lI1I1lI1);
-lI1lI1I1lI1[I1IIl1I1lI1(_KTB[1481])] = ColorSequence[I1IIl1I1lI1(_KTB[1482])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1483])](0B0, ll111II1lI1[I1IIl1I1lI1(_KTB[1484])]), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1485])](.5, ll111II1lI1[I1IIl1I1lI1(_KTB[1486])]), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1487])](0B1, ll111II1lI1[I1IIl1I1lI1(_KTB[1488])]) });
-local I11lI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1489])](I1IIl1I1lI1(_KTB[1490]));
-I11lI1I1lI1[I1IIl1I1lI1(_KTB[1190])] = UDim2[I1IIl1I1lI1(_KTB[1491])](0x9, 0x9);
-I11lI1I1lI1[I1IIl1I1lI1(_KTB[831])] = UDim2[I1IIl1I1lI1(_KTB[1492])](0B0, 0xF, 0B0, 0xF);
-I11lI1I1lI1[I1IIl1I1lI1(_KTB[1493])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1494])]
-I11lI1I1lI1[I1IIl1I1lI1(_KTB[1495])] = 0B0
-I11lI1I1lI1[I1IIl1I1lI1(_KTB[1496])] = 0x4
-I11lI1I1lI1[I1IIl1I1lI1(_KTB[1497])] = false
-I11lI1I1lI1[I1IIl1I1lI1(_KTB[1237])] = lIIlI1I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1498])](I1IIl1I1lI1(_KTB[1499]), I11lI1I1lI1))[I1IIl1I1lI1(_KTB[1500])] = UDim[I1IIl1I1lI1(_KTB[1501])](0B1, 0B0);
-local l11lI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1502])](I1IIl1I1lI1(_KTB[1503]));
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1504])] = UDim2[I1IIl1I1lI1(_KTB[925])](0B1, -44, 0B0, 0x18);
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1505])] = UDim2[I1IIl1I1lI1(_KTB[622])](0B0, 0x1E, 0B0, 0x7);
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1506])] = 0B1
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1507])] = I1IIl1I1lI1(_KTB[1508]);
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1509])] = Color3[I1IIl1I1lI1(_KTB[1510])](0xF5, 0xF5, 0xF5);
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1511])] = Color3[I1IIl1I1lI1(_KTB[1512])](0B0, 0B0, 0B0);
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1513])] = .18
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1514])] = Enum[I1IIl1I1lI1(_KTB[1515])][I1IIl1I1lI1(_KTB[1516])]
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1517])] = llIl1II1lI1 and 0xD or 0xE
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1518])] = Enum[I1IIl1I1lI1(_KTB[1519])][I1IIl1I1lI1(_KTB[1520])]
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1521])] = 0x4
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1522])] = false
-l11lI1I1lI1[I1IIl1I1lI1(_KTB[1523])] = lIIlI1I1lI1
-local Il1lI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[927])](I1IIl1I1lI1(_KTB[1524]));
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1525])] = UDim2[I1IIl1I1lI1(_KTB[1526])](0B1, -24, 0B0, 0B1);
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1527])] = UDim2[I1IIl1I1lI1(_KTB[1528])](0B0, 0xC, 0B0, 0x22);
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1529])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1530])]
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1531])] = .18
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1532])] = 0B0
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1533])] = 0B11
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1534])] = false
-Il1lI1I1lI1[I1IIl1I1lI1(_KTB[1535])] = lIIlI1I1lI1
-local ll1lI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[604])](I1IIl1I1lI1(_KTB[1536]));
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1537])] = UDim2[I1IIl1I1lI1(_KTB[1538])](0x40, 0x20);
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1539])] = UDim2[I1IIl1I1lI1(_KTB[1367])](0B0, 0xC, 0B0, 0x27);
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1540])] = 0B1
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1541])] = I1IIl1I1lI1(_KTB[1542]);
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1543])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1544])]
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1545])] = Color3[I1IIl1I1lI1(_KTB[1546])](0B0, 0B0, 0B0);
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1547])] = .15
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1548])] = Enum[I1IIl1I1lI1(_KTB[1549])][I1IIl1I1lI1(_KTB[1550])]
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1551])] = 0xE
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1552])] = Enum[I1IIl1I1lI1(_KTB[1553])][I1IIl1I1lI1(_KTB[1554])]
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1555])] = 0x4
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1556])] = false
-ll1lI1I1lI1[I1IIl1I1lI1(_KTB[1557])] = lIIlI1I1lI1
-local IIllI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1558])](I1IIl1I1lI1(_KTB[1559]));
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1560])] = UDim2[I1IIl1I1lI1(_KTB[1475])](0B1, -88, 0B0, 0x22);
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1561])] = UDim2[I1IIl1I1lI1(_KTB[1230])](0B0, 0x4C, 0B0, 0x25);
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1562])] = 0B1
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1563])] = I1IIl1I1lI1(_KTB[1564]);
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1565])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1566])]
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1567])] = Color3[I1IIl1I1lI1(_KTB[624])](0x22, 0x23, 0x64);
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1568])] = .05
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1569])] = Enum[I1IIl1I1lI1(_KTB[1570])][I1IIl1I1lI1(_KTB[1571])]
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1143])] = llIl1II1lI1 and 0x14 or 0x16
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1572])] = Enum[I1IIl1I1lI1(_KTB[1573])][I1IIl1I1lI1(_KTB[1574])]
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1575])] = 0B100
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1576])] = false
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[360])] = lIIlI1I1lI1
-task[I1IIl1I1lI1(_KTB[1577])](function()
-while IIIlI1I1lI1 and IIIlI1I1lI1[I1IIl1I1lI1(_KTB[617])] do
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1578])] then
-(lI111II1lI1:Create(I11lI1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[607])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1579])], Enum[I1IIl1I1lI1(_KTB[1580])][I1IIl1I1lI1(_KTB[1581])], Enum[I1IIl1I1lI1(_KTB[1582])][I1IIl1I1lI1(_KTB[1583])]), { [I1IIl1I1lI1(_KTB[1584])] = .7 })):Play();
-task[I1IIl1I1lI1(_KTB[1585])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1586])]);
-(lI111II1lI1:Create(I11lI1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1459])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1587])], Enum[I1IIl1I1lI1(_KTB[1588])][I1IIl1I1lI1(_KTB[1589])], Enum[I1IIl1I1lI1(_KTB[1590])][I1IIl1I1lI1(_KTB[1591])]), { [I1IIl1I1lI1(_KTB[1592])] = 0B0 })):Play();
-task[I1IIl1I1lI1(_KTB[1593])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1594])])
+local lIIllI1I1I = Instance[l11111lI1I(_KRP[1048])](l11111lI1I(_KRP[1440]));
+lIIllI1I1I[l11111lI1I(_KRP[1441])] = l11111lI1I(_KRP[1442]);
+lIIllI1I1I[l11111lI1I(_KRP[1443])] = false
+lIIllI1I1I[l11111lI1I(_KRP[1444])] = 0x3E6
+lIIllI1I1I[l11111lI1I(_KRP[1445])] = true
+lIIllI1I1I[l11111lI1I(_KRP[1446])] = I1llIl1I1I[l11111lI1I(_KRP[1447])]
+local IIIllI1I1I = Instance[l11111lI1I(_KRP[1448])](l11111lI1I(_KRP[1449]));
+IIIllI1I1I[l11111lI1I(_KRP[1450])] = l11111lI1I(_KRP[1451]);
+local l11IlI1I1I = Il1IIl1I1I and 0xE4 or 0xFC
+local I11IlI1I1I = 0x4E
+IIIllI1I1I[l11111lI1I(_KRP[1452])] = UDim2[l11111lI1I(_KRP[1453])](l11IlI1I1I, I11IlI1I1I);
+IIIllI1I1I[l11111lI1I(_KRP[1454])] = UDim2[l11111lI1I(_KRP[1455])](0B1, -l11IlI1I1I - 0x10, 0B1, -I11IlI1I1I - 0x40);
+IIIllI1I1I[l11111lI1I(_KRP[1456])] = Color3[l11111lI1I(_KRP[1457])](0x6, 0xC, 0x1C);
+IIIllI1I1I[l11111lI1I(_KRP[1458])] = .12
+IIIllI1I1I[l11111lI1I(_KRP[1459])] = 0B0
+IIIllI1I1I[l11111lI1I(_KRP[1460])] = false
+IIIllI1I1I[l11111lI1I(_KRP[1461])] = false
+IIIllI1I1I[l11111lI1I(_KRP[1462])] = lIIllI1I1I;
+(Instance[l11111lI1I(_KRP[912])](l11111lI1I(_KRP[1463]), IIIllI1I1I))[l11111lI1I(_KRP[1464])] = UDim[l11111lI1I(_KRP[1465])](0B0, 0xC);
+local ll1IlI1I1I = Instance[l11111lI1I(_KRP[1448])](l11111lI1I(_KRP[1466]), IIIllI1I1I);
+ll1IlI1I1I[l11111lI1I(_KRP[1467])] = Enum[l11111lI1I(_KRP[1468])][l11111lI1I(_KRP[1469])]
+ll1IlI1I1I[l11111lI1I(_KRP[1470])] = IlllIl1I1I[l11111lI1I(_KRP[1471])]
+ll1IlI1I1I[l11111lI1I(_KRP[1472])] = 0B10
+ll1IlI1I1I[l11111lI1I(_KRP[1473])] = 0B0
+local Il1IlI1I1I = Instance[l11111lI1I(_KRP[960])](l11111lI1I(_KRP[1474]), IIIllI1I1I);
+Il1IlI1I1I[l11111lI1I(_KRP[1475])] = ColorSequence[l11111lI1I(_KRP[883])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[1016])](0B0, Color3[l11111lI1I(_KRP[1476])](0x1B, 0x19, 0x45)), ColorSequenceKeypoint[l11111lI1I(_KRP[1477])](.5, Color3[l11111lI1I(_KRP[1478])](0B1000, 0x11, 0x23)), ColorSequenceKeypoint[l11111lI1I(_KRP[800])](0B1, Color3[l11111lI1I(_KRP[1479])](0x7, 0xD, 0x1D)) });
+Il1IlI1I1I[l11111lI1I(_KRP[1480])] = 0x87
+local lI1IlI1I1I = Instance[l11111lI1I(_KRP[1481])](l11111lI1I(_KRP[1482]));
+lI1IlI1I1I[l11111lI1I(_KRP[1483])] = UDim2[l11111lI1I(_KRP[1325])](0B1, -24, 0B0, 0B11);
+lI1IlI1I1I[l11111lI1I(_KRP[1484])] = UDim2[l11111lI1I(_KRP[1485])](0B0, 0xC, 0B0, 0B0);
+lI1IlI1I1I[l11111lI1I(_KRP[1486])] = IlllIl1I1I[l11111lI1I(_KRP[1487])]
+lI1IlI1I1I[l11111lI1I(_KRP[1488])] = 0B0
+lI1IlI1I1I[l11111lI1I(_KRP[1489])] = 0B11
+lI1IlI1I1I[l11111lI1I(_KRP[1490])] = false
+lI1IlI1I1I[l11111lI1I(_KRP[1491])] = IIIllI1I1I;
+(Instance[l11111lI1I(_KRP[979])](l11111lI1I(_KRP[1492]), lI1IlI1I1I))[l11111lI1I(_KRP[1493])] = UDim[l11111lI1I(_KRP[1494])](0B1, 0B0);
+local II1IlI1I1I = Instance[l11111lI1I(_KRP[647])](l11111lI1I(_KRP[1495]), lI1IlI1I1I);
+II1IlI1I1I[l11111lI1I(_KRP[1496])] = ColorSequence[l11111lI1I(_KRP[1497])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[802])](0B0, IlllIl1I1I[l11111lI1I(_KRP[1498])]), ColorSequenceKeypoint[l11111lI1I(_KRP[1499])](.5, IlllIl1I1I[l11111lI1I(_KRP[1500])]), ColorSequenceKeypoint[l11111lI1I(_KRP[1501])](0B1, IlllIl1I1I[l11111lI1I(_KRP[1502])]) });
+local l1lIlI1I1I = Instance[l11111lI1I(_KRP[1503])](l11111lI1I(_KRP[1504]));
+l1lIlI1I1I[l11111lI1I(_KRP[1505])] = UDim2[l11111lI1I(_KRP[1506])](0x9, 0x9);
+l1lIlI1I1I[l11111lI1I(_KRP[1507])] = UDim2[l11111lI1I(_KRP[868])](0B0, 0xF, 0B0, 0xF);
+l1lIlI1I1I[l11111lI1I(_KRP[1508])] = IlllIl1I1I[l11111lI1I(_KRP[1509])]
+l1lIlI1I1I[l11111lI1I(_KRP[1510])] = 0B0
+l1lIlI1I1I[l11111lI1I(_KRP[1511])] = 0x4
+l1lIlI1I1I[l11111lI1I(_KRP[1512])] = false
+l1lIlI1I1I[l11111lI1I(_KRP[984])] = IIIllI1I1I;
+(Instance[l11111lI1I(_KRP[1513])](l11111lI1I(_KRP[1514]), l1lIlI1I1I))[l11111lI1I(_KRP[1515])] = UDim[l11111lI1I(_KRP[1513])](0B1, 0B0);
+local I1lIlI1I1I = Instance[l11111lI1I(_KRP[1186])](l11111lI1I(_KRP[1516]));
+I1lIlI1I1I[l11111lI1I(_KRP[1517])] = UDim2[l11111lI1I(_KRP[1066])](0B1, -44, 0B0, 0x18);
+I1lIlI1I1I[l11111lI1I(_KRP[1518])] = UDim2[l11111lI1I(_KRP[1185])](0B0, 0x1E, 0B0, 0x7);
+I1lIlI1I1I[l11111lI1I(_KRP[1519])] = 0B1
+I1lIlI1I1I[l11111lI1I(_KRP[1520])] = l11111lI1I(_KRP[1521]);
+I1lIlI1I1I[l11111lI1I(_KRP[1522])] = Color3[l11111lI1I(_KRP[1523])](0xF5, 0xF5, 0xF5);
+I1lIlI1I1I[l11111lI1I(_KRP[1524])] = Color3[l11111lI1I(_KRP[31])](0B0, 0B0, 0B0);
+I1lIlI1I1I[l11111lI1I(_KRP[1525])] = .18
+I1lIlI1I1I[l11111lI1I(_KRP[1526])] = Enum[l11111lI1I(_KRP[1527])][l11111lI1I(_KRP[1528])]
+I1lIlI1I1I[l11111lI1I(_KRP[1529])] = Il1IIl1I1I and 0xD or 0xE
+I1lIlI1I1I[l11111lI1I(_KRP[1530])] = Enum[l11111lI1I(_KRP[1531])][l11111lI1I(_KRP[1532])]
+I1lIlI1I1I[l11111lI1I(_KRP[1533])] = 0x4
+I1lIlI1I1I[l11111lI1I(_KRP[1534])] = false
+I1lIlI1I1I[l11111lI1I(_KRP[1535])] = IIIllI1I1I
+local lllIlI1I1I = Instance[l11111lI1I(_KRP[1316])](l11111lI1I(_KRP[1536]));
+lllIlI1I1I[l11111lI1I(_KRP[1537])] = UDim2[l11111lI1I(_KRP[896])](0B1, -24, 0B0, 0B1);
+lllIlI1I1I[l11111lI1I(_KRP[1538])] = UDim2[l11111lI1I(_KRP[1539])](0B0, 0xC, 0B0, 0x22);
+lllIlI1I1I[l11111lI1I(_KRP[1540])] = IlllIl1I1I[l11111lI1I(_KRP[1541])]
+lllIlI1I1I[l11111lI1I(_KRP[1542])] = .18
+lllIlI1I1I[l11111lI1I(_KRP[1543])] = 0B0
+lllIlI1I1I[l11111lI1I(_KRP[1544])] = 0B11
+lllIlI1I1I[l11111lI1I(_KRP[1545])] = false
+lllIlI1I1I[l11111lI1I(_KRP[1546])] = IIIllI1I1I
+local IllIlI1I1I = Instance[l11111lI1I(_KRP[1547])](l11111lI1I(_KRP[1548]));
+IllIlI1I1I[l11111lI1I(_KRP[1549])] = UDim2[l11111lI1I(_KRP[1550])](0x40, 0x20);
+IllIlI1I1I[l11111lI1I(_KRP[727])] = UDim2[l11111lI1I(_KRP[1551])](0B0, 0xC, 0B0, 0x27);
+IllIlI1I1I[l11111lI1I(_KRP[1552])] = 0B1
+IllIlI1I1I[l11111lI1I(_KRP[1553])] = l11111lI1I(_KRP[1554]);
+IllIlI1I1I[l11111lI1I(_KRP[1555])] = IlllIl1I1I[l11111lI1I(_KRP[1556])]
+IllIlI1I1I[l11111lI1I(_KRP[1557])] = Color3[l11111lI1I(_KRP[1558])](0B0, 0B0, 0B0);
+IllIlI1I1I[l11111lI1I(_KRP[1559])] = .15
+IllIlI1I1I[l11111lI1I(_KRP[1560])] = Enum[l11111lI1I(_KRP[1561])][l11111lI1I(_KRP[1562])]
+IllIlI1I1I[l11111lI1I(_KRP[1563])] = 0xE
+IllIlI1I1I[l11111lI1I(_KRP[1564])] = Enum[l11111lI1I(_KRP[1565])][l11111lI1I(_KRP[1566])]
+IllIlI1I1I[l11111lI1I(_KRP[1567])] = 0x4
+IllIlI1I1I[l11111lI1I(_KRP[1568])] = false
+IllIlI1I1I[l11111lI1I(_KRP[669])] = IIIllI1I1I
+local lIlIlI1I1I = Instance[l11111lI1I(_KRP[1501])](l11111lI1I(_KRP[1569]));
+lIlIlI1I1I[l11111lI1I(_KRP[1570])] = UDim2[l11111lI1I(_KRP[1571])](0B1, -88, 0B0, 0x22);
+lIlIlI1I1I[l11111lI1I(_KRP[808])] = UDim2[l11111lI1I(_KRP[758])](0B0, 0x4C, 0B0, 0x25);
+lIlIlI1I1I[l11111lI1I(_KRP[1572])] = 0B1
+lIlIlI1I1I[l11111lI1I(_KRP[527])] = l11111lI1I(_KRP[1573]);
+lIlIlI1I1I[l11111lI1I(_KRP[1574])] = IlllIl1I1I[l11111lI1I(_KRP[1575])]
+lIlIlI1I1I[l11111lI1I(_KRP[1576])] = Color3[l11111lI1I(_KRP[1577])](0x22, 0x23, 0x64);
+lIlIlI1I1I[l11111lI1I(_KRP[1578])] = .05
+lIlIlI1I1I[l11111lI1I(_KRP[1579])] = Enum[l11111lI1I(_KRP[1580])][l11111lI1I(_KRP[1581])]
+lIlIlI1I1I[l11111lI1I(_KRP[1582])] = Il1IIl1I1I and 0x14 or 0x16
+lIlIlI1I1I[l11111lI1I(_KRP[1583])] = Enum[l11111lI1I(_KRP[1584])][l11111lI1I(_KRP[1585])]
+lIlIlI1I1I[l11111lI1I(_KRP[1586])] = 0x4
+lIlIlI1I1I[l11111lI1I(_KRP[1587])] = false
+lIlIlI1I1I[l11111lI1I(_KRP[1588])] = IIIllI1I1I
+task[l11111lI1I(_KRP[1589])](function()
+while lIIllI1I1I and lIIllI1I1I[l11111lI1I(_KRP[1590])] do
+if lI1IIl1I1I[l11111lI1I(_KRP[1591])] then
+(II1lIl1I1I:Create(l1lIlI1I1I, TweenInfo[l11111lI1I(_KRP[1592])](IIllIl1I1I[l11111lI1I(_KRP[1593])], Enum[l11111lI1I(_KRP[1594])][l11111lI1I(_KRP[1595])], Enum[l11111lI1I(_KRP[1596])][l11111lI1I(_KRP[1597])]), { [l11111lI1I(_KRP[1598])] = .7 })):Play();
+task[l11111lI1I(_KRP[1599])](IIllIl1I1I[l11111lI1I(_KRP[1600])]);
+(II1lIl1I1I:Create(l1lIlI1I1I, TweenInfo[l11111lI1I(_KRP[1601])](IIllIl1I1I[l11111lI1I(_KRP[1602])], Enum[l11111lI1I(_KRP[1603])][l11111lI1I(_KRP[1604])], Enum[l11111lI1I(_KRP[1605])][l11111lI1I(_KRP[1606])]), { [l11111lI1I(_KRP[1607])] = 0B0 })):Play();
+task[l11111lI1I(_KRP[1608])](IIllIl1I1I[l11111lI1I(_KRP[1609])])
 			else
-task[I1IIl1I1lI1(_KTB[1595])](.5)
+task[l11111lI1I(_KRP[1610])](.5)
 			end
 		end
 	end);
-task[I1IIl1I1lI1(_KTB[1596])](function()
-while IIIlI1I1lI1 and IIIlI1I1lI1[I1IIl1I1lI1(_KTB[1597])] do
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1598])] and lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1599])] then
-(lI111II1lI1:Create(IlIlI1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1600])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1601])], Enum[I1IIl1I1lI1(_KTB[1602])][I1IIl1I1lI1(_KTB[1603])], Enum[I1IIl1I1lI1(_KTB[1604])][I1IIl1I1lI1(_KTB[1605])]), { [I1IIl1I1lI1(_KTB[1606])] = .5 })):Play();
-task[I1IIl1I1lI1(_KTB[1607])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1608])]);
-(lI111II1lI1:Create(IlIlI1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1345])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1609])], Enum[I1IIl1I1lI1(_KTB[1610])][I1IIl1I1lI1(_KTB[1611])], Enum[I1IIl1I1lI1(_KTB[855])][I1IIl1I1lI1(_KTB[1612])]), { [I1IIl1I1lI1(_KTB[1613])] = .05 })):Play();
-task[I1IIl1I1lI1(_KTB[1614])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1615])])
+task[l11111lI1I(_KRP[1611])](function()
+while lIIllI1I1I and lIIllI1I1I[l11111lI1I(_KRP[942])] do
+if lI1IIl1I1I[l11111lI1I(_KRP[1612])] and IIIllI1I1I[l11111lI1I(_KRP[1613])] then
+(II1lIl1I1I:Create(ll1IlI1I1I, TweenInfo[l11111lI1I(_KRP[1614])](IIllIl1I1I[l11111lI1I(_KRP[1615])], Enum[l11111lI1I(_KRP[1616])][l11111lI1I(_KRP[1617])], Enum[l11111lI1I(_KRP[1618])][l11111lI1I(_KRP[1619])]), { [l11111lI1I(_KRP[1620])] = .5 })):Play();
+task[l11111lI1I(_KRP[1621])](IIllIl1I1I[l11111lI1I(_KRP[1622])]);
+(II1lIl1I1I:Create(ll1IlI1I1I, TweenInfo[l11111lI1I(_KRP[1623])](IIllIl1I1I[l11111lI1I(_KRP[1624])], Enum[l11111lI1I(_KRP[1625])][l11111lI1I(_KRP[1626])], Enum[l11111lI1I(_KRP[1627])][l11111lI1I(_KRP[1628])]), { [l11111lI1I(_KRP[1629])] = .05 })):Play();
+task[l11111lI1I(_KRP[1630])](IIllIl1I1I[l11111lI1I(_KRP[1631])])
 			else
-task[I1IIl1I1lI1(_KTB[1616])](.5)
+task[l11111lI1I(_KRP[1632])](.5)
 			end
 		end
 	end);
-I1Il1II1lI1(IlI11II1lI1[I1IIl1I1lI1(_KTB[1617])]:Connect(function()
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1618])] and (II1l1II1lI1[I1IIl1I1lI1(_KTB[1619])] and lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1620])]) then
-local l1I11II1lI1 = math[I1IIl1I1lI1(_KTB[1621])](tick() - II1l1II1lI1[I1IIl1I1lI1(_KTB[1622])]);
-IIllI1I1lI1[I1IIl1I1lI1(_KTB[1623])] = string[I1IIl1I1lI1(_KTB[1624])](I1IIl1I1lI1(_KTB[1625]), math[I1IIl1I1lI1(_KTB[1626])](l1I11II1lI1 / 0xE10), math[I1IIl1I1lI1(_KTB[1627])]((l1I11II1lI1 % 0xE10) / 0x3C), l1I11II1lI1 % 0x3C)
+l11IIl1I1I(ll1lIl1I1I[l11111lI1I(_KRP[1633])]:Connect(function()
+if lI1IIl1I1I[l11111lI1I(_KRP[1634])] and (lI1IIl1I1I[l11111lI1I(_KRP[1635])] and IIIllI1I1I[l11111lI1I(_KRP[1636])]) then
+local I11lIl1I1I = math[l11111lI1I(_KRP[1637])](tick() - lI1IIl1I1I[l11111lI1I(_KRP[1638])]);
+lIlIlI1I1I[l11111lI1I(_KRP[1639])] = string[l11111lI1I(_KRP[1640])](l11111lI1I(_KRP[1641]), math[l11111lI1I(_KRP[1642])](I11lIl1I1I / 0xE10), math[l11111lI1I(_KRP[1643])]((I11lIl1I1I % 0xE10) / 0x3C), I11lIl1I1I % 0x3C)
 		end
 	end));
-I1Il1II1lI1(IlI11II1lI1[I1IIl1I1lI1(_KTB[1628])]:Connect(function()
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1629])] and II1l1II1lI1[I1IIl1I1lI1(_KTB[1630])] then
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[1631])]
-local IlI11II1lI1 = l1I11II1lI1 and l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1632]))
-if IlI11II1lI1 then
-IlI11II1lI1[I1IIl1I1lI1(_KTB[1633])] = false
-l1I11II1lI1:PivotTo(II1l1II1lI1[I1IIl1I1lI1(_KTB[1634])]);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[1635])] = Vector3[I1IIl1I1lI1(_KTB[1636])]
-IlI11II1lI1[I1IIl1I1lI1(_KTB[1637])] = Vector3[I1IIl1I1lI1(_KTB[1638])]
+l11IIl1I1I(ll1lIl1I1I[l11111lI1I(_KRP[1644])]:Connect(function()
+if lI1IIl1I1I[l11111lI1I(_KRP[1645])] and lI1IIl1I1I[l11111lI1I(_KRP[1646])] then
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[467])]
+local ll1lIl1I1I = I11lIl1I1I and I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1647]))
+if ll1lIl1I1I then
+ll1lIl1I1I[l11111lI1I(_KRP[1648])] = false
+I11lIl1I1I:PivotTo(lI1IIl1I1I[l11111lI1I(_KRP[1649])]);
+ll1lIl1I1I[l11111lI1I(_KRP[1650])] = Vector3[l11111lI1I(_KRP[1651])]
+ll1lIl1I1I[l11111lI1I(_KRP[1652])] = Vector3[l11111lI1I(_KRP[1653])]
 			end
 		end
 	end));
-local lIllI1I1lI1 = IIl1I1I1lI1(I1IIl1I1lI1(_KTB[1639]));
-local I1llI1I1lI1 = nil
-local l1llI1I1lI1 = nil
-local IlllI1I1lI1 = nil
-lIl1I1I1lI1(lIllI1I1lI1, I1IIl1I1lI1(_KTB[1640]), 0B1);
-local llllI1I1lI1 = Instance[I1IIl1I1lI1(_KTB[1432])](I1IIl1I1lI1(_KTB[1641]));
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1642])] = I1IIl1I1lI1(_KTB[1643]);
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1644])] = UDim2[I1IIl1I1lI1(_KTB[1469])](0B1, 0B0, 0B0, 0x5C);
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1645])] = Color3[I1IIl1I1lI1(_KTB[1646])](0xB, 0x16, 0x2E);
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1003])] = .12
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1647])] = 0B0
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1648])] = 0B10
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1649])] = 0B10
-llllI1I1lI1[I1IIl1I1lI1(_KTB[1650])] = lIllI1I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1651])](I1IIl1I1lI1(_KTB[1652]), llllI1I1lI1))[I1IIl1I1lI1(_KTB[1653])] = UDim[I1IIl1I1lI1(_KTB[1654])](0B0, 0x7);
-local IIII11I1lI1 = Instance[I1IIl1I1lI1(_KTB[1655])](I1IIl1I1lI1(_KTB[1656]), llllI1I1lI1);
-IIII11I1lI1[I1IIl1I1lI1(_KTB[1657])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1258])]
-IIII11I1lI1[I1IIl1I1lI1(_KTB[1658])] = 1.5
-IIII11I1lI1[I1IIl1I1lI1(_KTB[1659])] = .1
-local lIII11I1lI1 = Instance[I1IIl1I1lI1(_KTB[927])](I1IIl1I1lI1(_KTB[1660]));
-lIII11I1lI1[I1IIl1I1lI1(_KTB[1661])] = UDim2[I1IIl1I1lI1(_KTB[1662])](0B0, 0B1, 0B1, -22);
-lIII11I1lI1[I1IIl1I1lI1(_KTB[1663])] = UDim2[I1IIl1I1lI1(_KTB[1664])](.33333333333333, 0B0, 0B0, 0xB);
-lIII11I1lI1[I1IIl1I1lI1(_KTB[1665])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1666])]
-lIII11I1lI1[I1IIl1I1lI1(_KTB[1667])] = .22
-lIII11I1lI1[I1IIl1I1lI1(_KTB[1668])] = 0B0
-lIII11I1lI1[I1IIl1I1lI1(_KTB[1669])] = 0B11
-lIII11I1lI1[I1IIl1I1lI1(_KTB[1670])] = llllI1I1lI1
+local IIlIlI1I1I = lIlllI1I1I(l11111lI1I(_KRP[1654]));
+local l1IIlI1I1I = nil
+local I1IIlI1I1I = nil
+local llIIlI1I1I = nil
+IIlllI1I1I(IIlIlI1I1I, l11111lI1I(_KRP[1655]), 0B1);
+local IlIIlI1I1I = Instance[l11111lI1I(_KRP[1656])](l11111lI1I(_KRP[1657]));
+IlIIlI1I1I[l11111lI1I(_KRP[1658])] = l11111lI1I(_KRP[1659]);
+IlIIlI1I1I[l11111lI1I(_KRP[1303])] = UDim2[l11111lI1I(_KRP[1660])](0B1, 0B0, 0B0, 0x5C);
+IlIIlI1I1I[l11111lI1I(_KRP[1265])] = Color3[l11111lI1I(_KRP[1661])](0xB, 0x16, 0x2E);
+IlIIlI1I1I[l11111lI1I(_KRP[989])] = .12
+IlIIlI1I1I[l11111lI1I(_KRP[1662])] = 0B0
+IlIIlI1I1I[l11111lI1I(_KRP[1663])] = 0B10
+IlIIlI1I1I[l11111lI1I(_KRP[1664])] = 0B10
+IlIIlI1I1I[l11111lI1I(_KRP[1665])] = IIlIlI1I1I;
+(Instance[l11111lI1I(_KRP[974])](l11111lI1I(_KRP[1666]), IlIIlI1I1I))[l11111lI1I(_KRP[1365])] = UDim[l11111lI1I(_KRP[943])](0B0, 0x7);
+local lIIIlI1I1I = Instance[l11111lI1I(_KRP[752])](l11111lI1I(_KRP[1667]), IlIIlI1I1I);
+lIIIlI1I1I[l11111lI1I(_KRP[1668])] = IlllIl1I1I[l11111lI1I(_KRP[1669])]
+lIIIlI1I1I[l11111lI1I(_KRP[1670])] = 1.5
+lIIIlI1I1I[l11111lI1I(_KRP[1671])] = .1
+local IIIIlI1I1I = Instance[l11111lI1I(_KRP[1656])](l11111lI1I(_KRP[1672]));
+IIIIlI1I1I[l11111lI1I(_KRP[1673])] = UDim2[l11111lI1I(_KRP[1367])](0B0, 0B1, 0B1, -22);
+IIIIlI1I1I[l11111lI1I(_KRP[1430])] = UDim2[l11111lI1I(_KRP[948])](.33333333333333, 0B0, 0B0, 0xB);
+IIIIlI1I1I[l11111lI1I(_KRP[1674])] = IlllIl1I1I[l11111lI1I(_KRP[1675])]
+IIIIlI1I1I[l11111lI1I(_KRP[1676])] = .22
+IIIIlI1I1I[l11111lI1I(_KRP[1677])] = 0B0
+IIIIlI1I1I[l11111lI1I(_KRP[991])] = 0B11
+IIIIlI1I1I[l11111lI1I(_KRP[273])] = IlIIlI1I1I
 do
-local l1I11II1lI1 = lIII11I1lI1:Clone();
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1671])] = UDim2[I1IIl1I1lI1(_KTB[1526])](.66666666666667, 0B0, 0B0, 0xB);
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1672])] = llllI1I1lI1
+local I11lIl1I1I = IIIIlI1I1I:Clone();
+I11lIl1I1I[l11111lI1I(_KRP[1678])] = UDim2[l11111lI1I(_KRP[1129])](.66666666666667, 0B0, 0B0, 0xB);
+I11lIl1I1I[l11111lI1I(_KRP[1679])] = IlIIlI1I1I
 	end
-local function I1II11I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1, II111II1lI1, lI111II1lI1)
-local I1111II1lI1 = Instance[I1IIl1I1lI1(_KTB[782])](I1IIl1I1lI1(_KTB[1673]));
-I1111II1lI1[I1IIl1I1lI1(_KTB[1674])] = llI11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1675])] = IlI11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1676])] = 0B1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1209])] = l1I11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1677])] = lI111II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1545])] = Color3[I1IIl1I1lI1(_KTB[1546])](0B0, 0B0, 0B0);
-I1111II1lI1[I1IIl1I1lI1(_KTB[1678])] = .18
-I1111II1lI1[I1IIl1I1lI1(_KTB[1679])] = Enum[I1IIl1I1lI1(_KTB[1680])][I1IIl1I1lI1(_KTB[1681])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[1682])] = II111II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1683])] = Enum[I1IIl1I1lI1(_KTB[1684])][I1IIl1I1lI1(_KTB[1685])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[1686])] = 0B11
-I1111II1lI1[I1IIl1I1lI1(_KTB[1687])] = llllI1I1lI1
-return I1111II1lI1
+local function l111II1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I, lI1lIl1I1I, II1lIl1I1I)
+local l1llIl1I1I = Instance[l11111lI1I(_KRP[1680])](l11111lI1I(_KRP[1681]));
+l1llIl1I1I[l11111lI1I(_KRP[1682])] = Il1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1683])] = ll1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1572])] = 0B1
+l1llIl1I1I[l11111lI1I(_KRP[1684])] = I11lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1685])] = II1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1686])] = Color3[l11111lI1I(_KRP[1687])](0B0, 0B0, 0B0);
+l1llIl1I1I[l11111lI1I(_KRP[1688])] = .18
+l1llIl1I1I[l11111lI1I(_KRP[1689])] = Enum[l11111lI1I(_KRP[1690])][l11111lI1I(_KRP[1691])]
+l1llIl1I1I[l11111lI1I(_KRP[1692])] = lI1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[1693])] = Enum[l11111lI1I(_KRP[1694])][l11111lI1I(_KRP[1695])]
+l1llIl1I1I[l11111lI1I(_KRP[1696])] = 0B11
+l1llIl1I1I[l11111lI1I(_KRP[1697])] = IlIIlI1I1I
+return l1llIl1I1I
 	end
-I1II11I1lI1(I1IIl1I1lI1(_KTB[1688]), UDim2[I1IIl1I1lI1(_KTB[1689])](0B0, 0x5, 0B0, 0x9), UDim2[I1IIl1I1lI1(_KTB[1447])](.33333333333333, -10, 0B0, 0x18), llIl1II1lI1 and 0xA or 0xD, ll111II1lI1[I1IIl1I1lI1(_KTB[1690])]);
-I1II11I1lI1(I1IIl1I1lI1(_KTB[1691]), UDim2[I1IIl1I1lI1(_KTB[953])](.33333333333333, 0x5, 0B0, 0x9), UDim2[I1IIl1I1lI1(_KTB[1692])](.33333333333333, -10, 0B0, 0x18), llIl1II1lI1 and 0xA or 0xD, ll111II1lI1[I1IIl1I1lI1(_KTB[1693])]);
-I1II11I1lI1(I1IIl1I1lI1(_KTB[1694]), UDim2[I1IIl1I1lI1(_KTB[990])](.66666666666667, 0x5, 0B0, 0x9), UDim2[I1IIl1I1lI1(_KTB[619])](.33333333333333, -10, 0B0, 0x18), llIl1II1lI1 and 0xA or 0xD, ll111II1lI1[I1IIl1I1lI1(_KTB[1695])]);
-local l1II11I1lI1 = { I1II11I1lI1(I1IIl1I1lI1(_KTB[1696]), UDim2[I1IIl1I1lI1(_KTB[1204])](0B0, 0x5, 0B0, 0x21), UDim2[I1IIl1I1lI1(_KTB[1070])](.33333333333333, -10, 0B0, 0x2D), llIl1II1lI1 and 0x14 or 0x18, ll111II1lI1[I1IIl1I1lI1(_KTB[1697])]), I1II11I1lI1(I1IIl1I1lI1(_KTB[1698]), UDim2[I1IIl1I1lI1(_KTB[1699])](.33333333333333, 0x5, 0B0, 0x21), UDim2[I1IIl1I1lI1(_KTB[1700])](.33333333333333, -10, 0B0, 0x2D), llIl1II1lI1 and 0x14 or 0x18, ll111II1lI1[I1IIl1I1lI1(_KTB[1701])]), I1II11I1lI1(I1IIl1I1lI1(_KTB[1702]), UDim2[I1IIl1I1lI1(_KTB[1703])](.66666666666667, 0x5, 0B0, 0x21), UDim2[I1IIl1I1lI1(_KTB[1704])](.33333333333333, -10, 0B0, 0x2D), llIl1II1lI1 and 0x14 or 0x18, ll111II1lI1[I1IIl1I1lI1(_KTB[1705])]) }
-for l1I11II1lI1, IlI11II1lI1 in ipairs(l1II11I1lI1) do
-IlI11II1lI1[I1IIl1I1lI1(_KTB[1706])] = true
-local llI11II1lI1 = Instance[I1IIl1I1lI1(_KTB[1707])](I1IIl1I1lI1(_KTB[1708]));
-llI11II1lI1[I1IIl1I1lI1(_KTB[1709])] = llIl1II1lI1 and 0xC or 0xE
-llI11II1lI1[I1IIl1I1lI1(_KTB[1710])] = llIl1II1lI1 and 0x14 or 0x18
-llI11II1lI1[I1IIl1I1lI1(_KTB[1711])] = IlI11II1lI1
+l111II1I1I(l11111lI1I(_KRP[1698]), UDim2[l11111lI1I(_KRP[1699])](0B0, 0x5, 0B0, 0x9), UDim2[l11111lI1I(_KRP[620])](.33333333333333, -10, 0B0, 0x18), Il1IIl1I1I and 0xA or 0xD, IlllIl1I1I[l11111lI1I(_KRP[1700])]);
+l111II1I1I(l11111lI1I(_KRP[1701]), UDim2[l11111lI1I(_KRP[629])](.33333333333333, 0x5, 0B0, 0B1001), UDim2[l11111lI1I(_KRP[1501])](.33333333333333, -10, 0B0, 0x18), Il1IIl1I1I and 0xA or 0xD, IlllIl1I1I[l11111lI1I(_KRP[1702])]);
+l111II1I1I(l11111lI1I(_KRP[1703]), UDim2[l11111lI1I(_KRP[868])](.66666666666667, 0x5, 0B0, 0x9), UDim2[l11111lI1I(_KRP[1315])](.33333333333333, -10, 0B0, 0x18), Il1IIl1I1I and 0xA or 0xD, IlllIl1I1I[l11111lI1I(_KRP[1704])]);
+local I111II1I1I = { l111II1I1I(l11111lI1I(_KRP[1705]), UDim2[l11111lI1I(_KRP[1503])](0B0, 0x5, 0B0, 0x21), UDim2[l11111lI1I(_KRP[1706])](.33333333333333, -10, 0B0, 0x2D), Il1IIl1I1I and 0x14 or 0x18, IlllIl1I1I[l11111lI1I(_KRP[1707])]), l111II1I1I(l11111lI1I(_KRP[1708]), UDim2[l11111lI1I(_KRP[1448])](.33333333333333, 0x5, 0B0, 0x21), UDim2[l11111lI1I(_KRP[1709])](.33333333333333, -10, 0B0, 0x2D), Il1IIl1I1I and 0x14 or 0x18, IlllIl1I1I[l11111lI1I(_KRP[1710])]), l111II1I1I(l11111lI1I(_KRP[1711]), UDim2[l11111lI1I(_KRP[1712])](.66666666666667, 0x5, 0B0, 0x21), UDim2[l11111lI1I(_KRP[1713])](.33333333333333, -10, 0B0, 0x2D), Il1IIl1I1I and 0x14 or 0x18, IlllIl1I1I[l11111lI1I(_KRP[1714])]) }
+for I11lIl1I1I, ll1lIl1I1I in ipairs(I111II1I1I) do
+ll1lIl1I1I[l11111lI1I(_KRP[1715])] = true
+local Il1lIl1I1I = Instance[l11111lI1I(_KRP[1716])](l11111lI1I(_KRP[1717]));
+Il1lIl1I1I[l11111lI1I(_KRP[1718])] = Il1IIl1I1I and 0xC or 0xE
+Il1lIl1I1I[l11111lI1I(_KRP[1719])] = Il1IIl1I1I and 0x14 or 0x18
+Il1lIl1I1I[l11111lI1I(_KRP[1720])] = ll1lIl1I1I
 	end
-local function IlII11I1lI1(l1I11II1lI1)
-local IlI11II1lI1 = tostring(math[I1IIl1I1lI1(_KTB[1712])](tonumber(l1I11II1lI1) or 0B0))
+local function ll11II1I1I(I11lIl1I1I)
+local ll1lIl1I1I = tostring(math[l11111lI1I(_KRP[1721])](tonumber(I11lIl1I1I) or 0B0))
 while true do
-local l1I11II1lI1, llI11II1lI1 = IlI11II1lI1:gsub(I1IIl1I1lI1(_KTB[1713]), I1IIl1I1lI1(_KTB[1714]))
-IlI11II1lI1 = l1I11II1lI1
-if llI11II1lI1 == 0B0 then
-return IlI11II1lI1
+local I11lIl1I1I, Il1lIl1I1I = ll1lIl1I1I:gsub(l11111lI1I(_KRP[1722]), l11111lI1I(_KRP[1723]))
+ll1lIl1I1I = I11lIl1I1I
+if Il1lIl1I1I == 0B0 then
+return ll1lIl1I1I
 			end
 		end
 	end
-task[I1IIl1I1lI1(_KTB[1715])](function()
-while I1l11II1lI1 and I1l11II1lI1[I1IIl1I1lI1(_KTB[677])] do
-local l1I11II1lI1 = l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1716]));
-local IlI11II1lI1 = l1I11II1lI1 and l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1717])) or l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1717]));
-local llI11II1lI1 = l1I11II1lI1 and l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1718])) or l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1719]));
-local II111II1lI1 = l1I11II1lI1 and l1I11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1720])) or l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1721]));
-l1II11I1lI1[0B1][I1IIl1I1lI1(_KTB[1722])] = IlII11I1lI1(IlI11II1lI1 and IlI11II1lI1[I1IIl1I1lI1(_KTB[1723])] or 0B0);
-l1II11I1lI1[0B10][I1IIl1I1lI1(_KTB[1724])] = IlII11I1lI1(llI11II1lI1 and llI11II1lI1[I1IIl1I1lI1(_KTB[1725])] or 0B0);
-l1II11I1lI1[0B11][I1IIl1I1lI1(_KTB[1726])] = IlII11I1lI1(II111II1lI1 and II111II1lI1[I1IIl1I1lI1(_KTB[1727])] or 0B0);
-task[I1IIl1I1lI1(_KTB[1728])](.5)
+task[l11111lI1I(_KRP[1724])](function()
+while l1IlIl1I1I and l1IlIl1I1I[l11111lI1I(_KRP[1725])] do
+local I11lIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[1726]));
+local ll1lIl1I1I = I11lIl1I1I and I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1727])) or I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[1728]));
+local Il1lIl1I1I = I11lIl1I1I and I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1729])) or I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[1730]));
+local lI1lIl1I1I = I11lIl1I1I and I11lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1731])) or I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[1732]));
+I111II1I1I[0B1][l11111lI1I(_KRP[1733])] = ll11II1I1I(ll1lIl1I1I and ll1lIl1I1I[l11111lI1I(_KRP[1734])] or 0B0);
+I111II1I1I[0B10][l11111lI1I(_KRP[1735])] = ll11II1I1I(Il1lIl1I1I and Il1lIl1I1I[l11111lI1I(_KRP[1736])] or 0B0);
+I111II1I1I[0B11][l11111lI1I(_KRP[1733])] = ll11II1I1I(lI1lIl1I1I and lI1lIl1I1I[l11111lI1I(_KRP[1737])] or 0B0);
+task[l11111lI1I(_KRP[1738])](.5)
 		end
 	end);
-local llII11I1lI1, II1I11I1lI1 = I1l1I1I1lI1(lIllI1I1lI1, I1IIl1I1lI1(_KTB[1729]), 0B11, function(l1I11II1lI1)
-if l1I11II1lI1 then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1730])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1731])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1732])] = false
-if l1llI1I1lI1 then
-l1llI1I1lI1(false, true)
+local Il11II1I1I, lI11II1I1I = l1IllI1I1I(IIlIlI1I1I, l11111lI1I(_KRP[1739]), 0B11, function(I11lIl1I1I)
+if I11lIl1I1I then
+lI1IIl1I1I[l11111lI1I(_KRP[1740])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[1741])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[1742])] = false
+if I1IIlI1I1I then
+I1IIlI1I1I(false, true)
 				end
-if IlllI1I1lI1 then
-IlllI1I1lI1(false, true)
+if llIIlI1I1I then
+llIIlI1I1I(false, true)
 				end
-return I111lII1lI1(I1IIl1I1lI1(_KTB[1733]), { I1IIl1I1lI1(_KTB[1734]) })
-			elseif II1l1II1lI1[I1IIl1I1lI1(_KTB[1735])] == I1IIl1I1lI1(_KTB[1736]) then
-lI11lII1lI1()
+return l1ll1I1I1I(l11111lI1I(_KRP[1743]), { l11111lI1I(_KRP[1744]) })
+			elseif lI1IIl1I1I[l11111lI1I(_KRP[1745])] == l11111lI1I(_KRP[1746]) then
+II1l1I1I1I()
 			end
 return true
 		end)
-I1llI1I1lI1 = II1I11I1lI1
-local lI1I11I1lI1, I11I11I1lI1 = I1l1I1I1lI1(lIllI1I1lI1, I1IIl1I1lI1(_KTB[1737]), 0x4, function(l1I11II1lI1)
-if l1I11II1lI1 then
-if I1llI1I1lI1 then
-I1llI1I1lI1(false, true)
+l1IIlI1I1I = lI11II1I1I
+local II11II1I1I, l1l1II1I1I = l1IllI1I1I(IIlIlI1I1I, l11111lI1I(_KRP[1747]), 0x4, function(I11lIl1I1I)
+if I11lIl1I1I then
+if l1IIlI1I1I then
+l1IIlI1I1I(false, true)
 				end
-if IlllI1I1lI1 then
-IlllI1I1lI1(false, true)
+if llIIlI1I1I then
+llIIlI1I1I(false, true)
 				end
-local l1I11II1lI1 = I111lII1lI1(I1IIl1I1lI1(_KTB[1738]), { I1IIl1I1lI1(_KTB[1739]), I1IIl1I1lI1(_KTB[1740]) })
-if l1I11II1lI1 then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1741])] = II1l1II1lI1[I1IIl1I1lI1(_KTB[1742])]
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1743])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1744])] = false
+local I11lIl1I1I = l1ll1I1I1I(l11111lI1I(_KRP[1748]), { l11111lI1I(_KRP[1749]), l11111lI1I(_KRP[1750]) })
+if I11lIl1I1I then
+lI1IIl1I1I[l11111lI1I(_KRP[1751])] = lI1IIl1I1I[l11111lI1I(_KRP[1752])]
+lI1IIl1I1I[l11111lI1I(_KRP[1753])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[1754])] = false
 				end
-return l1I11II1lI1
+return I11lIl1I1I
 			else
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1745])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1746])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1747])] = false
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1748])] == I1IIl1I1lI1(_KTB[1749]) then
-lI11lII1lI1()
+lI1IIl1I1I[l11111lI1I(_KRP[1755])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[1756])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[1757])] = false
+if lI1IIl1I1I[l11111lI1I(_KRP[1758])] == l11111lI1I(_KRP[1759]) then
+II1l1I1I1I()
 				end
 			end
 return true
 		end)
-l1llI1I1lI1 = I11I11I1lI1
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1750])] = function()
-if not II1l1II1lI1[I1IIl1I1lI1(_KTB[1751])] then
+I1IIlI1I1I = l1l1II1I1I
+lI1IIl1I1I[l11111lI1I(_KRP[1760])] = function()
+if not lI1IIl1I1I[l11111lI1I(_KRP[1761])] then
 return
 			end
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1752])] ~= I1IIl1I1lI1(_KTB[1753]) then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1754])] = I1IIl1I1lI1(_KTB[1755]);
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1756])] = II11lII1lI1({ I1IIl1I1lI1(_KTB[1757]), I1IIl1I1lI1(_KTB[1758]) }) == nil
-l1llI1I1lI1(false, true);
-I1llI1I1lI1(true, true);
-lI11lII1lI1()
+if lI1IIl1I1I[l11111lI1I(_KRP[1762])] ~= l11111lI1I(_KRP[1763]) then
+lI1IIl1I1I[l11111lI1I(_KRP[1764])] = l11111lI1I(_KRP[1765]);
+lI1IIl1I1I[l11111lI1I(_KRP[1766])] = lI1l1I1I1I({ l11111lI1I(_KRP[1767]), l11111lI1I(_KRP[1768]) }) == nil
+I1IIlI1I1I(false, true);
+l1IIlI1I1I(true, true);
+II1l1I1I1I()
 			end
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1759])] ~= I1IIl1I1lI1(_KTB[1760]) and II11lII1lI1({ I1IIl1I1lI1(_KTB[1761]) }) then
-I111lII1lI1(I1IIl1I1lI1(_KTB[1762]), { I1IIl1I1lI1(_KTB[1763]) })
+if lI1IIl1I1I[l11111lI1I(_KRP[1769])] ~= l11111lI1I(_KRP[1770]) and lI1l1I1I1I({ l11111lI1I(_KRP[400]) }) then
+l1ll1I1I1I(l11111lI1I(_KRP[1771]), { l11111lI1I(_KRP[1772]) })
 			end
 		end
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1764])] = function()
-if not II1l1II1lI1[I1IIl1I1lI1(_KTB[1765])] or II1l1II1lI1[I1IIl1I1lI1(_KTB[1766])] ~= I1IIl1I1lI1(_KTB[1767]) then
+lI1IIl1I1I[l11111lI1I(_KRP[1773])] = function()
+if not lI1IIl1I1I[l11111lI1I(_KRP[1774])] or lI1IIl1I1I[l11111lI1I(_KRP[1775])] ~= l11111lI1I(_KRP[1776]) then
 return
 			end
-local l1I11II1lI1 = II11lII1lI1({ I1IIl1I1lI1(_KTB[1768]), I1IIl1I1lI1(_KTB[1769]) })
-if not l1I11II1lI1 then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1770])] = true
-			elseif II1l1II1lI1[I1IIl1I1lI1(_KTB[1771])] then
-I1llI1I1lI1(false, true);
-l1llI1I1lI1(true, true)
-if I111lII1lI1(I1IIl1I1lI1(_KTB[1772]), { I1IIl1I1lI1(_KTB[1773]), I1IIl1I1lI1(_KTB[1774]) }) then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1743])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1775])] = false
+local I11lIl1I1I = lI1l1I1I1I({ l11111lI1I(_KRP[1777]), l11111lI1I(_KRP[1778]) })
+if not I11lIl1I1I then
+lI1IIl1I1I[l11111lI1I(_KRP[1779])] = true
+			elseif lI1IIl1I1I[l11111lI1I(_KRP[1780])] then
+l1IIlI1I1I(false, true);
+I1IIlI1I1I(true, true)
+if l1ll1I1I1I(l11111lI1I(_KRP[1781]), { l11111lI1I(_KRP[1782]), l11111lI1I(_KRP[1783]) }) then
+lI1IIl1I1I[l11111lI1I(_KRP[1784])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[1785])] = false
 return
 				end
 			end
-if II1l1II1lI1[I1IIl1I1lI1(_KTB[1776])] == I1IIl1I1lI1(_KTB[1777]) and (II1l1II1lI1[I1IIl1I1lI1(_KTB[1778])] ~= I1IIl1I1lI1(_KTB[1779]) and II11lII1lI1({ I1IIl1I1lI1(_KTB[1780]) })) then
-l1llI1I1lI1(false, true);
-I1llI1I1lI1(true, true);
-I111lII1lI1(I1IIl1I1lI1(_KTB[1781]), { I1IIl1I1lI1(_KTB[1782]) })
+if lI1IIl1I1I[l11111lI1I(_KRP[1786])] == l11111lI1I(_KRP[1787]) and (lI1IIl1I1I[l11111lI1I(_KRP[1788])] ~= l11111lI1I(_KRP[1789]) and lI1l1I1I1I({ l11111lI1I(_KRP[1790]) })) then
+I1IIlI1I1I(false, true);
+l1IIlI1I1I(true, true);
+l1ll1I1I1I(l11111lI1I(_KRP[1791]), { l11111lI1I(_KRP[1792]) })
 			end
 		end
-I1l1I1I1lI1(lIllI1I1lI1, I1IIl1I1lI1(_KTB[1783]), 0x6, function(l1I11II1lI1)
-if l1I11II1lI1 then
-if not II1l1II1lI1[I1IIl1I1lI1(_KTB[1784])] or not II1l1II1lI1[I1IIl1I1lI1(_KTB[1785])]:IsA(I1IIl1I1lI1(_KTB[1786])) or not lIll1II1lI1 or type(lIll1II1lI1[I1IIl1I1lI1(_KTB[1787])]) ~= I1IIl1I1lI1(_KTB[1788]) then
-I1111II1lI1:SetCore(I1IIl1I1lI1(_KTB[1789]), { [I1IIl1I1lI1(_KTB[1790])] = Il111II1lI1[I1IIl1I1lI1(_KTB[1791])][I1IIl1I1lI1(_KTB[1792])], [I1IIl1I1lI1(_KTB[1793])] = I1IIl1I1lI1(_KTB[1794]), [I1IIl1I1lI1(_KTB[1795])] = 0B11 })
+l1IllI1I1I(IIlIlI1I1I, l11111lI1I(_KRP[1793]), 0x6, function(I11lIl1I1I)
+if I11lIl1I1I then
+if not lI1IIl1I1I[l11111lI1I(_KRP[1794])] or not lI1IIl1I1I[l11111lI1I(_KRP[1795])]:IsA(l11111lI1I(_KRP[1796])) or not IIlIIl1I1I or type(IIlIIl1I1I[l11111lI1I(_KRP[1797])]) ~= l11111lI1I(_KRP[1798]) then
+l1llIl1I1I:SetCore(l11111lI1I(_KRP[1799]), { [l11111lI1I(_KRP[1800])] = llllIl1I1I[l11111lI1I(_KRP[1801])][l11111lI1I(_KRP[1802])], [l11111lI1I(_KRP[1803])] = l11111lI1I(_KRP[1804]), [l11111lI1I(_KRP[1805])] = 0B11 })
 return false
 			end
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1796])] = II1l1II1lI1[I1IIl1I1lI1(_KTB[1797])] + 0B1
-local l1I11II1lI1 = II1l1II1lI1[I1IIl1I1lI1(_KTB[1798])]
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1799])] = true
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1800])] = II1l1II1lI1[I1IIl1I1lI1(_KTB[1801])] == I1IIl1I1lI1(_KTB[1802]);
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1803])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1804])] = false
-local IlI11II1lI1 = l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1805]));
-local llI11II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1806]));
-local II111II1lI1 = llI11II1lI1 and llI11II1lI1[I1IIl1I1lI1(_KTB[1807])] or nil
-task[I1IIl1I1lI1(_KTB[1577])](function()
-while II1l1II1lI1[I1IIl1I1lI1(_KTB[1808])] and (II1l1II1lI1[I1IIl1I1lI1(_KTB[1809])] == l1I11II1lI1 and (I1l11II1lI1 and I1l11II1lI1[I1IIl1I1lI1(_KTB[1810])])) do
-local l1I11II1lI1 = .08
+lI1IIl1I1I[l11111lI1I(_KRP[1806])] = lI1IIl1I1I[l11111lI1I(_KRP[1807])] + 0B1
+local I11lIl1I1I = lI1IIl1I1I[l11111lI1I(_KRP[1808])]
+lI1IIl1I1I[l11111lI1I(_KRP[1809])] = true
+lI1IIl1I1I[l11111lI1I(_KRP[1810])] = lI1IIl1I1I[l11111lI1I(_KRP[1811])] == l11111lI1I(_KRP[1812]);
+lI1IIl1I1I[l11111lI1I(_KRP[1813])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[1814])] = false
+local ll1lIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[1815]));
+local Il1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1816]));
+local lI1lIl1I1I = Il1lIl1I1I and Il1lIl1I1I[l11111lI1I(_KRP[1817])] or nil
+task[l11111lI1I(_KRP[1818])](function()
+while lI1IIl1I1I[l11111lI1I(_KRP[1819])] and (lI1IIl1I1I[l11111lI1I(_KRP[1820])] == I11lIl1I1I and (l1IlIl1I1I and l1IlIl1I1I[l11111lI1I(_KRP[1821])])) do
+local I11lIl1I1I = .08
 pcall(function()
-local IlI11II1lI1 = l1111II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1811]));
-local llI11II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1812]));
-local lI111II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1813]))
-if not llI11II1lI1 or not lI111II1lI1 then
+local ll1lIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[1822]));
+local Il1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1823]));
+local II1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1824]))
+if not Il1lIl1I1I or not II1lIl1I1I then
 return
 						end
-if II111II1lI1 ~= nil and (lI111II1lI1[I1IIl1I1lI1(_KTB[1814])] ~= II111II1lI1 and II1l1II1lI1[I1IIl1I1lI1(_KTB[1815])]) then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1816])]()
+if lI1lIl1I1I ~= nil and (II1lIl1I1I[l11111lI1I(_KRP[1825])] ~= lI1lIl1I1I and lI1IIl1I1I[l11111lI1I(_KRP[1826])]) then
+lI1IIl1I1I[l11111lI1I(_KRP[1827])]()
 						end
-II111II1lI1 = lI111II1lI1[I1IIl1I1lI1(_KTB[1817])]
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1818])]();
-local I1111II1lI1 = lIll1II1lI1[I1IIl1I1lI1(_KTB[1819])](lI111II1lI1[I1IIl1I1lI1(_KTB[1820])], l1111II1lI1)
-if typeof(I1111II1lI1) == I1IIl1I1lI1(_KTB[1821]) and llI11II1lI1[I1IIl1I1lI1(_KTB[1822])] >= I1111II1lI1 then
-local IlI11II1lI1 = II1l1II1lI1[I1IIl1I1lI1(_KTB[1823])]:InvokeServer(I1IIl1I1lI1(_KTB[1824]))
-if IlI11II1lI1 == true and II1l1II1lI1[I1IIl1I1lI1(_KTB[1825])] then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1826])]()
+lI1lIl1I1I = II1lIl1I1I[l11111lI1I(_KRP[1828])]
+lI1IIl1I1I[l11111lI1I(_KRP[1829])]();
+local l1llIl1I1I = IIlIIl1I1I[l11111lI1I(_KRP[1830])](II1lIl1I1I[l11111lI1I(_KRP[1831])], I1llIl1I1I)
+if typeof(l1llIl1I1I) == l11111lI1I(_KRP[1832]) and Il1lIl1I1I[l11111lI1I(_KRP[1833])] >= l1llIl1I1I then
+local ll1lIl1I1I = lI1IIl1I1I[l11111lI1I(_KRP[1834])]:InvokeServer(l11111lI1I(_KRP[1835]))
+if ll1lIl1I1I == true and lI1IIl1I1I[l11111lI1I(_KRP[1836])] then
+lI1IIl1I1I[l11111lI1I(_KRP[1837])]()
 							end
-l1I11II1lI1 = IlI11II1lI1 == true and .25 or .15
+I11lIl1I1I = ll1lIl1I1I == true and .25 or .15
 						end
 					end);
-task[I1IIl1I1lI1(_KTB[1827])](l1I11II1lI1)
+task[l11111lI1I(_KRP[484])](I11lIl1I1I)
 				end
 			end)
 		else
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1828])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1829])] = II1l1II1lI1[I1IIl1I1lI1(_KTB[1830])] + 0B1
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1831])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1832])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1833])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[1838])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[1839])] = lI1IIl1I1I[l11111lI1I(_KRP[1840])] + 0B1
+lI1IIl1I1I[l11111lI1I(_KRP[1841])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[1842])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[1843])] = false
 		end
 return true
 	end);
-I1l1I1I1lI1(lIllI1I1lI1, I1IIl1I1lI1(_KTB[1834]), 0x5, function(l1I11II1lI1)
-local IlI11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[1835])]
-local llI11II1lI1 = IlI11II1lI1 and IlI11II1lI1:FindFirstChild(I1IIl1I1lI1(_KTB[1836]))
-if l1I11II1lI1 then
-if not llI11II1lI1 then
+l1IllI1I1I(IIlIlI1I1I, l11111lI1I(_KRP[1844]), 0x5, function(I11lIl1I1I)
+local ll1lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[1845])]
+local Il1lIl1I1I = ll1lIl1I1I and ll1lIl1I1I:FindFirstChild(l11111lI1I(_KRP[1846]))
+if I11lIl1I1I then
+if not Il1lIl1I1I then
 return false
 			end
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1837])] = IlI11II1lI1:GetPivot();
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1838])] = true
+lI1IIl1I1I[l11111lI1I(_KRP[1847])] = ll1lIl1I1I:GetPivot();
+lI1IIl1I1I[l11111lI1I(_KRP[1848])] = true
 		else
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1839])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1840])] = nil
-if llI11II1lI1 then
-llI11II1lI1[I1IIl1I1lI1(_KTB[1841])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[1849])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[1850])] = nil
+if Il1lIl1I1I then
+Il1lIl1I1I[l11111lI1I(_KRP[1851])] = false
 			end
 		end
 return true
 	end);
-local l11I11I1lI1 = IIl1I1I1lI1(I1IIl1I1lI1(_KTB[1842]));
-local Il1I11I1lI1 = nil
-local ll1I11I1lI1 = nil
-local IIlI11I1lI1 = nil
-local function lIlI11I1lI1()
-if ll1I11I1lI1 then
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1843])] = true
+local I1l1II1I1I = lIlllI1I1I(l11111lI1I(_KRP[1852]));
+local lll1II1I1I = nil
+local Ill1II1I1I = nil
+local lIl1II1I1I = nil
+local function IIl1II1I1I()
+if Ill1II1I1I then
+Ill1II1I1I[l11111lI1I(_KRP[1853])] = true
 		end
-if IIlI11I1lI1 then
-task[I1IIl1I1lI1(_KTB[1844])](IIlI11I1lI1)
-IIlI11I1lI1 = nil
+if lIl1II1I1I then
+task[l11111lI1I(_KRP[1854])](lIl1II1I1I)
+lIl1II1I1I = nil
 		end
-IIlI11I1lI1 = task[I1IIl1I1lI1(_KTB[1845])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1846])], function()
-if ll1I11I1lI1 then
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1847])] = false
+lIl1II1I1I = task[l11111lI1I(_KRP[1855])](IIllIl1I1I[l11111lI1I(_KRP[1856])], function()
+if Ill1II1I1I then
+Ill1II1I1I[l11111lI1I(_KRP[522])] = false
 				end
-IIlI11I1lI1 = nil
+lIl1II1I1I = nil
 			end)
 	end
-local function I1lI11I1lI1(l1I11II1lI1)
-if not Il1I11I1lI1 then
+local function l1I1II1I1I(I11lIl1I1I)
+if not lll1II1I1I then
 return
 		end
-local IlI11II1lI1 = l1I11II1lI1 and .65 or 0B0
-for l1I11II1lI1, llI11II1lI1 in pairs(Il1I11I1lI1:GetDescendants()) do
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[1848])) or llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[1849])) then
-(lI111II1lI1:Create(llI11II1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1498])](.2, Enum[I1IIl1I1lI1(_KTB[1850])][I1IIl1I1lI1(_KTB[1851])]), { [I1IIl1I1lI1(_KTB[1852])] = IlI11II1lI1 })):Play()
+local ll1lIl1I1I = I11lIl1I1I and .65 or 0B0
+for I11lIl1I1I, Il1lIl1I1I in pairs(lll1II1I1I:GetDescendants()) do
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[1857])) or Il1lIl1I1I:IsA(l11111lI1I(_KRP[1858])) then
+(II1lIl1I1I:Create(Il1lIl1I1I, TweenInfo[l11111lI1I(_KRP[1859])](.2, Enum[l11111lI1I(_KRP[1860])][l11111lI1I(_KRP[1861])]), { [l11111lI1I(_KRP[1862])] = ll1lIl1I1I })):Play()
 			end
 		end
 	end
-lIl1I1I1lI1(l11I11I1lI1, I1IIl1I1lI1(_KTB[1853]), 0B1);
-local l1lI11I1lI1
-l1lI11I1lI1, IlllI1I1lI1 = I1l1I1I1lI1(l11I11I1lI1, I1IIl1I1lI1(_KTB[1854]), 0B10, function(l1I11II1lI1)
-l1IIlII1lI1[I1IIl1I1lI1(_KTB[1855])] = l1I11II1lI1
-if l1I11II1lI1 then
-lI11lII1lI1()
-if I1llI1I1lI1 then
-I1llI1I1lI1(false, true)
+IIlllI1I1I(I1l1II1I1I, l11111lI1I(_KRP[1863]), 0B1);
+local I1I1II1I1I
+I1I1II1I1I, llIIlI1I1I = l1IllI1I1I(I1l1II1I1I, l11111lI1I(_KRP[1864]), 0B10, function(I11lIl1I1I)
+I1111I1I1I[l11111lI1I(_KRP[1865])] = I11lIl1I1I
+if I11lIl1I1I then
+II1l1I1I1I()
+if l1IIlI1I1I then
+l1IIlI1I1I(false, true)
 				end
-if l1llI1I1lI1 then
-l1llI1I1lI1(false, true)
+if I1IIlI1I1I then
+I1IIlI1I1I(false, true)
 				end
-IlIIlII1lI1();
-I1lI11I1lI1(false)
-if ll1I11I1lI1 then
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1856])] = false
+ll111I1I1I();
+l1I1II1I1I(false)
+if Ill1II1I1I then
+Ill1II1I1I[l11111lI1I(_KRP[1866])] = false
 				end
 			else
-llIIlII1lI1();
-ll1IlII1lI1()
-for l1I11II1lI1, IlI11II1lI1 in ipairs(Il1IlII1lI1) do
-IlI11II1lI1(false, true)
+Il111I1I1I();
+Ill11I1I1I()
+for I11lIl1I1I, ll1lIl1I1I in ipairs(lll11I1I1I) do
+ll1lIl1I1I(false, true)
 				end
-I1lI11I1lI1(true)
+l1I1II1I1I(true)
 			end
 		end);
-local IllI11I1lI1 = Instance[I1IIl1I1lI1(_KTB[1857])](I1IIl1I1lI1(_KTB[1858]));
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1859])] = I1IIl1I1lI1(_KTB[1860]);
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1861])] = UDim2[I1IIl1I1lI1(_KTB[1862])](0B1, 0B0, 0B0, 0x28);
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1863])] = Color3[I1IIl1I1lI1(_KTB[1463])](0x12, 0x14, 0x34);
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1864])] = .12
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1865])] = 0B0
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1866])] = I1IIl1I1lI1(_KTB[1867]);
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1868])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1869])]
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1870])] = Color3[I1IIl1I1lI1(_KTB[1871])](0B0, 0B0, 0B0);
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1872])] = .2
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1873])] = Enum[I1IIl1I1lI1(_KTB[1874])][I1IIl1I1lI1(_KTB[1875])]
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1876])] = llIl1II1lI1 and 0xB or 0xD
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1877])] = true
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1878])] = 0B11
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1879])] = 0B11
-IllI11I1lI1[I1IIl1I1lI1(_KTB[1880])] = l11I11I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1881])](I1IIl1I1lI1(_KTB[1882]), IllI11I1lI1))[I1IIl1I1lI1(_KTB[1883])] = UDim[I1IIl1I1lI1(_KTB[1884])](0B0, 0x7);
-local lllI11I1lI1 = Instance[I1IIl1I1lI1(_KTB[1600])](I1IIl1I1lI1(_KTB[1885]), IllI11I1lI1);
-lllI11I1lI1[I1IIl1I1lI1(_KTB[1886])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1887])]
-lllI11I1lI1[I1IIl1I1lI1(_KTB[1888])] = 0B1
-lllI11I1lI1[I1IIl1I1lI1(_KTB[1889])] = .24
-lIl1I1I1lI1(l11I11I1lI1, I1IIl1I1lI1(_KTB[1890]), 0x4)
-ll1I11I1lI1 = Instance[I1IIl1I1lI1(_KTB[1031])](I1IIl1I1lI1(_KTB[1891]));
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[175])] = I1IIl1I1lI1(_KTB[1892]);
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1893])] = UDim2[I1IIl1I1lI1(_KTB[815])](0B1, 0B0, 0B0, 0x26);
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1894])] = Color3[I1IIl1I1lI1(_KTB[1895])](0x18, 0x23, 0x4C);
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[879])] = .06
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1896])] = I1IIl1I1lI1(_KTB[1897]);
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1898])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1899])]
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1900])] = Color3[I1IIl1I1lI1(_KTB[1901])](0B0, 0B0, 0B0);
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1902])] = .15
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1903])] = Enum[I1IIl1I1lI1(_KTB[1904])][I1IIl1I1lI1(_KTB[1905])]
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1906])] = 0xF
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1907])] = Enum[I1IIl1I1lI1(_KTB[1908])][I1IIl1I1lI1(_KTB[1909])]
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1194])] = 0B0
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1910])] = 0x5
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1911])] = false
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1912])] = 0B11
-ll1I11I1lI1[I1IIl1I1lI1(_KTB[1913])] = l11I11I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1655])](I1IIl1I1lI1(_KTB[1914]), ll1I11I1lI1))[I1IIl1I1lI1(_KTB[1915])] = UDim[I1IIl1I1lI1(_KTB[1332])](0B0, 0x7);
-local III111I1lI1 = Instance[I1IIl1I1lI1(_KTB[1349])](I1IIl1I1lI1(_KTB[1916]), ll1I11I1lI1);
-III111I1lI1[I1IIl1I1lI1(_KTB[1917])] = Enum[I1IIl1I1lI1(_KTB[1918])][I1IIl1I1lI1(_KTB[1919])]
-III111I1lI1[I1IIl1I1lI1(_KTB[1920])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1921])]
-III111I1lI1[I1IIl1I1lI1(_KTB[1922])] = 1.5
-III111I1lI1[I1IIl1I1lI1(_KTB[1923])] = .05
-local lII111I1lI1 = Instance[I1IIl1I1lI1(_KTB[1230])](I1IIl1I1lI1(_KTB[1924]), ll1I11I1lI1);
-lII111I1lI1[I1IIl1I1lI1(_KTB[1925])] = ColorSequence[I1IIl1I1lI1(_KTB[1926])]({ ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[843])](0B0, Color3[I1IIl1I1lI1(_KTB[1927])](0x12, 0x18, 0x39)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1881])](.5, Color3[I1IIl1I1lI1(_KTB[1928])](0x2D, 0x24, 0x67)), ColorSequenceKeypoint[I1IIl1I1lI1(_KTB[1929])](0B1, Color3[I1IIl1I1lI1(_KTB[1546])](0xD, 0x21, 0x3B)) });
-lII111I1lI1[I1IIl1I1lI1(_KTB[1930])] = 0x5A
-local I1I111I1lI1 = Instance[I1IIl1I1lI1(_KTB[953])](I1IIl1I1lI1(_KTB[1931]));
-I1I111I1lI1[I1IIl1I1lI1(_KTB[1932])] = UDim2[I1IIl1I1lI1(_KTB[591])](.6, 0B0, 0B0, 0B1);
-I1I111I1lI1[I1IIl1I1lI1(_KTB[602])] = UDim2[I1IIl1I1lI1(_KTB[1933])](.2, 0B0, 0B0, 0B0);
-I1I111I1lI1[I1IIl1I1lI1(_KTB[985])] = ll111II1lI1[I1IIl1I1lI1(_KTB[1934])]
-I1I111I1lI1[I1IIl1I1lI1(_KTB[1935])] = .15
-I1I111I1lI1[I1IIl1I1lI1(_KTB[1936])] = 0B0
-I1I111I1lI1[I1IIl1I1lI1(_KTB[1937])] = 0x5
-I1I111I1lI1[I1IIl1I1lI1(_KTB[652])] = ll1I11I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1489])](I1IIl1I1lI1(_KTB[1938]), I1I111I1lI1))[I1IIl1I1lI1(_KTB[1939])] = UDim[I1IIl1I1lI1(_KTB[1940])](0B1, 0B0);
-task[I1IIl1I1lI1(_KTB[1941])](function()
-while I1l11II1lI1 and I1l11II1lI1[I1IIl1I1lI1(_KTB[1942])] do
-if ll1I11I1lI1 and ll1I11I1lI1[I1IIl1I1lI1(_KTB[1943])] then
-(lI111II1lI1:Create(ll1I11I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1944])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1945])], Enum[I1IIl1I1lI1(_KTB[1946])][I1IIl1I1lI1(_KTB[1947])], Enum[I1IIl1I1lI1(_KTB[1948])][I1IIl1I1lI1(_KTB[1949])]), { [I1IIl1I1lI1(_KTB[1950])] = Color3[I1IIl1I1lI1(_KTB[1951])](0x2B, 0x31, 0x6D) })):Play();
-(lI111II1lI1:Create(III111I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1952])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1953])], Enum[I1IIl1I1lI1(_KTB[1602])][I1IIl1I1lI1(_KTB[1954])], Enum[I1IIl1I1lI1(_KTB[1955])][I1IIl1I1lI1(_KTB[1956])]), { [I1IIl1I1lI1(_KTB[1957])] = .02 })):Play();
-task[I1IIl1I1lI1(_KTB[1958])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1959])]);
-(lI111II1lI1:Create(ll1I11I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[917])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1960])], Enum[I1IIl1I1lI1(_KTB[1961])][I1IIl1I1lI1(_KTB[1962])], Enum[I1IIl1I1lI1(_KTB[1963])][I1IIl1I1lI1(_KTB[1964])]), { [I1IIl1I1lI1(_KTB[1965])] = Color3[I1IIl1I1lI1(_KTB[1966])](0x18, 0x23, 0x4C) })):Play();
-(lI111II1lI1:Create(III111I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[591])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1967])], Enum[I1IIl1I1lI1(_KTB[1968])][I1IIl1I1lI1(_KTB[1969])], Enum[I1IIl1I1lI1(_KTB[1970])][I1IIl1I1lI1(_KTB[1971])]), { [I1IIl1I1lI1(_KTB[1972])] = .05 })):Play();
-task[I1IIl1I1lI1(_KTB[1973])](lIl11II1lI1[I1IIl1I1lI1(_KTB[1974])])
+local llI1II1I1I = Instance[l11111lI1I(_KRP[1867])](l11111lI1I(_KRP[1868]));
+llI1II1I1I[l11111lI1I(_KRP[1068])] = l11111lI1I(_KRP[1869]);
+llI1II1I1I[l11111lI1I(_KRP[986])] = UDim2[l11111lI1I(_KRP[1870])](0B1, 0B0, 0B0, 0x28);
+llI1II1I1I[l11111lI1I(_KRP[1871])] = Color3[l11111lI1I(_KRP[1872])](0x12, 0x14, 0x34);
+llI1II1I1I[l11111lI1I(_KRP[1873])] = .12
+llI1II1I1I[l11111lI1I(_KRP[1874])] = 0B0
+llI1II1I1I[l11111lI1I(_KRP[1875])] = l11111lI1I(_KRP[1876]);
+llI1II1I1I[l11111lI1I(_KRP[1877])] = IlllIl1I1I[l11111lI1I(_KRP[1878])]
+llI1II1I1I[l11111lI1I(_KRP[1879])] = Color3[l11111lI1I(_KRP[1880])](0B0, 0B0, 0B0);
+llI1II1I1I[l11111lI1I(_KRP[1881])] = .2
+llI1II1I1I[l11111lI1I(_KRP[1882])] = Enum[l11111lI1I(_KRP[1883])][l11111lI1I(_KRP[1884])]
+llI1II1I1I[l11111lI1I(_KRP[1885])] = Il1IIl1I1I and 0xB or 0xD
+llI1II1I1I[l11111lI1I(_KRP[1886])] = true
+llI1II1I1I[l11111lI1I(_KRP[1887])] = 0B11
+llI1II1I1I[l11111lI1I(_KRP[1888])] = 0B11
+llI1II1I1I[l11111lI1I(_KRP[1889])] = I1l1II1I1I;
+(Instance[l11111lI1I(_KRP[620])](l11111lI1I(_KRP[1890]), llI1II1I1I))[l11111lI1I(_KRP[1891])] = UDim[l11111lI1I(_KRP[1892])](0B0, 0x7);
+local IlI1II1I1I = Instance[l11111lI1I(_KRP[1893])](l11111lI1I(_KRP[1894]), llI1II1I1I);
+IlI1II1I1I[l11111lI1I(_KRP[1895])] = IlllIl1I1I[l11111lI1I(_KRP[1896])]
+IlI1II1I1I[l11111lI1I(_KRP[1897])] = 0B1
+IlI1II1I1I[l11111lI1I(_KRP[1898])] = .24
+IIlllI1I1I(I1l1II1I1I, l11111lI1I(_KRP[1899]), 0x4)
+Ill1II1I1I = Instance[l11111lI1I(_KRP[1228])](l11111lI1I(_KRP[1900]));
+Ill1II1I1I[l11111lI1I(_KRP[1901])] = l11111lI1I(_KRP[1902]);
+Ill1II1I1I[l11111lI1I(_KRP[1903])] = UDim2[l11111lI1I(_KRP[831])](0B1, 0B0, 0B0, 0x26);
+Ill1II1I1I[l11111lI1I(_KRP[1904])] = Color3[l11111lI1I(_KRP[1905])](0x18, 0x23, 0x4C);
+Ill1II1I1I[l11111lI1I(_KRP[1906])] = .06
+Ill1II1I1I[l11111lI1I(_KRP[1907])] = l11111lI1I(_KRP[1908]);
+Ill1II1I1I[l11111lI1I(_KRP[1909])] = IlllIl1I1I[l11111lI1I(_KRP[1910])]
+Ill1II1I1I[l11111lI1I(_KRP[1911])] = Color3[l11111lI1I(_KRP[730])](0B0, 0B0, 0B0);
+Ill1II1I1I[l11111lI1I(_KRP[1912])] = .15
+Ill1II1I1I[l11111lI1I(_KRP[1913])] = Enum[l11111lI1I(_KRP[1914])][l11111lI1I(_KRP[1915])]
+Ill1II1I1I[l11111lI1I(_KRP[1916])] = 0xF
+Ill1II1I1I[l11111lI1I(_KRP[1917])] = Enum[l11111lI1I(_KRP[1918])][l11111lI1I(_KRP[1919])]
+Ill1II1I1I[l11111lI1I(_KRP[1920])] = 0B0
+Ill1II1I1I[l11111lI1I(_KRP[1921])] = 0x5
+Ill1II1I1I[l11111lI1I(_KRP[1922])] = false
+Ill1II1I1I[l11111lI1I(_KRP[1923])] = 0B11
+Ill1II1I1I[l11111lI1I(_KRP[1924])] = I1l1II1I1I;
+(Instance[l11111lI1I(_KRP[1925])](l11111lI1I(_KRP[1926]), Ill1II1I1I))[l11111lI1I(_KRP[1927])] = UDim[l11111lI1I(_KRP[1288])](0B0, 0x7);
+local lII1II1I1I = Instance[l11111lI1I(_KRP[1571])](l11111lI1I(_KRP[1928]), Ill1II1I1I);
+lII1II1I1I[l11111lI1I(_KRP[1929])] = Enum[l11111lI1I(_KRP[1930])][l11111lI1I(_KRP[1931])]
+lII1II1I1I[l11111lI1I(_KRP[1246])] = IlllIl1I1I[l11111lI1I(_KRP[1932])]
+lII1II1I1I[l11111lI1I(_KRP[1933])] = 1.5
+lII1II1I1I[l11111lI1I(_KRP[1934])] = .05
+local III1II1I1I = Instance[l11111lI1I(_KRP[721])](l11111lI1I(_KRP[1935]), Ill1II1I1I);
+III1II1I1I[l11111lI1I(_KRP[1936])] = ColorSequence[l11111lI1I(_KRP[1660])]({ ColorSequenceKeypoint[l11111lI1I(_KRP[1066])](0B0, Color3[l11111lI1I(_KRP[29])](0x12, 0x18, 0x39)), ColorSequenceKeypoint[l11111lI1I(_KRP[1164])](.5, Color3[l11111lI1I(_KRP[1937])](0x2D, 0x24, 0x67)), ColorSequenceKeypoint[l11111lI1I(_KRP[1342])](0B1, Color3[l11111lI1I(_KRP[1938])](0xD, 0x21, 0x3B)) });
+III1II1I1I[l11111lI1I(_KRP[1939])] = 0x5A
+local l11lII1I1I = Instance[l11111lI1I(_KRP[868])](l11111lI1I(_KRP[1536]));
+l11lII1I1I[l11111lI1I(_KRP[1940])] = UDim2[l11111lI1I(_KRP[985])](.6, 0B0, 0B0, 0B1);
+l11lII1I1I[l11111lI1I(_KRP[1128])] = UDim2[l11111lI1I(_KRP[1716])](.2, 0B0, 0B0, 0B0);
+l11lII1I1I[l11111lI1I(_KRP[1941])] = IlllIl1I1I[l11111lI1I(_KRP[1942])]
+l11lII1I1I[l11111lI1I(_KRP[1943])] = .15
+l11lII1I1I[l11111lI1I(_KRP[1944])] = 0B0
+l11lII1I1I[l11111lI1I(_KRP[1533])] = 0x5
+l11lII1I1I[l11111lI1I(_KRP[1945])] = Ill1II1I1I;
+(Instance[l11111lI1I(_KRP[586])](l11111lI1I(_KRP[1946]), l11lII1I1I))[l11111lI1I(_KRP[1947])] = UDim[l11111lI1I(_KRP[1494])](0B1, 0B0);
+task[l11111lI1I(_KRP[1948])](function()
+while l1IlIl1I1I and l1IlIl1I1I[l11111lI1I(_KRP[1949])] do
+if Ill1II1I1I and Ill1II1I1I[l11111lI1I(_KRP[1950])] then
+(II1lIl1I1I:Create(Ill1II1I1I, TweenInfo[l11111lI1I(_KRP[735])](IIllIl1I1I[l11111lI1I(_KRP[1951])], Enum[l11111lI1I(_KRP[1952])][l11111lI1I(_KRP[1953])], Enum[l11111lI1I(_KRP[1954])][l11111lI1I(_KRP[1955])]), { [l11111lI1I(_KRP[1956])] = Color3[l11111lI1I(_KRP[1957])](0x2B, 0x31, 0x6D) })):Play();
+(II1lIl1I1I:Create(lII1II1I1I, TweenInfo[l11111lI1I(_KRP[1893])](IIllIl1I1I[l11111lI1I(_KRP[1958])], Enum[l11111lI1I(_KRP[1959])][l11111lI1I(_KRP[1626])], Enum[l11111lI1I(_KRP[1960])][l11111lI1I(_KRP[1961])]), { [l11111lI1I(_KRP[1962])] = .02 })):Play();
+task[l11111lI1I(_KRP[1963])](IIllIl1I1I[l11111lI1I(_KRP[1964])]);
+(II1lIl1I1I:Create(Ill1II1I1I, TweenInfo[l11111lI1I(_KRP[328])](IIllIl1I1I[l11111lI1I(_KRP[1965])], Enum[l11111lI1I(_KRP[1966])][l11111lI1I(_KRP[1967])], Enum[l11111lI1I(_KRP[1968])][l11111lI1I(_KRP[1969])]), { [l11111lI1I(_KRP[1970])] = Color3[l11111lI1I(_KRP[1971])](0x18, 0x23, 0x4C) })):Play();
+(II1lIl1I1I:Create(lII1II1I1I, TweenInfo[l11111lI1I(_KRP[1972])](IIllIl1I1I[l11111lI1I(_KRP[1973])], Enum[l11111lI1I(_KRP[1974])][l11111lI1I(_KRP[1975])], Enum[l11111lI1I(_KRP[1976])][l11111lI1I(_KRP[1977])]), { [l11111lI1I(_KRP[1978])] = .05 })):Play();
+task[l11111lI1I(_KRP[1979])](IIllIl1I1I[l11111lI1I(_KRP[1980])])
 			else
-task[I1IIl1I1lI1(_KTB[1975])](.4)
+task[l11111lI1I(_KRP[1981])](.4)
 			end
 		end
 	end)
-Il1I11I1lI1 = Instance[I1IIl1I1lI1(_KTB[1976])](I1IIl1I1lI1(_KTB[1977]));
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1978])] = I1IIl1I1lI1(_KTB[1979]);
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1980])] = UDim2[I1IIl1I1lI1(_KTB[1944])](0B1, 0B0, 0B0, 0B0);
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1981])] = Enum[I1IIl1I1lI1(_KTB[1982])][I1IIl1I1lI1(_KTB[1983])]
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1864])] = 0B1
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1984])] = 0B0
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1985])] = 0x6
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1986])] = 0B10
-Il1I11I1lI1[I1IIl1I1lI1(_KTB[1223])] = l11I11I1lI1
-local l1I111I1lI1 = Instance[I1IIl1I1lI1(_KTB[1186])](I1IIl1I1lI1(_KTB[1987]), Il1I11I1lI1);
-l1I111I1lI1[I1IIl1I1lI1(_KTB[1988])] = Enum[I1IIl1I1lI1(_KTB[1989])][I1IIl1I1lI1(_KTB[1990])]
-l1I111I1lI1[I1IIl1I1lI1(_KTB[1991])] = UDim[I1IIl1I1lI1(_KTB[892])](0B0, 0x4)
-for l1I11II1lI1, IlI11II1lI1 in ipairs(Il111II1lI1[I1IIl1I1lI1(_KTB[1992])]) do
-local llI11II1lI1 = IlI11II1lI1
-local II111II1lI1 = { [I1IIl1I1lI1(_KTB[1993])] = false, [I1IIl1I1lI1(_KTB[1994])] = nil }
-function II111II1lI1.Start(l1I11II1lI1)
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[1995])] then
-task[I1IIl1I1lI1(_KTB[1996])](l1I11II1lI1[I1IIl1I1lI1(_KTB[1997])]);
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1998])] = nil
+lll1II1I1I = Instance[l11111lI1I(_KRP[885])](l11111lI1I(_KRP[1982]));
+lll1II1I1I[l11111lI1I(_KRP[1983])] = l11111lI1I(_KRP[1984]);
+lll1II1I1I[l11111lI1I(_KRP[1985])] = UDim2[l11111lI1I(_KRP[1299])](0B1, 0B0, 0B0, 0B0);
+lll1II1I1I[l11111lI1I(_KRP[1986])] = Enum[l11111lI1I(_KRP[1987])][l11111lI1I(_KRP[1988])]
+lll1II1I1I[l11111lI1I(_KRP[1989])] = 0B1
+lll1II1I1I[l11111lI1I(_KRP[775])] = 0B0
+lll1II1I1I[l11111lI1I(_KRP[1990])] = 0x6
+lll1II1I1I[l11111lI1I(_KRP[1991])] = 0B10
+lll1II1I1I[l11111lI1I(_KRP[1992])] = I1l1II1I1I
+local I11lII1I1I = Instance[l11111lI1I(_KRP[1357])](l11111lI1I(_KRP[1993]), lll1II1I1I);
+I11lII1I1I[l11111lI1I(_KRP[1994])] = Enum[l11111lI1I(_KRP[1995])][l11111lI1I(_KRP[1996])]
+I11lII1I1I[l11111lI1I(_KRP[1997])] = UDim[l11111lI1I(_KRP[1870])](0B0, 0x4)
+for I11lIl1I1I, ll1lIl1I1I in ipairs(llllIl1I1I[l11111lI1I(_KRP[1998])]) do
+local Il1lIl1I1I = ll1lIl1I1I
+local lI1lIl1I1I = { [l11111lI1I(_KRP[1999])] = false, [l11111lI1I(_KRP[2000])] = nil }
+function lI1lIl1I1I.Start(I11lIl1I1I)
+if I11lIl1I1I[l11111lI1I(_KRP[2001])] then
+task[l11111lI1I(_KRP[2002])](I11lIl1I1I[l11111lI1I(_KRP[2003])]);
+I11lIl1I1I[l11111lI1I(_KRP[2004])] = nil
 			end
-l1I11II1lI1[I1IIl1I1lI1(_KTB[1999])] = true
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2000])] = task[I1IIl1I1lI1(_KTB[2001])](I11IlII1lI1(l1I11II1lI1, llI11II1lI1[I1IIl1I1lI1(_KTB[2002])], llI11II1lI1[I1IIl1I1lI1(_KTB[85])], .001))
+I11lIl1I1I[l11111lI1I(_KRP[2005])] = true
+I11lIl1I1I[l11111lI1I(_KRP[2006])] = task[l11111lI1I(_KRP[2007])](l1l11I1I1I(I11lIl1I1I, Il1lIl1I1I[l11111lI1I(_KRP[2008])], Il1lIl1I1I[l11111lI1I(_KRP[2009])], .001))
 		end
-function II111II1lI1.Stop(l1I11II1lI1)
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2003])] = false
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[2004])] then
-task[I1IIl1I1lI1(_KTB[2005])](l1I11II1lI1[I1IIl1I1lI1(_KTB[2006])]);
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2007])] = nil
+function lI1lIl1I1I.Stop(I11lIl1I1I)
+I11lIl1I1I[l11111lI1I(_KRP[2010])] = false
+if I11lIl1I1I[l11111lI1I(_KRP[2011])] then
+task[l11111lI1I(_KRP[2012])](I11lIl1I1I[l11111lI1I(_KRP[2013])]);
+I11lIl1I1I[l11111lI1I(_KRP[2014])] = nil
 			end
 		end
-local lI111II1lI1, I1111II1lI1 = I1l1I1I1lI1(Il1I11I1lI1, llI11II1lI1[I1IIl1I1lI1(_KTB[2008])], l1I11II1lI1, function(IlI11II1lI1)
-if IlI11II1lI1 and not l1IIlII1lI1[I1IIl1I1lI1(_KTB[2009])] then
-l11I11I1lI1[I1IIl1I1lI1(_KTB[2010])] = Vector2[I1IIl1I1lI1(_KTB[721])](0B0, 0B0);
-lIlI11I1lI1()
+local II1lIl1I1I, l1llIl1I1I = l1IllI1I1I(lll1II1I1I, Il1lIl1I1I[l11111lI1I(_KRP[2015])], I11lIl1I1I, function(ll1lIl1I1I)
+if ll1lIl1I1I and not I1111I1I1I[l11111lI1I(_KRP[2016])] then
+I1l1II1I1I[l11111lI1I(_KRP[2017])] = Vector2[l11111lI1I(_KRP[1118])](0B0, 0B0);
+IIl1II1I1I()
 return false
 				end
-if IlI11II1lI1 then
-if l11IlII1lI1 and l11IlII1lI1 ~= II111II1lI1 then
-local IlI11II1lI1 = l11IlII1lI1
-IlI11II1lI1:Stop()
-for IlI11II1lI1, llI11II1lI1 in ipairs(Il1IlII1lI1) do
-if IlI11II1lI1 ~= l1I11II1lI1 then
-llI11II1lI1(false, true)
+if ll1lIl1I1I then
+if I1l11I1I1I and I1l11I1I1I ~= lI1lIl1I1I then
+local ll1lIl1I1I = I1l11I1I1I
+ll1lIl1I1I:Stop()
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(lll11I1I1I) do
+if ll1lIl1I1I ~= I11lIl1I1I then
+Il1lIl1I1I(false, true)
 							end
 						end
-l11IlII1lI1 = nil
+I1l11I1I1I = nil
 					end
-l11IlII1lI1 = II111II1lI1
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2011])] = llI11II1lI1[I1IIl1I1lI1(_KTB[2012])]
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2013])] = true
-II111II1lI1:Start()
+I1l11I1I1I = lI1lIl1I1I
+lI1IIl1I1I[l11111lI1I(_KRP[2018])] = Il1lIl1I1I[l11111lI1I(_KRP[2019])]
+lI1IIl1I1I[l11111lI1I(_KRP[2020])] = true
+lI1lIl1I1I:Start()
 				else
-if l11IlII1lI1 == II111II1lI1 then
-l11IlII1lI1 = nil
+if I1l11I1I1I == lI1lIl1I1I then
+I1l11I1I1I = nil
 					end
-II111II1lI1:Stop();
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2014])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2015])] = nil
+lI1lIl1I1I:Stop();
+lI1IIl1I1I[l11111lI1I(_KRP[2021])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[2022])] = nil
 				end
 			end);
-Il1IlII1lI1[l1I11II1lI1] = I1111II1lI1
+lll11I1I1I[I11lIl1I1I] = l1llIl1I1I
 	end
-I1lI11I1lI1(true);
-local IlI111I1lI1 = IIl1I1I1lI1(I1IIl1I1lI1(_KTB[2016]));
-lIl1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2017]), 0B1);
-local llI111I1lI1, II1111I1lI1 = I1l1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2018]), 0B10, function(l1I11II1lI1)
-if l1I11II1lI1 then
-lI11lII1lI1()
-if I1llI1I1lI1 then
-I1llI1I1lI1(false, true)
+l1I1II1I1I(true);
+local ll1lII1I1I = lIlllI1I1I(l11111lI1I(_KRP[2023]));
+IIlllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2024]), 0B1);
+local Il1lII1I1I, lI1lII1I1I = l1IllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2025]), 0B10, function(I11lIl1I1I)
+if I11lIl1I1I then
+II1l1I1I1I()
+if l1IIlI1I1I then
+l1IIlI1I1I(false, true)
 				end
-if l1llI1I1lI1 then
-l1llI1I1lI1(false, true)
+if I1IIlI1I1I then
+I1IIlI1I1I(false, true)
 				end
-I11llII1lI1()
+l1lI1I1I1I()
 			else
-lll11II1lI1()
+IlIlIl1I1I()
 			end
 		end)
-IIIl1II1lI1 = II1111I1lI1
-lll1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2019]), 0B11, 0B1, 0x14, II1l1II1lI1[I1IIl1I1lI1(_KTB[2020])], function(l1I11II1lI1)
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2021])] = l1I11II1lI1
+lIIlIl1I1I = lI1lII1I1I
+IlIllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2026]), 0B11, 0B1, 0x14, lI1IIl1I1I[l11111lI1I(_KRP[2027])], function(I11lIl1I1I)
+lI1IIl1I1I[l11111lI1I(_KRP[2028])] = I11lIl1I1I
 	end);
-I1l1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2022]), 0x4, function(l1I11II1lI1)
-Il1llII1lI1(l1I11II1lI1)
+l1IllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2029]), 0x4, function(I11lIl1I1I)
+lllI1I1I1I(I11lIl1I1I)
 	end);
-lIl1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2023]), 0B1010);
-local lI1111I1lI1 = false
-local I11111I1lI1
-I11111I1lI1 = l1l1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2024]), 0xB, function()
-if lI1111I1lI1 then
-I1111II1lI1:SetCore(I1IIl1I1lI1(_KTB[2025]), { [I1IIl1I1lI1(_KTB[2026])] = I1IIl1I1lI1(_KTB[2027]), [I1IIl1I1lI1(_KTB[2028])] = I1IIl1I1lI1(_KTB[2029]), [I1IIl1I1lI1(_KTB[2030])] = 0B10 })
+IIlllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2030]), 0xA);
+local II1lII1I1I = false
+local l1llII1I1I
+l1llII1I1I = I1IllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2031]), 0xB, function()
+if II1lII1I1I then
+l1llIl1I1I:SetCore(l11111lI1I(_KRP[2032]), { [l11111lI1I(_KRP[2033])] = l11111lI1I(_KRP[2034]), [l11111lI1I(_KRP[2035])] = l11111lI1I(_KRP[2036]), [l11111lI1I(_KRP[2037])] = 0B10 })
 return
 			end
-lI1111I1lI1 = true
-I11111I1lI1[I1IIl1I1lI1(_KTB[2031])] = I1IIl1I1lI1(_KTB[2032]);
-I11111I1lI1:SetAttribute(I1IIl1I1lI1(_KTB[2033]), true);
-I11111I1lI1[I1IIl1I1lI1(_KTB[2034])] = Color3[I1IIl1I1lI1(_KTB[30])](0xFF, 0xF5, 0xF5);
-I11111I1lI1[I1IIl1I1lI1(_KTB[2035])] = 0B0
-I11111I1lI1[I1IIl1I1lI1(_KTB[2036])] = Color3[I1IIl1I1lI1(_KTB[2037])](0x12, 0x2D, 0x49);
-local l1I11II1lI1 = I11111I1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[2038]))
-if l1I11II1lI1 then
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2039])] = ll111II1lI1[I1IIl1I1lI1(_KTB[2040])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2041])] = .04
+II1lII1I1I = true
+l1llII1I1I[l11111lI1I(_KRP[2038])] = l11111lI1I(_KRP[2039]);
+l1llII1I1I:SetAttribute(l11111lI1I(_KRP[2040]), true);
+l1llII1I1I[l11111lI1I(_KRP[2041])] = Color3[l11111lI1I(_KRP[730])](0xFF, 0xF5, 0xF5);
+l1llII1I1I[l11111lI1I(_KRP[1862])] = 0B0
+l1llII1I1I[l11111lI1I(_KRP[2042])] = Color3[l11111lI1I(_KRP[2043])](0x12, 0x2D, 0x49);
+local I11lIl1I1I = l1llII1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[2044]))
+if I11lIl1I1I then
+I11lIl1I1I[l11111lI1I(_KRP[2045])] = IlllIl1I1I[l11111lI1I(_KRP[2046])]
+I11lIl1I1I[l11111lI1I(_KRP[2047])] = .04
 			end
-IlIllII1lI1()
+ll1I1I1I1I()
 		end);
-Ill1I1I1lI1(I11111I1lI1, I1IIl1I1lI1(_KTB[2042]), ll111II1lI1[I1IIl1I1lI1(_KTB[2043])]);
-lIl1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2044]), 0x14);
-local l11111I1lI1 = false
-local Il1111I1lI1
-Il1111I1lI1 = l1l1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2045]), 0x15, function()
-if l11111I1lI1 then
+llIllI1I1I(l1llII1I1I, l11111lI1I(_KRP[2048]), IlllIl1I1I[l11111lI1I(_KRP[2049])]);
+IIlllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2050]), 0x14);
+local I1llII1I1I = false
+local llllII1I1I
+llllII1I1I = I1IllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2051]), 0x15, function()
+if I1llII1I1I then
 return
 			end
-l11111I1lI1 = true
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2046])] = true
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2047])] = tick();
-I1lIlII1lI1();
-lIIlI1I1lI1[I1IIl1I1lI1(_KTB[2048])] = true
-Il1111I1lI1[I1IIl1I1lI1(_KTB[2049])] = I1IIl1I1lI1(_KTB[2050]);
-Il1111I1lI1:SetAttribute(I1IIl1I1lI1(_KTB[2051]), true);
-Il1111I1lI1[I1IIl1I1lI1(_KTB[2052])] = Color3[I1IIl1I1lI1(_KTB[2053])](0xFF, 0xF5, 0xF5);
-Il1111I1lI1[I1IIl1I1lI1(_KTB[2054])] = 0B0
-Il1111I1lI1[I1IIl1I1lI1(_KTB[2055])] = Color3[I1IIl1I1lI1(_KTB[2056])](0x12, 0x2D, 0x49);
-local l1I11II1lI1 = Il1111I1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[2057]))
-if l1I11II1lI1 then
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2058])] = ll111II1lI1[I1IIl1I1lI1(_KTB[2059])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2060])] = .02
+I1llII1I1I = true
+lI1IIl1I1I[l11111lI1I(_KRP[2052])] = true
+lI1IIl1I1I[l11111lI1I(_KRP[2053])] = tick();
+l1I11I1I1I();
+IIIllI1I1I[l11111lI1I(_KRP[2054])] = true
+llllII1I1I[l11111lI1I(_KRP[2055])] = l11111lI1I(_KRP[2056]);
+llllII1I1I:SetAttribute(l11111lI1I(_KRP[2057]), true);
+llllII1I1I[l11111lI1I(_KRP[2058])] = Color3[l11111lI1I(_KRP[1872])](0xFF, 0xF5, 0xF5);
+llllII1I1I[l11111lI1I(_KRP[2059])] = 0B0
+llllII1I1I[l11111lI1I(_KRP[2060])] = Color3[l11111lI1I(_KRP[2061])](0x12, 0x2D, 0x49);
+local I11lIl1I1I = llllII1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[2062]))
+if I11lIl1I1I then
+I11lIl1I1I[l11111lI1I(_KRP[2063])] = IlllIl1I1I[l11111lI1I(_KRP[2064])]
+I11lIl1I1I[l11111lI1I(_KRP[2065])] = .02
 			end
 		end);
-Ill1I1I1lI1(Il1111I1lI1, I1IIl1I1lI1(_KTB[2061]), ll111II1lI1[I1IIl1I1lI1(_KTB[2062])]);
-lIl1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2063]), 0x19);
-local ll1111I1lI1
-local IIl111I1lI1 = false
-local lIl111I1lI1 = false
-local function I1l111I1lI1()
-if not ll1111I1lI1 then
+llIllI1I1I(llllII1I1I, l11111lI1I(_KRP[2066]), IlllIl1I1I[l11111lI1I(_KRP[2067])]);
+IIlllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2068]), 0x19);
+local IlllII1I1I
+local lIllII1I1I = false
+local IIllII1I1I = false
+local function l1IlII1I1I()
+if not IlllII1I1I then
 return
 		end
-local l1I11II1lI1 = lIl111I1lI1 and not IIl111I1lI1
-ll1111I1lI1[I1IIl1I1lI1(_KTB[2064])] = l1I11II1lI1
-ll1111I1lI1[I1IIl1I1lI1(_KTB[2065])] = l1I11II1lI1
-ll1111I1lI1[I1IIl1I1lI1(_KTB[2066])] = IIl111I1lI1 and I1IIl1I1lI1(_KTB[2067]) or I1IIl1I1lI1(_KTB[2068]);
-ll1111I1lI1[I1IIl1I1lI1(_KTB[2069])] = l1I11II1lI1 and 0B0 or .5
-ll1111I1lI1[I1IIl1I1lI1(_KTB[2070])] = l1I11II1lI1 and .16 or .34
-local IlI11II1lI1 = ll1111I1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[2071]))
-if IlI11II1lI1 then
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2072])] = l1I11II1lI1 and 0B0 or .58
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2073])] = ll111II1lI1[I1IIl1I1lI1(_KTB[2074])]
+local I11lIl1I1I = IIllII1I1I and not lIllII1I1I
+IlllII1I1I[l11111lI1I(_KRP[2069])] = I11lIl1I1I
+IlllII1I1I[l11111lI1I(_KRP[2070])] = I11lIl1I1I
+IlllII1I1I[l11111lI1I(_KRP[2071])] = lIllII1I1I and l11111lI1I(_KRP[2072]) or l11111lI1I(_KRP[2073]);
+IlllII1I1I[l11111lI1I(_KRP[2074])] = I11lIl1I1I and 0B0 or .5
+IlllII1I1I[l11111lI1I(_KRP[1906])] = I11lIl1I1I and .16 or .34
+local ll1lIl1I1I = IlllII1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[2075]))
+if ll1lIl1I1I then
+ll1lIl1I1I[l11111lI1I(_KRP[1906])] = I11lIl1I1I and 0B0 or .58
+ll1lIl1I1I[l11111lI1I(_KRP[2076])] = IlllIl1I1I[l11111lI1I(_KRP[2077])]
 		end
-local llI11II1lI1 = ll1111I1lI1:FindFirstChildWhichIsA(I1IIl1I1lI1(_KTB[2075]))
-if llI11II1lI1 then
-llI11II1lI1[I1IIl1I1lI1(_KTB[2076])] = l1I11II1lI1 and ll111II1lI1[I1IIl1I1lI1(_KTB[2077])] or ll111II1lI1[I1IIl1I1lI1(_KTB[2078])]
-llI11II1lI1[I1IIl1I1lI1(_KTB[870])] = l1I11II1lI1 and .02 or .5
+local Il1lIl1I1I = IlllII1I1I:FindFirstChildWhichIsA(l11111lI1I(_KRP[2078]))
+if Il1lIl1I1I then
+Il1lIl1I1I[l11111lI1I(_KRP[1257])] = I11lIl1I1I and IlllIl1I1I[l11111lI1I(_KRP[2079])] or IlllIl1I1I[l11111lI1I(_KRP[2080])]
+Il1lIl1I1I[l11111lI1I(_KRP[2081])] = I11lIl1I1I and .02 or .5
 		end
 	end
-ll1111I1lI1 = l1l1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2079]), 0x1A, function()
-if IIl111I1lI1 or not lIl111I1lI1 then
+IlllII1I1I = I1IllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2082]), 0x1A, function()
+if lIllII1I1I or not IIllII1I1I then
 return
 			end
-IIl111I1lI1 = true
-lIl111I1lI1 = false
-I1l111I1lI1();
-task[I1IIl1I1lI1(_KTB[2080])](function()
-lIIIlII1lI1();
-task[I1IIl1I1lI1(_KTB[2081])](.8)
-IIl111I1lI1 = false
-lIl111I1lI1 = IIIIlII1lI1() > 0B0
-I1l111I1lI1()
+lIllII1I1I = true
+IIllII1I1I = false
+l1IlII1I1I();
+task[l11111lI1I(_KRP[2083])](function()
+IIIIIl1I1I();
+task[l11111lI1I(_KRP[2084])](.8)
+lIllII1I1I = false
+IIllII1I1I = lIIIIl1I1I() > 0B0
+l1IlII1I1I()
 			end)
 		end);
-Ill1I1I1lI1(ll1111I1lI1, I1IIl1I1lI1(_KTB[2082]), ll111II1lI1[I1IIl1I1lI1(_KTB[2083])]);
-local l1l111I1lI1 = nil
-local Ill111I1lI1 = 0B0
-local lll111I1lI1, IIIl11I1lI1 = I1l1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2084]), 0x1B, function(l1I11II1lI1)
-Ill111I1lI1 = Ill111I1lI1 + 0B1
-local IlI11II1lI1 = Ill111I1lI1
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2085])] = l1I11II1lI1
-if not l1I11II1lI1 then
+llIllI1I1I(IlllII1I1I, l11111lI1I(_KRP[2085]), IlllIl1I1I[l11111lI1I(_KRP[2086])]);
+local I1IlII1I1I = nil
+local llIlII1I1I = 0B0
+local IlIlII1I1I, lIIlII1I1I = l1IllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2087]), 0x1B, function(I11lIl1I1I)
+llIlII1I1I = llIlII1I1I + 0B1
+local ll1lIl1I1I = llIlII1I1I
+lI1IIl1I1I[l11111lI1I(_KRP[2088])] = I11lIl1I1I
+if not I11lIl1I1I then
 return
 			end
-task[I1IIl1I1lI1(_KTB[2086])](function()
-local l1I11II1lI1 = 0B0
-while II1l1II1lI1[I1IIl1I1lI1(_KTB[2087])] and (Ill111I1lI1 == IlI11II1lI1 and (I1l11II1lI1 and I1l11II1lI1[I1IIl1I1lI1(_KTB[2088])])) do
-local IlI11II1lI1 = I1IIlII1lI1()
-if not IlI11II1lI1 then
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2089])] = false
-if l1l111I1lI1 then
-l1l111I1lI1(false, true)
+task[l11111lI1I(_KRP[2089])](function()
+local I11lIl1I1I = 0B0
+local Il1lIl1I1I = 0B0
+local lI1lIl1I1I = {}
+while lI1IIl1I1I[l11111lI1I(_KRP[2090])] and (llIlII1I1I == ll1lIl1I1I and (l1IlIl1I1I and l1IlIl1I1I[l11111lI1I(_KRP[2091])])) do
+local II1lIl1I1I = l1111I1I1I(lI1lIl1I1I)
+if not II1lIl1I1I then
+lI1IIl1I1I[l11111lI1I(_KRP[2092])] = false
+if I1IlII1I1I then
+I1IlII1I1I(false, true)
 						end
-if l1I11II1lI1 == 0B0 then
-I1111II1lI1:SetCore(I1IIl1I1lI1(_KTB[2090]), { [I1IIl1I1lI1(_KTB[2091])] = I1IIl1I1lI1(_KTB[2092]), [I1IIl1I1lI1(_KTB[2093])] = I1IIl1I1lI1(_KTB[2094]), [I1IIl1I1lI1(_KTB[2095])] = 0B10 })
+if I11lIl1I1I == 0B0 then
+l1llIl1I1I:SetCore(l11111lI1I(_KRP[2093]), { [l11111lI1I(_KRP[2094])] = l11111lI1I(_KRP[2095]), [l11111lI1I(_KRP[2096])] = l11111lI1I(_KRP[2097]), [l11111lI1I(_KRP[2098])] = 0B10 })
 						end
 break
 					end
-if Il1l1II1lI1 and Il1l1II1lI1:IsA(I1IIl1I1lI1(_KTB[2096])) then
-Il1l1II1lI1:FireServer(IlI11II1lI1, 0B1)
-l1I11II1lI1 = l1I11II1lI1 + 0B1
+if lllIIl1I1I and lllIIl1I1I:IsA(l11111lI1I(_KRP[2099])) then
+local l1llIl1I1I = 0B0
+local llllIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[2100]))
+if llllIl1I1I then
+for I11lIl1I1I, ll1lIl1I1I in ipairs(llllIl1I1I:GetChildren()) do
+if ll1lIl1I1I:IsA(l11111lI1I(_KRP[2101])) and ll1lIl1I1I[l11111lI1I(_KRP[2102])] == II1lIl1I1I[l11111lI1I(_KRP[2103])] then
+l1llIl1I1I = l1llIl1I1I + 0B1
+								end
+							end
+						end
+local IlllIl1I1I = l1llIl1I1I >= 0xA and 0xA or l1llIl1I1I >= 0x5 and 0x5 or 0B1
+lllIIl1I1I:FireServer(II1lIl1I1I, IlllIl1I1I);
+local lIllIl1I1I = false
+local IIllIl1I1I = 0B0
+local l1IlIl1I1I = os[l11111lI1I(_KRP[2104])]() + 0B10
+repeat
+task[l11111lI1I(_KRP[2107])](.04);
+local I11lIl1I1I = 0B0
+llllIl1I1I = I1llIl1I1I:FindFirstChild(l11111lI1I(_KRP[2108]))
+if llllIl1I1I then
+for ll1lIl1I1I, Il1lIl1I1I in ipairs(llllIl1I1I:GetChildren()) do
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[2109])) and Il1lIl1I1I[l11111lI1I(_KRP[2110])] == II1lIl1I1I[l11111lI1I(_KRP[2111])] then
+I11lIl1I1I = I11lIl1I1I + 0B1
+									end
+								end
+							end
+IIllIl1I1I = math[l11111lI1I(_KRP[2112])](l1llIl1I1I - I11lIl1I1I, 0B0)
+lIllIl1I1I = IIllIl1I1I > 0B0
+						until lIllIl1I1I or os[l11111lI1I(_KRP[2105])]() >= l1IlIl1I1I or not lI1IIl1I1I[l11111lI1I(_KRP[2106])] or llIlII1I1I ~= ll1lIl1I1I
+if lIllIl1I1I then
+I11lIl1I1I = I11lIl1I1I + IIllIl1I1I
+Il1lIl1I1I = 0B0
+task[l11111lI1I(_KRP[2113])](.08)
+						else
+Il1lIl1I1I = Il1lIl1I1I + 0B1
+if Il1lIl1I1I >= 0B11 then
+lI1lIl1I1I[II1lIl1I1I[l11111lI1I(_KRP[2114])]:lower()] = true
+Il1lIl1I1I = 0B0
+							else
+task[l11111lI1I(_KRP[2115])](.5)
+							end
+						end
 					else
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2097])] = false
-if l1l111I1lI1 then
-l1l111I1lI1(false, true)
+lI1IIl1I1I[l11111lI1I(_KRP[2116])] = false
+if I1IlII1I1I then
+I1IlII1I1I(false, true)
 						end
 break
 					end
-task[I1IIl1I1lI1(_KTB[2098])](.75)
 				end
 			end)
 		end)
-l1l111I1lI1 = IIIl11I1lI1
-lIl111I1lI1 = IIIIlII1lI1() > 0B0
-I1l111I1lI1();
-task[I1IIl1I1lI1(_KTB[2099])](function()
-while I1l11II1lI1 and I1l11II1lI1[I1IIl1I1lI1(_KTB[2100])] do
-if not IIl111I1lI1 then
-local l1I11II1lI1 = IIIIlII1lI1() > 0B0
-if l1I11II1lI1 ~= lIl111I1lI1 then
-lIl111I1lI1 = l1I11II1lI1
-I1l111I1lI1()
+I1IlII1I1I = lIIlII1I1I
+IIllII1I1I = lIIIIl1I1I() > 0B0
+l1IlII1I1I();
+task[l11111lI1I(_KRP[2117])](function()
+while l1IlIl1I1I and l1IlIl1I1I[l11111lI1I(_KRP[2118])] do
+if not lIllII1I1I then
+local I11lIl1I1I = lIIIIl1I1I() > 0B0
+if I11lIl1I1I ~= IIllII1I1I then
+IIllII1I1I = I11lIl1I1I
+l1IlII1I1I()
 				end
 			end
-task[I1IIl1I1lI1(_KTB[2101])](1.5)
+task[l11111lI1I(_KRP[2119])](1.5)
 		end
 	end);
-local function lIIl11I1lI1(l1I11II1lI1, IlI11II1lI1)
-local llI11II1lI1 = false
+local function IIIlII1I1I(I11lIl1I1I, ll1lIl1I1I)
+local Il1lIl1I1I = false
 pcall(function()
 if setclipboard then
-setclipboard(l1I11II1lI1)
-llI11II1lI1 = true
+setclipboard(I11lIl1I1I)
+Il1lIl1I1I = true
 			end
 		end);
-I1111II1lI1:SetCore(I1IIl1I1lI1(_KTB[2102]), { [I1IIl1I1lI1(_KTB[2103])] = I1IIl1I1lI1(_KTB[2104]), [I1IIl1I1lI1(_KTB[2105])] = llI11II1lI1 and IlI11II1lI1  .. I1IIl1I1lI1(_KTB[2106]) or l1I11II1lI1, [I1IIl1I1lI1(_KTB[2107])] = llI11II1lI1 and 0B10 or 0x5 })
+l1llIl1I1I:SetCore(l11111lI1I(_KRP[2120]), { [l11111lI1I(_KRP[2121])] = l11111lI1I(_KRP[2122]), [l11111lI1I(_KRP[2123])] = Il1lIl1I1I and ll1lIl1I1I .. l11111lI1I(_KRP[2124]) or I11lIl1I1I, [l11111lI1I(_KRP[2125])] = Il1lIl1I1I and 0B10 or 0x5 })
 	end
-lIl1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2108]), 0x1E);
-local I1Il11I1lI1 = Instance[I1IIl1I1lI1(_KTB[1662])](I1IIl1I1lI1(_KTB[2109]));
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[2110])] = I1IIl1I1lI1(_KTB[2111]);
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[2112])] = UDim2[I1IIl1I1lI1(_KTB[2113])](0B1, 0B0, 0B0, 0xD6);
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[2114])] = Color3[I1IIl1I1lI1(_KTB[28])](0x6, 0xC, 0x1C);
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[2115])] = .1
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[2116])] = 0B0
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[2117])] = 0x1F
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[946])] = 0B10
-I1Il11I1lI1[I1IIl1I1lI1(_KTB[2118])] = IlI111I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[2119])](I1IIl1I1lI1(_KTB[2120]), I1Il11I1lI1))[I1IIl1I1lI1(_KTB[2121])] = UDim[I1IIl1I1lI1(_KTB[1317])](0B0, 0B111);
-local l1Il11I1lI1 = Instance[I1IIl1I1lI1(_KTB[2122])](I1IIl1I1lI1(_KTB[2123]), I1Il11I1lI1);
-l1Il11I1lI1[I1IIl1I1lI1(_KTB[2124])] = ll111II1lI1[I1IIl1I1lI1(_KTB[2125])]
-l1Il11I1lI1[I1IIl1I1lI1(_KTB[2126])] = 1.4
-l1Il11I1lI1[I1IIl1I1lI1(_KTB[2127])] = .08
-local function IlIl11I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1, II111II1lI1, lI111II1lI1)
-local I1111II1lI1 = Instance[I1IIl1I1lI1(_KTB[2128])](I1IIl1I1lI1(_KTB[2129]));
-I1111II1lI1[I1IIl1I1lI1(_KTB[2130])] = UDim2[I1IIl1I1lI1(_KTB[607])](0B1, -14, 0B0, llI11II1lI1);
-I1111II1lI1[I1IIl1I1lI1(_KTB[2131])] = UDim2[I1IIl1I1lI1(_KTB[2132])](0B0, 0x7, 0B0, IlI11II1lI1);
-I1111II1lI1[I1IIl1I1lI1(_KTB[868])] = 0B1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1722])] = l1I11II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[1543])] = lI111II1lI1 or ll111II1lI1[I1IIl1I1lI1(_KTB[2133])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[2134])] = Color3[I1IIl1I1lI1(_KTB[2135])](0B0, 0B0, 0B0);
-I1111II1lI1[I1IIl1I1lI1(_KTB[2136])] = 0B0
-I1111II1lI1[I1IIl1I1lI1(_KTB[936])] = Enum[I1IIl1I1lI1(_KTB[2137])][I1IIl1I1lI1(_KTB[2138])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[2139])] = II111II1lI1
-I1111II1lI1[I1IIl1I1lI1(_KTB[2140])] = true
-I1111II1lI1[I1IIl1I1lI1(_KTB[2141])] = Enum[I1IIl1I1lI1(_KTB[2142])][I1IIl1I1lI1(_KTB[2143])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[2144])] = Enum[I1IIl1I1lI1(_KTB[2145])][I1IIl1I1lI1(_KTB[2146])]
-I1111II1lI1[I1IIl1I1lI1(_KTB[2147])] = 0B11
-I1111II1lI1[I1IIl1I1lI1(_KTB[2148])] = I1Il11I1lI1
-return I1111II1lI1
+IIlllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2126]), 0x1E);
+local l11III1I1I = Instance[l11111lI1I(_KRP[629])](l11111lI1I(_KRP[2127]));
+l11III1I1I[l11111lI1I(_KRP[2128])] = l11111lI1I(_KRP[2129]);
+l11III1I1I[l11111lI1I(_KRP[2130])] = UDim2[l11111lI1I(_KRP[1185])](0B1, 0B0, 0B0, 0xD6);
+l11III1I1I[l11111lI1I(_KRP[2131])] = Color3[l11111lI1I(_KRP[2132])](0x6, 0xC, 0x1C);
+l11III1I1I[l11111lI1I(_KRP[2133])] = .1
+l11III1I1I[l11111lI1I(_KRP[2134])] = 0B0
+l11III1I1I[l11111lI1I(_KRP[2135])] = 0x1F
+l11III1I1I[l11111lI1I(_KRP[2136])] = 0B10
+l11III1I1I[l11111lI1I(_KRP[1169])] = ll1lII1I1I;
+(Instance[l11111lI1I(_KRP[745])](l11111lI1I(_KRP[2137]), l11III1I1I))[l11111lI1I(_KRP[2138])] = UDim[l11111lI1I(_KRP[2139])](0B0, 0x7);
+local I11III1I1I = Instance[l11111lI1I(_KRP[2140])](l11111lI1I(_KRP[2141]), l11III1I1I);
+I11III1I1I[l11111lI1I(_KRP[2142])] = IlllIl1I1I[l11111lI1I(_KRP[2143])]
+I11III1I1I[l11111lI1I(_KRP[2144])] = 1.4
+I11III1I1I[l11111lI1I(_KRP[2145])] = .08
+local function ll1III1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I, lI1lIl1I1I, II1lIl1I1I)
+local l1llIl1I1I = Instance[l11111lI1I(_KRP[2146])](l11111lI1I(_KRP[2147]));
+l1llIl1I1I[l11111lI1I(_KRP[2148])] = UDim2[l11111lI1I(_KRP[392])](0B1, -0B1110, 0B0, Il1lIl1I1I);
+l1llIl1I1I[l11111lI1I(_KRP[2149])] = UDim2[l11111lI1I(_KRP[966])](0B0, 0x7, 0B0, ll1lIl1I1I);
+l1llIl1I1I[l11111lI1I(_KRP[2150])] = 0B1
+l1llIl1I1I[l11111lI1I(_KRP[2151])] = I11lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[2152])] = II1lIl1I1I or IlllIl1I1I[l11111lI1I(_KRP[2153])]
+l1llIl1I1I[l11111lI1I(_KRP[2154])] = Color3[l11111lI1I(_KRP[2155])](0B0, 0B0, 0B0);
+l1llIl1I1I[l11111lI1I(_KRP[2156])] = 0B0
+l1llIl1I1I[l11111lI1I(_KRP[1089])] = Enum[l11111lI1I(_KRP[2157])][l11111lI1I(_KRP[2158])]
+l1llIl1I1I[l11111lI1I(_KRP[2159])] = lI1lIl1I1I
+l1llIl1I1I[l11111lI1I(_KRP[2160])] = true
+l1llIl1I1I[l11111lI1I(_KRP[2161])] = Enum[l11111lI1I(_KRP[2162])][l11111lI1I(_KRP[2163])]
+l1llIl1I1I[l11111lI1I(_KRP[2164])] = Enum[l11111lI1I(_KRP[2165])][l11111lI1I(_KRP[2166])]
+l1llIl1I1I[l11111lI1I(_KRP[1340])] = 0B11
+l1llIl1I1I[l11111lI1I(_KRP[2167])] = l11III1I1I
+return l1llIl1I1I
 	end
-local function llIl11I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1, II111II1lI1, lI111II1lI1, I1111II1lI1)
-if I1111II1lI1 then
-local IlI11II1lI1 = Instance[I1IIl1I1lI1(_KTB[2149])](I1IIl1I1lI1(_KTB[2150]));
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2151])] = UDim2[I1IIl1I1lI1(_KTB[2152])](II111II1lI1, II111II1lI1);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[809])] = UDim2[I1IIl1I1lI1(_KTB[2153])](llI11II1lI1, -(II111II1lI1 / 0B10), .5, -(II111II1lI1 / 0B10));
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2154])] = lI111II1lI1
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2155])] = 0B0
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2156])] = I1111II1lI1
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2157])] = Color3[I1IIl1I1lI1(_KTB[2158])](0B0, 0B0, 0B0);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2159])] = Color3[I1IIl1I1lI1(_KTB[2160])](0xFF, 0xFF, 0xFF);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2161])] = .5
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2162])] = Enum[I1IIl1I1lI1(_KTB[2163])][I1IIl1I1lI1(_KTB[2164])]
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2165])] = math[I1IIl1I1lI1(_KTB[2166])](II111II1lI1 * .62);
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2167])] = l1I11II1lI1[I1IIl1I1lI1(_KTB[2168])] + 0B1
-IlI11II1lI1[I1IIl1I1lI1(_KTB[2169])] = l1I11II1lI1;
-(Instance[I1IIl1I1lI1(_KTB[1240])](I1IIl1I1lI1(_KTB[2170]), IlI11II1lI1))[I1IIl1I1lI1(_KTB[2171])] = UDim[I1IIl1I1lI1(_KTB[1926])](0B0, 0x6)
+local function Il1III1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I, lI1lIl1I1I, II1lIl1I1I, l1llIl1I1I)
+if l1llIl1I1I then
+local ll1lIl1I1I = Instance[l11111lI1I(_KRP[799])](l11111lI1I(_KRP[2168]));
+ll1lIl1I1I[l11111lI1I(_KRP[2169])] = UDim2[l11111lI1I(_KRP[1550])](lI1lIl1I1I, lI1lIl1I1I);
+ll1lIl1I1I[l11111lI1I(_KRP[826])] = UDim2[l11111lI1I(_KRP[1893])](Il1lIl1I1I, -(lI1lIl1I1I / 0B10), .5, -(lI1lIl1I1I / 0B10));
+ll1lIl1I1I[l11111lI1I(_KRP[2170])] = II1lIl1I1I
+ll1lIl1I1I[l11111lI1I(_KRP[2171])] = 0B0
+ll1lIl1I1I[l11111lI1I(_KRP[2071])] = l1llIl1I1I
+ll1lIl1I1I[l11111lI1I(_KRP[2172])] = Color3[l11111lI1I(_KRP[2173])](0B0, 0B0, 0B0);
+ll1lIl1I1I[l11111lI1I(_KRP[2174])] = Color3[l11111lI1I(_KRP[2175])](0xFF, 0xFF, 0xFF);
+ll1lIl1I1I[l11111lI1I(_KRP[2176])] = .5
+ll1lIl1I1I[l11111lI1I(_KRP[2177])] = Enum[l11111lI1I(_KRP[2178])][l11111lI1I(_KRP[2179])]
+ll1lIl1I1I[l11111lI1I(_KRP[2180])] = math[l11111lI1I(_KRP[2181])](lI1lIl1I1I * .62);
+ll1lIl1I1I[l11111lI1I(_KRP[2182])] = I11lIl1I1I[l11111lI1I(_KRP[971])] + 0B1
+ll1lIl1I1I[l11111lI1I(_KRP[2183])] = I11lIl1I1I;
+(Instance[l11111lI1I(_KRP[2184])](l11111lI1I(_KRP[2185]), ll1lIl1I1I))[l11111lI1I(_KRP[2186])] = UDim[l11111lI1I(_KRP[2187])](0B0, 0x6)
 		end
-local l1111II1lI1 = Instance[I1IIl1I1lI1(_KTB[2172])](I1IIl1I1lI1(_KTB[2173]));
-l1111II1lI1[I1IIl1I1lI1(_KTB[2174])] = UDim2[I1IIl1I1lI1(_KTB[2175])](II111II1lI1 + 0xA, II111II1lI1 + 0xA);
-l1111II1lI1[I1IIl1I1lI1(_KTB[983])] = UDim2[I1IIl1I1lI1(_KTB[2176])](llI11II1lI1, -((II111II1lI1 + 0xA) / 0B10), .5, -((II111II1lI1 + 0xA) / 0B10));
-l1111II1lI1[I1IIl1I1lI1(_KTB[2177])] = 0B1
-l1111II1lI1[I1IIl1I1lI1(_KTB[2178])] = IlI11II1lI1
-l1111II1lI1[I1IIl1I1lI1(_KTB[2179])] = lI111II1lI1
-l1111II1lI1[I1IIl1I1lI1(_KTB[2180])] = .68
-l1111II1lI1[I1IIl1I1lI1(_KTB[2181])] = l1I11II1lI1[I1IIl1I1lI1(_KTB[2182])] + 0B10
-l1111II1lI1[I1IIl1I1lI1(_KTB[2183])] = l1I11II1lI1
-local Il111II1lI1 = Instance[I1IIl1I1lI1(_KTB[2184])](I1IIl1I1lI1(_KTB[2185]));
-Il111II1lI1[I1IIl1I1lI1(_KTB[2186])] = UDim2[I1IIl1I1lI1(_KTB[2187])](II111II1lI1, II111II1lI1);
-Il111II1lI1[I1IIl1I1lI1(_KTB[2188])] = UDim2[I1IIl1I1lI1(_KTB[993])](llI11II1lI1, -(II111II1lI1 / 0B10), .5, -(II111II1lI1 / 0B10));
-Il111II1lI1[I1IIl1I1lI1(_KTB[1540])] = 0B1
-Il111II1lI1[I1IIl1I1lI1(_KTB[2189])] = IlI11II1lI1
-Il111II1lI1[I1IIl1I1lI1(_KTB[2190])] = l1I11II1lI1[I1IIl1I1lI1(_KTB[2191])] + 0B11
-Il111II1lI1[I1IIl1I1lI1(_KTB[2192])] = l1I11II1lI1
-return Il111II1lI1
+local I1llIl1I1I = Instance[l11111lI1I(_KRP[2188])](l11111lI1I(_KRP[2189]));
+I1llIl1I1I[l11111lI1I(_KRP[995])] = UDim2[l11111lI1I(_KRP[2190])](lI1lIl1I1I + 0xA, lI1lIl1I1I + 0xA);
+I1llIl1I1I[l11111lI1I(_KRP[2191])] = UDim2[l11111lI1I(_KRP[2192])](Il1lIl1I1I, -((lI1lIl1I1I + 0xA) / 0B10), .5, -((lI1lIl1I1I + 0xA) / 0B10));
+I1llIl1I1I[l11111lI1I(_KRP[2193])] = 0B1
+I1llIl1I1I[l11111lI1I(_KRP[2194])] = ll1lIl1I1I
+I1llIl1I1I[l11111lI1I(_KRP[2195])] = II1lIl1I1I
+I1llIl1I1I[l11111lI1I(_KRP[2196])] = .68
+I1llIl1I1I[l11111lI1I(_KRP[2197])] = I11lIl1I1I[l11111lI1I(_KRP[2198])] + 0B10
+I1llIl1I1I[l11111lI1I(_KRP[2199])] = I11lIl1I1I
+local llllIl1I1I = Instance[l11111lI1I(_KRP[2200])](l11111lI1I(_KRP[2201]));
+llllIl1I1I[l11111lI1I(_KRP[1127])] = UDim2[l11111lI1I(_KRP[2202])](lI1lIl1I1I, lI1lIl1I1I);
+llllIl1I1I[l11111lI1I(_KRP[2203])] = UDim2[l11111lI1I(_KRP[2204])](Il1lIl1I1I, -(lI1lIl1I1I / 0B10), .5, -(lI1lIl1I1I / 0B10));
+llllIl1I1I[l11111lI1I(_KRP[640])] = 0B1
+llllIl1I1I[l11111lI1I(_KRP[2205])] = ll1lIl1I1I
+llllIl1I1I[l11111lI1I(_KRP[2206])] = I11lIl1I1I[l11111lI1I(_KRP[2207])] + 0B11
+llllIl1I1I[l11111lI1I(_KRP[2208])] = I11lIl1I1I
+return llllIl1I1I
 	end
-IlIl11I1lI1(I1IIl1I1lI1(_KTB[2193]), 0x7, 0x1C, llIl1II1lI1 and 0xD or 0xE, ll111II1lI1[I1IIl1I1lI1(_KTB[2194])]);
-IlIl11I1lI1(I1IIl1I1lI1(_KTB[2195]), 0x23, 0x18, llIl1II1lI1 and 0xE or 0xF, ll111II1lI1[I1IIl1I1lI1(_KTB[2196])]);
-local II1l11I1lI1 = Instance[I1IIl1I1lI1(_KTB[2197])](I1IIl1I1lI1(_KTB[2198]));
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2199])] = I1IIl1I1lI1(_KTB[2200]);
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2151])] = UDim2[I1IIl1I1lI1(_KTB[765])](0B1, -22, 0B0, 0x24);
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2201])] = UDim2[I1IIl1I1lI1(_KTB[587])](0B0, 0xB, 0B0, 0x42);
-II1l11I1lI1[I1IIl1I1lI1(_KTB[1112])] = Color3[I1IIl1I1lI1(_KTB[2202])](0xB, 0x14, 0x29);
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2203])] = .08
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2204])] = false
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2205])] = I1IIl1I1lI1(_KTB[2206]);
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2207])] = ll111II1lI1[I1IIl1I1lI1(_KTB[2208])]
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2209])] = Color3[I1IIl1I1lI1(_KTB[2210])](0xA0, 0B0, 0B0);
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2211])] = .1
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2212])] = Enum[I1IIl1I1lI1(_KTB[2213])][I1IIl1I1lI1(_KTB[2214])]
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2215])] = llIl1II1lI1 and 0xE or 0x10
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2216])] = Enum[I1IIl1I1lI1(_KTB[2217])][I1IIl1I1lI1(_KTB[2218])]
-II1l11I1lI1[I1IIl1I1lI1(_KTB[1912])] = 0B11
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2219])] = I1Il11I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[2220])](I1IIl1I1lI1(_KTB[1306]), II1l11I1lI1))[I1IIl1I1lI1(_KTB[2221])] = UDim[I1IIl1I1lI1(_KTB[2222])](0B0, 0x7);
-llIl11I1lI1(II1l11I1lI1, I1IIl1I1lI1(_KTB[2223]), .08, 0x24, Color3[I1IIl1I1lI1(_KTB[1213])](0xFF, 0x28, 0x28));
-llIl11I1lI1(II1l11I1lI1, I1IIl1I1lI1(_KTB[2224]), .92, 0x24, Color3[I1IIl1I1lI1(_KTB[1462])](0xFF, 0x28, 0x28));
-local lI1l11I1lI1 = Instance[I1IIl1I1lI1(_KTB[871])](I1IIl1I1lI1(_KTB[2225]), II1l11I1lI1);
-lI1l11I1lI1[I1IIl1I1lI1(_KTB[2226])] = Color3[I1IIl1I1lI1(_KTB[1901])](0xFF, 0x23, 0x23);
-lI1l11I1lI1[I1IIl1I1lI1(_KTB[1312])] = 0B10
-lI1l11I1lI1[I1IIl1I1lI1(_KTB[2227])] = 0B0
-II1l11I1lI1[I1IIl1I1lI1(_KTB[2228])]:Connect(function()
-lIIl11I1lI1(Il111II1lI1[I1IIl1I1lI1(_KTB[2229])][I1IIl1I1lI1(_KTB[2230])], I1IIl1I1lI1(_KTB[2231]))
+ll1III1I1I(l11111lI1I(_KRP[2209]), 0x7, 0x1C, Il1IIl1I1I and 0xD or 0xE, IlllIl1I1I[l11111lI1I(_KRP[2210])]);
+ll1III1I1I(l11111lI1I(_KRP[2211]), 0x23, 0x18, Il1IIl1I1I and 0xE or 0xF, IlllIl1I1I[l11111lI1I(_KRP[2212])]);
+local lI1III1I1I = Instance[l11111lI1I(_KRP[1299])](l11111lI1I(_KRP[2213]));
+lI1III1I1I[l11111lI1I(_KRP[2214])] = l11111lI1I(_KRP[2215]);
+lI1III1I1I[l11111lI1I(_KRP[1204])] = UDim2[l11111lI1I(_KRP[2216])](0B1, -22, 0B0, 0x24);
+lI1III1I1I[l11111lI1I(_KRP[2217])] = UDim2[l11111lI1I(_KRP[2218])](0B0, 0xB, 0B0, 0x42);
+lI1III1I1I[l11111lI1I(_KRP[2219])] = Color3[l11111lI1I(_KRP[2220])](0xB, 0x14, 0x29);
+lI1III1I1I[l11111lI1I(_KRP[2221])] = .08
+lI1III1I1I[l11111lI1I(_KRP[2222])] = false
+lI1III1I1I[l11111lI1I(_KRP[2223])] = l11111lI1I(_KRP[2224]);
+lI1III1I1I[l11111lI1I(_KRP[2225])] = IlllIl1I1I[l11111lI1I(_KRP[2226])]
+lI1III1I1I[l11111lI1I(_KRP[928])] = Color3[l11111lI1I(_KRP[2227])](0xA0, 0B0, 0B0);
+lI1III1I1I[l11111lI1I(_KRP[2228])] = .1
+lI1III1I1I[l11111lI1I(_KRP[2229])] = Enum[l11111lI1I(_KRP[2230])][l11111lI1I(_KRP[2231])]
+lI1III1I1I[l11111lI1I(_KRP[2232])] = Il1IIl1I1I and 0xE or 0x10
+lI1III1I1I[l11111lI1I(_KRP[2233])] = Enum[l11111lI1I(_KRP[2234])][l11111lI1I(_KRP[2235])]
+lI1III1I1I[l11111lI1I(_KRP[1511])] = 0B11
+lI1III1I1I[l11111lI1I(_KRP[2236])] = l11III1I1I;
+(Instance[l11111lI1I(_KRP[2237])](l11111lI1I(_KRP[2238]), lI1III1I1I))[l11111lI1I(_KRP[2239])] = UDim[l11111lI1I(_KRP[2240])](0B0, 0x7);
+Il1III1I1I(lI1III1I1I, l11111lI1I(_KRP[2241]), .08, 0x24, Color3[l11111lI1I(_KRP[1348])](0xFF, 0x28, 0x28));
+Il1III1I1I(lI1III1I1I, l11111lI1I(_KRP[2242]), .92, 0x24, Color3[l11111lI1I(_KRP[2243])](0xFF, 0x28, 0x28));
+local II1III1I1I = Instance[l11111lI1I(_KRP[552])](l11111lI1I(_KRP[2244]), lI1III1I1I);
+II1III1I1I[l11111lI1I(_KRP[2245])] = Color3[l11111lI1I(_KRP[1457])](0xFF, 0x23, 0x23);
+II1III1I1I[l11111lI1I(_KRP[2246])] = 0B10
+II1III1I1I[l11111lI1I(_KRP[1259])] = 0B0
+lI1III1I1I[l11111lI1I(_KRP[2247])]:Connect(function()
+IIIlII1I1I(llllIl1I1I[l11111lI1I(_KRP[2248])][l11111lI1I(_KRP[2249])], l11111lI1I(_KRP[2250]))
 	end);
-local I11l11I1lI1 = Instance[I1IIl1I1lI1(_KTB[966])](I1IIl1I1lI1(_KTB[2232]));
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2233])] = I1IIl1I1lI1(_KTB[2234]);
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2235])] = UDim2[I1IIl1I1lI1(_KTB[995])](0B1, -22, 0B0, 0x24);
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2236])] = UDim2[I1IIl1I1lI1(_KTB[2149])](0B0, 0xB, 0B0, 0x6C);
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2237])] = Color3[I1IIl1I1lI1(_KTB[2238])](0xB, 0x14, 0x29);
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2239])] = .08
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2240])] = false
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2241])] = I1IIl1I1lI1(_KTB[2242]);
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2243])] = Color3[I1IIl1I1lI1(_KTB[2244])](0xFF, 0xFF, 0xFF);
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2245])] = Color3[I1IIl1I1lI1(_KTB[2246])](0xFF, 0xFF, 0xFF);
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2247])] = .14
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2248])] = Enum[I1IIl1I1lI1(_KTB[2249])][I1IIl1I1lI1(_KTB[2250])]
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2251])] = llIl1II1lI1 and 0xE or 0x10
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2252])] = 0B11
-I11l11I1lI1[I1IIl1I1lI1(_KTB[1069])] = I1Il11I1lI1;
-(Instance[I1IIl1I1lI1(_KTB[543])](I1IIl1I1lI1(_KTB[2253]), I11l11I1lI1))[I1IIl1I1lI1(_KTB[2254])] = UDim[I1IIl1I1lI1(_KTB[815])](0B0, 0x7);
-local l11l11I1lI1 = Instance[I1IIl1I1lI1(_KTB[2255])](I1IIl1I1lI1(_KTB[2256]), I11l11I1lI1);
-l11l11I1lI1[I1IIl1I1lI1(_KTB[2257])] = ll111II1lI1[I1IIl1I1lI1(_KTB[2258])]
-l11l11I1lI1[I1IIl1I1lI1(_KTB[2259])] = 0B10
-l11l11I1lI1[I1IIl1I1lI1(_KTB[2260])] = .18
-I11l11I1lI1[I1IIl1I1lI1(_KTB[2261])]:Connect(function()
-lIIl11I1lI1(Il111II1lI1[I1IIl1I1lI1(_KTB[2262])][I1IIl1I1lI1(_KTB[2263])], I1IIl1I1lI1(_KTB[2264]))
+local l1lIII1I1I = Instance[l11111lI1I(_KRP[1028])](l11111lI1I(_KRP[2251]));
+l1lIII1I1I[l11111lI1I(_KRP[2252])] = l11111lI1I(_KRP[2253]);
+l1lIII1I1I[l11111lI1I(_KRP[2254])] = UDim2[l11111lI1I(_KRP[1030])](0B1, -22, 0B0, 0x24);
+l1lIII1I1I[l11111lI1I(_KRP[2255])] = UDim2[l11111lI1I(_KRP[735])](0B0, 0xB, 0B0, 0x6C);
+l1lIII1I1I[l11111lI1I(_KRP[2256])] = Color3[l11111lI1I(_KRP[2257])](0xB, 0x14, 0x29);
+l1lIII1I1I[l11111lI1I(_KRP[2258])] = .08
+l1lIII1I1I[l11111lI1I(_KRP[2259])] = false
+l1lIII1I1I[l11111lI1I(_KRP[2260])] = l11111lI1I(_KRP[2261]);
+l1lIII1I1I[l11111lI1I(_KRP[2262])] = Color3[l11111lI1I(_KRP[2263])](0xFF, 0xFF, 0xFF);
+l1lIII1I1I[l11111lI1I(_KRP[2264])] = Color3[l11111lI1I(_KRP[730])](0xFF, 0xFF, 0xFF);
+l1lIII1I1I[l11111lI1I(_KRP[1333])] = .14
+l1lIII1I1I[l11111lI1I(_KRP[2265])] = Enum[l11111lI1I(_KRP[2266])][l11111lI1I(_KRP[2267])]
+l1lIII1I1I[l11111lI1I(_KRP[2268])] = Il1IIl1I1I and 0xE or 0x10
+l1lIII1I1I[l11111lI1I(_KRP[2269])] = 0B11
+l1lIII1I1I[l11111lI1I(_KRP[2270])] = l11III1I1I;
+(Instance[l11111lI1I(_KRP[2237])](l11111lI1I(_KRP[2271]), l1lIII1I1I))[l11111lI1I(_KRP[2272])] = UDim[l11111lI1I(_KRP[1022])](0B0, 0x7);
+local I1lIII1I1I = Instance[l11111lI1I(_KRP[2273])](l11111lI1I(_KRP[2274]), l1lIII1I1I);
+I1lIII1I1I[l11111lI1I(_KRP[2275])] = IlllIl1I1I[l11111lI1I(_KRP[2276])]
+I1lIII1I1I[l11111lI1I(_KRP[2277])] = 0B10
+I1lIII1I1I[l11111lI1I(_KRP[2278])] = .18
+l1lIII1I1I[l11111lI1I(_KRP[2279])]:Connect(function()
+IIIlII1I1I(llllIl1I1I[l11111lI1I(_KRP[2280])][l11111lI1I(_KRP[2281])], l11111lI1I(_KRP[2282]))
 	end);
-IlIl11I1lI1(I1IIl1I1lI1(_KTB[2265]), 0x97, 0x1E, llIl1II1lI1 and 0xD or 0xE, ll111II1lI1[I1IIl1I1lI1(_KTB[2266])]);
-IlIl11I1lI1(I1IIl1I1lI1(_KTB[2267]), 0xB5, 0x18, llIl1II1lI1 and 0B1110 or 0xF, Color3[I1IIl1I1lI1(_KTB[2202])](0xFF, 0xFF, 0xFF));
-local Il1l11I1lI1 = l1l1I1I1lI1(IlI111I1lI1, I1IIl1I1lI1(_KTB[2268]), 0x28, function()
-if l1l11II1lI1 then
-l1l11II1lI1()
+ll1III1I1I(l11111lI1I(_KRP[2283]), 0x97, 0x1E, Il1IIl1I1I and 0xD or 0xE, IlllIl1I1I[l11111lI1I(_KRP[2284])]);
+ll1III1I1I(l11111lI1I(_KRP[2285]), 0xB5, 0x18, Il1IIl1I1I and 0xE or 0xF, Color3[l11111lI1I(_KRP[2286])](0xFF, 0xFF, 0xFF));
+local lllIII1I1I = I1IllI1I1I(ll1lII1I1I, l11111lI1I(_KRP[2287]), 0x28, function()
+if I1IlIl1I1I then
+I1IlIl1I1I()
 			end
 		end);
-Ill1I1I1lI1(Il1l11I1lI1, I1IIl1I1lI1(_KTB[2269]), ll111II1lI1[I1IIl1I1lI1(_KTB[2270])]);
-local function ll1l11I1lI1(l1I11II1lI1, IlI11II1lI1, llI11II1lI1)
+llIllI1I1I(lllIII1I1I, l11111lI1I(_KRP[2288]), IlllIl1I1I[l11111lI1I(_KRP[2289])]);
+local function IllIII1I1I(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I)
 pcall(function()
-(lI111II1lI1:Create(l1I11II1lI1, IlI11II1lI1, llI11II1lI1)):Play()
+(II1lIl1I1I:Create(I11lIl1I1I, ll1lIl1I1I, Il1lIl1I1I)):Play()
 		end)
 	end
-local function IIll11I1lI1(l1I11II1lI1, IlI11II1lI1)
-for l1I11II1lI1, llI11II1lI1 in ipairs(l1I11II1lI1:GetDescendants()) do
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2271])) then
-ll1l11I1lI1(llI11II1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2272])] = 0B1 })
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2273])) then
-llI11II1lI1[I1IIl1I1lI1(_KTB[2274])] = 0B1
-llI11II1lI1[I1IIl1I1lI1(_KTB[2275])] = 0B0
+local function lIlIII1I1I(I11lIl1I1I, ll1lIl1I1I)
+for I11lIl1I1I, Il1lIl1I1I in ipairs(I11lIl1I1I:GetDescendants()) do
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[2290])) then
+IllIII1I1I(Il1lIl1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2291])] = 0B1 })
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[2292])) then
+Il1lIl1I1I[l11111lI1I(_KRP[2293])] = 0B1
+Il1lIl1I1I[l11111lI1I(_KRP[2294])] = 0B0
 				end
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2276])) or llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2277])) or llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2278])) then
-ll1l11I1lI1(llI11II1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2279])] = 0B1, [I1IIl1I1lI1(_KTB[2280])] = 0B1 })
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[2295])) or Il1lIl1I1I:IsA(l11111lI1I(_KRP[2296])) or Il1lIl1I1I:IsA(l11111lI1I(_KRP[2297])) then
+IllIII1I1I(Il1lIl1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2298])] = 0B1, [l11111lI1I(_KRP[2299])] = 0B1 })
 				end
-if llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2281])) or llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2282])) then
-ll1l11I1lI1(llI11II1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2283])] = 0B1 })
+if Il1lIl1I1I:IsA(l11111lI1I(_KRP[2300])) or Il1lIl1I1I:IsA(l11111lI1I(_KRP[2301])) then
+IllIII1I1I(Il1lIl1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2302])] = 0B1 })
 				end
-			elseif llI11II1lI1:IsA(I1IIl1I1lI1(_KTB[2284])) then
-ll1l11I1lI1(llI11II1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2285])] = 0B1 })
+			elseif Il1lIl1I1I:IsA(l11111lI1I(_KRP[2303])) then
+IllIII1I1I(Il1lIl1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2304])] = 0B1 })
 			end
 		end
 	end
-local lIll11I1lI1 = false
-l1l11II1lI1 = function()
-if lIll11I1lI1 then
+local IIlIII1I1I = false
+I1IlIl1I1I = function()
+if IIlIII1I1I then
 return
 			end
-lIll11I1lI1 = true
-lll11II1lI1();
-lI11lII1lI1();
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2286])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2287])] = II1l1II1lI1[I1IIl1I1lI1(_KTB[2288])] + 0B1
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2289])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2290])] = nil
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2291])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2292])] = false
-II1l1II1lI1[I1IIl1I1lI1(_KTB[1634])] = nil
-local l1I11II1lI1 = l1111II1lI1[I1IIl1I1lI1(_KTB[2293])] and l1111II1lI1[I1IIl1I1lI1(_KTB[2294])]:FindFirstChild(I1IIl1I1lI1(_KTB[2295]))
-if l1I11II1lI1 then
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2296])] = false
+IIlIII1I1I = true
+IlIlIl1I1I();
+II1l1I1I1I();
+lI1IIl1I1I[l11111lI1I(_KRP[2305])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[2306])] = lI1IIl1I1I[l11111lI1I(_KRP[2307])] + 0B1
+lI1IIl1I1I[l11111lI1I(_KRP[2308])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[2309])] = nil
+lI1IIl1I1I[l11111lI1I(_KRP[2310])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[2311])] = false
+lI1IIl1I1I[l11111lI1I(_KRP[2312])] = nil
+local I11lIl1I1I = I1llIl1I1I[l11111lI1I(_KRP[2313])] and I1llIl1I1I[l11111lI1I(_KRP[2314])]:FindFirstChild(l11111lI1I(_KRP[2315]))
+if I11lIl1I1I then
+I11lIl1I1I[l11111lI1I(_KRP[2316])] = false
 			end
-Il1llII1lI1(false);
-I1lllII1lI1(false)
-if IIlllII1lI1 then
-IIlllII1lI1:Disconnect()
-IIlllII1lI1 = nil
+lllI1I1I1I(false);
+l1II1I1I1I(false)
+if lIlI1I1I1I then
+lIlI1I1I1I:Disconnect()
+lIlI1I1I1I = nil
 			end
-llIIlII1lI1();
-ll1IlII1lI1();
-l1lIlII1lI1();
-II1l1II1lI1[I1IIl1I1lI1(_KTB[2297])] = false
-Ill111I1lI1 = Ill111I1lI1 + 0B1
-l1IllII1lI1();
-l1Il1II1lI1();
-local IlI11II1lI1 = TweenInfo[I1IIl1I1lI1(_KTB[1884])](.32, Enum[I1IIl1I1lI1(_KTB[2298])][I1IIl1I1lI1(_KTB[2299])], Enum[I1IIl1I1lI1(_KTB[2300])][I1IIl1I1lI1(_KTB[2301])]);
-local llI11II1lI1 = llIII1I1lI1[I1IIl1I1lI1(_KTB[2302])][I1IIl1I1lI1(_KTB[2303])]
-local II111II1lI1 = llIII1I1lI1[I1IIl1I1lI1(_KTB[2304])][I1IIl1I1lI1(_KTB[2305])]
-local lI111II1lI1 = math[I1IIl1I1lI1(_KTB[2306])](llI11II1lI1 * .84);
-local I1111II1lI1 = math[I1IIl1I1lI1(_KTB[2307])](II111II1lI1 * .84);
-local Il111II1lI1 = UDim2[I1IIl1I1lI1(_KTB[843])](llIII1I1lI1[I1IIl1I1lI1(_KTB[2308])][I1IIl1I1lI1(_KTB[2309])][I1IIl1I1lI1(_KTB[2310])], llIII1I1lI1[I1IIl1I1lI1(_KTB[2311])][I1IIl1I1lI1(_KTB[2312])][I1IIl1I1lI1(_KTB[2313])] + (llI11II1lI1 - lI111II1lI1) / 0B10, llIII1I1lI1[I1IIl1I1lI1(_KTB[2314])][I1IIl1I1lI1(_KTB[2315])][I1IIl1I1lI1(_KTB[2316])], llIII1I1lI1[I1IIl1I1lI1(_KTB[2317])][I1IIl1I1lI1(_KTB[2318])][I1IIl1I1lI1(_KTB[2319])] + (II111II1lI1 - I1111II1lI1) / 0B10);
-IIll11I1lI1(llIII1I1lI1, IlI11II1lI1)
-if lIIlI1I1lI1 and (lIIlI1I1lI1[I1IIl1I1lI1(_KTB[2320])] and lIIlI1I1lI1[I1IIl1I1lI1(_KTB[1843])]) then
-IIll11I1lI1(lIIlI1I1lI1, IlI11II1lI1);
-ll1l11I1lI1(lIIlI1I1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2321])] = 0B1 });
-ll1l11I1lI1(IlIlI1I1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2322])] = 0B1 })
+Il111I1I1I();
+Ill11I1I1I();
+I1I11I1I1I();
+lI1IIl1I1I[l11111lI1I(_KRP[2317])] = false
+llIlII1I1I = llIlII1I1I + 0B1
+I11I1I1I1I();
+I11IIl1I1I();
+local ll1lIl1I1I = TweenInfo[l11111lI1I(_KRP[2237])](.32, Enum[l11111lI1I(_KRP[2318])][l11111lI1I(_KRP[2319])], Enum[l11111lI1I(_KRP[2320])][l11111lI1I(_KRP[2321])]);
+local Il1lIl1I1I = Il11lI1I1I[l11111lI1I(_KRP[2322])][l11111lI1I(_KRP[2323])]
+local lI1lIl1I1I = Il11lI1I1I[l11111lI1I(_KRP[2324])][l11111lI1I(_KRP[2325])]
+local II1lIl1I1I = math[l11111lI1I(_KRP[2326])](Il1lIl1I1I * .84);
+local l1llIl1I1I = math[l11111lI1I(_KRP[2327])](lI1lIl1I1I * .84);
+local llllIl1I1I = UDim2[l11111lI1I(_KRP[1156])](Il11lI1I1I[l11111lI1I(_KRP[2328])][l11111lI1I(_KRP[2329])][l11111lI1I(_KRP[2330])], Il11lI1I1I[l11111lI1I(_KRP[2331])][l11111lI1I(_KRP[2332])][l11111lI1I(_KRP[2333])] + (Il1lIl1I1I - II1lIl1I1I) / 0B10, Il11lI1I1I[l11111lI1I(_KRP[2334])][l11111lI1I(_KRP[2335])][l11111lI1I(_KRP[2336])], Il11lI1I1I[l11111lI1I(_KRP[2337])][l11111lI1I(_KRP[2338])][l11111lI1I(_KRP[2339])] + (lI1lIl1I1I - l1llIl1I1I) / 0B10);
+lIlIII1I1I(Il11lI1I1I, ll1lIl1I1I)
+if IIIllI1I1I and (IIIllI1I1I[l11111lI1I(_KRP[2340])] and IIIllI1I1I[l11111lI1I(_KRP[652])]) then
+lIlIII1I1I(IIIllI1I1I, ll1lIl1I1I);
+IllIII1I1I(IIIllI1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2341])] = 0B1 });
+IllIII1I1I(ll1IlI1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2342])] = 0B1 })
 			end
-ll1l11I1lI1(llIII1I1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2323])] = UDim2[I1IIl1I1lI1(_KTB[2324])](lI111II1lI1, I1111II1lI1), [I1IIl1I1lI1(_KTB[2325])] = Il111II1lI1, [I1IIl1I1lI1(_KTB[2326])] = 0B1 });
-ll1l11I1lI1(lI1II1I1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[812])] = UDim2[I1IIl1I1lI1(_KTB[2327])](lI111II1lI1, I1111II1lI1), [I1IIl1I1lI1(_KTB[1414])] = Il111II1lI1 });
-ll1l11I1lI1(IlIII1I1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2328])] = UDim2[I1IIl1I1lI1(_KTB[2329])](lI111II1lI1 + 0xA, I1111II1lI1 + 0xA), [I1IIl1I1lI1(_KTB[2330])] = UDim2[I1IIl1I1lI1(_KTB[584])](Il111II1lI1[I1IIl1I1lI1(_KTB[2331])][I1IIl1I1lI1(_KTB[2332])], Il111II1lI1[I1IIl1I1lI1(_KTB[2333])][I1IIl1I1lI1(_KTB[2334])] - 0x5, Il111II1lI1[I1IIl1I1lI1(_KTB[2335])][I1IIl1I1lI1(_KTB[2336])], Il111II1lI1[I1IIl1I1lI1(_KTB[2337])][I1IIl1I1lI1(_KTB[2338])] - 0x5), [I1IIl1I1lI1(_KTB[2339])] = 0B1 });
-ll1l11I1lI1(I11II1I1lI1, IlI11II1lI1, { [I1IIl1I1lI1(_KTB[2340])] = 0B1 });
-task[I1IIl1I1lI1(_KTB[2341])](.35, function()
-if IIIlI1I1lI1 and IIIlI1I1lI1[I1IIl1I1lI1(_KTB[1650])] then
-IIIlI1I1lI1:Destroy()
+IllIII1I1I(Il11lI1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2343])] = UDim2[l11111lI1I(_KRP[2344])](II1lIl1I1I, l1llIl1I1I), [l11111lI1I(_KRP[2345])] = llllIl1I1I, [l11111lI1I(_KRP[2346])] = 0B1 });
+IllIII1I1I(II11lI1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2347])] = UDim2[l11111lI1I(_KRP[2348])](II1lIl1I1I, l1llIl1I1I), [l11111lI1I(_KRP[2349])] = llllIl1I1I });
+IllIII1I1I(ll11lI1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2350])] = UDim2[l11111lI1I(_KRP[2351])](II1lIl1I1I + 0xA, l1llIl1I1I + 0xA), [l11111lI1I(_KRP[727])] = UDim2[l11111lI1I(_KRP[2352])](llllIl1I1I[l11111lI1I(_KRP[2353])][l11111lI1I(_KRP[2336])], llllIl1I1I[l11111lI1I(_KRP[119])][l11111lI1I(_KRP[2354])] - 0x5, llllIl1I1I[l11111lI1I(_KRP[2355])][l11111lI1I(_KRP[2356])], llllIl1I1I[l11111lI1I(_KRP[2357])][l11111lI1I(_KRP[2358])] - 0x5), [l11111lI1I(_KRP[2359])] = 0B1 });
+IllIII1I1I(l1l1lI1I1I, ll1lIl1I1I, { [l11111lI1I(_KRP[2360])] = 0B1 });
+task[l11111lI1I(_KRP[2361])](.35, function()
+if lIIllI1I1I and lIIllI1I1I[l11111lI1I(_KRP[2362])] then
+lIIllI1I1I:Destroy()
 				end
-if I1l11II1lI1 and I1l11II1lI1[I1IIl1I1lI1(_KTB[2342])] then
-I1l11II1lI1:Destroy()
+if l1IlIl1I1I and l1IlIl1I1I[l11111lI1I(_KRP[2363])] then
+l1IlIl1I1I:Destroy()
 				end
 			end)
 		end
-local I1ll11I1lI1 = false
-Ill11II1lI1 = function(l1I11II1lI1)
-if lIll11I1lI1 or I1ll11I1lI1 == l1I11II1lI1 then
+local l1IIII1I1I = false
+llIlIl1I1I = function(I11lIl1I1I)
+if IIlIII1I1I or l1IIII1I1I == I11lIl1I1I then
 return
 			end
-I1ll11I1lI1 = l1I11II1lI1
-lllII1I1lI1[I1IIl1I1lI1(_KTB[2343])] = not I1ll11I1lI1
-if I1ll11I1lI1 then
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[2344])] = false
-II11I1I1lI1[I1IIl1I1lI1(_KTB[2345])] = false;
-(lI111II1lI1:Create(llIII1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[547])](lIl11II1lI1[I1IIl1I1lI1(_KTB[2346])], Enum[I1IIl1I1lI1(_KTB[2347])][I1IIl1I1lI1(_KTB[2348])]), { [I1IIl1I1lI1(_KTB[1504])] = UDim2[I1IIl1I1lI1(_KTB[2349])](l1lllII1lI1, lllllII1lI1) })):Play();
-(lI111II1lI1:Create(lI1II1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1308])](lIl11II1lI1[I1IIl1I1lI1(_KTB[2350])], Enum[I1IIl1I1lI1(_KTB[2351])][I1IIl1I1lI1(_KTB[2352])]), { [I1IIl1I1lI1(_KTB[2353])] = UDim2[I1IIl1I1lI1(_KTB[2354])](l1lllII1lI1, lllllII1lI1) })):Play();
-(lI111II1lI1:Create(IlIII1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[753])](lIl11II1lI1[I1IIl1I1lI1(_KTB[2355])], Enum[I1IIl1I1lI1(_KTB[2356])][I1IIl1I1lI1(_KTB[2357])]), { [I1IIl1I1lI1(_KTB[2358])] = UDim2[I1IIl1I1lI1(_KTB[2359])](l1lllII1lI1 + 0xA, lllllII1lI1 + 0xA) })):Play()
+l1IIII1I1I = I11lIl1I1I
+IlI1lI1I1I[l11111lI1I(_KRP[2364])] = not l1IIII1I1I
+if l1IIII1I1I then
+ll1llI1I1I[l11111lI1I(_KRP[2365])] = false
+lI1llI1I1I[l11111lI1I(_KRP[2366])] = false;
+(II1lIl1I1I:Create(Il11lI1I1I, TweenInfo[l11111lI1I(_KRP[735])](IIllIl1I1I[l11111lI1I(_KRP[2367])], Enum[l11111lI1I(_KRP[2368])][l11111lI1I(_KRP[2369])]), { [l11111lI1I(_KRP[1505])] = UDim2[l11111lI1I(_KRP[1150])](I1II1I1I1I, IlII1I1I1I) })):Play();
+(II1lIl1I1I:Create(II11lI1I1I, TweenInfo[l11111lI1I(_KRP[1972])](IIllIl1I1I[l11111lI1I(_KRP[2370])], Enum[l11111lI1I(_KRP[2371])][l11111lI1I(_KRP[2372])]), { [l11111lI1I(_KRP[2373])] = UDim2[l11111lI1I(_KRP[2374])](I1II1I1I1I, IlII1I1I1I) })):Play();
+(II1lIl1I1I:Create(ll11lI1I1I, TweenInfo[l11111lI1I(_KRP[1601])](IIllIl1I1I[l11111lI1I(_KRP[2375])], Enum[l11111lI1I(_KRP[2376])][l11111lI1I(_KRP[2372])]), { [l11111lI1I(_KRP[2377])] = UDim2[l11111lI1I(_KRP[2378])](I1II1I1I1I + 0xA, IlII1I1I1I + 0xA) })):Play()
 			else
-IlI1I1I1lI1[I1IIl1I1lI1(_KTB[2360])] = true
-II11I1I1lI1[I1IIl1I1lI1(_KTB[2361])] = true;
-(lI111II1lI1:Create(llIII1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[2362])](lIl11II1lI1[I1IIl1I1lI1(_KTB[2363])], Enum[I1IIl1I1lI1(_KTB[2364])][I1IIl1I1lI1(_KTB[2365])]), { [I1IIl1I1lI1(_KTB[2366])] = UDim2[I1IIl1I1lI1(_KTB[2367])](l1lllII1lI1, IllllII1lI1) })):Play();
-(lI111II1lI1:Create(lI1II1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1558])](lIl11II1lI1[I1IIl1I1lI1(_KTB[2368])], Enum[I1IIl1I1lI1(_KTB[2298])][I1IIl1I1lI1(_KTB[2369])]), { [I1IIl1I1lI1(_KTB[2235])] = UDim2[I1IIl1I1lI1(_KTB[2370])](l1lllII1lI1, IllllII1lI1) })):Play();
-(lI111II1lI1:Create(IlIII1I1lI1, TweenInfo[I1IIl1I1lI1(_KTB[1469])](lIl11II1lI1[I1IIl1I1lI1(_KTB[2371])], Enum[I1IIl1I1lI1(_KTB[2372])][I1IIl1I1lI1(_KTB[2373])]), { [I1IIl1I1lI1(_KTB[2374])] = UDim2[I1IIl1I1lI1(_KTB[2375])](l1lllII1lI1 + 0xA, IllllII1lI1 + 0xA) })):Play()
+ll1llI1I1I[l11111lI1I(_KRP[2379])] = true
+lI1llI1I1I[l11111lI1I(_KRP[2380])] = true;
+(II1lIl1I1I:Create(Il11lI1I1I, TweenInfo[l11111lI1I(_KRP[1400])](IIllIl1I1I[l11111lI1I(_KRP[2381])], Enum[l11111lI1I(_KRP[2382])][l11111lI1I(_KRP[2383])]), { [l11111lI1I(_KRP[2384])] = UDim2[l11111lI1I(_KRP[2385])](I1II1I1I1I, llII1I1I1I) })):Play();
+(II1lIl1I1I:Create(II11lI1I1I, TweenInfo[l11111lI1I(_KRP[1680])](IIllIl1I1I[l11111lI1I(_KRP[2386])], Enum[l11111lI1I(_KRP[2387])][l11111lI1I(_KRP[2388])]), { [l11111lI1I(_KRP[2389])] = UDim2[l11111lI1I(_KRP[2390])](I1II1I1I1I, llII1I1I1I) })):Play();
+(II1lIl1I1I:Create(ll11lI1I1I, TweenInfo[l11111lI1I(_KRP[2391])](IIllIl1I1I[l11111lI1I(_KRP[2392])], Enum[l11111lI1I(_KRP[2393])][l11111lI1I(_KRP[2394])]), { [l11111lI1I(_KRP[2395])] = UDim2[l11111lI1I(_KRP[2396])](I1II1I1I1I + 0xA, llII1I1I1I + 0xA) })):Play()
 			end
 		end
-local l1ll11I1lI1 = false
-local Illl11I1lI1 = false
-local llll11I1lI1 = nil
-local IIIIl1I1lI1 = nil
-local lIIIl1I1lI1 = 0x7
-l1I1I1I1lI1[I1IIl1I1lI1(_KTB[2376])]:Connect(function(l1I11II1lI1)
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[2377])] == Enum[I1IIl1I1lI1(_KTB[2378])][I1IIl1I1lI1(_KTB[2379])] or l1I11II1lI1[I1IIl1I1lI1(_KTB[2380])] == Enum[I1IIl1I1lI1(_KTB[2381])][I1IIl1I1lI1(_KTB[2382])] then
-l1ll11I1lI1 = true
-Illl11I1lI1 = false
-llll11I1lI1 = l1I11II1lI1[I1IIl1I1lI1(_KTB[2383])]
-IIIIl1I1lI1 = llIII1I1lI1[I1IIl1I1lI1(_KTB[2384])]
-l1I11II1lI1[I1IIl1I1lI1(_KTB[2385])]:Connect(function()
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[2386])] == Enum[I1IIl1I1lI1(_KTB[2387])][I1IIl1I1lI1(_KTB[2388])] then
-local l1I11II1lI1 = l1ll11I1lI1 and not Illl11I1lI1
-l1ll11I1lI1 = false
-if l1I11II1lI1 then
-Ill11II1lI1(not I1ll11I1lI1)
+local I1IIII1I1I = false
+local llIIII1I1I = false
+local IlIIII1I1I = nil
+local lIIIII1I1I = nil
+local IIIIII1I1I = 0x7
+I11llI1I1I[l11111lI1I(_KRP[2397])]:Connect(function(I11lIl1I1I)
+if I11lIl1I1I[l11111lI1I(_KRP[2398])] == Enum[l11111lI1I(_KRP[2399])][l11111lI1I(_KRP[2400])] or I11lIl1I1I[l11111lI1I(_KRP[2401])] == Enum[l11111lI1I(_KRP[2402])][l11111lI1I(_KRP[2403])] then
+I1IIII1I1I = true
+llIIII1I1I = false
+IlIIII1I1I = I11lIl1I1I[l11111lI1I(_KRP[2404])]
+lIIIII1I1I = Il11lI1I1I[l11111lI1I(_KRP[1151])]
+I11lIl1I1I[l11111lI1I(_KRP[2405])]:Connect(function()
+if I11lIl1I1I[l11111lI1I(_KRP[2406])] == Enum[l11111lI1I(_KRP[2407])][l11111lI1I(_KRP[2408])] then
+local I11lIl1I1I = I1IIII1I1I and not llIIII1I1I
+I1IIII1I1I = false
+if I11lIl1I1I then
+llIlIl1I1I(not l1IIII1I1I)
 					end
 				end
 			end)
 		end
 	end);
-I1Il1II1lI1(II111II1lI1[I1IIl1I1lI1(_KTB[2389])]:Connect(function(l1I11II1lI1)
-if not l1ll11I1lI1 then
+l11IIl1I1I(lI1lIl1I1I[l11111lI1I(_KRP[2409])]:Connect(function(I11lIl1I1I)
+if not I1IIII1I1I then
 return
 		end
-if l1I11II1lI1[I1IIl1I1lI1(_KTB[2390])] == Enum[I1IIl1I1lI1(_KTB[2391])][I1IIl1I1lI1(_KTB[2392])] or l1I11II1lI1[I1IIl1I1lI1(_KTB[2393])] == Enum[I1IIl1I1lI1(_KTB[2394])][I1IIl1I1lI1(_KTB[2395])] then
-local IlI11II1lI1 = l1I11II1lI1[I1IIl1I1lI1(_KTB[2396])] - llll11I1lI1
-if IlI11II1lI1[I1IIl1I1lI1(_KTB[2397])] >= lIIIl1I1lI1 then
-Illl11I1lI1 = true
+if I11lIl1I1I[l11111lI1I(_KRP[2410])] == Enum[l11111lI1I(_KRP[2411])][l11111lI1I(_KRP[2412])] or I11lIl1I1I[l11111lI1I(_KRP[2413])] == Enum[l11111lI1I(_KRP[2414])][l11111lI1I(_KRP[2415])] then
+local ll1lIl1I1I = I11lIl1I1I[l11111lI1I(_KRP[1163])] - IlIIII1I1I
+if ll1lIl1I1I[l11111lI1I(_KRP[2416])] >= IIIIII1I1I then
+llIIII1I1I = true
 			end
-if not Illl11I1lI1 then
+if not llIIII1I1I then
 return
 			end
-local llI11II1lI1 = IIIIl1I1lI1[I1IIl1I1lI1(_KTB[2398])][I1IIl1I1lI1(_KTB[2399])] + IlI11II1lI1[I1IIl1I1lI1(_KTB[2400])]
-local II111II1lI1 = IIIIl1I1lI1[I1IIl1I1lI1(_KTB[2401])][I1IIl1I1lI1(_KTB[2402])] + IlI11II1lI1[I1IIl1I1lI1(_KTB[2403])]
-llIII1I1lI1[I1IIl1I1lI1(_KTB[2404])] = UDim2[I1IIl1I1lI1(_KTB[1354])](IIIIl1I1lI1[I1IIl1I1lI1(_KTB[2405])][I1IIl1I1lI1(_KTB[2406])], llI11II1lI1, IIIIl1I1lI1[I1IIl1I1lI1(_KTB[2407])][I1IIl1I1lI1(_KTB[2408])], II111II1lI1);
-lI1II1I1lI1[I1IIl1I1lI1(_KTB[2409])] = llIII1I1lI1[I1IIl1I1lI1(_KTB[1131])]
-IlIII1I1lI1[I1IIl1I1lI1(_KTB[2410])] = UDim2[I1IIl1I1lI1(_KTB[2411])](IIIIl1I1lI1[I1IIl1I1lI1(_KTB[2412])][I1IIl1I1lI1(_KTB[821])], llI11II1lI1 - 0x5, IIIIl1I1lI1[I1IIl1I1lI1(_KTB[2413])][I1IIl1I1lI1(_KTB[2414])], II111II1lI1 - 0x5)
+local Il1lIl1I1I = lIIIII1I1I[l11111lI1I(_KRP[2417])][l11111lI1I(_KRP[2418])] + ll1lIl1I1I[l11111lI1I(_KRP[2419])]
+local lI1lIl1I1I = lIIIII1I1I[l11111lI1I(_KRP[2420])][l11111lI1I(_KRP[2421])] + ll1lIl1I1I[l11111lI1I(_KRP[2422])]
+Il11lI1I1I[l11111lI1I(_KRP[1049])] = UDim2[l11111lI1I(_KRP[1186])](lIIIII1I1I[l11111lI1I(_KRP[2423])][l11111lI1I(_KRP[2424])], Il1lIl1I1I, lIIIII1I1I[l11111lI1I(_KRP[821])][l11111lI1I(_KRP[2425])], lI1lIl1I1I);
+II11lI1I1I[l11111lI1I(_KRP[2426])] = Il11lI1I1I[l11111lI1I(_KRP[2427])]
+ll11lI1I1I[l11111lI1I(_KRP[2428])] = UDim2[l11111lI1I(_KRP[2429])](lIIIII1I1I[l11111lI1I(_KRP[2430])][l11111lI1I(_KRP[2431])], Il1lIl1I1I - 0x5, lIIIII1I1I[l11111lI1I(_KRP[2432])][l11111lI1I(_KRP[2433])], lI1lIl1I1I - 0x5)
 		end
 	end));
-ll11I1I1lI1(I1IIl1I1lI1(_KTB[2415]));
-I1lII1I1lI1();
-task[I1IIl1I1lI1(_KTB[2416])](.5);
-I1111II1lI1:SetCore(I1IIl1I1lI1(_KTB[2417]), { [I1IIl1I1lI1(_KTB[2418])] = Il111II1lI1[I1IIl1I1lI1(_KTB[2419])][I1IIl1I1lI1(_KTB[2420])], [I1IIl1I1lI1(_KTB[2421])] = Il111II1lI1[I1IIl1I1lI1(_KTB[2422])][I1IIl1I1lI1(_KTB[2423])], [I1IIl1I1lI1(_KTB[2424])] = 0B10 })
+IllllI1I1I(l11111lI1I(_KRP[2434]));
+l1I1lI1I1I();
+task[l11111lI1I(_KRP[1738])](.5);
+l1llIl1I1I:SetCore(l11111lI1I(_KRP[2435]), { [l11111lI1I(_KRP[2436])] = llllIl1I1I[l11111lI1I(_KRP[2437])][l11111lI1I(_KRP[2438])], [l11111lI1I(_KRP[2439])] = llllIl1I1I[l11111lI1I(_KRP[2440])][l11111lI1I(_KRP[2441])], [l11111lI1I(_KRP[2442])] = 0B10 })

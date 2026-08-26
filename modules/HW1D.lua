@@ -7,6 +7,6 @@ if hwid and setclipboard then
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Young0x Hub",
         Text = "HWID Copiado.",
-        Duration = 5
+        Duration = 3
     })
 end

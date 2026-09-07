@@ -1,5 +1,5 @@
-local _KMZ;do
-local _aWP=function(s)
+local _KEA;do
+local _aEA=function(s)
 local o={};
 local i=1;
 local n=#s;while i<=n do
@@ -8,7 +8,7 @@ local v=0;for j=0,r-1 do v=v*85+(s:byte(i+j)-33)end;for j=1,5-r do v=v*85+84 end
 local nb=r-1;
 local b4={};
 local vv=v;for j=4,1,-1 do b4[j]=vv%256;vv=math.floor(vv/256)end;for j=1,nb do o[#o+1]=string.char(b4[j])end;i=i+r end;return table.concat(o)end
-local _cBN=_aWP(":.p!YFD>$(;`/Mc3FOKu1-f;L,VqVMBjXbM9ee1PFY63CEdM2?EF!\039\0395>$)\092=`&4)Gu[XX1b\039eA3^$;@3.>CR6VKlr?>!ADCh5;\0344Etck;*oYD74Uh"); local _bAP=function(d,c)
+local _cDO=_aEA("CFNjHE^!5P,XbEX89ZC`FYb[s;,]eS<dnjSEEs_42*XS`I;10A>>81<2J?S\092Hnn<#A:$BiF\039:U`=Dfie@!$[$4?-/&DaRr2G#^h;BiHT>4\0929m8B14*"); local _bMP=function(d,c)
 local t={}for i=1,#c do t[c:sub(i,i)]=i-1 end;
 local o={};
 local z={};
@@ -16,3159 +16,3166 @@ local function e(x)o[#o+1]=string.char(x);if #o>=4096 then z[#z+1]=table.concat(
 local b=0;
 local n=0;
 local v=-1;for i=1,#d do
-local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=b+v*(2^n);if v%8192>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do e(b%256);b=math.floor(b/256);n=n-8 end end end end;if v>-1 then e((b+(v%91)*(2^n))%256)end;if #o>0 then z[#z+1]=table.concat(o)end;return table.concat(z)end ;_KMZ={};do
-local _d=_bAP("NNi41/f:$e!HY8vb?P,=>1s5,n/(;w!NNN{z^!NNx=Q:Rv(&wg(y^x8(n%bsET,|Zr1/NjNNAIt8-A_=hnJ0KNKJ[FI)tH7ZnJtmA|;_ZSWP[}mNNNN9_O|J=MZn2xOn8_wK~GZe[N}FubU#Q+CC#WH!v,.XkNNN?CHKh%arj~0h?hxNNNp}0zCl7LIS.V37aE-NNNCrLW0rVB318Usw%Q-:[&`NNN#T!1o5eO^N.FaE*7@YD:.CatNNqSlX98XrX}wE<19<#NNNhkZR;.$&*.LUd[NN6zZ;IjrJ`@!NNN[v5uYIN0SNNNjK3:yov7KKNNX}_#?DebW-c5NNx=meJ}i)?PaZaxY?NN;k@/,FtJYR|;*e[{m*m1i.BUT14J8~$[a)TKC|.;WYlV-GBh1|[)]*P^D2yZQ;!So^cD5llS9s!mcv_4wrhRorTD!a|E&^&#T0`TMcAQ}~irrUr?7`2NNNx*b6~DOh:(_k3$lW{^zhA*QcRP5uH}%v`THxJC;^DF%E2=`;9REZ*wiZMG_9~BauabonKY/*qYI:]VJ6*iH0oT:;*Tg[NNKJApSTd6ZPeH?/>QAjetC2-JYi@qe~0,+:MxBzUQ*9/mol4YMqys]@YTP^4J$9he&vdhpMi;N>sB}[P5^s#0]M^2[83Ux8;!NNqS=j?<QTpOS,2W4(mNNN=Jj@qTY~vb|24PND{rL?NN;k^0uKmfC>a2U9+x.E)[a48SEQQME-NNv>P]@r5Z__1`Z^ei7C3LVB.6~MKNNN8NhrZ*5NNNbMCQx[V_KNNNy4&b$(,(h>VQme<L`z4|n2M(>G__~,{fnfIINN%sWIu:{Pm}AXf~>nuAQ(@s.%}NNNOS=^zB6Y|2~`1`1j2H!N}F`v!NKJ89qjrecfF([WNNNNL(>8k^3GV)S0V;vu]e^5!N}Fpd!NKJbcNNKJ<2KNKJuDp2vr.NNNBKaQafc$yR[S<CHjNNhIX9gdQ)8CM<RmrX9Y^WocjNNNtC1=r:/stNNN#Ah5tj[#e2t*En]*}N}FK&&t)#4}NN)7NM53<OXE6cGR=v,q7%?~G^#RF&nD{(X$UMtYB!t7B~MX-84/fx(Tk{KNv>-M$4iz7Ogt0jNNNNId?T/borJZ7%Dc[^}:Ee}NKJ0.sK7CgiLm&+~aeQk<Lcq5Y1NNNNtJ>*$W@8NN}F]u-],A|-I&V&2.O-*Oq;]Jwz!NNNadK,Oy-xKNNNpGN|>{#4wNNN:j%rIJy0!NNNkVp=eT8anZONNN}HCn`^.ptNNN&k&:wAr@Rk41aNNNn>ak;dN%sD-d}NKJ0qro.!<:@#mIUMbfxNNNGAjy~w3;c$&}Mm`U@9NNbcquOfZA{]bA}LK4tHXrJNNN2CsX>>)%s^r+c5v,`aC`NNv>D~)+2)HYKM,T8NNNrCOuFWvb){iq>HNNAI=l_|Zj(XU&EaNN%sgjLa7zbkR?B[NN6z(Z#:Q(wUO%=++b<9J$NN6zga0@5PCbHY~yGx4nN}NN9Mq4gX7{wi@p5KaNNNpPiJ$m%`lOSXGaNN1_x3)gI~V@%X>INN:9^9D!K&~3WR<}NN,[0d+w.M9WUXBKNNP[rKt~cQb4xbM]uHm?>E<]+V6jNN*jf6}U%.`n6*NNAI=lDK$1RF_>7wNNyr`>LTz{*3}HO>%=$9KN}FSw#Gum<=Q^IJmGNNNN6DMvI~;KNN!w*V>))eo+iqD*[NNNy>~YVCp8;Y,Xk*~_NN;k53r[A1KzYs~Wj(VjNNe5f6=mpKmO(q]ILPWy^tNNqSU=oYjPB$oSM-t%[NNN#T^h=[]o5KY)hrP]cl}#<MojNNbc{_k2U_7?1vI(UsBT@`5NNNC4$Z~Wm$YD>G{D7KNN3K{5J)*7%UKN}F]Qx0xpGq+wf;WV-NNNeVoPEa7h*/I9VC_3N!KN}Fk*Go%@&/Oj3a$)F:,KNNc}i*b~d@VYA*4)c~%61NNNp}v`P$*nytV5S9rIA0n9=9TW&HlI!wwKNN,[t4AmGT,p3#aJ|ox)@o?/3vNNKJi,[BV+a1vybbf}NN7!}*1xm?b9r]gNNNENX($AW2f)CI?nbNNN)AqsLqy0>.$L6]jKNN*jT%hHB!EmvIH-MY3`i{]INN|,Wfsz3}*mmcrvBWNNKJx2Kg*)?&uYC-Q+dSNN[-WIQD?I&ka?Wo9NNN$-RrMCo7xw}.HpYpkqNNNN>67k*mZQ.W_SJ_*va-KN}Fyn.}cHRs!N}F5-W_R!F3@r5.CnJs{ZNNKJU1Nq4cjkU^!583AnR)CAy0IKNN|vYbsE=2C2Lg!,UjNN$t/WojpDcSNNv>K_EgKmet&9!q*MhLymdeNND0$X$9+B[t[}ZDf?!3sBQtw3aJC]p~KKNNp}2TK9mP$}LrOu11[NNN:>`hF]TRW_4<7!Lh#m!N}FTq#C&Ln%f/z~K`)5<|.tNN|,6I/rrdXT|-~AgJO~s=,}x*0K^8XtNN!wMdD!E|F$>c/GwNNN<5G!um=.tNNN:)Ez&3IEHvvdi}NN!wC,|KW:BEy$^c!NNN3c+{u|Uv}NNNRmo|ocb/t~[;%tNN$t]J_(P5GpNN{KMNNN;!A@-5CNNNKJm|Yh-Z=jU;f+[qgMfINNKJzvC8Z/!BKN}Fg0YK;5Qm#Q@5EhtYx?KNKJ(y++5=*goU9^M|_?iNNN;k?M{|<DlMNNKJc^p8mO0e|iG%5}NNp}x6b{Sr1KNN!wQOh[#08czfBnjN}FzQ9Sog;<-bNN<2``};S?|_NNKJco{NO`#my@NN}F<3:EtPBA7l-j[Rm7>KxI8G`y3y<,r!ypB_]nPRNN<2_jE.NN}Fw0?XpU6]!N}FP`q!NN8N?KNN{KkCLCSNNNX>#@m4_u.SKN;krz$]?8Ge4tNNe5T(KAx47xSNNN00a=NNKJqfuEE=0%M*Y~N?9wNNqSC?60R4_VNN<2nk=U-cJVNNL.D-w~H/vtNN;k|P6s5)11KNKJa3Gd->G7U,92&u=sDP9t3YtNNNSi8HTbt2<c4j@3>:}mTaO/CINNx=FdSd7</</d&4ipNNKJkRFMFh8PKN}FR4T$_thBLgI^K}NN_jq0U;.um;O^{|N#F`N{NN}FJURHo0d(-ljeKNv>$2dtYVVW71pxJ!k:1YYgC7NNi4sFBq4|i:RtjKaNNNc4Uh5To:3Mb6wNNNm>2G?kC<[N}FqKoDr?j>X!NNWVSS=P-&bm^NNN9t4&Ov5~&]U@{Vw<+/IV89/og3LY5EG!4EJ7Whb(2R;<k]5HQ_~T#:%&6dOtNNe5^Cz!11~{`NNNnI+u2I-2Do*}NNQt.fXq?8H;$NNN9P39eWZ**%@,{.wNNN}HwQZknCmNNNkk_4:3HpNN<27Z=g,v=3NN9MWkg{79aNNN[NvAmNNNo0a/{KNNc}j~D.(5Vv}NNNpFpE}#PgV?[NNN7ACr$u&vg%]WIisrw=RONNL.]Bf6!N}Fbg|jq{/pyz(a1:NNNNE=WPm%nY]RNN6z9:`c:]$lONNNDv?2wYa=dmDN]iNNv>6FlW9W5;*NE4INNN5@::9{%?CA(jIpNNx=@J-Z.H?Kk$Qb@cgxb$p0-4VdW&?}NNuuy9]*E=;/%~FYx|W[+0]+c^l2{K9KKNNNF=),%0jK*-%~NN}F:/@GP=[&!NKJ/tzymT9=fK=K|EF|YtV2;.`v{0nvM}NN.aAj0CYL,9Ezo@K@B0>3vQ?yx[NNe5;IW^?Uq~]NNN<4uq6DQ4n=mb;eM58K3NNNfg`*%P.PeSNND0P+xo/:X-L9:jp,Rfs7NKNNc}%1H@Foz.INNNHM{n`%@tl[Wl;TLRr&,+k}wKan;>NNKJLRixM8M?J!NNL.YEXQ>lg5z.ZmwZlNNN>vDHkY}($;wN}F9dG.{okKNNp}F<2alny}NNp}KhG`NNv>w0wn_G77{$+tvkL^LXLQpIm;7NNN3Kt/@/H#0hNN}F!`Wsa-|zd&5@GI!NNN/-?})8)6!_8*4ssyVDP(.+&[^Od(sTuxNNAI]GQZc8_LJ;;Kb2Z}fOwlPaNN1_)WFYOP_SeM{5NNqSYM_~qxN>NNL.Fs@ps:Ola<L?KdU}NN7!;ZNy0JqDoCzNNNfA+!-,Z_[}HSjNNNF0;tv^=J0M`fbNNNRb/n2sB{#vX#w6&D&O}N}FJ7mwK{%3HpyA!}NNQty(^Er%q$VNl4#[mG$NNNoFw$+H~/Iwk#V?NN%s15<kW*Me{D?bNNL.|-PZ+<*BUEN8|![NNN>v_&4yuj[JKNNNima^x5[*tNNNadn8r=@Q}NNN,b:b:K2W%WyNNN7AJHqdSak>a6pFQn#KfrNNKJa*G9CD]$8RwNNN&5*x%YEZ:^}PG/86NN6zE4eM&VV*`}NN;!O`%a|}azD~]k}NKJV6pAp=OynS[qKNv>._|UrPpM^~Nu6,eex]DJ&fNN6z]3QuqfRRP}NNc}=flZA;W6INNNr_TzeIn__)NN6za]/n&A;~CNNN3K=CJ!25:HjNNNZ.{nOcUz-<rlYa_{NN9M&hcca_@NNNtP+ee$^MjNNN;k3~QRU*#0EF.Kd4]NNN>vS}94rJagjNNN%rZ([hx*diCEwga$NN6zdRIcKjQCTKNNc}S&1q)ToQaNNN^s@WwUsvfrS^G$v2_p}N}F#:c9TNVryX(7[sM4$T*}NNe5|>ClfIC}ht8/G[.[oNNNX}990AlCF.!]NNrQLKqql*bVE+e>OD,/j>[KNN`v8`OngyGc`VNNbcr?hp?(!AcIge;;c4Q`nNNNd>Hx{nx$NN1_tM%EmTR;A/ZKNNqSi^tOgvRtNN<2j~~HhJDRNN6zX}<6t07w8}NNT!qogkXmM=3X`lP}NN[-$t<=*bsC%Q|7aNNNGxxI[id9SNNN9JZczC4G~LofB?RNNNYQxud(qAMNNNAJY(.l]x:g8CJt>NNNDH3tFk7$3ng1=.DQy5=alOzV<osKBiNNv>nG)(:!NNX}dX$NNN[FNbNN9MMl<b>/2K]a6vtNNNT.QE#!f}NN:9<:B5t#8`^EpjNN,[YcFX7<*<-!PNNNxJnm6w,1NNv>Gbc$/spBZN.+zNNN|0FKk~wN}F?Sy%&;Z?L10lNNv>tRyJ!]=PMf*KNNAIg^&MT2jZ{vR>NN9Mq^5K]=NNNNej2cL]Q|3rSF^5NN[-vOURzJ$n~+)t9NNNB2|W6/#tNN{K5K-NNN;St2JGNK{3NNx=6z/^z6%cm._5qMKNKJ*j-KNNQt`<6I4X/99NNNiNs<G)TDWx)h0Q@%NNv>2YoKNNc}q@+Iv~$n-NNNHIi0zvX/vQPWMUANNN#kDVNN6z1*:3{[,Yb}NN$t%vp;>lVRj>zOZVbNNNjJS$NN6zZT.>LNCKrNNNEN{=sVg>]/pnE,yNNN*J/~PCbV:TNNKJb<6vfb?KNNc}Ek%GJ%M)INNNQ;<aL$gt}];C}NNNgq=eY]NN%s9M7xKshZ`ZRwNNAI%o1Ln}NN{K,RwNNNtFtINNX}K+_NNNUzC}rnTMNcZWNN}FQ2b).Ar!}&LLKNKJDyw,/1e&.AK>@NNN>v)A7C$u}E}N}FB2@BaEgo2Bgo.i-NNNX.o3h(R!NN{KQc!NNN!l|au$>;#_NN;k;!Eu1nV-iQ?my;HNNNLKX*L{N&NNKJVA2KNNQtRp*#$h^L@NNN%Q[5vnig(aDF{6fNNN.I&t{vNtNNX}<YtNNN=k5L-27r=%NNKJb19Z1(a(n{K|-eB}NN!wqM{k9J!NNN.uCKNN*jJ~=z<NNNxJ}y.:wxNNv>u8V}NNc}Y~z<5n:X5NNNl.#e,Wymp[NN6z{@>T}kD.6}NNT!GKyK{BPG)C|!IpNNe5YqcXQILIfNNNRHO3GUrMofvptq,G}N}FOP]!NNQtb^JM,+D]}NNNrM:`[rScVY;/o}Y4KNKJT6N}NNQtX:P/Q<?W,NNNAJa:c~W2]K}!}VuNNN5JDSNND0agXm%JpMP}NNkw%HN2W2OY2v-_wwNN*jb%GNNNZkWz~Na^09NNKJj.pYG@NNWV9l5hSD|`cNNNFFIX.XGR^jC.aRoNNN@J}(KN;k=9[kR9,8N!NN)79tr~:tqd2EN=n}NNAIdXwNNN6AMfx(fX$S05T?NN;kB@;XG,s7NNv>^GmC*l[KNN>v,yU$eV3cKN}FPsi{:jnNd4T4NN;k0|S]92ohNNv>s1`U0%.KNNxJaIwyOeNNi40OHxpH[NNN3J_t:{8aNNAIU~+J#KNN;![M.WkL!NKJ:syc@YsNNNDvivTqzCJ>h(+INNKJr%=q#,*a};7{ZNNN7!x5$e*m!{xc9Gud#:[a#3gbNNL./`[$b}k>e[qq+AKN}F:sLdWj-yN^w;tKNN7!~d^(XI)c<KkNNNNi7q341)OZuOtJ_H);WpiB-NNNE=C+boa<N@NN6zt$od^fl@>}NN;!u%$9#S*Jj16g!N}F(0#q{yU-!NKJ#1P!flJ}NNX}W:cPr_E1BpNNL.QCz3bB=#NNKJm<7QWo<{f/d[V`}5NN)7]]D.*.s*A:q6Q,NN6z#(+4MHXiONNNoFXRx6K$NN%sF}[&s[j%xAQ2NN9MqYVn1bRT=+Sm,NNN/g66(<@LI%-H[N}F5Jp%!x}3vME`JHPe>k)Yd~NND0Y<@8>HVSj!NN;!5kS/tQ!NKJ730~xRioG=bMM/6oMNNN:Cl:Em[~D}Bso(GF%wNNuuovY(!7{~O/}E5q6x.D1.ao[.1^bX}NNN[J<TmE.KNN<2l%l]23~S~@1[Orl(*uAs/$uE^|<GwaNN[-<^VJ.8tNNNMc`>[8A+q2mwYpNN[-d[fc/2:Lw3,%aNNN&}QU-Rm*=KENKNv>X-o6)cjOUJy1m3(K-3:|;1NN6z_{yaFJ+,N}NN7!S(mHsuXXqN]NNN/T?[MI?/5tpKP*CPx5NN:9,v!?,>8y=T,tNN!wiE[eLKfn~uki!N}FGx+;.HeQoX4Z3RFR7KNNjmNR&lO,|i<l6RU4Qb)N_u|zRj]0O}NNi4%b(C902NNN1*yYZ|]ke4]QFr/Z4##if>h%+fRO@9sNNN|>_=EkuSNNi4mJ~Q(7&{T>~LRNNNZkV`Qm6JS5NN;kd8%06LjsGYvk}VwNNN7d}w`)_?*2H(a!NN,[8-gP[W&%Zf=KNNLKI&b1|pNN;k3h|eR|;tjsY.=bNN}F}&Nn,QM{8pNN1_0vk.8D9/q#tpNN)7hfkcuL<ex07MLRNN;ke]7YmKRgQI$?f4:tNNQttN02Py?^5NNNZ0Z[kC6KNNa5B&e1m{qa,.GI.I]7KN;k>Cd&?A@(v&}&q>KN}FPjsBfZBbp@oy>~SNNNa-Ivf6v62[NNx=bp-Sp3[Y$y}nq[NN;kMIT^3$%.1&kPD2f#z?DS?_$%5q+?DNNNoFQ9?d,cNNKJif1&)deV5Tpa)p4L0^2IN}S-K<r0,dNNv>s16ObAMNNN9C{2fb)s#w!NKJs>HCZy<jb.!zKN;kT5|@>Rm:#gc*6StNNN6_Ug&+M<b3J]T_$cNNKJR{wD?![?IQ^vG9Y<hW7@axiSEt=2t0NN;k$AAXTqh<+KNNWVlyDZ*qmi30$2]895?pNNe5G!)rONAo$NNNmJQ|+&f3c(:Aq,4hhc~7#G16@P1^2UPNNN4NVXLf{@C[}JdaeN:iwN}Fb6tWF2U!u@NN|,l:_*]}as-T$kOzNN;kMWwmZ5Y$8X+c29Q[iwNND0&h,U&C5Y/}NN$twK.oUJyNNN!wvb1qX/mwI],GwN}FqQt3Z!xl362xNNv>fZ*ALt%49DFlc2&%bNKM{9NN6zyM238wp-NXFzG6!f~wNNWV2<D.gZdA?NNNp}!+~P4YSQ-S4{X.t|KyhG!O{NPn]a{NNN%F1EOoY%yDNNNNy=aFJ?7sjZZg6H_O<wIx5K&6+<U(ZyNN;k4)JHM%k>d}NNe5tCg48%!J#NNN}H;aeValyNNNwT:0J[Y=2~KN;k/Dt4M16*fwNNe5KUr*EQ{>SNNN$N]5mC^!NNe56;0Ad|BaYNNNwT~?,0si`$NNv>?H_UEWE($Jb^NNL.1lZQyP?xMZt.3R!NKJ]Kx{7%7GwtZ.NN;kIBgIryYPZqF6]mwNNN><$@*UJsF)TWmQl)NN%s&n,(L5{O.?[@NNv>_Up(t+f5`2KNKJ_t65vp1m`&~{<fwNNNzD+QllHe&Hq4}NKJAc26#Lu0c%h<z2KNNNiMvWofYfL1ffRmGSNNv>lT9IT{:.qD?jfNNN[v>mWdv>PXu|:wi<KNNNoOR,mYXcV;bNNNmJ0x#7@#Ga*MPRD/!NKJ]vi$$c7HN3NN|,q<+rLQRp5i}RgANND0v|6/EYBLb!NNQtIeTa3D[y_NNNXsDq,9RkBT=KNN7!kx_@l-}BxhbNNNIAIb,A?6KmNNKJ6e>`ar%NNNUKD!!+$-V/tn*NNNfA<ktQT6M<]0fbUs6g,goh]7NNKJ!Aml>An[|#`TKZ0C>l7SNN}F^fHsR,_FJ%`CfQiKNN!w;L_VS%FBH8eRtNNN)UDf>MNN;k9:5Hz$IQNNKJru^>0)Z]UWzHX,.zz]bdJP=NNN9CC5Kf%|sh}N}F{$^`L$.b!N}Fq$u?fLMGklG_n`:jx&{f_piNNN.L3<r#!?#,xw^H,zNbr~]&.3Haj}NNm1|p^)z<K/*xofY_)4s)(3zL=(V0NN;k+mfIB9f-!be:S<Lo>A$Z<:O$NNKJ/4WBxrWr:~2-0I:`2I@SNNRbm=e?*eLZRZf>KD{c!NKJjJyc^v=zV$@gNNv>C(_.nl7KNNc}|<e_u5V?cOvBZreU]NNN3K7vuIxU>IuC;FD~:c!NNNy4#@=QY2g6!-e>0s4ZtNNN^s%%y--OEyF2?VHI,-}N}F4xP@s%Z2&!NN6zzkVxXl1_B>hA4T;:pSNNv>%XXh/LSA!<KNKJK/n.XyOcv25I6h#c/KNN~J?).c_NNNaJEn>QHl/NNNE2?(/sNNNNLwBoYtCLTkKNNNOQ|w]O_rpJD+!NNNqv3;0&NND0M9yt|ZDGJtNNX}(WJM#NNNVA91d0wS$OvpNNWVd[9#c8NmeZETB7ZXutNN:9[d+Z41d+Bi_jNN$tcSM]zDhpNN!wP,sOJPNN}Fl}BHNMPNNNjKL5t6-H2}NNT!]rX0bk~yMlE`a}NNe5tY+sxcH1`NNN!Aq1z,;M4K07u;j<!NKJ.D?VgCR42KNNv>n&s.Xuyd}x!NKJyX]Xz4z}NNp}7VU0xJ>}NN*j<C,nKtshr.NN;k53s^`]K,KN;kAmx>_2t!}gaO?*!NNNskY4|TGbtN}FBCxi}NNN`4!Ofz,n]yNNL.c}gJ}N}FcUU`[NNNr4dW/|UytNNNZ.eL5NNN_J>(;jNNQt;U3qVw#JRNNN[PbZrhj#7#m}NN7!-&ke8O$4{qRKNN3KY%2aP7T+[N}F[Jt=nxMr24D&IQKNNN;U1aJNG)KN}F{zV7Ch]KNNp}UOhtKPL!NN;!&xrHr_}NKJMmF,`v{@,VnP+~@b#p~}NN!w`HHwQT[NNNv:86Z}NNKJ%bX$G5NN<2$y^x)tbKNN9Md%pA|OMNNN#zmso;&f@nbKNNX}*14,lSA5:@NNKJKaG/4l&oR#jNNN~*o9#Q{iC<sNNNX>]{[eU3MsNN}FCyD.a9NNqSX%SpKNv>-5e$M#xNNNTkXUJdKNNN!@sn2JP,6G3KC~imf!NNNN}/ekWs)GmzAT`ZP`I_NNNN>t`pM[?%%p1NNNZj,s+yqGC`6;!N}F=jn/i9QBbz$UKNv>K`rLl8/Jb-hQ+Xf<sNNN/Tv>@E^CRP}%mg*>OwNN53%P@D#I:#l.$<@IiW64pNNNSH75Op%,:;u+2aJ{{w#}NNi4W6^3<$5|[9019NNNbHSjC.j9gqqV}HNN%s[,n:TdQuM:y!NN1_WIF~&Qr]c=A5NN[->ct2J=<zWJ~e5NNNLUKDkRKU<n]D69Kh&e%I-?FEEVm~Y{@<Rxy9NN9M9l[y1tbn[S}LjNNN2HE$VtgP0o.Bhq&[;W3Li[JhjNNN)Iif-1RbQ7Tsd2NN]U.jP@sWLKv6;LSTe;w-BRG@|1NN%s^^A1>P((mpktNN1_=+)|X@mB.ZDjNNRbUj[BM@p>.@9GrSZ#}NKJ8syioFK:6`NgwvD>[NNN`Hvq4ZWMDs+_KXzT:wQnNND0=9[quCM!x,g|Gl(TP{v}NN;!I~SIyr#S{Mnr}NKJzz&5tJAJ#-DANNv>pq6wsPIpax#aNND0p}8L;L9!4tNN>,6]uPOIOg.MA/agE@H`V*0rAL,eI87uKLr+gi<R~,fUNg7/Ob$I7vBNNN@j<ub:+y7n-X,o=^U[2+0C($uke94Z(Zi2jKh-X5$u3OdJ&U*c@2xK;<jb*=aTMVd(,XgB68-q!NKJMw|Jp,jA:sh:?CCpu{iEjkD=AIue(s+rcwHF>RiGZEsA1^hGbYCT2@bYO]-d0Bq!NN,Dv(mgF]rFa-)hyhZ,2xR.(J{K]b2*5l89~;T59-R)m-&,q[/}fjwh2miae@zM+#IiVb90L&Nc/mB}5R27|eOlwYH=w^>v]JP!HQ^p/1dddJT~EKL0[[xOMRy{Et>L,dT~e~pCHka5]KLI8Bx-zR&%P}NNytv{AeW:0XS*.e95WwNN}F=/BuD7zwe%e:PQJd8mb8s{J8wO9Sxj}5f{4,/Cj@Jn-w0zG/h2NN6zMsuiSHySUQu6u+i}]Co+|x}VA6~{$Xd-B~aY=LKh3qa--{lRwNNN?$uvC##BGGUCLrXzQd!Lf!Z,idaT^<?e3&ZUkb.(d:p!:WXa[[Vq51c>zPv9@(a$MqNwFOX,mAf@5Qg6hZB)[iNw)/NN6z*{v=r!xv=}NNjK3z[VNNyrW)R9y[<BM[v|Rav6NN}F;W{Y<7FN^FWG%n;ICltz6vgKq?du)n9RzW_(E,p=Dg91?IcR&xI}NNQtx)IK_>leSNNN,47)SNNN@JpeNNKJ-V6%0K*3/Io]pD*fYUt:Y+^HC*Zihj{Me~dLijI{N=<3*O]P3;w^)WI<u|{giMHf&FF`P(#Tk>)^WNNN,vgVy}d(Z<jgq;TlKd++NN;kp3v3rAEq:5NN$tW6t7NNL.P[$.jN}F|A^/N1gPbVNNqSw)Z0KNKJVh3!NN53k7M_n<e{eeiy:eh7z5(YCkI0Rqs(C8CfX4DyvNNN~1Mot3Boi[ei@Gm=An/6Y$X)i_BJjLOtF@sv<A<*z[&WLmf,S<QJ>|t?mwN4!`^+(n|n1blDN8/JcbbGsQ1c7c-i|H*4?CN-jdh!q]jNNN-GD;6uTaI_NN<2Q$Za!N}FsX#NNN->]1I3Dm?We6,1RsV?!W%e#jzMw-8^p|c4q0XE716#d>Au,)-]LV@m[@STJGcwQd&QkabFzj#2jv)Cr!NNX}Le~~uNNNbRoDE2>{q7`Pe-S5g~*{~A.lt]w_Sf1]2Dx6S})_Ye~0&=T{cIITH!NN>,JjDb4Ij$xRi5eaDlt.f7#B6oy;eXo/G^7eEdH/[@Mam}KQUxKz~,7KNNKa;Uf}~/>4,qF#drbO2pw.v09&T}l%LfaO?+F>:9$u<a&0h^w~YsDns:Eg36i7Cc]BzS=8IV1Tk{V.G}rT.-<xN{tm^a,NNNbP;Fx30a&Vm8;3;X~g711Bh_|xdr;@~K1+x=BfR:p*hs?Ilsvl:TI5F8iX+T20!ctRMjI%.G6QU=fo?7(XD<O<hBB&g[a]x?&^U[*9ii5IT+@Ay|4H5}hs_AyLHnr[0c?//w>Ecxks7gdDD<$LZDZtdgKq0gHjZS/7)Cp1:KNNe55?_S*^2;v-yQG3u7M6?f!=h-kXHS[?B|o$A=Jc|=v>/el$s%O6pkb}!/zHXKu^%ZF_@vx9j$3@sn),%&GX,3R>aVNN%sj/q{{|GUa+Z_pJF|J$5hR6rj.zg>I&y3*0}czf(l*=Et!NO7;,.I-00=)D:7Q/;eef/AT)Q*`gH$6Pi3BK#Q7dTKV--Bz/E@b%YN!KNNQySf|Ia[M.{)SjqQfb+$86u{s^6LYVasMv9eypLoI?9sTR}w>m1`Jq5VXNNNryr3v%BK7?Nr?E4i=P$rdPVyVSi+rkW:z.[]W;&Q>Lf^=%5}=TA2e}NNfWi$(zU0luVr-#UWV^{N=u;qO-?gt|*|7r{&Zu63aXIL`}q_S-hWIVlkr5NND0#(biO,f->$>o(w%DO5qb./+_a6:)aMfn}>6?F;tPv@1GztZ9pmd7.hNuIt3iu:El+3b4~KNNm1)VKaK]XvV}7EcjBN(FsH-Txcx:zX-tkjT)r1J`am:*>3xI_`Adk}QlZ*N%iIabj0{=CXAX0rTyL<d/hBk(/=4huQ,bZ]L_vv0UK.`l7KNNnf=hwtR*;Kp~$&1t_]4INgY~=Phq*8Wb,6hnQLxQeqe=n]a|0*pskWCmd(}l|5f@U&L7wqpl+lg3VO%:Ep<{_0in%1Al7kbVSI^`|cG~L=mGvC#1$;4[DrbM4vY28[wd+^gbD{F*xRwd%Q^5r_O(gEtkh,@>DK.D^9>_Gy+_uVn%bQ<]Qffqb;]cZ~Yf.}WmQ)[NNNss+r[{bq;G0wE(dQd[_6,}5lbXq{l6iqtB.<5Y4$1kDLz$Lq^pZPDSD?dM1^ejU`**CIXS-|Kw(|o}j}NNr$8&%<3I`wL=+yDc|%~^}B,`~4FmFCUL~>9!jyA&BlpXp9-,mJK2HM6~2kyR87!$|i|d;P.!-}NN<2-RNbEg7M!96TE~S~@a``<ubgrqr/(aNNZ;+eqxG1_~frYTbtzo9GoQ&NNNY2`/2,JB!$b*R^/amPagx|,YGo4Zs`>a=|ztfS[$`kz=k-~%H1dTxP`c;lHqNN;kL$`lCU:Q]#}9&EW(sYWU{$fp5HE-)X4s.atKNNp}A~hKxPj;)y<ZAqSNNNglF&FJN|NB@ZwfHqzks?(n#}N#`MpiVZ2;sHF5C4M^]m.#j<*[>|#hVGU.6{H$}?Nq/[d!0T|vA/@6:3DHs];a[H|X|x1d9|NNNN<7f7|5Sn)]XH.RczaBG{A9.Xj%f<n8Y4{HKyf>VW;]=gpcv7B-(`VVbjURpb$$30ImQ&i0oGl{qgp$2p8.S6,3&f({n}`&rSX!;NNNeK1`KjG6_4n0+FYN$d*X#*CAAJiKNNX}T8n{<~SGY7NN9M7*LaF`_ISe5T~:Z;]:|OvMU0Q{)JMZTfCdPbw~:2Uh-OGwKNKJS86]bP8:Y)qb%M{5v@Vc+eNt_SgC.Gf#ubSbJwJrXwANNN>8X<S_1jUHzA/eW15@P{XG%=k5j,FZG]/hAiV!3)VS1z#@VGVo&kZZnvu^2N4vHQs_S~V]6BB6qn&/&Dv4-A:)j{<`tR[B1*)F,oSAM_>kOffyeulZJU[j[$S]jH~@m*=ZP_pNNNJ_>S8H~iczVVMeC?Z<.#2ph|F>@R+~mcu[3ahw96/V-i587%Cfo?wKad6?U=>pn[T4sQ__kcL,mI0OHz[)~H63cWV#n=eRFc:rs(p?X_u!p.VG5=9sf1fBuj.+Vhr/_|?|2{lUSgFd[~juTl?cbX~d?#V@D6qmWeN{N;U(;ZINNN)V^g8aqQMEuz:WEk1~hfPhbAEg_W.ZFLLio<o!*=mCu?C_%=c9#h@/JTiel4V,L)LZYwN1u|>{50#6P2$O*EquEh)_9q/Q&JQVA`|BkguYxL#Jhkuo@R.p0{gleR6ucdr;eTr5Jpx`zXp`/$6DSNNNI32h67]VO0,}jRJ:+3uGe*>&W2:(Pq5hUA<<z334Q!dRo%wA{0}?@*eCJ1!7r*d^qsC78H~AT5y5r`9?wce19E?-~<q2RAdp<^}C<}<@Qh-nnx60AIp{1Mi9<OO5%^gZ8/Oe^HJMRp[@|-~H_T^bi{kfc]}p+Mz_wKNNJ]0)@i9(!+5n_JU;Dk74JW7V(TgzNVdxdPIA)OGu0fr9HGZfDGQ4^3:Xw.yq`6E}N[h4W*#uaWW^mh43m6Q1MR:|H2r9$i}]5]VOJ/1:sM8h#h;K2W4%BQ5:cC3&Tt.CUO2H{j;SRD,]s0C,l0hKNN;6S3#,1Oqc=D>HIJ2-)l+GN-.rn6014BEGNNgl$8,;nPJB!5Pp*0vLLu.yEE%PY:65fJ,=-{^JP9/nfJSjPGK(]$$bU0$.sv6oTDJxNP<MuE=/TGH`^F/[KPe5!N(NNNv>Jx;|^gvS?IKNKJ`Dx1(!QCi*^=J7.fq($Q~%NNKJ5U-bV>NN*j{K7NNN6;fB3Y?7jUqy6}8TvKMnkp(wJA5NyZ^3+WUivJH@ib@U)xI=)k@x53:MClKDHHUk-ng}NNv>GjXXAX9KY&/j7eo2h-a1QIiIgAhXod4JANp{ZEt(PPi,$NNN|0e`@Q%G!H:NNN{Kh!P7np<gK>NNagYiGw5VF/Y~i>@K~i7{R+mB#w3%]J;m9btNNNu4,%a+KazT3!#/Dpw#ALRNNN8>+hJ}fu9~|H}NNNy:>m)$:{*w)kSgQX-]z6INNNTIwHzpZDnUe_.77[e;{x2SRRrqo/W9NV6|s>NN<2]^KbL=yX{WK$)tDd!KxeactkNNL.cq|8ziI/#bu!scd<3*t}k/GsKN;k[RA[FQq!/-jZ*Agih=z&_%kDKNNN-M|P_FtIb{aNNNjl%,7Sq$?SN{}NKJaGO!73K<gMmYD&*^/NNNZAT{LfG|*SRioL2Ue:a)NNKJ<Obr+{Khb7B`oNNNOvVc472+4A#}2NNNrCR.kyVLphh[`7%U/7GSDi)`H~NNv>o2of3Aksr[V+NNL.a:G>y3,X48$j/BKNKJ)v8(|pSR68KDY}pNNNXjvZ@3,<TB)~sj.|1toYCpKNKJ6#W<,uW^:>7a$I1vUIe~Ll,KNNDv5u*?{TDsx|C[KNKJcS(CIfve[qNnD}NN$tg@oEjc.20B.qT]/NNN1Jng/QRJ-XvDkN/~isKN}FTq.(M}o*W_O$^.P$Y|#KNN[-W;a~5uY[(vi]KNNN[N3&RODZ!NNNrubMr5j+]#>NNN]J+zEyugM=6_G/NNi4a*eq9oE1u1Z9fNNNa*Av3n5p2=8mN8805Zt<-)z2&~KNKJ=l1tY,4}KNKJOkL%E@~{Es:jmgFx@O}jNN!wE<F/:=jN}F,hjtovJ}N_NwP9?JkaF)<dNdL/ZpSjNN;!K7mV!d}NKJ}/IzgtDE5NS.QuUA`z7!NN$tA_HhtPnpNN76(nTuVW=YN2YhYxA!*B/B-vO|m&ZvV}hNNN3Kj):T,X_}iK0j,xujANNNIA4S%Dm&*TBtzIP#O,7NNNUz7g++g<f&A@tNNN=s&6=|Jb!N}Fm:JOcPF]h`.(uipNNN&>n5f?K8@H,J}h+H`6e$C=!q)wz=J)NL#GG;-Pe|jwoUrw!NNN4>N7N-?5NN53u?rO_fpw17/lA|RH~+NNNN@@,a0Aw8d-e<wl|);9-NNNXxPKL#{@0*ela]r=mx5D2Z@C|AKNNNkAb!FhtPsrP/|,+pPA*NNNnId?O}uMTy7!NN!w?}-soEIp.2oU}N}FA<g_m{tAkRE@37Nfa_;pNN!wuq@2X(NNNN=xwViCt|<Q.{z%2:9VD6ANNNl>+h=+|$Y;{TkA_3#9A)NN}F{]9y;$b)2~cV^Cn>vdT:NNv>`K;=&mdNNNCCl3hA(|H,_t.|-wWm3NNNeJ,5yGw$nC{Zd{xu+.57k:F3GNNN44C#+aNMD`s}NN!w_]x](#V9QQ9,jNNNU>BTD#6xhwJA}J/-j%KNKJIyj0[k@rZHbR1Tc,h1?NNNVADO]f?G-%X8nT:GzEs;o18cJSw+?,UD}D<!X&%ev3@NNN.#U:}8)M]a#YNQ~H@*Oe|CJi^#1zs,nQJUfTvoIUp>NN;kMl/P3&Z+KNv>{zjeAxx3mVMsNNAIMW5(D1a}K1r]NNKJ$tt0H9WH=!!NNN#>s?E,NQo#r5qjNN;!ls{ylb!NNNu[[in1WX(j7NNN3J%pIa*kK>]HjbNN|,{++EqoL-gq2eSqNND0QAqt4V0#u=.?H;9cN*|NNN;#[%3s$Zqx52ZrI136z/x`Wn-/I0T@B`)Qju_v}2L,K}x0EtNNspo`,U9YJ8$<1;6KmATf7NNN>M<)^)J8p-20U[NN[-y^Roo+p{Ya@J!NNN>GU2E6.DXCg{rTIC:;.VNNv>*jtI`t8,Q?KN}F4nC68e6q;it16P}eN=0P;[mL=XuYNN;k,`DF.K/CNN;kQC4Q<y<8NN;k|A6OW=F{i5t3gyg,jH~NNNyt13AiBE`(IA&Pr$(mNNL.P_3_SM2ya!H(4lKNNN^.n|bGIwM99~w1{tNN|,]e*x{M9^TEwN)3NNx=VhKfjKRk~!cdyTNN}F.N>%Uqdzi!Q(V*6}NNkw$b/lu!xC7~,#f$NN1_L*<]?Jn[G9X}NN)7,b%YnxlS7xt^Z)NN;k|0m%ocBDkfo8ujo!NNqS6VJRZPJDN~DWgCHNNNuNsT.}U>A}V}NNT!{V<m{Zi$N`;ZjINN<2+.guCE2a-Rg*3+|NNNcFw;w([5NNZ;<4k=5[Q?hpkuAk4qc^y4@}NNa5Rp?8nt_^k3!>r|Q5KN;ke;Ez>:DUo}*RV/NNNN)QJQdnjcP?n(<zItPA!NKJC9z1$+8[HbWgWPF2+xc`s)NNL.%j2pcCrwW(#).n!NKJ1b,Mb(NB57NN6z.{?Qfj[:6@_kP>SO8-NNWV3*{F1=v]qNNN>H++Qdk|{~*IZ]7NNNKLV|g/vDZr`}iByKfS{;fb7NNN/I-gm5k{.LFNNNUKTfSg8,{(Rg=NNNqN<M-idZ;Z!9F7NN|,DPrSf|.*hM7VcsNNAIZBrD7i,;z,nyor{6q:)LC5NN6za.=jCF0zJcL1GrXmKKNN)7TWF{0a5l62qk+2NND0Y8XU{L0%mPWETOfnd7NNx=psOqvsiPS31EmINN;k8VrXQu07XpNNe5znT/T~x+HNNNZI)cgsL&u>~arx=oP!NN)7kAt4>45m@A2}@ANN6zjr{yg|:^{gb,-3TWz9+=KHhgDA5Z{NNN>F4Ta,JtNNL.Z!7_MY;O[CSvCmg4$BC{L9(u}@zBzNNN[-|v:{}ApNNNF2UCtY[_9GXM(tNN)79t`(S}8Jz3{.i?NNL.Fos?PxgJNN}FrwMd)0<?/d/}s0?iaxgSabpZV~34ojKNKJF4]e1S)tWXGZFKNN,[`^.2z;#WGQIO:4d`hdYgn^NNKJ^0~!`D9vIhe`;KNN7!=v{o93kCgSGNNNfAC*-#z#Po8OjNNNKT/hA,}{ZD|SY=YNNNbH_]Iq8ZF!YE5uNNi4+UK5-&XKoQkE{NNNwTKd(IY=9+KN;k%Ex2=[:&PZ0#TyKN}F/bf0`,MA(QrWKuINNNuINy2i}TXn~7KN}F~Vkd]3-FieI[eNNN,vjYl?p]ve4TA%22e.8EKN;kh,7J0BvaY[NN)7hwyi5Scx]9;h9jNN;k()LN~--21_}V01n}NN,[eiv?GGMgEc7x6[~fZ%_QHUNNKJ2gCps0iK3$y.ePhANtKNv>pG:evGw[?di7T=`OONNNVA[0EL{k:^E7DISUbxI.p}NNQt,vt4exEYBFoOW_.&tKNNZ;aI>W[{#uyQ}CUHOORbc}NN9M-H5Rh-0cOt>72VXj-vgDL$DK7NNN4N,mu-2#Z:_%|ZyF5mtNNN~jD@(y$Ck(w#kgVyzTi]2NNNsNIid;$=R^wpD0t#]gT=7Q^]P]<{.=yPNND0I3JflcI??+MH4`-jz20wF0aK`-iy.NNN_Li~|0Aogq;O}1uBmKYGWKEe:D!NKJxqHtH!Wmg,Uu!b8XFy7<$`Q!tNNNicMB:AxIkkIQ/_pNNN]Uh#h+wL`n;%Fc%~.._)m.~u61NNKJ-`OzJc!BO$wN}FMtjXre_?nc:U[5{l05ciVpNND00OEw{5}JD!NN{K^$wNNNOQyqLFiNj,dB2b<kF{k/F)fKNNNYg>4h|3/G^I*y|2EIfBg+MNNN,PCyr`ZJJ/{AJ/-+V;b/8x8sl*NND0T|oRq:UPaz-R03_`ht/NNNZ;)9hhaxLx=}QK5obA>n,}NNe5JUx[Jfq7*NNN00F-NND0p^D$wV<W(N/}6rjQ(c3*BW[vDIyC-NNNAA4*MOcjg^/}9jc3qpUJp`[NNNzDk<e5MB!,`K-X(!gpe#$b3}NNytv~w<SnKays@1cq!7NN;kCQcW4*&[NNKJVcSdm`;o}NNNb6!c9>IY?9SlQ{ewNNL._e|.Rb>&|>}Hf)W}NN$t<j4^sM1=%u34rIfNNN-Pm}qe:M5G#Es&Q;KN;k)^ZpK0%{)wTSWg+|YcFNNN!wEcx>`>?R@H$%KNNNdVh+Iq?j!NNN5-6V0ty9KNNN=)e!ejpfrjo/WHb.NN;kzZtluIB#pwafDA,!NNqS=3FVE:hb_sqAuOmNNNRHW^#~}W~g8B<~@[}NKJ?K``C4Bi&YL}_LsP.G)!NN[-K1Y2rKdoWQ-ENNNNx;E#j4HP9NNN}lN#$~Rq!NNNo01H>rKN^Cg<MBuSNN;kLxy-}dh+tBp.YoB!NNqS{By$%EgWTlj96:?NNN(IVlA(l@=daXNPTUKNKJRhFn+9bEHr6g+/}u%L/[NN[-~1&+3v||:g8BINNNGx6y,}+t!NNNWjYzMoTk-NNNK@^em#5xLsKW1Ve6NNKJMW}txpRMg@gc>B%jNN<2u2#*-2J.jyTOY%bKNNG;u1Oc}dGjs>TWmM^cBw}N}FCR/O,V,m6l{f/}NNp}w>$Qj?/tNN$t>QfAdnNjNN<2XF5<5/B;WNR`Aa/NNN-PL3^sr~;pAw#LWPNN}F_E|q92W9gMl+*uu}NN<2CYRJo@pGp<{A!pLNNN1KTiH`Je5g0ef~5D{Q;mNNKJi,n4TB-(y7IEmKNN$t4<{b651&=J9Z)8>NNNo0{B6aG}-NNNxj0i@$$&W}w+RIDbNN}FCzgMEf9k(<>me10NNNqSs^Cxwes!>uz!20%NNNtCq.w%oo;=d%^5$_!NKJU>oC{#==}0iw^+t99pw[NN[-*L,uixo0YcC@9NNNx0%i{Y)^yC[L4+tNNNHMa?877KOJ|R+(mNNNmJ7l?Ih;w{>+WDxrNN}F50xDy_;.9Se`[|ns!GKN;k;|HaLkO;[KNN[-Ql7_`l/[VvH4-NNNUQgCgvG@5UH{HOsW~0[;0hKNNN{wm,`O-2l]sHsmp#a*VQ!N}F]vI[JRyAC!NNWVpd@B5HW/)NNN:C_{sX<BUMfkJHy+x[NNZ;IW,k+@N5&tkW{mCuso6dw!NNqSE[PM%m1K5D!q(8NNNN&kSka9sL]e82INNN0.QhHmdZFILNNNv><6;K:a9NNNqNMOzXv7NNL.$ldHz#._!i{[%^:NNNUK]cb;pcIqr%tNNN-H},rc<Y]=ch[NNNmQT}+YCFelY8|>ttnNNN]J-k?i~qNNAI|0XNNNP>/3KNKJU@5}NN,[/]mUh;AG?i3NNNf;RAr,l;X_Z].feZU,NNL.V()~80XbNNAI%{NAeK:S;MAHNNL.N<#HES%(NND0m1~F3c4NvNNN3K>[^*e`WB7njg`;CzuNNNxJ_t]qy!hzYj`!5k3)Z~EH_Z)BKNKJq~RTIk~mI,Y-D4!HPsKNNNQXy@_HEy@GyzC{Aih$fMNN}FjF6P`*G:9tNNe5~e{9}$.G5NNNiN%O=fPL[NNNe.&[c(}NKJ-d0Z$8;0*)#.KN}FSSz.B5NNAIyriTf}NN,[9C}gF,U7oq-}NN{Kn5&*zNNNrCX-Y*jYgbT:(r5,32~3r8#`&?NNKJz$J&kn[sQu|r<%zMejKNNNMs>L`BIB<F`5!O^>LvcFKN}F4,FKXkm*uJ,$Zmz,><w.F?XXl!NNe5mLLr]H3tnR^Sq!1NFKNN*jrn^1puYpzsQ-!HNVYepbNNyr.1$&0)_]-M@6?=P<[NNNg0$WPOh|}N}FdVnRhL_?YjNN<2mL9Mk;<uNNv>Xbq3_KNN:9RX1a^*0|_^pKNNX};=-ClNNN0>wB4|SNNNpJI0ooWT,5)T!NNNI}QqzANNag0[1=tjb|#pds/r7.9NNNbMOhM1,f!NNNq4vM0t(vd>>MZSAbz`a;wNNN-HGhCOAD!JU5jNNNK/6SAM{]INNN?z2/9#kk|oMM}NKJXq`:<+UKNN7![_M@eorLQf~NNN$Cg[&6Igxd4pNNWV:C3UN8s%axXRk6_qPSNNqS.BvpVK#7NN<25jx?:d|MNNL.W&$2RL-vNNAI=/.!<B+$LVITUC+%N>_FttNN:9T#bIrWHc-ovKNNhIk;~39xjPgQKg)o/=|5>ShNNNYN)ZOUmvUNNN0>[RL9g{T!C!NN,[.JrT2-KG_IENNNZ;j|i)@:j:@6K`M_g(*0PKNNWV{m6~fKUpPB1aTig5E}NN<2U]Y~U#+bh435aj@NNNfA!Q#sh~+Z5W3NNN-P;8gbC,Nou=p~[XKNNNxk`wE6~paBMy_D;CM<ZR!NNN00{~t*l4Dk1d<_oWRR28-NNNMN>A/|mLl0So,-3dz~wNNN00N*XT|%Q7_@@^qx|<=MfNNNTkb=NEwK~]-whShmc&cW1KNN);RsD9:33-9T#TAdI5BNNN:C.MiaIGGLQ-akT:O3NN<25U8P2exKNNKJ6n*hJ&XRL([N}FHDddyBaa0=[wKNKJIdk.11LaNN}F?T;:UMoaKN}FtwV5S?QbNNKJ6_T$p/B-X|N|@sa*hNNNGAmfNID[CV@aA-[hW3NNv>NEb{fuR7Az}NNN(y_+gn<;SQp;s[?aNN1_O`qn0pO/pDtSNN:9Erc6#-y;.d+}NN$tN[$pY!zwNN!wM^Q7mFKNNNUXm7<fs+m[E5YGn$NNAI<^,oJjNN$tm_|%k&m[NN53b,IMm2z%(oB9W<$X1ofNNNh.[+.3dN4/g$NN}F^.pNu+rFu`]Xz]6EQINN%s*{|L?!Csg,o[NNL.DOXi;*R0hU|pM{J}NN7!M)K[FdQoDh7KNNR}ED&B,Bl$S86keCBbNNagM:>x4G5#ScX[V;(x7NNNMh_Avsc+VA3&!NKJ-dda6VvEqwXwNNv>vTAK3w-oqRhp>B*_UNNN,HH>$d4aO%4SH$9i~KNN<2}dd10-E*WVFw]XrKNNI;oc*dT;OsX**<|LNNNNQ}r-0G#EK)%dXwNN[-tllU1B&RD^7D!NNN#zn(T9xsrWvPP4t1jq$%tNNNM9:>;c:/!<GA)UkNd$@di*?8#zpL*w}NNNzIr9~b!NNNOran4mNN}F3./0AnU*v?KNNN/W,h_~94UQ/NNNE4ZG4j`Rp<EI>|Sr-S1?_NNNX}Um#LRD#LL,!-DxZJfZiNNNU@/(ZhCd99IfMZ^D9yk/+Z=nV+kEfZ)|INNN(T0?(6<<#udHB`k-dx.CU-n2/7KG-]NN6z=5:3|7(ahNNN);7O]d5.sj$`~hCaCzfKNN|vq%~ZJ]Oh83dEHNNN,[*|0A,f>n&1PKkIC*9OshM#NNNNE)x2u^:bvdINNN2Ju@Zz)t^Q^pb8@YdF-}NNe5L~3`T/[7wNNN6TwEFfz,fuBS=rvdzSiNNNtHbw]W4^M#69,n<WRNNN7!7t@JroIg&LeNNNxJ$w1F9P:5rDgqNNagFs)-^>a_lNah#}J;wN}Fa3qXNSceQA*nNNv>)S(C)f,S=(,cCf-;PNNN|0iihF}NKJd9_Pq0s3x;Nud0zSCNNNgJ0BRE1_2^DD@NNNs4DMmEh>w}/P:YCd?jNNa5jjvIw]>1Le,%rv*bNNNNQX:Ya|SoCKHCrHOEeF+]!NKJ;7vfPl.?0fDZNNNN1/S2JX@FixjRmUR$AxIx}NKJjJ:koL2U#T|}NN}FIH-`i[Ya}AL3lgDNNNqSh.%G.AL@^_/1*wKNNN2CiDe#/mZk}h`Kby/d`rNNAI`K}>F;*bR^*]NNrQ#nJBa+T*Aj|:,y+W+#wKNN{Kr0P,8AQr^-NN|,XHnUXc2RYLjQX1NNAIFjVN_q<k63lVNN|,ga0@iJy**4xMAPNNNNv_D&EF}UbM|Dba=2avrOKN;k@5nO<tQuPp4j6Xw2R9hu~?uj!NKJkV$3(,MCxPqtNN;k+mRP-@$wwXXU+HL%6kYP!w9,!NKJ/h$zb%j-0Rc7L1~-_M,}:<>&n99{Z)`>NN6z=:1(D_;yTZ<gVGZ/){k]+/5(ZE5-=NNNnAN@|f1V+hGj#0O0NSNAV!6q-rxJz(t&}NKJYK|uf9N`x=-HW^[J{V}k3kg#|l,@9tNNX}oM6HpNNN!A7B}*evjKNN[vjhoZ?Z{NNN3Ky|(GM}ZKtNNNk9w~@ItunV=0DBpVOcKNKJZ0<-Au4ISZP,dt9NNNi-q.f;gB:w4q_W]>br:6VK|}NN*jnI-rrcQ-y>NND09;uBDr}}-]Uar=^lcCg}NNc}@Xb,6<4E!NNNE}O1MjnVu7|t4_/&x2}N}F6_0[A[VwSD*kE-~+_KNNR}?R;QBM@3dn]+aCC6NNi4ii8KPgYY_E_IUNNN:4q>W;DqrebM9NNN*kj&l)ui8B&h}}NNRbwnVCV2FCb:yFbe@DNNNNnmnyCve7A=M[bAUUF~EZ!N}F=sAQ`_QY[jNNv>3*w4!qKsAv!NKJ=jPT,HZg)a+,KNNN1lP-(qLt#aNNNNCr/yNrSroI_t1K+TJe[l`NNN7T_J?hWB+S(V}NNNpJ6d>&R7N^H1KNNN&<r)Q/^ap.)ns|+aNN1_FX5o-|liYjj!NN<2*gtgb@!i@Z&^PokNNN[v6K;k~kh$K&-%GSjNNN?vMz.i&Tti8tFxTwNNrQUKB1Ky@mXTe/Hr+m7zINNNZAB.@)Ns%emukIAM_4.uKNNNw-@P<+gDZL5NNN00p=8Xft-r$NNN?C-w%nev2c>`HMfNNNUKkj1Vhm9RRj/NNNvFliaJbw`5o*hV4NNN)TwT>+JE4]Bi14w0.X~r?KNN*jd:|!^$x{fe{SIp:~}Io2NN]UyQG1rZv57=(tb7)ojFWU|7j[NN1_DDR!VhJ?9gs[NNdR&!D69*/0S5q1-7#[d|*GVU*VNNyrd%`>GVxu1.tLff]JKN}F0qQ#y31BUdPZC%mE8NNN`v;sPa4n(MZ:!Fo8Zd<`_KNN*jaC0Q5>U@)f]Ku]MK({wVNNAI||z%]tNNX}7f?8]NNN-vxd#G->taAR>ar,i7NN1_AG:5rDQhv).jNNRbx5p^Nj6Kh1T.,OlJNNNN;HU26+:%RlM?&;Q|OXDdEka.s!NNe5.B]3*bVcYNNNP>J)l%!NNNECC:er&UT)bNNN_JM{6d?*bNNNSC?L}l[;:-1tua>)|KNNRbBa6#K9O_n7+No,C?NNKJ>cj9_D<iG%G7NNv>s!;*K>RQ*Cfb=~mT_NNNNCE)1LTu^t4U;thNNNXF;Wx}W;(BJCSNNNaGNm93H,aNNN00j(%yv+61uNNNfA.x*i>ZcoUI2NNNhk:y0v3A@sim>3DHsPE-aUHLB1NNKJhmM/KGjJ+SrT5-J!yMRWua(k3!NNkwB6;4uy1S(&^`!KNN<2e.jB79A!NNv>!p)-r=B>4BV[8q#dT>LR7$)>b}NN!w}@T[r9!3.i`BYj42XMG8TY+AwNNNl0cA02:%-NNN9-1>Sml&!NNN2GL}X.UZ9DUyKN}F=l]`f1}hNNNNqvy#W@evD1KNNNgjjMy,`X+2#NNNjK^%Mge$!KNNX}UJR/$m_:G[NN6zpb6nJL;~GNNN[vPHN2(URKNN+jm23`>]TsYSx=yKqIyp~QtNNN&k[`!N_b+F&bNNKJ1I:DTv9_B1ZspOD0ZNNNGAMdfS(K}nBEI{#BB3NN6z44>qrr-2mSR>:4LGUKNN<2L+7PkV6@NN%scd]YP=,$X|/bNNWV&n$*Qib-rKNN[vxS%&fAiKNNp}rIaMOhs!NN;!Vw,m%2!NNNw09y+SNNx=0DjAqp_}wS~}~_NNNNJ;!%aE0Pml,,@tmAAo.N}N}F=9PSS+nLNN}F:/eV08UuNN}Ffb;wuq<<NNNNLJtHFp9L&(P.>4=vjT`/wNNN9-y0%)3OINNNH_Tt;|+NNN;!UK5hHq}N}F{$9w||u[KNKJlq}YN<fb*f2/KN;k&=EQH,!K}o#4dXjNNNRmGuH:PffTtjsNNNyt$BC0Rqa]#}DL*^s[NNv>Lyp>iS1$yxh6HNNN8NbznC#2-8D!NN,[D%e@W&@AK]fKNNT!}4e?a;m_:Td!TNNNhIsOZx?Pe+A,(tI^jLW)yN=NNNLJhfhl6ka1yMIb*}$R?J.8!N}FcvHT}^/k^&s4NNKJ9;:Hf=YMKNNN^0;q_Smlj!KNNNGIh(EqMUG0)~J4l>z2fmYEJ}NN1_z(yu$OEOKgYQP#FDzq<Ja2KNNNpJ#Q>>T@U3|Y=KlQhzHH}`?}NNX}a5N(r]^/F5NN*j^G=D})/QOYr,3h2w1%5/%}NN&AzA{-~);GwSS7ouAZzX<r/NNN>vxgLZwql.[NNN?7}SNN&AWGS+giTBub21GsPhG{?}YNNN3KiB(3BB0<jN}F:E,8D&SsxAq3NNKJcUqkP-#dKNKJpF7qX2DUk!?@x,;Ns^i73wNNWV-|*=oFKuUNNNVTt{f!vg?CUrOaNNAI)d<<_yT15cc:M%+3Hiax$jtNNNpHBBBDeJ}`y?igZsGG.<oNNNmJOrQ5Fb5NNNKLE,UWi!+64!E6r+DwD>jP5NNN!l!KZ_!u,VNN}FCy(JZl6EUdq]dn{sR!otNNKJdJiP~4cWNNKJv:M^f$4}NNLK;t{nP0NNKJUrML`7X9NNKJit(>G3|kw0K}KNKJQc*-be=i1h7:>KNNX}4Wde^C.A5SNNx=|,6pkYl}~Vb2{6NNKJ=/<f*Qkns=eI@}NNytb4u3$gp2r:Ml3E.@NN}FTVT0vk6*LgwNNN-d2^B_&,3v>NNNo>>%~+D?g_dm!NNNKPj;o$*oUUC^i&@NNNUzR=#n^m![,FKNKJJUVOGU6^$r4fNNNN]^H,X!Z8p:}NNNcDC3*Ny$65s#uDAbNNi4iiB(}P~%m)`n]NNN#kVNNN$Pm,nS~PLCK-M^8/z;uRNNrQu<8gISy8PxbNH^yxXEvNNNtCe1<x~j#M.f|T6vKNKJx5EC={=]vC<6NN;k*)r-lli5.VYOk~}N}FM4=DCw<hoD:qKNv>Dyw,*/99+F35NNKJ;!.HOu,2{4NNNN}l.G^AmQELPe:/Y3NN;kcb{JWAfnek$-F|1}NN!w>yo$DQ4:M-0e!N}FZ;NN}F?7,|Ko5aNNNNBhJ%H_B+Y;}NNN^>N[3?)M8rHmcnS9aKNN:9]~[?aAT/1QcMu/XsCSM_eKKNKJPsp(Dw}(8?s}KNv>tyKNv>^..%sG|CIC?(4RG}$NNNs>7NNN.g9c*c21_;>])7NNX}g3NNyruEaaGY/p42vQDXBcwN}F76!NNN(y%u7U]I32nsx!K-NN|,RRZY*<u<*222JgNN;k_E{)X6V#H4#xjyv+:GNNL.m![p$)+NQY.ZNNQTqE^1s<l<NN;kpq^*JHP;z)lC4[l2XwJ-XGhBSj)7NNKJ.1E,nc{i!*!N}Fd*xi{w.{B^kGz0}NNNRcAjo_]o3UjKNN<NXX|h5uNNL.R}Psn71JNNAId88@Ae-V`Xh&E>L*c8Y#NNNNv><49L/GO}wg6?cd7Y]_T&NNNN2V$n;;#~kN@Uf^8YTqAQKN;k.Dv2ATx?e@}osL?[4R2!NN22L]},L^ELgc.Y:M@efW&8j7_N8Jul}NKJeRRGYX-rgsX4VIKaIUmi+A:mv~:d#NNN*j585v8;v7B~Jjg&^tx)#jNNv>D>i&,RPg>$KNKJo}m5+9l(~oSQ9-AdxXutG$NND0>m#Mwx$2~yMG*Jpw6nH}NN{K@3Uw`NNN=J;}MX,&BEW5{-{K=*HhNND0NV5r*)R7_E.%0!71}3$}NN*jwX1uQ8r8n7H1y[4/7GibNNWV8^F29w~Y`NNN{Kl,}xL=>{S=FWa=XH>-qNNN*jDTkZILmUKAw/;uAk^OewNNbcRF*6Q1{.`bD0XbNnz?!NNNd>3v3e]DJ,+s-[NNbcSiLzS#Mwnj[HA=3b4*UNNNhIgyAQim~0#HKl4MXmM${}NNc}fStI{8f<aNNN7gg!NN88RHx8:l6AcdhTvU)$#R@s{vn)&qc57NNNLzOUH>^53,^%>(E<;f_=/p}N}FyXzy/5@#AL%#VKNN+jm7pSU5Q}1UAdosIK~8!%wNNN6AYJ76G>w!V+2,x+$G^Rrm;&-7KN}FBn4Y=J~4p<03da0KTqEwURSJ7!NN[-EMZ3fWct`sA?Bx].JsnJ({DIaNNNITu;Y}Y5*{F2xl_L-UzK@NNNZAZXKw!VT`f/[i*Cf52RNNNN)B<:^:9OV=gVJ`%<vCtjNN}Fsk8LSSkTNwNN88)/ZcHe:[+3X+?hZ$4qh^8JU75|3jfNNNA@`#e(Hs6H)JphV2zvjykt!N}F]f]GE7M_/u$cjNNNf;$*nYQsKd*~LPV:k{NNag=*}5)V]CsDD}tB9BwNNN+=Gxl/[vCDRKNNUKvYBYn^MR:$=NNN*JXblg.|cA824GOCUYINNN&.O<7R/BG`NNL.u#c8j5<Ip_iuzt!NNN/{8(nxdiIUOmV#7!12][J&}w_y.jnQKN}F;zVQ?-m@4?6l_ZL]X_znw3dWT>Zh.bDbNNrQ>PU84[fKCE7kxc8lBh_KNN`vs}ReudEL>@NN6zpF@f?K^eTB;P[eb^eKNN53=e^OGb&_>Y>X4@:=sL!NNN9H.ftmF.5gRDBhlK>5g7h+}N}FN9jlY)A#bpuaji]EiQ/v`71NNN)A-(+~R)d=Ti(A@NNNUKp1yZJK)kxUONNN<N8M8Umc~TZ-}mAbW]zL/nhP*sNNNNDm#CIt%*Uug$7@PES]4I!NKJ~j(NB9!!,j#{dIOgBEb7c1NN*j(,)>Y)iv7&Ktoaf-Ic(daKNN:933H(~&otY()KNN,[,<eghSTos[N}NNc}Za=Rx(,ujNNNx}UvEvHf#1NN%sP|+P<|b,).0aNNWV;VX%(*1^9NNNMC4X(P=m:2fujNNN=kcmQT!~?;NN;kM9~LkTCjNN}FT|h~&eNc<ufRKzIwNNRbf#o%>UN_|Wig}?sC}N}Ffb||xE6[KNKJDRu/N1m$Oc@rNNv>aM#D6-[NNN[v;-03Zvxp25|ktw!N}FnrPl{.>4S9NN1_FRUW:Z<[&10NNN,[PSt{2w5;M+)NNN3KbY><XkhdNN}FHD4?BB/|iQ^BNN}FT|vb}-r:&fQ^ko55NN<2sb^hz)HcL5YvCf^NNN?C|-:ld*{gAdqbyNNNX}[/]My)vz6C;?8WAK@&&pNN!wYYHlK=jN}Fa3p&z^(`.;]8NN}FHeRL:shF!hQSh0>tNN.ar2PSWe_E;QBpbXvy%Fy_I!StNNa5nnk9t%FBI^1us`(`KN;kjJuE)BW{pA!oI,E74E5g|{x0KNNN=L]?I1txVM*hag6p+m_t-NNNt/#vp|!EY^P2KNNN`%UqE/qaWi@{K1XI22;}wNNN-JgKxFNP|exreMC3mNNNrCj)T{6O5|+B6+NNKJ&cZBMaAo?s[B+=.NNNqSUaCZs#}!_zhJBo[NNN<4(qs*i?xpFpzI=n.+1NNN-PQyeSKTGfJ~Y]b9NN;kDy5k{*3nSW}82LtNNN737YWq_(w*qSgvVVNN6z{xDz!8~gmNNNBK[b<}v3j)KyfI|NNN,[b_5r[o`Z_{,r@}Q`[*zxA,KNKJ>A>`rA::_pD.205O/JKNv>25M9hR2d<sG:^ZugSNNNnT}X#?~e?r7:)!q#aJW_;iPCWNNN?4|0FLhINNWV:$sVFGc*9KNN>v47|n<Q#`jN}F36[^=}kKB(79pJ,$=NNN]Jvu,TViNN}F{m`r&)iV}RJ-8eomJ[]@KN;k$A=vt;a*=tNNRbu^74{n9gvi}~x)V?NN}FLy,x<<Tn!NKJ}l2EHoLdbPm7pw~##NNNmJ(u;2ON{NNN:Nj*rNg`]KUjJx{2qk_}NNZ;uN8dSMJbJ-|G#@#R%qQ9<KNNc}=C>~K-x]7NNNjJzQr`KNv>5Gd~inv<i)i7NND0Ka2yE(RfO!NN,[^YmojAl?qfS}NNLKF$[p>kKNKJKJ{!NN$t%>Z<IG2INN*jcOKoV}NN_jQugPsI&=4-m}HtUU[h!NNNN`:Ww_NNi4nZycv2YNNNSN`aNN%shGPH!DP)[UntNN|,uiW-J;o(eh?hHlNNAI$nG@d|`Mz#NMNNv>I;^!NKNN!w_gG(Q.!NNN3t@[NN:9S2B#_<BiYF1KNN$tzvk?^91CwMmZ>&KNNNejAIVn}57KyVVwNNZ;KB_N5}5QXBAT<rcUU$v`vKNNQtzMp(:b:d7z?Ii%tw0NNN);Phx&/,Ad;4<V<[&}[KNNttn+v|}jFZ`Ow}ebCDvjK;o2967<S|NNv>Id+gmrfKNN3mPrIC@QZKr<;iuuGAJZfQ~&]k86roHjNN;!fIshk>}NKJrDKz5]BQE^qBx8$VlNNNaKs5O9q!/*6]I>R.OaNN%s}RlF?>MI)qh4L*-i@q|P@6tNNN,IR@p0@}]Rd?@z4UlyNNKJ}l/<o2`1z<G~||Ob-NNN2izg$X-:m]XOBDLj?JE%64+QlNNN[v-B~!,>@im*aGTFNNKJvUq<[E}ZdS@T)8!NNN^xojuXAw$kP$GHX}&-IgJSawpNNN!Y`S):!0>PT!~&)W2!RlRFm2!NNN*x?$E|ki6+VNNN&kCbn;JV0=M0pNNNMc0&/iK>F.i2bSNNRbkhlYqOa/ur:Ol(n}KNNNs>7K<BKCc%Pn^U4HRnHWaNNN,4*zh`@KwNNNx0>,$!j(GSr/UIANNN7@KXs^(+&Bt8EQ._|KNNAICF{E+8,)$BRG>tV2UCSpNNv>I(YGLy+BOENNKJWx?zm%W8Y>1^>BfKVX~h)H:SwESNNNmJ*Sk4H)CD)1O6`/NN}Fm|ei9P9X+~Cgr8=h?RKNKJ{QJhygSmKNNNi,`T9KKzaZMNNNsQ=X81@,~BNN;kFbz2yca$KNNN|rXc)Aj@DmH3g-WiPyrWjN}F!l7x>RjHt_|loGfPq[IwNNv>))TgDwKF,w,?OEfYKbPONND06z5pu9yJ|tNNAIY|r*^U<zH%&OOoDR.,+$NNL.5BL4ZT|YNNv>ycB|WJIr(<LnqTtorQ`_F2iNNNvHs<Cr/?L~U];m|M_YHPjC[NNNw&}30hfq)mtV2ibIv:2JpNNNRPdf7w1b@%E?2y<MKx`3@!mtNNv>D[vtSm4qN=!X^O!/H-P3NNAI#1+UM-z*^#{dSoh`lY~TmINNZ;!ThUOkih2)u,K.Wj7q4*!jNNQt!1MrS+O),NNNZjD2ti0vV^ho}N}F^.R$]>/+GSNNAICl}H/KNNX}e~U6nNNN]J&w/F57NN*jZTwNNN;A$$U!x]vA^>$=PZSGFr#y5EPd(MuINN9MQtem_A3NNN&zOxQ=4nLYUmKsV_h-nsOanvV]y?Us2NNNd>^!IpDwNN[-#(((<pINNN(Vw~-1HMh@7KNN[v=z[~^9_NNNjK43}O/^$NNN;!y{qho-j#ro)DX(n;v]7ni+1O[N}F}`^Rk!eEV1^]KN}F)B>]vo!dy>l&rzy)kY.wbw!qKtNN,[%}sL_(?=>hNNNNxJQFe;81NNv>9:FsN5NNRb-D85Em*5Mp1/4nw?}NKJMt,}t?Hs7Ke2q,~@cg;7U_NN}Fa+c$!UxY#PNN}Fm>1OjiDG4@NNWVa.(dmQ]x~NNN?C-E.1R4PhP:R@oNNNNYt+.&9-I)cm,f/:vVE%YbRNNN$F),}=UzWY,p!NKJ4xs<w@-MytNN<2yrcjwh,`NN6zO,m&2DVxd}NNc}8QhOxDZTKNNNz4rzyU*-Pin.L?W~j4]VNNwGIW,k+@)Su{?S3%{f,@nZ`lg*O9!N}FI}?&dK3[NN}FuD~+x,B]Uj1Eg}NNp}.OeSe`$}NN$tB=R`Z(1NNNQt,%yz,)-6VNNN5J`7u*KNKJ-M4p/?(}NNdFdX}NKJ%E&T61qNNN.JgtKNKJ:E71Z^FX[3neKN}F8VK.`@c-/O&$*u+KNN:93afghP0>uW?tNNQtyqE+xJQ!7NNNY4qG.#sf{[B>BcGZNNv>26=+&|QNNNhk0i/,c-NNi4!AUo0EuZF5{a%NNNiCIyg>e6kWq1|bJ&_$+C>ijNNNK&_P@%NNAI=loRp^&ws.-@NNi4`,Q+9l_H<Ag(mNNNq4G?C5jN}FB=y?UT]t$<W;NNKJpqFP|5Sw;;jp3}NN{K.(GWYNNNo>F8lT~^7nWyKNNNF2g9,U|^)&tLNINN:9YSN#(/&sNe}!NN!wjT]jCcE=Wr_3wNNN93MNskJr}NKJ?z4tIE9w)}pj6>X2gm4>5,DFKNKJu_M]XK/z4INNL.r$bV?Nq-{#&-HvPNNNTkvGXSNNNNjNy#Tg0KNNdF[k!NKJCRD]_>:NNNuNQvNNv>z~l}:S;MC>l)NNKJii}TySNN[-!z4>!,}NNN}N$KNNe5*3De)8ZnKNNN3J.$j@?wNN[-|,>{#O9NNNWjNzsX&j-NNN)UMVNNAI@UFn;KNN{Kt>9NNN&=J5NNAIsX>&*tNN{KrNtNNN}JbSNNqSf73X*36KNN*j`0fNNNWk<QC<jNNNZ}6[NNX}XoKNNN00F9fgNN}F+{vtNN{KKG-NNNictkG~{YSNNN3hE2NNAI?tcO]}NN{KEXINNNE,JNNN*jaL5hHKNNdF_}KN}FD0(!NNQt=g8:0!d.MNNNf@2e!s%El^8Wa=zQtvY#~ML`wNNNj#;:e]B972,6i2Sah:EQ[:s$jNNN?4f.Op>S$=/:FSNN]UCCxvwPP)NmzNC|uoC#>/e,Z@NN]UP|Od8q$2peu;~_fb42./D&?qNN<2>.*ZtuN;[.F{m4uy+Y&i!B]pNNL.V=bwklh==2L1%bQuUcRD/%KZKNv>(.s]==`bu<HxNNKJ1+ysO!NN[-+B4dfW!NNN:s@-NNWVttTgwIcVDNNN}}}-`>!%ep2ALwg$w<10@!6C&k[oyaNNi4+LMwkcUNNNXH!`CLcNKQs-Zv741Q/T]|X}RT9u5YVNNNF0LGJWJNNN<2}RPhjr$V[)jc{VhNNN?C?^[@_r^y}g?I|KNN7!{%o)aa~$g7MKNNX}GoMg^afM-Q0i8QA$*.DtNN!w-Om/nGKN}FCR.E2R|NNN|v:wXdh,%WyA5q!!NN*j4^#*y<Ll5[NND0CQ3fH-vPVjNNsp:4&_=0x$>8ha(?MHtnKNNN#Sd|ha);>00@xHbNNNHM{4:}wlB,!cmr;NNNATgL)?bp}*#tM*SKNN>vx;5x^E$^!N}FwwgP%Zt.eE|9NN;k3C34O/{*o[NN:9?2zK$TZq%#~KNNQt^y7uxizi$NNNpHn9?AwO(<}R}tp}(*9%SNNN%F(g#9#1Y=KN;kW`B1oPjY!!NNv>=ak*yT;)00{j3b4lBT4zNN;khZ-2dfXENNNNe:(a!H3=S&aNNN)Q(#/&vhDaNN%siS1?w2FxT;h@NN]U|v-jtk8BUO~Ov0EvZ|8rsLXINN;k!hzqn]4VA889$K^}NNX}CQ5u5NNNJK@zh;u<a*)33B6]xQtVK<NNNNpJ-fZ.c89a33NNNNHuqM4JP#tc/NNNsQ!&%w>_dCNNL.FL=)bbyG(QmUT5NNKJ$6il#r4sAn{8};7NNN@F.wJ6,zn=b{k5]);7_SNN)7^4CkqDIYX<7C?KNN%sLx6lGlu0dhnpNN|,geV5KB/BU&H%m~NNi4YYEV^Y1NNNbH(KhQWCgo)hq9NN;kytkcxnk1^k!H55f}NNqS1#D}^633dTi~vUaNNNHH7anQ5eKdrq4-~iN$>NNN(kIwzw^>`1TN;e6INNL.~8Yo0UQ-ZAPm2V}N}F+4wf&9GWKNKJx}I<,Hw5bSpZ&z%sjBOwNN[-%}|V38`=D,0OSNNN;Q~O=acj:t(}Bx3NNN>MW_vAH[NN)7k&eSf/4]t>osOANNi47&Lsw=A;y?QdsNNNtC{aRua-p:@Gl>LUNNKJ_hmpYp,1.oZnRY.R?NNN:C#!xTH;wS|Q9AQi-aNNyr8Y{eUf1AhW0Cd;@<tNNN<5n>61^c}NNN5Jtn$#QbWZdJ)tK=|#U#>NNN}Pk?h?``1NNNAg:EAAY!NNAIqr`D:q:XWDKNv>v7x2UAUUbq^x(!s7)NNNsHc|Y]Nh%!(Pc}j%f_>Z!hg2NN%s%X:BfW,dK:>p%eTrdDi%@4jNNNWx>i-{<eIbD*LpNN1_:E}(xe@(4b?s&ys]w)]C]_tNNN*r}LG8O%>,snGtNNqSqX&u}ZBLFnATe&UNNN!Ay#M>b!(0gHsURz!NNN25oMiC,W{(RY[47tNN|,Bg*9)bpP%pcb??NNKJynoyppUk0~Yw=fdKNNAI<C]XhjFg{_NNNNh,m_!Of0<o}NNN>G4svn!^dnP,-^*dd-;2NNyr.eU3r)x%.kW=V&H7KNNNt&Sc,ZWd=2(`(}NNqS6;PXuO^_V?}b$q-NNN^4[u}x:Rn>,rA^6|KNKJ-3;B+F?^L3)5b6NN}Fww;pc&a?/bo3KN}F{Q/T&;D:cW~JlxSINNRb+BBNb=m3X5P!A<B@KNKJQ=)APue$!7*W1nV>5HNNNNa7audM]^2fO@I3+,hbxm!N}F%rig7Sl4Vq>/BJwX7NNN>v@6Q)VA8>GlcMV,o#_NNNvFFZbwhQ?#%}vRjNNN|>$9G<:sGXctQ5NND0QyLyb&4tj-S`!!jIu>NNag`06g0:(VNmO^4LS@jNNNS/$14]o|?aLVA?m:<NNNDvk=uUG0(cj1UUNNv>k8:;d!<xt)E3/#Pz2NNN*JK.Ek3DeXW-VWX@Vw-NNNgj;VbCw*Vu8NNNR},LdJ^gp>}{V}d0FfNND0J+2ZRBR?xj9Cv?oKK!NND0jm2442{(d13EF(8~E`NNL.AI,;z/;WNNKJs1TGePx+.|-AVaV5NN[-{gk/YK.anH.]INNNiMud1sNirD!lIB|~NNL.VXVORz<+*XfknNKNNN$h;>oQLGg35NNNwlRkbI4i^bY3Y#/NNN^>;.OX!%f+qQT~}IP!NN,[?H4|lb:l1Q8NNN3KRE_P9-7o!NNN`u#|Y$l/g@TiCM`ANN;k^4/m~G0f9vZ5%HhKNNAI9d&Ubk=ZH.LLr4S+E]zKNN%s5{dD+,jXzN?jNNRbQMjSgHfrso0-EZ|uKNNNjwSwqX&0DQ7NNN&j?;01,9DYo9EA-^xKNNa5b}Rg+hyH5bUkzZe#NNNN:oeu,HEfL_6[)3Y>H]@mjNNN3g!NG?>!Gr2|PI2C!AwtNNNNYSk4SnzVi9MKNNX}T8D`?c-OY^UoglTiY=8SNN[->b6sF^A/GkH:tNNNugly~+KotNts-`4a3`{85eLL[N}FyXKmhu,NNN{KLoI=t/Ndh}NN<2QlHMbX%.NNKJ|,=JOf)KqkNN}F^.Xa<C5VCtNNv>28HLILQk&|NNNNl;:l$cNNKJcoiL0hkBWgtN}FU1l_L0&<o/7cKNNN-5C[TF`A8xwNNN_tSp#@4OY=oU/NNNX}RfdwB{IY,,NNv>.=GH#}NNAIp}5HMU7Hv2KNKJi,$oaVs)Hn_mvNNN`v|?&gShs#^pNNv>M9oyWUo~6wKNNNo<p)jl*VXUaNNN2Nn<x`LTQ|XNNN$CjtICJ<FPJ}NNqSggi(#D1jNNv>do0gg+k3r!}NKJ|C!l1dtNNN{KrXDx|6/&OINNAIttN85jNN*j|?u3Y+>fBPNND0/&Qy9&SODtNN*j2Ny|5woj]>NNL.jx-+G8wXNN}Fs%Qayo5uawwN}FY7P(r~s&`YQHw#KNNN<V-L>8W8/9Dy;^k[RPW$hXNNKJ{$f<_cOpKNNNH?U@B7p|irPBd1|%}W2Kl|_-Lh#f<HjN}F&=e%4ItKNNuN<NNNfA):>%ooJ/fkKNNN9[^zxMFx~XdNvdv>{`)L|cqrzZ8PYpNNWVt?r[y4k{TN,?;LO,_jNNa5(+bdhc=o|Z~%u152KN}F|,j5@bNNyrHp)BThk-`*_Wy9FX}NNNfbs5NNqSB_-FKb}INNqSt?Y-]GR2NN*j}pqNNNB.;YRujNNN+CZq0#WnrWKQ6!NN;!.)2yW[}NKJJQsn;ps*{O1qD}niPv8rm&`y!N}FVgf{w1LrUK4#P;j=gNNN,v^PajaXzR*m(Qc,ppp;KNv>5-^y<qwO*.($p+!F/NNNek!J8KQmH{53A42Jq%dINNrQNYRIjmm)Y53nrkhJtnLNNN$Cai*bRS[AftNNRbC:In,`;J)quN;,dgNN;kUrTXfajNQNNN{K<h/`RNNN}HI{RwaOtNNNd>hdxqM2NNWVn)V}|0],]NNNjK%}kxqv)u@yt++^NNNNb<f5z&NNi4C$|S8w5NNNC4(fcB:N+3RY6awNNN{J!rd#PcX>|2KNNNF,QdH8NNv>1{%(z,PyM#%`aYt]&<)I3iNNKJpH>Gfm?$FGtN}FWr7G)D>*$CoB42Xac&-e477-%U>eUKNNAIUayLz+SvKM.T7x1a#,#_NNKJ@JUM~MNz!{NN}F^.u6%y~v$[NNWV5j)V,tD_5KNNdF2p_DpNNNks6j(Z$r2v32KNKJFCRo}M8kH;<`%6%SyNNN.Jlt!itNNNs>klk)NNKJHe1{ZAfsNNKJ*)c,4/4}NN;!s2u_1{EbHCYJKNNNV<%S<318q$??Ce|INNAIO`lmAjNN;!C8La_=!NKJO1c>NsiJs*%CpL-NNNQ;zjY)5tNaPA}NNN`~bA?6NN*j`mnC>!R#qKC)g!]5,z!$`!NN!wwWGYEatN}F3dz(7b[4idl`xb4v6--9/~Fb5e)UntNNAI^X`bfJea8|q3K*s}gG~9NN*jtAVET3$B/ms6XmJ=AloaP5NNe5Ctpc4)IvcNNNwT{ko>EHcqKN}F5B=GytNN1_6Wf;(|kg*jQ}NNRb(n^{n:j#Hft5~mlPKNNN!F2u*-NNAI/f?m]}NNkw{1mv/?VR.XhJ,>NN<2KUzqqH@>NNv>.=N1$!NN!wQ<)DVXNNNN+,E0XvSN!NNN-g+3Y.NN9MV(jq:07NNN]Ih:=?JCz-U*wN}F]v1^Opf$KKNNAI28<~=KNN$tcR8lnIDpNN!wS:`A>@KN}F|A4L)=r`btNNL.MlsV#DGJ.?AI_iFKNNLKE@,(yUNN;kld2@4TQ$*jMEScKN}F;7uXfK=B:$BbNNv>u[-(NK6H{ep!NND0BneQ2PTiF4`XhR;qxl#!B-H`ckKsNNNN`vL1(e)1RX0X:1!u!kpeM}NNQtDoh()<,n!NNN&.uoF6gZW*NNAID.n83Un4ZXJ6NNaghZtom!2|=S,:(@9qjNNNzz>Rj@KNv>+Z#9kQZ9n*$LNNNNQnT3GVr=Bd$W~+Gh1p3U}NNNG)WQ24l8[o}M{huLhqw,}NNNRhJ[3F!kTKNN<22S@rGJ>ANNv>f/l6)tNN[-CqQ]#=?j/=g~!NNNe80r@/7WWq}BE9!sANNNR}!9^9,<n5N[`q{<dzNNag|,1|K(ag>U)oB}`>}NNN%rZ:`Rj0!NNN_c.$z4#Sy_NNv>6wcWSINN)7Mi|~Gzdr-~?1]MNNL.G7.+cvicNNKJJ]5f;7NNAI22.;z}NN*j6;$Zpx>9k6NNKJcH9-f@NN9MBgw-3iTO:lg[7NNNnksYao!NNNgG:K_Hgi[;iNNN(jQi>hzB0oNNKJ|PRU63NN<2D->P$L&rNN9Miil*S2fNNN(j!1oao5K:NNKJB@<#2pNNZ;{]}`Zrg<*_(q,:??&35CZtNN$t,s6Y0s,5NNuu!6`<YT6xncnM9n!-^iab0Zk+AqR]!NNNWk?qq^c2^DQM[7u%_L.(?NNNvHTL1!I*-|CRMqVE#3RXq6tN}Fy1SsIl:$~3NNWVH%fK!xr,TNNN0>KF@UpNNNg8//!fM1Hzw<NNKJ_hR[>C|Eg]t/n|]~wKNNdF;7JRKNNND8%<f3~TjNNNJS[CBnENNN{K-%.~,NNN-H9<0uNW~ipa!NNNs>/o_+NNv>G)CSegPN}3z.-Oq(DpNjH5NN<2<NG(h0J}NN88Z7+3o@ozeqmu.6BJ!)7YyqOR#kBf@NNN3@I)5BXHEr^d-t*1/Uf/^NNN9C$W~rFXf_}NKJ2g&4@tXNWtNNAIKL^zm.PX^xNN}FzGrJ_>NN|,%oJ65[!,&L`(:DNN;kk(SVO([*NN}F,DmUMSNNAIuE<_wtNN*j&G(+|4<ELgNNKJ4iB(WVNN<2(k(k)/oANNv>s%B[B!NN!wE95x@vNN}Fcv{^|2~lMi;VKN;kO@]&pW`k@wNNqSUgn@yBYpNN[-KUv;~AtNNN[/_<tB>9)?anw_KNNN,M:KYramA?7*}N}FSwH$0p?K~=z*jC5NNNiGtSJOF1}cMbyVVBj4,OvXNNNN@Y9=TLQpL{SNNN]ca8F6MVQV606)rY@,;6Mq76D|%@y!NNv>ry:gmosW1Kh6|0,C9H)9NND0kzB>3>9V?KNNQtO``O;D(f,NNN|0*4bC3Pl$ENNN~J{,}BNNNNSP,4:RPIVKg6jN}FLV3I9qX?h/qhj+r#pNNNuNLjpV[NNN@6Pp*mNNL.Vp6+>YqE1;ex)wNNKJl0iD4RWQ@1qRH`u.tNNNTk,5WhjNNN4rHKHBKN}F=*_+vINNWVyl_-=g|($NNNuN3c2]NNNN+Czeqeqy[T5{^tNN;!35oqxbNNNNNVU%!}NN%s?l.E%Ohy$azINN|,o%t2Q}d<@rF6/HNND0GLefN_x2S88A2$ZR`>/S6?,A]9HcbNNN|>tXp_OpNN*jQpZrVSs3k5sncDm4m=`uCggs&%+r^{}@F8^cKZtYkKNNT!iz[p#gWCCZKU6NNN$tx@2VI<C[NN&A]+rcyb9gIc+$MOt9I%qJ+KNNp}P7A7#x^NNNSSE~Xdg(U)qpsmz,{e!2hJ:[?`%|5!!NKJ3hH{)JJ}NNLK<_e7S@NN}F%jdB=3i9]=aJMYpwNN:9j=U!HF9ZNj~}NN_jV_YEog;m+mUS[]|<=]wN}FQ55sELt}Khgx93WhpfJ[NNe5u8vUGJ|>aNNNy4|H%>!(>jNN;k-giwjtdzt}NN*j+jR1kKNNp}s+Hb_1LtNN;!|4#E<INNNNfb#ZV}NN%sb%-eE;I.%62VNNAIj+xSo!NNhIeKn.vfj/;dSy-T9$uuuf^NNNoFD0|n]1DM6lRNNNKJZAH$EioCT_YzB)}$EY*DKN;kIdLjiD8YztNNe5CC3]9UEm9NNNo>lt@e(8G`f~!NNNrIEOxc>5&EAYOWG^)NNNdFXEgkaNNN?S2JG;KN;k758hk/#bL[wCqGjNNNk8rK$tv~jNNNuDwk&BNNKJD-bYT$NNWV|P4(H9P9xNNN0>M}MljNNN*>buVmiepN8uCsNNNN6Dk`8Py!NN!w2Ny|5w[T}0B~NNKJAM@<@s>wiR,!}_k/Q9|#)Z9~b5$8k!NNAIJZzK9F!5=oonfi?9-gO!NN[-[|!P0{9NNNiINNNN!/rOrzd.(nQk~bs(^&`CVNNN{Iygm&?Z.DNND0<<*~b}%7gNNN{K1aI=RNNN7A6(Zwyl|{CG4+(e-h9xNNi4XHcB0v9NNN)IX2u}i7NN[-zZ_mB$9NNNpJ%Q<)rXmT_pNNNN{$niPKNN*jW|!X7sgtO6`/8#~M6fc{wNNN*jlCPn)E=W<oNND0OrvpR0[+DUx5PI<OqidJMBP|2fbt(NNN&Ap0iT;B<dJ:.!`<9(5@{NNNP[U<TZ%w*i[8O,d+5|^IxM;7nKNND-!Lvk`GZ;&(a:CAHt=>RV&hi%*uNNv>[.{Gl`-Q+yXo$KNNCt%m[.^=0&DOFZ[fN2jc>2%^OYy@RT-w:k*NNN?C=)j>zcY?JWc]>NNN3KDs,=Ruj@NN}FUX&>l!i5Z5NNAIopjQk!NN,[?v7V^;k?t*CNNNf;l/Y:.vI*=/Nc=+5?NNv>*{k%Y!NN*j,OMzoNNNLKfbDw2I`&@#RRKN}F6R&i6YvHrDSLR]Z[NN*jwhmb#}NNytW`yN[YqmXt@QCiD`NNv>LxiTr5NN)7A!Do:mu:+o{IG]NNv>Y8yc`}NNWV4iu$Zd)SG?vIkiewYKNN*jXsY.(KNNc}4H9cg_j^}NNN$G6X.9U3F+~URt_14KNN;!bo]t|uAl{}V5KN}Fd8(r@5*<031MoNNNI;|e|0]f0mf34&5bINNN00:M5:WiAm_NNN.JOuH^9NNNr_vJW:bh_$NNv>f}aMqtz;:{k<eW>H8Y!,eo_@QNNN|v3#}>#A[^rh[h`KNNkw_xb^pXQx1%;31!NNi4hZnV5$h?t(jJ_[UR~=vy]sfm3KNNxJ4{^H.GNNKJ;k)/}5NNZ;%ROuoTiooog]z9`>uI=sm}NNX}Bami}KNNtt@OXvrL$9r;[@yI+kj0;KU`hPOzcDKNNN|C$Qdf^Rs,K@4W;;!p<3jN}F3gl.1Nqwg}UtES8Cy-8!Q@NN6zyyMoqDN(;}NN7!Aj}DXhx9e=fNNN:Cx97yW5/HFGT|7/h$NNAI3@<37}NNX}w~cepNNN!A>D1RQ/6KNNoFQ+(A;9NNv>$rW}x!NN:9)w?lsOwkmYx!NNkwfAACeO.7@vIz7tNNZ;xJ^$rn9qH01nMC?#,g%ooKNN$tVnxA!{OjNNuu|d%H0#R_K2gc@m/+FFb85WXalfk7KNNN00:3D})[Ou8r$S_9D0_HpNNN7JYpo2P%cINND0#A(skYEIt}NNQt~ard$5lLRNNN5JECfc!NKJ>c;UbIb,F0IQKNv>f4A:JSg1d]?^b^Ck1NNNq4d=?^NNNNGj%BvTNNL.pUQY+-`Z>&oma0NNKJ4XuTijt:jI3y<|VGpNNN.JHWbYNNNNPsm`+rKN}F$C?-eSNN1_uqGQLEi`[nL!NNe5Ei0Iy].*;NNNB.j$DltN}FfIj0<K/QZ/%FNNNN(0=9cr1bN7OSW@d[]zqfKNNN]KabPd^o96h@lOA<{mNS9NNNa-S:M|*y*/NNL.N8.5!BJ@NN}FvDiBgk<KoiwNNNJSq.Q$LUZpO9f}NNa5#+dfY$VrU?=5wW{ZKN;kynx(vUpi^wNN*jxJd=bNNNBK;N`ETxKd7v@hzNNNI;7;Cb1`oV1P=JRuwNNNih3jPe$!NN8N3KNN*jAiceet3q+GQlcdW:us0$NNWVYqaLg$X<VNNNuNI-:BwNNNimJBa1/S[N}F^0~;</.NNN|vz+MZpU&z^ios6}NN,[.h3TskyTzg8}NN{K=a~ybNNNAAkPxCx-x2@%*@@8hM|HYWjNNN^0%BS4NNNN-+iHXj:Rx2(B]Qb>>/THNNKJ=s2||_g%p@NNWV2E9[xSG#!KNN8N+zh<tNNNMh<]p?^g$brJKNKJic~w^HNFNz+SfhsYbNNNuNSF]l!NNNP*eue-NNx=I;7R3V5(]m3=@MKNKJ5q5E|.yH}NNNLwp<:iQ^7DwNNNpF_hX:NNKJv:vev4()^V6jwNNN~J&eoaSNNN[PzhmH:GIJ,}NN7!-+$[67y_JhUNNNIA`18:@Z/>KNNNN&r#qSNNi4f;@G*jI;#$<O#NNN>FVV]7XwNN*jQyB^AKNN7!E;dR/&C/Y3|NNN?C?HCv6}@q)oll7KNNSSdHC:s2M&@`I)pSI]jYSJ;acAqo)ENNKJS-.69v(}NNT!@>0G|:T2mUP)1KNNqSw/{2tzjVNN[-NY;^>?SNNNZ0*,u}htNNqSuvy(@]1*Tvk>57mNNNGIz-eI8?ryPbwNNNCx;JiHl7b%<oaV{3-=#SNNbce.zn(>B|.%1Qxb@j~rUNNN?4uf.VG-NNWV@{fm4:gnqNNN9C]?4Y/;$<NNNNQA=1^NNN<23ga5R1BtNN9M3KxEp[,NNN9P&xdT|u2dE$DnsNNN@Ja3}wNN}FMt?,:0Qc2%n,Z?7BZ|Unl%NN}FM94]|cc4g+}NNN$M9d%{]8*.wHwXUb6@>EpNNN!@mauGEVMpNNKJRsV|w}NN1_-vnp|P`:v49tNNRbkZN5I03aXI[$Sy8_}NNNYk[~u9NNv>xePo,pNN)7;w%b:vED=XqdqpNNL..1s1^/%HNN}FhI]#1e(kTpKNNN9dVl#8NN}Fxe=+cd_%@awN}F|AlZR29~c2NN<2v02WSI*rNN9MD0>M<-jNNNTj.YG_TJI)Eo;}vNNNJJ><I)U`$1.s@srKNNF}GS$YD6TIen}B%[*}y30f}NNNe.L*h>}NNN?^LRZR9>{1y5&4hQY{uCtNNNh2o?~fc4NVNN6z*j|*,e[iDNNNdF`L`twNNN0.SkS9ai8*AZ!NKJGxyvZikUCMN[B~ceNNNN.J]<wt9NNNX0|kV,NNv>o2P&?OrV%2/gNNNNN!AuLmtGBTo&[`CacP?{NNKJUXC,S(e(.-NN<2(Z{HwOuKNNKJOv01mqfs)@NNNNCVlMPBtuhVbbX}NNa5wA6Dwh;D!_7iFo.wKN;kHam}n|.]$NNNqSg&__/ZnJbaG>1lmNNNkkzwDo3INNKJ1KG9%|Ui&Qj=/.oVa_vCKN}FG/sz`2NNZ;GzJ<L->Dn5p+E%Le[Ib-wjNN!wt2BboKg^^;LH}NNNS-?z1oNN;kE4h91,[GKNKJQcMm.`<M@/3=_KNNX}.W8,D%SVDtNNag9l82AOHY.is/K8fpKNNNN!mjHC0O+KYrY:xi+87#koKNKJ7gy?oZ;,*B,@eNNNdFL6RZ!NNN]4hZbnSa-|Kwey&T`}FX04NNNNR{Ms(oCI8cjNNN~j`AZ{.R_d@NNNfAvOXe%b2<1wiNNN6gZoyS6K_8*fw-3NNNvF>MuQpa:&5HLL4NNNN98Z6(VAE<oprdeh=E12&xwNNNzQDc=x4p[NNN6ef5v0NN;k6w..<Sn/KNKJmklQ1ek|o&hxW}NNX}wd+d`+z=TSNNag|vEB^^`UyBb<_ecPNNNNAg`4{b(@8{)|+KNN)7%oL(I,Jk<89)P.NN*j?7g(0Q%^K(eGXz&t@;%0LpNN[-(k;xw{bktcSj!NNNg8mSJE[9gG@8NNKJqzOSkz5/<%OBj-}NNNMc|6Y2$f+bwYF}NNbcI&ZVW+iUSh.avZsv%K1oXgmlv#x;~tW2:30U(}NN;!M>x88gIFj}uQKN}FS0{);D??^oaqjI:tRWc65$?Z=}NN22+]zVz#}72Y_Xb>txLdKp(p+43@nvNNNN(Xx_xjCn=)yv!c2Wq&*!qk);ko,qpvF3D9#86}@t[~@Iy%NXFmp?!NNNdQ|BZnkU+a$}4wiJb6e]NNL.CwA_$#Rp.HdVb0=-)!0N%tbtrfL5NNqS%FN0oC[KNN<2R`~jf-N-xd-((]cNNNhkRes5C{NN9MM92ZI8bNNNtPGk.cfE@INND0cdafhPn5wtNN;!wK~BmpKN}F4)9WGaq4NN}FNV(iMhf+NN}FEZJCUKa]}NNNs!C{n?`p_5=^m_jjNNWVP,;6*@=duKNNNYmJu6.VmKn4wkw!_dr65_@NNNpF+Z7=KN;kT5Cz.k4EGRX*(8tN}Fv:fzvr$NNN~J_|_&5NNNxzgj@`)cm-ycTxYHJ-+<$iYg#yL%XNNNv>y<O^/B1|A[}S3rM}$KO$NNi4GWxyNVcNNNM43NNN0>5M(D0%+=2qC?]z}uqwiNNN*JMmY|@@ZsNNKJzQ{d/K`Co9NN9M$Mx5@i}#@^;_KNNN9FS[t;wtNNX}voD]PNNNgJJIQR`TKl@9MNNNTjpC3!Hm~!?`u9sNNNi9=8k(M{.arw8:QdU[.,Q5/S|<64v/NN9M7#2*V^}NNNKTIG<+vSj5.y]f!NNNiN7n%#!o5NNN<0fYV}sKNN!w,[mpf:wNNNj&{W`(/y8Q(}k[W[NN%s*j$L@?XiIOS@NNbcXRT)miW+?x`|paiYS`@NNN:N7v+Bo.3RE-S$`q)Tu_NN9M]LS*3n9NNNtPc{nR}3nyNND0XHSK+if5)NNN{K`GXC.NNNVTH)hz$w@X@-Z-NN9M~1V6LubNNNu4W=%QNNKJT;07m7i5b_r1KN;kcK$u;Q3@9B9*kZA~6rL`,oN8x^iaR}NNT!o4GD$ut/p!Aq{NNN!wQbU7U4.=}vI*}N}FMb_l~@sNNN<NZS(@]cNN;ke_I,c?f5E+];:[YtNN,[V]O7LSbmb/aNNNp}9l3=Ky|MU/T#<^9NNNF;r4%hPx`x<$a=,DDm1!NNbc.{v:Y^tW^KoEn3e_+6wNNN!Tb[k~k.iNNN[H5,g#l,l-NN;ku#g&yO(Ec[NN*j51`-UKNN;!xYwtbGkVKR*GKNKJb<#2|U?}NNT!Hzap-K`}!JS/[5NN:9~*!|,1bcXtp}NNX}~LC.[KNNjm/jO~zmO3XHVR^Pyuq-o01{^?RO8fKNv>8VDXch(NNN.Je1yCjNNNKPuox`4vNT!{E4,NNN?4/Y^q^rD]fO|9NN[-(60j*^wNNNX.i)y%b!NNqS({/y?.PQ>eQ@q8%NNN`FF|WwIDevAMjN}F|A-!9nUe9!NN[-/!<d~n5NNN$c5bNNAIIAW:J!NNspk)E3Z:b-5EjfigdvQ*7NNNB2ky!/kKNNX}oE(J@KNNUK4I(J{:m|7u}NNNNC=P:-)Qc8;9OL8NNNKL^Tnd:O5r+<;q>;Y)2oMWwNNNL8l*MVBtNN22tCi$c.aC95mB4p8rJwHI5MHnSyZQwNNNo},rt?.}~D;pwVa2@l/7ANNNzJep^@m9OAN6=-;hR:JlyPG[,NNNuPRs`<[.:Hf~p2]%zOPh>/Zq@D?}NN;!7Q.7]`#PW@I~KNKJ/bq49Hx|Ty>0Xt[NNNJUG:irKNNNK8xGMZ$5IKSNNNYUqsXbBStSNN6z&(=hxE=26NNNUKGb,?Q.@W|LvNNNUJBkiHU6@1721E1)$KNN*jc}0A4}NNyt_3mJnHE6aUs-VtnpNNv>Y6h/M(M-PJ]gFNNNLK&uQ1OeWSKyIJNN}F|xA,Jazr<R?-1]|NNN*jnIN^U.}J~0NNKJTk6ia$NN9MJgoXUS>8t1=]7NNN%Q9be!Sk-h<4#f!NNN*J]%MGyICzXzy5)IogNNNNnkvTHG!NNNY]hJO5`KA;rh]`w7NNyr@=.A:BD)#eNnBzX5[NNN[yjU8JNND01+5G+}<!itNN$ts,-XMqs!NN!w+KOQl{KNNN[wgC%f:-}NNN<5JN[*qtKNKJP9gsg^}}NNQtp*-u@(E.+z|c[=-j<KNNQt!-~,a71H4/~~6:-kj}NNc}UsII-KnV!NNNic_4Lg;@KNNN6D%tUs(tNNQtC4;Zzz&_wNNNe.,-w{}NKJ%)$u!J&>6$NNv>NqdKHt<.{eKNKJW*`m`V-KNNLK%$)bZ?KN}Ff/EKg[NN[-8ucVfR7NNNAcJPQHijNN;!K@{qUS}NNNq~g?e(JZW:OLjx}wNN[-Tk@%L0jNNNvDIE(hAyZVtnutB_h0EL_NNNbFnKqP!NKJ$cd.sW@}NNT!sMO.ZM[V#_Oj3!NN!woH3;7ItN}FRmo|KJsg8bvk$2pNNNZ8W<1/>z:)Zf~09NNNT.mP>:6}NN53N8O:#@M$OrXYQ#Zr{8SNNNNP!17tY}NN537A4Is*+%`B.(C$f`ax-NNNo0)DPW,D@NNNej=$E6):Ax_kWINNZ;GwH`044Po^%L`-Sd|Gij7tNN{KU+!NNN8ku(@]*zbpKrfZ!=1xrdJ`KNKJXdKNNN_j9Ai6Wp2MA$6QrXWBd[NNNN8Vs[NN*j}cPPIKNNP[G,<HDzVPt7+RF}w1G>vvgX-!NN{K|rSNNN/MA6ygbZq{2QK-pca9>722QLjNNN_IJ@NNAIm{4X;jNNqS|Xb<~Yn~14(~4OcNNN$NY@0f{NNNAIF[XJW$h@!}DXkjhRpAVfNNv>/!#s=jNN532qz};A?*3Lio1g+z.Q_NNNnknPx-NNNN[.ks(cNNrQ>Ps*&BuS!|gid/So$zSKNNdF=m*>SNNN/h1)&7C~;8d.:eu`NNi4]Uf8&/:NNN)T5`APG(WeYZ79ZtH(yh@NNN~JEMaq/NNNO4?@yg`~NEk35Ag!W)Q{NN9MRbh+bl,NNNq4bX%[M24Z>}NNp}2F,8dz,NNN<NitWlbANN9MO-.E-{pNNNg.o>NNAI$r,KNN{Kl{%Klf7pfbNN[-<EgQa{-NNNL8YsNyktNNX}`%E=UNNNHF^>AgwN}F%x[r{1BSps@Ht>aNNN(8uPQst}B?NNx=zf&|D&qG#6#_OONNv>J:B-4n/NNNuNl>@PKN}Fvv6KFkHR^!,qUXuXH0!^ryNN;k_{Vsi7`YNNNNE)skH;m#IDjNNNp-AsQpNN;kc~0fJAG]TY>Z=^Df9o0bAumQ02&y~}NNp}q*[t~PHtNNAI<:~G5nYYha8%mhZB+gI]NN9M#(`@/.@NNN%Q72-$`?!j*.MyHNNN}Hcozj{9[NNNF0d3);<7NN[-kwyYZlINNNh;n<57pf^xR%UQ{MNNAI_4Zm2e_mt3DINN}Fw)6I>[^AF;IE:VI3d3$,NN}F#c^Z<F|TQ*%SjeB}NNQt_LC<Uf*Z!NNNQ0yn};G^23NNKJk(H>hwNN1_pp)~wppL#DLpNNRbN2u;662RE^r<[1BR!NNNHe[pcuNNi4Ct;=]R18;tON7NNNDsop-$9>$NNNJI&@k:hGK|!a>HYNNN@JMW,ZNN}FZ(@/U=cEd4U8mzglyVTOX,NNAIfb$Q!J}bp&=_NNx=bF7*hV43f<XkPCNNAI.#%2m1(hv|./3G#_d/]`oaNN<2oX[xs7?NNNv>%b]x5wC%d|NNNN@2Y>%fNNx=;VAdvkL*CJ.c/WNN;kcSf(2t1,G)QjX~wN}F`zu]PARE-}NNWV}HH^i#4YbKNNjKj,4$F(uNNN>vi66;+S5.jNNNlBsD?,w{KNNNv7zUS![dNN}Fg0bt!q-B*jNNWVEYvBNGY+tNNN9C!J0<,mz?KNKJtF]qO:ANNN|>~2`@^/NN9M$y(P&t!NNNYQK@iI5c,NNN-Nh<;?98ewNNL.7&9Y~,*NNN9M^qPd<<pNNNK@22WM6+@NNNd>~2~J%7AhTVj7NN[-qNWrD7NN}FZ0on8wHEPSVyKhaNNNZscArTnC.4r_a_~<lXLH2+KNv>Un%^0P{Gkc0KNN;k!w]q(h91NNKJ$cRds&Gi$cj%-KNNT!GPDI<`g*;{r!z}NN*j1{JcBNNNNY[>ta*zBlIq=TQ{]<7l)=tNNNO>=kQ>KN}F`K4RCE>^!NNN759vMiHx5Y5NNNw#,<7.d8)UKXkX?}^b[yFreT*8NND0i4Q`;IfCNjNN$t:Yi+|ubpNN!wV&eVZ4}NNNr_^pN`Z^,RmQy`j#QBNNKJUXvL@2>K69NNrQma|a8HFkEQ<hMhXi&&[8NqgjUJDz.ENAw;!A;}NNr$<s-5]c0i|Cqs2|/8$rp&<h%%H4-@A{ZDGXs@NNv>8u3|DtNNqSRXFFb~HwNN<2*~=L`LR+-PF_N^_KNN3KZGQ<$0Cq}N}Fo}%=O426eBSLj:fR.:c*(^NND0KJyR=%_+UjNNkwt4RoSzJgo|&aa9NNAI{+`FoKNNX}ZI+X*`1l#/NNv>zfn.[[NNqS!)vQi2(3NNv>@B57PdYr^5KNKJG)/s:@XGqCX[KN;kqfe>t&e6*tNN*j~~h<_}NNp}7@E0he0NNNLK,ap_MfKNv>ZB5U5(d=>*PNNN*jaM<`8x=%GmfmKC;J4PAkSINN[-Bm24^eKtcjg,pNNN<87wvg(|f}Y7|UTw3-VawNNNX>AE8n]siTNN;k|mhiYe!x`NNNX}(~G:/KNNOv{{dm#VwM>kbNNN/TR5nsh#C4=.F?afQjNN)77nGJCHX|Sp#+G9NNL.S^cB;:SdNNKJscVN+KNN*j0,1PaKNNX}A1Rz:g3qw!NNi41_XEWz<m^$F6KNNNP>tr.9jNNN2MR{oC-]2R;NNNo>4Y{c=G4BgiNNNNl.W6,x2;kzNNi4nGLHwD!/dm3$yNNN?48K-=c@NN1_>Df|c;/&oTc!NN)7sp,Ib#vz{2[[)iNN6zo1z|ka>Lwk99}L|{dy9)oa$]@VU}[NNNF0XCHPK7NN<2O0r6HvWqNNx=nGLHwDTfhKh+vnKNKJP9}OKv3fdd]78KNN+jo4GD$uYG<yYCF_k?%;2lSNNN(k;]<:huINNNi9+kgTJMa)~v=]Ky!W1E__*uZMqh[`NN9MqSF|.~bNNNJz51(T(tNN<2a*)#Q%U}k(BMEYVKNNOv>S2S6g7c@D*NNN7Azenlw{Bxn).`/0EOClNND0+4luF/}*4!NwLY%_-ypNNNoF+xj[6]NN6z_UhQgGCQ@NNN~JHVLTfNNN?43Beth%SJk=*5NNAI::5:#}NN,[@{PFZ!OtjB_NNN}}SA7</!qG~;5BM4F{O$sHzX#4Bc[7NNi4Bx58c-nNNNpFh1NNx={xt#x,lCUIyZcbNNKJId&ghH|%NNKJRc3h.z@N6SD3vp?LS8w&=qNNv>@JJPn[NNuu#)%Wsyek{.;zqSoIfV!k%r~v?PAQjNNN%xt;ZvCNNNLKp!$>_NNNKJb1|:}^zWvE;`PaGNNNkwF%z=odC{hZ?0FpNNbcpXHT$<{%dd+PF]0uJx_NNNQ4lu<>Lyfxx-mL>XQ8.YNN;ksc$_}A{=KN;k)H_;:p1z7NNNQt]_~Otq3sSNNNE2Gz)sNNKJWxgpZXR/US/,?};p,DgH(o]e[l`NNN!A}}xB$At8stLYSlNNNNy1D;n7g2u3hcnS.bNNWV_3|<MJCuYNNN.Jba.![NNNwlatp%DHS4wxXpMNNN_JBYp:>SSqB^#-N2NNv>[.PfwzxNNN3KHE7&{J6saOL%FTp4yNNNATy5K]B(oOe~6!pKNNxJ9d3_]oNNi4bX~4@7vNNNtCB[9i2Dk*exp{kf!NKJ?S0|~}eC}z{PKNNN-:7zR8qyXyVjG[U!b(:!NN}F=s3WfuL;3VNNZ;a*q$yy~@=e=m)Axy*QRo8tNN*j0>80Zq.4{TNN;k`0azW%mwNNv>1ovht_d,a4f(e?Xq{NNNvFbIqa3e=QK9^p_NNNY473|7zK!NNNpHt#aDJR@CHjNN*jI;UxxY79HxNNAIXBLx*}1Gfru9NN6zuYlAN2YncKNNT!$Vkbqsf>!<klW[NN*jC<.<,KNN+j*KvkU%9Gt>{(Hc?u?:[SyNNNB.8<^%NN}F@M8tDhQO#d-6BG!NNNF,1=mVNNv>m]dG.1!09Z,*AEr(/(;DvjNNKJytt;&+6IDVKNNNPjb6{1?_=l3ezKNN$tvd<-;WutNN[-YYg+a0[bYf5,tNNNRgPbxg[Maeq.+j,EpNNNjK?#%T)+3}NNc}Io!=9j1kKNNNg.+XxqNN;k4P1H(/m;jREW~<tNNN6u$/3f,*tNNN)S/wj|_EwNNNs>ZE9_|j*6SNNNZI3Y%ZUA.KZT}U~qzNNNAI;=PC})8*}]7XPz2Gg$4?NNv>`0bP`tNNqSsp$5<zdVNN%sG73s&bP+awjl$f1qtBM-3kNNNN]IEqnwdi|Zu#;+c9tQQvOoo!NN:9ORX,q`3*!?F2?`s&+b<<As!N}FX3P$f:Re}NKJ>t$gFWnKNN*jE[tU2k?*1u=%b!!;,K-3NNL.u4/Y0nH`BG0jw>s}NN{K7Utj2NNNo>ug.4XkY`1p}NNN14*7e)/KNNkw>DxdIEd7:owGW-NNZ;::$RW[e`53AO@Rsgx&/52tNN*jBKlBP{.>*=NNNN$(#-XuBSg0OfmyO0njf~!NKJ`zBh^M$xUaNNWV44[)E%lV1NNNTkkA%@-NNNT0f*MCKM{e?yNNKJTB?{2vbxEv3DXIO[/KNN~J2d>-VNNNO>,Zp(}NKJit*4:!Sc9yx%NNKJ@2Cu{@:(}NNN_ZN+)eeZty[NNN3Jw_Hrz>Z<PSP}NNyrylj1<4IZIYDhw5w3KN}Fnr)H_%yy$5NNAIrMNi@}NN!wH?W1</G4DI8}NN}F=Xj4%&%-NwC/=wR#*BK)1s%4xc-dAjNN;!r8A>0`!N}F)UxLg{frf<ciRNNNxJJZR!y4NNv>&ANKNNX}i%Lmg#$$dtNNx=C$0do@K$s={2z7NNNNs1K*RWuT<@5NNNVFw>w=bVE4Wpmgq~zKWyUlNN}FtCt48*a+q<}N}F5`f[=@#~#E1L;L(u0:s/i9*E;V>e%KNN;!NiiJW%}NKJ1W>L,[oNNNI;(zu=J-+_*]gUyvwNNN.4$`1qX9KTc/NNKJ[w-JV-^8j5NNWV:QuNr^L{=NNNtCi@g~k5FM&Temf)}NKJ`Qtf4;/}NN*j7)v`#MhdQucT+MjH+223NNAI|0=:V!NN,[sQ%4AC$B>MfKNNT!XefnQ,%a_XCs|tNNuugjO2)5RyV5r9FckJ@:FB2dq!2FdZtN}FHb_RlkJ]5(r*|H*~y(da)fNND0HuWx9&.|Z%,]Qa)GO?{()2_cx,{DMKNNR}<S3?@W(aJz%Ws,kjNNL.qSi_&O(mNND0m1w{p:+k%KNN*jaZKI>&uQ@nNND0{Q<Il(1M?KHcA<w/c_FNNN$t9|ndU+,&K0*>e;tNNNZk^YD>?h~@8MYxcDvm-NNN9J&1|48mc5I:$GINNNUI!+_E|EdJ&Q7N1)0.6@NNWVQ?BEbE}AuNNN^NF#7qJMmCT|}NNNo0:+hbdiMD!2lzJONNKJ`.Qq0t/5pg`*$!2pNNv>2E8MO-JwKmQ?X?k:.(T3NN;k?:`b}n2-NNv>fomI6tyNNNjKGCmN?iVfhE=M}#NNNNCJ?{wx^PA+^+BW:VNNL.,,OdMXz$pIuRD`@}NNp}x|or1)JNNNp}%JPxmaYNNNX}NntVb3ZqY!NNL.ZWt$99O:NN}F(G}ps#O(gzjN}FZB(12gBKNN{KDv+:PNNNfTtG41nW$G/8*$@XNNKJx}{y8ok|ALT||(R&Ry+!NNqS&!%z{[_-NNWVg{^:oWrzMKNNjK.7j<cf}}NN_j$}Ee)u]WU?jxdj7Iw,!NNN#:rvuhcwO%9_V3?(]%!NKJ^.}wu@-Bo2NN;kfAT*;/zfIA>=)A!4>8OnL&l(&lk2rNNN6z88`AKW:a}}NNc}x>(dYIU)INNN:x0_&U[X}pNN6z{K=,3vESU}NNLK3Z{*f5NNKJfbwV)cJ!KNNN`QKqtn#!ob2NNN,MAiZ6^OS+y%[N}F@gXcklj^k&LwKN}Fp}%^<}NN<2}R;:5n^aNNAICCNKNN3K)^ea*Twt}NNNpG(jh_}G[NNNYkQKNNe5%>Ni?ErO9NNNnIO)i:Q8%KPtNNqSXt`,,=!.m0pZzc9NNN;Il]r1C8_NNN~Jues^D#x+c9iC$eiG~/xKNN{KZH#^9NNNF0EMR/twNN|,<^3qG|[wgD3!gBNNi48u!&Pm@NNNkISbhsIplWgg#plNNNENW>QlzAYOoCne.NNN!ABl4C09|NNNdFV@Ex~4hb3}NN*j^rtpc^ZQlRNNL.APIxFBH9Gr-p>:}N}Fg-0p`$s1P20la*4oPmKNKJimAQ<4m4QtKyNm-9?XNNv>TMWs-B2()o:}y6+,@NNNTI}XBi2uD2WrK)j+X/_NNNWz6CF_g)n<06nJjX>(SNNNy>LC$llU[NNNQ;>>KEJjVi,A!NKJGx<7MYird)@#B2icBNNN3K*|2Ztfb~SVa^G90oPNNN*JO(8rlJ#3&O*^6Mw65NNNbP=Xv_%wR~fJLSV8z~KNNNtP>OMxo;KNWLqpip)6KN}FM{/wo-kX)9[Eb%DTifNNKJ+4AmeIhsKNKJPsY)K:yffok]NNKJuD_%M;dS+I@4gKNN{KY=*BmNNNO>.cNN;k_jQ}gSd}KNKJX}sKNNQtx]!d`$~%fNNN#kKcNNAIAfcNNNmJ[cyw2[`NNNP>duKN;kN&D8C>HjnpNNX}r:NNNNv4Gvd%GUb154?GYNNN4N67@aheq[HQClfTlq!NNN{IBjC!#2C[sK,BX:&5tN}FubYPAFxcsc-t>K!zRNNN6TxB-wp^roD^e$P6+n7NNNwTAF(,)t]by:E35qZ;jNNNjF6P<GaLNN}F%E|9g~d?Ek8FMNNNdFJS`7*=O6$jNN,[%b~?Y.$3|kMKNNytO12cYS[T>Hx@NMU!NNv>T>:_nXJ#D<fVuNNN[v{t)Px.kZs&&XE<wNNN]QeU.o&3NFnUS!NN,[02n8!xhYHN-NNNZA+~=k>BAc[.0`mXBYf7KN;k-g1f.Z+|qSNN)7WAF[0A^qJ8z[faNNx=3K?3M#HyS)Hu)sNNv>4P%T962e*oekNNAI,+uU~}*W,hQ>NN;k0[f0z2;T?.)HNJ:!NN!wR};1O#6<+zAB}N}F,4>vSo2|$eTSll)@=NNNCC_:`63ZLp7NZwi6sRiNNN.Ji$hA;S2x379@<+c1)k#NNNQC_!0<NX>,NwHv=H+#Y3?tNNQtc$o26x:GpNNNMFiLt}TBY-5iFH8hLKNN8N-EKNKJVg#xK>!lzY*orh*$oNNN@Je$KNKJ:/t@_hR.}N}FR{+WzW6dNNNNN*g~6#SiGb/l>}]}NN<2K1iN0m9VNNKJmUAV[[~>|o>{|;g^I^r?NN;krQ&][NNNINOt)*e;gD,_}8aNNNANDrmH+bjA&IxK^9qbv}79PnU2vk9NNNLKGMtBa@NN;kKVm|;v=!hv@UAgjN}F[y;*)&#KNNT!i{C7FJKKl0q/4NNN22DuaT5RP8t8t3N.A>KmxL&@}b*2P-tN}F1IK0Q$0z>rf{*rv,9NNNsF1A5Qk`PNNN1J]%=So9S%KNv>=/[De=EB79,XNNKJkRkHIQBr|j6sL}v}NNv>rYV{-Au^_@8o;f;{iy}rNNv>{(3)bzM)IH)p]z]LVaZ]]h9NNNZI{I?khf6spCe5TWpwNN<2Eyv@cZIu}DY*br$KNNc},n#/&*<&cBP+0,$4iKNNLKyf%kdxsm,oxZNN;k0g62leGBa5NN!wg.Ki1v[N}F1WYp)(.KNNp}Z0#X{0(}NNAIznYG[fA[lrU>AfCejOcANNrQcd,Ah]zvZh`k-VS1a&1KNN{KxTpWlu}yl[NN|,%R!~N_p)quJSN@NNAIK8WH`u3-5WH}NNx=ZW{P3xuC1(?~2cNN}F+4QbL5!lAt.%>X3tNN:9l:nWnw8L@:1KNNqSK1`$7m)mkPW>31aNNN`F;iq~k.JF^?!N}F_IDD1Fu`q?1OoNNNENmKV}b$m!R*oh>NNNJKtEsLt,}.63<K!kbCq4M_[NNNks*W.yQ9Y/3pNN}F!J+!)q0f%TvQ}}NN;!R$B[?Y45a!x-KNKJzuT=+w]&Ms%Q`00-OgR5NNWV@Jc<^kiKG3<~^3,<+pNN!wU~w]v~}NNNI-xgJo`5`PVeuKNNAIH0J?k(Iwn!5NK{)rEDxSNN1_2E+75Rj4F@6jNNqSlEwdcp4jNN<2/V&:W*xMNNx={xdty$u0mJ)OfdNNv>&cBgt7VNNNFFF9`cxu{X9vr=tKNNoFBpzA;)NNx=53t9t,%/+?&]o<NN;k]Qw>f|N~{7r_oC5w/o6N~|jUNi[6;NNN:C5j_!k##t9p#R6[2@NNAIlrUKwNNN$t]Hu4Wp.TM^kSwkKNNNIJ/+|xstNNv>w;.P+hC~6$3/8+@4^2<kNNKJnZ!~P2NN[-h)qQXgjNNNHI<7,++gM&_4b+3NNNoQNaymIcqN9Ij{R$igC_P[*{~^OBx5NN!wN8jL{(NN}F0B1Vh<ni<W)#,_wNNNwF/;ABvKNNT!3RYpN:liv%{DZNNN,[M:g,xv%vZ%;NNN.J^&KN}FI}Ju,c[?!N}F&AjKNNQtbQ.bzf*D,NNNs>y9NNL.{@ny~Jd?NND02<l!PK15;NNN{Kv(3(-NNN/T/u19zh..d>k=OO(}NN53uue/fO~`8PoV$T*:btpNNNOQ9dO0-xHwHq[N}Fh=:_]$x[8X3=JsQeYNNNgJ{a_:4il([TSNNNnzL46>5p-;B+E7",_cBN);
+local p=t[d:sub(i,i)];if p~=nil then if v<0 then v=p else v=v+p*91;b=b+v*(2^n);if v%8192>88 then n=n+13 else n=n+14 end;v=-1;while n>7 do e(b%256);b=math.floor(b/256);n=n-8 end end end end;if v>-1 then e((b+(v%91)*(2^n))%256)end;if #o>0 then z[#z+1]=table.concat(o)end;return table.concat(z)end ;_KEA={};do
+local _d=_bMP("kkVs]#FXQU,G|`c/61!nB]JD!-#@90,kkkjeo,kkTn6<]V?0F/R>];s)lWL+u1(FU=t:[kkkZ>M.tmoh=My#kkcB$c#,R(M.W7C{ZAFK2vv)NB}kkkKK:f7pxJmZwEDGN7@u,McwNkf%EKr/2GK|M?Bn9ZS#pkkkEhY,VWUd{(n5x1fkkkOfo|C!dB8V<Q(fA30kkkaJme&>B8Pb!oi(dgOR%LQkkkCh#Fv%0HLQ6Q;,S<GfetEB3Okkiu_@r5^mBb?^(1l]hkkkThBV{=NR.TJsm<kkPAF#-PIQIhcrkkQrw*Q3q,(fkk[$%N`:1R!$kkcB:O/X(Fn!Yfkk)hAIk~m:v1w]AL$,&kkkH],Bt.~]F(z6Q!/{?G5eM9VY.u_a6FWY@up$(cnSR77HMDGp^kQfq@-l|#_S)*F3(lGxKg!59-L0gl$+Kb&Tg?:z>6[.24=mI/<:{Qhxo:JT`]<ZTkkkfa[4sH+onUmz]400Y{;@l7_RwVIsH$p.Gd/Fl*DpyCsbLE=h#M(M`ZOdjoO;)G#OjSj+Yf{(}rS>IlwV-L2}ye6qRh`#~kkkY86&Ql#Z58T-fP^)Fwp?pB2:mivsw^zHcGN3kEy7SCLJ*4+$z8,lrBv^M8P0C3a670FX^y#V]lSD9|~)R*gil@&+kzaEg,kk8?:+MEq)q[*VB,yg-kkk79+h2@0n=A(EL{#Suikw)kf%Sux7/P!G-d)2xGF<x)qAU!4~PLr6kk)hz]5{`[t>5VBNRCHbuI,Ulk%mdkkk`k8>&orkkk9{w8P^w+Ykkk<$b2L-rh,pBrF{),EJ=prC%:1LCLO*lwWW&Skk:J]~HvpcDRN={vs5Y4|1Vo{t$kkkD##|xZ4pt@*/c@qq(->kf%Y.fk)h=u=W)2iqQ79UkkkkV1KhPR^*&!P@&JR!D3A~0kf%4Kfk)hsg,k)hx!,k)hG5uzdJMfkkb,TochFt?{5B_5IOkk4KF*4V_b=~C&v,3#k}t~#(u)kkOf9d(xF9<rkk[$G/mnHC{?&S?.wi1kkkE?5^7$%kkk8?1~fD6FsL6SsoDtt9YwI5YzcGxFc5TV5gm,v?5#YG5J$@A{trW7XE0[Dkkk1T>T-QGTzr(ZkkkkO&Pkk%PW__Qj(IK@23O,>kf%xDX5eJ]<yNiRq@(c]f?1V>y.0kkkuCZ`dmYd>kf%zy~#6>o_{umxo_2cP9:n:-.ikkkkzisngv{p>kkk!Lve`7G3fkkk_`][5@(;,kkkn>S=K$t1xA5kkk~h?-I!/bWkkkYb1u[iT2GuP`$kkkozoD/Q@s3UhX,k)hMeZCq2.a8peZUlZtFkkk7KU(6<,[:-1pWhC7]ukk/W8t@].vY;p>eGK@0(,Q?kkkeb[6;OH,]nDa0SpwxIJwkkcB(t(w=,&>C0wG])kkPca9phpox9hNgzkkcB$&L<6kW3NHTrkk:Jz-rc9)SC0NDukk.e@.RL/+jxXH!QOKMIY*kk.e5[7.o.<y,7i3ZvI3%NkkHq_Yl8&ojV{un_rkkk5qt(@o]~]zW_=wkk]~+WH{el7sAK7fkkXHQsPr[CD<28yfkk!Nh]H*&)IMl*ffkk1NHAD=eug.5R@_[,CiZHEYZoXkkkaf$KsI;tSheOkk:J}dwrS:e:!?Kfkkd}dv1eRWT|EV5QC(&jrkf%/CddrmU>uy4^r$fkkkVmFEI!/>kk,0^Fg<SGvU)<h4)kkkR?`;|`5dNBY=4X_zkk9_!N3LT-rcg;1X)2|fkkUD}<L1}IHlN/]0U|bpHrkk[$:|54X{Kzz6M?#sckkk>Z>#,SCsz1}>2237*SK%cXXOkkDSo<WW#6$@XxqI^a/B15]kkk.Cw:jiPQ5x!u[ZQkkkR_<MFlWK@!kk9_E*^;<`+T}@buY7,kkkmu3pwh-1rUy?/BO3.))k)hH&1ox*;w9P_wmi>G6kkk_K=[`J;_pLKf^P:gH&Hkkk]Zpj$CQKR,M%{@-.aMGFxj5QsOnrn&>kkka%%NGqA_g~=#ookHHp7FdOZ)kkN&]Zw|K9FPAh!hYkkkFW*`8HT~}Y/Tfk)h5LN=$`:8pO)M$S0kkkN#-TxXM,W=L9D_qkkk-*MKT33RR!RYoXmoXlV;6kkkpKoqJ}ncAf{c<:!fkkQr$ik1EofPYbKp)dukkkD3`A/!0velGsWSkk.efW?Q`o?Xl~ly^[OG,$kk.e9Fj4ouH+(ik3/6$$x*kkiu``h+H/;qkkPA:J3bG,K_5>2M7A9,%ekkK*J]`MJ{tSKa]}BXUT|#{<mxQkkk.CI_}@)7{x6NQ+;kkk~h((H)s|nkkkgs#Y2Au,_<MP?m?o6Jh,ffkk$$N-++DK{qZo>r`T-x)p)uDm]F]nCh)kkkpoB{,oEN@RN)!/S$kk.epLpTSl+?J~b%X1x^POkkDSF0V,rL]mf[fZqq[`fVNkkkONK!*oEV@-Z*$C!|XMA@]iW;z,u0Nkkk#/-Am1~{_C;oG)kkQrgi${Unf>kkN&ycJQbH#9eR(.>kkk>#M7A:#7j4Uot$kk[$|oG1GS9NkkHq@*k;ewx3&ot#zkkkPJNvI/UaNkkkjeOkkkh$cqt-[>kkUDq5Ku1[zp>N.4CY,#arkkQr0hLC|+2>kkLzMnk(xG5o%s%ax*^eB$kkLze_9U?TWxWHICODN17Dkk[$p9c&%ZU>kkHq%O95x,y~J4lvYkkk7_u=.T_!/kkkQk1>C9-bli$RU0kkUD11rGm@^n|kkk,b?NbrbzFkkkss4f)QQc@C`fkkDS0Dw:Z,m?H{nA`6QIJ8,KsNRSuK8bb(h>%94MN)kk|kz7%)kkQr/oYy#&7>kkafhE&kkk,h&kkkKmO.FNkk9_M$,E18bXZ0kkUDg==2}o&mskkk!%puu,Rv*vkkcBvq8)kkQrN[c08i[Du,]?&R,kkk9e4lZP|7VkkkT?=;s0}m~kkk9e,pNq0DSkkk8>A0_@y>Nkkk&GJ95|~s!vHltp;$d`I,g$ODkk]~3UUL3.-[2/bdaMzDFqg>vykkf%i9//NZ6ru|M|rN*kkkVWm[#*}&*kkkCz+[ny^#I.:fx$kkDSGB}hTK3$T?rSDl&<LsKkkkzhVb3La6&|rn,kf%Vi;(6UFB+E`AK~(ao-,@/;kkcB/nXp!XpZm9i+q)kk;cfh/Nu~=Z>y,kkkfGhnLuI,wkkkdsD}c7iH2=kk9_t`qvzV+6`>kkOybF]&as(VbU$Sv!a0Qi#&iVl.ZFGjK-lLN>J*s8<)l$e>w3%|QgjJpj@+Gmkk9_<@y<E:L+BrkkK*>?jSJk|{:bkkPA@7c{VJaZ0kkkb,58M_r3rva`J?mrkk[$Vq~_2o_ukkN&c;5DgwYkkk~maTLNUb&kkkNhZ?cMh>kkOf([Dqkkiu.@%)kk)h:pnB<E{[BQkkcBz0_fjpUMGFfk)h1p5c;HQhB+1Qv~bZzy/>kkQrCEEwkk8?Irw%kx9@bS6w]d)k9_5^N.V=*#IfkkUDAW_#GeVc?kkkm_#&DD0|Qm&$pSkkVs=}!a`]dRG;Rhlkkk[kU?|r:UbfYXerkkTnl/S3B.ez5XVMgg9Yu-x:#`QXk=Arkk55zphTzVZWzg+HvU:m_+9R55EH!~m2,kkkn}y62M3=[YTskkf%aSF1]%dvkk9_%2MeKF_^AspXCRfd2/f}M=fCzhssGfkk1NrtGYk9k8ZrZdOS]v)[dX*;H)kk=rG`Pt[85?BkkkMC#epa*Wv>51fr#NsD0kkkv?oulAWHX3kk}=Z>Q,47)8bOpxh8w#|#,)kkS)ZAQ=6@rf,kkk`TD{|H|1N^(5W-Rh#evW+NX>7xM(kk9_=mtbNCU{^fkkiu3U2d{KEeO30xRU6kkk:%f?iU#9QA)kcBnvA!4RSkkk,Kz.*VIZk)kk|kC[QrkkN&($Ypf7l6i/:Gp0oJ3AveEb9/&kkkFCCh7,<nTRkk8?u,I{Hzot@|}n-)fk)h{{|+T.$UyKv2wMGr}{`FmK&bLYg(ljo&kkZ>>r[E`uV_VAE(%>B[->g!y$kkXH;fp-K,a`KqQrkkQr-m;YGwi0kkiu/Ai@WMl595DQ$1!kkka%IWLsv]?bbvYkkkeP&6jPhaVTDS,kf%T.G9jav|-xF$6kkkF9q-#sh+x(z5DHl~^OkkVsm7QVu*dS*9C+rkkk.bFDA^H8>v=LdU+K8POkkks=BviWnyly{2@,kk]~}<b8;4lWq)?0kkiu7@`0gdplSwX6QzYkkkH<xBWM;qrM)kf%lj:Uo,K(,kf%AChr_WHKfkkk-3>Gy[HB3wFkkk;sy#|5x!|nPeuz3neid,kk)ho[TS`M}zd9)kkkuyLvcf$x|0w5_<h$kk.eOJHpK/NT<fkk9,#rhhjP1KoAV=fk)hmK)[{5(So<=y)kcBjUX$,TbX`.4e`RaWyMF4hMkk.ec(B-();cVkkkBc@lliv)N[)kf%=ng|`6ZYT$kkLzaJ}NIT[~!)kkS)z+fNpEY^0kkkEK4]q}^3+?@`qca5kkHqpL/cPB3kkkr1}z=S|zfqkk)hRys<=/Nd<?wP@Q)*kkUD,KW.@[,jMkkkFb}=%Q^^W@QJ=e4Tkk)hJ_?sEuJVn&kkLz!;P[*b,#2kkkBcj3]3Z.gCWpi:R[UBWkkkebjE6$)QXu$a2pRwH4i.kk9_5^::G7PX3o4Po2K6&+kkf%Z>VO{jt8)*>kf%#sk!5a;wxbLF/Y&8~FjOkkK*h2s;cp(_5T)k9_kZ)r3<xbf}b=bksm1`Gkkk+%a3nQkGkk:J1(Nu[&?X!Qmrkkiu;;PM:,dOkk8?TwL5Bh<HkkPA:J%|!,+sE)kk_0@M@iYaaPsVOK+QkkHqJfZ;|&SEbjqAFkkk8>)J$!>6)kkkH13+3O?59bup|~Fkkk@_Fz)yYM:kkk<sEhnH7a-xxfmQpkkk28-E?d#vIxtvnQOY-A[DMK>1fDtT|Xkk)hl+zmi,kkZ>A1jkkk;BfokkcBEs|]%U:U)[iOVkkkxBzzn+5#kk:J.0ynnbK1voX,kk]~@7I-UtxH]wg0kk,0irJ3Pe>kkkj5RNW}8d0a76e,kkaf_9:SPkkkFKSrZB6+3#UIVkkk03kmn>rZ||}-,kf%n>_+4ItPf#eDkkcBaSoA|c~)kkPcM*h{e)gHDvU6)k)hm2NA2QJNX/|z?)kk8))osw2p)k)h!PErkk=rI]wa9h:q)kkkkGLRH3]s_HV-ewLkkk#**kkk.eKR&Vy9VaNkkkOfeNb|-F*97N~8LSYkkk|BTHkkLz_e(KXlZ#*kkk6<ld$PFoflx:[c-)kk`k?^)k)hJ_%Q&Ez*dzkk8?xN!;GJ?N)Jw@Us^kkkG%.0kk9_X#5x!zjO:fkkpYS]H;*_V9K;K<Glkk.ei5R!vj.r3)kk8)hZbR__)k9_TuC;)B:r$DkkXHyP9S$=K_k)r)kkafor<uBkkkq<ekXSrQMD[.Okkk%!DY51kk)hy%[fkk`k|o)kf%?Ue,kk!N-Y;#qOF2{v()kkY,G$f)O?aFY-}kkk}<}zM[h*rY.=O-kkPAy%G$DrGlWkkkI)!;:;[0W)rRKG;)kk9,3?yz!O,kf%-pffkk=r2?VJ(s&5Qkkkl%]gR~IhAh0/[4p[kkVsB1jqy#FkkkDh]<kkPA<Q^O/c+yN)kk_0?Tr&vcYs~w0<|fkkN&7eAlfOYkkk~*o$kkLzpeyuPb$r:kkkd<dh/V)OTzL]FnQ-)kf%cXF<e~*fkky%dD)kkk=KP7{]kkHqE8*hlg/kkkF*:Vkk.e<}:wK=1cukkkS)~#whfn!N>kf%T;5jQFB6sOkkx!|`iE*OH>,{-$ClkkPA!(3gZ;J>Hrkk[$*hVki9i*.Qy#yMBkkkF*d.kk.e@Rx(|#qeU)kkQrX)(>mJ04|3{Q|GNkkkn>vFkkTnhDjBZ&DEa&<YlQ)k)hwD~>kk=rG!8-j*#]$kkk:=z-9IAz2,q4+XOkkk#*WskkPAUMQ+~T!W[kkkj)Xcp,Fkkkdszt/egUjvkk9_p{TQH`hRpybn)h0kkkqLUrkkUDtnJ3Is<cZkkkBGG@5bPMnZ6]@%Qkkk$khQkkVs#^sDSp9!/y{YWkkk@_g;7XFj[kkk__3m#[PQkkLz*-j@_y>z!kkkq<BBS:?F,3DHYkkkf1]xD^+E0kkkc=^-8ty0kk,0F^Sb?WNkf%@?sOa8<)kk8)5bh4sMkkf%@7h{+rkkN&P!]$kurkkkNhdiM:`kkk9,6n>-4&&~[*8`)kf%/iOVn<_JtS-Bqfkk!NmEd,Td~q%ZXC5wm2TlJiBg)k9_$Ab|]E7Vt,~:Uq,kkkRA[}g2BoV&jz^)kk!Nwnqk%FW<nhw)kkk|<`S{i2Ix%vlp%Wq:0<C]Kkkkn_5vhKeNA4kkPA2]V&qLgup,kk,0&&LG}HFU`SNakkkkN0)L+u2!)kf%.U(&?Z$fkkafNH6iv4p.Sjkk8?(1STxm~Kkk)h1EW/Zh*Ehl{:<IOfkkpYtU8i-xFa%j}NY?kk.eOG*VI]1d,kkk+%jheizHkk:Jtn!*)iMj9$}fkkHq-pU!0bZ5.GymHkkkvJ8R8[3+1OGpfkf%^YL=FS[pFI`f%,E^2y3PcokkPAVVv;>%lr~)kkE>K]xDT(%@Gb2wsidVL=&/ekkkyB0o={7/kkd}LpH%L;6)gwc6rv&;,k)h6c7rme!96A_^GrRB$)kkrrDovS01>ywzWSZ!XxO?`]]/h`ePQo)kcB*fddr[RkkksVi4]{!ZFi3q,~=_W(kF9&82c@@KFAg)kk8)O:!Uvs)k)hSK-L(*$,gt0T|fkk9,|@37g>X%olx.)kcBC7K/kJ+5ip%8kkK*?zMm6?16DtQE~*9im-r`dkkkUDWPH$Pc6&fkkk&GSnjHH(_am3DkkkwkR!DKvbFbC-c*d*GkkkFKW2yV-tJvKiqkkkB%$;puI.ZTf7=Okkl/A12w:j,:`!|/Sad<)k)h#rT<$t16`K7p/EsN5SN.6.?UqbS>])kk9,[J?CDgkkkk1ghcW.>nAu3OB-{x-NU<4y{aAAu?%!fkf%<lqH>ikfkk9,S{FOO1?=;6v+)k)hyz>Zp8mKkSkkx!e7V)Z5qw[,cIo3kkcBi,YSR9nd?]~Mr)kk{)*e4lwG}Khp[kkk%AF8[;&Okkx!a:y6OWVex+4?5hkkPAx1Rt0&aPL,kk!N:y/)o:e_xtW)kkb,ZL,}1d(LHcuw&Dkkiu1;Fy^HWmX$E/BGskkk:%5NRcq&YSkkcBOSkCfIw)kklff`JSe7%xPo7xV04.kkTn>)`M3wS/gJ;IPU)k9_XJ_1oAa;uAf:lBNkf%ng,La>B^HcfzQ-DkkkR}mLb3lMUaY,E.S:etGRw^,W!aqSN)kk,0[|:K[T)kkk|=?-QjTDM.cq![7Xx)*9{}J@HvH(7yDkkkbfv?{f!>kk=r,7Y#4#J]Ykkk;=V~H[Z~l~LvNkf%U[XW/th2n2{l2*Dkkk7_#zreL&w6qAa#6ekkf%HYh:wF~:;#4hc<]>uE#,op`EYULrFvkk9_2|vTJJ=$XrkkLz,@{d3[wUum5@thNpPrkkUD`i`>=tqSDkkk^Kef,l8}GT)Y12:PXjjvB}2<j5H?~D(kkkH<~Tsm]l(p,kf%WFKWIlI.]jY.*L5$X>)k9_9xTYHsWg$DkkpYwC4/3[J@r4A$XVkkPA=}3Pg]SR,5f,.%g>WSkkLz/a@svMYQK)kkNcpTn$?YakkkPctZxaVhP8;][9kkcB.w[6&Aay@6jakk9_:j<WA0ea-Qf}QQz27{kkPA6q;L4!p4]>kkiuV}/vK@hjnjQaL|CC%dE>bnWCh[?HH)kkLzJa=>[I1*,)kkQrttF&#ABS|n$8T*6tqLSD)/oMOW}CskkkWfA`:+JzCrwkkkw&+E6k[}bYkkiuj~1Q#z.(kk.ehMH^*Cfw9fkkWfb]RHJ(1Z>kkkgnU#OGxfU)kkHqu`cGB#Okkklq0=%hF9-/kkPA{2S*O&y{]rkk!NBah$j<0T_!5fkkb,DV-JX^.m|$7y90kkXHvi57kQp+<9q)kk_0z.f|Bl#[iia@)Hkk8?!BY1<2si$IZGdE:fkkY,T|l7(yb;)q1kkkth~,f6`DdD~DkkpY82+{npABj3iu4#kk:JwZz[(}OHE;irkkx!Acox~ci`(QkXfZkk)hLN}=J1lOtF^+r]OfkkN&NfX:QC`un[i^>kkk9eS,#n&Z`u(o=o9=kkf%Wf8YXECO@{>kkkuyXv1f1=@/w5y<{$kk.e|5j+9OtP.kkkxca+e/IAreUjFgSkkkWffx2[cX<Irkkk$h<K=^AaRDkk)h|uRnZEu?Bs)kf%1JUUMr}e7iwp)k9_0AX4Xfqfg>kk,0dH/-]JNkf%>h-}2l,RTdj4kk)hmKv&6!8-079.4hmV$;@LKsukkk4Km4DU:m+jLDh3w[,qE.Rrkk[$_EFmYU#ady6M9Z~kkkxB6H5(?v`*ts:pkkcBP1JP5,kk[$J!u$]r4Nkk:J*bxgqhPfURB]{X~(jdR0i{,kkkgngsxCj.:(kk8?F#68hIBlkkcB}:>a{D%4nqLwZspH15YU^#QkkkLb:CB3fG%_[5mH[,.x7?c5IW.F$>kkP&j]GFoZK-BBco8(pQg+=A8a~UVrkk8?W[<@%=OgmZ)R!4s,:U}LMYn|kk9_5~;6GgHPV^#<-dPHZ:trkkwD&$B(^uPn<LKE3.@X)kcB5PYBg)`&1VQ?kkVsOf:Oi!,kkk.b5b:i^@cH34LXDhz+Fkkk`=+>h[GGe1/Ik}7_jIDkkk?mQ7NQ-Li`;W.H$G(gkkkkk8rP-p>-c?].<Upe)s)k)hKro&9Rtgxukk.ew~?QtoMX{VXXdIOG0$kkcB*Y>BY#UdNu)k)h-]7l.K~45)SIJMqp~kkkAB2Io<$kkkR?U!|IPu)kkkh{ccMv)kkkvYN(T4><WQ$kkkZT?lMl)k9_=mohalF46,kkZ>$XHJJkkkj)J71>G6_+*rkk.erq.4sA540yR=5{?suukk]~Y*EOyyTj(I.,kk[${]pHSXv/kkN&8D;f;o0kkkG~OIRol>kkQr)7*Rzz+>kkpYN12ARw*B%^=VxQkk.ej2j{*UjB%kkkQr:uqdb?7rJjbOMrrkkku%n<Z`(:6Hkk)hDSK1U0QGON>kf%je916pqfkkOf2qPMcQ7,kkZ>Dndb}t2yu`kk9_qH9Ez[O6kk9_2_#iyHz[@87qHz0kkk2Bc1NQX>,kf%^a;pNkkkj*$aS=/VVakk8?l/,urkf%F/khkkkk:BR7SM45Bkkk/qAnZkkkPB^6k>kk=rb,W+|qPS0kkkxAR~UEeTzI<kkk;cZ3I>![CVURBkkkNG$I)5<hP3kk9_MF!xN*8>Z0YUG9,kkkR[7W<7f3kkf%lszLbtb)kkOf#dAK,]p,kk9,0-q<AZ)k)ha@(1vU8u-ey/>budb`LDkk,0xlbu6P,kkk.Uz<0jkk)htw?cGwkkiuw)]NzXWekkHq>2L^Raukkk>3B}vSVtP61kkkj){lOI;bW>~QkkcBCn~OUBIh8W)kkk(=A8t?y.!olkkkFCSi)C3K^nkk)hrQiZXSkk[$++.B)kcBADIG.p0)kkth$o`DYkkkNGFlH1*+Z@&ZJAcByy,kkkj*)*<$EI#_|k+[&q<o)kf%}Uh@XM,?~YscP{vfGz)kkk<@+O7HW}0crkkkC`MYlQ`n[X3u)k)h[=,<}2=eoPN5)kcBf4#sN`U9nS8/[9>Elkkk#b>q4bN;)}kE{5(R$rkkDSGPy=wy*Ad`3xEnM?PFVkkky=>eQJBf<fY=X05^9I_jkkVshEDto!WZo@YSMkkkm_7/R.*=rzM7Vqkk:J~81k<k%KIK_rkk!N`5OlB3M7GIg)kk=rN,E0rEoO$VqTif1O})kk9,hh5Pgg1%oB`))kf%PeS1F5/K/l,Whb8eZ+>(CY`p0-Tk33o)m~Vkkk}<yK^P_:E<S|&Okk8?>0!hEQ)*^hoER6fCy5M+QBpHkk)hO[Hj.64lVwY|E)kk1N~oSt=Zy6Uf~nyXTJPTWhw10>kk!NfBP*2Ld/KX1)kkY,[OdQa,*NV:w)kklf04%hT$6l!K5+Y!|>kkwC[ogmj3avgFI[?|mM,kkkhPkflf~9E=J)Df<P@`~0kk/WwtBCbIFid4O=@$(EZh(kkkm_iL*.<Ej`W7Z>kk:J/an*qr:_~$/rkk]~/WPTg<,8dPX,kkUDiH%RH+K7{kkk&:WKJhS[m3={<:W*L3h&MR|h9A8Xk,Vp~?B7<;%=YJbY(ddKRp[6/{0kf%YOV_EJ+2W(DRzp])de$TR9yi8/cZ(HkmOr($ra`03(!4Cs`0M5IFJKCWQBi6!dCJ0C+C[hT,H*kkM{8Xj@`5v_pM!Sl8]~}?vU;X3c&S;6@{KAXImw<p_{Zq5rg;HSMi4M?M:o_G6^WZ])kkJWw<v5|Ohp+U]1x8_]tf5pllhm`$Ur?dQTMp&aW2p2`U2Hh(R#2OA$:W/$3M#h>2$V@aE~)G<i;e|cfYKx%$_:>!X!rx?zmU?ca/MEWJuvd.J@*W1YMQp@qNPj_vLFxCoL`0:7](7$Tzq-tBZk_l!=kkkkFh.`[&PpR`!0>d[T<,kkHqq}W,UD_Mj^rx}@nI3qvW%O*(W&7_ru:,j}o*)v4JyA0/jBXQ0fkkeF7pX94(.ji80UQo%Bta-zTRKdwx<D@JxB,[r^g*Lw-aqPMILg)kkk2[w461:)7BB`:TyG9^eb;Mtz$(&ExBnsbl{6wty|:(sLPQ&edZ=BB<*#url#UIC&cAk;Hmt`608,b~,yW;:`DGN+K,kk=rx<0IO;w4~kkk0hPu4kkk7K>V?HkTo&14__P[S*kk]~3s^DhChmt4}hpr^?]Gg7(G_~c#>yl;zL5hTo8WHEluhNGz1`Haekkkds,-ZPMg^Fkk9_iip)OkkkD7,&kk}=YPCu>BWh:{9})668s(>s{~r]%hzxW>Fh,M]J-Ad>LJX;A8Z5@`_!))h|b<C}*<LL]vLg%:fhnxWq0kkkQ1`L]K9/^4Wkc(?aP:DBkkLzlfG<=hItakkk@_<wL,kkOfk&E>kk.eLz2]S|!=,fkk>)s6D*kkZ>ooDkkkdH`1Q9D(.Zu>TcZz~zjT+pgRlq%t-l#|F6,x|r0kkkg_u$JGS3,)usO`NJhYtH)QR~uy]l&RV{UnD=*ugu)T5qz+}O=j}YpDreepI-/,u|AOJOy-0[)Z-|JsD0oCbnt=+gte-cvO?D=V9qxlkkPAy:Etp:.zR)kkOf]zT[kkK*2h,kkk>Cf-duhfOPU84>O$w)C~ExFEKoj0_~^ON)}ZDQS/mMprbZnv,$3~~%6J%Y<0v]hyf?l.jM,=e6t4opXkkkG%$=zo0kkk*1N4<|d$~i7dA.97uJOVJ&G0=_sV13?xa{R0Ee-oTx3LPgTtXo(aSkkkMK4]m9qvucjtXib*Y?uLA?.fj_:@s2ZN8ab3o!/O3FknXT|G8S_eO+)kf%nYmKmB~mFNLj>gO7~l3+ZgJM9]lW8&Yvx2,]a5+P73vI}l_^VT[ctV<]m;>)xY2O#)btH6u;343LUAepd:&J~v`Xu]jykkPAqX{R>-9c{J>{U]-tBztz@b[fK^>*15Ht=A(9&Y%`Qns4CF4_l0}$jG-e,yfu5q2^G=sS_la.DIZanCTHn|IhU$zW?*v<lk|bEl,w(uNf6O@cEB@cB#BF%rdvx<*Rrixm3?SxQ,GWmf]KtTx9^RYvE]Y_DZ|2l`J6T5(W7FwkkkMLAF5@6mvC^JP1IiFHS|QFPtT/D:e=}>b(e8:jY1}]2N7IrqS=0ZirmaHV9gesrMX_fQo76T1jAZ/u&TO]Y|!i6O~kkk^.ck0frY5jrLIg.@*$GdQ-+vj,{UB4%D77vH!a;gh0xBXZ.`8FSVwA3~|`eoD~T|o/~(@xj=SJVCJ`Dg49lEk9xcGcmEA3BXcSGLnbkkcB!K-b8~E`;~l@Wo@?)]P0VsBiBCQu>z4{&yh^_[$]i`[0MfbC-#+lIcQ>kkf%&dZ<8*D,45~0@,zI>^dV=<>aZv6!udh?kPVKQQxmt3jPfW.c&N+1Ykkk9%k*PGJa1Z-*~)S3g$I$;JW?)~Idg2BSd+$=3bA}:#;RTGZRGzqy,[ZN0kkk.7Ud[K+N&X^7yPCeY2+5R]QEEvM.9jTtN{LO>7E61*@:)SnnhF-,znxM:q`$1/w#oQnpnbkk)hyVLZ[*pi`*i0!Cg;^NAJat;--1so/KgL^~x;>LMOT`/zX3%I1DXkAb_:KApnq_I{9+C!n|klwbwjh!jW:?K}A~=/=mCLzVu{|0~qnVbRkkVs-=rf1$Bx|ux!.c#rdQz0Wc5zaIU1b%~Pe+i=0BNU3UQ5S51^on+Q*=(M&~f/jEW#=sLyuqK^zqA(6_*fSMDyXy0;@4rIK{LM)J<r=R{6zu*gP0wJK/:3j8;/6k_gw>`TZMXuX:1IZ]Ecl1Dx[1_.zwWRA|VFp`9wGxo!6d#B+W,Yc9<3m|xm(&0@pid7I}r52/kkzmm;%Up&_!oTCUsOj0&sZdBwOM`V(zw,=rr9OwmJN`00h<>2f1aoDLLH[%vG9:XUIYS@tyrbAr2duTk&kkVs6Sc3I94hPJpyn{pF<e_~h6n;)|`DziuU<0ezN/<wjR#4h:I_73>Bp[qE8]Yw^vhv0Gur$nYskkf%Z$gtIqFnga#;BSR&/B2&bQd#-)rILP)kcBjw[XJW;#Hlo-7Cf|O{sDhfkk}=;}]k&ff60,eF(*0)C_zH`QZLV{v>=#+(D:hpINwqU1P}gSEh%g~i]!3.Y7,kkk2GR4_~&tR]5j%=F7QdNe0E&{!]Dv}r/yyWC)kk[$zj`jSXpaCve?}!!kkk}|47F05^YCY9L`SuLl>PURSVMTFm{UqZtugCj>Ig$nw~(7DQCAgz7nNqM)BmvYWWTXUG:>]#1TFRh,Y@RMo~,{?RznY0%(8(fkkkeKsb8~E`;~l@i2<GeU#T/nO-lC/]qtQz;61jZtz-t^v&_u&-{_4-Qhgkh-DQ2PMZyCF;|Y;eWqSZ_Iqih8CKg+vu1yPrmmO[Df0)kk.0K[pL65sX1.s~8FB3:01)oPywQ/kk)h6qU=^{?T6~Nkf%03NNBZv}?;/WhC*<{eYPC~VM+L1cGu@-M@%F@yMI&OWJCxOkkkNQ$2K.wuu]q$c7ziSQCux~lUm4:}DlIf#+K*@^FjsiIkkkjD0!ku[c9A56$T--Oh!Tm5&VPe|1lV;x~Yp)~#`k?8U+9UZy&[excxX<V%=7?=PBs93my-Wo$f|M@4,Ayz8HJzxWpQEl@0bLpa)/oK}QJDs.ewyKKi_Zx4SV%q0>3:amShB=]kkkgs,fsu!!8q~;@+A9BL0<)#2nc4ow_hudD5?Du#68|dpkFNY75!`iWfz4%pt`!,#9a->,aEoTzJh}&%/5>LH}|w[HNCt27aOAMwDJ(>&h*L8g0S#8#X1HeZu<@1Wl_?&EF5l$AbiCwDVn-p/>4=+XB$j{TC}btu!WU4UvFXa^FkkkD~90)2ABV7;<Ig)i)GX|KPv}k5Kl)fz6F]3},`<?[8.V^fU/pew>F?QC@x,J`,h>eFYJ!wTaeQxaL`N,J)q&6p_-W(_}vf/b*hJ;4CE42sJ7+VSAXmEP=u%a;hn>4/VRGzEkZUp}tK|(Ph/2XI,kkkLZ:Q(VwZ2)k.7xg=53tU~Zf3Ynq:/J3APn$LD55:I1v*C)4}>ZA,+D|M{IA(*$5ah:XG)Mdp+h&~T|]Evou;UAW1^GMtVESts]ty^EC)]5Z%6j:{W}8hiP}28$T.FC{B%9PO4d0Hgv4RZ+)%|oTs5g{rp=D4_/,yF)kk8tut(~>_K]/ZMo80hW;D0+9+/?I#h=t8<ce`KQO^p,NjGnBa{b4Z|gyEK)U4=@hI>~d5{ILNdd9sf0$X+e?ij?2Fm-PxJeFFl~B/p^{L==y/=SXxCc,!O?DA,#P&RW@JTii@M*,?S62q)o+EK8%kkkP16$S~_hML<-rBG$6jpPojV<r##5z|K,~h|LRSV6m@f[xUGl{4N.m&X#r+`QCi!vPU_FePXQ:v*~q]@^X^5/Y(k6|pWJ^aq!v6KJI8])86FsT@h0CbDMvN3GMzPBrL)kkknv(}b>YJ2-kkkkRJ+Hnc0(_$U5K9RtrP_x>E)kf%dr0q+&kkZ>7YLkkk.9w?)5b/UwB1]%+Ly%HP}p5VR/)<HZ{=`E7uP=46tF#tGz&`wFW]nVqkkb~S1#,`jy->kk:J9,D6W9vKZoIhK`<MpdOfW2ew0dAMw-VHcFMnMvp85,5|$kkkj~R2t-IupNBkkky%eD@mD@f4K,kkl/AkB9VvC>iEbsg_b$QKB6~SsQN+/6.x}Okkkk(tvM%B|PD(|/$YC:5mj<,k)hs}KTeYZ>&:6/)kkk$cOp]ze7*5ADyABfB4{V)kkk.2{!*CQKUYH9vKpcUPH`f74R+#$Uw2T3xy^OkkylA(B%*qo!zyB8,O4hk2N]TSh)kkylXub3^37E{hy/K7gJjzNRw9HOkkM{Re%g=sdh*<RGdS;8$#9lAhi6kk)hT]TDO9M@^_Nkf%Wc^27pa^xg,*kkcB8%owMAQy)0sv/+Sz$kkkDbj#po$h`CjO.9bN3_.~kkVsAP49zU_DP~CQ^kkkYbKt{^?DeJ!{Hkkk5qQMFrL{QHU0g%}hNuOU^a$Dtzkk]~mF31E2wCaf%NkkpYcc~F@U`6BCQL?.kkTnylM90xfaSJ,zn9kkcBPlIqpZK11Q]faJbe5>Ybm6kkK*.l{0v}7pH(Ds1c066m@Q&>Nkkk__(u83UbD=K1P&kkHqE]+g{Zw<~.A;$kkkp*j[SLgA<[i^nHkk8?::SH5x,lLtx{rBf)kk=r)Rye=f@7CPV*1xbaIkkk:f&<U*5^BEs1S:=f}.:Dfkf%#~^>SfwSnz88/fkkOfUop0*z<,kkZ>M8z24ouV0ikkcB5^@:&YCoEOG#okkkTh?|op@lltfv-ykk)h=Wz4*<C^wl|^=G5sN2f[8UF~=rkkQr{C).XHjfkkDS,0BxIq.+;C-Yf$Ac{C3kkkKCGf9o->kk55>U{*to5,^@RQ{rv2gJ;gI)aWr{Qywkkk0%^,+K{kkk79q^8&9=_PD0V4Q)^l9<)kf%]6R$49{P,k)h<g6oIb:>;V0lUr2bbM7Ye`g0meEM|1=#kkPA=<]*{0y<Fx1D5cQiq.kkPAB!G~jPdCCAga1$Mhypkk:JKR-Wj3*>tv}Hkkiui[?p5z/FkkTn&B9VgD[1(/E82I)kcBc)HhLVnA&cstC;^FLsQjwxWocq{`1j2HOL=9fTD:?V}K|/rkf%tzJ9+b2kkk:fIhtY1tctJ|a)n%#2N6)k)hX8%D&(5Cx!54yN32WIkkcB/COW.R(su5]>[^wl`NqbEc:4{I/kkkds?lzrS]57GmEnG5cnHkkknT4qMJn:,8G)kk8)6`}h&3rt,1@=)k9_E!4aDVi.Nf]6!X2]x[trkk9,C#F-|FfkkkKmIEl34uwi[1x%]eRb<t,kf%GLBe!twj&Q^e`QpP{gTNkkcBe^M]NdP=go]@EWc_kWA:kkVspYN),G.kkksk6hvw*fsELEbDuAKR&kkk2P2E;nC|Osk&:h[1EQQ.(^E?Nkkk2{mK=o!YPdO)kk8)?!gcblm5/d[%kk9_l8]4NJTz::i>tm/!:hkkPA2iVv,>D5u)G/?J*[.A3)kk-*P(y%Z=t(pJoCW2>n?s{<xqx>Y-A.{?9>wYr6pzl->kf%[s/N{XGOs;95^:nZblj0P0T4gA<g991^hNxB>ikSYOkkiuthX3jlR?kk:J^0.5=wAoNvm>kk]~MnQemNLf^(%DkkN&)nh[<1^ta=.60kkkIui~v}^,kkZ>ifaTe}g;7lkkcB}eX_`NIE)OX6vkkk}<I_Lev$#[I,n7kk8??ki6MuG~|hZ=r{)k9_HImzxpdxar`=#USi}5)>kkfl.bTJDvT(}KjrN%C=Wj70iV.7F0~b>MMO@jKMVj[es8VEd)kkDSo$>w5RVI3qmYA(?8G8YkkkE?[IrtHQ!`HQz/kkHqGW<F1wtex*oI,kkkm>}iQg3ni97Yt$sT~{m&kk)h#zg(7v3[xPrkkk]WvgZoM-,aY2[[~(@d:-[s]aiWns)k)h$7G[-m_Ukkf%TuuuGGV[kk)hZaNtP0gYfY<I3+_RhPUDkkl/CT*6S1l|pIk<nsVz,k)hyZ$QKAs6VT(WfENkkk/&lK:YS#H:<.BDQ1kk8?Uqg5;s2zv*acn.)k)hxn&ji(-?Q=SR;{Okkk+Ai)<)[^n>)_U9ajkk8?B37mm5kN_)|C[n)k)hjUDfN-_q^8$$)k9_!6xW6rcia@.v[eNkkk}P`,#{nC_SK`=(zWkk9_R9Aq49q#QHvr%P5fkkZ>D~7y<SBPM[kk8?P)GyKF23u%c+G9)kcB2,vPd-&2BGJ`kk8?jQ%rn|W+;.zUxGfkkk1#4:j]x#:2wtDfcYkkN&bp!82yNkkkx?P/X)V.*K~S7c{d!tDF-.)kcBg2aFnPFH@?R.uwwhrkkkisK<Kc%Zrf6;Ax,9Y2Vkkk2e4e/EzP.!kkK*dWYU4MyFn`3mqNHMPwYzFfkkx!Xd4t^WM#Uzhk2/kk.e:JRZ&sO..)kk=rW1EHm*aP!UX~}*AlWfkkWfSjw(B7uGNkkk*kpW8B,/aJg7XewkkkT`#nBwju0Y,zXRH!)O|(f<kkkkpf]~Sje.ctfkkk(~|3VmgwB^S6)kf%rlosk0Yv?z%I)kkkI)l]gU6gHuYD!RqfkkUD#b7[EIW,;fwa-(h3W>kk_0tTf&N!BP<dz:i3kk.e*9?$b;2[L?15)S!ZUDkkx!UZF=XvX!_vZ2,LkkPA3n,(aw4McfkkwDU-KiMnR9I3t`y(Wy)k9_:gax2==W]@jb{UNkf%;YDC>QA6TF(O6g9N&_CW#/j?><@F.fkk9,[Va9n<kkkk39Mb255_U*vy;FnV2t$K5``4n3bkhrkk)hW$MpJ[6kkk8)o|:0~*wzez8akk9_9M26J&z!uoa4vE>kkk/.LsM=iC)kkk{{,YI}>Yg8$!JN1WH=?~n)sEzU5+28&kkkiAYkk}v?}Kw,Ikkk!Ns?VQlU~tkb-K8uZ_uEB}Ya)k)hXJ}h/a-[NHwy<fkkY,OsnYGpudRLdkkkokIt5G=y%mU!Dkkk0v-UE1;;xH[8Na/kkk__m.bUc~q[]q~,kkHqO/5!DnSmGF5P3kkkr1b{P.{Q<7kk8?J]KjRhHpq(jom^,k)hQ.=GCmD>z{Jp+sDkkk5*6;_$/iOXFx,k)hVrPfZUtaJTz9kk)hB<9!$zO/Oe3Jfkkk:fmTHeDFF7Nba9z^`ohqfk)h0d9KrYG7Qzkkx!GW>^]Q#,ybqD1}kk)h!Zy4p[be$!/w0:s)kk]~$X0i4p@`nwP.@P-cOwQ:@hrkkk<Z&gRgu~V=(A#o+bxdkk)hMe)/c2awUAGgK-IVD)kkaf9H1>L#-7BhQ+p#HRh^L,kkLzIhdIw~{n<6l&p}S5RDkkcBQr((.eRyCGT$x23>8DC6kk)h<l?n`J!CbNRc|hLLg^e}&*2AarkkUDQ|-/APMcmsQBD9<Z7kkkZ>fT#k5WLe0Huzt:^r1<M)kkY.fPVcanV[tv]PWnabi&B&pr#adi442a?)kk>26vHzLi:uP+;mL=|)KPCoHc%^-F6bkkf%dO5>eybL]{?_QG2%*;$vbU-w-kkk5|d_39Hwi;iM+C_/eer3b}Ckjkkk>)K8Zp,*&KRxOWn.rkf%=9K0g;N0hcB523W.]u:%UW}H)kkkcXPzb30YDKNkkk.h82+0%Fr;dW$_s:}ukx_s)k)h4u.v;(WVOBkkZ>llOkkkq<5cAYQn9DhI~DoBB*0Bw[prkkR9^m%5T>-zuSq_mu<63VZW-fkkN&ay@Q;i|aDe@}loh}5GuRs%*5rkkk_}8S{WPzov(0>5CQ3>:Skk)hSCmPZ``&C-U*S<7k*AYfkkPAUD./-;AJRrkkj)|Nwkkk9sA|7$|xZROe)q}g^k*4kmRC#.jZF,kkm*U-oU+hUT]z?#.x;n[-,v8kkk$Vya&FMK[drNQ.o7!j^wD$IpkkwCV$GJKZiXq{Jq<,Vd,kkk:}VRdYqjkkkkxu.Imt#7Nkkk$v3UO@RKnal|q1>Qkk)hrew_V,~|Ud;#xT4fkkiu}XMYIE(vVwluSu0kkk^K~IjJ=vuu6{l|`+Nkf%%K+d~W(&F.[cbC{q2SPrkkN&NlD<Ycq.9O;gkkkkT9K<_Xc6wkkk0hv_6pXHYkkkM~wR@,<<3nBQa&*tkk)hec=+IcwNBOZQ8B_>kkiu#YBEP(Rl8L|jl>H)kkOf<]/)/e.Pk`(jEU)kkk%9_Y^=vq;PAfyZuZ0p2DkkHq!cK@y_5dBWtm/kkk.*8vA$,23kkk~Czs2L(v/kkkT>btq0-2q4zxPp[[)kf%hqM-8*h#k^:[~v|$kkiuiH}4G+T[i/leH~H)kkOfBR#OKsvFu9i7*a)kkk%92r$IB!K7Af?L$Z@pb,kkHq_L#I4hw1Rtwx#kkk.*^t.D]_~kkk9e6g7zTRzkkkT>n;v0.ho@C=N(`[)kf%za5WwQ3&?{Duq@=fkkiuSZxQ9pA=w:|&dM0kkkNcNrK|gt.8ZRw:z4kkf%hcNJSWP&8pF8DA^qtSkDkkN&3~h&?V4?b5sI>kkk`J&F-rGbkkkkfv{#J;(+Okkk0#a+/@*K<ZE,DtDQkk)hnH!=4c]NU$i#WKy>kkiuW&:.&&e~Ox|GGHH)kk*9mw_D5FL;[$C1WCwkkk-$:N}15Ryoq5oQ,H1yewkkHq:yMoQ:A|9;z.Kkkk|sO@RD~Mf{H7=XxR)k)hj=^M??8~fkkkD&(av,pHF:hrpAXOkk8?F-G{9)M6{wYK=4HfkkQrWXLQ6B[E~|9~@<)kkk,bDg`bDy>jw3c0rSkk9_Mcxs2]&T(Ss51U4`f&Zrkk,0kiUs`QF=Ed1{)kf%tHgT-xw<@5E#j{Nkkk3&`8z(|;q-D[p;]kkk7ea`Q#$a!zCz&#R9kk)h7VjtNUVlB&aGzX:<Dnkk9_{},QaeBLw*kkN&o|+czD.;+K*>rkkk]*m/!8jy>kkk9P4mbXt;u|LNY-T?-P<{f?kkkk,we_hVgrWjT+pH1[YUy:rkf%uCUM2ND,^)kkLzfJi-xX%qkkkk&cZ7C.3wxR7JsW))gSkkR9A&|A#-EHUr%IHV.@o494|rkk[$#Y$Pmn}g>z2Sh.Lkkk&GCB|KA?ZUTkkkf%#L*YA9@lD>H&)kcB4W4e.@>)kkikkVcr^Wkk9_zKNjMOri/zrU}E<fkk!N5%=Yp]NeNVD)kklfZm!QEXscT8A/)3.#kkHq{t=|f:Bkkk>hE}kkK*(cDkkkuko]kkK*k4e#lR5X4f6(kkwC0Rx98&LT8wCK;8DTkkkkW=&6X1XZ,kkk6e3Ga2Sx(%A1kk)hTismhiLm)k)hA9WNB;o@=rkk.e:%?e:G*tJ[Yz/z4=3fkkHq{{ezvHaca1iu-m^4#:!.cf04fkkkb*}2;9W))(e<?xBWcYYkkk?hKCck.cBC[|oSdtd)$VckkkaBGf^}p4My)k9_^aMEw9!6M,kk[$`qT|e([3kkK*OG9sB>kk!N#,-8h[(Htv(kkk`kR#*+fkkkuq3QFOkkcB>0,W^0rrUV3gkk)hqHd0_ukkVsMSkrEj()vV4b}C[4ko^#R_>ChkkkBc_Jfkuz`}oAkycpK_wkkkS3ZbAK7{|NEk1=!xU@V;[kkkPc(=p>.3{3(UKTt~/IWoF:;|[4kkf%yzF#l*|ZqH>Y@$x:C|)kkkQa<`XH|7J;lCB2Xn/(&JNkf%EK9a~e0fMQ;]Z(BM/)kkNcDY&w]op)kkWfJtN_tRmXrkkkzCgef/pZ&kkkkvHdV6kkcBImxNk?nW8Fw,kk)hA;G)1DkkK*tj:5p,kk!NX|L9#G4y]++kkky%.X]=HkkkP>KH#BUBYB<Nd;)YXkkkNcD7WHPU(kkkafdZsOc+5uD1{7*#xUY]9NkkXH&JRr:BQ4|<N>kkQrq=k_:(-,kkXH(Jb*<s&gmGM)kk9,d6Tq9x,k)hb9fMNy8et[xi)kkkRGD>U3/d8n,kkkp~Vam?}@Ho3l+I(+%6>kkke=TE;jd5fkkk=njX8W}{kkkk,k/pj03ekk)hR@-3+AQ_Wxh&VcqZ^B+djRkkK*/]O&~`^YX&#KkkZ>sp[OxmZ;at^(Z5N#BIu[R$kk[$wC4/NDN,kkcBVu`+2>246Wkk)h<`uxC+3{0LGVkkkkRSg|D7Z*e0[=whmi!RcW0kkk?/A6^ehTogHMsmlM5Efkkk7VwYp?jwp9CS$jBkkkXHyfJ?$~g[X]Vrkk[$%aM$ij:AFy4#DXukkkpbJ]W9&$?`kqUf~!mwR#(fkkZ>78okgq;!4fiNGO9HjaXkkkUDiPN!pKnqN*iN21_SV>kkK**8Sw6<H+E7pK}.9Gi(P0kkf%2w<13uU?[95zF&BtSN<-)k)h[)Y^guYcvI*Sbn`,A:)kcB[)<B>C^q89/8BZy,#kkkl%3{0T{FVkkkaJsXA=-}ed_)kkY,Gc,bL~m0<5H)kk>)d0D#z%)kkk2h}o|;mNjkkk2hv|U7yJ?kkkw)E{,r{`A]PoVV}&4*kkd}?wd>EgA2^UD_%(Yy)kkk7p1H*O{{]nFkkk2h%p_eSl,6<9^8mf)k)h|XUZ!5o1b|{TkkcBdO@^sMs+oSS@kk9_]EZ@XxHM)kcBt`R~k<z)kkOfB{cPZVQ^*)AwI*Hkkk*7m2q;)k9_sT]@(p:O3a#U{gji3u}rkk!N%%sP3,^NVOmkkkS)Hp|i]DMm3-v+I-`T]kkk&G6cNUx`j`@lrkkk}s?>(Oh@I-9H<gcekkK*8dLp(D].eX?#kkwCT]5~Uc^_?BC@T9y?wkkk@J);?]&)S^_k,q`EJkkkChTw4_g(j:gUukkkzh~F[3.vj(FN>kf%:}|T.*!UEp9=6RS,Mkkk&c(yfr,{x>orX,q^e*kk8?~8g;+>pD[q:biW|)kkQrU`.HZf/4h:jF9W~kkk__nTR=$,N2wGm)kkHq:fG$On{{/F_@Dkkk_e)hX#u+^e7JipD-{FM[hkkkZ8kH]jDq!~Wx_7;W|z9bdzlui-<:vws)kkj)?KVF7kkk/%4u7/,kkkWoM9^o<>zR!kkk3h-(s3W0Df4)kkZ>qv:SF[Y@i<Eo/|;FTrC0kk)huo@Wz//M=pfxV?{8La5hkkcB4D_^Ox7Q}sr<x;c_uozrSdxoJcno<g]zkk``]t~JkDk^+xG-hhms1G3qz_Iw@;._&kkk@>s67AW]dokk9_RfkKn[MW}pSnyT]uEVkk8?i.}+GR><[#.A1e)kf%r`_w:n^GKT:DB/2~[;$rKyO)kkj)<+;l-}sj?fkk/WS~Hd^1e/TS*N$*F<PA?kkkqk-wkl[mpWkk9_pf&C[T_>QmlJN*5,ZHkkVsH9hRKDUA.Mdca3e_3kkk;=Z|DecAhZUb>kkk,(1Y+lB:QoM..,kkwDe#v0CW5qIlOrR`E~)kcB*ShE(M(lqFPhkkVsUXT[yuTG>~qRao#!/kkkgudGpM,k)h(5f#A-2wD#!h87-;^kkkq<6P{yDQPY<JfkkkeCbHWmF{LiIi+s3(x,kkwDr}eMSTBfPS,^[L8U)kkkIm(w>r]a}p(raF:OMJ^brkf%@@D1]Ug1>{5|)kkk2_P84NMKNW&pDOfJTwxGfkf%M)u-4p9dV(x{kkf%`48icp@TX[D`AnJOkkiu((2K>jVYd~Jm^:>kkk!cSX,b$OSYzp;O~F4=c^kkcB78M5c(q#J?<HkkPAzaa>rm}=}m>YLG;i>/X)kkafCU)D+^G]&$kkTnogovgE,1<g:m;2)kcB5N]d~67Qt?t_kk8?s*z/-AesxE,gQU)kkka&[8y-u7w=J._=duFZzrrkkk2P2:lEMf<8y@<IY<TJ8Q~[lr&kkk7$WLOyohvIzvE(rK]a(QWtR<fkkklh}Kg^{.[{TRj=t6c[r)5goEGG<v`EEokkPAf5(gG!n.{afDE.C9a#8VqAIFib#9;kkk/fe0W^.,8yr_$%QE/89l#4AU19|.I;iSfk)h,VoMvWF!a~3Apa-?-@o%J@re]Kq83kkky%M7?U*kkkif2EOaQG>kkkXTA^Ye&wUQkkPA=<cs#tSyLSZRbIY{6HkkTnR#!_$:>4l+UT*Ekk)h0@nbg-<h6+s?gdR}E+-fFnN)kkj)=,+qb[@|:Qkk/W+WsC1U^O/*xhqos]ZW#kkkR_(dY^naBt)k)huCa|.TJ={E|$PY.Z0C)kcBzicwU]Fh]i3hf7U6~kkkR*$g-@f,M;q(6B.ggfkkN&OO5p&abI_:7+fkkkDvg;cyE{*0qGg=@3z)kkY,1V@IY3XRlMCkkk.KtW&<$(D9uUp^kkVs*Gz/H*KcTV|tau!!#kkkB1!mw5=4;}zaX~9-BVe>G)kkS):h4!SzrY)kkkInDr&Jj_$[0kkk}kGsUuMV^v{L0kkk?~0-#n~pc[FkkkQ<D0dz?A#Lsc{gtQQkA?Ckkkok_;iG<1Rv;HOkkk%nJs(v$(4JOQkkkkm<wl<RxN;xZL4$*Skk]~O%Bj<I3UiZl>kk[$Wa,%+,Mip]5rnk0kkkVq*-x!5AxrkBlLi,kk)h%>$w[A@3RPo1Egx$kkDSGBlnoyV*$_,u^bXo8jfkkkzh>1{u{lHj~z0kf%=D{B+-.V^_eQCr#d-rp,kkK*qgl/yAj@Bo)kkkM$lz6[A=TAOkkkcegY`UIloU~;y-zkkkWs}U}n]~T]mCNkf%ngs]^OzViIQh9n,kkkk|c,dmcs8=wxzR(y#,!Q$kkk`k1S`3Ka*49$eSUmgv:e3)kk5|^.q@s>}}zs&y)0q5c3+z3c`kkk;c^q^(1#zDIzekkkUhpSnM4Yyp0>dmE)O<JFOBc1Nkkk$<?uDfD+;vO,Qo#~u$kkl/aaG>HXb3U;!Z6ju7,kkkf(%_hzt.++!1qA]SEE.@0kkkOhJ_%d<XL5$#kkkk.^t.t6Laf4aET7nX]$6FwkkkBWe0fSkkf%mR$$f/kkd}YFB6T<t4]0==~?[O>kf%BiBapE[}`Kz+0jNUIkkk~8h:_Q5N:KwS-q7?:oC64!KGqOfk)hsT(W%Q{^`$kkK*$56ywrkkZ>{pJyKi4-LHkk9_u|[;>p[4)kcB8%#`l5;_1BG8Ovo50kkku129ubj{&}|-+)40cfkk!NNJ/P#GIyh+qfkkdrE]8>F]<K<|w9,GdYkk8?-1/^aGIxOI&_mq)k)hJB}e{l1aIyJX)k)h4W9L<a^Dfkkke)13#!7y5afkkk;=q+=(X<])KTfkkk*hr75]Z02#FT)F{V/=Y88E6N=/kkVs]C:3/X,!8H-L+Jw%Rz{Ro33P]kkk<sXmyJ.BKPDm*S{kkk,K0!y,Q`#kkk~8M}oS)pq)5/.1P5nbl?]5JqdOkkkk:T%#5,3lS/-gH.~H<0zjw.4}f)kk[$C~@n*lq$kkiuNcAR>tO!kk:J1Bg:Iot(c^YSkkiuddB]?x3Fkk)h?]iib^w/2[)kf%qsR[`@CCRhp2kkkkC[V6Nc:n[jkkkkMeoP7_(bYkkk&&~j>JRn+;f)kkS)IofluMvKkkkk-}O}J*0W,kf%^Yn=FS[pFI`f%,E^2y3PcokkK*ZVL2KaN{)S33kkwC#^C;mSl(GyQ:%390fkkkX_+>G*%mRF[^#79.%kkk=r3aa9{8080J~}Nf0D`fkkOfDhGG;Cfrkk!NO!%so9l~EkGfkkWfR^FOTZS=Okkkif,pfb1s>kkk)#[~JsZY&kkkG~M`lT[>kkafdg6&~)kkI)UJ{U7KW8U.s>2,kkK*(kjAV,:U6`!f0hXZV}6NkkiuU?ryJxkukk8?8)bm{cQVkk9_j)Kp/Qio)kkk:8{Ox$Wd>Y*kkkZ{VU@jW.j;&l!kr|2M<f3kkk+Am,;w`C]kkkKC%+$+@fkk,0cN<:iM>kkkMce@*GjjNkf%=uDWw}A5c%Ookk8?!E#Dv1cW]$9k`rkk)hRIfg9,&].ddOlfkkdr&+F*]N~@Aih*+EP~kkcBzOeSYZvav?u)})kkj)kBXCD_,p%,kk]~K*2f(1.[,)]rkkpYru~;{XWfoKlkm/kkR9!xgVB9}8}P.pTS/znMDJ?>kkm*&/.oQ%=5/|Mog(yoBXDD-kkkYb{E6$Xz.V0L&kkkMeP4t@mx$kkkO%?T{V*^47VkkkrHFPQ78;RO*RJ]:KD-ne6.U/kk:J{CuYIGx|S+@Oa0Y4fN!gU?fkkkP}k?ajmG7[50/a+JAw2G{&wkkkafWS$~ey<gQFkkZ>HLGb7IT,:y[jzRv#.=_qt,kk4K44=/W3}xzx#6AAeN_b4EdfkkWf0>c~,uX6Nkkkp{DHkkR9f+v7IGj@{+VmfGbH?x+E[rkk=r;}Ssr+f,Nkkk`BR5dFC)2*_Trkkko?5E~8wtkkf%^YK/*!%[pnmt5l[,g`}T18kkPA]~<?K7CWu)kk,0v<q(XSfV4e^B)kkkH0=1X/(`yys+%GeP@>!Z{c(kkkafxQ;_V~ka9o{O(@;K`y-kkkQrL4cL}q>0kk4KLprap4ZhK_O#@#>n.3hY6fkkWfM`dpZd/ffkkk>3&(Z|]*_;NcxFoC2l+Dskkk@_]!HlRtpkkkE?K%Zj3)kk,0a;I*I:fkkk}U%K2h!&fkf%}5GL8MfBt0${kk)hBri#QOcg]8GCL)kkafUOs;qm~{]DkkTn.0yngBhXm2fB55)k)h[c9=3lKap;g(I)kkdr74uSQ3u8J87Z3E}#kkf%APrm]dDvWn,kkkg<.HdFT4|IHkkkXssZ+y~EJvhj$kkkIfW^7^n@6:B!=m]kkkWs0qFNxGpun$>kf%@@_rJLbWOF|D)kkkPt&`/29/`:>kkk:BAb#Bdh@T7$)I~?kkcB0AI4HMZ{&B7jukkk-_6kkk4*!mI`U,>(b;>M`D3mW*kkPA[Fuvk[|_Q9k9A=mzVL!kkk*9GmZ/5U{K*^fNUB,kkk4fUqF^Z^}#r[,k)h8`b>&t/9XGuJE5DkkkY&{*.&a[|_D9kk)hM)F;o]fSFj9[kkkka{URKL7._Z&kkkm97Vv-!o5UnB_LU-kk)hyU3oO}Ui@`R`0L?NkkN&Oayr_|HY&PxfNkkkfh>kkkKr~.8-IWrkkk}5+[wc$)QE(kkk0K_8CFH`Z7<xiBTryfkk]~>tM$099u#!Blc4Mhk.]]@-0kf%[==5>G@lwba,kkcBcBkkcBQn=~SyKT],qBa5cfBkkkL*Ja:,@<K?o$WukkZ>[$kkwCvqG}3_#eUaY3n9=VrkkkgR)kkkL>iP1ANO179c_n`HkkTn9zgkVB;BRB`J=Kkk9_m!P8KuqPKWxYEv=P95kk8?=WyX76ZnLPVIR&D!e0%2q68F)k)hVmpnxn1H86,2]N+!M,i;D[DKh,(nkkf%iix4]@Y(fe0kf%j5>IA[k];`FJYXfkkk#*n[x1PU/~2kkkMhLaF5a&kk8?5iY8`$]vkkK*NQ<Z`EI.I6T-X$rw8:Xw8kkkcBReAk2LKVI-yYGU%HGV%Vkkf%Qv9ks6z>PubDnE7NM?4dkkPAN)LkpgxtGy;BmpZl]S]kkkv<l?~o2gsKhuB3/vqpt.kk9_bf*T~9Y_AmUQ`0{Ejhlmmj~+L3E>kfkk$$<5GY_k-[caSp&yVjdrlE#EE^Vq.4kkkk#ZeoPLi54ZwD`AndQ=@Rrkkk@@s3^TmNNUJkkkP%-(s3SxMf?O7DLCzQ-jtm)k)hZaW;5S5D8Po79Z9OZ)wOkkZ>o6Mqxkkk:fy(qdM|E/`@_#V_wPiGfk)hZah;uS8O)+o7|ZeO!f9rkkcBGxilcOm>KJ^{zx0G;aO}kkPA(AS*^yI`$kkkZ>&A#,TNmjF{3`i(V>P8!Bkk)h6vz09!mjlEYnx`6].3dUkk9_1#wPOAl>i4AcO]V>~K)rkkJOPg8pz?wN3mE|Fom{~&wkkksB`Bx*54%|J=WkkkJOk`@Q;i|aDe@}9Cl6kcOkkk8T&uUWX3,@H{B]IQHrALZkkk^*r:N+T,tN)k)hFL5)kkuuoQU$<x7~{?+Y+P}Av6S=:{A!oy{q)kf%[5`0&-X?sa7N#ZJaP6Lh]LkkcBwXX~^d0-onvk{kkk8htjgGSCc-ZL5?isF64UmL)kkkb?uU_@XmGb;9&}nIu4~(#O*Y#3kkVs?I3GexDuM?U&.*&FI*t99V%:%kkk9,cX6-i_)W|a>pZ6oy:t/tnegYrkkk(Pej0:0Rq-c/l{5zfnEBlkkk!kKJ*;7IOU!F(||gX(|,kk)hAPz0c!bj%EoyIz6]#3=Ukk9_ACU@fe}1O)kkafiHrkkk}1p>`[xjO,3J@zaMN@Id>WChe<E+5/kkR9`iT]c!;lWE_7>F;;c!7{&>kk,0J|xhW4@RZZ~s0kf%_Z>{6vp!w+4-54VUCkkkw)Ix7^Kw5ZaLQ8ntr>kkcBb^C&e2wMtYkk)h}5dI=(|x&]|Wkk)hSW/_y3oy2CII{P.CoT)k9_=m91NP#/W)kkpYChGq+K]Y,<!|&pkk)hL;7a[>Qln5qV)TqMG5cZHccyX6YfV;)kcB2Y7M3wO#*MV;?XDf|0Ju}Chv@M(5X~kHkk/W~jH{p,q02(E>P3]Y;=;kkk-*&p2+6B.gV>kkUD4^]K*d{Usr]V5OD<2fkkJOe-E**dg@irf~/oKw4S>kkkwv6dV6w^7lNQwe0$:6s,+t)k)h1J.h-R,moG$@&vN*f^OQChFkkkEhCYY=qP`jnbP@Qkkk;c{~hU#!8zZ,[kkk.KM[@??g8HiW-N}-0G(Nu2pF.@kkkk2_>F/P@gu91I#i3P[UR}0kf%Y7CO<N7]2d@=xoR+@z#0HnkkK*[cgb[y-iG4Qn#sDXPx7V]rkkiu@^80AvgGkk:J.0z*=)V<R!Y>kk]~GGCfvmuq|F;fkkUD0R]O./OPKkkk]hKA#l`qSB)k9_|,Zt,O/PZ)kkXHAy5JCD||P9.)kk=r>*|~_(a&>kkkT?d@pCfjVkkkw3se2J4UF5<NH-E4)kcB9XMfts-F=G:TR#fgDkkk,b^GMlHd*kkkp*2xTpBukk8?dd^*7H%`kkbpiNk)kkBcovdIE`bf)kf%*7`EzY.0?-#M)k9__l2dW/2dQ)kkXHYz>;WPS3FRjfkkm*S*?g7JB6Zw0D%@^xL#vAr)kk*9+2e|Qb{~NR`aPKfkkkVqkA,QBViP~9;(Fikk8?FJ]D9VHKPkcgJ?kkkk2,c+O<Wg=-EU_hqE`-l)0kf%Hy9M1x>kkk;cUH0qc<c&#)qkkk@*DN3^[]ypu*Bf{Xfk)hzy*S0OH^,)(pp8@*=`<a0L{0fkf%:}8V-Y3dEB^ttcHg~kkkn)]#3@~~u~$TP/HO#9fxdR#>|kkk(c9,]T0,b~WDj{!_X^@MM,kk!NycOsJZ>Zg70)kkZ>Frk{0$lf$WSreiyd(o6kkkl/EhB&p<g7wcH|bg.*,kf%80l+cHC`+w=>^fkkQrncHR4a)?2t.?Jk,kkktT%22Fp(1Th[)[>Lkk9_1Z5}PS0f=z5#toR@JXkk)hT|wMV^jU6awhFaJfkkpYgrPh|Ie|D!As_[kk9_66N-:j=gTU[k;@L)kkWfkIbp2rvKDkkki?7jBoDYu+!c16Fkkk@e+-~[$ft3dU%cvVC7?7#DykkkUDM{^*#8]f4|fEcZywe)kkwD+NJ!~0DsAQ5RG}Ufkk9_3CqlQAR}R#Q,YS6^N~*c!$Q[fk)hoAgrn<9fkkafRwaaR(F(3jkk.eDIn[BBch}kkkS)y&5L4z?]fkf%zCU/*fd2jsGo_`}8)kkkxB#79T9#kkf%$keBVlvr9YKg7T#nF,C[kkPAk5P+X$&5X)kkwD.FU,%F@:[D+o$;znkk)h=m|a|!5#fk)h9{~7b.(@Qc.M:[4cV)kk>)`[`8}`R)kk~>P8.tZ<d7Q-]XIhG-h;>kf%(PJ:H9Ua&;<|-y_#^3QVuKkkPA=}JSlX8()>kkafWVZ$.)kk;c.#:dgX*xSCLkkk^*Vjj(fCw|kkcBo&E[)0{Z%2hGkkVsDS,&wA}kkkDh!Hkk9_%+zj#-~Nkkf%B1a*GOkk/WsiUTKcOXB:Hw(dF8k&?kkk3hc`dBkkf%D7$On$YkkkG%ERkkcBm2cOG<J!?*@tkk8?2us(tEm*;U/>?7,k)h6$]z|Snno,vP)kf%+a5ZmrkkN&[Vd*]Mfkkkg!0fkk]~gsdOAtj.nw&>kkXH]E{V#%Dm8TJfkkQren6uT-_gM7[P~o)kkkO1#hdWpLj.eFB>kkR9I2R#nt#Qvo-w/fMlktHyP)kkUD6AjMNsUqNL(-Y;~[9rkkUDHANf>*,l~/X{kZP3O,kkuu#M!|TtgH?bn0PB<LqDPrqHfAo6t%fk)hvf`.E1cfkk[$$EL[].LU4}2y2Dj%<&|PEGQ{11kVlrkk9,Y)abI})k)h:}&7sYSiq86N*R#fGkkkw)E1v8=H4hu:MN+j^,kk:J4K{KF0jQHu2~$G2;Ga<#<@0kkk(s^F,D~F*7{`fAK9p|rkf%9{A7u(3}qTqcN]!fckkk389<?<oVeQ-xE&FltU,QB!~!r)kk*9Ur<;8q7@Zi]0OVfkkk0vBm1X^>!ME{$bOkkkJq}L@I-KpJWP_>79]}rVSycAOkkkrNcUpI`#;zq|/0]9m(]W/*(vzkkkC>GUqOVlP_k)kkY,0yHYwP<`Y+V)kkPcBhSE=q.T&zNakkcB4iCfU4rDd&t9#13FMkkky%lfMtt9md/bxEx(EYQ=(kkk,K0R?OZKWkkkth:Pnp-H^vWNkkpYe^s(@UNe1C]t,MkkwCN1/^Se.Azr15WxsDkkkk8Tn|HS!,2bKgmY=MqL1!wkkk-*fQ]g0t!L[)kkP&28s5Uy&#F|;<+=v]3vDf|tpQ3ckk)hq#Cn]M(j&y[qV*_0kkLzRY~o/ijc20e_oK4}`Nkk[$Gy&cZj{zkkcB6QsllqYF((fk)hN0Y]@&6nFfkkiuSM|+x1t/kkf%,KuF,.-sEo3[|7bpd0jN)k9_fzqLX;6PP3@^?/*<eV<kkkZ>,b(sgFZut]:Zg~1uBis)kkLz==c?yZA7D)kkR9R*z<iWX<|$^PMuO,i9-Dkk[$SEmAxry$kk:J<r&2e/^MW.F0c}.:P>B#5v$kkk!C;.4r~@DP>Sx!;8Wt4h3Jkkkk6f^:#D}+[1%i;-@Qq;+|Nkkkc){m]!-BQKn~v0g_{aESTF6fkkZ>kM+b!Ba>q#-J>&#rrY}/kkR9tS3IiV40khTX]~NBl$]LF)kkm*ZZp*E-^dN)4lFA4+6T0~Nkkk*Kj4l#,!Q%kkcB:gi[pU~x|,E4kkPADI7&z$5$[rkkafb~H#.)kky%#EcJfkkka?1uI=I,kkuuP/%<&G+=>Q9exqL&zER*i^__!|HIrkf%QWb6hI))kk[$_D4q$17=&O:r3%MXM3>2@:o0KL;7>,kk9,kJ_c35)k)hbD<BA^4kkkj)DE9U0TOBeHkkiu>~2@8tU)kk8?2Ur`]6jtkk)h,U(l#0(#V0[u3BmrbsftDg8VU,kk!N5kI8:$]{7rpkkk~81Tm3qKp~yZxdshd]-@{&&i9y)k)hF*3.s@ca<1Wr)kcBx2.sf@&)kky%LEcJfkkkY%liFww&LHUVJ,D1Bkkk[kF1{D.3kkR9su%r=$-Y.9n9aHj5*,S(Z,kkZ>#22R3xV,)ykkPAu|jN&gm,]>kk=r1}|g=fI%kkkk9=hqG2snq=Ga9x&kkkwbe8O/4}sYV2|tcoPLK}gn,k)h6$8/glK5N=<<kk9_k4@O6$$)i$kk[$]w+sGW7YkkLz#_XG:j3qnkkkH<D(Cfx[]K,k)hk8Hb?![z_XC0|vxy?_wNkk2]w>#$N|NnuxsnyG@yuhriEyJ]cXkk)hZVi;/b/>)kf%7>23:5jxRCX/nfkkOfvLbp(CVkkkOfh70BC-,>kk=rXPHp/hp}$kkk6=Hu9#kk)h~*;ht`{fkk`kkjkk)hoAe|I`Rkkk5k@.kkcBp{6p2tw}E*PUkkPAk5&Duc0_~>kk[$S,JK%kVAGc[x88Hkkk+B2KgZ~~l&F{0kkk{BP6cgXQIMkk9_E>$A]Cwk^YxKCtnfkk8)3R=7kpkkcBRyT==|7kkk.K<3oAZaf<f`9[kkK*E*n@vbCx133-WP[y*rMecSkkK*4m3o?rkk!N5sAjdJgOSjJ)kk9,iURADi67_A7=kkkk=K8&B]kkVsZ{6e(7fggW#&hkkkxAoD11kkf%&yZz-)u7vp]{kk)hD7VGv+u#&x~^JfkkY,uN}fzBFV.y?)kk8)!EW4bwEbvWMG)k)hK!`=~HWq,k)h,kD;:6$J.$kkiu,*=/{hvc`9}i):~kkkABnffG*kkkVmes~Nt,kk9,l![5ME,kf%*93)kk!NC.^jI0$<#b)fkk8)Fr#$W[kk)hiu:rkk9,t0$$tZ)k)hi;o@,|_fkkj)misSekkk|szQ[0aCGkkk$k{WkkcB07eQ3,kkafxaKkkkaA#(kkcBxAt[q>kkaf]Ukkkk>h{&kk8?PcZ40HaukkcBo[o)kkj)jp!S:kkkU?6`kkcB8t?fkkj)5?%*BkkkDh})kkcBylwfkkOfRn[9cGV>kkj)N|DkkkqsT2YNkk)hzm$kkky%nK)kkkg*M@HSkkK*>3|kkk3h[mkk9_F/;qm(MnJfkkylx1_cV6zzz!T(ZZv$AlLT1_#>kkM{iV&OC]PQwl&]2%=uO9^_GT},kkHqPAFO.33)1A,N0kkk[%(H-W>7hGM}+gm~_DV&P6&Prkkkpsnu;mesP(9f^+1~H;rBEF.KHkkkYv)-v{.jx,C5su#,,pe&3UTjOkkkW*)*cmHZ1ORcPb%~6;40HJsFOkkk%!el5tkk)h-pkfkk=rxH%f7Ex00kkk.3Qebic=X4%I*T>l=ghEzN;}!9+z6fkkN&<H1;H&>kkk+J@YJNXLqU*^ejSv+@TY%9dAXsot>W>kkkKCyT^>i)kkiu+l<&gn%$KnP[8jPkkkpKHdxohJWK^[m+])kkY,TUh7~K-2Ax|kkk=<r%)186AlG5DG~yl!Ny[kkkThjkR})BkkHq4@OvpElkkk8_Ada;}F%N7fDANkkkss;}vz{9K3q)kk=rEn<(r70hqkkk#hjE&;CY&5*{,m9^c(c(kkTnvXNGk.;[qP~k5Wkk8?Gh<Rf5AyS)l(T7,k)hl2/vT@1Sa$~DU}fkkkmux>EL!dgfkk:JnE5GgDMsr0yfkkLzv=[0R1GDUkkkFKp1G}2PieBb~kkk=ABNhj3/)kkkf%/WR`SZ?ZC<cGlKbopfC^)k9_:8_5Q},wKOkkUDEnm24]@ZqkkkzK]Ly3>{@5Kd+/Fz@uIZ?kkk>)<QBzTGGkkk(c(2QP-Yko`rkkLz9Rbg)M|!#kkkok?8-09D1v.z)kkkD1F#B2j^LY,k=5CQF0uJ@$QJ)kkkfv`s|}G[qv^:buSfkkcBa+|KtNkk4KBG{=fqU`X.:iRH{LGQAvQfkkY,2<Gt`K,CsibkkkQ<2kozU`C~xkkkWfxmN2B=l4fkkk<>WwTzPzD$$q|,]kkk}%iMAl|lutYY*oeVw6=^)Pkk9_Hy[5%b#&B/-LSt)kf%qWo{G@~|B3A;s]vq#$B,`rR,$-(kkk__/tz*)Okk/Wd<6hW!OVYKq}e&2q.)XkkkShiByOezkkx!hMRm2gI)>H]NmgkkK*C[zFr<AFcw;jkkTnUDHNN{:^vdG2v3kkcBGwp6b/Okkk.Kxni60)jG(hgBkk)hSr)T6ODV>P$sv9Irkkiu3)>>(^qYM`Mj&2~kkk<<!*_pmp$I-f]9j$8QBkkkr<B.nt@hbEY=0.?+,k)h]s;L9<0@(t7Bv!OkkkP`N(p*5wwkkk_}_EO[9A:N*ba.XJMxGzkkHq:/d{IFX*CVNLkkkkcs=Wj?4KCaUY[VhkkkShfd*AdkkkpYJJ$vbVC3o)rG(fkkVs1(FEW8<!h!6TZkkk,K<aIt+;~e=L4/L<,kkkziU)nlv}H_5!;z%Skkd}C]LzEpspgrNiw(wq)kf%bIk~m:v1l!iP!tq(pkkk&cp7AMoz:Da@r|#PiukkiuM][<<=v$kk)hyO/x)tDXrv0kkk*0aFZfX1A!8bEGO8P39a3kkk}sOg,c[<Skkkk1#D>q)rkkK*K^M@=E`9x.)kcBZ1F1dWO^OWtt/|vXXkkk>Zt{.S%{2=df1X?7tzjsj5}rkk:Jc&?LZGf5^ROS[Mb)|QHryY*kkksB|f@(Cuy2$|?fkk]~`|@lE:vJ#pDvxj@Wgltyx3>kkkIu);wW@0vp$dRkkkQrVhHR4a)?2t.?Jk,kkkVqcS`ugs5T{Q}H`Ikk)h^aBG_S7ct#j8H2}>kkiuU>5Dq3Rr_0^+?bEkkk(chMW.<:idiQkkcBG%51]8SvG*)k9_yz]v*V`.HDKA,nJ]bI;fkkwD?p/?>FBEn*YrP]!])kf%kzJBy0b]P/AG`9`OkkiuE{:U^HRTDD0S_eskkkpKb=)MO5evfj~@Q)kkY,zGRNT_JORql)kk*9L</gW+cu-DPV`7,kkk}*`t^$D7TJ%cVd.M3fkk=r<_9E]r;fkf*tiqY#I)kkZ>|h5bexGt,o[B@zbxSUq$kkd};N/O*HC:-wbr&1^&fkkk$h19hz|dg@5d&y53#[fk)h:TW[Q)Bvxhl/C;$kkkiA#VY,j<g2G^Z,kkLz~{Zg^H1{@w)H-%koVkkkdr9#2HBKtDEI}d&ZG}kkVsqLVM-Ki[nJ;s1q44Hkkkp*^,[5n#WR5zN/kkd}`$JyI&*{Lw8Dwhd7,kkktJRt(<3E:{u&8x+O5*fkkket2UYi]7JW#kkkC_L.}3$l/^~|p%~MKkkkWf<=`xr(cvG*h{WN`F#kkk<<I_Lev$;^frEd1>>Q/kkkl%(J>8rOVkkk,b^xoJw+CU=Fol0T)k)h-3[*_[dDGw(S2kkk*9sHeEBJL8LQPS`S*kkkKqBOuu3nJ,=0T1!kkkuk-YqP;9ln%kkkI)X[pDmw.QM9($a,kkwD::+C.QTZ:NR9-e.@)kcB:g2L%.;8+qE>kkPAk`n9sJjDHfkk[$dV.2eH,+jxmST^1kkk@*H&tz*sah&<E5&+fkkkNl13e>;{/Qja9!<j+a[_Okkk(~w](a5{VbYwfk)hnpNAMToxj#D4p9=dF)kkj)(=%Ej@b>9*kkd}jExT[_9A3fSSS@a2)kf%8zQ%~5R7.Q)-j]egGkkkWGdsHB>|%.ZA/*&w32laofkkZ>zb|CDQ_Nr|kng*9&h2fDkkcB)S`[6NrjFn,k)hsaW;5SF[(F;xo&Tv=kkkj)Fv(M@%~IiMarSw/D<7NkkkPc@?Ib=iO<*H/))k9_s}{,IEh=4{INjb^d^GMO]eQU)k)h<lVs9P;)kkafsbaK*Ezy;)kk8?4K7c9{3@kkf%aGE37rY#{rrkf%}Uh}3^V1PQkkcB])@aa*+dzi)kkk:8pywMkk)h[[~3:rVvi,rkf%[=6HY;ko:uF|kkkkfw`=$J[~j;rkkku&N@]dh7R:zf)*kkK*cNzCbAol)H)kf%-*.Y;DkkcB<H`2(}0@F:,kf%HyK_i4Jc9z+<nkkk(c5]c&<hiQgSkkcB3>ZZv])EZr)kkkMFa:Il13VHKkkk[sfZ!M&l&AYkkkj)=BHS=@7YM/kkiu[5qDWTV$kk)hDS@*i{wh]|,kf%x<!TBcKkkkj)ob6/G~io@zkkK*k|<^e,kkZ>sl$+N+)iT$kkPAl+{}3,2[FfkkZ>jhJtLb>Qv*kk9_-*4b|$Id)kkk=-5q~9mR+dYkkk`Tjj2/ePaJ4QqkDkkkT`S7+=Y4y{Z7B1s$d,k.?Jkk)h7JWC6vLIfkkkyHgl,C_q%^+SHs5?<Cc{Y%9z)4E7xI)k)h>0A=7HMfkk5k_kkkokHA-(T|u/Ke0kkk9srq#$Z2B:mMY*WJk[#--V)-2,k{,$kkLz%&H?/1T!rS3UPc.!CNkkl/fO}$gO!-MU0R}jNJ,kkkZgAM:MkkK*l/CkkkX<tc_sD8_,qL~$2GhDkkZ>|swkkkPB|m*De&2kkk,bhqD$?IHkkkO%I}kkcBKpx;8rkkN&SZn,w@-*%3nMrkkkIuo@Q6%kkk?wzM#|J9?h|cn=s?G~#?tX_j/Okkl/-0gYro8>>M4{H:0>fk)h3y^!}=(YR!iYGK}h]tEkkkl/}55p|N#IfG;RIp,a,k)hv?DpC^GZ5yj[n&Q-.Y4fkkDSur}0IO7>VEmg%*%E1cSkkkqqG.}KvH3*fkkkF9OEI2%-BLyJ3iK{K3kk.eyl|9V0^=Okkky%fb,<&kkk)#Xsl!aOrkkk]sL8zy4kkkWfEj[9$hg?YkkktTC.5,j6K8FIfE>7kk)h_0~ScDkkN&|5N3<m)kkk.sJYGNdv%`tj8(BkkkgA`Pnq_Qlyc2kkkkERpbl(kkK*t^,e4iH-ySm.cjB%vh6TSrkkK*T2>Y+>L+lIkk9_?6;!r4-g?.g<G$kfkpbuLn5M]20P1fkkZ>ysG}9x}7YK<D)M7:[vUQkkcB<r>7BMt9|%kk9_3uR#[1lhl$kkUDh?3ERAr`hkkkI?@@wiNkf%!/5-p]L)TEG^)kcBR[r+H)G.Z:7J,nSWZkkk[s()~i>kkkk(rn25kk9_+W=H0_d;)kcBH9s^sRu)kk8)BO(BORr4;_)R)kf%I}j(q35ncq/;s6G0kkZ>K-VNPfkk8)c,tDAqkk9_80b&1Yq.^&=>jufkf%~24/B8-&Dphwkkf%~jzmi,kkR9L*ua5_?p)CJ]H`Si/a}NA)kk9,S,oV)~fk)hgDet,#^==a1&ru+,@MS!Qu8(bzLookkkZ>{*A5&~=*meKvNWzJQspHkkR9&(i0/PR-MvS{|p5nZrEl>,kk=r_2Ha~oNd0kkkJ=|AVRA-.ikk)h&;4mI,kk]~]CqL%K,HC-],kkl/hZlDK]he|gdXy$/:kkkk0&*LBfkkcBT]sgm)kkpYwEx.ZWO3KJuY[Qkk8?Hv>h]+Lrkk)hN&lOg3kkK*e,sje,kk9,so/jhnkkkk!~#_Qfkk8?p#8(`#(9kk)hS2!A!HkkN&TS;<KA0kkkn}4m<FH9NGR~fk)hsTjL=)R_arkkK*uk!JT)kkOf@9,vAgu)kk9,XPg?(_fk)hd]STn0-!O$kk8?ig#[s,<noa2u}lekkkthICT9YkkkiAL,:GnNkkpY7^T#]dQInI|5f$kk:Jt]CxFyK6yr>Skk]~FL-E,L2/IwX$kk5549<AQXgdl{lT4SKXq3Lt-#7h:cr(Ykkke*3]{@4}gb;~{H|lX:jMYkkk!%F+uFp2.IkkPA[$,>2&DbSkkkj)a.D/Kkkk}kl$~J3;HhqtrkkkZp|ZIDkk)hY_@Ycfkk]~.m7/pdl(IrCNkkcB|[6yUfy#0B|f![-p-?WMkkkk{dbu,}eUW_vN?f,0cB;xkk)hyz[sp8vIIzkkiuUM{/K!p.kkcB?wa6|>kkN&D?qjDan_rKfHHkkk#WR>#IKi!vpf0DRK])kkdrARg52r(1=&<2zVgjkkVsu,k;oL.h2lDtmf&=)kkkVq=<Fs~Urkkkr1NP-ap-Rlkk)hsgQv#Hkkx!sif|?O%,8gsA8Gkk9__0%3HqfH)kf%Q<JW*YkkK*(Bx,skkk9,|Kjp4oE(ZU&fkkkk;TxtOfkk)h$$E46ph!h5,kf%E!ln[VHV1fkkK*=rj96rkkQrz~I{O30kkk9,Xl=%Z!)k9_qLQ^SW^i?Dkk,0O:.7WWkkkk|B<e=lkkK*@tL4n8cU^/y(*&~%UC}TdOkk[$j8L+f]BQkk``j)i8a>I$F(b<$GR3Qq:]lSP.3gcl>kkkb_.R>{9aXxF$T6?{vV@<1kkkh)z5FX/C0?4g.i.6KDp=%xkkkkXTCl[f`hq*kk.e%GxFLoRp1fkkY,yW6T.b[,#UFkkk&chjF(y+r$},vq@%mkkkafm~;/,)kky%IAe8&kkk)#[hW!jDHkkka?su{=*)kk!N=Gw]<aIUn*v)kkE>x8qu!`y2J#-,|s4@v5eN2kkk,b{EhJO1jkkk9K!0fK&^:Xc*bw?#eHeGD.Iv+ZzBY)kkf%#,H@j/[?^JC_AXZxfPB;)k9_Qm%n77I^[kkk=rE.1;=f|NDkkke*ccCq^T1.Wfkkj)_:3&#kkkk<I!pS22Fh@j{Sw)kkNc[8s)!5O)kkj)`V$,^kkk3hu#>Grkkk^_r%EHphjBBkkkpe1-hefkf%0APS),8vfkkk|_W/[wkkHqKpG57+qkkkgAa7y51-#$E?>kf%]/Tg`dd:ErkkK*83nEgkkk8)Do+kQFkk8?j=9_[N%tkDymL4fk)h1JGgkxRo-}[;)k9_a[Jl]0[dswr`0B>kf%Fm8T*7.!6gn0LlyG7<rz:okkf%X6me~O+`>rNkf%FivYg`o3kvtC%TcludH5fHNFh*uspfkkK*Nlk{znE5-<z3[4fuY1(!kk.e|uNs&zBrkfkkWf?]TlSqUXDkkkEn$Ap7Ng3>5kkk?h?sn_NkkkBCy789tV=yK=,k)h`J2#NTz>l.S&n$4nqkkkpKrWk[K(SlGc3><fkkdrMq7!_ET?H+3#g[qdkk)h)h7-LNkkK*u$.awrkk=rm7|sXG:Vwkkk;Bm;%3kkf%|BX^*;nYXa27<)kk8)JuQu_E)kf%2]^#0)kk]~Jy^l=qoM(9t)kkpYX|m*9!(E43K!x#kk.e4l1fbMqfC{;|TD]|0au@04z|e)mNHkkkE?83SOiOkkafJSY80G~QDoY{7]:%-&&Bi8+W%Z$-GD_Rjw1)Z]D&!kkkBGFIiD`:MaO,Mv])kk>);we#IuwfkkE>wNCb?wSj!iq#y?srAZI5jkkk~hrFp2*g)kkk))U40;#1VQ&CUPPocU)cKuW)n-sh+KkkHqI3TZC}Vkkk<J0`L!5>kkiu%1?d1:g9#W]qr1Lkkkok1F+{oLfcYrrkkk6~=4x8EyWQnL~Rz{N/KkkkDSOayr_|;ZkQ-8DAsD-Dlkkk(s<,>b(YM4kkPA+a/lC_;edrkk=r)n`=nb$?3kkk|=eQNnYHlkkkBqTHCsw>kkZ>UD2[vkkk{)4T/-U^%h(jYkkk1BOh&.)kf%En`.W~v0vTn4g9BH/Zq&]DkkcB%jQg2?1IcD,mykkkj)U$U#=!d{G!}Av#kB4(&rkk=r|JKJu4{-lkkk@>r2>!-;wCkkK*m1PKH-<eKm][kkwCzm2@uV_CV4)LdN<0wkkkGPJ.bm)k9_bD8*v<|7RII.7h>kkkiDz;nexYrkkk~*9.m@kk)hST_@MHkkLz;;`F2&&D?)kkth]]Y9#kkk)bKX>F!*zkfh7tQkkksByFjbYkkk,0<|:b6sxah-cekkf%2c(&fQV3AIo=D=Ml-0W#<1y@Kkl=WfkkZ>[)w}+t^,S6m9,}W{OJ{SkkN&Dh|J^M)kkkv9>kkkR@/r/yDJ~7AY^I_2S.&v3kkkn_%s)qj|0YkkPA+OS*-ylt+fkkafn__QAkkkRKW[QX>o?{r>,.WS6F4pkkcB3uND.`#kkkm_1BEe/[kkHqRbc<X+ukkkEnFR![)k)htZF`9i-+{l(AkkcBR7b^Xg?vJWU_V1L*m$Ys}Qkk)hUD@*A{]hy2,kf%]W.mz71]^@1dbK8jNT6?8a+p;c.TTrkkK*<<UJVAfox^ne!<scjEA(kkiut`KUsimU/-H17=$dqaSO<+1=kkVs7>$Ll@0yg/9%K5zL0JS/}4R[p@>kkkxnU+Y6no>(NAIfkk%/<J}6>V<Z:j{]2*A,3]qZN^@HJW}cWU$-[>kk_0B$x3%${8F#rc(NkkLzES2A%-w?bkkkZhHw)!;G~tfkkk#P5_Hfkk:J==SH-o9m%g.3kkd}U?^h}VwZo]vav:z-)kkkjeW[q2kkcBQKQCsa{j6&+{^kkk>)VMA6F&^Z`6Iqmwfkkky`|xw4kkVs7J%|-VoWrd=pFTz7!kkk#*2=/Lfk)hYywWST:K>]w)><rkkkeef4Zv)k)h,`sLI^Wb>H]TR3*V}.kkf%$o?~|ukkLz0^>=t*^,<kkkABO+po0kkk$#1)tmkC@(#R+*?fsfkk9,;(e2.1H{+!pW)kf%t4SK7K)x-b5WGkkkOfvmfNE$ECbRJ+]<Ykkko`eT=o,2]-|kkk?hTs6PNkkk&7tC5YpF#/kkcB#x/m9.zP<HD/H`?^BBVqch1|ekkkI)nMZ{vf/.u0j#Q)kk_0#9HZ6s2LysE@BNkkVsjTgonDVNl3)2LLn6xhg![2Z|*kkk3h-`)kcBN?f4ccrkkkG%6{jGrkf%[5s1%!4=.4v}7&Tk;&oJ)VkkcB1Nk!?>kk55E{?XOln{*mPjo[1me:t|o$`cF4h*>kkk8TxiqYdn@8!IPEQ2889l3kkkcG5G8qVeVH^!{cOBAOHZlXNkf%f4@t9HXhW0kkK*^0RF.fkk!N3_.:=91vB=7fkkdr,lmnr,=Iql&#y)YLkk)h<=.,xOkkK*aOC;ffkkQr*~pyzN&fkk,08wa#H=0kkk8@(16UkkK*yU+X%}&D~D!5kkTn+lfv6A93)lAF4q)kcBtZ?g(L^jM.eNEb511h2Njlkk8?!P}6V|lpkkPAP=49WoVo8QSrupZNP)9d>x81N%&r|kkkm*7}x7^tk+El!8AYR>x]jkkkS)Do.53:U<Nkf%BmU+YL7G(OkkLzK^E:#}4S#)kkth9=P|zkkkWs4NMrZc&yhA>kf%%<(k~Y{0_7w9#S-T}kkkBG%1htZ;hO^2`N$)kkF9j76HG_5/HMPY$zjjkkcBL.B`NrkkZ>+c}4))kkY,(95AizX#fz#kkkH<s5m5}>Ze,kkkRf|`Vfkk:J?n0aw4uRQ5-Okk)hT8(R)/Mo/?Zd9H9,`>,p)kkklV)yQ8c~kW`$_St`a}W(rkf%nJKQ2i81Jkkk[$LY,QbzUwkkcB6H:M8yt+-n)kf%=WuH^l+8ODV5-)kkdr_a*FnFN+0;0D,Wbpkk)hwCx;yNkkx!Ac)_uIFH^&,Ye`kk)hbx6WDAqsV[p<<}7fkk,0fa~1BeNkf%07fkkka&y<0JcTxP?l[#D}eKxT)kkkXTO+m&f~.rkkcB&Bg5jOkk[$t>HM6];DkkN&1!H:v#kkkkKqASG])]d+R#bbVkkk`Bh4VC:Y(*yjfkf%&&h+1TJCgUoc:P`G~cQBxVkk)h?wb#u$kk)hL*f=DNT)bnnqXnFiB!;,)k9_fhvQ[|eC#rkkUDPBKwfZ(^YkkkxA_p8irkf%AfUBAK|HX+/{kkcBmrDFCQNx!n))rA!P9kkke*.d(T0kf%#/G-i!XL*g:#UuYkkk7TKf~*uU0kkk6$K]b`)kf%~8Ho]>kkcB^Yn,f$smElkkkkX#J{D?kkcBn~#_d0kkK*O;.j+>(@WIkkcBykd60D4nP<M(kk.e?w/TWrShfkkk8)05,.T*.`h#hokkcB!6}$ohPaT&<+kk8?9xU?VDP&6OP:._kk)hoZ:/v`U/oAAJ}4[l`dd?g%T:y>GJ{)kk8)K3QoyN)k9_{-5L{hwQ:1C}Wo,kkkd]NndQAg,kf%e)yWE]DkkkikIAk?z~kk9_ui[$N!wn-*Cj>9})kk!NLZwiT5bTbLakkk79w7n(Kea.t~_BcWBDQj)k)hlm0XMaspn$nAmPmj>+Rfkk,02~fWY&fkf%Kry:cZvh7*kkLzZnf>|&9Q3)kky%Ms+@Nkkk}PCt&{#;)kkkNhZD0[9>kk_0Ih:b6s9L+sdPh3kk]~s|jg&A*B?f|OkkZ>99IePfkkE>/HhOfgDTy0dpg7{ED>&d9kkkABvH/4H|*-JrkkK*[cyA:id9D2|q.o[&y]U3kk.e4eFzm[:>&fkkWf^R%.lh6YNkkkO&g}VWkkcBrl<Bzj*cfI&tkk)hb,W(D$kkK*40%ygkkkb,h5Ea[KA:+6Mmr>kk[$c/rtbzCwkkK*E>{RVkkkafGflKb~wCIzkkcBF#:y^0kkK*Jf=ZmB=Wl<)k9_@&=[v,G]{rkkZ>5dC/t)kkOf6w}iNve)kk9,|q-Y[6)k)hXp.KND#~>G,30v)kkkY&OKc~(vBXyOfk)hLJJOj,#el.)M@Q>kkk:{m!k3M+6o;35V>fEwIjvB)kf%c;PQ1Nkk)hU)#nDNYw%XpV]JFii.A,kk9_wqHQTPAq-,kkUDaPN2getN^kkke*a]Xb0kf%b9Wq;KR*!g3$kkcBvIr+Q)0}K`:>,n~W~kkkL_-=(.0kf%_zJKL^oF$a=HkkkkBrzoQ#5*Tx6H2)je4Kq&rkkkZ]3TgNow/REs2IiAys[1)kkk=AkZ]0|U4kkk8?VoB1+.(dkkcB|._>>9qH})+/!)kkF9A9AYD/30aBhU7/v[kk.e|u`R`{O&Vfkkj)2s^YLkkkr<^T;vHL<dTs34/7,k)hi;zr@W^fkkZ>6y2PNo/Be!F*:N){Xzx&kkK*,KbeE)kkm*|oV6~Tj~0SF3_(p/H#[*O)kkPc+sX~rL@MSVi[)kf%|iHQ2Nkkiu,#Q%$g0/kkHqMSN*L?glI)L`HkkkN1kvKzmlzXwfkkdrnM]G}+Y9FE$Y=6{tkkcBl>Gl_<SY,^E4))kkk|Y%b2[p63E9_|u&{3+SNr*kkkU?:R#gh4pCG)kk(c-B#L(M-wx*kk]~HX0>ezprO:+NkkpYT2>Y+>e+5[35fBkkTnJWZCM0#Vbfc#?ekkcBy(hq:XCWA(II=Jckrd9oZ3kkiuk5LFJ~d0kkcByOJ2^0kk[$=XvOaf/&kkHq{3JFFUU]Jc)tfkkke*olv:0)3|P)kkdr%uap?^[KDRr2QG3nkkcB*G(^>a)2v.<yl)kkI))6#(g!sC9HO>2fkkafyVnY!kkkkV;q&9;#.kUc>j:0e2<IZi>kkk0%*OgXe#.eN*Akkk;c4bZ#@1n5k^)kkkKbfSFDyanOBDR!vkkkTh|}yP/J.ch_[{kk9_k~e?V><{%|;L<G1<Y-R63~9Nr}ehN-J<)PHW(kkkN&!/{b;=5f_(wswkkkl&!EgYcq$Ki{4+]zgfsHcU;/_Fkk.envG<.OJnHC8SJX!EUnFKD`[KqYpn9kkkAcT-m!Cru}>t|*Vj:>7SZ%UIMWYz7Ca@`)Ke|Yhf%a1e.vcK1:w[0)kk799-#;Jp)/[.5gXC9`R0)kf%v7G/W}AHj]nc%l@Lzn}.mFjTt.kgkk9_DS]7)Oedkkf%l8o;Zc6/`fE|nsyNkk,0*0;lCYrkf%dai`*>FkkkS)nA]bdp5c)kf%`ZPR(Am1/kkk,0L71Vmwfkkkyz~w_CQd0kkk%Ri*sqD{kkkk[c?uRpkk9_XHF9q`#Xkkf%B20nX#3&`mhZ{_W>kkUD[5)nQ.TyMkkk8hKF!RS.>qBI8hdS^;nPCm)kkk]L>3zykk8?u,#t|mSXTXAonS,k)h-TK0Z$9kkk`k(q9oHkkk:eHb]q0XfPX7zspRWoUd7T}x],IoyfkkcBn>eBV@u>v0i7KUTqe79.kkVsx1LD1=;kkk>hzkkkhC-lc[j*-6SR`<5/{O.*9kkkska[x-y/^ckk9_()/CMK)bhrkkZ>BN(`;fkk9,:x2=zpE:(g%y,k)h.U%<Y|1)kkY,WdGSYJWoY45kkkpK]Q`d:RyOr^h43kkk>2gG&$uUb8PYC)T?h=yoOloF#NEm>NkkcB:>mJdv:kkkEh]F}/lS:2p<J!.kkk>)Y}3?g9^kkkThn3RZ|&kkVszmP&0+3kkkos85KbV}hU:%wwpEkkcBSKGM(14$My8,kkPAT|>-jC}:zK1eBl))I4Vfkk~>/x!i]U,}ad.N/iNHAH>kf%LZZxk@UkkkS)-=zpn*P/0kf%2BxYYw&c3zkkHq$|OPuyEN{msjOkkk*haV3b20kkXHfPA5$=`n_kd)kkj)d*FD9kkkfchXEBRh38~e$)9#eB:r9)WCdiF_=}kkTnAN9(9eb4I}Rd-^)k)he)13toD8m&=++)kk8)D:JV-+kkcBpG&3OXdkkkNcO]U8WAQaf]4=~m>kf%ZT{LANPC|lL})kf%OIU7p.tpU>619_%OkkDSkq#J%pvO[~%,nRmqiV#kkk$G>UnF&I[^=g4O[n!nFWkk8?-*.U5CBhkkPA]Z;(bTZ*h)kk=rk+oy/g}-#kkkDhxITu,kf%MF>`><0A@<MB_kkkTh>7(NhVkk8?D[SZ4&1|_>)LyAkk)hg<BZq.3=fW66kkf%OyQv.Hkk``,0i8C>U$kehaDbR3Vq%]p/Vw3g|lSkkkGs,LEF2DkkZ>!O,,rkkkI)qUujA=L?_2+@u>kk,0[%X}[TFnK8<:fk)hXJettiMfkk8)dZg5$Ykkf%/]9f|ubC,Padd1Q*kkXHsom=Beo}Lt8rkk=r6u^+`NDo>kkkBqoc~J?)kkafR^&kkkt>nv<=)k)h~Wb#/@rn]dx<*M_[=00*kk,0vX=@g5)kkkk(fn25kkK*T|T@6q,@-0]NkkTnOGVqe0N9!>?G1u)kcB;O3]O40gg?}in0MkrxLoxrkk``k${t4e(zlr<Kt|)bh@bc%MH]a>i-*kkk<=Qm[R+#qWqhdU($dr0-Y)kk5|-._]J7nX%%}D!$$X[;NFyqLkkk?8sKcZ,XV},r=hQTI&+<+I,D{GiOkkN&TD3:}p1nv3*$YkkkR`9cmP#m;<1W%*~kkkxA^X/],=a2kkkkS)e[6._CeL0kf%HSh}Bx?b(&kk]~SC2#1*Af8y8kkkwDKRe&|~73@5ZC+&yG)kcBG^a<MoqaHf4_RTbsWkkkW%AVOU_wk+&^TwkkHqll<`]iDTj55~OkkkX=bUYio>[W$n@J6Wkkkk=-S*imu^m0fkkkJB#+t{)k)hetVl)1I8^~Fq>fkkb,R=z8Wn?n{=,bnDkkZ>UhQ-(fkk=r/$wP!U(PH8%}TBQ/ckkk*9_#&im,*L,V_gTV$kkkb9$FzmkkcB6{_;eX11WS!^S>WqFkkkI?N4fTfkf%!L[1<L$A4wkkiugol`Go1.kkHq>t94vaNkkk9eE_mHzC)kkk9e6yX)JokkkkOk*I06HfkkUDV;OG@>j+/l<Uw>A|HrkkUDi;X.+=AA(j`?3k*66kkkS)yk}?PACA,kf%S<{!~z-;,k)hls93rL%)kk8)M,OX!2kk9_o79R}Do4Zkkkaf7tQWpkkkZhiJq!780[kkkk/ipLH@@gQkNkkk]s;oMrE)kk9,m>V}`H,k)hQW?6=iAkkkiklp9crDkkcBfWK{S)kk,0CtpSg:fkf%ER|G/}.)kkj)!wZ,9kkk,KG`1v/^5}{H^LFX,k)hhY]NVQB)kkZ>#S|EkO<`GfzbL0d67x^NkkK*}}/NCrkk9,F{j(0m)k)hSiLCtmN|E6Um$;NkkkM=60N1[>kk_0M2F<6s+Zas~@4*kkN&4KcmHLYkkk9=}Q~at5{:/W%TFkkk_>QgKUQ0kkDSN/&A@eusj(|PVh]7kj$kkk%u!2&J,$kkDSa:Ih>#XmL]6g6_vj3JQkkk9e-mLfAd3kkkAJS{K%q*|:(vO,kk4K#m-rCU<&.~FUcUF%ksX>Tkkk/%rikkK*k((#~!Om`@KcO;{FBvyKmOkkZ>7m,kkkXkz>z]OGXXC##+CvlajqkkK*+al)kky%V?Oc&kkkjWxjWC_66eZRnZxNM=2&;Q9|fkkk5PQ*kkM{uib8nq#wb=Df_?r2eRH#1p)jkk9_<=p|xojI.iC}(6w>kk9,Dm}sQV,kkkKmf=rum+=sD(o$nJ{@v7Ykkk*7*^u!kk9_-}ZP!jrq^UY/Yp{D4v^kkkj)nGJf-kkkL_/e~z0kkka[s{)tkkPA-!l8l?=^QwW:g0<c|&-)kkj):k,d>kkk+JH!yu2PLrV<2[/!)kcB;T3+wxZkkk4K(zQL0z#$NanUN)S];qW)kkaf#^O[]kkk])OgiF$4~[GGN,OewG*H)kcB*f{dr[Rkkky%csdZA_=b{rkkQr@w/+*YW>kk,0<<P*U+fkf%da!yKzvkkk?h9^)kf%/WtkkkafkZs,)ivtSrkkHqnMLymI>kkkk1~`0#pfkkZ>qdSZzkkk`kaWRBYkkk)1i5j:t^}~bBen!kkkFC2:hR$(96kk)hRbR4(zkkx!79hgVO|rY,6X:ikkVsAB9!t#.kkkP%1-5*-]T7$Md0d|Wc[9Jlkkf%TuG6]?Olkkkkt4>d+8WX[6Hkkkt>VyfYfk)h|)0QIzg33i@e~Tjlm0ZqKIHCSk?e8)kkOfXS0#rnH,kkK*}<9sK?z8CNy[Y@OVkgWukkHqQ}4[|QrkkkGq*:MJyAE],&QlFkkk|sruXR~o9kkkShf3[YrSkkN&b*Pn`!,kkk0#t*;W~{&G![=^vEkkK*@cygnP0u_?}#kkf%q=[C=6m?I`]t-R5&13}U)kf%2uKE5E8?U6M;e7nfkkUD/J1zG,Rt2kkk]hMQCup$(ckkcB.U{&YKzChE7KkkVsF+_x2hx3fR@zb!Oy$kkk%A+*CT%QUg?eHukkiuhCGAdJGkkkx!Ja6mZKh3BpvIJTkkK*B<TEt#`LByuQ5I3vFh,J1Skk]~z02g-l4T==RfkkpY>E?&y_{js$!zE>kkZ>AMdO1L0lD#?;)lD4p{>~70kk[$yx8y:C:SkkcB,Y-bv]_Uc>,kkk+nRO#(kkTnc;fi]9GgL,e&]$)k9_Fj-4wOUckw>dy2,kf%iDe*^d.D;wkkLzuk<^{ik&.kkkfGfP%j0nzkkk]hsBI&mR01)k)h|,:tSdX;kk)h)(;FZ?^x$rkkLzD8[,_Q-.D)kkBcX2w=?(.3>kf%tzi.HA]kkkTh=JcRCQkkVsDIk5M}DkkkPB&5J4Q|Bkkkds9Ycn=@bU)k)hspS{Q4E+fk)h,hxTxSP)kkOf8{$qS1grkk,0/B2B`099.?ZQ0kf%Si;F*iuyA{HR/#wkkkF*HAy$kkcBL#dd*ys#Zjmn)zy*KvTJQ[kk:JZ>R)m,p7D}oQkkiulWQ%$g0/kkHqdHOa31C,PZ%QKkkk<BmjU@2(*EO;::pkkkxA>OIikkf%ID(tz#gIux1&>uk)qqkw-}kk)h{31+?ukkiuK.iB&xCVkk)h<Q;XAj@xf?)kkk}/oUN{M!s9ECR<+]_%:|4J&GT>kkUDT~i,J8m[SkkkPBefr@l:WkkkyBdsZx6kkkLzg6IAcJaxwabJ@62`7NkkUDX<zb0NCU}kkk])%2=#F$B!&BIzL}zO~MbVf8oej}.A]PK_@#w~0kf%FCx1Ns4czjThKAT[.J_1cMTQVof@AVhXfM|!>kkkSCG<hIfkf%>dMV/6-/kkkkQn@mQyXKG4(V4a]>kkR9*0!H*/f/rqk5sOyZpAWa1)kk=r97.iiu$~)kkkU?37=n)k)hSiMJ5{c3x@<~%ZDkkkfv@>>G?#Dkkk>hF<n{kkf%cB7-_NkkcBW/u+_|#i:ckkkk*fRaC(kk8?b.?}tJj;kk)h$[KpuYkkcB3>F:S:)J;.kk)hZThL~$QGs>g9)k9_k4M?uH(H8DkkZ>t>!JT)kkOfN<l8?0k)kk9,e#Tf#-kkkkkz|Ruukk:J=Qd)03=]/|nwkkx!}H2OU+fbXw01g_kkK*#E[Q!jB0]`4)nNuv6e?|+NkkHq~w*L%`A#_:b/zkkk%JXaw!G#Yd$Z!I)$Q9Bg+kkkZh8{nzApA`,k)h8lS6%LJ}EOkk]~DI}U3f4S1AG0kkl/En)e?L&?e;3u?[@R)kkkY;yJ>?kkTnAx:,yeo&Y_?|~b)k)hMolVC`]$kkkkjeH9..K)i/&kkk__L4]x3HJezWMkkkXHorh`v)Uq``C)kk=r7*1:-3sRVkkk__<EVor.;,OrurkkN&qqj=<m*kkks_]Ib}`{S2:!kk)h#/;ABt/rX(),!0Hkkk]&#6c=*}*d:hWU0{tn@{LLpDy*~E$$kk,0cP-qBe)kkk)(_P/IZ7kkf%;]f+-H1zk!9|NaNkkk^{/.P;V]Wd@0R)kk4KuqV~otY^9ec4;(a84,Y9Ckkk>)==$uj^X)kk$$8MNgKYvoAAD@z6DLfd/KVb&EA/hU)k)hXJjttiMfkkQrb,d0@HO,%*RHzI0kkk;=SbEr5<QU>`)kf%O0A=7HjA#zo,3i7lw#A)kkDSD~SL1#`)<}K2WvZBYR]kkkZ_X;R.%DkkUD!fW|SWuurkkk]h;tL&Uf8))k)h|xhSRsH*vvr~nfkk8)Ou)H*?kkf%K*B;8Nkk]~u`vdv=Iz/i}kkkaf!cw6Pkkkff.vKhK0`,mo4811Y~gvQkC_6iG1v$kkHq{)1UPgQkkk1JBYkkTns$k-&4XxK+y:@jkkcBy(71z<Dg;NbNoWd~2G@(.[kkcB;&cc)Dkk55O!nu%pa2Q1]43<PMakNm~1*m]:vukkf%XJ[t2ir)kk8)-sVj`@)kf%eA/~YBA1)CDIJqQ*kkpYUC`mZ&yaqy=e}&kk}=+%LEuITrU^A>7-4H{dOkkknhS?<-C+5Fb1<kMnQuD[kk8?j?0EHv/1kkPAKRNyfFqvHkkkWf3C/[i*3uwkkk%?Unn}T->u,*hU}H`Vkg;E.^]7/)kkOfe?mP!%Txq|^>;z,kkkBiDJSv{jH591&mn]kkTn-F,BxItiBq4~hF)kf%^W/5dx`e7Wxg@#F$kk,01Pu,rn0kkk3yF!!4o;G!=J~-=}j&)k)h<zSZja4aRMn5U`*kkk`JCvL]OSNkkka?_ly@[fkk9,EK6Jl`,kkkYq;}l!3`S21(@N2>kk]~#_Hp~O%a)zS)kkcB0bQ#NyJ{-UCq:HLa~-eukkPAe7/6PLiP9,kkm*5ocVN:7]#pR3&[Q0e!5%!kkkABV8gTIZqYKkkkOfZJ0Q7zr>kk,0vVos08}^0^=jkkf%%<3cM#e`,mjjb@MG!kkkb_@WzoDkkkP`J)[b3#rkkkZThqqW)kkkwX,^4dx`+-Dkkk>h~<f;kkkkO{[o=G`]RQNkkkuqaA:#kkkkv9ABy3Gh_$Ykkk$hR#1lD>iYkkTnQ=0y:B3eez><:N)kf%Ja^#0)kkR9wDz}Z$Y,$eH<$1.N=.#<]>kkaf4FvLckkkgkUwW;xTWl4L$!k)kkth]CpcYkkkcq1g%AKoQ&V)4`3r?owniqkkkkvfHm7EeQdM0kkk:=%_Cr88c3kK<B(kkk/Gp=b((qqL_]y)kk8?xAD)]+BFkkcBUqm-.}%G@Nk9;kkk2hX(Ae4a])kkBcW$w_B<yBkkf%(Ul.ScPe-BL=.^fkkk_z16?Q)k)hfht&_J{.kkkkhb?]V`p@6Mfkkk<=Bh:=n(bAMq4d[i6]s!H)kky%H*{|NkkkifPQhT^,0kkk$h&p&lL,QFkkK*R/opK&}C<@uYRv1<m`D%_>0kkk@TI44~{Jg8=k)sR#jTsfnmCkkku|%&CJzRQXWN!|Z!Syh>%/:vkk9_=rAAhn8t)kcB;39A]TTkkkj)8$T(h_5N,!gQtK!T}8@,kk[$=uE/vWp4dy9n}gZkkk[siH&T)kf%PlySI<K&:G?TkkcBwqZPjUIkkkpK,DR^FXig~-MOMkkk%fTqOD#::`qZGO!?N/>T*AVkkk>3sGu.F|B_.fkk$$hf0/#>R_7k/R[})`P5:_5$A>zxU$kkkk!v<6SM}/Ut&l+D*^#7F&)kf%[)*SZKr~*fkkLzf:+qr><>~kkkokXu*DO0Kkqtkkf%/qDKOTArRlD+0OInHkkk?h*K0oOkkkJB0@T{)kcB_h#o~^9d4e[*kk9_!Pj$d}L[)kkk?k<;Uo{]|~,kkk^Bb2>&*ew0p]Hkkkdrv/9~m3wV=L*rIM]EkkPA)hL2K,C*h>kkafIKye1kkkffHQF2GW/j2@K`;1b~b,xhr;V@4j_|kkcB3|y1gy@+N?^~Mkkk[kg(@;`*kkZ>_m,kkk*bIro1}yU:a)kk_0h*M|vYEwYo:J&kkkK*>D&Sd9]6IhkkcB00G!c|8j>)?b3F.mKp0+4ekk)hP&PB(hk3W2rkf%)1%ws[j$S3A&L#?tTQW4u6p9Yi`qr)kk9,aciT`(,k)h<lagaLJ)kkQrj@1YG44o<#zf.bKkkkJ=/ib2)O4@kk)h,e6upfkk8?$i9eu>k2Qq-tKwWkkk+%-9.^S~kkf%~I+Z~ez|)`N)O~%/T:QR)kf%.eaw*>kk]~xcnwSM!qO}$0kkXHQoq#^,ztTbk>kk_0?Kl-&luGZmzYu)kk``{DR32`,r=osVwT7)>EN:wgC>]HCDwkkkiB.J`oCWE3+dQ6#%Rm[Daukk9_v7fxQ^:#FOMAH;K(a.OIRjP`pXkOl)kkOf5/xo:)HfkkZ>icen>17lI*kkPA{}|.0[.~%XU6bii9e2(kkkOfhaUPcAF%!.coYh0kkk;_9y@kiy3F)o5thJUe)k9_1HCUVaNI1$k-hl0kf%1pWGk$bf=U&%_<^<2(e)kk=rNc4eP~AS0kkk;=1;hIVt8w%50kkkc$|ms5<Zg(-[7z&[kkf%=6)UxEC.nMDwKHB=J7&-)k)h$7]ZdkL{kkcBAC6p$I^kkk>)OYEwe^K#C3:?YMrkkk~m*nXaSe^cC?iU.>kk9_{)JS>Ow+:RU+pnTrkkQr:d.z;~dNkk[$B1(cJilukkcBJfWg9Uh0.4,kf%H9PNU#rCfkkk(=BLN~z(Lc3kkkZ_cA$oLfkkZ>4^+N|kkkOftP|xohX,w7^=?0Hkkk>1Zc/TT_Qh5F^AS,?5n>kkiu8M`Q|0t?kk.e^@m&AnqnkfkkOfJC`[ID-,kkJO{ZVIzQ]7{h$vtk)W)Gfkf%(e;>~ek{,Nkk9_>2;I.nJ<{u9?K1Xf{!t)_Le}onmhhXkkPAT]z[V~^2[rkk=r_p3A+YdfQkkk2e@s%.zw53kk9_S3Yts{#&kkkk3|,Y/KR/B1DkkkN#x@T1F-b]H~l@&kkkWsB1(]5QyH5F0kkk4nZjV2kkcB/O4)kkOfZog}g&-fkkj)oGHkkkWeV.wp{5H!kkK*Rbf)kk>)A/EzTNGkkk?hoykk)hFs]1p-+}]QkkcB{Ddj<#j--H)kkkERC[htu*6$fkkk&1?GXXqvqv!GgB<]kk)h8d&,w-=2)kkk@@*ZeOP,knde=6TnQD_7HkkkZT]|-])kcB:87j!iVkkkpK;$B{r2{El-G-&)kk8)A+hSof)k9_8@D8J/P!@uMn7Wfkf%^]_~G&Lfkkb,])*[iP.{Y#69|0kk[$f!bbJbwQkkcB=QS$REAFKofkkk/uBDV<`rqDYkkkkG:dBwq#u}%]:B$kkksk($1yh]2w$5zIwEGyOkkkA`.79Eaib?ff+LRS[Bfkf%P`qN!a(AsZ0b*15)EkkkWfi-FIx3U0:8L<=TuhCkkk_KB{Sg,OQ]VsvLGId4Ykkk@_LM}Cm~jkkk&G)eWwL]jdPQ*kkk?s$TK+|{:_d`,k)hW=WErj?ChK&,o^JY&)kkWf2A:ISXp][o6b1if-)kkkS)#6Yx_D!t*Gi$dItPBkkk*K3_(;`vt.]x&t(a8a!kkkxJ,?:pa@!rHXXWV6NIkkkk?m~hRE%4_zuV61CSCz,kkkd]|&$Yc>,kf%1J?gRI(@5~[;kk)h*SCYVUNp8TT]`kkk?hlU)kf%!~Z4K4el)kf%yl~)kk=r(OWsz2cj!kkk>hZ&kk8?S2d;h[ZbkkcB2].kkkBcl$A:v9XYfkkkOSH,kkpYZEdWpa0R5UX:-*kkPAAxt1TWP#C_k?pF;Jp3kkPAssX>r[2jR8_?UE{>6#kkwChCWbWN>rtJkJ|:esDkkkp~cnu_t(nVN!5SgyIpkkkk9$N{,qnam&xo~p_65r,kf%QK-0XL!V,kf%1vu:G8-aZUf/>fkkafdhhUyI$@U.kkwCz-C|Q:/I$@]}3N~BYkkkJ$1JMJ:T88&%/kkkQr*PqIe(|d*Z=gbDBkkkiJy2MiC&CU/=s9Nkkkm__/(GborzW7uqkk:JL4zI<J)td^MDkk/W`s{qbIvZQ4=x*v(E+sBkkkdsnRk!`FWMkk9_.wb?EiXOukoM^D)k)hXp[<prq_#HBlz+fkkky>d.Ilam_r7f)k)h7p:<;NVP*U<>)kf%x2)<=zIb`F.G=s?OkkN&.^b/3)vG4MnwrkkkmfY;|oR.?mC3lG|v_)kk9,V>9N=DL$bH{efkf%HIv}TW^,l^B+-XbjX|kkkk16Za+K+=x~),{;IhG-5@>kkkx;>F#Jf8>)vKPGv,=x:&#kkkFh`y_G`GIibmRb&=[rkkj)F7Nkkkt}eMQNmgKDb)tw}`!fkky%tEkkf%;THX|kb{)k)hgR,:HKInkkkkK<YVVw/g*2<}(>x&kkiu6=X7AL$ukkf%?8-{P_b:k!)c0[ui>H_)kk9_Ej>_Hkkki9|:-CC,kk_0L9W^p*?yU*=Ph,kk``%f*B(!.(cY<8Yy6!5Kv[[_sHV,WPNkkk:=+&<.^YGZJ8Ae9kkkp*>QJViwkkx!su95v+v_vwLXFGkkPA%g;PDAJXO/L}&DZN1/q{raV)~2p>D)kkF9U7_us?>zb]bX3S|Qkk8?fOs-YOCykkPAnZtFuQ$<z,kk!N?0{w!~lw/v-)kkQrZT]LI+K4-HsrUjOkkkAB/>nt;^^OM:oIi(cu+^xkkk{)u5*+dO#L{oI3Q7+$w9+q}#kkwCc;Q/Qj-xzIHexE;(wkkkv`%9xgwe~p^%U4),kkPADItKWOpl|T2V+YcL3VkkVs^mcq~^qH.}(qZkkkR_txkF#[[RkkcBI<t`~_K)kkTh@1M@!{kk9_[$myE&Tx)kkkD7H8!=m{g<)utqK@Gherfkf%I;b>i7&M]vW=o`s78}~0kkK*D{_!a-17qP)k9_q+w62;+GG02,3O0kf%JBmo=l0xgxmj)k9_%sEQjSp998}4Cq)kkkC@&C~PW[kruYGKh$kk:J,-*@YA~sPE^Dkk8?[52)lTMf|IY9`bi)kkY,p{vHit{{}xrkkkThUP]MJ)]g;_=Ukk8?zOtS2(v=2%b8>&)kcBr`0Tc&Flkf@/BMrR@:Y->Vkk:Jf:1k8kxKlV=)kk!N<VeKo2:#G<A)kk9,)q|>WLzq2rC>,kf%MFO7WF5n9YC[?)kk=rbsa8t~Bw9tNq>UiY0fkk8)Nq<Pe^)k)h-TdP64%c8@mPr)kkZ>`ze>,a<K=aE|-xzwA&u$kk]~c;0>[z^ra:~)kk[$GfTiAb-rkkiu?SNtj(olkkHqooY)lgBkkk8_X}3wZ7Jh]q,85kkk__>!Z8|OkkN&8?YQ*Lwkkk9=[Q~at5{:/W%TFkkk.3gn`GK8xD/.<|tYQv8DY;ytFZ._^Dkk``MS.`r-4B[4Bv{{![x[.d8QC*PDjVVkkk>b6lBwy#~yQS;c:fj>kk[$eST;C<QHBdkXd7Okkk%AEuD<ofkk)hhCap0n#4HMV$/aUCph)Mkkf%,@0c]fkkx!n)=Krn+g2}Hyi/kkPAe)ovw[<catg3EAq@FN^!daS~0ei/3kkkxBLNNhpjkkTn[[~3:rzR3rbjn-kkcB8dx}PZ`kkkEhKqG{?mILzCc,DfkkY,RR8S@f0rNxF)kk>)j!7uYslkkkG%-]kk9_(t9t=VlP{Nkkafeb$kkk~C|/-wO<rkkk[=PKkk.e]C1r.,m_-fkk$$Sf,*Kn|<}G<&fR*SFBvJ~=;Y?^}I,k)h-]V|ODcz=UMtLKjGykkkv<*-&3&uwE;7p9,FYT3OkkcBbCTl!Ek@q.^?kkVscD>c-RTl<D:@3D;:!kkk-e%?{[x61hPZJu",_cDO);
 local _i=1;while _i+3<=#_d do
 local _a,_b,_c,_e=_d:byte(_i,_i+3);
-local _n=((_a*256+_b)*256+_c)*256+_e;_KMZ[#_KMZ+1]=_d:sub(_i+4,_i+3+_n);_i=_i+4+_n end end end;(function() (_KMZ[1]):gsub(_KMZ[2], function(Il111l1l11)
-_IIlI1IlII1lIIlIIlIl1I1l = Il111l1l11
+local _n=((_a*256+_b)*256+_c)*256+_e;_KEA[#_KEA+1]=_d:sub(_i+4,_i+3+_n);_i=_i+4+_n end end end;(function() (_KEA[1]):gsub(_KEA[2], function(ll1I1IIll11)
+_I1111IllIlll111IIlI1IIl = ll1I1IIll11
 	end);
-local l11IlIll11
+local IIl1Ill1l11
 do
-function l11IlIll11(Il111l1l11)
-local ll111l1l11 = string.byte(Il111l1l11, 0B1) or 0B0
-local IIl11l1l11 = {};
-local lIl11l1l11 = (0x1A + ll111l1l11 * 0x7A) % 0x100
-for I1l11l1l11 = 0B10, #Il111l1l11, 0B1 do
-local l1l11l1l11 = I1l11l1l11 - 0B1
-local Ill11l1l11 = string.byte(Il111l1l11, I1l11l1l11);
-local lll11l1l11 = (((0x3B + l1l11l1l11 * 0x2D) + ll111l1l11) + lIl11l1l11) % 0x100
-IIl11l1l11[l1l11l1l11] = string.char((Ill11l1l11 - lll11l1l11) % 0x100)
-lIl11l1l11 = ((Ill11l1l11 + ll111l1l11) + l1l11l1l11) % 0x100
+function IIl1Ill1l11(ll1I1IIll11)
+local Il1I1IIll11 = string.byte(ll1I1IIll11, 0B1) or 0B0
+local l11I1IIll11 = {};
+local I11I1IIll11 = (0xF0 + Il1I1IIll11 * 0x2B) % 0x100
+for lI1I1IIll11 = 0B10, #ll1I1IIll11, 0B1 do
+local II1I1IIll11 = lI1I1IIll11 - 0B1
+local llII1IIll11 = string.byte(ll1I1IIll11, lI1I1IIll11);
+local IlII1IIll11 = (((0xCF + II1I1IIll11 * 0x9B) + Il1I1IIll11) + I11I1IIll11) % 0x100
+l11I1IIll11[II1I1IIll11] = string.char((llII1IIll11 - IlII1IIll11) % 0x100)
+I11I1IIll11 = ((llII1IIll11 + Il1I1IIll11) + II1I1IIll11) % 0x100
 			end
-return table.concat(IIl11l1l11)
+return table.concat(l11I1IIll11)
 		end
 	end
-if _IIlI1IlII1lIIlIIlIl1I1l ~= l11IlIll11(_KMZ[3]) then
+if _I1111IllIlll111IIlI1IIl ~= IIl1Ill1l11(_KEA[3]) then
 return
 	end
-local Il111l1l11 = game:GetService(l11IlIll11(_KMZ[4]));
-local ll111l1l11 = game:GetService(l11IlIll11(_KMZ[5]));
-local IIl11l1l11 = game:GetService(l11IlIll11(_KMZ[6]));
-local lIl11l1l11 = game:GetService(l11IlIll11(_KMZ[7]));
-local I1l11l1l11 = game:GetService(l11IlIll11(_KMZ[8]));
-local l1l11l1l11 = game:GetService(l11IlIll11(_KMZ[9]));
-local Ill11l1l11 = game:GetService(l11IlIll11(_KMZ[10]));
-local lll11l1l11 = game:GetService(l11IlIll11(_KMZ[11]));
-local IIIl1l1l11 = Il111l1l11[l11IlIll11(_KMZ[12])]
-local lIIl1l1l11 = IIIl1l1l11:WaitForChild(l11IlIll11(_KMZ[13]));
-local I1Il1l1l11 = getgenv and getgenv() or _G
-local l1Il1l1l11 = ((ll111l1l11:WaitForChild(l11IlIll11(_KMZ[14]))):WaitForChild(l11IlIll11(_KMZ[15]))):WaitForChild(l11IlIll11(_KMZ[16]));
-local IlIl1l1l11 = (ll111l1l11:WaitForChild(l11IlIll11(_KMZ[17]))):WaitForChild(l11IlIll11(_KMZ[18]));
-local llIl1l1l11 = {};
-local II1l1l1l11 = l11IlIll11(_KMZ[19]);
-local lI1l1l1l11 = l11IlIll11(_KMZ[20]);
-local I11l1l1l11 = l11IlIll11(_KMZ[21]);
-local l11l1l1l11 = 0x3C
-local Il1l1l1l11 = 0xA
-local ll1l1l1l11 = 0B11
-local IIll1l1l11 = 0xA
-local lIll1l1l11 = 0x32
-local I1ll1l1l11 = 0x12
-local l1ll1l1l11 = .75
-local Illl1l1l11 = .06
-local llll1l1l11 = .1
-local IIIIll1l11 = .025
-local lIIIll1l11 = .8
-local I1IIll1l11 = .2
-local l1IIll1l11 = 4.5
-local IlIIll1l11 = 0x4
-local llIIll1l11 = .8
-local II1Ill1l11 = .75
-local lI1Ill1l11 = .02
-local I11Ill1l11 = l11IlIll11(_KMZ[22]);
-local l11Ill1l11 = l11IlIll11(_KMZ[23]);
-local Il1Ill1l11 = 0x12C
-local ll1Ill1l11 = 2955289715
-local IIlIll1l11 = l11IlIll11(_KMZ[24]);
-local lIlIll1l11 = l11IlIll11(_KMZ[25]);
-local I1lIll1l11 = CFrame[l11IlIll11(_KMZ[26])](2.5842752456665, 85.083595275879, 244.51892089844, .99989253282547, -2.7966475357744e-08, .014658823609352, 2.9541384449772e-08, 0B1, -1.0722103382932e-07, -0.014658823609352, 1.0764255620188e-07, .99989253282547);
-local l1lIll1l11 = false
+local ll1I1IIll11 = game:GetService(IIl1Ill1l11(_KEA[4]));
+local Il1I1IIll11 = game:GetService(IIl1Ill1l11(_KEA[5]));
+local l11I1IIll11 = game:GetService(IIl1Ill1l11(_KEA[6]));
+local I11I1IIll11 = game:GetService(IIl1Ill1l11(_KEA[7]));
+local lI1I1IIll11 = game:GetService(IIl1Ill1l11(_KEA[8]));
+local II1I1IIll11 = game:GetService(IIl1Ill1l11(_KEA[9]));
+local llII1IIll11 = game:GetService(IIl1Ill1l11(_KEA[10]));
+local IlII1IIll11 = game:GetService(IIl1Ill1l11(_KEA[11]));
+local l1II1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[12])]
+local I1II1IIll11 = l1II1IIll11:WaitForChild(IIl1Ill1l11(_KEA[13]));
+local lIII1IIll11 = getgenv and getgenv() or _G
+local IIII1IIll11 = ((Il1I1IIll11:WaitForChild(IIl1Ill1l11(_KEA[14]))):WaitForChild(IIl1Ill1l11(_KEA[15]))):WaitForChild(IIl1Ill1l11(_KEA[16]));
+local llllIIIll11 = (Il1I1IIll11:WaitForChild(IIl1Ill1l11(_KEA[17]))):WaitForChild(IIl1Ill1l11(_KEA[18]));
+local IlllIIIll11 = {};
+local l1llIIIll11 = IIl1Ill1l11(_KEA[19]);
+local I1llIIIll11 = IIl1Ill1l11(_KEA[20]);
+local lIllIIIll11 = IIl1Ill1l11(_KEA[21]);
+local IIllIIIll11 = 0x3C
+local ll1lIIIll11 = 0xA
+local Il1lIIIll11 = 0B11
+local l11lIIIll11 = 0xA
+local I11lIIIll11 = 0x32
+local lI1lIIIll11 = 0x12
+local II1lIIIll11 = .75
+local llIlIIIll11 = .06
+local IlIlIIIll11 = .1
+local l1IlIIIll11 = .025
+local I1IlIIIll11 = .8
+local lIIlIIIll11 = .2
+local IIIlIIIll11 = 4.5
+local lll1IIIll11 = 0B100
+local Ill1IIIll11 = .8
+local l1l1IIIll11 = .75
+local I1l1IIIll11 = .02
+local lIl1IIIll11 = IIl1Ill1l11(_KEA[22]);
+local IIl1IIIll11 = IIl1Ill1l11(_KEA[23]);
+local ll11IIIll11 = 0x12C
+local Il11IIIll11 = 2955289715
+local l111IIIll11 = IIl1Ill1l11(_KEA[24]);
+local I111IIIll11 = IIl1Ill1l11(_KEA[25]);
+local lI11IIIll11 = CFrame[IIl1Ill1l11(_KEA[26])](2.5842752456665, 85.083595275879, 244.51892089844, .99989253282547, -2.7966475357744e-08, .014658823609352, 2.9541384449772e-08, 0B1, -1.0722103382932e-07, -0.014658823609352, 1.0764255620188e-07, .99989253282547);
+local II11IIIll11 = false
 pcall(function()
-l1lIll1l11 = Ill11l1l11:GetTeleportSetting(IIlIll1l11) == true
+II11IIIll11 = llII1IIll11:GetTeleportSetting(l111IIIll11) == true
 	end);
-local IllIll1l11 = nil
+local llI1IIIll11 = nil
 pcall(function()
-local Il111l1l11 = Ill11l1l11:GetTeleportSetting(lIlIll1l11)
-if type(Il111l1l11) == l11IlIll11(_KMZ[27]) then
-IllIll1l11 = Il111l1l11
+local ll1I1IIll11 = llII1IIll11:GetTeleportSetting(I111IIIll11)
+if type(ll1I1IIll11) == IIl1Ill1l11(_KEA[27]) then
+llI1IIIll11 = ll1I1IIll11
 		end
 	end);
-local lllIll1l11 = I1Il1l1l11[l11IlIll11(_KMZ[28])] == true
-local III1ll1l11 = I1Il1l1l11[l11IlIll11(_KMZ[29])] or I1Il1l1l11[l11IlIll11(_KMZ[30])]
-local lII1ll1l11, I1I1ll1l11 = false, l11IlIll11(_KMZ[31])
-if #llIl1l1l11 > 0B0 and type(III1ll1l11) == l11IlIll11(_KMZ[32]) then
-lII1ll1l11, I1I1ll1l11 = pcall(III1ll1l11, game, l11IlIll11(_KMZ[33]))
+local IlI1IIIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[28])] == true
+local l1I1IIIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[29])] or lIII1IIll11[IIl1Ill1l11(_KEA[30])]
+local I1I1IIIll11, lII1IIIll11 = false, IIl1Ill1l11(_KEA[31])
+if #IlllIIIll11 > 0B0 and type(l1I1IIIll11) == IIl1Ill1l11(_KEA[32]) then
+I1I1IIIll11, lII1IIIll11 = pcall(l1I1IIIll11, game, IIl1Ill1l11(_KEA[33]))
 	end
-local l1I1ll1l11 = lII1ll1l11 and tostring(I1I1ll1l11 or l11IlIll11(_KMZ[34])) or l11IlIll11(_KMZ[35])
-if l1I1ll1l11 ~= l11IlIll11(_KMZ[36]) and table[l11IlIll11(_KMZ[37])](llIl1l1l11, l1I1ll1l11) then
+local III1IIIll11 = I1I1IIIll11 and tostring(lII1IIIll11 or IIl1Ill1l11(_KEA[34])) or IIl1Ill1l11(_KEA[35])
+if III1IIIll11 ~= IIl1Ill1l11(_KEA[36]) and table[IIl1Ill1l11(_KEA[37])](IlllIIIll11, III1IIIll11) then
 pcall(function()
-(game:GetService(l11IlIll11(_KMZ[38]))):SetCore(l11IlIll11(_KMZ[39]), { [l11IlIll11(_KMZ[40])] = l11IlIll11(_KMZ[41]), [l11IlIll11(_KMZ[42])] = l11IlIll11(_KMZ[43]), [l11IlIll11(_KMZ[44])] = 0x6 })
+(game:GetService(IIl1Ill1l11(_KEA[38]))):SetCore(IIl1Ill1l11(_KEA[39]), { [IIl1Ill1l11(_KEA[40])] = IIl1Ill1l11(_KEA[41]), [IIl1Ill1l11(_KEA[42])] = IIl1Ill1l11(_KEA[43]), [IIl1Ill1l11(_KEA[44])] = 0x6 })
 		end)
 return
 	end
-local IlI1ll1l11 = I1Il1l1l11[l11IlIll11(_KMZ[45])]
-local llI1ll1l11 = type(I1Il1l1l11[l11IlIll11(_KMZ[46])]) == l11IlIll11(_KMZ[47]) and I1Il1l1l11[l11IlIll11(_KMZ[48])] or IllIll1l11 or nil
-if not llI1ll1l11 and (IlI1ll1l11 and (type(IlI1ll1l11[l11IlIll11(_KMZ[49])]) == l11IlIll11(_KMZ[50]) and IlI1ll1l11[l11IlIll11(_KMZ[51])][l11IlIll11(_KMZ[52])])) then
-local Il111l1l11 = IlI1ll1l11[l11IlIll11(_KMZ[53])]
-llI1ll1l11 = { [l11IlIll11(_KMZ[54])] = Il111l1l11[l11IlIll11(_KMZ[55])], [l11IlIll11(_KMZ[56])] = Il111l1l11[l11IlIll11(_KMZ[57])], [l11IlIll11(_KMZ[58])] = Il111l1l11[l11IlIll11(_KMZ[59])], [l11IlIll11(_KMZ[60])] = Il111l1l11[l11IlIll11(_KMZ[61])], [l11IlIll11(_KMZ[62])] = Il111l1l11[l11IlIll11(_KMZ[63])], [l11IlIll11(_KMZ[64])] = Il111l1l11[l11IlIll11(_KMZ[65])], [l11IlIll11(_KMZ[66])] = Il111l1l11[l11IlIll11(_KMZ[67])] }
+local lllIIIIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[45])]
+local IllIIIIll11 = type(lIII1IIll11[IIl1Ill1l11(_KEA[46])]) == IIl1Ill1l11(_KEA[47]) and lIII1IIll11[IIl1Ill1l11(_KEA[48])] or llI1IIIll11 or nil
+if not IllIIIIll11 and (lllIIIIll11 and (type(lllIIIIll11[IIl1Ill1l11(_KEA[49])]) == IIl1Ill1l11(_KEA[50]) and lllIIIIll11[IIl1Ill1l11(_KEA[51])][IIl1Ill1l11(_KEA[52])])) then
+local ll1I1IIll11 = lllIIIIll11[IIl1Ill1l11(_KEA[53])]
+IllIIIIll11 = { [IIl1Ill1l11(_KEA[54])] = ll1I1IIll11[IIl1Ill1l11(_KEA[55])], [IIl1Ill1l11(_KEA[56])] = ll1I1IIll11[IIl1Ill1l11(_KEA[57])], [IIl1Ill1l11(_KEA[58])] = ll1I1IIll11[IIl1Ill1l11(_KEA[59])], [IIl1Ill1l11(_KEA[60])] = ll1I1IIll11[IIl1Ill1l11(_KEA[61])], [IIl1Ill1l11(_KEA[62])] = ll1I1IIll11[IIl1Ill1l11(_KEA[63])], [IIl1Ill1l11(_KEA[64])] = ll1I1IIll11[IIl1Ill1l11(_KEA[65])], [IIl1Ill1l11(_KEA[66])] = ll1I1IIll11[IIl1Ill1l11(_KEA[67])] }
 	end
-if IlI1ll1l11 and type(IlI1ll1l11[l11IlIll11(_KMZ[68])]) == l11IlIll11(_KMZ[69]) then
-pcall(IlI1ll1l11[l11IlIll11(_KMZ[70])], true)
+if lllIIIIll11 and type(lllIIIIll11[IIl1Ill1l11(_KEA[68])]) == IIl1Ill1l11(_KEA[69]) then
+pcall(lllIIIIll11[IIl1Ill1l11(_KEA[70])], true)
 	end
-I1Il1l1l11[l11IlIll11(_KMZ[71])] = nil
-local II11ll1l11 = {};
-local lI11ll1l11 = { [l11IlIll11(_KMZ[72])] = true, [l11IlIll11(_KMZ[73])] = false, [l11IlIll11(_KMZ[74])] = false, [l11IlIll11(_KMZ[75])] = l11IlIll11(_KMZ[76]), [l11IlIll11(_KMZ[77])] = false, [l11IlIll11(_KMZ[78])] = false, [l11IlIll11(_KMZ[79])] = false, [l11IlIll11(_KMZ[80])] = false, [l11IlIll11(_KMZ[81])] = nil, [l11IlIll11(_KMZ[82])] = nil, [l11IlIll11(_KMZ[83])] = false, [l11IlIll11(_KMZ[84])] = false, [l11IlIll11(_KMZ[85])] = nil, [l11IlIll11(_KMZ[86])] = nil, [l11IlIll11(_KMZ[87])] = nil, [l11IlIll11(_KMZ[88])] = nil, [l11IlIll11(_KMZ[89])] = {}, [l11IlIll11(_KMZ[90])] = {}, [l11IlIll11(_KMZ[91])] = nil, [l11IlIll11(_KMZ[92])] = false, [l11IlIll11(_KMZ[93])] = false, [l11IlIll11(_KMZ[94])] = false, [l11IlIll11(_KMZ[95])] = l11IlIll11(_KMZ[96]), [l11IlIll11(_KMZ[97])] = 0B0, [l11IlIll11(_KMZ[98])] = 0B0, [l11IlIll11(_KMZ[99])] = false, [l11IlIll11(_KMZ[100])] = llI1ll1l11 and (type(llI1ll1l11[l11IlIll11(_KMZ[101])]) == l11IlIll11(_KMZ[102]) and llI1ll1l11[l11IlIll11(_KMZ[103])]) or {}, [l11IlIll11(_KMZ[104])] = nil, [l11IlIll11(_KMZ[105])] = os[l11IlIll11(_KMZ[106])](), [l11IlIll11(_KMZ[107])] = nil, [l11IlIll11(_KMZ[108])] = nil, [l11IlIll11(_KMZ[109])] = false, [l11IlIll11(_KMZ[110])] = false, [l11IlIll11(_KMZ[111])] = nil, [l11IlIll11(_KMZ[112])] = llI1ll1l11 and type(llI1ll1l11[l11IlIll11(_KMZ[113])]) == l11IlIll11(_KMZ[114]) or false, [l11IlIll11(_KMZ[115])] = llI1ll1l11 and (type(llI1ll1l11[l11IlIll11(_KMZ[116])]) == l11IlIll11(_KMZ[117]) and llI1ll1l11[l11IlIll11(_KMZ[118])]) or nil }
-if game[l11IlIll11(_KMZ[119])] ~= l11IlIll11(_KMZ[120]) and not table[l11IlIll11(_KMZ[121])](lI11ll1l11[l11IlIll11(_KMZ[122])], game[l11IlIll11(_KMZ[123])]) then
-lI11ll1l11[l11IlIll11(_KMZ[124])][#lI11ll1l11[l11IlIll11(_KMZ[125])] + 0B1] = game[l11IlIll11(_KMZ[126])]
+lIII1IIll11[IIl1Ill1l11(_KEA[71])] = nil
+local l1lIIIIll11 = {};
+local I1lIIIIll11 = { [IIl1Ill1l11(_KEA[72])] = true, [IIl1Ill1l11(_KEA[73])] = false, [IIl1Ill1l11(_KEA[74])] = false, [IIl1Ill1l11(_KEA[75])] = IIl1Ill1l11(_KEA[76]), [IIl1Ill1l11(_KEA[77])] = false, [IIl1Ill1l11(_KEA[78])] = false, [IIl1Ill1l11(_KEA[79])] = false, [IIl1Ill1l11(_KEA[80])] = false, [IIl1Ill1l11(_KEA[81])] = nil, [IIl1Ill1l11(_KEA[82])] = nil, [IIl1Ill1l11(_KEA[83])] = false, [IIl1Ill1l11(_KEA[84])] = false, [IIl1Ill1l11(_KEA[85])] = nil, [IIl1Ill1l11(_KEA[86])] = nil, [IIl1Ill1l11(_KEA[87])] = nil, [IIl1Ill1l11(_KEA[88])] = nil, [IIl1Ill1l11(_KEA[89])] = {}, [IIl1Ill1l11(_KEA[90])] = {}, [IIl1Ill1l11(_KEA[91])] = nil, [IIl1Ill1l11(_KEA[92])] = false, [IIl1Ill1l11(_KEA[93])] = false, [IIl1Ill1l11(_KEA[94])] = false, [IIl1Ill1l11(_KEA[95])] = IIl1Ill1l11(_KEA[96]), [IIl1Ill1l11(_KEA[97])] = 0B0, [IIl1Ill1l11(_KEA[98])] = 0B0, [IIl1Ill1l11(_KEA[99])] = false, [IIl1Ill1l11(_KEA[100])] = IllIIIIll11 and (type(IllIIIIll11[IIl1Ill1l11(_KEA[101])]) == IIl1Ill1l11(_KEA[102]) and IllIIIIll11[IIl1Ill1l11(_KEA[103])]) or {}, [IIl1Ill1l11(_KEA[104])] = nil, [IIl1Ill1l11(_KEA[105])] = os[IIl1Ill1l11(_KEA[106])](), [IIl1Ill1l11(_KEA[107])] = nil, [IIl1Ill1l11(_KEA[108])] = nil, [IIl1Ill1l11(_KEA[109])] = false, [IIl1Ill1l11(_KEA[110])] = false, [IIl1Ill1l11(_KEA[111])] = nil, [IIl1Ill1l11(_KEA[112])] = IllIIIIll11 and type(IllIIIIll11[IIl1Ill1l11(_KEA[113])]) == IIl1Ill1l11(_KEA[114]) or false, [IIl1Ill1l11(_KEA[115])] = IllIIIIll11 and (type(IllIIIIll11[IIl1Ill1l11(_KEA[116])]) == IIl1Ill1l11(_KEA[117]) and IllIIIIll11[IIl1Ill1l11(_KEA[118])]) or nil }
+if game[IIl1Ill1l11(_KEA[119])] ~= IIl1Ill1l11(_KEA[120]) and not table[IIl1Ill1l11(_KEA[121])](I1lIIIIll11[IIl1Ill1l11(_KEA[122])], game[IIl1Ill1l11(_KEA[123])]) then
+I1lIIIIll11[IIl1Ill1l11(_KEA[124])][#I1lIIIIll11[IIl1Ill1l11(_KEA[125])] + 0B1] = game[IIl1Ill1l11(_KEA[126])]
 	end
-local I111ll1l11 = {};
-local l111ll1l11 = {};
-local Il11ll1l11 = {}
-if llI1ll1l11 and type(llI1ll1l11[l11IlIll11(_KMZ[127])]) == l11IlIll11(_KMZ[128]) then
-for Il111l1l11, ll111l1l11 in ipairs(llI1ll1l11[l11IlIll11(_KMZ[129])]) do
-ll111l1l11 = tonumber(ll111l1l11)
-if ll111l1l11 then
-Il11ll1l11[ll111l1l11] = true
+local lIlIIIIll11 = {};
+local IIlIIIIll11 = {};
+local ll1IIIIll11 = {}
+if IllIIIIll11 and type(IllIIIIll11[IIl1Ill1l11(_KEA[127])]) == IIl1Ill1l11(_KEA[128]) then
+for ll1I1IIll11, Il1I1IIll11 in ipairs(IllIIIIll11[IIl1Ill1l11(_KEA[129])]) do
+Il1I1IIll11 = tonumber(Il1I1IIll11)
+if Il1I1IIll11 then
+ll1IIIIll11[Il1I1IIll11] = true
 			end
 		end
 	end
-local ll11ll1l11 = false
-local IIl1ll1l11 = nil
-local function lIl1ll1l11(Il111l1l11)
-I111ll1l11[#I111ll1l11 + 0B1] = Il111l1l11
-return Il111l1l11
+local Il1IIIIll11 = false
+local l11IIIIll11 = nil
+local function I11IIIIll11(ll1I1IIll11)
+lIlIIIIll11[#lIlIIIIll11 + 0B1] = ll1I1IIll11
+return ll1I1IIll11
 	end
-local function I1l1ll1l11(Il111l1l11)
-local ll111l1l11 = l111ll1l11[Il111l1l11]
-if ll111l1l11 then
-pcall(task[l11IlIll11(_KMZ[130])], ll111l1l11);
-l111ll1l11[Il111l1l11] = nil
+local function lI1IIIIll11(ll1I1IIll11)
+local Il1I1IIll11 = IIlIIIIll11[ll1I1IIll11]
+if Il1I1IIll11 then
+pcall(task[IIl1Ill1l11(_KEA[130])], Il1I1IIll11);
+IIlIIIIll11[ll1I1IIll11] = nil
 		end
 	end
-local function l1l1ll1l11(Il111l1l11, ll111l1l11)
-I1l1ll1l11(Il111l1l11);
-local IIl11l1l11
-IIl11l1l11 = task[l11IlIll11(_KMZ[131])](function()
-local lIl11l1l11, I1l11l1l11 = pcall(ll111l1l11)
-if not lIl11l1l11 and lI11ll1l11[l11IlIll11(_KMZ[132])] then
-warn(l11IlIll11(_KMZ[133]) .. (tostring(Il111l1l11) .. (l11IlIll11(_KMZ[134]) .. tostring(I1l11l1l11))))
+local function II1IIIIll11(ll1I1IIll11, Il1I1IIll11)
+lI1IIIIll11(ll1I1IIll11);
+local l11I1IIll11
+l11I1IIll11 = task[IIl1Ill1l11(_KEA[131])](function()
+local I11I1IIll11, lI1I1IIll11 = pcall(Il1I1IIll11)
+if not I11I1IIll11 and I1lIIIIll11[IIl1Ill1l11(_KEA[132])] then
+warn(IIl1Ill1l11(_KEA[133]) .. (tostring(ll1I1IIll11) .. (IIl1Ill1l11(_KEA[134]) .. tostring(lI1I1IIll11))))
 				end
-if l111ll1l11[Il111l1l11] == IIl11l1l11 then
-l111ll1l11[Il111l1l11] = nil
+if IIlIIIIll11[ll1I1IIll11] == l11I1IIll11 then
+IIlIIIIll11[ll1I1IIll11] = nil
 				end
 			end);
-l111ll1l11[Il111l1l11] = IIl11l1l11
-return IIl11l1l11
+IIlIIIIll11[ll1I1IIll11] = l11I1IIll11
+return l11I1IIll11
 	end
-local function Ill1ll1l11()
-for Il111l1l11, ll111l1l11 in ipairs(I111ll1l11) do
+local function llIIIIIll11()
+for ll1I1IIll11, Il1I1IIll11 in ipairs(lIlIIIIll11) do
 pcall(function()
-ll111l1l11:Disconnect()
+Il1I1IIll11:Disconnect()
 			end)
 		end
-I111ll1l11 = {};
-local Il111l1l11 = {}
-for ll111l1l11 in pairs(l111ll1l11) do
-Il111l1l11[#Il111l1l11 + 0B1] = ll111l1l11
+lIlIIIIll11 = {};
+local ll1I1IIll11 = {}
+for Il1I1IIll11 in pairs(IIlIIIIll11) do
+ll1I1IIll11[#ll1I1IIll11 + 0B1] = Il1I1IIll11
 		end
-for Il111l1l11, ll111l1l11 in ipairs(Il111l1l11) do
-I1l1ll1l11(ll111l1l11)
+for ll1I1IIll11, Il1I1IIll11 in ipairs(ll1I1IIll11) do
+lI1IIIIll11(Il1I1IIll11)
 		end
 	end
-local function lll1ll1l11(Il111l1l11)
-local ll111l1l11 = math[l11IlIll11(_KMZ[135])](tonumber(Il111l1l11) or 0B0);
-local IIl11l1l11 = ll111l1l11 < 0B0 and l11IlIll11(_KMZ[136]) or l11IlIll11(_KMZ[137]);
-local lIl11l1l11 = tostring(math[l11IlIll11(_KMZ[138])](ll111l1l11));
-local I1l11l1l11 = {}
-while #lIl11l1l11 > 0B11 do
-table[l11IlIll11(_KMZ[139])](I1l11l1l11, 0B1, lIl11l1l11:sub(-0B11))
-lIl11l1l11 = lIl11l1l11:sub(0B1, -4)
+local function IlIIIIIll11(ll1I1IIll11)
+local Il1I1IIll11 = math[IIl1Ill1l11(_KEA[135])](tonumber(ll1I1IIll11) or 0B0);
+local l11I1IIll11 = Il1I1IIll11 < 0B0 and IIl1Ill1l11(_KEA[136]) or IIl1Ill1l11(_KEA[137]);
+local I11I1IIll11 = tostring(math[IIl1Ill1l11(_KEA[138])](Il1I1IIll11));
+local lI1I1IIll11 = {}
+while #I11I1IIll11 > 0B11 do
+table[IIl1Ill1l11(_KEA[139])](lI1I1IIll11, 0B1, I11I1IIll11:sub(-0B11))
+I11I1IIll11 = I11I1IIll11:sub(0B1, -4)
 		end
-table[l11IlIll11(_KMZ[140])](I1l11l1l11, 0B1, lIl11l1l11)
-return IIl11l1l11  .. table[l11IlIll11(_KMZ[141])](I1l11l1l11, l11IlIll11(_KMZ[142]))
+table[IIl1Ill1l11(_KEA[140])](lI1I1IIll11, 0B1, I11I1IIll11)
+return l11I1IIll11  .. table[IIl1Ill1l11(_KEA[141])](lI1I1IIll11, IIl1Ill1l11(_KEA[142]))
 	end
-local function IIIlll1l11()
-local Il111l1l11 = IIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[143]));
-local ll111l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[144]));
-local IIl11l1l11 = ll111l1l11 and tonumber(ll111l1l11[l11IlIll11(_KMZ[145])])
-return IIl11l1l11 and math[l11IlIll11(_KMZ[146])](IIl11l1l11) or nil
+local function l1IIIIIll11()
+local ll1I1IIll11 = l1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[143]));
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[144]));
+local l11I1IIll11 = Il1I1IIll11 and tonumber(Il1I1IIll11[IIl1Ill1l11(_KEA[145])])
+return l11I1IIll11 and math[IIl1Ill1l11(_KEA[146])](l11I1IIll11) or nil
 	end
-local function lIIlll1l11(Il111l1l11)
-local ll111l1l11 = tonumber(Il111l1l11)
-if not ll111l1l11 then
+local function I1IIIIIll11(ll1I1IIll11)
+local Il1I1IIll11 = tonumber(ll1I1IIll11)
+if not Il1I1IIll11 then
 return
 		end
-local IIl11l1l11 = math[l11IlIll11(_KMZ[147])](ll111l1l11);
-local lIl11l1l11 = lI11ll1l11[l11IlIll11(_KMZ[148])]
-lI11ll1l11[l11IlIll11(_KMZ[149])] = IIl11l1l11
-if lIl11l1l11 == nil or IIl11l1l11 > lIl11l1l11 then
-lI11ll1l11[l11IlIll11(_KMZ[150])] = os[l11IlIll11(_KMZ[151])]()
+local l11I1IIll11 = math[IIl1Ill1l11(_KEA[147])](Il1I1IIll11);
+local I11I1IIll11 = I1lIIIIll11[IIl1Ill1l11(_KEA[148])]
+I1lIIIIll11[IIl1Ill1l11(_KEA[149])] = l11I1IIll11
+if I11I1IIll11 == nil or l11I1IIll11 > I11I1IIll11 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[150])] = os[IIl1Ill1l11(_KEA[151])]()
 		end
 	end
-local function I1Illl1l11()
-local Il111l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[152])]
-if Il111l1l11 then
-return Il111l1l11
+local function lIIIIIIll11()
+local ll1I1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[152])]
+if ll1I1IIll11 then
+return ll1I1IIll11
 		end
-return IIIl1l1l11[l11IlIll11(_KMZ[153])]:Wait()
+return l1II1IIll11[IIl1Ill1l11(_KEA[153])]:Wait()
 	end
-local function l1Illl1l11()
-local Il111l1l11 = I1Illl1l11()
-return Il111l1l11 and Il111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[154]))
+local function IIIIIIIll11()
+local ll1I1IIll11 = lIIIIIIll11()
+return ll1I1IIll11 and ll1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[154]))
 	end
-local function IlIlll1l11()
-local Il111l1l11 = I1Illl1l11()
-return Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[155]))
+local function lllllll1l11()
+local ll1I1IIll11 = lIIIIIIll11()
+return ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[155]))
 	end
-local function llIlll1l11()
+local function Illllll1l11()
 pcall(function()
-local Il111l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[156])]
-local ll111l1l11 = IIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[157]));
-local IIl11l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[158]))
-if IIl11l1l11 and ll111l1l11 then
-IIl11l1l11[l11IlIll11(_KMZ[159])] = ll111l1l11
+local ll1I1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[156])]
+local Il1I1IIll11 = l1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[157]));
+local l11I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[158]))
+if l11I1IIll11 and Il1I1IIll11 then
+l11I1IIll11[IIl1Ill1l11(_KEA[159])] = Il1I1IIll11
 			end
 		end)
 	end
-local function II1lll1l11()
-local ll111l1l11 = {};
-local IIl11l1l11 = false
-local lIl11l1l11 = string[l11IlIll11(_KMZ[160])](l11IlIll11(_KMZ[161]), IIIl1l1l11[l11IlIll11(_KMZ[162])]);
-local I1l11l1l11, Ill11l1l11 = pcall(game[l11IlIll11(_KMZ[163])], game, lIl11l1l11, true)
-if I1l11l1l11 and type(Ill11l1l11) == l11IlIll11(_KMZ[164]) then
-local Il111l1l11, lIl11l1l11 = pcall(l1l11l1l11[l11IlIll11(_KMZ[165])], l1l11l1l11, Ill11l1l11)
-if Il111l1l11 and (type(lIl11l1l11) == l11IlIll11(_KMZ[166]) and type(lIl11l1l11[l11IlIll11(_KMZ[167])]) == l11IlIll11(_KMZ[168])) then
-for Il111l1l11, IIl11l1l11 in ipairs(lIl11l1l11[l11IlIll11(_KMZ[169])]) do
-local lIl11l1l11 = tonumber(IIl11l1l11[l11IlIll11(_KMZ[170])] or IIl11l1l11[l11IlIll11(_KMZ[171])])
-if lIl11l1l11 then
-ll111l1l11[lIl11l1l11] = true
+local function l1lllll1l11()
+local Il1I1IIll11 = {};
+local l11I1IIll11 = false
+local I11I1IIll11 = string[IIl1Ill1l11(_KEA[160])](IIl1Ill1l11(_KEA[161]), l1II1IIll11[IIl1Ill1l11(_KEA[162])]);
+local lI1I1IIll11, llII1IIll11 = pcall(game[IIl1Ill1l11(_KEA[163])], game, I11I1IIll11, true)
+if lI1I1IIll11 and type(llII1IIll11) == IIl1Ill1l11(_KEA[164]) then
+local ll1I1IIll11, I11I1IIll11 = pcall(II1I1IIll11[IIl1Ill1l11(_KEA[165])], II1I1IIll11, llII1IIll11)
+if ll1I1IIll11 and (type(I11I1IIll11) == IIl1Ill1l11(_KEA[166]) and type(I11I1IIll11[IIl1Ill1l11(_KEA[167])]) == IIl1Ill1l11(_KEA[168])) then
+for ll1I1IIll11, l11I1IIll11 in ipairs(I11I1IIll11[IIl1Ill1l11(_KEA[169])]) do
+local I11I1IIll11 = tonumber(l11I1IIll11[IIl1Ill1l11(_KEA[170])] or l11I1IIll11[IIl1Ill1l11(_KEA[171])])
+if I11I1IIll11 then
+Il1I1IIll11[I11I1IIll11] = true
 					end
 				end
-IIl11l1l11 = true
+l11I1IIll11 = true
 			end
 		end
-if not IIl11l1l11 then
-IIl11l1l11 = pcall(function()
-local IIl11l1l11 = Il111l1l11:GetFriendsAsync(IIIl1l1l11[l11IlIll11(_KMZ[172])])
-while lI11ll1l11[l11IlIll11(_KMZ[173])] and lI11ll1l11[l11IlIll11(_KMZ[174])] do
-for Il111l1l11, IIl11l1l11 in ipairs(IIl11l1l11:GetCurrentPage()) do
-local lIl11l1l11 = tonumber(IIl11l1l11[l11IlIll11(_KMZ[175])])
-if lIl11l1l11 then
-ll111l1l11[lIl11l1l11] = true
+if not l11I1IIll11 then
+l11I1IIll11 = pcall(function()
+local l11I1IIll11 = ll1I1IIll11:GetFriendsAsync(l1II1IIll11[IIl1Ill1l11(_KEA[172])])
+while I1lIIIIll11[IIl1Ill1l11(_KEA[173])] and I1lIIIIll11[IIl1Ill1l11(_KEA[174])] do
+for ll1I1IIll11, l11I1IIll11 in ipairs(l11I1IIll11:GetCurrentPage()) do
+local I11I1IIll11 = tonumber(l11I1IIll11[IIl1Ill1l11(_KEA[175])])
+if I11I1IIll11 then
+Il1I1IIll11[I11I1IIll11] = true
 							end
 						end
-if IIl11l1l11[l11IlIll11(_KMZ[176])] then
+if l11I1IIll11[IIl1Ill1l11(_KEA[176])] then
 break
 						end
-IIl11l1l11:AdvanceToNextPageAsync()
+l11I1IIll11:AdvanceToNextPageAsync()
 					end
 				end)
 		end
-if IIl11l1l11 then
-for Il111l1l11, IIl11l1l11 in ipairs(Il111l1l11:GetPlayers()) do
-if IIl11l1l11 ~= IIIl1l1l11 and ll111l1l11[IIl11l1l11[l11IlIll11(_KMZ[177])]] == nil then
-ll111l1l11[IIl11l1l11[l11IlIll11(_KMZ[178])]] = false
+if l11I1IIll11 then
+for ll1I1IIll11, l11I1IIll11 in ipairs(ll1I1IIll11:GetPlayers()) do
+if l11I1IIll11 ~= l1II1IIll11 and Il1I1IIll11[l11I1IIll11[IIl1Ill1l11(_KEA[177])]] == nil then
+Il1I1IIll11[l11I1IIll11[IIl1Ill1l11(_KEA[178])]] = false
 				end
 			end
-Il11ll1l11 = ll111l1l11
-lI11ll1l11[l11IlIll11(_KMZ[179])] = {}
-for Il111l1l11 in pairs(ll111l1l11) do
-if ll111l1l11[Il111l1l11] == true then
-lI11ll1l11[l11IlIll11(_KMZ[180])][#lI11ll1l11[l11IlIll11(_KMZ[181])] + 0B1] = Il111l1l11
+ll1IIIIll11 = Il1I1IIll11
+I1lIIIIll11[IIl1Ill1l11(_KEA[179])] = {}
+for ll1I1IIll11 in pairs(Il1I1IIll11) do
+if Il1I1IIll11[ll1I1IIll11] == true then
+I1lIIIIll11[IIl1Ill1l11(_KEA[180])][#I1lIIIIll11[IIl1Ill1l11(_KEA[181])] + 0B1] = ll1I1IIll11
 				end
 			end
 		end
-lI11ll1l11[l11IlIll11(_KMZ[182])] = IIl11l1l11
-if type(lI11ll1l11[l11IlIll11(_KMZ[183])]) == l11IlIll11(_KMZ[184]) then
-task[l11IlIll11(_KMZ[185])](lI11ll1l11[l11IlIll11(_KMZ[186])])
+I1lIIIIll11[IIl1Ill1l11(_KEA[182])] = l11I1IIll11
+if type(I1lIIIIll11[IIl1Ill1l11(_KEA[183])]) == IIl1Ill1l11(_KEA[184]) then
+task[IIl1Ill1l11(_KEA[185])](I1lIIIIll11[IIl1Ill1l11(_KEA[186])])
 		end
-return IIl11l1l11
+return l11I1IIll11
 	end
-local function lI1lll1l11(Il111l1l11)
-local ll111l1l11, IIl11l1l11 = pcall(IIIl1l1l11[l11IlIll11(_KMZ[187])], IIIl1l1l11, Il111l1l11[l11IlIll11(_KMZ[188])])
-if ll111l1l11 then
-return IIl11l1l11 == true
+local function I1lllll1l11(ll1I1IIll11)
+local Il1I1IIll11, l11I1IIll11 = pcall(l1II1IIll11[IIl1Ill1l11(_KEA[187])], l1II1IIll11, ll1I1IIll11[IIl1Ill1l11(_KEA[188])])
+if Il1I1IIll11 then
+return l11I1IIll11 == true
 		end
-local lIl11l1l11, I1l11l1l11 = pcall(IIIl1l1l11[l11IlIll11(_KMZ[189])], IIIl1l1l11, Il111l1l11[l11IlIll11(_KMZ[190])])
-if lIl11l1l11 then
-return I1l11l1l11 == true
+local I11I1IIll11, lI1I1IIll11 = pcall(l1II1IIll11[IIl1Ill1l11(_KEA[189])], l1II1IIll11, ll1I1IIll11[IIl1Ill1l11(_KEA[190])])
+if I11I1IIll11 then
+return lI1I1IIll11 == true
 		end
 return nil
 	end
-local function I11lll1l11(Il111l1l11)
-if not lI11ll1l11[l11IlIll11(_KMZ[191])] or not Il111l1l11 or Il111l1l11 == IIIl1l1l11 then
+local function lIlllll1l11(ll1I1IIll11)
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[191])] or not ll1I1IIll11 or ll1I1IIll11 == l1II1IIll11 then
 return false
 		end
-local ll111l1l11 = Il11ll1l11[Il111l1l11[l11IlIll11(_KMZ[192])]]
-if ll111l1l11 ~= nil and lI11ll1l11[l11IlIll11(_KMZ[193])] then
-return ll111l1l11 == true
+local Il1I1IIll11 = ll1IIIIll11[ll1I1IIll11[IIl1Ill1l11(_KEA[192])]]
+if Il1I1IIll11 ~= nil and I1lIIIIll11[IIl1Ill1l11(_KEA[193])] then
+return Il1I1IIll11 == true
 		end
-local IIl11l1l11 = lI1lll1l11(Il111l1l11)
-if IIl11l1l11 ~= nil then
-Il11ll1l11[Il111l1l11[l11IlIll11(_KMZ[194])]] = IIl11l1l11
-return IIl11l1l11
+local l11I1IIll11 = I1lllll1l11(ll1I1IIll11)
+if l11I1IIll11 ~= nil then
+ll1IIIIll11[ll1I1IIll11[IIl1Ill1l11(_KEA[194])]] = l11I1IIll11
+return l11I1IIll11
 		end
 return true
 	end
-local function l11lll1l11(Il111l1l11)
-local ll111l1l11 = Il111l1l11 and Il111l1l11[l11IlIll11(_KMZ[195])]
-return type(ll111l1l11) == l11IlIll11(_KMZ[196]) and string[l11IlIll11(_KMZ[197])](string[l11IlIll11(_KMZ[198])](ll111l1l11), l11IlIll11(_KMZ[199]), 0B1, true) ~= nil
+local function IIlllll1l11(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11[IIl1Ill1l11(_KEA[195])]
+return type(Il1I1IIll11) == IIl1Ill1l11(_KEA[196]) and string[IIl1Ill1l11(_KEA[197])](string[IIl1Ill1l11(_KEA[198])](Il1I1IIll11), IIl1Ill1l11(_KEA[199]), 0B1, true) ~= nil
 	end
-local function Il1lll1l11(Il111l1l11)
-if not Il111l1l11 or Il111l1l11 == IIIl1l1l11 then
+local function ll1llll1l11(ll1I1IIll11)
+if not ll1I1IIll11 or ll1I1IIll11 == l1II1IIll11 then
 return true
 		end
-if l11lll1l11(Il111l1l11) then
+if IIlllll1l11(ll1I1IIll11) then
 return true
 		end
-return I11lll1l11(Il111l1l11)
+return lIlllll1l11(ll1I1IIll11)
 	end
-local function ll1lll1l11(Il111l1l11)
-local ll111l1l11 = Il111l1l11 and Il111l1l11:GetAttribute(l11IlIll11(_KMZ[200]))
-if type(ll111l1l11) == l11IlIll11(_KMZ[201]) and workspace:GetServerTimeNow() < ll111l1l11 then
+local function Il1llll1l11(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[200]))
+if type(Il1I1IIll11) == IIl1Ill1l11(_KEA[201]) and workspace:GetServerTimeNow() < Il1I1IIll11 then
 return true
 		end
-return Il111l1l11 ~= nil and (Il111l1l11:FindFirstChildOfClass(l11IlIll11(_KMZ[202])) ~= nil or Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[203])) ~= nil)
+return ll1I1IIll11 ~= nil and (ll1I1IIll11:FindFirstChildOfClass(IIl1Ill1l11(_KEA[202])) ~= nil or ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[203])) ~= nil)
 	end
-local function IIllll1l11(Il111l1l11)
-if not Il111l1l11 then
+local function l11llll1l11(ll1I1IIll11)
+if not ll1I1IIll11 then
 return false
 		end
-if Il111l1l11:GetAttribute(I11Ill1l11) == true then
+if ll1I1IIll11:GetAttribute(lIl1IIIll11) == true then
 return true
 		end
-local ll111l1l11 = Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[204]))
-if not ll111l1l11 then
+local Il1I1IIll11 = ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[204]))
+if not Il1I1IIll11 then
 return false
 		end
-for Il111l1l11, IIl11l1l11 in ipairs(lll11l1l11:GetTagged(l11Ill1l11)) do
-local lIl11l1l11 = IIl11l1l11:IsA(l11IlIll11(_KMZ[205])) and IIl11l1l11 or IIl11l1l11:IsA(l11IlIll11(_KMZ[206])) and IIl11l1l11[l11IlIll11(_KMZ[207])]
-if lIl11l1l11 and (ll111l1l11[l11IlIll11(_KMZ[208])] - lIl11l1l11[l11IlIll11(_KMZ[209])])[l11IlIll11(_KMZ[210])] <= Il1Ill1l11 then
+for ll1I1IIll11, l11I1IIll11 in ipairs(IlII1IIll11:GetTagged(IIl1IIIll11)) do
+local I11I1IIll11 = l11I1IIll11:IsA(IIl1Ill1l11(_KEA[205])) and l11I1IIll11 or l11I1IIll11:IsA(IIl1Ill1l11(_KEA[206])) and l11I1IIll11[IIl1Ill1l11(_KEA[207])]
+if I11I1IIll11 and (Il1I1IIll11[IIl1Ill1l11(_KEA[208])] - I11I1IIll11[IIl1Ill1l11(_KEA[209])])[IIl1Ill1l11(_KEA[210])] <= ll11IIIll11 then
 return true
 			end
 		end
 return false
 	end
-local function lIllll1l11(Il111l1l11)
-return ll1lll1l11(Il111l1l11) or Il111l1l11 ~= nil and Il111l1l11:GetAttribute(l11IlIll11(_KMZ[211])) == true or IIllll1l11(Il111l1l11)
+local function I11llll1l11(ll1I1IIll11)
+return Il1llll1l11(ll1I1IIll11) or ll1I1IIll11 ~= nil and ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[211])) == true or l11llll1l11(ll1I1IIll11)
 	end
-local function I1llll1l11(Il111l1l11)
-local ll111l1l11 = Il111l1l11 and Il111l1l11[l11IlIll11(_KMZ[212])]
-return ll111l1l11 ~= nil and ll111l1l11:GetAttribute(l11IlIll11(_KMZ[213])) ~= nil
+local function lI1llll1l11(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11[IIl1Ill1l11(_KEA[212])]
+return Il1I1IIll11 ~= nil and Il1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[213])) ~= nil
 	end
-local function l1llll1l11(Il111l1l11)
-local ll111l1l11 = Il111l1l11 and Il111l1l11[l11IlIll11(_KMZ[214])]
-return ll111l1l11 ~= nil and ll111l1l11:GetAttribute(l11IlIll11(_KMZ[215])) == true
+local function II1llll1l11(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11[IIl1Ill1l11(_KEA[214])]
+return Il1I1IIll11 ~= nil and Il1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[215])) == true
 	end
-local function Illlll1l11()
-local Il111l1l11 = IIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[216]));
-local ll111l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[217]));
-local IIl11l1l11 = ll111l1l11 and tonumber(ll111l1l11[l11IlIll11(_KMZ[218])])
-return IIl11l1l11 and math[l11IlIll11(_KMZ[219])](IIl11l1l11) or nil
+local function llIllll1l11()
+local ll1I1IIll11 = l1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[216]));
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[217]));
+local l11I1IIll11 = Il1I1IIll11 and tonumber(Il1I1IIll11[IIl1Ill1l11(_KEA[218])])
+return l11I1IIll11 and math[IIl1Ill1l11(_KEA[219])](l11I1IIll11) or nil
 	end
-local function llllll1l11()
-local Il111l1l11 = lIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[220]));
-local ll111l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[221]))
-return ll111l1l11 ~= nil and ll111l1l11[l11IlIll11(_KMZ[222])] == true
+local function IlIllll1l11()
+local ll1I1IIll11 = I1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[220]));
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[221]))
+return Il1I1IIll11 ~= nil and Il1I1IIll11[IIl1Ill1l11(_KEA[222])] == true
 	end
-local function IIIIIIll11()
-local ll111l1l11 = {};
-local IIl11l1l11 = {}
-if not lI11ll1l11[l11IlIll11(_KMZ[223])] or not I1llll1l11(IIIl1l1l11) or not l1llll1l11(IIIl1l1l11) then
-return ll111l1l11
+local function l1Illll1l11()
+local Il1I1IIll11 = {};
+local l11I1IIll11 = {}
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[223])] or not lI1llll1l11(l1II1IIll11) or not II1llll1l11(l1II1IIll11) then
+return Il1I1IIll11
 		end
-local function lIl11l1l11(Il111l1l11)
-if not Il111l1l11 or Il111l1l11 == IIIl1l1l11 or IIl11l1l11[Il111l1l11[l11IlIll11(_KMZ[224])]] or Il1lll1l11(Il111l1l11) then
+local function I11I1IIll11(ll1I1IIll11)
+if not ll1I1IIll11 or ll1I1IIll11 == l1II1IIll11 or l11I1IIll11[ll1I1IIll11[IIl1Ill1l11(_KEA[224])]] or ll1llll1l11(ll1I1IIll11) then
 return
 			end
-local lIl11l1l11 = Il111l1l11[l11IlIll11(_KMZ[225])]
-local I1l11l1l11 = lIl11l1l11 and lIl11l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[226]));
-local l1l11l1l11 = lIl11l1l11 and lIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[227]))
-if not I1l11l1l11 or I1l11l1l11[l11IlIll11(_KMZ[228])] <= 0B0 or not l1l11l1l11 or not I1llll1l11(Il111l1l11) or not l1llll1l11(Il111l1l11) or lIllll1l11(lIl11l1l11) then
+local I11I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[225])]
+local lI1I1IIll11 = I11I1IIll11 and I11I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[226]));
+local II1I1IIll11 = I11I1IIll11 and I11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[227]))
+if not lI1I1IIll11 or lI1I1IIll11[IIl1Ill1l11(_KEA[228])] <= 0B0 or not II1I1IIll11 or not lI1llll1l11(ll1I1IIll11) or not II1llll1l11(ll1I1IIll11) or I11llll1l11(I11I1IIll11) then
 return
 			end
-IIl11l1l11[Il111l1l11[l11IlIll11(_KMZ[229])]] = true
-ll111l1l11[#ll111l1l11 + 0B1] = { [l11IlIll11(_KMZ[230])] = Il111l1l11, [l11IlIll11(_KMZ[231])] = I1l11l1l11[l11IlIll11(_KMZ[232])] }
+l11I1IIll11[ll1I1IIll11[IIl1Ill1l11(_KEA[229])]] = true
+Il1I1IIll11[#Il1I1IIll11 + 0B1] = { [IIl1Ill1l11(_KEA[230])] = ll1I1IIll11, [IIl1Ill1l11(_KEA[231])] = lI1I1IIll11[IIl1Ill1l11(_KEA[232])] }
 		end
-lIl11l1l11(lI11ll1l11[l11IlIll11(_KMZ[233])])
-for Il111l1l11, ll111l1l11 in ipairs(Il111l1l11:GetPlayers()) do
-lIl11l1l11(ll111l1l11)
+I11I1IIll11(I1lIIIIll11[IIl1Ill1l11(_KEA[233])])
+for ll1I1IIll11, Il1I1IIll11 in ipairs(ll1I1IIll11:GetPlayers()) do
+I11I1IIll11(Il1I1IIll11)
 		end
-table[l11IlIll11(_KMZ[234])](ll111l1l11, function(Il111l1l11, ll111l1l11)
-if Il111l1l11[l11IlIll11(_KMZ[235])] == lI11ll1l11[l11IlIll11(_KMZ[236])] then
+table[IIl1Ill1l11(_KEA[234])](Il1I1IIll11, function(ll1I1IIll11, Il1I1IIll11)
+if ll1I1IIll11[IIl1Ill1l11(_KEA[235])] == I1lIIIIll11[IIl1Ill1l11(_KEA[236])] then
 return true
-			elseif ll111l1l11[l11IlIll11(_KMZ[237])] == lI11ll1l11[l11IlIll11(_KMZ[238])] then
+			elseif Il1I1IIll11[IIl1Ill1l11(_KEA[237])] == I1lIIIIll11[IIl1Ill1l11(_KEA[238])] then
 return false
 			end
-return Il111l1l11[l11IlIll11(_KMZ[239])] < ll111l1l11[l11IlIll11(_KMZ[240])]
+return ll1I1IIll11[IIl1Ill1l11(_KEA[239])] < Il1I1IIll11[IIl1Ill1l11(_KEA[240])]
 		end)
-return ll111l1l11
+return Il1I1IIll11
 	end
-local function lIIIIIll11()
-I1l1ll1l11(l11IlIll11(_KMZ[241]))
-if not lI11ll1l11[l11IlIll11(_KMZ[242])] then
+local function I1Illll1l11()
+lI1IIIIll11(IIl1Ill1l11(_KEA[241]))
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[242])] then
 return
 		end
-l1l1ll1l11(l11IlIll11(_KMZ[243]), function()
-while lI11ll1l11[l11IlIll11(_KMZ[244])] and lI11ll1l11[l11IlIll11(_KMZ[245])] do
-II1lll1l11()
-for Il111l1l11 = 0B1, 0x3C, 0B1 do
-if not lI11ll1l11[l11IlIll11(_KMZ[246])] or not lI11ll1l11[l11IlIll11(_KMZ[247])] then
+II1IIIIll11(IIl1Ill1l11(_KEA[243]), function()
+while I1lIIIIll11[IIl1Ill1l11(_KEA[244])] and I1lIIIIll11[IIl1Ill1l11(_KEA[245])] do
+l1lllll1l11()
+for ll1I1IIll11 = 0B1, 0x3C, 0B1 do
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[246])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[247])] then
 return
 					end
-task[l11IlIll11(_KMZ[248])](0B1)
+task[IIl1Ill1l11(_KEA[248])](0B1)
 				end
 			end
 		end)
 	end
-local function I1IIIIll11()
-local Il111l1l11 = I1Illl1l11();
-local ll111l1l11 = l1Illl1l11();
-local IIl11l1l11 = IIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[249]))
-if not Il111l1l11 or not ll111l1l11 then
+local function lIIllll1l11()
+local ll1I1IIll11 = lIIIIIIll11();
+local Il1I1IIll11 = IIIIIIIll11();
+local l11I1IIll11 = l1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[249]))
+if not ll1I1IIll11 or not Il1I1IIll11 then
 return nil
 		end
-local lIl11l1l11 = Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[250])) or IIl11l1l11 and IIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[251]))
-if lIl11l1l11 and lIl11l1l11[l11IlIll11(_KMZ[252])] ~= Il111l1l11 then
+local I11I1IIll11 = ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[250])) or l11I1IIll11 and l11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[251]))
+if I11I1IIll11 and I11I1IIll11[IIl1Ill1l11(_KEA[252])] ~= ll1I1IIll11 then
 pcall(function()
-ll111l1l11:EquipTool(lIl11l1l11)
+Il1I1IIll11:EquipTool(I11I1IIll11)
 			end)
 		end
-if lIl11l1l11 then
-local Il111l1l11 = lIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[253]))
-if Il111l1l11 and Il111l1l11:IsA(l11IlIll11(_KMZ[254])) then
+if I11I1IIll11 then
+local ll1I1IIll11 = I11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[253]))
+if ll1I1IIll11 and ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[254])) then
 pcall(function()
-Il111l1l11[l11IlIll11(_KMZ[255])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[255])] = 0B0
 				end)
 			end
 		end
-return lIl11l1l11
+return I11I1IIll11
 	end
-local function l1IIIIll11(Il111l1l11, ll111l1l11)
-return Il111l1l11 and (Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[256])) or Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[257])) or Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[258]))) or ll111l1l11
+local function IIIllll1l11(ll1I1IIll11, Il1I1IIll11)
+return ll1I1IIll11 and (ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[256])) or ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[257])) or ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[258]))) or Il1I1IIll11
 	end
-local function IlIIIIll11(Il111l1l11, ll111l1l11, IIl11l1l11, lIl11l1l11, I1l11l1l11)
-local l1l11l1l11 = lIl11l1l11[l11IlIll11(_KMZ[259])]
-local Ill11l1l11 = Vector3[l11IlIll11(_KMZ[260])](l1l11l1l11[l11IlIll11(_KMZ[261])], 0B0, l1l11l1l11[l11IlIll11(_KMZ[262])]) * IIIIll1l11
-if Ill11l1l11[l11IlIll11(_KMZ[263])] > lIIIll1l11 then
-Ill11l1l11 = Ill11l1l11[l11IlIll11(_KMZ[264])] * lIIIll1l11
+local function lll1lll1l11(ll1I1IIll11, Il1I1IIll11, l11I1IIll11, I11I1IIll11, lI1I1IIll11)
+local II1I1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[259])]
+local llII1IIll11 = Vector3[IIl1Ill1l11(_KEA[260])](II1I1IIll11[IIl1Ill1l11(_KEA[261])], 0B0, II1I1IIll11[IIl1Ill1l11(_KEA[262])]) * l1IlIIIll11
+if llII1IIll11[IIl1Ill1l11(_KEA[263])] > I1IlIIIll11 then
+llII1IIll11 = llII1IIll11[IIl1Ill1l11(_KEA[264])] * I1IlIIIll11
 		end
-local lll11l1l11 = l1IIIIll11(Il111l1l11, ll111l1l11);
-local IIIl1l1l11 = l1IIIIll11(IIl11l1l11, lIl11l1l11);
-local lIIl1l1l11 = lll11l1l11 and lll11l1l11[l11IlIll11(_KMZ[265])] - ll111l1l11[l11IlIll11(_KMZ[266])] or Vector3[l11IlIll11(_KMZ[267])]
-if lIIl1l1l11[l11IlIll11(_KMZ[268])] > 0x4 then
-lIIl1l1l11 = Vector3[l11IlIll11(_KMZ[269])](0B0, 0B1, 0B0)
+local IlII1IIll11 = IIIllll1l11(ll1I1IIll11, Il1I1IIll11);
+local l1II1IIll11 = IIIllll1l11(l11I1IIll11, I11I1IIll11);
+local I1II1IIll11 = IlII1IIll11 and IlII1IIll11[IIl1Ill1l11(_KEA[265])] - Il1I1IIll11[IIl1Ill1l11(_KEA[266])] or Vector3[IIl1Ill1l11(_KEA[267])]
+if I1II1IIll11[IIl1Ill1l11(_KEA[268])] > 0x4 then
+I1II1IIll11 = Vector3[IIl1Ill1l11(_KEA[269])](0B0, 0B1, 0B0)
 		end
-local I1Il1l1l11 = ((I1l11l1l11 or 0B1) - 0B1) % 0x5 + 0B1
-local l1Il1l1l11 = lIl11l1l11[l11IlIll11(_KMZ[270])] + Ill11l1l11
-local IlIl1l1l11 = (IIIl1l1l11 and IIIl1l1l11[l11IlIll11(_KMZ[271])] or lIl11l1l11[l11IlIll11(_KMZ[272])]) + Ill11l1l11
-if IIIl1l1l11 then
-local IIl11l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[273])]
-local I1l11l1l11 = Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[274])) or Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[275]))
-if lIl11l1l11[l11IlIll11(_KMZ[276])][l11IlIll11(_KMZ[277])] <= II1Ill1l11 and I1l11l1l11 then
-local Il111l1l11
-local lIl11l1l11
-if I1Il1l1l11 == 0B1 then
-Il111l1l11 = -IIIl1l1l11[l11IlIll11(_KMZ[278])][l11IlIll11(_KMZ[279])]
-lIl11l1l11 = IIl11l1l11[l11IlIll11(_KMZ[280])] * .5
-				elseif I1Il1l1l11 == 0B10 then
-Il111l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[281])][l11IlIll11(_KMZ[282])]
-lIl11l1l11 = IIl11l1l11[l11IlIll11(_KMZ[283])] * .5
-				elseif I1Il1l1l11 == 0B11 then
-Il111l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[284])][l11IlIll11(_KMZ[285])]
-lIl11l1l11 = IIl11l1l11[l11IlIll11(_KMZ[286])] * .5
-				elseif I1Il1l1l11 == 0x4 then
-Il111l1l11 = -IIIl1l1l11[l11IlIll11(_KMZ[287])][l11IlIll11(_KMZ[288])]
-lIl11l1l11 = IIl11l1l11[l11IlIll11(_KMZ[289])] * .5
+local lIII1IIll11 = ((lI1I1IIll11 or 0B1) - 0B1) % 0x5 + 0B1
+local IIII1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[270])] + llII1IIll11
+local llllIIIll11 = (l1II1IIll11 and l1II1IIll11[IIl1Ill1l11(_KEA[271])] or I11I1IIll11[IIl1Ill1l11(_KEA[272])]) + llII1IIll11
+if l1II1IIll11 then
+local l11I1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[273])]
+local lI1I1IIll11 = ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[274])) or ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[275]))
+if I11I1IIll11[IIl1Ill1l11(_KEA[276])][IIl1Ill1l11(_KEA[277])] <= l1l1IIIll11 and lI1I1IIll11 then
+local ll1I1IIll11
+local I11I1IIll11
+if lIII1IIll11 == 0B1 then
+ll1I1IIll11 = -l1II1IIll11[IIl1Ill1l11(_KEA[278])][IIl1Ill1l11(_KEA[279])]
+I11I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[280])] * .5
+				elseif lIII1IIll11 == 0B10 then
+ll1I1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[281])][IIl1Ill1l11(_KEA[282])]
+I11I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[283])] * .5
+				elseif lIII1IIll11 == 0B11 then
+ll1I1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[284])][IIl1Ill1l11(_KEA[285])]
+I11I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[286])] * .5
+				elseif lIII1IIll11 == 0x4 then
+ll1I1IIll11 = -l1II1IIll11[IIl1Ill1l11(_KEA[287])][IIl1Ill1l11(_KEA[288])]
+I11I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[289])] * .5
 				else
-Il111l1l11 = -IIIl1l1l11[l11IlIll11(_KMZ[290])][l11IlIll11(_KMZ[291])]
-lIl11l1l11 = 0B0
+ll1I1IIll11 = -l1II1IIll11[IIl1Ill1l11(_KEA[290])][IIl1Ill1l11(_KEA[291])]
+I11I1IIll11 = 0B0
 				end
-local l1l11l1l11 = CFrame[l11IlIll11(_KMZ[292])](Vector3[l11IlIll11(_KMZ[293])], -Il111l1l11);
-local Ill11l1l11 = ll111l1l11[l11IlIll11(_KMZ[294])]:PointToObjectSpace(I1l11l1l11[l11IlIll11(_KMZ[295])]);
-local lll11l1l11 = (IlIl1l1l11 + Il111l1l11 * (lIl11l1l11 + lI1Ill1l11)) - l1l11l1l11:VectorToWorldSpace(Ill11l1l11)
-return CFrame[l11IlIll11(_KMZ[296])](lll11l1l11) * l1l11l1l11[l11IlIll11(_KMZ[297])]
+local II1I1IIll11 = CFrame[IIl1Ill1l11(_KEA[292])](Vector3[IIl1Ill1l11(_KEA[293])], -ll1I1IIll11);
+local llII1IIll11 = Il1I1IIll11[IIl1Ill1l11(_KEA[294])]:PointToObjectSpace(lI1I1IIll11[IIl1Ill1l11(_KEA[295])]);
+local IlII1IIll11 = (llllIIIll11 + ll1I1IIll11 * (I11I1IIll11 + I1l1IIIll11)) - II1I1IIll11:VectorToWorldSpace(llII1IIll11)
+return CFrame[IIl1Ill1l11(_KEA[296])](IlII1IIll11) * II1I1IIll11[IIl1Ill1l11(_KEA[297])]
 			end
-local l1l11l1l11 = math[l11IlIll11(_KMZ[298])](IIl11l1l11[l11IlIll11(_KMZ[299])], IIl11l1l11[l11IlIll11(_KMZ[300])], IIl11l1l11[l11IlIll11(_KMZ[301])]) >= l1IIll1l11
-local Ill11l1l11 = (IIIl1l1l11[l11IlIll11(_KMZ[302])] - lIl11l1l11[l11IlIll11(_KMZ[303])])[l11IlIll11(_KMZ[304])] >= IlIIll1l11
-if not l1l11l1l11 and not Ill11l1l11 then
-local Il111l1l11
-local IIl11l1l11
-if I1Il1l1l11 == 0B1 then
-Il111l1l11 = -lIl11l1l11[l11IlIll11(_KMZ[305])][l11IlIll11(_KMZ[306])]
-IIl11l1l11 = lIl11l1l11[l11IlIll11(_KMZ[307])][l11IlIll11(_KMZ[308])] * .5
-				elseif I1Il1l1l11 == 0B10 then
-Il111l1l11 = lIl11l1l11[l11IlIll11(_KMZ[309])][l11IlIll11(_KMZ[310])]
-IIl11l1l11 = lIl11l1l11[l11IlIll11(_KMZ[311])][l11IlIll11(_KMZ[312])] * .5
-				elseif I1Il1l1l11 == 0B11 then
-Il111l1l11 = lIl11l1l11[l11IlIll11(_KMZ[313])][l11IlIll11(_KMZ[314])]
-IIl11l1l11 = lIl11l1l11[l11IlIll11(_KMZ[315])][l11IlIll11(_KMZ[316])] * .5
-				elseif I1Il1l1l11 == 0x4 then
-Il111l1l11 = -lIl11l1l11[l11IlIll11(_KMZ[317])][l11IlIll11(_KMZ[318])]
-IIl11l1l11 = lIl11l1l11[l11IlIll11(_KMZ[319])][l11IlIll11(_KMZ[320])] * .5
+local II1I1IIll11 = math[IIl1Ill1l11(_KEA[298])](l11I1IIll11[IIl1Ill1l11(_KEA[299])], l11I1IIll11[IIl1Ill1l11(_KEA[300])], l11I1IIll11[IIl1Ill1l11(_KEA[301])]) >= IIIlIIIll11
+local llII1IIll11 = (l1II1IIll11[IIl1Ill1l11(_KEA[302])] - I11I1IIll11[IIl1Ill1l11(_KEA[303])])[IIl1Ill1l11(_KEA[304])] >= lll1IIIll11
+if not II1I1IIll11 and not llII1IIll11 then
+local ll1I1IIll11
+local l11I1IIll11
+if lIII1IIll11 == 0B1 then
+ll1I1IIll11 = -I11I1IIll11[IIl1Ill1l11(_KEA[305])][IIl1Ill1l11(_KEA[306])]
+l11I1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[307])][IIl1Ill1l11(_KEA[308])] * .5
+				elseif lIII1IIll11 == 0B10 then
+ll1I1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[309])][IIl1Ill1l11(_KEA[310])]
+l11I1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[311])][IIl1Ill1l11(_KEA[312])] * .5
+				elseif lIII1IIll11 == 0B11 then
+ll1I1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[313])][IIl1Ill1l11(_KEA[314])]
+l11I1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[315])][IIl1Ill1l11(_KEA[316])] * .5
+				elseif lIII1IIll11 == 0x4 then
+ll1I1IIll11 = -I11I1IIll11[IIl1Ill1l11(_KEA[317])][IIl1Ill1l11(_KEA[318])]
+l11I1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[319])][IIl1Ill1l11(_KEA[320])] * .5
 				end
-if Il111l1l11 and IIl11l1l11 then
-local lIl11l1l11 = math[l11IlIll11(_KMZ[321])](ll111l1l11[l11IlIll11(_KMZ[322])][l11IlIll11(_KMZ[323])] * .5, .15);
-local I1l11l1l11 = l1Il1l1l11 + Il111l1l11 * ((IIl11l1l11 + lIl11l1l11) + I1IIll1l11)
-return CFrame[l11IlIll11(_KMZ[324])](I1l11l1l11, l1Il1l1l11)
+if ll1I1IIll11 and l11I1IIll11 then
+local I11I1IIll11 = math[IIl1Ill1l11(_KEA[321])](Il1I1IIll11[IIl1Ill1l11(_KEA[322])][IIl1Ill1l11(_KEA[323])] * .5, .15);
+local lI1I1IIll11 = IIII1IIll11 + ll1I1IIll11 * ((l11I1IIll11 + I11I1IIll11) + lIIlIIIll11)
+return CFrame[IIl1Ill1l11(_KEA[324])](lI1I1IIll11, IIII1IIll11)
 				end
-return CFrame[l11IlIll11(_KMZ[325])](l1Il1l1l11 - lIl11l1l11[l11IlIll11(_KMZ[326])][l11IlIll11(_KMZ[327])] * llll1l1l11, l1Il1l1l11)
+return CFrame[IIl1Ill1l11(_KEA[325])](IIII1IIll11 - I11I1IIll11[IIl1Ill1l11(_KEA[326])][IIl1Ill1l11(_KEA[327])] * IlIlIIIll11, IIII1IIll11)
 			end
-if Ill11l1l11 and not l1l11l1l11 then
-I1Il1l1l11 = I1Il1l1l11 == 0B1 and 0x5 or I1Il1l1l11 - 0B1
+if llII1IIll11 and not II1I1IIll11 then
+lIII1IIll11 = lIII1IIll11 == 0B1 and 0x5 or lIII1IIll11 - 0B1
 			end
-local lll11l1l11
-local lIIl1l1l11
-if I1Il1l1l11 == 0B1 then
-lll11l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[328])][l11IlIll11(_KMZ[329])]
-lIIl1l1l11 = IIl11l1l11[l11IlIll11(_KMZ[330])] * .5
-			elseif I1Il1l1l11 == 0B10 then
-lll11l1l11 = -IIIl1l1l11[l11IlIll11(_KMZ[331])][l11IlIll11(_KMZ[332])]
-lIIl1l1l11 = IIl11l1l11[l11IlIll11(_KMZ[333])] * .5
-			elseif I1Il1l1l11 == 0B11 then
-lll11l1l11 = -IIIl1l1l11[l11IlIll11(_KMZ[334])][l11IlIll11(_KMZ[335])]
-lIIl1l1l11 = IIl11l1l11[l11IlIll11(_KMZ[336])] * .5
-			elseif I1Il1l1l11 == 0x4 then
-lll11l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[337])][l11IlIll11(_KMZ[338])]
-lIIl1l1l11 = IIl11l1l11[l11IlIll11(_KMZ[339])] * .5
+local IlII1IIll11
+local I1II1IIll11
+if lIII1IIll11 == 0B1 then
+IlII1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[328])][IIl1Ill1l11(_KEA[329])]
+I1II1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[330])] * .5
+			elseif lIII1IIll11 == 0B10 then
+IlII1IIll11 = -l1II1IIll11[IIl1Ill1l11(_KEA[331])][IIl1Ill1l11(_KEA[332])]
+I1II1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[333])] * .5
+			elseif lIII1IIll11 == 0B11 then
+IlII1IIll11 = -l1II1IIll11[IIl1Ill1l11(_KEA[290])][IIl1Ill1l11(_KEA[334])]
+I1II1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[335])] * .5
+			elseif lIII1IIll11 == 0x4 then
+IlII1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[336])][IIl1Ill1l11(_KEA[337])]
+I1II1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[338])] * .5
 			end
-if lll11l1l11 and lIIl1l1l11 then
-local Il111l1l11 = IlIl1l1l11 + lll11l1l11 * (lIIl1l1l11 + I1IIll1l11)
-return CFrame[l11IlIll11(_KMZ[340])](Il111l1l11, IlIl1l1l11)
+if IlII1IIll11 and I1II1IIll11 then
+local ll1I1IIll11 = llllIIIll11 + IlII1IIll11 * (I1II1IIll11 + lIIlIIIll11)
+return CFrame[IIl1Ill1l11(_KEA[339])](ll1I1IIll11, llllIIIll11)
 			end
 		end
-local llIl1l1l11 = Vector3[l11IlIll11(_KMZ[341])](lIl11l1l11[l11IlIll11(_KMZ[342])][l11IlIll11(_KMZ[343])][l11IlIll11(_KMZ[344])], 0B0, lIl11l1l11[l11IlIll11(_KMZ[345])][l11IlIll11(_KMZ[346])][l11IlIll11(_KMZ[347])])
-if llIl1l1l11[l11IlIll11(_KMZ[348])] < .01 then
-llIl1l1l11 = Vector3[l11IlIll11(_KMZ[349])]
+local IlllIIIll11 = Vector3[IIl1Ill1l11(_KEA[340])](I11I1IIll11[IIl1Ill1l11(_KEA[341])][IIl1Ill1l11(_KEA[342])][IIl1Ill1l11(_KEA[343])], 0B0, I11I1IIll11[IIl1Ill1l11(_KEA[344])][IIl1Ill1l11(_KEA[345])][IIl1Ill1l11(_KEA[346])])
+if IlllIIIll11[IIl1Ill1l11(_KEA[347])] < .01 then
+IlllIIIll11 = Vector3[IIl1Ill1l11(_KEA[348])]
 		else
-llIl1l1l11 = llIl1l1l11[l11IlIll11(_KMZ[350])]
+IlllIIIll11 = IlllIIIll11[IIl1Ill1l11(_KEA[349])]
 		end
-local II1l1l1l11 = (IlIl1l1l11 - lIIl1l1l11) - llIl1l1l11 * llll1l1l11
-return CFrame[l11IlIll11(_KMZ[351])](II1l1l1l11, IlIl1l1l11)
+local l1llIIIll11 = (llllIIIll11 - I1II1IIll11) - IlllIIIll11 * IlIlIIIll11
+return CFrame[IIl1Ill1l11(_KEA[350])](l1llIIIll11, llllIIIll11)
 	end
-local function llIIIIll11(Il111l1l11)
-local ll111l1l11 = Il111l1l11 and Il111l1l11:FindFirstChildOfClass(l11IlIll11(_KMZ[352]))
-if not ll111l1l11 then
+local function Ill1lll1l11(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChildOfClass(IIl1Ill1l11(_KEA[351]))
+if not Il1I1IIll11 then
 return
 		end
-for Il111l1l11, ll111l1l11 in ipairs(ll111l1l11:GetPlayingAnimationTracks()) do
-local IIl11l1l11 = string[l11IlIll11(_KMZ[353])](ll111l1l11[l11IlIll11(_KMZ[354])])
-if string[l11IlIll11(_KMZ[355])](IIl11l1l11, l11IlIll11(_KMZ[356]), 0B1, true) or string[l11IlIll11(_KMZ[357])](IIl11l1l11, l11IlIll11(_KMZ[358]), 0B1, true) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[359])], ll111l1l11, 0B0)
+for ll1I1IIll11, Il1I1IIll11 in ipairs(Il1I1IIll11:GetPlayingAnimationTracks()) do
+local l11I1IIll11 = string[IIl1Ill1l11(_KEA[352])](Il1I1IIll11[IIl1Ill1l11(_KEA[353])])
+if string[IIl1Ill1l11(_KEA[354])](l11I1IIll11, IIl1Ill1l11(_KEA[355]), 0B1, true) or string[IIl1Ill1l11(_KEA[356])](l11I1IIll11, IIl1Ill1l11(_KEA[357]), 0B1, true) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[358])], Il1I1IIll11, 0B0)
 			end
 		end
 	end
-local function II1IIIll11()
-local Il111l1l11 = l1Illl1l11()
-if not Il111l1l11 then
+local function l1l1lll1l11()
+local ll1I1IIll11 = IIIIIIIll11()
+if not ll1I1IIll11 then
 return
 		end
-Il111l1l11:Move(Vector3[l11IlIll11(_KMZ[360])], false)
-if Il111l1l11[l11IlIll11(_KMZ[361])] <= 0B0 then
-Il111l1l11[l11IlIll11(_KMZ[362])] = lI11ll1l11[l11IlIll11(_KMZ[363])] or 0x10
+ll1I1IIll11:Move(Vector3[IIl1Ill1l11(_KEA[359])], false)
+if ll1I1IIll11[IIl1Ill1l11(_KEA[360])] <= 0B0 then
+ll1I1IIll11[IIl1Ill1l11(_KEA[361])] = I1lIIIIll11[IIl1Ill1l11(_KEA[362])] or 0x10
 		end
-Il111l1l11[l11IlIll11(_KMZ[364])] = true
+ll1I1IIll11[IIl1Ill1l11(_KEA[363])] = true
 	end
-local function lI1IIIll11(Il111l1l11)
-if not Il111l1l11 or Il111l1l11 == IIIl1l1l11 or Il1lll1l11(Il111l1l11) then
+local function I1l1lll1l11(ll1I1IIll11)
+if not ll1I1IIll11 or ll1I1IIll11 == l1II1IIll11 or ll1llll1l11(ll1I1IIll11) then
 return false
 		end
-local ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[365])]
-local IIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[366]));
-local lIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[367]))
-if not IIl11l1l11 or IIl11l1l11[l11IlIll11(_KMZ[368])] <= 0B0 or not lIl11l1l11 or lIllll1l11(ll111l1l11) then
+local Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[364])]
+local l11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[365]));
+local I11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[366]))
+if not l11I1IIll11 or l11I1IIll11[IIl1Ill1l11(_KEA[367])] <= 0B0 or not I11I1IIll11 or I11llll1l11(Il1I1IIll11) then
 return false
 		end
-local l1l11l1l11 = IIl11l1l11[l11IlIll11(_KMZ[369])]
-local Ill11l1l11 = I1IIIIll11()
-if not Ill11l1l11 then
+local II1I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[368])]
+local llII1IIll11 = lIIllll1l11()
+if not llII1IIll11 then
 return false
 		end
-I1l11l1l11[l11IlIll11(_KMZ[370])]:Wait();
-local lll11l1l11 = os[l11IlIll11(_KMZ[371])]() + l1ll1l1l11
-local lIIl1l1l11 = false
-local I1Il1l1l11 = 0B1
-local l1Il1l1l11 = 0B0
-local IlIl1l1l11 = l1Illl1l11()
-if IlIl1l1l11 then
-IlIl1l1l11:Move(Vector3[l11IlIll11(_KMZ[372])], false);
-llIIIIll11(IlIl1l1l11)
+lI1I1IIll11[IIl1Ill1l11(_KEA[369])]:Wait();
+local IlII1IIll11 = os[IIl1Ill1l11(_KEA[370])]() + II1lIIIll11
+local I1II1IIll11 = false
+local lIII1IIll11 = 0B1
+local IIII1IIll11 = 0B0
+local llllIIIll11 = IIIIIIIll11()
+if llllIIIll11 then
+llllIIIll11:Move(Vector3[IIl1Ill1l11(_KEA[371])], false);
+Ill1lll1l11(llllIIIll11)
 		end
-while lI11ll1l11[l11IlIll11(_KMZ[373])] and os[l11IlIll11(_KMZ[374])]() < lll11l1l11 do
-if lI11ll1l11[l11IlIll11(_KMZ[375])] then
-if not I1llll1l11(IIIl1l1l11) or not l1llll1l11(IIIl1l1l11) or not I1llll1l11(Il111l1l11) or not l1llll1l11(Il111l1l11) then
+while I1lIIIIll11[IIl1Ill1l11(_KEA[372])] and os[IIl1Ill1l11(_KEA[373])]() < IlII1IIll11 do
+if I1lIIIIll11[IIl1Ill1l11(_KEA[374])] then
+if not lI1llll1l11(l1II1IIll11) or not II1llll1l11(l1II1IIll11) or not lI1llll1l11(ll1I1IIll11) or not II1llll1l11(ll1I1IIll11) then
 break
 				end
-			elseif lI11ll1l11[l11IlIll11(_KMZ[376])] then
-if lI11ll1l11[l11IlIll11(_KMZ[377])] ~= Il111l1l11[l11IlIll11(_KMZ[378])] then
+			elseif I1lIIIIll11[IIl1Ill1l11(_KEA[375])] then
+if I1lIIIIll11[IIl1Ill1l11(_KEA[376])] ~= ll1I1IIll11[IIl1Ill1l11(_KEA[377])] then
 break
 				end
-			elseif not lI11ll1l11[l11IlIll11(_KMZ[379])] then
+			elseif not I1lIIIIll11[IIl1Ill1l11(_KEA[378])] then
 break
 			end
-ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[380])]
-IIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[381]))
-lIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[382]))
-if not IIl11l1l11 or IIl11l1l11[l11IlIll11(_KMZ[383])] <= 0B0 or not lIl11l1l11 or lIllll1l11(ll111l1l11) then
+Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[379])]
+l11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[380]))
+I11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[381]))
+if not l11I1IIll11 or l11I1IIll11[IIl1Ill1l11(_KEA[382])] <= 0B0 or not I11I1IIll11 or I11llll1l11(Il1I1IIll11) then
 break
 			end
-local lll11l1l11 = I1Illl1l11();
-local llIl1l1l11 = lll11l1l11 and lll11l1l11:FindFirstChild(l11IlIll11(_KMZ[155]))
-if not llIl1l1l11 then
+local IlII1IIll11 = lIIIIIIll11();
+local IlllIIIll11 = IlII1IIll11 and IlII1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[383]))
+if not IlllIIIll11 then
 break
 			end
-if IlIl1l1l11 then
-IlIl1l1l11:Move(Vector3[l11IlIll11(_KMZ[384])], false);
-llIIIIll11(IlIl1l1l11)
+if llllIIIll11 then
+llllIIIll11:Move(Vector3[IIl1Ill1l11(_KEA[384])], false);
+Ill1lll1l11(llllIIIll11)
 			end
-lI11ll1l11[l11IlIll11(_KMZ[385])] = IlIIIIll11(lll11l1l11, llIl1l1l11, ll111l1l11, lIl11l1l11, I1Il1l1l11);
-lll11l1l11:PivotTo(lI11ll1l11[l11IlIll11(_KMZ[386])]);
-llIl1l1l11[l11IlIll11(_KMZ[387])] = Vector3[l11IlIll11(_KMZ[388])]
-llIl1l1l11[l11IlIll11(_KMZ[389])] = Vector3[l11IlIll11(_KMZ[390])]
-I1l11l1l11[l11IlIll11(_KMZ[391])]:Wait()
-ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[392])]
-IIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[393]))
-lIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[394]))
-if not IIl11l1l11 or IIl11l1l11[l11IlIll11(_KMZ[395])] <= 0B0 or not lIl11l1l11 or lIllll1l11(ll111l1l11) then
+I1lIIIIll11[IIl1Ill1l11(_KEA[385])] = lll1lll1l11(IlII1IIll11, IlllIIIll11, Il1I1IIll11, I11I1IIll11, lIII1IIll11);
+IlII1IIll11:PivotTo(I1lIIIIll11[IIl1Ill1l11(_KEA[386])]);
+IlllIIIll11[IIl1Ill1l11(_KEA[387])] = Vector3[IIl1Ill1l11(_KEA[388])]
+IlllIIIll11[IIl1Ill1l11(_KEA[389])] = Vector3[IIl1Ill1l11(_KEA[390])]
+lI1I1IIll11[IIl1Ill1l11(_KEA[391])]:Wait()
+Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[392])]
+l11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[393]))
+I11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[394]))
+if not l11I1IIll11 or l11I1IIll11[IIl1Ill1l11(_KEA[395])] <= 0B0 or not I11I1IIll11 or I11llll1l11(Il1I1IIll11) then
 break
 			end
-if (llIl1l1l11[l11IlIll11(_KMZ[396])] - lI11ll1l11[l11IlIll11(_KMZ[397])][l11IlIll11(_KMZ[398])])[l11IlIll11(_KMZ[399])] > .35 then
-lll11l1l11:PivotTo(lI11ll1l11[l11IlIll11(_KMZ[400])]);
-llIl1l1l11[l11IlIll11(_KMZ[401])] = Vector3[l11IlIll11(_KMZ[402])]
-llIl1l1l11[l11IlIll11(_KMZ[403])] = Vector3[l11IlIll11(_KMZ[404])]
-I1l11l1l11[l11IlIll11(_KMZ[405])]:Wait()
+if (IlllIIIll11[IIl1Ill1l11(_KEA[396])] - I1lIIIIll11[IIl1Ill1l11(_KEA[397])][IIl1Ill1l11(_KEA[398])])[IIl1Ill1l11(_KEA[399])] > .35 then
+IlII1IIll11:PivotTo(I1lIIIIll11[IIl1Ill1l11(_KEA[400])]);
+IlllIIIll11[IIl1Ill1l11(_KEA[401])] = Vector3[IIl1Ill1l11(_KEA[402])]
+IlllIIIll11[IIl1Ill1l11(_KEA[403])] = Vector3[IIl1Ill1l11(_KEA[404])]
+lI1I1IIll11[IIl1Ill1l11(_KEA[405])]:Wait()
 			end
-if not Ill11l1l11 or Ill11l1l11[l11IlIll11(_KMZ[406])] ~= lll11l1l11 then
-Ill11l1l11 = I1IIIIll11()
+if not llII1IIll11 or llII1IIll11[IIl1Ill1l11(_KEA[406])] ~= IlII1IIll11 then
+llII1IIll11 = lIIllll1l11()
 			end
-if Ill11l1l11 then
-pcall(Ill11l1l11[l11IlIll11(_KMZ[407])], Ill11l1l11);
-I1l11l1l11[l11IlIll11(_KMZ[408])]:Wait();
-pcall(Ill11l1l11[l11IlIll11(_KMZ[409])], Ill11l1l11)
-l1Il1l1l11 = l1Il1l1l11 + 0B1
-task[l11IlIll11(_KMZ[410])](Illl1l1l11);
-pcall(Ill11l1l11[l11IlIll11(_KMZ[411])], Ill11l1l11)
+if llII1IIll11 then
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[407])], llII1IIll11);
+lI1I1IIll11[IIl1Ill1l11(_KEA[408])]:Wait();
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[409])], llII1IIll11)
+IIII1IIll11 = IIII1IIll11 + 0B1
+task[IIl1Ill1l11(_KEA[410])](llIlIIIll11);
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[411])], llII1IIll11)
 			end
-lIIl1l1l11 = IIl11l1l11[l11IlIll11(_KMZ[412])] < l1l11l1l11
-if lI11ll1l11[l11IlIll11(_KMZ[413])] and (not lI11ll1l11[l11IlIll11(_KMZ[414])] and (not lI11ll1l11[l11IlIll11(_KMZ[415])] and (l1Il1l1l11 >= 0x5 and IIl11l1l11[l11IlIll11(_KMZ[416])] > 0B0))) then
+I1II1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[412])] < II1I1IIll11
+if I1lIIIIll11[IIl1Ill1l11(_KEA[413])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[414])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[415])] and (IIII1IIll11 >= 0x5 and l11I1IIll11[IIl1Ill1l11(_KEA[416])] > 0B0))) then
 break
 			end
-I1Il1l1l11 = I1Il1l1l11 + 0B1
-task[l11IlIll11(_KMZ[417])]()
+lIII1IIll11 = lIII1IIll11 + 0B1
+task[IIl1Ill1l11(_KEA[417])]()
 		end
-lI11ll1l11[l11IlIll11(_KMZ[418])] = nil
-if Ill11l1l11 then
-pcall(Ill11l1l11[l11IlIll11(_KMZ[419])], Ill11l1l11)
+I1lIIIIll11[IIl1Ill1l11(_KEA[418])] = nil
+if llII1IIll11 then
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[419])], llII1IIll11)
 		end
-local llIl1l1l11 = IlIlll1l11()
-if llIl1l1l11 and lI11ll1l11[l11IlIll11(_KMZ[420])] then
-llIl1l1l11[l11IlIll11(_KMZ[421])] = lI11ll1l11[l11IlIll11(_KMZ[422])]
-llIl1l1l11[l11IlIll11(_KMZ[423])] = Vector3[l11IlIll11(_KMZ[424])]
-llIl1l1l11[l11IlIll11(_KMZ[425])] = Vector3[l11IlIll11(_KMZ[426])]
+local IlllIIIll11 = lllllll1l11()
+if IlllIIIll11 and I1lIIIIll11[IIl1Ill1l11(_KEA[420])] then
+IlllIIIll11[IIl1Ill1l11(_KEA[331])] = I1lIIIIll11[IIl1Ill1l11(_KEA[421])]
+IlllIIIll11[IIl1Ill1l11(_KEA[422])] = Vector3[IIl1Ill1l11(_KEA[423])]
+IlllIIIll11[IIl1Ill1l11(_KEA[424])] = Vector3[IIl1Ill1l11(_KEA[425])]
 		end
-local II1l1l1l11 = IIl11l1l11 and IIl11l1l11[l11IlIll11(_KMZ[427])] <= 0B0
-if lI11ll1l11[l11IlIll11(_KMZ[428])] and (not lI11ll1l11[l11IlIll11(_KMZ[429])] and (not lI11ll1l11[l11IlIll11(_KMZ[430])] and (not II1l1l1l11 and l1Il1l1l11 >= 0x5))) then
-lI11ll1l11[l11IlIll11(_KMZ[431])][Il111l1l11[l11IlIll11(_KMZ[432])]] = ll111l1l11
-lI11ll1l11[l11IlIll11(_KMZ[433])][Il111l1l11[l11IlIll11(_KMZ[434])]] = nil
-		elseif lIIl1l1l11 or II1l1l1l11 then
-lI11ll1l11[l11IlIll11(_KMZ[435])][Il111l1l11[l11IlIll11(_KMZ[172])]] = nil
-lI11ll1l11[l11IlIll11(_KMZ[436])][Il111l1l11[l11IlIll11(_KMZ[437])]] = nil
-		elseif not lI11ll1l11[l11IlIll11(_KMZ[438])] then
-lI11ll1l11[l11IlIll11(_KMZ[439])][Il111l1l11[l11IlIll11(_KMZ[440])]] = os[l11IlIll11(_KMZ[441])]() + llIIll1l11
+local l1llIIIll11 = l11I1IIll11 and l11I1IIll11[IIl1Ill1l11(_KEA[426])] <= 0B0
+if I1lIIIIll11[IIl1Ill1l11(_KEA[427])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[428])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[429])] and (not l1llIIIll11 and IIII1IIll11 >= 0x5))) then
+I1lIIIIll11[IIl1Ill1l11(_KEA[430])][ll1I1IIll11[IIl1Ill1l11(_KEA[431])]] = Il1I1IIll11
+I1lIIIIll11[IIl1Ill1l11(_KEA[432])][ll1I1IIll11[IIl1Ill1l11(_KEA[433])]] = nil
+		elseif I1II1IIll11 or l1llIIIll11 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[434])][ll1I1IIll11[IIl1Ill1l11(_KEA[435])]] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[436])][ll1I1IIll11[IIl1Ill1l11(_KEA[437])]] = nil
+		elseif not I1lIIIIll11[IIl1Ill1l11(_KEA[438])] then
+I1lIIIIll11[IIl1Ill1l11(_KEA[439])][ll1I1IIll11[IIl1Ill1l11(_KEA[440])]] = os[IIl1Ill1l11(_KEA[441])]() + Ill1IIIll11
 		end
-return lIIl1l1l11 or II1l1l1l11 or false
+return I1II1IIll11 or l1llIIIll11 or false
 	end
-local function I11IIIll11()
-local ll111l1l11 = {}
-for Il111l1l11, IIl11l1l11 in ipairs(Il111l1l11:GetPlayers()) do
-if IIl11l1l11 ~= IIIl1l1l11 and not Il1lll1l11(IIl11l1l11) then
-local Il111l1l11 = IIl11l1l11[l11IlIll11(_KMZ[442])]
-local lIl11l1l11 = Il111l1l11 and Il111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[443]));
-local I1l11l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[444]));
-local l1l11l1l11 = lI11ll1l11[l11IlIll11(_KMZ[445])][IIl11l1l11[l11IlIll11(_KMZ[446])]]
-local Ill11l1l11 = lI11ll1l11[l11IlIll11(_KMZ[447])][IIl11l1l11[l11IlIll11(_KMZ[448])]]
-if Ill11l1l11 ~= nil and Ill11l1l11 ~= Il111l1l11 then
-lI11ll1l11[l11IlIll11(_KMZ[449])][IIl11l1l11[l11IlIll11(_KMZ[450])]] = nil
-Ill11l1l11 = nil
+local function lIl1lll1l11()
+local Il1I1IIll11 = {}
+for ll1I1IIll11, l11I1IIll11 in ipairs(ll1I1IIll11:GetPlayers()) do
+if l11I1IIll11 ~= l1II1IIll11 and not ll1llll1l11(l11I1IIll11) then
+local ll1I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[442])]
+local I11I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[443]));
+local lI1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[204]));
+local II1I1IIll11 = I1lIIIIll11[IIl1Ill1l11(_KEA[444])][l11I1IIll11[IIl1Ill1l11(_KEA[445])]]
+local llII1IIll11 = I1lIIIIll11[IIl1Ill1l11(_KEA[446])][l11I1IIll11[IIl1Ill1l11(_KEA[447])]]
+if llII1IIll11 ~= nil and llII1IIll11 ~= ll1I1IIll11 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[448])][l11I1IIll11[IIl1Ill1l11(_KEA[449])]] = nil
+llII1IIll11 = nil
 				end
-if lIl11l1l11 and (lIl11l1l11[l11IlIll11(_KMZ[451])] > 0B0 and (I1l11l1l11 and (not lIllll1l11(Il111l1l11) and (Ill11l1l11 == nil and (not l1l11l1l11 or os[l11IlIll11(_KMZ[452])]() >= l1l11l1l11))))) then
-ll111l1l11[#ll111l1l11 + 0B1] = { [l11IlIll11(_KMZ[453])] = IIl11l1l11, [l11IlIll11(_KMZ[454])] = lIl11l1l11[l11IlIll11(_KMZ[455])] }
+if I11I1IIll11 and (I11I1IIll11[IIl1Ill1l11(_KEA[450])] > 0B0 and (lI1I1IIll11 and (not I11llll1l11(ll1I1IIll11) and (llII1IIll11 == nil and (not II1I1IIll11 or os[IIl1Ill1l11(_KEA[451])]() >= II1I1IIll11))))) then
+Il1I1IIll11[#Il1I1IIll11 + 0B1] = { [IIl1Ill1l11(_KEA[452])] = l11I1IIll11, [IIl1Ill1l11(_KEA[453])] = I11I1IIll11[IIl1Ill1l11(_KEA[454])] }
 				end
 			end
 		end
-table[l11IlIll11(_KMZ[456])](ll111l1l11, function(Il111l1l11, ll111l1l11)
-return Il111l1l11[l11IlIll11(_KMZ[457])] < ll111l1l11[l11IlIll11(_KMZ[458])]
+table[IIl1Ill1l11(_KEA[455])](Il1I1IIll11, function(ll1I1IIll11, Il1I1IIll11)
+return ll1I1IIll11[IIl1Ill1l11(_KEA[456])] < Il1I1IIll11[IIl1Ill1l11(_KEA[457])]
 		end)
-return ll111l1l11
+return Il1I1IIll11
 	end
-local function l11IIIll11()
-I1l1ll1l11(l11IlIll11(_KMZ[459]))
-if lI11ll1l11[l11IlIll11(_KMZ[460])] or not lI11ll1l11[l11IlIll11(_KMZ[461])] and (not lI11ll1l11[l11IlIll11(_KMZ[462])] and not lI11ll1l11[l11IlIll11(_KMZ[463])]) then
-llIlll1l11()
+local function IIl1lll1l11()
+lI1IIIIll11(IIl1Ill1l11(_KEA[458]))
+if I1lIIIIll11[IIl1Ill1l11(_KEA[459])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[460])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[461])] and not I1lIIIIll11[IIl1Ill1l11(_KEA[462])]) then
+Illllll1l11()
 return
 		end
-l1l1ll1l11(l11IlIll11(_KMZ[464]), function()
-while lI11ll1l11[l11IlIll11(_KMZ[465])] and (not lI11ll1l11[l11IlIll11(_KMZ[466])] and (lI11ll1l11[l11IlIll11(_KMZ[467])] or lI11ll1l11[l11IlIll11(_KMZ[468])] or lI11ll1l11[l11IlIll11(_KMZ[469])])) do
-if lI11ll1l11[l11IlIll11(_KMZ[470])] then
-if lI11ll1l11[l11IlIll11(_KMZ[471])] then
-for Il111l1l11, ll111l1l11 in ipairs(IIIIIIll11()) do
-if not lI11ll1l11[l11IlIll11(_KMZ[472])] or not lI11ll1l11[l11IlIll11(_KMZ[473])] then
+II1IIIIll11(IIl1Ill1l11(_KEA[463]), function()
+while I1lIIIIll11[IIl1Ill1l11(_KEA[464])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[465])] and (I1lIIIIll11[IIl1Ill1l11(_KEA[466])] or I1lIIIIll11[IIl1Ill1l11(_KEA[467])] or I1lIIIIll11[IIl1Ill1l11(_KEA[468])])) do
+if I1lIIIIll11[IIl1Ill1l11(_KEA[469])] then
+if I1lIIIIll11[IIl1Ill1l11(_KEA[470])] then
+for ll1I1IIll11, Il1I1IIll11 in ipairs(l1Illll1l11()) do
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[471])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[472])] then
 break
 							end
-lI1IIIll11(ll111l1l11[l11IlIll11(_KMZ[474])])
+I1l1lll1l11(Il1I1IIll11[IIl1Ill1l11(_KEA[473])])
 						end
 					end
-				elseif lI11ll1l11[l11IlIll11(_KMZ[475])] then
-local ll111l1l11 = lI11ll1l11[l11IlIll11(_KMZ[476])] and Il111l1l11:FindFirstChild(lI11ll1l11[l11IlIll11(_KMZ[477])])
-if ll111l1l11 then
-lI1IIIll11(ll111l1l11)
+				elseif I1lIIIIll11[IIl1Ill1l11(_KEA[474])] then
+local Il1I1IIll11 = I1lIIIIll11[IIl1Ill1l11(_KEA[475])] and ll1I1IIll11:FindFirstChild(I1lIIIIll11[IIl1Ill1l11(_KEA[476])])
+if Il1I1IIll11 then
+I1l1lll1l11(Il1I1IIll11)
 					end
 				else
-for Il111l1l11, ll111l1l11 in ipairs(I11IIIll11()) do
-if not lI11ll1l11[l11IlIll11(_KMZ[478])] or not lI11ll1l11[l11IlIll11(_KMZ[479])] then
+for ll1I1IIll11, Il1I1IIll11 in ipairs(lIl1lll1l11()) do
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[477])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[478])] then
 break
 						end
-lI1IIIll11(ll111l1l11[l11IlIll11(_KMZ[480])])
+I1l1lll1l11(Il1I1IIll11[IIl1Ill1l11(_KEA[479])])
 					end
 				end
-task[l11IlIll11(_KMZ[481])]()
+task[IIl1Ill1l11(_KEA[480])]()
 			end
-llIlll1l11()
+Illllll1l11()
 		end)
 	end
-local function Il1IIIll11()
-local Il111l1l11 = {};
-local ll111l1l11 = {};
-local function IIl11l1l11(IIl11l1l11)
-if type(IIl11l1l11) == l11IlIll11(_KMZ[482]) and not ll111l1l11[IIl11l1l11] then
-ll111l1l11[IIl11l1l11] = true
-Il111l1l11[#Il111l1l11 + 0B1] = IIl11l1l11
+local function ll11lll1l11()
+local ll1I1IIll11 = {};
+local Il1I1IIll11 = {};
+local function l11I1IIll11(l11I1IIll11)
+if type(l11I1IIll11) == IIl1Ill1l11(_KEA[481]) and not Il1I1IIll11[l11I1IIll11] then
+Il1I1IIll11[l11I1IIll11] = true
+ll1I1IIll11[#ll1I1IIll11 + 0B1] = l11I1IIll11
 			end
 		end
-IIl11l1l11(I1Il1l1l11[l11IlIll11(_KMZ[483])]);
-IIl11l1l11(I1Il1l1l11[l11IlIll11(_KMZ[484])]);
-IIl11l1l11(I1Il1l1l11[l11IlIll11(_KMZ[485])]);
-IIl11l1l11(I1Il1l1l11[l11IlIll11(_KMZ[486])]);
-IIl11l1l11(queue_on_teleport);
-IIl11l1l11(queueonteleport);
-IIl11l1l11(queue_on_tp);
-IIl11l1l11(queueontp);
-local lIl11l1l11 = I1Il1l1l11[l11IlIll11(_KMZ[487])]
-if type(lIl11l1l11) == l11IlIll11(_KMZ[488]) then
-IIl11l1l11(lIl11l1l11[l11IlIll11(_KMZ[489])])
+l11I1IIll11(lIII1IIll11[IIl1Ill1l11(_KEA[482])]);
+l11I1IIll11(lIII1IIll11[IIl1Ill1l11(_KEA[483])]);
+l11I1IIll11(lIII1IIll11[IIl1Ill1l11(_KEA[484])]);
+l11I1IIll11(lIII1IIll11[IIl1Ill1l11(_KEA[485])]);
+l11I1IIll11(queue_on_teleport);
+l11I1IIll11(queueonteleport);
+l11I1IIll11(queue_on_tp);
+l11I1IIll11(queueontp);
+local I11I1IIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[486])]
+if type(I11I1IIll11) == IIl1Ill1l11(_KEA[487]) then
+l11I1IIll11(I11I1IIll11[IIl1Ill1l11(_KEA[488])])
 		end
-local I1l11l1l11 = I1Il1l1l11[l11IlIll11(_KMZ[490])]
-if type(I1l11l1l11) == l11IlIll11(_KMZ[491]) then
-IIl11l1l11(I1l11l1l11[l11IlIll11(_KMZ[492])])
+local lI1I1IIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[489])]
+if type(lI1I1IIll11) == IIl1Ill1l11(_KEA[490]) then
+l11I1IIll11(lI1I1IIll11[IIl1Ill1l11(_KEA[491])])
 		end
-return Il111l1l11
+return ll1I1IIll11
 	end
-local function ll1IIIll11()
-return (Il1IIIll11())[0B1]
+local function Il11lll1l11()
+return (ll11lll1l11())[0B1]
 	end
-local function IIlIIIll11()
-local Il111l1l11 = I1Il1l1l11[l11IlIll11(_KMZ[493])] or I1Il1l1l11[l11IlIll11(_KMZ[494])] or I1Il1l1l11[l11IlIll11(_KMZ[495])] or I1Il1l1l11[l11IlIll11(_KMZ[496])] or I1Il1l1l11[l11IlIll11(_KMZ[497])] or clear_teleport_queue or clearqueueonteleport or clearteleportqueue or clear_tp_queue or cleartpqueue
-if type(Il111l1l11) == l11IlIll11(_KMZ[498]) then
-pcall(Il111l1l11)
-		end
-	end
-local function lIlIIIll11(Il111l1l11)
-return table[l11IlIll11(_KMZ[499])](lI11ll1l11[l11IlIll11(_KMZ[500])], Il111l1l11) ~= nil
-	end
-local function I1lIIIll11(Il111l1l11)
-if Il111l1l11 and not lIlIIIll11(Il111l1l11) then
-lI11ll1l11[l11IlIll11(_KMZ[501])][#lI11ll1l11[l11IlIll11(_KMZ[502])] + 0B1] = Il111l1l11
-		end
-while #lI11ll1l11[l11IlIll11(_KMZ[503])] > l11l1l1l11 do
-table[l11IlIll11(_KMZ[504])](lI11ll1l11[l11IlIll11(_KMZ[505])], 0B1)
+local function l111lll1l11()
+local ll1I1IIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[492])] or lIII1IIll11[IIl1Ill1l11(_KEA[493])] or lIII1IIll11[IIl1Ill1l11(_KEA[494])] or lIII1IIll11[IIl1Ill1l11(_KEA[495])] or lIII1IIll11[IIl1Ill1l11(_KEA[496])] or clear_teleport_queue or clearqueueonteleport or clearteleportqueue or clear_tp_queue or cleartpqueue
+if type(ll1I1IIll11) == IIl1Ill1l11(_KEA[497]) then
+pcall(ll1I1IIll11)
 		end
 	end
-local function l1lIIIll11(Il111l1l11)
-local ll111l1l11 = I1Il1l1l11[l11IlIll11(_KMZ[506])] or I1Il1l1l11[l11IlIll11(_KMZ[507])] or type(I1Il1l1l11[l11IlIll11(_KMZ[508])]) == l11IlIll11(_KMZ[509]) and I1Il1l1l11[l11IlIll11(_KMZ[510])][l11IlIll11(_KMZ[511])]
-if type(ll111l1l11) == l11IlIll11(_KMZ[512]) then
-local IIl11l1l11, lIl11l1l11 = pcall(ll111l1l11, { [l11IlIll11(_KMZ[513])] = Il111l1l11, [l11IlIll11(_KMZ[514])] = l11IlIll11(_KMZ[515]), [l11IlIll11(_KMZ[516])] = { [l11IlIll11(_KMZ[517])] = l11IlIll11(_KMZ[518]) } });
-local I1l11l1l11 = type(lIl11l1l11) == l11IlIll11(_KMZ[519]) and (lIl11l1l11[l11IlIll11(_KMZ[520])] or lIl11l1l11[l11IlIll11(_KMZ[521])]) or nil
-local l1l11l1l11 = type(lIl11l1l11) == l11IlIll11(_KMZ[522]) and tonumber(lIl11l1l11[l11IlIll11(_KMZ[523])] or lIl11l1l11[l11IlIll11(_KMZ[524])] or lIl11l1l11[l11IlIll11(_KMZ[525])]) or nil
-if IIl11l1l11 and (type(I1l11l1l11) == l11IlIll11(_KMZ[526]) and (not l1l11l1l11 or l1l11l1l11 >= 0xC8 and l1l11l1l11 < 0x12C)) then
-return true, I1l11l1l11
+local function I111lll1l11(ll1I1IIll11)
+return table[IIl1Ill1l11(_KEA[498])](I1lIIIIll11[IIl1Ill1l11(_KEA[499])], ll1I1IIll11) ~= nil
+	end
+local function lI11lll1l11(ll1I1IIll11)
+if ll1I1IIll11 and not I111lll1l11(ll1I1IIll11) then
+I1lIIIIll11[IIl1Ill1l11(_KEA[500])][#I1lIIIIll11[IIl1Ill1l11(_KEA[501])] + 0B1] = ll1I1IIll11
+		end
+while #I1lIIIIll11[IIl1Ill1l11(_KEA[502])] > IIllIIIll11 do
+table[IIl1Ill1l11(_KEA[503])](I1lIIIIll11[IIl1Ill1l11(_KEA[504])], 0B1)
+		end
+	end
+local function II11lll1l11(ll1I1IIll11)
+local Il1I1IIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[505])] or lIII1IIll11[IIl1Ill1l11(_KEA[506])] or type(lIII1IIll11[IIl1Ill1l11(_KEA[507])]) == IIl1Ill1l11(_KEA[508]) and lIII1IIll11[IIl1Ill1l11(_KEA[509])][IIl1Ill1l11(_KEA[510])]
+if type(Il1I1IIll11) == IIl1Ill1l11(_KEA[69]) then
+local l11I1IIll11, I11I1IIll11 = pcall(Il1I1IIll11, { [IIl1Ill1l11(_KEA[511])] = ll1I1IIll11, [IIl1Ill1l11(_KEA[512])] = IIl1Ill1l11(_KEA[513]), [IIl1Ill1l11(_KEA[514])] = { [IIl1Ill1l11(_KEA[515])] = IIl1Ill1l11(_KEA[516]) } });
+local lI1I1IIll11 = type(I11I1IIll11) == IIl1Ill1l11(_KEA[517]) and (I11I1IIll11[IIl1Ill1l11(_KEA[518])] or I11I1IIll11[IIl1Ill1l11(_KEA[519])]) or nil
+local II1I1IIll11 = type(I11I1IIll11) == IIl1Ill1l11(_KEA[520]) and tonumber(I11I1IIll11[IIl1Ill1l11(_KEA[521])] or I11I1IIll11[IIl1Ill1l11(_KEA[522])] or I11I1IIll11[IIl1Ill1l11(_KEA[523])]) or nil
+if l11I1IIll11 and (type(lI1I1IIll11) == IIl1Ill1l11(_KEA[524]) and (not II1I1IIll11 or II1I1IIll11 >= 0xC8 and II1I1IIll11 < 0x12C)) then
+return true, lI1I1IIll11
 			end
 		end
-return pcall(game[l11IlIll11(_KMZ[527])], game, Il111l1l11, true)
+return pcall(game[IIl1Ill1l11(_KEA[525])], game, ll1I1IIll11, true)
 	end
-local function IllIIIll11(Il111l1l11)
-local ll111l1l11 = {};
-local IIl11l1l11 = {};
-local function lIl11l1l11(lIl11l1l11)
-for lIl11l1l11, I1l11l1l11 in ipairs(lIl11l1l11[l11IlIll11(_KMZ[528])] or {}) do
-local l1l11l1l11 = type(I1l11l1l11) == l11IlIll11(_KMZ[529]) and tonumber(I1l11l1l11[l11IlIll11(_KMZ[530])]) or nil
-local Ill11l1l11 = type(I1l11l1l11) == l11IlIll11(_KMZ[531]) and tonumber(I1l11l1l11[l11IlIll11(_KMZ[532])]) or nil
-if type(I1l11l1l11) == l11IlIll11(_KMZ[533]) and (type(I1l11l1l11[l11IlIll11(_KMZ[534])]) == l11IlIll11(_KMZ[535]) and (not IIl11l1l11[I1l11l1l11[l11IlIll11(_KMZ[536])]] and (I1l11l1l11[l11IlIll11(_KMZ[537])] ~= game[l11IlIll11(_KMZ[538])] and ((Il111l1l11 or not lIlIIIll11(I1l11l1l11[l11IlIll11(_KMZ[539])])) and (l1l11l1l11 and (Ill11l1l11 and l1l11l1l11 < Ill11l1l11)))))) then
-IIl11l1l11[I1l11l1l11[l11IlIll11(_KMZ[540])]] = true
-ll111l1l11[#ll111l1l11 + 0B1] = I1l11l1l11
+local function llI1lll1l11(ll1I1IIll11)
+local Il1I1IIll11 = {};
+local l11I1IIll11 = {};
+local function I11I1IIll11(I11I1IIll11)
+for I11I1IIll11, lI1I1IIll11 in ipairs(I11I1IIll11[IIl1Ill1l11(_KEA[526])] or {}) do
+local II1I1IIll11 = type(lI1I1IIll11) == IIl1Ill1l11(_KEA[527]) and tonumber(lI1I1IIll11[IIl1Ill1l11(_KEA[528])]) or nil
+local llII1IIll11 = type(lI1I1IIll11) == IIl1Ill1l11(_KEA[529]) and tonumber(lI1I1IIll11[IIl1Ill1l11(_KEA[530])]) or nil
+if type(lI1I1IIll11) == IIl1Ill1l11(_KEA[531]) and (type(lI1I1IIll11[IIl1Ill1l11(_KEA[532])]) == IIl1Ill1l11(_KEA[533]) and (not l11I1IIll11[lI1I1IIll11[IIl1Ill1l11(_KEA[534])]] and (lI1I1IIll11[IIl1Ill1l11(_KEA[535])] ~= game[IIl1Ill1l11(_KEA[536])] and ((ll1I1IIll11 or not I111lll1l11(lI1I1IIll11[IIl1Ill1l11(_KEA[537])])) and (II1I1IIll11 and (llII1IIll11 and II1I1IIll11 < llII1IIll11)))))) then
+l11I1IIll11[lI1I1IIll11[IIl1Ill1l11(_KEA[538])]] = true
+Il1I1IIll11[#Il1I1IIll11 + 0B1] = lI1I1IIll11
 				end
 			end
 		end
-local function I1l11l1l11(Il111l1l11, IIl11l1l11)
-local I1l11l1l11 = nil
-for IIl11l1l11 = 0B1, IIl11l1l11, 0B1 do
-local Ill11l1l11 = string[l11IlIll11(_KMZ[541])](I11l1l1l11, game[l11IlIll11(_KMZ[542])], Il111l1l11)
-if I1l11l1l11 then
-Ill11l1l11 = Ill11l1l11  .. (l11IlIll11(_KMZ[543]) .. l1l11l1l11:UrlEncode(I1l11l1l11))
+local function lI1I1IIll11(ll1I1IIll11, l11I1IIll11)
+local lI1I1IIll11 = nil
+for l11I1IIll11 = 0B1, l11I1IIll11, 0B1 do
+local llII1IIll11 = string[IIl1Ill1l11(_KEA[539])](lIllIIIll11, game[IIl1Ill1l11(_KEA[540])], ll1I1IIll11)
+if lI1I1IIll11 then
+llII1IIll11 = llII1IIll11  .. (IIl1Ill1l11(_KEA[541]) .. II1I1IIll11:UrlEncode(lI1I1IIll11))
 				end
-local lll11l1l11 = nil
-for Il111l1l11 = 0B1, ll1l1l1l11, 0B1 do
-local ll111l1l11, IIl11l1l11 = l1lIIIll11(Ill11l1l11)
-if ll111l1l11 and type(IIl11l1l11) == l11IlIll11(_KMZ[544]) then
-local Il111l1l11, ll111l1l11 = pcall(l1l11l1l11[l11IlIll11(_KMZ[545])], l1l11l1l11, IIl11l1l11)
-if Il111l1l11 and (type(ll111l1l11) == l11IlIll11(_KMZ[546]) and type(ll111l1l11[l11IlIll11(_KMZ[547])]) == l11IlIll11(_KMZ[548])) then
-lll11l1l11 = ll111l1l11
+local IlII1IIll11 = nil
+for ll1I1IIll11 = 0B1, Il1lIIIll11, 0B1 do
+local Il1I1IIll11, l11I1IIll11 = II11lll1l11(llII1IIll11)
+if Il1I1IIll11 and type(l11I1IIll11) == IIl1Ill1l11(_KEA[542]) then
+local ll1I1IIll11, Il1I1IIll11 = pcall(II1I1IIll11[IIl1Ill1l11(_KEA[543])], II1I1IIll11, l11I1IIll11)
+if ll1I1IIll11 and (type(Il1I1IIll11) == IIl1Ill1l11(_KEA[544]) and type(Il1I1IIll11[IIl1Ill1l11(_KEA[545])]) == IIl1Ill1l11(_KEA[546])) then
+IlII1IIll11 = Il1I1IIll11
 break
 						end
 					end
-task[l11IlIll11(_KMZ[549])](.2 * Il111l1l11)
+task[IIl1Ill1l11(_KEA[547])](.2 * ll1I1IIll11)
 				end
-if not lll11l1l11 then
+if not IlII1IIll11 then
 return false
 				end
-lIl11l1l11(lll11l1l11)
-I1l11l1l11 = lll11l1l11[l11IlIll11(_KMZ[550])]
-if not I1l11l1l11 or #ll111l1l11 >= 0x1E then
+I11I1IIll11(IlII1IIll11)
+lI1I1IIll11 = IlII1IIll11[IIl1Ill1l11(_KEA[548])]
+if not lI1I1IIll11 or #Il1I1IIll11 >= 0x1E then
 break
 				end
 			end
 return true
 		end
-I1l11l1l11(l11IlIll11(_KMZ[551]), Il1l1l1l11)
-if #ll111l1l11 == 0B0 then
-I1l11l1l11(l11IlIll11(_KMZ[552]), math[l11IlIll11(_KMZ[553])](0B11, math[l11IlIll11(_KMZ[554])](Il1l1l1l11 / 0B10)))
+lI1I1IIll11(IIl1Ill1l11(_KEA[549]), ll1lIIIll11)
+if #Il1I1IIll11 == 0B0 then
+lI1I1IIll11(IIl1Ill1l11(_KEA[550]), math[IIl1Ill1l11(_KEA[551])](0B11, math[IIl1Ill1l11(_KEA[552])](ll1lIIIll11 / 0B10)))
 		end
-if #ll111l1l11 == 0B0 then
+if #Il1I1IIll11 == 0B0 then
 return nil
 		end
-local function Ill11l1l11(Il111l1l11)
-if Il111l1l11 == 0x12 then
+local function llII1IIll11(ll1I1IIll11)
+if ll1I1IIll11 == 0x12 then
 return 0x1388
-			elseif Il111l1l11 == 0x13 then
+			elseif ll1I1IIll11 == 0x13 then
 return 0x1194
-			elseif Il111l1l11 >= 0xC then
-return 0xBB8 + Il111l1l11
+			elseif ll1I1IIll11 >= 0xC then
+return 0xBB8 + ll1I1IIll11
 			end
-return 0x3E8 + Il111l1l11
+return 0x3E8 + ll1I1IIll11
 		end
-table[l11IlIll11(_KMZ[555])](ll111l1l11, function(Il111l1l11, ll111l1l11)
-local IIl11l1l11 = tonumber(Il111l1l11[l11IlIll11(_KMZ[556])]);
-local lIl11l1l11 = tonumber(ll111l1l11[l11IlIll11(_KMZ[557])])
-return Ill11l1l11(IIl11l1l11) > Ill11l1l11(lIl11l1l11)
+table[IIl1Ill1l11(_KEA[553])](Il1I1IIll11, function(ll1I1IIll11, Il1I1IIll11)
+local l11I1IIll11 = tonumber(ll1I1IIll11[IIl1Ill1l11(_KEA[554])]);
+local I11I1IIll11 = tonumber(Il1I1IIll11[IIl1Ill1l11(_KEA[555])])
+return llII1IIll11(l11I1IIll11) > llII1IIll11(I11I1IIll11)
 		end);
-local lll11l1l11 = Ill11l1l11(tonumber(ll111l1l11[0B1][l11IlIll11(_KMZ[558])]));
-local IIIl1l1l11 = 0B1
-while IIIl1l1l11 < #ll111l1l11 and Ill11l1l11(tonumber(ll111l1l11[IIIl1l1l11 + 0B1][l11IlIll11(_KMZ[559])])) == lll11l1l11 do
-IIIl1l1l11 = IIIl1l1l11 + 0B1
+local IlII1IIll11 = llII1IIll11(tonumber(Il1I1IIll11[0B1][IIl1Ill1l11(_KEA[556])]));
+local l1II1IIll11 = 0B1
+while l1II1IIll11 < #Il1I1IIll11 and llII1IIll11(tonumber(Il1I1IIll11[l1II1IIll11 + 0B1][IIl1Ill1l11(_KEA[557])])) == IlII1IIll11 do
+l1II1IIll11 = l1II1IIll11 + 0B1
 		end
-return ll111l1l11[math[l11IlIll11(_KMZ[560])](0B1, math[l11IlIll11(_KMZ[561])](IIIl1l1l11, 0x6))][l11IlIll11(_KMZ[562])]
+return Il1I1IIll11[math[IIl1Ill1l11(_KEA[558])](0B1, math[IIl1Ill1l11(_KEA[559])](l1II1IIll11, 0x6))][IIl1Ill1l11(_KEA[560])]
 	end
-local function lllIIIll11()
-local Il111l1l11 = {}
-for ll111l1l11, IIl11l1l11 in pairs(Il11ll1l11) do
-if IIl11l1l11 == true then
-Il111l1l11[#Il111l1l11 + 0B1] = ll111l1l11
+local function IlI1lll1l11()
+local ll1I1IIll11 = {}
+for Il1I1IIll11, l11I1IIll11 in pairs(ll1IIIIll11) do
+if l11I1IIll11 == true then
+ll1I1IIll11[#ll1I1IIll11 + 0B1] = Il1I1IIll11
 			end
 		end
-table[l11IlIll11(_KMZ[563])](Il111l1l11)
-return Il111l1l11
+table[IIl1Ill1l11(_KEA[561])](ll1I1IIll11)
+return ll1I1IIll11
 	end
-local function III1IIll11()
-local Il111l1l11 = {};
-local ll111l1l11 = math[l11IlIll11(_KMZ[564])](0B1, #lI11ll1l11[l11IlIll11(_KMZ[565])] - 0x17)
-for ll111l1l11 = ll111l1l11, #lI11ll1l11[l11IlIll11(_KMZ[103])], 0B1 do
-Il111l1l11[#Il111l1l11 + 0B1] = lI11ll1l11[l11IlIll11(_KMZ[566])][ll111l1l11]
+local function l1I1lll1l11()
+local ll1I1IIll11 = {};
+local Il1I1IIll11 = math[IIl1Ill1l11(_KEA[562])](0B1, #I1lIIIIll11[IIl1Ill1l11(_KEA[563])] - 0x17)
+for Il1I1IIll11 = Il1I1IIll11, #I1lIIIIll11[IIl1Ill1l11(_KEA[565])], 0B1 do
+ll1I1IIll11[#ll1I1IIll11 + 0B1] = I1lIIIIll11[IIl1Ill1l11(_KEA[564])][Il1I1IIll11]
 		end
-return { [l11IlIll11(_KMZ[567])] = 0x4, [l11IlIll11(_KMZ[568])] = lI11ll1l11[l11IlIll11(_KMZ[569])] == true, [l11IlIll11(_KMZ[570])] = lI11ll1l11[l11IlIll11(_KMZ[571])] == true, [l11IlIll11(_KMZ[572])] = lI11ll1l11[l11IlIll11(_KMZ[573])] == true, [l11IlIll11(_KMZ[574])] = lI11ll1l11[l11IlIll11(_KMZ[575])] == true, [l11IlIll11(_KMZ[576])] = lI11ll1l11[l11IlIll11(_KMZ[577])] == true, [l11IlIll11(_KMZ[502])] = Il111l1l11, [l11IlIll11(_KMZ[578])] = lllIIIll11() }
+return { [IIl1Ill1l11(_KEA[566])] = 0x4, [IIl1Ill1l11(_KEA[567])] = I1lIIIIll11[IIl1Ill1l11(_KEA[568])] == true, [IIl1Ill1l11(_KEA[569])] = I1lIIIIll11[IIl1Ill1l11(_KEA[570])] == true, [IIl1Ill1l11(_KEA[571])] = I1lIIIIll11[IIl1Ill1l11(_KEA[572])] == true, [IIl1Ill1l11(_KEA[573])] = I1lIIIIll11[IIl1Ill1l11(_KEA[574])] == true, [IIl1Ill1l11(_KEA[575])] = I1lIIIIll11[IIl1Ill1l11(_KEA[576])] == true, [IIl1Ill1l11(_KEA[577])] = ll1I1IIll11, [IIl1Ill1l11(_KEA[578])] = IlI1lll1l11() }
 	end
-local function lII1IIll11()
-local Il111l1l11 = III1IIll11();
-I1Il1l1l11[l11IlIll11(_KMZ[579])] = Il111l1l11[l11IlIll11(_KMZ[580])]
-pcall(Ill11l1l11[l11IlIll11(_KMZ[581])], Ill11l1l11, IIlIll1l11, Il111l1l11[l11IlIll11(_KMZ[582])]);
-pcall(Ill11l1l11[l11IlIll11(_KMZ[583])], Ill11l1l11, lIlIll1l11, Il111l1l11)
-return Il111l1l11
+local function I1I1lll1l11()
+local ll1I1IIll11 = l1I1lll1l11();
+lIII1IIll11[IIl1Ill1l11(_KEA[579])] = ll1I1IIll11[IIl1Ill1l11(_KEA[580])]
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[581])], llII1IIll11, l111IIIll11, ll1I1IIll11[IIl1Ill1l11(_KEA[582])]);
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[583])], llII1IIll11, I111IIIll11, ll1I1IIll11)
+return ll1I1IIll11
 	end
-local function I1I1IIll11(Il111l1l11, ll111l1l11)
-I1lIIIll11(ll111l1l11);
-local IIl11l1l11 = lII1IIll11();
-local lIl11l1l11 = l1l11l1l11:JSONEncode({ [l11IlIll11(_KMZ[584])] = IIl11l1l11[l11IlIll11(_KMZ[585])], [l11IlIll11(_KMZ[586])] = IIl11l1l11[l11IlIll11(_KMZ[587])], [l11IlIll11(_KMZ[588])] = IIl11l1l11[l11IlIll11(_KMZ[589])], [l11IlIll11(_KMZ[590])] = true, [l11IlIll11(_KMZ[591])] = IIl11l1l11[l11IlIll11(_KMZ[592])] });
-local I1l11l1l11 = table[l11IlIll11(_KMZ[593])]({ l11IlIll11(_KMZ[594]), l11IlIll11(_KMZ[595]), l11IlIll11(_KMZ[596]), l11IlIll11(_KMZ[597]), l11IlIll11(_KMZ[598]), l11IlIll11(_KMZ[599]), l11IlIll11(_KMZ[600]), l11IlIll11(_KMZ[601]) .. (string[l11IlIll11(_KMZ[602])](l11IlIll11(_KMZ[603]), IIlIll1l11) .. l11IlIll11(_KMZ[604])), l11IlIll11(_KMZ[605]) .. (string[l11IlIll11(_KMZ[606])](l11IlIll11(_KMZ[607]), lIl11l1l11) .. l11IlIll11(_KMZ[608])), l11IlIll11(_KMZ[609]), l11IlIll11(_KMZ[610]) .. (string[l11IlIll11(_KMZ[611])](l11IlIll11(_KMZ[612]), II1l1l1l11) .. (l11IlIll11(_KMZ[613]) .. (string[l11IlIll11(_KMZ[614])](l11IlIll11(_KMZ[615]), lI1l1l1l11) .. l11IlIll11(_KMZ[616])))), l11IlIll11(_KMZ[617]), l11IlIll11(_KMZ[618]) .. (string[l11IlIll11(_KMZ[619])](l11IlIll11(_KMZ[620]), lIlIll1l11) .. l11IlIll11(_KMZ[621])), l11IlIll11(_KMZ[622]), l11IlIll11(_KMZ[623]), l11IlIll11(_KMZ[624]), l11IlIll11(_KMZ[625]), l11IlIll11(_KMZ[626]), l11IlIll11(_KMZ[627]), l11IlIll11(_KMZ[628]), l11IlIll11(_KMZ[629]), l11IlIll11(_KMZ[630]), l11IlIll11(_KMZ[631]), l11IlIll11(_KMZ[632]), l11IlIll11(_KMZ[633]), l11IlIll11(_KMZ[634]), l11IlIll11(_KMZ[635]), l11IlIll11(_KMZ[636]), l11IlIll11(_KMZ[637]), l11IlIll11(_KMZ[638]), l11IlIll11(_KMZ[639]), l11IlIll11(_KMZ[640]), l11IlIll11(_KMZ[641]), l11IlIll11(_KMZ[642]), l11IlIll11(_KMZ[643]), l11IlIll11(_KMZ[644]), l11IlIll11(_KMZ[645]), l11IlIll11(_KMZ[646]), l11IlIll11(_KMZ[647]), l11IlIll11(_KMZ[648]), l11IlIll11(_KMZ[649]), l11IlIll11(_KMZ[650]), l11IlIll11(_KMZ[651]), l11IlIll11(_KMZ[652]), l11IlIll11(_KMZ[653]), l11IlIll11(_KMZ[654]), l11IlIll11(_KMZ[655]), l11IlIll11(_KMZ[656]), l11IlIll11(_KMZ[657]) }, l11IlIll11(_KMZ[658]));
-IIlIIIll11();
-local Ill11l1l11 = false
-for Il111l1l11, ll111l1l11 in ipairs(Il111l1l11) do
-if pcall(ll111l1l11, I1l11l1l11) then
-Ill11l1l11 = true
+local function lII1lll1l11(ll1I1IIll11, Il1I1IIll11)
+lI11lll1l11(Il1I1IIll11);
+local l11I1IIll11 = I1I1lll1l11();
+local I11I1IIll11 = II1I1IIll11:JSONEncode({ [IIl1Ill1l11(_KEA[584])] = l11I1IIll11[IIl1Ill1l11(_KEA[585])], [IIl1Ill1l11(_KEA[586])] = l11I1IIll11[IIl1Ill1l11(_KEA[587])], [IIl1Ill1l11(_KEA[588])] = l11I1IIll11[IIl1Ill1l11(_KEA[589])], [IIl1Ill1l11(_KEA[590])] = true, [IIl1Ill1l11(_KEA[591])] = l11I1IIll11[IIl1Ill1l11(_KEA[592])] });
+local lI1I1IIll11 = table[IIl1Ill1l11(_KEA[593])]({ IIl1Ill1l11(_KEA[594]), IIl1Ill1l11(_KEA[595]), IIl1Ill1l11(_KEA[596]), IIl1Ill1l11(_KEA[597]), IIl1Ill1l11(_KEA[598]), IIl1Ill1l11(_KEA[599]), IIl1Ill1l11(_KEA[600]), IIl1Ill1l11(_KEA[601]) .. (string[IIl1Ill1l11(_KEA[602])](IIl1Ill1l11(_KEA[603]), l111IIIll11) .. IIl1Ill1l11(_KEA[604])), IIl1Ill1l11(_KEA[605]) .. (string[IIl1Ill1l11(_KEA[606])](IIl1Ill1l11(_KEA[607]), I11I1IIll11) .. IIl1Ill1l11(_KEA[608])), IIl1Ill1l11(_KEA[609]), IIl1Ill1l11(_KEA[610]) .. (string[IIl1Ill1l11(_KEA[611])](IIl1Ill1l11(_KEA[612]), l1llIIIll11) .. (IIl1Ill1l11(_KEA[613]) .. (string[IIl1Ill1l11(_KEA[614])](IIl1Ill1l11(_KEA[615]), I1llIIIll11) .. IIl1Ill1l11(_KEA[616])))), IIl1Ill1l11(_KEA[617]), IIl1Ill1l11(_KEA[618]) .. (string[IIl1Ill1l11(_KEA[619])](IIl1Ill1l11(_KEA[620]), I111IIIll11) .. IIl1Ill1l11(_KEA[621])), IIl1Ill1l11(_KEA[622]), IIl1Ill1l11(_KEA[623]), IIl1Ill1l11(_KEA[624]), IIl1Ill1l11(_KEA[625]), IIl1Ill1l11(_KEA[626]), IIl1Ill1l11(_KEA[627]), IIl1Ill1l11(_KEA[628]), IIl1Ill1l11(_KEA[629]), IIl1Ill1l11(_KEA[630]), IIl1Ill1l11(_KEA[631]), IIl1Ill1l11(_KEA[632]), IIl1Ill1l11(_KEA[633]), IIl1Ill1l11(_KEA[634]), IIl1Ill1l11(_KEA[635]), IIl1Ill1l11(_KEA[636]), IIl1Ill1l11(_KEA[637]), IIl1Ill1l11(_KEA[638]), IIl1Ill1l11(_KEA[639]), IIl1Ill1l11(_KEA[640]), IIl1Ill1l11(_KEA[641]), IIl1Ill1l11(_KEA[642]), IIl1Ill1l11(_KEA[643]), IIl1Ill1l11(_KEA[644]), IIl1Ill1l11(_KEA[645]), IIl1Ill1l11(_KEA[646]), IIl1Ill1l11(_KEA[647]), IIl1Ill1l11(_KEA[648]), IIl1Ill1l11(_KEA[649]), IIl1Ill1l11(_KEA[650]), IIl1Ill1l11(_KEA[651]), IIl1Ill1l11(_KEA[652]), IIl1Ill1l11(_KEA[653]), IIl1Ill1l11(_KEA[654]), IIl1Ill1l11(_KEA[655]), IIl1Ill1l11(_KEA[656]), IIl1Ill1l11(_KEA[657]) }, IIl1Ill1l11(_KEA[658]));
+l111lll1l11();
+local llII1IIll11 = false
+for ll1I1IIll11, Il1I1IIll11 in ipairs(ll1I1IIll11) do
+if pcall(Il1I1IIll11, lI1I1IIll11) then
+llII1IIll11 = true
 break
 			end
 		end
-return Ill11l1l11
+return llII1IIll11
 	end
-local function l1I1IIll11()
-local Il111l1l11 = Il1IIIll11()
-if #Il111l1l11 == 0B0 then
-return false, l11IlIll11(_KMZ[659])
+local function III1lll1l11()
+local ll1I1IIll11 = ll11lll1l11()
+if #ll1I1IIll11 == 0B0 then
+return false, IIl1Ill1l11(_KEA[659])
 		end
-local ll111l1l11 = IllIIIll11(false) or IllIIIll11(true)
-if not I1I1IIll11(Il111l1l11, ll111l1l11) then
-return false, l11IlIll11(_KMZ[660])
+local Il1I1IIll11 = llI1lll1l11(false) or llI1lll1l11(true)
+if not lII1lll1l11(ll1I1IIll11, Il1I1IIll11) then
+return false, IIl1Ill1l11(_KEA[660])
 		end
-local IIl11l1l11 = pcall(function()
-if ll111l1l11 then
-Ill11l1l11:TeleportToPlaceInstance(game[l11IlIll11(_KMZ[661])], ll111l1l11, IIIl1l1l11)
+local l11I1IIll11 = pcall(function()
+if Il1I1IIll11 then
+llII1IIll11:TeleportToPlaceInstance(game[IIl1Ill1l11(_KEA[661])], Il1I1IIll11, l1II1IIll11)
 				else
-Ill11l1l11:Teleport(game[l11IlIll11(_KMZ[662])], IIIl1l1l11)
+llII1IIll11:Teleport(game[IIl1Ill1l11(_KEA[662])], l1II1IIll11)
 				end
 			end)
-if not IIl11l1l11 then
-return false, l11IlIll11(_KMZ[663])
+if not l11I1IIll11 then
+return false, IIl1Ill1l11(_KEA[663])
 		end
 return true
 	end
-local function IlI1IIll11(Il111l1l11, ll111l1l11)
-if type(lI11ll1l11[l11IlIll11(_KMZ[664])]) == l11IlIll11(_KMZ[665]) then
-pcall(lI11ll1l11[l11IlIll11(_KMZ[666])], Il111l1l11, ll111l1l11)
+local function lllIlll1l11(ll1I1IIll11, Il1I1IIll11)
+if type(I1lIIIIll11[IIl1Ill1l11(_KEA[664])]) == IIl1Ill1l11(_KEA[665]) then
+pcall(I1lIIIIll11[IIl1Ill1l11(_KEA[666])], ll1I1IIll11, Il1I1IIll11)
 		end
 	end
-local function llI1IIll11()
-I1Il1l1l11[l11IlIll11(_KMZ[667])] = false
-I1Il1l1l11[l11IlIll11(_KMZ[668])] = nil
-pcall(Ill11l1l11[l11IlIll11(_KMZ[669])], Ill11l1l11, IIlIll1l11, false);
-pcall(Ill11l1l11[l11IlIll11(_KMZ[670])], Ill11l1l11, lIlIll1l11, { [l11IlIll11(_KMZ[671])] = 0x4, [l11IlIll11(_KMZ[672])] = false, [l11IlIll11(_KMZ[673])] = false, [l11IlIll11(_KMZ[674])] = false, [l11IlIll11(_KMZ[675])] = false, [l11IlIll11(_KMZ[676])] = false })
+local function IllIlll1l11()
+lIII1IIll11[IIl1Ill1l11(_KEA[667])] = false
+lIII1IIll11[IIl1Ill1l11(_KEA[668])] = nil
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[669])], llII1IIll11, l111IIIll11, false);
+pcall(llII1IIll11[IIl1Ill1l11(_KEA[670])], llII1IIll11, I111IIIll11, { [IIl1Ill1l11(_KEA[671])] = 0B100, [IIl1Ill1l11(_KEA[672])] = false, [IIl1Ill1l11(_KEA[673])] = false, [IIl1Ill1l11(_KEA[674])] = false, [IIl1Ill1l11(_KEA[675])] = false, [IIl1Ill1l11(_KEA[676])] = false })
 	end
-II11ll1l11[l11IlIll11(_KMZ[677])] = function()
-if lI11ll1l11[l11IlIll11(_KMZ[678])] ~= true then
+l1lIIIIll11[IIl1Ill1l11(_KEA[677])] = function()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[678])] ~= true then
 return false
 			end
-if lI11ll1l11[l11IlIll11(_KMZ[679])] or workspace:GetAttribute(l11IlIll11(_KMZ[680])) == true or IIIl1l1l11:GetAttribute(l11IlIll11(_KMZ[681])) == true then
+if I1lIIIIll11[IIl1Ill1l11(_KEA[679])] or workspace:GetAttribute(IIl1Ill1l11(_KEA[680])) == true or l1II1IIll11:GetAttribute(IIl1Ill1l11(_KEA[681])) == true then
 return true
 			end
-local Il111l1l11 = tonumber(workspace:GetAttribute(l11IlIll11(_KMZ[682])))
-if not Il111l1l11 then
+local ll1I1IIll11 = tonumber(workspace:GetAttribute(IIl1Ill1l11(_KEA[682])))
+if not ll1I1IIll11 then
 return false
 			end
-local ll111l1l11 = Il111l1l11 - workspace:GetServerTimeNow()
-return ll111l1l11 >= 0B0 and ll111l1l11 <= 0x5A
+local Il1I1IIll11 = ll1I1IIll11 - workspace:GetServerTimeNow()
+return Il1I1IIll11 >= 0B0 and Il1I1IIll11 <= 0x5A
 		end
-local function II11IIll11(ll111l1l11)
-lI11ll1l11[l11IlIll11(_KMZ[574])] = ll111l1l11 == true
-lII1IIll11();
-I1l1ll1l11(l11IlIll11(_KMZ[683]))
-if not lI11ll1l11[l11IlIll11(_KMZ[684])] then
-lI11ll1l11[l11IlIll11(_KMZ[685])] = false
-lI11ll1l11[l11IlIll11(_KMZ[686])] = false
-lI11ll1l11[l11IlIll11(_KMZ[687])] = nil
-IlI1IIll11(nil)
+local function l1lIlll1l11(Il1I1IIll11)
+I1lIIIIll11[IIl1Ill1l11(_KEA[683])] = Il1I1IIll11 == true
+I1I1lll1l11();
+lI1IIIIll11(IIl1Ill1l11(_KEA[684]))
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[685])] then
+I1lIIIIll11[IIl1Ill1l11(_KEA[686])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[687])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[688])] = nil
+lllIlll1l11(nil)
 return true
 		end
-l1l1ll1l11(l11IlIll11(_KMZ[688]), function()
-local ll111l1l11 = os[l11IlIll11(_KMZ[689])]() + lIll1l1l11
-while lI11ll1l11[l11IlIll11(_KMZ[690])] and lI11ll1l11[l11IlIll11(_KMZ[691])] do
-if lI11ll1l11[l11IlIll11(_KMZ[692])] or II11ll1l11[l11IlIll11(_KMZ[693])]() then
-ll111l1l11 = os[l11IlIll11(_KMZ[694])]() + lIll1l1l11
-lI11ll1l11[l11IlIll11(_KMZ[695])] = nil
-task[l11IlIll11(_KMZ[696])](0B1)
-				elseif not ll1IIIll11() then
-IlI1IIll11(0B0, l11IlIll11(_KMZ[697]));
-task[l11IlIll11(_KMZ[698])](0B1)
+II1IIIIll11(IIl1Ill1l11(_KEA[689]), function()
+local Il1I1IIll11 = os[IIl1Ill1l11(_KEA[690])]() + I11lIIIll11
+while I1lIIIIll11[IIl1Ill1l11(_KEA[691])] and I1lIIIIll11[IIl1Ill1l11(_KEA[692])] do
+if I1lIIIIll11[IIl1Ill1l11(_KEA[693])] or l1lIIIIll11[IIl1Ill1l11(_KEA[694])]() then
+Il1I1IIll11 = os[IIl1Ill1l11(_KEA[695])]() + I11lIIIll11
+I1lIIIIll11[IIl1Ill1l11(_KEA[696])] = nil
+task[IIl1Ill1l11(_KEA[697])](0B1)
+				elseif not Il11lll1l11() then
+lllIlll1l11(0B0, IIl1Ill1l11(_KEA[698]));
+task[IIl1Ill1l11(_KEA[699])](0B1)
 				else
-local IIl11l1l11 = #Il111l1l11:GetPlayers();
-local lIl11l1l11 = lI11ll1l11[l11IlIll11(_KMZ[699])]
-if not lIl11l1l11 and os[l11IlIll11(_KMZ[700])]() >= ll111l1l11 then
-lIl11l1l11 = l11IlIll11(_KMZ[701])
+local l11I1IIll11 = #ll1I1IIll11:GetPlayers();
+local I11I1IIll11 = I1lIIIIll11[IIl1Ill1l11(_KEA[700])]
+if not I11I1IIll11 and os[IIl1Ill1l11(_KEA[701])]() >= Il1I1IIll11 then
+I11I1IIll11 = IIl1Ill1l11(_KEA[702])
 					end
-if not lIl11l1l11 and IIl11l1l11 < IIll1l1l11 then
-lIl11l1l11 = l11IlIll11(_KMZ[702]) .. (tostring(IIl11l1l11) .. l11IlIll11(_KMZ[703]))
+if not I11I1IIll11 and l11I1IIll11 < l11lIIIll11 then
+I11I1IIll11 = IIl1Ill1l11(_KEA[703]) .. (tostring(l11I1IIll11) .. IIl1Ill1l11(_KEA[704]))
 					end
-if not lIl11l1l11 and (lI11ll1l11[l11IlIll11(_KMZ[704])] and os[l11IlIll11(_KMZ[705])]() - lI11ll1l11[l11IlIll11(_KMZ[706])] >= I1ll1l1l11) then
-lIl11l1l11 = l11IlIll11(_KMZ[707])
+if not I11I1IIll11 and (I1lIIIIll11[IIl1Ill1l11(_KEA[705])] and os[IIl1Ill1l11(_KEA[706])]() - I1lIIIIll11[IIl1Ill1l11(_KEA[707])] >= lI1lIIIll11) then
+I11I1IIll11 = IIl1Ill1l11(_KEA[708])
 					end
-if not lIl11l1l11 then
-task[l11IlIll11(_KMZ[708])](0B1)
+if not I11I1IIll11 then
+task[IIl1Ill1l11(_KEA[709])](0B1)
 					else
-lI11ll1l11[l11IlIll11(_KMZ[709])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[710])] = true
-IlI1IIll11(0B0, lIl11l1l11 or l11IlIll11(_KMZ[711]));
-local Il111l1l11, ll111l1l11 = l1I1IIll11()
-if Il111l1l11 then
-IlI1IIll11(0B0, l11IlIll11(_KMZ[712]))
-for Il111l1l11 = 0B1, 0x18, 0B1 do
-if not lI11ll1l11[l11IlIll11(_KMZ[713])] or not lI11ll1l11[l11IlIll11(_KMZ[714])] or lI11ll1l11[l11IlIll11(_KMZ[715])] then
+I1lIIIIll11[IIl1Ill1l11(_KEA[710])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[711])] = true
+lllIlll1l11(0B0, I11I1IIll11 or IIl1Ill1l11(_KEA[712]));
+local ll1I1IIll11, Il1I1IIll11 = III1lll1l11()
+if ll1I1IIll11 then
+lllIlll1l11(0B0, IIl1Ill1l11(_KEA[713]))
+for ll1I1IIll11 = 0B1, 0x18, 0B1 do
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[714])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[715])] or I1lIIIIll11[IIl1Ill1l11(_KEA[716])] then
 break
 								end
-task[l11IlIll11(_KMZ[716])](.5)
+task[IIl1Ill1l11(_KEA[717])](.5)
 							end
 						else
-IlI1IIll11(0B0, ll111l1l11 or l11IlIll11(_KMZ[717]));
-lI11ll1l11[l11IlIll11(_KMZ[718])] = lIl11l1l11 or ll111l1l11 or l11IlIll11(_KMZ[719]);
-task[l11IlIll11(_KMZ[720])](0B11)
+lllIlll1l11(0B0, Il1I1IIll11 or IIl1Ill1l11(_KEA[718]));
+I1lIIIIll11[IIl1Ill1l11(_KEA[719])] = I11I1IIll11 or Il1I1IIll11 or IIl1Ill1l11(_KEA[720]);
+task[IIl1Ill1l11(_KEA[721])](0B11)
 						end
-lI11ll1l11[l11IlIll11(_KMZ[721])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[722])] = false
 					end
 				end
 			end
 		end)
 return true
 	end
-lIl1ll1l11(Ill11l1l11[l11IlIll11(_KMZ[722])]:Connect(function(Il111l1l11)
-if Il111l1l11 ~= IIIl1l1l11 or not lI11ll1l11[l11IlIll11(_KMZ[723])] or not lI11ll1l11[l11IlIll11(_KMZ[724])] then
+I11IIIIll11(llII1IIll11[IIl1Ill1l11(_KEA[723])]:Connect(function(ll1I1IIll11)
+if ll1I1IIll11 ~= l1II1IIll11 or not I1lIIIIll11[IIl1Ill1l11(_KEA[724])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[725])] then
 return
 		end
-lI11ll1l11[l11IlIll11(_KMZ[725])] = false
-lI11ll1l11[l11IlIll11(_KMZ[726])] = l11IlIll11(_KMZ[727]);
-IlI1IIll11(0B0, l11IlIll11(_KMZ[728]))
+I1lIIIIll11[IIl1Ill1l11(_KEA[726])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[727])] = IIl1Ill1l11(_KEA[728]);
+lllIlll1l11(0B0, IIl1Ill1l11(_KEA[729]))
 	end));
-local lI11IIll11 = nil
-local function I111IIll11(Il111l1l11)
-if lI11IIll11 then
+local I1lIlll1l11 = nil
+local function lIlIlll1l11(ll1I1IIll11)
+if I1lIlll1l11 then
 pcall(function()
-lI11IIll11:Disconnect()
+I1lIlll1l11:Disconnect()
 			end)
-lI11IIll11 = nil
+I1lIlll1l11 = nil
 		end
-task[l11IlIll11(_KMZ[729])](function()
-local ll111l1l11 = Il111l1l11 and (Il111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[730])) or Il111l1l11:WaitForChild(l11IlIll11(_KMZ[731]), 0xA))
-if not lI11ll1l11[l11IlIll11(_KMZ[732])] or IIIl1l1l11[l11IlIll11(_KMZ[733])] ~= Il111l1l11 or not ll111l1l11 then
+task[IIl1Ill1l11(_KEA[730])](function()
+local Il1I1IIll11 = ll1I1IIll11 and (ll1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[731])) or ll1I1IIll11:WaitForChild(IIl1Ill1l11(_KEA[732]), 0xA))
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[477])] or l1II1IIll11[IIl1Ill1l11(_KEA[733])] ~= ll1I1IIll11 or not Il1I1IIll11 then
 return
 			end
-lI11IIll11 = lIl1ll1l11(ll111l1l11[l11IlIll11(_KMZ[734])]:Connect(function()
-if lI11ll1l11[l11IlIll11(_KMZ[735])] and (lI11ll1l11[l11IlIll11(_KMZ[590])] and (not lI11ll1l11[l11IlIll11(_KMZ[736])] and not lI11ll1l11[l11IlIll11(_KMZ[737])])) then
-lI11ll1l11[l11IlIll11(_KMZ[738])] = l11IlIll11(_KMZ[739]);
-IlI1IIll11(0B0, lI11ll1l11[l11IlIll11(_KMZ[740])])
+I1lIlll1l11 = I11IIIIll11(Il1I1IIll11[IIl1Ill1l11(_KEA[734])]:Connect(function()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[735])] and (I1lIIIIll11[IIl1Ill1l11(_KEA[736])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[737])] and not I1lIIIIll11[IIl1Ill1l11(_KEA[738])])) then
+I1lIIIIll11[IIl1Ill1l11(_KEA[739])] = IIl1Ill1l11(_KEA[740]);
+lllIlll1l11(0B0, I1lIIIIll11[IIl1Ill1l11(_KEA[741])])
 					end
 				end))
 		end)
 	end
-if IIIl1l1l11[l11IlIll11(_KMZ[741])] then
-I111IIll11(IIIl1l1l11[l11IlIll11(_KMZ[742])])
+if l1II1IIll11[IIl1Ill1l11(_KEA[742])] then
+lIlIlll1l11(l1II1IIll11[IIl1Ill1l11(_KEA[743])])
 	end
-lIl1ll1l11(IIIl1l1l11[l11IlIll11(_KMZ[743])]:Connect(I111IIll11));
-local function l111IIll11(Il111l1l11)
-local IIl11l1l11 = ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[744]));
-local lIl11l1l11 = IIl11l1l11 and IIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[745]))
-Il111l1l11 = math[l11IlIll11(_KMZ[746])](math[l11IlIll11(_KMZ[747])]((tonumber(Il111l1l11) or 0B1) + .5), 0B1, 0x64)
-if not lIl11l1l11 then
+I11IIIIll11(l1II1IIll11[IIl1Ill1l11(_KEA[744])]:Connect(lIlIlll1l11));
+local function IIlIlll1l11(ll1I1IIll11)
+local l11I1IIll11 = Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[745]));
+local I11I1IIll11 = l11I1IIll11 and l11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[746]))
+ll1I1IIll11 = math[IIl1Ill1l11(_KEA[747])](math[IIl1Ill1l11(_KEA[748])]((tonumber(ll1I1IIll11) or 0B1) + .5), 0B1, 0x64)
+if not I11I1IIll11 then
 return false
 		end
-if lIl11l1l11:IsA(l11IlIll11(_KMZ[748])) then
-return pcall(lIl11l1l11[l11IlIll11(_KMZ[749])], lIl11l1l11, l11IlIll11(_KMZ[750]), Il111l1l11)
-		elseif lIl11l1l11:IsA(l11IlIll11(_KMZ[751])) then
-return pcall(lIl11l1l11[l11IlIll11(_KMZ[752])], lIl11l1l11, l11IlIll11(_KMZ[753]), Il111l1l11)
+if I11I1IIll11:IsA(IIl1Ill1l11(_KEA[749])) then
+return pcall(I11I1IIll11[IIl1Ill1l11(_KEA[750])], I11I1IIll11, IIl1Ill1l11(_KEA[751]), ll1I1IIll11)
+		elseif I11I1IIll11:IsA(IIl1Ill1l11(_KEA[752])) then
+return pcall(I11I1IIll11[IIl1Ill1l11(_KEA[753])], I11I1IIll11, IIl1Ill1l11(_KEA[754]), ll1I1IIll11)
 		end
 return false
 	end
-local function Il11IIll11()
-l111IIll11(0B1)
+local function ll1Illl1l11()
+IIlIlll1l11(0B1)
 	end
-local function ll11IIll11()
-I1l1ll1l11(l11IlIll11(_KMZ[754]))
-if lI11ll1l11[l11IlIll11(_KMZ[755])] or not lI11ll1l11[l11IlIll11(_KMZ[756])] and (not lI11ll1l11[l11IlIll11(_KMZ[757])] and not lI11ll1l11[l11IlIll11(_KMZ[758])]) then
+local function Il1Illl1l11()
+lI1IIIIll11(IIl1Ill1l11(_KEA[755]))
+if I1lIIIIll11[IIl1Ill1l11(_KEA[756])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[757])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[758])] and not I1lIIIIll11[IIl1Ill1l11(_KEA[759])]) then
 return
 		end
-l1l1ll1l11(l11IlIll11(_KMZ[759]), function()
-while lI11ll1l11[l11IlIll11(_KMZ[760])] and (not lI11ll1l11[l11IlIll11(_KMZ[761])] and (lI11ll1l11[l11IlIll11(_KMZ[584])] or lI11ll1l11[l11IlIll11(_KMZ[429])] or lI11ll1l11[l11IlIll11(_KMZ[762])])) do
-Il11IIll11();
-task[l11IlIll11(_KMZ[763])](.5)
+II1IIIIll11(IIl1Ill1l11(_KEA[760]), function()
+while I1lIIIIll11[IIl1Ill1l11(_KEA[761])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[762])] and (I1lIIIIll11[IIl1Ill1l11(_KEA[763])] or I1lIIIIll11[IIl1Ill1l11(_KEA[764])] or I1lIIIIll11[IIl1Ill1l11(_KEA[765])])) do
+ll1Illl1l11();
+task[IIl1Ill1l11(_KEA[766])](.5)
 			end
 		end)
 	end
-local function IIl1IIll11()
-I1l1ll1l11(l11IlIll11(_KMZ[764]));
-lI11ll1l11[l11IlIll11(_KMZ[765])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[766])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[767])] = nil
-II1IIIll11()
+local function l11Illl1l11()
+lI1IIIIll11(IIl1Ill1l11(_KEA[767]));
+I1lIIIIll11[IIl1Ill1l11(_KEA[768])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[420])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[769])] = nil
+l1l1lll1l11()
 	end
-local function lIl1IIll11()
-IIl1IIll11();
-local Il111l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[450])] == ll1Ill1l11
-local ll111l1l11 = I1Illl1l11();
-local IIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[768]));
-lI11ll1l11[l11IlIll11(_KMZ[769])] = Il111l1l11 and I1lIll1l11 or IIl11l1l11 and IIl11l1l11[l11IlIll11(_KMZ[770])] or nil
-if ll111l1l11 and IIl11l1l11 then
-lI11ll1l11[l11IlIll11(_KMZ[771])] = ll111l1l11
-IIl11l1l11[l11IlIll11(_KMZ[772])] = lI11ll1l11[l11IlIll11(_KMZ[773])]
+local function I11Illl1l11()
+l11Illl1l11();
+local ll1I1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[770])] == Il11IIIll11
+local Il1I1IIll11 = lIIIIIIll11();
+local l11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[771]));
+I1lIIIIll11[IIl1Ill1l11(_KEA[772])] = ll1I1IIll11 and lI11IIIll11 or l11I1IIll11 and l11I1IIll11[IIl1Ill1l11(_KEA[773])] or nil
+if Il1I1IIll11 and l11I1IIll11 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[774])] = Il1I1IIll11
+l11I1IIll11[IIl1Ill1l11(_KEA[775])] = I1lIIIIll11[IIl1Ill1l11(_KEA[776])]
 		end
-l1l1ll1l11(l11IlIll11(_KMZ[774]), function()
-while lI11ll1l11[l11IlIll11(_KMZ[775])] and (lI11ll1l11[l11IlIll11(_KMZ[776])] and (not lI11ll1l11[l11IlIll11(_KMZ[777])] and not lI11ll1l11[l11IlIll11(_KMZ[778])])) do
-local ll111l1l11 = I1Illl1l11();
-local IIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[779]))
-if ll111l1l11 and IIl11l1l11 then
-if lI11ll1l11[l11IlIll11(_KMZ[780])] ~= ll111l1l11 or not lI11ll1l11[l11IlIll11(_KMZ[781])] then
-lI11ll1l11[l11IlIll11(_KMZ[782])] = ll111l1l11
-lI11ll1l11[l11IlIll11(_KMZ[783])] = Il111l1l11 and I1lIll1l11 or IIl11l1l11[l11IlIll11(_KMZ[784])]
+II1IIIIll11(IIl1Ill1l11(_KEA[777]), function()
+while I1lIIIIll11[IIl1Ill1l11(_KEA[778])] and (I1lIIIIll11[IIl1Ill1l11(_KEA[779])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[780])] and not I1lIIIIll11[IIl1Ill1l11(_KEA[781])])) do
+local Il1I1IIll11 = lIIIIIIll11();
+local l11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[381]))
+if Il1I1IIll11 and l11I1IIll11 then
+if I1lIIIIll11[IIl1Ill1l11(_KEA[782])] ~= Il1I1IIll11 or not I1lIIIIll11[IIl1Ill1l11(_KEA[783])] then
+I1lIIIIll11[IIl1Ill1l11(_KEA[784])] = Il1I1IIll11
+I1lIIIIll11[IIl1Ill1l11(_KEA[785])] = ll1I1IIll11 and lI11IIIll11 or l11I1IIll11[IIl1Ill1l11(_KEA[284])]
 					end
-IIl11l1l11[l11IlIll11(_KMZ[785])] = lI11ll1l11[l11IlIll11(_KMZ[786])] or lI11ll1l11[l11IlIll11(_KMZ[787])]
-IIl11l1l11[l11IlIll11(_KMZ[788])] = Vector3[l11IlIll11(_KMZ[789])]
-IIl11l1l11[l11IlIll11(_KMZ[790])] = Vector3[l11IlIll11(_KMZ[791])]
+l11I1IIll11[IIl1Ill1l11(_KEA[786])] = I1lIIIIll11[IIl1Ill1l11(_KEA[787])] or I1lIIIIll11[IIl1Ill1l11(_KEA[788])]
+l11I1IIll11[IIl1Ill1l11(_KEA[789])] = Vector3[IIl1Ill1l11(_KEA[790])]
+l11I1IIll11[IIl1Ill1l11(_KEA[791])] = Vector3[IIl1Ill1l11(_KEA[792])]
 				end
-I1l11l1l11[l11IlIll11(_KMZ[792])]:Wait()
+lI1I1IIll11[IIl1Ill1l11(_KEA[793])]:Wait()
 			end
 		end)
 	end
-local function I1l1IIll11(Il111l1l11)
-if Il111l1l11 then
-lI11ll1l11[l11IlIll11(_KMZ[793])] = os[l11IlIll11(_KMZ[794])]();
-lI11ll1l11[l11IlIll11(_KMZ[795])] = {};
-local Il111l1l11 = l1Illl1l11()
-if Il111l1l11 and Il111l1l11[l11IlIll11(_KMZ[796])] > 0B0 then
-lI11ll1l11[l11IlIll11(_KMZ[797])] = Il111l1l11[l11IlIll11(_KMZ[798])]
+local function lI1Illl1l11(ll1I1IIll11)
+if ll1I1IIll11 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[794])] = os[IIl1Ill1l11(_KEA[795])]();
+I1lIIIIll11[IIl1Ill1l11(_KEA[796])] = {};
+local ll1I1IIll11 = IIIIIIIll11()
+if ll1I1IIll11 and ll1I1IIll11[IIl1Ill1l11(_KEA[797])] > 0B0 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[798])] = ll1I1IIll11[IIl1Ill1l11(_KEA[799])]
 			end
 		end
-lI11ll1l11[l11IlIll11(_KMZ[799])] = Il111l1l11 == true
-if lI11ll1l11[l11IlIll11(_KMZ[800])] then
-lI11ll1l11[l11IlIll11(_KMZ[801])] = false
-Il11IIll11()
-if not lI11ll1l11[l11IlIll11(_KMZ[802])] then
-lIl1IIll11()
+I1lIIIIll11[IIl1Ill1l11(_KEA[800])] = ll1I1IIll11 == true
+if I1lIIIIll11[IIl1Ill1l11(_KEA[801])] then
+I1lIIIIll11[IIl1Ill1l11(_KEA[802])] = false
+ll1Illl1l11()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[803])] then
+I11Illl1l11()
 			end
 		else
-IIl1IIll11()
+l11Illl1l11()
 		end
-ll11IIll11();
-I1l1ll1l11(l11IlIll11(_KMZ[803]));
-l11IIIll11();
-lII1IIll11()
+Il1Illl1l11();
+lI1IIIIll11(IIl1Ill1l11(_KEA[804]));
+IIl1lll1l11();
+I1I1lll1l11()
 return true
 	end
-local function l1l1IIll11(Il111l1l11)
-if Il111l1l11 and not lI11ll1l11[l11IlIll11(_KMZ[804])] then
+local function II1Illl1l11(ll1I1IIll11)
+if ll1I1IIll11 and not I1lIIIIll11[IIl1Ill1l11(_KEA[805])] then
 return false
 		end
-lI11ll1l11[l11IlIll11(_KMZ[805])] = Il111l1l11 == true
-if lI11ll1l11[l11IlIll11(_KMZ[806])] then
-lI11ll1l11[l11IlIll11(_KMZ[807])] = false
-IIl1IIll11()
-		elseif not lI11ll1l11[l11IlIll11(_KMZ[800])] then
-II1IIIll11()
+I1lIIIIll11[IIl1Ill1l11(_KEA[806])] = ll1I1IIll11 == true
+if I1lIIIIll11[IIl1Ill1l11(_KEA[807])] then
+I1lIIIIll11[IIl1Ill1l11(_KEA[808])] = false
+l11Illl1l11()
+		elseif not I1lIIIIll11[IIl1Ill1l11(_KEA[809])] then
+l1l1lll1l11()
 		end
-ll11IIll11();
-I1l1ll1l11(l11IlIll11(_KMZ[808]));
-l11IIIll11();
-lII1IIll11()
+Il1Illl1l11();
+lI1IIIIll11(IIl1Ill1l11(_KEA[810]));
+IIl1lll1l11();
+I1I1lll1l11()
 return true
 	end
-local function Ill1IIll11(Il111l1l11)
-lI11ll1l11[l11IlIll11(_KMZ[809])] = Il111l1l11 == true
-lIIIIIll11();
-lII1IIll11()
+local function llIIlll1l11(ll1I1IIll11)
+I1lIIIIll11[IIl1Ill1l11(_KEA[811])] = ll1I1IIll11 == true
+I1Illll1l11();
+I1I1lll1l11()
 return true
 	end
-local lll1IIll11 = nil
-local IIIlIIll11 = { [l11IlIll11(_KMZ[810])] = false, [l11IlIll11(_KMZ[811])] = 0B0, [l11IlIll11(_KMZ[812])] = nil, [l11IlIll11(_KMZ[813])] = nil, [l11IlIll11(_KMZ[814])] = nil, [l11IlIll11(_KMZ[815])] = nil, [l11IlIll11(_KMZ[816])] = nil, [l11IlIll11(_KMZ[817])] = nil, [l11IlIll11(_KMZ[818])] = nil, [l11IlIll11(_KMZ[819])] = nil, [l11IlIll11(_KMZ[820])] = nil, [l11IlIll11(_KMZ[821])] = nil, [l11IlIll11(_KMZ[822])] = nil, [l11IlIll11(_KMZ[823])] = nil, [l11IlIll11(_KMZ[824])] = nil, [l11IlIll11(_KMZ[825])] = false, [l11IlIll11(_KMZ[826])] = .31, [l11IlIll11(_KMZ[827])] = nil, [l11IlIll11(_KMZ[828])] = false, [l11IlIll11(_KMZ[829])] = setmetatable({}, { [l11IlIll11(_KMZ[830])] = l11IlIll11(_KMZ[831]) }), [l11IlIll11(_KMZ[832])] = nil, [l11IlIll11(_KMZ[833])] = false, [l11IlIll11(_KMZ[834])] = nil, [l11IlIll11(_KMZ[835])] = {}, [l11IlIll11(_KMZ[836])] = setmetatable({}, { [l11IlIll11(_KMZ[837])] = l11IlIll11(_KMZ[838]) }), [l11IlIll11(_KMZ[839])] = false, [l11IlIll11(_KMZ[840])] = nil, [l11IlIll11(_KMZ[841])] = 0B0, [l11IlIll11(_KMZ[842])] = { [l11IlIll11(_KMZ[843])] = { [l11IlIll11(_KMZ[844])] = 0B1, [l11IlIll11(_KMZ[845])] = 0x64, [l11IlIll11(_KMZ[846])] = 127.5, [l11IlIll11(_KMZ[847])] = 0x64, [l11IlIll11(_KMZ[848])] = 127.5, [l11IlIll11(_KMZ[849])] = 0x5A, [l11IlIll11(_KMZ[850])] = .75 }, [l11IlIll11(_KMZ[851])] = { [l11IlIll11(_KMZ[852])] = 0B10, [l11IlIll11(_KMZ[853])] = 0x6E, [l11IlIll11(_KMZ[854])] = 0x87, [l11IlIll11(_KMZ[855])] = 0x6E, [l11IlIll11(_KMZ[856])] = 0x87, [l11IlIll11(_KMZ[857])] = 97.5, [l11IlIll11(_KMZ[858])] = .8 }, [l11IlIll11(_KMZ[859])] = { [l11IlIll11(_KMZ[860])] = 0B11, [l11IlIll11(_KMZ[861])] = 0x82, [l11IlIll11(_KMZ[862])] = 157.5, [l11IlIll11(_KMZ[863])] = 0x82, [l11IlIll11(_KMZ[864])] = 157.5, [l11IlIll11(_KMZ[865])] = 0x78, [l11IlIll11(_KMZ[866])] = .85 }, [l11IlIll11(_KMZ[867])] = { [l11IlIll11(_KMZ[868])] = 0x4, [l11IlIll11(_KMZ[869])] = 0x8C, [l11IlIll11(_KMZ[870])] = 172.5, [l11IlIll11(_KMZ[863])] = 0x8C, [l11IlIll11(_KMZ[871])] = 172.5, [l11IlIll11(_KMZ[872])] = 0x87, [l11IlIll11(_KMZ[873])] = .9 }, [l11IlIll11(_KMZ[874])] = { [l11IlIll11(_KMZ[875])] = 0x5, [l11IlIll11(_KMZ[876])] = 0x96, [l11IlIll11(_KMZ[877])] = 187.5, [l11IlIll11(_KMZ[878])] = 0x96, [l11IlIll11(_KMZ[879])] = 187.5, [l11IlIll11(_KMZ[880])] = 0x96, [l11IlIll11(_KMZ[881])] = 0B1 }, [l11IlIll11(_KMZ[882])] = { [l11IlIll11(_KMZ[883])] = 0x6, [l11IlIll11(_KMZ[884])] = 0x87, [l11IlIll11(_KMZ[885])] = 0xA5, [l11IlIll11(_KMZ[886])] = 0x87, [l11IlIll11(_KMZ[887])] = 0xA5, [l11IlIll11(_KMZ[888])] = 127.5, [l11IlIll11(_KMZ[889])] = .9 } } };
-local function lIIlIIll11(Il111l1l11, ll111l1l11, IIl11l1l11)
-if Il111l1l11 ~= nil then
-lI11ll1l11[l11IlIll11(_KMZ[890])] = Il111l1l11
+local IlIIlll1l11 = nil
+local l1IIlll1l11 = { [IIl1Ill1l11(_KEA[812])] = false, [IIl1Ill1l11(_KEA[813])] = 0B0, [IIl1Ill1l11(_KEA[814])] = nil, [IIl1Ill1l11(_KEA[815])] = nil, [IIl1Ill1l11(_KEA[816])] = nil, [IIl1Ill1l11(_KEA[817])] = nil, [IIl1Ill1l11(_KEA[818])] = nil, [IIl1Ill1l11(_KEA[819])] = nil, [IIl1Ill1l11(_KEA[820])] = nil, [IIl1Ill1l11(_KEA[821])] = nil, [IIl1Ill1l11(_KEA[822])] = nil, [IIl1Ill1l11(_KEA[823])] = nil, [IIl1Ill1l11(_KEA[824])] = nil, [IIl1Ill1l11(_KEA[825])] = nil, [IIl1Ill1l11(_KEA[826])] = nil, [IIl1Ill1l11(_KEA[827])] = false, [IIl1Ill1l11(_KEA[828])] = .31, [IIl1Ill1l11(_KEA[829])] = nil, [IIl1Ill1l11(_KEA[830])] = false, [IIl1Ill1l11(_KEA[831])] = setmetatable({}, { [IIl1Ill1l11(_KEA[832])] = IIl1Ill1l11(_KEA[833]) }), [IIl1Ill1l11(_KEA[834])] = nil, [IIl1Ill1l11(_KEA[835])] = false, [IIl1Ill1l11(_KEA[836])] = nil, [IIl1Ill1l11(_KEA[837])] = {}, [IIl1Ill1l11(_KEA[838])] = setmetatable({}, { [IIl1Ill1l11(_KEA[839])] = IIl1Ill1l11(_KEA[840]) }), [IIl1Ill1l11(_KEA[841])] = false, [IIl1Ill1l11(_KEA[842])] = nil, [IIl1Ill1l11(_KEA[843])] = 0B0, [IIl1Ill1l11(_KEA[844])] = { [IIl1Ill1l11(_KEA[845])] = { [IIl1Ill1l11(_KEA[846])] = 0B1, [IIl1Ill1l11(_KEA[847])] = 0x64, [IIl1Ill1l11(_KEA[848])] = 127.5, [IIl1Ill1l11(_KEA[849])] = 0x64, [IIl1Ill1l11(_KEA[850])] = 127.5, [IIl1Ill1l11(_KEA[851])] = 0x5A, [IIl1Ill1l11(_KEA[852])] = .75 }, [IIl1Ill1l11(_KEA[853])] = { [IIl1Ill1l11(_KEA[854])] = 0B10, [IIl1Ill1l11(_KEA[855])] = 0x6E, [IIl1Ill1l11(_KEA[856])] = 0x87, [IIl1Ill1l11(_KEA[857])] = 0x6E, [IIl1Ill1l11(_KEA[858])] = 0x87, [IIl1Ill1l11(_KEA[859])] = 97.5, [IIl1Ill1l11(_KEA[860])] = .8 }, [IIl1Ill1l11(_KEA[861])] = { [IIl1Ill1l11(_KEA[862])] = 0B11, [IIl1Ill1l11(_KEA[863])] = 0x82, [IIl1Ill1l11(_KEA[864])] = 157.5, [IIl1Ill1l11(_KEA[865])] = 0x82, [IIl1Ill1l11(_KEA[866])] = 157.5, [IIl1Ill1l11(_KEA[867])] = 0x78, [IIl1Ill1l11(_KEA[868])] = .85 }, [IIl1Ill1l11(_KEA[869])] = { [IIl1Ill1l11(_KEA[870])] = 0x4, [IIl1Ill1l11(_KEA[871])] = 0x8C, [IIl1Ill1l11(_KEA[872])] = 172.5, [IIl1Ill1l11(_KEA[873])] = 0x8C, [IIl1Ill1l11(_KEA[874])] = 172.5, [IIl1Ill1l11(_KEA[875])] = 0x87, [IIl1Ill1l11(_KEA[876])] = .9 }, [IIl1Ill1l11(_KEA[877])] = { [IIl1Ill1l11(_KEA[878])] = 0x5, [IIl1Ill1l11(_KEA[879])] = 0x96, [IIl1Ill1l11(_KEA[880])] = 187.5, [IIl1Ill1l11(_KEA[881])] = 0x96, [IIl1Ill1l11(_KEA[882])] = 187.5, [IIl1Ill1l11(_KEA[883])] = 0x96, [IIl1Ill1l11(_KEA[884])] = 0B1 }, [IIl1Ill1l11(_KEA[885])] = { [IIl1Ill1l11(_KEA[886])] = 0x6, [IIl1Ill1l11(_KEA[887])] = 0x87, [IIl1Ill1l11(_KEA[888])] = 0xA5, [IIl1Ill1l11(_KEA[889])] = 0x87, [IIl1Ill1l11(_KEA[890])] = 0xA5, [IIl1Ill1l11(_KEA[891])] = 127.5, [IIl1Ill1l11(_KEA[892])] = .9 } } };
+local function I1IIlll1l11(ll1I1IIll11, Il1I1IIll11, l11I1IIll11)
+if ll1I1IIll11 ~= nil then
+I1lIIIIll11[IIl1Ill1l11(_KEA[893])] = ll1I1IIll11
 		end
-if ll111l1l11 ~= nil then
-lI11ll1l11[l11IlIll11(_KMZ[891])] = ll111l1l11
+if Il1I1IIll11 ~= nil then
+I1lIIIIll11[IIl1Ill1l11(_KEA[894])] = Il1I1IIll11
 		end
-if IIl11l1l11 ~= nil then
-lI11ll1l11[l11IlIll11(_KMZ[892])] = IIl11l1l11
+if l11I1IIll11 ~= nil then
+I1lIIIIll11[IIl1Ill1l11(_KEA[895])] = l11I1IIll11
 		end
 	end
-local function I1IlIIll11()
-local Il111l1l11 = lll11l1l11:GetTagged(l11IlIll11(_KMZ[893]))
-if #Il111l1l11 == 0B0 then
-local ll111l1l11 = workspace:FindFirstChild(l11IlIll11(_KMZ[894]));
-local IIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[895]))
-if IIl11l1l11 then
-for ll111l1l11, IIl11l1l11 in ipairs(IIl11l1l11:GetChildren()) do
-if IIl11l1l11:IsA(l11IlIll11(_KMZ[206])) and (IIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[896]), true) or typeof(IIl11l1l11:GetAttribute(l11IlIll11(_KMZ[897]))) == l11IlIll11(_KMZ[898])) then
-Il111l1l11[#Il111l1l11 + 0B1] = IIl11l1l11
+local function lIIIlll1l11()
+local ll1I1IIll11 = IlII1IIll11:GetTagged(IIl1Ill1l11(_KEA[896]))
+if #ll1I1IIll11 == 0B0 then
+local Il1I1IIll11 = workspace:FindFirstChild(IIl1Ill1l11(_KEA[897]));
+local l11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[898]))
+if l11I1IIll11 then
+for Il1I1IIll11, l11I1IIll11 in ipairs(l11I1IIll11:GetChildren()) do
+if l11I1IIll11:IsA(IIl1Ill1l11(_KEA[899])) and (l11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[900]), true) or typeof(l11I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[901]))) == IIl1Ill1l11(_KEA[902])) then
+ll1I1IIll11[#ll1I1IIll11 + 0B1] = l11I1IIll11
 					end
 				end
 			end
 		end
-for Il111l1l11, ll111l1l11 in ipairs(Il111l1l11) do
-if ll111l1l11 and (ll111l1l11[l11IlIll11(_KMZ[899])] and ll111l1l11:GetAttribute(l11IlIll11(_KMZ[900])) ~= true) then
-local Il111l1l11 = ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[901]), true) or ll111l1l11[l11IlIll11(_KMZ[902])] or ll111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[903]), true)
-if Il111l1l11 and Il111l1l11:IsA(l11IlIll11(_KMZ[904])) then
-local IIl11l1l11 = ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[905])) or ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[906]), true) or ll111l1l11[l11IlIll11(_KMZ[907])]
-if not IIl11l1l11 or not IIl11l1l11:IsA(l11IlIll11(_KMZ[908])) or IIl11l1l11 == Il111l1l11 then
-local lIl11l1l11 = -0B1
-for ll111l1l11, I1l11l1l11 in ipairs(ll111l1l11:GetDescendants()) do
-if I1l11l1l11:IsA(l11IlIll11(_KMZ[909])) and (I1l11l1l11 ~= Il111l1l11 and I1l11l1l11[l11IlIll11(_KMZ[910])] < 0B1) then
-local Il111l1l11 = I1l11l1l11[l11IlIll11(_KMZ[911])]
-local ll111l1l11 = (Il111l1l11[l11IlIll11(_KMZ[912])] * Il111l1l11[l11IlIll11(_KMZ[913])]) * Il111l1l11[l11IlIll11(_KMZ[914])]
-if ll111l1l11 > lIl11l1l11 then
-IIl11l1l11 = I1l11l1l11
-lIl11l1l11 = ll111l1l11
+for ll1I1IIll11, Il1I1IIll11 in ipairs(ll1I1IIll11) do
+if Il1I1IIll11 and (Il1I1IIll11[IIl1Ill1l11(_KEA[903])] and Il1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[904])) ~= true) then
+local ll1I1IIll11 = Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[905]), true) or Il1I1IIll11[IIl1Ill1l11(_KEA[906])] or Il1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[907]), true)
+if ll1I1IIll11 and ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[908])) then
+local l11I1IIll11 = Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[909])) or Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[910]), true) or Il1I1IIll11[IIl1Ill1l11(_KEA[911])]
+if not l11I1IIll11 or not l11I1IIll11:IsA(IIl1Ill1l11(_KEA[912])) or l11I1IIll11 == ll1I1IIll11 then
+local I11I1IIll11 = -0B1
+for Il1I1IIll11, lI1I1IIll11 in ipairs(Il1I1IIll11:GetDescendants()) do
+if lI1I1IIll11:IsA(IIl1Ill1l11(_KEA[205])) and (lI1I1IIll11 ~= ll1I1IIll11 and lI1I1IIll11[IIl1Ill1l11(_KEA[913])] < 0B1) then
+local ll1I1IIll11 = lI1I1IIll11[IIl1Ill1l11(_KEA[914])]
+local Il1I1IIll11 = (ll1I1IIll11[IIl1Ill1l11(_KEA[915])] * ll1I1IIll11[IIl1Ill1l11(_KEA[916])]) * ll1I1IIll11[IIl1Ill1l11(_KEA[917])]
+if Il1I1IIll11 > I11I1IIll11 then
+l11I1IIll11 = lI1I1IIll11
+I11I1IIll11 = Il1I1IIll11
 								end
 							end
 						end
 					end
-IIl11l1l11 = IIl11l1l11 or Il111l1l11
-if IIl11l1l11 and IIl11l1l11:IsA(l11IlIll11(_KMZ[915])) then
-return ll111l1l11, Il111l1l11, IIl11l1l11
+l11I1IIll11 = l11I1IIll11 or ll1I1IIll11
+if l11I1IIll11 and l11I1IIll11:IsA(IIl1Ill1l11(_KEA[918])) then
+return Il1I1IIll11, ll1I1IIll11, l11I1IIll11
 					end
 				end
 			end
 		end
 return nil, nil, nil
 	end
-function IIIlIIll11.ClaimFG100BossOwnership(Il111l1l11)
-local ll111l1l11 = I1Il1l1l11[l11IlIll11(_KMZ[916])]
-local IIl11l1l11 = type(ll111l1l11) == l11IlIll11(_KMZ[917]) and ll111l1l11[l11IlIll11(_KMZ[918])] or nil
-if type(IIl11l1l11) ~= l11IlIll11(_KMZ[919]) or IIl11l1l11 == Il111l1l11 or IIl11l1l11[l11IlIll11(_KMZ[920])] ~= true then
+function l1IIlll1l11.ClaimFG100BossOwnership(ll1I1IIll11)
+local Il1I1IIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[919])]
+local l11I1IIll11 = type(Il1I1IIll11) == IIl1Ill1l11(_KEA[920]) and Il1I1IIll11[IIl1Ill1l11(_KEA[921])] or nil
+if type(l11I1IIll11) ~= IIl1Ill1l11(_KEA[922]) or l11I1IIll11 == ll1I1IIll11 or l11I1IIll11[IIl1Ill1l11(_KEA[923])] ~= true then
 return
 		end
-if not Il111l1l11[l11IlIll11(_KMZ[921])] then
-Il111l1l11[l11IlIll11(_KMZ[922])] = ll111l1l11
-Il111l1l11[l11IlIll11(_KMZ[923])] = IIl11l1l11
-Il111l1l11[l11IlIll11(_KMZ[924])] = IIl11l1l11[l11IlIll11(_KMZ[925])]
+if not ll1I1IIll11[IIl1Ill1l11(_KEA[924])] then
+ll1I1IIll11[IIl1Ill1l11(_KEA[925])] = Il1I1IIll11
+ll1I1IIll11[IIl1Ill1l11(_KEA[926])] = l11I1IIll11
+ll1I1IIll11[IIl1Ill1l11(_KEA[927])] = l11I1IIll11[IIl1Ill1l11(_KEA[928])]
 		end
-local lIl11l1l11 = IIl11l1l11[l11IlIll11(_KMZ[926])]
-if type(lIl11l1l11) == l11IlIll11(_KMZ[927]) and type(lIl11l1l11[l11IlIll11(_KMZ[928])]) == l11IlIll11(_KMZ[929]) then
-pcall(lIl11l1l11[l11IlIll11(_KMZ[930])], lIl11l1l11, false)
-		elseif type(IIl11l1l11[l11IlIll11(_KMZ[931])]) == l11IlIll11(_KMZ[932]) then
-pcall(IIl11l1l11[l11IlIll11(_KMZ[933])], IIl11l1l11, false)
+local I11I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[929])]
+if type(I11I1IIll11) == IIl1Ill1l11(_KEA[930]) and type(I11I1IIll11[IIl1Ill1l11(_KEA[931])]) == IIl1Ill1l11(_KEA[932]) then
+pcall(I11I1IIll11[IIl1Ill1l11(_KEA[933])], I11I1IIll11, false)
+		elseif type(l11I1IIll11[IIl1Ill1l11(_KEA[934])]) == IIl1Ill1l11(_KEA[935]) then
+pcall(l11I1IIll11[IIl1Ill1l11(_KEA[936])], l11I1IIll11, false)
 		end
 	end
-function IIIlIIll11.RestoreFG100BossOwnership(Il111l1l11)
-local ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[934])]
-local IIl11l1l11 = Il111l1l11[l11IlIll11(_KMZ[935])]
-local lIl11l1l11 = Il111l1l11[l11IlIll11(_KMZ[936])]
-Il111l1l11[l11IlIll11(_KMZ[937])] = nil
-Il111l1l11[l11IlIll11(_KMZ[938])] = nil
-Il111l1l11[l11IlIll11(_KMZ[939])] = nil
-if I1Il1l1l11[l11IlIll11(_KMZ[940])] ~= ll111l1l11 or type(IIl11l1l11) ~= l11IlIll11(_KMZ[941]) or IIl11l1l11[l11IlIll11(_KMZ[942])] == true then
+function l1IIlll1l11.RestoreFG100BossOwnership(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[937])]
+local l11I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[938])]
+local I11I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[939])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[940])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[941])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[942])] = nil
+if lIII1IIll11[IIl1Ill1l11(_KEA[943])] ~= Il1I1IIll11 or type(l11I1IIll11) ~= IIl1Ill1l11(_KEA[944]) or l11I1IIll11[IIl1Ill1l11(_KEA[945])] == true then
 return
 		end
-if type(lIl11l1l11) == l11IlIll11(_KMZ[943]) and type(lIl11l1l11[l11IlIll11(_KMZ[944])]) == l11IlIll11(_KMZ[945]) then
-pcall(lIl11l1l11[l11IlIll11(_KMZ[946])], lIl11l1l11, true)
-		elseif type(IIl11l1l11[l11IlIll11(_KMZ[947])]) == l11IlIll11(_KMZ[948]) then
-pcall(IIl11l1l11[l11IlIll11(_KMZ[949])], IIl11l1l11, true)
+if type(I11I1IIll11) == IIl1Ill1l11(_KEA[946]) and type(I11I1IIll11[IIl1Ill1l11(_KEA[947])]) == IIl1Ill1l11(_KEA[948]) then
+pcall(I11I1IIll11[IIl1Ill1l11(_KEA[949])], I11I1IIll11, true)
+		elseif type(l11I1IIll11[IIl1Ill1l11(_KEA[950])]) == IIl1Ill1l11(_KEA[951]) then
+pcall(l11I1IIll11[IIl1Ill1l11(_KEA[952])], l11I1IIll11, true)
 		end
 	end
-function IIIlIIll11.PauseFG100(Il111l1l11)
-local ll111l1l11 = I1Il1l1l11[l11IlIll11(_KMZ[950])]
-if type(ll111l1l11) ~= l11IlIll11(_KMZ[951]) then
+function l1IIlll1l11.PauseFG100(ll1I1IIll11)
+local Il1I1IIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[953])]
+if type(Il1I1IIll11) ~= IIl1Ill1l11(_KEA[954]) then
 return
 		end
-Il111l1l11[l11IlIll11(_KMZ[952])] = ll111l1l11
-local IIl11l1l11 = type(ll111l1l11[l11IlIll11(_KMZ[953])]) == l11IlIll11(_KMZ[954]) and ll111l1l11[l11IlIll11(_KMZ[955])] or nil
-local lIl11l1l11 = IIl11l1l11 and IIl11l1l11[l11IlIll11(_KMZ[956])] or nil
-if lIl11l1l11 == l11IlIll11(_KMZ[957]) or lIl11l1l11 == l11IlIll11(_KMZ[958]) then
-Il111l1l11[l11IlIll11(_KMZ[959])] = lIl11l1l11
+ll1I1IIll11[IIl1Ill1l11(_KEA[955])] = Il1I1IIll11
+local l11I1IIll11 = type(Il1I1IIll11[IIl1Ill1l11(_KEA[956])]) == IIl1Ill1l11(_KEA[957]) and Il1I1IIll11[IIl1Ill1l11(_KEA[958])] or nil
+local I11I1IIll11 = l11I1IIll11 and l11I1IIll11[IIl1Ill1l11(_KEA[959])] or nil
+if I11I1IIll11 == IIl1Ill1l11(_KEA[960]) or I11I1IIll11 == IIl1Ill1l11(_KEA[961]) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[962])] = I11I1IIll11
 		end
-local I1l11l1l11 = type(ll111l1l11[l11IlIll11(_KMZ[960])]) == l11IlIll11(_KMZ[961]) and ll111l1l11[l11IlIll11(_KMZ[962])] or nil
-if I1l11l1l11 and type(I1l11l1l11[l11IlIll11(_KMZ[963])]) == l11IlIll11(_KMZ[964]) then
-local ll111l1l11, IIl11l1l11 = pcall(I1l11l1l11[l11IlIll11(_KMZ[965])])
-if ll111l1l11 and (type(IIl11l1l11) == l11IlIll11(_KMZ[966]) and type(IIl11l1l11[l11IlIll11(_KMZ[967])]) == l11IlIll11(_KMZ[968])) then
-Il111l1l11[l11IlIll11(_KMZ[969])] = IIl11l1l11
+local lI1I1IIll11 = type(Il1I1IIll11[IIl1Ill1l11(_KEA[963])]) == IIl1Ill1l11(_KEA[964]) and Il1I1IIll11[IIl1Ill1l11(_KEA[965])] or nil
+if lI1I1IIll11 and type(lI1I1IIll11[IIl1Ill1l11(_KEA[966])]) == IIl1Ill1l11(_KEA[967]) then
+local Il1I1IIll11, l11I1IIll11 = pcall(lI1I1IIll11[IIl1Ill1l11(_KEA[968])])
+if Il1I1IIll11 and (type(l11I1IIll11) == IIl1Ill1l11(_KEA[969]) and type(l11I1IIll11[IIl1Ill1l11(_KEA[970])]) == IIl1Ill1l11(_KEA[971])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[972])] = l11I1IIll11
 return
 			end
 		end
-if Il111l1l11[l11IlIll11(_KMZ[970])] and type(ll111l1l11[l11IlIll11(_KMZ[971])]) == l11IlIll11(_KMZ[972]) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[973])], nil)
+if ll1I1IIll11[IIl1Ill1l11(_KEA[973])] and type(Il1I1IIll11[IIl1Ill1l11(_KEA[974])]) == IIl1Ill1l11(_KEA[975]) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[976])], nil)
 		end
 	end
-function IIIlIIll11.RestoreFG100(Il111l1l11)
-local ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[974])]
-local IIl11l1l11 = Il111l1l11[l11IlIll11(_KMZ[975])]
-local lIl11l1l11 = Il111l1l11[l11IlIll11(_KMZ[976])]
-Il111l1l11[l11IlIll11(_KMZ[977])] = nil
-Il111l1l11[l11IlIll11(_KMZ[978])] = nil
-Il111l1l11[l11IlIll11(_KMZ[979])] = nil
-if I1Il1l1l11[l11IlIll11(_KMZ[980])] ~= ll111l1l11 or type(ll111l1l11) ~= l11IlIll11(_KMZ[981]) then
+function l1IIlll1l11.RestoreFG100(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[977])]
+local l11I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[978])]
+local I11I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[979])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[980])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[981])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[982])] = nil
+if lIII1IIll11[IIl1Ill1l11(_KEA[983])] ~= Il1I1IIll11 or type(Il1I1IIll11) ~= IIl1Ill1l11(_KEA[984]) then
 return
 		end
-if IIl11l1l11 and type(IIl11l1l11[l11IlIll11(_KMZ[982])]) == l11IlIll11(_KMZ[983]) then
-local Il111l1l11 = type(ll111l1l11[l11IlIll11(_KMZ[984])]) == l11IlIll11(_KMZ[985]) and ll111l1l11[l11IlIll11(_KMZ[986])] or nil
-if Il111l1l11 and Il111l1l11[l11IlIll11(_KMZ[987])] == IIl11l1l11 then
-Il111l1l11[l11IlIll11(_KMZ[988])] = nil
+if l11I1IIll11 and type(l11I1IIll11[IIl1Ill1l11(_KEA[985])]) == IIl1Ill1l11(_KEA[986]) then
+local ll1I1IIll11 = type(Il1I1IIll11[IIl1Ill1l11(_KEA[987])]) == IIl1Ill1l11(_KEA[988]) and Il1I1IIll11[IIl1Ill1l11(_KEA[989])] or nil
+if ll1I1IIll11 and ll1I1IIll11[IIl1Ill1l11(_KEA[990])] == l11I1IIll11 then
+ll1I1IIll11[IIl1Ill1l11(_KEA[991])] = nil
 			end
-pcall(IIl11l1l11[l11IlIll11(_KMZ[989])])
+pcall(l11I1IIll11[IIl1Ill1l11(_KEA[992])])
 return
 		end
-if lIl11l1l11 and type(ll111l1l11[l11IlIll11(_KMZ[990])]) == l11IlIll11(_KMZ[991]) then
-local Il111l1l11 = ll111l1l11[l11IlIll11(_KMZ[992])]
-if type(Il111l1l11) ~= l11IlIll11(_KMZ[993]) or Il111l1l11[l11IlIll11(_KMZ[994])] == nil then
-pcall(ll111l1l11[l11IlIll11(_KMZ[995])], lIl11l1l11)
-			end
-		end
-	end
-function IIIlIIll11.PausePublicTraining(Il111l1l11)
-local ll111l1l11 = I1Il1l1l11[l11IlIll11(_KMZ[996])]
-if type(ll111l1l11) ~= l11IlIll11(_KMZ[997]) or type(ll111l1l11[l11IlIll11(_KMZ[998])]) ~= l11IlIll11(_KMZ[999]) or type(ll111l1l11[l11IlIll11(_KMZ[1000])]) ~= l11IlIll11(_KMZ[1001]) or type(ll111l1l11[l11IlIll11(_KMZ[1002])]) ~= l11IlIll11(_KMZ[1003]) then
-return
-		end
-local IIl11l1l11 = { [l11IlIll11(_KMZ[1004])] = ll111l1l11[l11IlIll11(_KMZ[1005])], [l11IlIll11(_KMZ[1006])] = ll111l1l11[l11IlIll11(_KMZ[1007])] == true, [l11IlIll11(_KMZ[1008])] = ll111l1l11[l11IlIll11(_KMZ[1009])] == true, [l11IlIll11(_KMZ[1010])] = ll111l1l11[l11IlIll11(_KMZ[1011])] == true, [l11IlIll11(_KMZ[1012])] = ll111l1l11[l11IlIll11(_KMZ[1013])] == true, [l11IlIll11(_KMZ[1014])] = ll111l1l11[l11IlIll11(_KMZ[1015])], [l11IlIll11(_KMZ[1016])] = ll111l1l11[l11IlIll11(_KMZ[1017])] == true, [l11IlIll11(_KMZ[1018])] = ll111l1l11[l11IlIll11(_KMZ[1019])] == true, [l11IlIll11(_KMZ[1020])] = ll111l1l11[l11IlIll11(_KMZ[1021])] == true };
-Il111l1l11[l11IlIll11(_KMZ[1022])] = ll111l1l11
-Il111l1l11[l11IlIll11(_KMZ[1023])] = IIl11l1l11
-local lIl11l1l11 = { [l11IlIll11(_KMZ[1024])] = ll111l1l11[l11IlIll11(_KMZ[1025])], [l11IlIll11(_KMZ[1026])] = ll111l1l11[l11IlIll11(_KMZ[1027])], [l11IlIll11(_KMZ[1028])] = ll111l1l11[l11IlIll11(_KMZ[1029])], [l11IlIll11(_KMZ[1030])] = ll111l1l11[l11IlIll11(_KMZ[1031])] };
-local I1l11l1l11 = lIl11l1l11[IIl11l1l11[l11IlIll11(_KMZ[1032])]]
-if type(I1l11l1l11) == l11IlIll11(_KMZ[1033]) then
-pcall(I1l11l1l11, false)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1034])] and type(ll111l1l11[l11IlIll11(_KMZ[1035])]) == l11IlIll11(_KMZ[1036]) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1037])], false)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1038])] and type(ll111l1l11[l11IlIll11(_KMZ[1039])]) == l11IlIll11(_KMZ[1040]) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1041])], false)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1042])] and type(ll111l1l11[l11IlIll11(_KMZ[1043])]) == l11IlIll11(_KMZ[1044]) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1045])], false)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1046])] then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1047])], false)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1048])] and type(ll111l1l11[l11IlIll11(_KMZ[1049])]) == l11IlIll11(_KMZ[1050]) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1051])], false)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1052])] and type(ll111l1l11[l11IlIll11(_KMZ[1053])]) == l11IlIll11(_KMZ[1054]) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1055])], false)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1056])] and type(ll111l1l11[l11IlIll11(_KMZ[1057])]) == l11IlIll11(_KMZ[1058]) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1059])], false)
-		end
-	end
-function IIIlIIll11.RestorePublicTraining(Il111l1l11)
-local ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[1060])]
-local IIl11l1l11 = Il111l1l11[l11IlIll11(_KMZ[1061])]
-Il111l1l11[l11IlIll11(_KMZ[1062])] = nil
-Il111l1l11[l11IlIll11(_KMZ[1063])] = nil
-if I1Il1l1l11[l11IlIll11(_KMZ[1064])] ~= ll111l1l11 or type(ll111l1l11) ~= l11IlIll11(_KMZ[1065]) or type(IIl11l1l11) ~= l11IlIll11(_KMZ[1066]) then
-return
-		end
-local lIl11l1l11 = { [l11IlIll11(_KMZ[1067])] = ll111l1l11[l11IlIll11(_KMZ[1068])], [l11IlIll11(_KMZ[1069])] = ll111l1l11[l11IlIll11(_KMZ[1070])], [l11IlIll11(_KMZ[1071])] = ll111l1l11[l11IlIll11(_KMZ[1072])], [l11IlIll11(_KMZ[1073])] = ll111l1l11[l11IlIll11(_KMZ[1074])] };
-local I1l11l1l11 = lIl11l1l11[IIl11l1l11[l11IlIll11(_KMZ[1075])]]
-if type(I1l11l1l11) == l11IlIll11(_KMZ[498]) and ll111l1l11[l11IlIll11(_KMZ[1076])] == nil then
-pcall(I1l11l1l11, true)
-		end
-if IIl11l1l11[l11IlIll11(_KMZ[1077])] and (type(ll111l1l11[l11IlIll11(_KMZ[1037])]) == l11IlIll11(_KMZ[1078]) and ll111l1l11[l11IlIll11(_KMZ[1079])] ~= true) then
-local Il111l1l11, lIl11l1l11 = pcall(ll111l1l11[l11IlIll11(_KMZ[1080])], true)
-if Il111l1l11 and (lIl11l1l11 ~= false and (type(IIl11l1l11[l11IlIll11(_KMZ[1081])]) == l11IlIll11(_KMZ[1082]) and type(ll111l1l11[l11IlIll11(_KMZ[1083])]) == l11IlIll11(_KMZ[1084]))) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1085])], IIl11l1l11[l11IlIll11(_KMZ[1086])], true)
+if I11I1IIll11 and type(Il1I1IIll11[IIl1Ill1l11(_KEA[993])]) == IIl1Ill1l11(_KEA[994]) then
+local ll1I1IIll11 = Il1I1IIll11[IIl1Ill1l11(_KEA[995])]
+if type(ll1I1IIll11) ~= IIl1Ill1l11(_KEA[996]) or ll1I1IIll11[IIl1Ill1l11(_KEA[997])] == nil then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[998])], I11I1IIll11)
 			end
 		end
-if IIl11l1l11[l11IlIll11(_KMZ[1087])] and (ll111l1l11[l11IlIll11(_KMZ[1088])] ~= true and type(ll111l1l11[l11IlIll11(_KMZ[1089])]) == l11IlIll11(_KMZ[1090])) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1091])], true)
+	end
+function l1IIlll1l11.PausePublicTraining(ll1I1IIll11)
+local Il1I1IIll11 = lIII1IIll11[IIl1Ill1l11(_KEA[999])]
+if type(Il1I1IIll11) ~= IIl1Ill1l11(_KEA[168]) or type(Il1I1IIll11[IIl1Ill1l11(_KEA[1000])]) ~= IIl1Ill1l11(_KEA[1001]) or type(Il1I1IIll11[IIl1Ill1l11(_KEA[1002])]) ~= IIl1Ill1l11(_KEA[1003]) or type(Il1I1IIll11[IIl1Ill1l11(_KEA[1004])]) ~= IIl1Ill1l11(_KEA[1005]) then
+return
 		end
-if IIl11l1l11[l11IlIll11(_KMZ[1092])] and (ll111l1l11[l11IlIll11(_KMZ[1093])] ~= true and type(ll111l1l11[l11IlIll11(_KMZ[1094])]) == l11IlIll11(_KMZ[498])) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1095])], true)
+local l11I1IIll11 = { [IIl1Ill1l11(_KEA[1006])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1007])], [IIl1Ill1l11(_KEA[1008])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1009])] == true, [IIl1Ill1l11(_KEA[1010])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1011])] == true, [IIl1Ill1l11(_KEA[1012])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1013])] == true, [IIl1Ill1l11(_KEA[1014])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1015])] == true, [IIl1Ill1l11(_KEA[1016])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1017])], [IIl1Ill1l11(_KEA[1018])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1019])] == true, [IIl1Ill1l11(_KEA[1020])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1021])] == true, [IIl1Ill1l11(_KEA[1022])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1023])] == true };
+ll1I1IIll11[IIl1Ill1l11(_KEA[1024])] = Il1I1IIll11
+ll1I1IIll11[IIl1Ill1l11(_KEA[1025])] = l11I1IIll11
+local I11I1IIll11 = { [IIl1Ill1l11(_KEA[1026])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1027])], [IIl1Ill1l11(_KEA[1028])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1029])], [IIl1Ill1l11(_KEA[1030])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1031])], [IIl1Ill1l11(_KEA[1032])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1033])] };
+local lI1I1IIll11 = I11I1IIll11[l11I1IIll11[IIl1Ill1l11(_KEA[1034])]]
+if type(lI1I1IIll11) == IIl1Ill1l11(_KEA[1035]) then
+pcall(lI1I1IIll11, false)
 		end
-if IIl11l1l11[l11IlIll11(_KMZ[1096])] and (ll111l1l11[l11IlIll11(_KMZ[1097])] ~= true and type(ll111l1l11[l11IlIll11(_KMZ[1098])]) == l11IlIll11(_KMZ[1099])) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1100])], true)
+if l11I1IIll11[IIl1Ill1l11(_KEA[1036])] and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1037])]) == IIl1Ill1l11(_KEA[1038]) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1039])], false)
 		end
-if IIl11l1l11[l11IlIll11(_KMZ[1101])] and (ll111l1l11[l11IlIll11(_KMZ[1102])] ~= true and type(ll111l1l11[l11IlIll11(_KMZ[1103])]) == l11IlIll11(_KMZ[1104])) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1105])], true)
+if l11I1IIll11[IIl1Ill1l11(_KEA[1040])] and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1041])]) == IIl1Ill1l11(_KEA[1042]) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1043])], false)
 		end
-if IIl11l1l11[l11IlIll11(_KMZ[1106])] and (ll111l1l11[l11IlIll11(_KMZ[1107])] ~= true and type(ll111l1l11[l11IlIll11(_KMZ[1108])]) == l11IlIll11(_KMZ[972])) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1109])], true)
-		elseif IIl11l1l11[l11IlIll11(_KMZ[1110])] and (ll111l1l11[l11IlIll11(_KMZ[1111])] ~= true and type(ll111l1l11[l11IlIll11(_KMZ[1112])]) == l11IlIll11(_KMZ[1113])) then
-pcall(ll111l1l11[l11IlIll11(_KMZ[1114])], true)
+if l11I1IIll11[IIl1Ill1l11(_KEA[1044])] and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1045])]) == IIl1Ill1l11(_KEA[1046]) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1047])], false)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1048])] then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1049])], false)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1050])] and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1051])]) == IIl1Ill1l11(_KEA[1052]) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1053])], false)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1054])] and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1055])]) == IIl1Ill1l11(_KEA[1056]) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1057])], false)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1058])] and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1059])]) == IIl1Ill1l11(_KEA[497]) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1060])], false)
 		end
 	end
-function IIIlIIll11.PauseRegisteredScripts(Il111l1l11)
-Il111l1l11[l11IlIll11(_KMZ[1115])] = {}
-for ll111l1l11, IIl11l1l11 in pairs(I1Il1l1l11) do
-if type(ll111l1l11) == l11IlIll11(_KMZ[1116]) and (string[l11IlIll11(_KMZ[1117])](ll111l1l11, 0B1, 0x7) == l11IlIll11(_KMZ[1118]) and (type(IIl11l1l11) == l11IlIll11(_KMZ[1119]) and (IIl11l1l11 ~= I1Il1l1l11[l11IlIll11(_KMZ[1120])] and (IIl11l1l11 ~= II11ll1l11 and type(IIl11l1l11[l11IlIll11(_KMZ[1121])]) == l11IlIll11(_KMZ[1122]))))) then
-local ll111l1l11, lIl11l1l11 = pcall(IIl11l1l11[l11IlIll11(_KMZ[1123])], IIl11l1l11, l11IlIll11(_KMZ[1124]))
-if ll111l1l11 and (type(lIl11l1l11) == l11IlIll11(_KMZ[1125]) or type(lIl11l1l11) == l11IlIll11(_KMZ[1126]) and type(lIl11l1l11[l11IlIll11(_KMZ[1127])]) == l11IlIll11(_KMZ[1128])) then
-Il111l1l11[l11IlIll11(_KMZ[1129])][#Il111l1l11[l11IlIll11(_KMZ[1130])] + 0B1] = { [l11IlIll11(_KMZ[1131])] = IIl11l1l11, [l11IlIll11(_KMZ[1132])] = lIl11l1l11 }
+function l1IIlll1l11.RestorePublicTraining(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[1061])]
+local l11I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[1062])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[1063])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[1064])] = nil
+if lIII1IIll11[IIl1Ill1l11(_KEA[1065])] ~= Il1I1IIll11 or type(Il1I1IIll11) ~= IIl1Ill1l11(_KEA[128]) or type(l11I1IIll11) ~= IIl1Ill1l11(_KEA[1066]) then
+return
+		end
+local I11I1IIll11 = { [IIl1Ill1l11(_KEA[1067])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1068])], [IIl1Ill1l11(_KEA[1069])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1070])], [IIl1Ill1l11(_KEA[1071])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1072])], [IIl1Ill1l11(_KEA[1073])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1074])] };
+local lI1I1IIll11 = I11I1IIll11[l11I1IIll11[IIl1Ill1l11(_KEA[1075])]]
+if type(lI1I1IIll11) == IIl1Ill1l11(_KEA[994]) and Il1I1IIll11[IIl1Ill1l11(_KEA[1076])] == nil then
+pcall(lI1I1IIll11, true)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1077])] and (type(Il1I1IIll11[IIl1Ill1l11(_KEA[1078])]) == IIl1Ill1l11(_KEA[1079]) and Il1I1IIll11[IIl1Ill1l11(_KEA[1080])] ~= true) then
+local ll1I1IIll11, I11I1IIll11 = pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1081])], true)
+if ll1I1IIll11 and (I11I1IIll11 ~= false and (type(l11I1IIll11[IIl1Ill1l11(_KEA[1082])]) == IIl1Ill1l11(_KEA[1083]) and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1084])]) == IIl1Ill1l11(_KEA[1085]))) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1086])], l11I1IIll11[IIl1Ill1l11(_KEA[1087])], true)
+			end
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1088])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1089])] ~= true and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1090])]) == IIl1Ill1l11(_KEA[1091])) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1092])], true)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1093])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1094])] ~= true and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1095])]) == IIl1Ill1l11(_KEA[1096])) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1097])], true)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1098])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1099])] ~= true and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1100])]) == IIl1Ill1l11(_KEA[1101])) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1102])], true)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1103])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1104])] ~= true and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1105])]) == IIl1Ill1l11(_KEA[1106])) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1107])], true)
+		end
+if l11I1IIll11[IIl1Ill1l11(_KEA[1108])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1109])] ~= true and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1110])]) == IIl1Ill1l11(_KEA[1111])) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1112])], true)
+		elseif l11I1IIll11[IIl1Ill1l11(_KEA[1113])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1114])] ~= true and type(Il1I1IIll11[IIl1Ill1l11(_KEA[1115])]) == IIl1Ill1l11(_KEA[481])) then
+pcall(Il1I1IIll11[IIl1Ill1l11(_KEA[1116])], true)
+		end
+	end
+function l1IIlll1l11.PauseRegisteredScripts(ll1I1IIll11)
+ll1I1IIll11[IIl1Ill1l11(_KEA[1117])] = {}
+for Il1I1IIll11, l11I1IIll11 in pairs(lIII1IIll11) do
+if type(Il1I1IIll11) == IIl1Ill1l11(_KEA[1118]) and (string[IIl1Ill1l11(_KEA[1119])](Il1I1IIll11, 0B1, 0x7) == IIl1Ill1l11(_KEA[1120]) and (type(l11I1IIll11) == IIl1Ill1l11(_KEA[1121]) and (l11I1IIll11 ~= lIII1IIll11[IIl1Ill1l11(_KEA[1122])] and (l11I1IIll11 ~= l1lIIIIll11 and type(l11I1IIll11[IIl1Ill1l11(_KEA[1123])]) == IIl1Ill1l11(_KEA[1124]))))) then
+local Il1I1IIll11, I11I1IIll11 = pcall(l11I1IIll11[IIl1Ill1l11(_KEA[1125])], l11I1IIll11, IIl1Ill1l11(_KEA[1126]))
+if Il1I1IIll11 and (type(I11I1IIll11) == IIl1Ill1l11(_KEA[1127]) or type(I11I1IIll11) == IIl1Ill1l11(_KEA[1128]) and type(I11I1IIll11[IIl1Ill1l11(_KEA[1129])]) == IIl1Ill1l11(_KEA[1130])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1131])][#ll1I1IIll11[IIl1Ill1l11(_KEA[1132])] + 0B1] = { [IIl1Ill1l11(_KEA[1133])] = l11I1IIll11, [IIl1Ill1l11(_KEA[1134])] = I11I1IIll11 }
 				end
 			end
 		end
 	end
-function IIIlIIll11.RestoreRegisteredScripts(Il111l1l11)
-local ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[1133])]
-Il111l1l11[l11IlIll11(_KMZ[1134])] = nil
-if type(ll111l1l11) ~= l11IlIll11(_KMZ[1135]) then
+function l1IIlll1l11.RestoreRegisteredScripts(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[1135])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[1136])] = nil
+if type(Il1I1IIll11) ~= IIl1Ill1l11(_KEA[1137]) then
 return
 		end
-for Il111l1l11 = #ll111l1l11, 0B1, -0B1 do
-local IIl11l1l11 = ll111l1l11[Il111l1l11]
-local lIl11l1l11 = IIl11l1l11 and IIl11l1l11[l11IlIll11(_KMZ[1136])]
-if type(lIl11l1l11) == l11IlIll11(_KMZ[1137]) then
-pcall(lIl11l1l11)
-			elseif type(lIl11l1l11) == l11IlIll11(_KMZ[1138]) and type(lIl11l1l11[l11IlIll11(_KMZ[1139])]) == l11IlIll11(_KMZ[1122]) then
-pcall(lIl11l1l11[l11IlIll11(_KMZ[1140])], lIl11l1l11)
+for ll1I1IIll11 = #Il1I1IIll11, 0B1, -0B1 do
+local l11I1IIll11 = Il1I1IIll11[ll1I1IIll11]
+local I11I1IIll11 = l11I1IIll11 and l11I1IIll11[IIl1Ill1l11(_KEA[1138])]
+if type(I11I1IIll11) == IIl1Ill1l11(_KEA[1139]) then
+pcall(I11I1IIll11)
+			elseif type(I11I1IIll11) == IIl1Ill1l11(_KEA[1140]) and type(I11I1IIll11[IIl1Ill1l11(_KEA[1141])]) == IIl1Ill1l11(_KEA[1142]) then
+pcall(I11I1IIll11[IIl1Ill1l11(_KEA[1143])], I11I1IIll11)
 			end
 		end
 	end
-function IIIlIIll11.PauseOtherScripts(Il111l1l11)
-Il111l1l11:PauseFG100();
-Il111l1l11:PausePublicTraining();
-Il111l1l11:PauseRegisteredScripts()
+function l1IIlll1l11.PauseOtherScripts(ll1I1IIll11)
+ll1I1IIll11:PauseFG100();
+ll1I1IIll11:PausePublicTraining();
+ll1I1IIll11:PauseRegisteredScripts()
 	end
-function IIIlIIll11.RestoreOtherScripts(Il111l1l11)
-Il111l1l11:RestoreRegisteredScripts();
-Il111l1l11:RestorePublicTraining();
-Il111l1l11:RestoreFG100()
+function l1IIlll1l11.RestoreOtherScripts(ll1I1IIll11)
+ll1I1IIll11:RestoreRegisteredScripts();
+ll1I1IIll11:RestorePublicTraining();
+ll1I1IIll11:RestoreFG100()
 	end
-function IIIlIIll11.WaitForReadyCharacter(ll111l1l11, Il111l1l11)
-local IIl11l1l11 = os[l11IlIll11(_KMZ[1141])]() + (tonumber(Il111l1l11) or 0x8);
-local lIl11l1l11
-local I1l11l1l11
-local l1l11l1l11
-while lI11ll1l11[l11IlIll11(_KMZ[1142])] and (ll111l1l11[l11IlIll11(_KMZ[1143])] and os[l11IlIll11(_KMZ[1144])]() < IIl11l1l11) do
-local Il111l1l11 = I1Illl1l11();
-local ll111l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[1145]));
-local IIl11l1l11 = Il111l1l11 and Il111l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[1146]));
-local Ill11l1l11 = IIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[1147]));
-local lll11l1l11 = Il111l1l11 and (Il111l1l11:GetAttribute(l11IlIll11(_KMZ[1148])) == true or Il111l1l11:GetAttribute(l11IlIll11(_KMZ[1149])) ~= nil);
-local lIIl1l1l11 = Ill11l1l11 and Ill11l1l11[l11IlIll11(_KMZ[1150])] ~= nil or IIl11l1l11 and IIl11l1l11[l11IlIll11(_KMZ[1151])] ~= nil
-if Il111l1l11 and (ll111l1l11 and (IIl11l1l11 and (IIl11l1l11[l11IlIll11(_KMZ[1152])] > 0B0 and (not lll11l1l11 and not lIIl1l1l11)))) then
-if Il111l1l11 ~= lIl11l1l11 or ll111l1l11 ~= I1l11l1l11 then
-lIl11l1l11 = Il111l1l11
-I1l11l1l11 = ll111l1l11
-l1l11l1l11 = os[l11IlIll11(_KMZ[1153])]()
-				elseif os[l11IlIll11(_KMZ[1154])]() - l1l11l1l11 >= .18 then
-return Il111l1l11, ll111l1l11, IIl11l1l11
+function l1IIlll1l11.WaitForReadyCharacter(Il1I1IIll11, ll1I1IIll11)
+local l11I1IIll11 = os[IIl1Ill1l11(_KEA[1144])]() + (tonumber(ll1I1IIll11) or 0x8);
+local I11I1IIll11
+local lI1I1IIll11
+local II1I1IIll11
+while I1lIIIIll11[IIl1Ill1l11(_KEA[1145])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1146])] and os[IIl1Ill1l11(_KEA[1147])]() < l11I1IIll11) do
+local ll1I1IIll11 = lIIIIIIll11();
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1148]));
+local l11I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[1149]));
+local llII1IIll11 = l1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1150]));
+local IlII1IIll11 = ll1I1IIll11 and (ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1151])) == true or ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1152])) ~= nil);
+local I1II1IIll11 = llII1IIll11 and llII1IIll11[IIl1Ill1l11(_KEA[1153])] ~= nil or l11I1IIll11 and l11I1IIll11[IIl1Ill1l11(_KEA[1154])] ~= nil
+if ll1I1IIll11 and (Il1I1IIll11 and (l11I1IIll11 and (l11I1IIll11[IIl1Ill1l11(_KEA[1155])] > 0B0 and (not IlII1IIll11 and not I1II1IIll11)))) then
+if ll1I1IIll11 ~= I11I1IIll11 or Il1I1IIll11 ~= lI1I1IIll11 then
+I11I1IIll11 = ll1I1IIll11
+lI1I1IIll11 = Il1I1IIll11
+II1I1IIll11 = os[IIl1Ill1l11(_KEA[1156])]()
+				elseif os[IIl1Ill1l11(_KEA[1157])]() - II1I1IIll11 >= .18 then
+return ll1I1IIll11, Il1I1IIll11, l11I1IIll11
 				end
 			else
-lIl11l1l11 = nil
-I1l11l1l11 = nil
-l1l11l1l11 = nil
+I11I1IIll11 = nil
+lI1I1IIll11 = nil
+II1I1IIll11 = nil
 			end
-task[l11IlIll11(_KMZ[1155])](.05)
+task[IIl1Ill1l11(_KEA[1158])](.05)
 		end
 return nil, nil, nil
 	end
-local function l1IlIIll11()
-return math[l11IlIll11(_KMZ[1156])](0B0, tonumber(workspace:GetAttribute(l11IlIll11(_KMZ[1157]))) or 0B0)
+local function IIIIlll1l11()
+return math[IIl1Ill1l11(_KEA[1159])](0B0, tonumber(workspace:GetAttribute(IIl1Ill1l11(_KEA[1160]))) or 0B0)
 	end
-local function IlIlIIll11()
-local Il111l1l11 = l1Illl1l11();
-local ll111l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[1158]))
-return math[l11IlIll11(_KMZ[1159])](math[l11IlIll11(_KMZ[1160])]((ll111l1l11 and ll111l1l11[l11IlIll11(_KMZ[1161])] or 0B1) + .5), 0B1, 0x64)
+local function llll1ll1l11()
+local ll1I1IIll11 = IIIIIIIll11();
+local Il1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1161]))
+return math[IIl1Ill1l11(_KEA[1162])](math[IIl1Ill1l11(_KEA[1163])]((Il1I1IIll11 and Il1I1IIll11[IIl1Ill1l11(_KEA[1164])] or 0B1) + .5), 0B1, 0x64)
 	end
-function IIIlIIll11.ApplyAntiLagObject(ll111l1l11, Il111l1l11)
-if not ll111l1l11[l11IlIll11(_KMZ[828])] or not Il111l1l11 then
+function l1IIlll1l11.ApplyAntiLagObject(Il1I1IIll11, ll1I1IIll11)
+if not Il1I1IIll11[IIl1Ill1l11(_KEA[1165])] or not ll1I1IIll11 then
 return
 		end
-local IIl11l1l11
-if Il111l1l11:IsA(l11IlIll11(_KMZ[1162])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1163])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1164])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1165])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1166])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1167])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1168])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1169])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1170])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1171])) then
-IIl11l1l11 = l11IlIll11(_KMZ[1172])
-		elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1173])) then
-IIl11l1l11 = l11IlIll11(_KMZ[1174])
+local l11I1IIll11
+if ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1166])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1167])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1168])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1169])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1170])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1171])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1172])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1173])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1174])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1175])) then
+l11I1IIll11 = IIl1Ill1l11(_KEA[1176])
+		elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1177])) then
+l11I1IIll11 = IIl1Ill1l11(_KEA[1178])
 		end
-if IIl11l1l11 and ll111l1l11[l11IlIll11(_KMZ[1175])][Il111l1l11] == nil then
-ll111l1l11[l11IlIll11(_KMZ[1176])][Il111l1l11] = { [l11IlIll11(_KMZ[1177])] = IIl11l1l11, [l11IlIll11(_KMZ[1178])] = Il111l1l11[IIl11l1l11] };
+if l11I1IIll11 and Il1I1IIll11[IIl1Ill1l11(_KEA[1179])][ll1I1IIll11] == nil then
+Il1I1IIll11[IIl1Ill1l11(_KEA[1180])][ll1I1IIll11] = { [IIl1Ill1l11(_KEA[1181])] = l11I1IIll11, [IIl1Ill1l11(_KEA[1182])] = ll1I1IIll11[l11I1IIll11] };
 pcall(function()
-Il111l1l11[IIl11l1l11] = false
+ll1I1IIll11[l11I1IIll11] = false
 			end)
 		end
 	end
-function IIIlIIll11.SetAntiLag(ll111l1l11, Il111l1l11)
-ll111l1l11[l11IlIll11(_KMZ[1179])] = Il111l1l11 == true
-if ll111l1l11[l11IlIll11(_KMZ[1180])] then
+function l1IIlll1l11.SetAntiLag(Il1I1IIll11, ll1I1IIll11)
+Il1I1IIll11[IIl1Ill1l11(_KEA[1183])] = ll1I1IIll11 == true
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1184])] then
 pcall(function()
-ll111l1l11[l11IlIll11(_KMZ[1181])]:Disconnect()
+Il1I1IIll11[IIl1Ill1l11(_KEA[1185])]:Disconnect()
 			end);
-ll111l1l11[l11IlIll11(_KMZ[1182])] = nil
+Il1I1IIll11[IIl1Ill1l11(_KEA[1186])] = nil
 		end
-if not ll111l1l11[l11IlIll11(_KMZ[1183])] then
-if ll111l1l11[l11IlIll11(_KMZ[1184])] then
-ll111l1l11[l11IlIll11(_KMZ[1185])] = setmetatable({}, { [l11IlIll11(_KMZ[1186])] = l11IlIll11(_KMZ[1187]) })
+if not Il1I1IIll11[IIl1Ill1l11(_KEA[1187])] then
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1188])] then
+Il1I1IIll11[IIl1Ill1l11(_KEA[1189])] = setmetatable({}, { [IIl1Ill1l11(_KEA[1190])] = IIl1Ill1l11(_KEA[1191]) })
 return
 			end
-for Il111l1l11, IIl11l1l11 in pairs(ll111l1l11[l11IlIll11(_KMZ[1188])]) do
-if Il111l1l11 and Il111l1l11[l11IlIll11(_KMZ[1189])] then
+for ll1I1IIll11, l11I1IIll11 in pairs(Il1I1IIll11[IIl1Ill1l11(_KEA[1192])]) do
+if ll1I1IIll11 and ll1I1IIll11[IIl1Ill1l11(_KEA[1193])] then
 pcall(function()
-Il111l1l11[IIl11l1l11[l11IlIll11(_KMZ[1190])]] = IIl11l1l11[l11IlIll11(_KMZ[1191])]
+ll1I1IIll11[l11I1IIll11[IIl1Ill1l11(_KEA[1194])]] = l11I1IIll11[IIl1Ill1l11(_KEA[1195])]
 					end)
 				end
-ll111l1l11[l11IlIll11(_KMZ[1192])][Il111l1l11] = nil
+Il1I1IIll11[IIl1Ill1l11(_KEA[1196])][ll1I1IIll11] = nil
 			end
 return
 		end
-local IIl11l1l11 = workspace:FindFirstChild(l11IlIll11(_KMZ[1193]));
-local lIl11l1l11 = IIl11l1l11 and IIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[1194]))
-if not lIl11l1l11 then
+local l11I1IIll11 = workspace:FindFirstChild(IIl1Ill1l11(_KEA[1197]));
+local I11I1IIll11 = l11I1IIll11 and l11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1198]))
+if not I11I1IIll11 then
 return
 		end
-for Il111l1l11, IIl11l1l11 in ipairs(lIl11l1l11:GetDescendants()) do
-ll111l1l11:ApplyAntiLagObject(IIl11l1l11)
+for ll1I1IIll11, l11I1IIll11 in ipairs(I11I1IIll11:GetDescendants()) do
+Il1I1IIll11:ApplyAntiLagObject(l11I1IIll11)
 		end
-ll111l1l11[l11IlIll11(_KMZ[1195])] = lIl11l1l11[l11IlIll11(_KMZ[1196])]:Connect(function(Il111l1l11)
-task[l11IlIll11(_KMZ[1197])](function()
-ll111l1l11:ApplyAntiLagObject(Il111l1l11)
+Il1I1IIll11[IIl1Ill1l11(_KEA[1199])] = I11I1IIll11[IIl1Ill1l11(_KEA[1200])]:Connect(function(ll1I1IIll11)
+task[IIl1Ill1l11(_KEA[1201])](function()
+Il1I1IIll11:ApplyAntiLagObject(ll1I1IIll11)
 				end)
 			end)
 	end
-function IIIlIIll11.ApplyAutoLag60Object(ll111l1l11, Il111l1l11)
-if not ll111l1l11[l11IlIll11(_KMZ[1198])] or not Il111l1l11 or not Il111l1l11[l11IlIll11(_KMZ[1199])] then
+function l1IIlll1l11.ApplyAutoLag60Object(Il1I1IIll11, ll1I1IIll11)
+if not Il1I1IIll11[IIl1Ill1l11(_KEA[1202])] or not ll1I1IIll11 or not ll1I1IIll11[IIl1Ill1l11(_KEA[1203])] then
 return
 		end
 pcall(function()
-if Il111l1l11:IsA(l11IlIll11(_KMZ[1200])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1201])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1202])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1203])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1204])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1205])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1206])) then
-Il111l1l11[l11IlIll11(_KMZ[1207])] = false
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1208])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1209])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1210])) then
-Il111l1l11[l11IlIll11(_KMZ[1211])] = false
-Il111l1l11[l11IlIll11(_KMZ[1212])] = false
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1213])) then
-Il111l1l11[l11IlIll11(_KMZ[1214])] = false
-Il111l1l11[l11IlIll11(_KMZ[1215])] = Enum[l11IlIll11(_KMZ[1216])][l11IlIll11(_KMZ[1217])]
-Il111l1l11[l11IlIll11(_KMZ[1218])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1219])] = l11IlIll11(_KMZ[1220]);
-Il111l1l11[l11IlIll11(_KMZ[1221])] = Enum[l11IlIll11(_KMZ[1222])][l11IlIll11(_KMZ[1223])]
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1224])) then
-Il111l1l11[l11IlIll11(_KMZ[1225])] = false
-Il111l1l11[l11IlIll11(_KMZ[1226])] = Enum[l11IlIll11(_KMZ[1227])][l11IlIll11(_KMZ[1228])]
-Il111l1l11[l11IlIll11(_KMZ[1229])] = 0B0
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1230])) then
-Il111l1l11[l11IlIll11(_KMZ[1231])] = l11IlIll11(_KMZ[1232])
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1233])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1234])) then
-Il111l1l11[l11IlIll11(_KMZ[1235])] = 0B1
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1236])) then
-Il111l1l11[l11IlIll11(_KMZ[1237])] = l11IlIll11(_KMZ[1238]);
-Il111l1l11[l11IlIll11(_KMZ[1239])] = l11IlIll11(_KMZ[1240]);
-Il111l1l11[l11IlIll11(_KMZ[1241])] = l11IlIll11(_KMZ[1242]);
-Il111l1l11[l11IlIll11(_KMZ[1243])] = l11IlIll11(_KMZ[1244])
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1245])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1246])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1247])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1248])) or Il111l1l11:IsA(l11IlIll11(_KMZ[1249])) then
-Il111l1l11[l11IlIll11(_KMZ[1250])] = false
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[1251])) then
-Il111l1l11[l11IlIll11(_KMZ[1252])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1253])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1254])] = 0B0
+if ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1204])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1205])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1206])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1207])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1208])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1209])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1210])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1211])] = false
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1212])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1213])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1214])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1215])] = false
+ll1I1IIll11[IIl1Ill1l11(_KEA[1216])] = false
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1217])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1218])] = false
+ll1I1IIll11[IIl1Ill1l11(_KEA[1219])] = Enum[IIl1Ill1l11(_KEA[1220])][IIl1Ill1l11(_KEA[1221])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[1222])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1223])] = IIl1Ill1l11(_KEA[1224]);
+ll1I1IIll11[IIl1Ill1l11(_KEA[1225])] = Enum[IIl1Ill1l11(_KEA[1226])][IIl1Ill1l11(_KEA[1227])]
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1228])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1229])] = false
+ll1I1IIll11[IIl1Ill1l11(_KEA[1230])] = Enum[IIl1Ill1l11(_KEA[1231])][IIl1Ill1l11(_KEA[1232])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[1233])] = 0B0
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1234])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1235])] = IIl1Ill1l11(_KEA[1236])
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1237])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1238])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1239])] = 0B1
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1240])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1241])] = IIl1Ill1l11(_KEA[1242]);
+ll1I1IIll11[IIl1Ill1l11(_KEA[1243])] = IIl1Ill1l11(_KEA[120]);
+ll1I1IIll11[IIl1Ill1l11(_KEA[1244])] = IIl1Ill1l11(_KEA[1245]);
+ll1I1IIll11[IIl1Ill1l11(_KEA[1246])] = IIl1Ill1l11(_KEA[1247])
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1248])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1249])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1250])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1251])) or ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1252])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1253])] = false
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1254])) then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1255])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1256])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1257])] = 0B0
 			end
 		end)
 	end
-function IIIlIIll11.QueueAutoLag60(ll111l1l11, Il111l1l11)
-if not ll111l1l11[l11IlIll11(_KMZ[1255])] or not Il111l1l11 or ll111l1l11[l11IlIll11(_KMZ[1256])][Il111l1l11] then
+function l1IIlll1l11.QueueAutoLag60(Il1I1IIll11, ll1I1IIll11)
+if not Il1I1IIll11[IIl1Ill1l11(_KEA[1258])] or not ll1I1IIll11 or Il1I1IIll11[IIl1Ill1l11(_KEA[1259])][ll1I1IIll11] then
 return
 		end
-ll111l1l11[l11IlIll11(_KMZ[1257])][Il111l1l11] = true
-ll111l1l11[l11IlIll11(_KMZ[1258])][#ll111l1l11[l11IlIll11(_KMZ[1258])] + 0B1] = Il111l1l11
-if ll111l1l11[l11IlIll11(_KMZ[1259])] then
+Il1I1IIll11[IIl1Ill1l11(_KEA[1260])][ll1I1IIll11] = true
+Il1I1IIll11[IIl1Ill1l11(_KEA[1261])][#Il1I1IIll11[IIl1Ill1l11(_KEA[1262])] + 0B1] = ll1I1IIll11
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1263])] then
 return
 		end
-ll111l1l11[l11IlIll11(_KMZ[1260])] = true
-l1l1ll1l11(l11IlIll11(_KMZ[1261]), function()
-local Il111l1l11 = 0B1
-while lI11ll1l11[l11IlIll11(_KMZ[1262])] and (ll111l1l11[l11IlIll11(_KMZ[1263])] and Il111l1l11 <= #ll111l1l11[l11IlIll11(_KMZ[1264])]) do
-local IIl11l1l11 = math[l11IlIll11(_KMZ[1265])](#ll111l1l11[l11IlIll11(_KMZ[1266])], Il111l1l11 + 0x59)
-while Il111l1l11 <= IIl11l1l11 do
-local IIl11l1l11 = ll111l1l11[l11IlIll11(_KMZ[1267])][Il111l1l11]
-Il111l1l11 = Il111l1l11 + 0B1
-ll111l1l11[l11IlIll11(_KMZ[1268])][IIl11l1l11] = nil
-if IIl11l1l11 and IIl11l1l11[l11IlIll11(_KMZ[1269])] then
-ll111l1l11:ApplyAutoLag60Object(IIl11l1l11)
-for Il111l1l11, IIl11l1l11 in ipairs(IIl11l1l11:GetChildren()) do
-if not ll111l1l11[l11IlIll11(_KMZ[1270])][IIl11l1l11] then
-ll111l1l11[l11IlIll11(_KMZ[1271])][IIl11l1l11] = true
-ll111l1l11[l11IlIll11(_KMZ[1267])][#ll111l1l11[l11IlIll11(_KMZ[1272])] + 0B1] = IIl11l1l11
+Il1I1IIll11[IIl1Ill1l11(_KEA[1264])] = true
+II1IIIIll11(IIl1Ill1l11(_KEA[1265]), function()
+local ll1I1IIll11 = 0B1
+while I1lIIIIll11[IIl1Ill1l11(_KEA[1266])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1267])] and ll1I1IIll11 <= #Il1I1IIll11[IIl1Ill1l11(_KEA[1268])]) do
+local l11I1IIll11 = math[IIl1Ill1l11(_KEA[1269])](#Il1I1IIll11[IIl1Ill1l11(_KEA[1270])], ll1I1IIll11 + 0x59)
+while ll1I1IIll11 <= l11I1IIll11 do
+local l11I1IIll11 = Il1I1IIll11[IIl1Ill1l11(_KEA[1271])][ll1I1IIll11]
+ll1I1IIll11 = ll1I1IIll11 + 0B1
+Il1I1IIll11[IIl1Ill1l11(_KEA[1272])][l11I1IIll11] = nil
+if l11I1IIll11 and l11I1IIll11[IIl1Ill1l11(_KEA[1273])] then
+Il1I1IIll11:ApplyAutoLag60Object(l11I1IIll11)
+for ll1I1IIll11, l11I1IIll11 in ipairs(l11I1IIll11:GetChildren()) do
+if not Il1I1IIll11[IIl1Ill1l11(_KEA[1274])][l11I1IIll11] then
+Il1I1IIll11[IIl1Ill1l11(_KEA[1275])][l11I1IIll11] = true
+Il1I1IIll11[IIl1Ill1l11(_KEA[1276])][#Il1I1IIll11[IIl1Ill1l11(_KEA[1277])] + 0B1] = l11I1IIll11
 							end
 						end
 					end
 				end
-I1l11l1l11[l11IlIll11(_KMZ[1273])]:Wait()
+lI1I1IIll11[IIl1Ill1l11(_KEA[1278])]:Wait()
 			end
-ll111l1l11[l11IlIll11(_KMZ[1274])] = {};
-ll111l1l11[l11IlIll11(_KMZ[1275])] = setmetatable({}, { [l11IlIll11(_KMZ[1276])] = l11IlIll11(_KMZ[1277]) });
-ll111l1l11[l11IlIll11(_KMZ[1278])] = false
+Il1I1IIll11[IIl1Ill1l11(_KEA[1279])] = {};
+Il1I1IIll11[IIl1Ill1l11(_KEA[1280])] = setmetatable({}, { [IIl1Ill1l11(_KEA[1281])] = IIl1Ill1l11(_KEA[1282]) });
+Il1I1IIll11[IIl1Ill1l11(_KEA[1283])] = false
 		end)
 	end
-function IIIlIIll11.SetAutoLag60(ll111l1l11, Il111l1l11)
-ll111l1l11[l11IlIll11(_KMZ[1279])] = Il111l1l11 == true
-lI11ll1l11[l11IlIll11(_KMZ[1280])] = ll111l1l11[l11IlIll11(_KMZ[1281])]
-if ll111l1l11[l11IlIll11(_KMZ[1282])] then
-ll111l1l11[l11IlIll11(_KMZ[1283])]:Disconnect();
-ll111l1l11[l11IlIll11(_KMZ[1284])] = nil
+function l1IIlll1l11.SetAutoLag60(Il1I1IIll11, ll1I1IIll11)
+Il1I1IIll11[IIl1Ill1l11(_KEA[1284])] = ll1I1IIll11 == true
+I1lIIIIll11[IIl1Ill1l11(_KEA[1285])] = Il1I1IIll11[IIl1Ill1l11(_KEA[1286])]
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1287])] then
+Il1I1IIll11[IIl1Ill1l11(_KEA[1288])]:Disconnect();
+Il1I1IIll11[IIl1Ill1l11(_KEA[1289])] = nil
 		end
-I1l1ll1l11(l11IlIll11(_KMZ[1285]));
-ll111l1l11[l11IlIll11(_KMZ[1286])] = {};
-ll111l1l11[l11IlIll11(_KMZ[1287])] = setmetatable({}, { [l11IlIll11(_KMZ[1288])] = l11IlIll11(_KMZ[838]) });
-ll111l1l11[l11IlIll11(_KMZ[1289])] = false
-if not ll111l1l11[l11IlIll11(_KMZ[1290])] then
+lI1IIIIll11(IIl1Ill1l11(_KEA[1290]));
+Il1I1IIll11[IIl1Ill1l11(_KEA[1291])] = {};
+Il1I1IIll11[IIl1Ill1l11(_KEA[1292])] = setmetatable({}, { [IIl1Ill1l11(_KEA[1293])] = IIl1Ill1l11(_KEA[1294]) });
+Il1I1IIll11[IIl1Ill1l11(_KEA[1295])] = false
+if not Il1I1IIll11[IIl1Ill1l11(_KEA[1296])] then
 return
 		end
 pcall(function()
-(settings())[l11IlIll11(_KMZ[1291])][l11IlIll11(_KMZ[1292])] = Enum[l11IlIll11(_KMZ[1293])][l11IlIll11(_KMZ[1294])]
+(settings())[IIl1Ill1l11(_KEA[1297])][IIl1Ill1l11(_KEA[1298])] = Enum[IIl1Ill1l11(_KEA[1299])][IIl1Ill1l11(_KEA[1300])]
 		end);
 pcall(function()
-local Il111l1l11 = game:GetService(l11IlIll11(_KMZ[1295]));
-Il111l1l11[l11IlIll11(_KMZ[1296])] = false
-Il111l1l11[l11IlIll11(_KMZ[1297])] = 1000000000
-Il111l1l11[l11IlIll11(_KMZ[1298])] = 0B1
-Il111l1l11[l11IlIll11(_KMZ[1299])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1300])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1301])] = 0B0
+local ll1I1IIll11 = game:GetService(IIl1Ill1l11(_KEA[1301]));
+ll1I1IIll11[IIl1Ill1l11(_KEA[1302])] = false
+ll1I1IIll11[IIl1Ill1l11(_KEA[1303])] = 1000000000
+ll1I1IIll11[IIl1Ill1l11(_KEA[1304])] = 0B1
+ll1I1IIll11[IIl1Ill1l11(_KEA[1305])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1306])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1307])] = 0B0
 		end);
 pcall(function()
-local Il111l1l11 = workspace:FindFirstChildOfClass(l11IlIll11(_KMZ[1302]))
-if Il111l1l11 then
-Il111l1l11[l11IlIll11(_KMZ[1303])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1304])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1305])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[1306])] = 0B1
+local ll1I1IIll11 = workspace:FindFirstChildOfClass(IIl1Ill1l11(_KEA[1308]))
+if ll1I1IIll11 then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1309])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1310])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1311])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[1312])] = 0B1
 pcall(function()
-Il111l1l11[l11IlIll11(_KMZ[1307])] = false
+ll1I1IIll11[IIl1Ill1l11(_KEA[1313])] = false
 				end)
 			end
 		end)
-for Il111l1l11, IIl11l1l11 in ipairs(workspace:GetChildren()) do
-ll111l1l11:QueueAutoLag60(IIl11l1l11)
+for ll1I1IIll11, l11I1IIll11 in ipairs(workspace:GetChildren()) do
+Il1I1IIll11:QueueAutoLag60(l11I1IIll11)
 		end
-for Il111l1l11, IIl11l1l11 in ipairs((game:GetService(l11IlIll11(_KMZ[1308]))):GetChildren()) do
-ll111l1l11:QueueAutoLag60(IIl11l1l11)
+for ll1I1IIll11, l11I1IIll11 in ipairs((game:GetService(IIl1Ill1l11(_KEA[1314]))):GetChildren()) do
+Il1I1IIll11:QueueAutoLag60(l11I1IIll11)
 		end
-ll111l1l11[l11IlIll11(_KMZ[1309])] = workspace[l11IlIll11(_KMZ[1310])]:Connect(function(Il111l1l11)
-ll111l1l11:QueueAutoLag60(Il111l1l11)
+Il1I1IIll11[IIl1Ill1l11(_KEA[1315])] = workspace[IIl1Ill1l11(_KEA[1316])]:Connect(function(ll1I1IIll11)
+Il1I1IIll11:QueueAutoLag60(ll1I1IIll11)
 			end)
 	end
-function IIIlIIll11.StopStableCamera(Il111l1l11)
-local ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[1311])]
-Il111l1l11[l11IlIll11(_KMZ[1312])] = nil
-if type(ll111l1l11) ~= l11IlIll11(_KMZ[533]) then
+function l1IIlll1l11.StopStableCamera(ll1I1IIll11)
+local Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[1317])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[1318])] = nil
+if type(Il1I1IIll11) ~= IIl1Ill1l11(_KEA[1319]) then
 return
 		end
-for Il111l1l11 = #ll111l1l11, 0B1, -0B1 do
-local IIl11l1l11 = ll111l1l11[Il111l1l11]
-local lIl11l1l11 = false
-if type(restorefunction) == l11IlIll11(_KMZ[1313]) then
-lIl11l1l11 = pcall(restorefunction, IIl11l1l11[l11IlIll11(_KMZ[1314])], IIl11l1l11[l11IlIll11(_KMZ[1315])])
-if not lIl11l1l11 then
-lIl11l1l11 = pcall(restorefunction, IIl11l1l11[l11IlIll11(_KMZ[1316])])
+for ll1I1IIll11 = #Il1I1IIll11, 0B1, -0B1 do
+local l11I1IIll11 = Il1I1IIll11[ll1I1IIll11]
+local I11I1IIll11 = false
+if type(restorefunction) == IIl1Ill1l11(_KEA[1320]) then
+I11I1IIll11 = pcall(restorefunction, l11I1IIll11[IIl1Ill1l11(_KEA[1321])], l11I1IIll11[IIl1Ill1l11(_KEA[1322])])
+if not I11I1IIll11 then
+I11I1IIll11 = pcall(restorefunction, l11I1IIll11[IIl1Ill1l11(_KEA[1323])])
 				end
 			end
-if not lIl11l1l11 and type(hookfunction) == l11IlIll11(_KMZ[1317]) then
-pcall(hookfunction, IIl11l1l11[l11IlIll11(_KMZ[1318])], IIl11l1l11[l11IlIll11(_KMZ[1319])])
+if not I11I1IIll11 and type(hookfunction) == IIl1Ill1l11(_KEA[497]) then
+pcall(hookfunction, l11I1IIll11[IIl1Ill1l11(_KEA[1324])], l11I1IIll11[IIl1Ill1l11(_KEA[1325])])
 			end
 		end
 	end
-function IIIlIIll11.StartStableCamera(Il111l1l11)
-Il111l1l11:StopStableCamera();
-local IIl11l1l11 = ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[1320]));
-local lIl11l1l11 = IIl11l1l11 and IIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[1321]));
-local I1l11l1l11 = lIl11l1l11 and lIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[1322]))
-if not I1l11l1l11 or not I1l11l1l11:IsA(l11IlIll11(_KMZ[1323])) then
+function l1IIlll1l11.StartStableCamera(ll1I1IIll11)
+ll1I1IIll11:StopStableCamera();
+local l11I1IIll11 = Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1326]));
+local I11I1IIll11 = l11I1IIll11 and l11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1327]));
+local lI1I1IIll11 = I11I1IIll11 and I11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1328]))
+if not lI1I1IIll11 or not lI1I1IIll11:IsA(IIl1Ill1l11(_KEA[1329])) then
 return
 		end
-local l1l11l1l11, Ill11l1l11 = pcall(require, I1l11l1l11)
-if not l1l11l1l11 or type(Ill11l1l11) ~= l11IlIll11(_KMZ[1324]) then
+local II1I1IIll11, llII1IIll11 = pcall(require, lI1I1IIll11)
+if not II1I1IIll11 or type(llII1IIll11) ~= IIl1Ill1l11(_KEA[1330]) then
 return
 		end
-if type(hookfunction) ~= l11IlIll11(_KMZ[1325]) then
+if type(hookfunction) ~= IIl1Ill1l11(_KEA[986]) then
 return
 		end
-local lll11l1l11 = {}
-for Il111l1l11, ll111l1l11 in ipairs({ l11IlIll11(_KMZ[1326]), l11IlIll11(_KMZ[1327]), l11IlIll11(_KMZ[1328]) }) do
-local IIl11l1l11 = Ill11l1l11[ll111l1l11]
-if type(IIl11l1l11) == l11IlIll11(_KMZ[1329]) then
-local Il111l1l11, ll111l1l11 = pcall(hookfunction, IIl11l1l11, function()
+local IlII1IIll11 = {}
+for ll1I1IIll11, Il1I1IIll11 in ipairs({ IIl1Ill1l11(_KEA[1331]), IIl1Ill1l11(_KEA[1332]), IIl1Ill1l11(_KEA[1333]) }) do
+local l11I1IIll11 = llII1IIll11[Il1I1IIll11]
+if type(l11I1IIll11) == IIl1Ill1l11(_KEA[1334]) then
+local ll1I1IIll11, Il1I1IIll11 = pcall(hookfunction, l11I1IIll11, function()
 return nil
 					end)
-if Il111l1l11 and type(ll111l1l11) == l11IlIll11(_KMZ[1330]) then
-lll11l1l11[#lll11l1l11 + 0B1] = { [l11IlIll11(_KMZ[1331])] = IIl11l1l11, [l11IlIll11(_KMZ[1332])] = ll111l1l11 }
+if ll1I1IIll11 and type(Il1I1IIll11) == IIl1Ill1l11(_KEA[975]) then
+IlII1IIll11[#IlII1IIll11 + 0B1] = { [IIl1Ill1l11(_KEA[1335])] = l11I1IIll11, [IIl1Ill1l11(_KEA[1336])] = Il1I1IIll11 }
 				end
 			end
 		end
-if #lll11l1l11 > 0B0 then
-Il111l1l11[l11IlIll11(_KMZ[840])] = lll11l1l11
+if #IlII1IIll11 > 0B0 then
+ll1I1IIll11[IIl1Ill1l11(_KEA[1337])] = IlII1IIll11
 		end
 	end
-function IIIlIIll11.BeginBattle(ll111l1l11, Il111l1l11)
-if ll111l1l11[l11IlIll11(_KMZ[1333])] == Il111l1l11 then
+function l1IIlll1l11.BeginBattle(Il1I1IIll11, ll1I1IIll11)
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1338])] == ll1I1IIll11 then
 return true
 		end
-ll111l1l11[l11IlIll11(_KMZ[1334])] = Il111l1l11
-lI11ll1l11[l11IlIll11(_KMZ[1335])] = true
-lIIlIIll11(tostring(workspace:GetAttribute(l11IlIll11(_KMZ[1336])) or l11IlIll11(_KMZ[1337])), 0B0, 0B0);
-I1l1ll1l11(l11IlIll11(_KMZ[1338]));
-I1l1ll1l11(l11IlIll11(_KMZ[1339]));
-IIl1IIll11();
-ll111l1l11[l11IlIll11(_KMZ[1340])] = lI11ll1l11[l11IlIll11(_KMZ[1341])] == true
-if ll111l1l11[l11IlIll11(_KMZ[1342])] and type(II11ll1l11[l11IlIll11(_KMZ[1343])]) == l11IlIll11(_KMZ[1344]) then
-pcall(II11ll1l11[l11IlIll11(_KMZ[1345])], false)
+Il1I1IIll11[IIl1Ill1l11(_KEA[1339])] = ll1I1IIll11
+I1lIIIIll11[IIl1Ill1l11(_KEA[1340])] = true
+I1IIlll1l11(tostring(workspace:GetAttribute(IIl1Ill1l11(_KEA[1341])) or IIl1Ill1l11(_KEA[1342])), 0B0, 0B0);
+lI1IIIIll11(IIl1Ill1l11(_KEA[1343]));
+lI1IIIIll11(IIl1Ill1l11(_KEA[1344]));
+l11Illl1l11();
+Il1I1IIll11[IIl1Ill1l11(_KEA[1345])] = I1lIIIIll11[IIl1Ill1l11(_KEA[1346])] == true
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1347])] and type(l1lIIIIll11[IIl1Ill1l11(_KEA[1348])]) == IIl1Ill1l11(_KEA[1349]) then
+pcall(l1lIIIIll11[IIl1Ill1l11(_KEA[1350])], false)
 		end
-I1l1ll1l11(l11IlIll11(_KMZ[1346]));
-lI11ll1l11[l11IlIll11(_KMZ[1347])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1348])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1349])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1350])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1351])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[1352])] = l11IlIll11(_KMZ[1353]);
-ll111l1l11:PauseOtherScripts();
-local IIl11l1l11, lIl11l1l11, I1l11l1l11 = ll111l1l11:WaitForReadyCharacter(0x8)
-if not IIl11l1l11 or not lIl11l1l11 or not I1l11l1l11 or Il111l1l11[l11IlIll11(_KMZ[1354])] == nil or workspace:GetAttribute(l11IlIll11(_KMZ[1355])) ~= true then
-ll111l1l11:RestoreBattle()
+lI1IIIIll11(IIl1Ill1l11(_KEA[1351]));
+I1lIIIIll11[IIl1Ill1l11(_KEA[1352])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1353])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1354])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1355])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1356])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[1357])] = IIl1Ill1l11(_KEA[1358]);
+Il1I1IIll11:PauseOtherScripts();
+local l11I1IIll11, I11I1IIll11, lI1I1IIll11 = Il1I1IIll11:WaitForReadyCharacter(0x8)
+if not l11I1IIll11 or not I11I1IIll11 or not lI1I1IIll11 or ll1I1IIll11[IIl1Ill1l11(_KEA[1359])] == nil or workspace:GetAttribute(IIl1Ill1l11(_KEA[1360])) ~= true then
+Il1I1IIll11:RestoreBattle()
 return false
 		end
-ll111l1l11[l11IlIll11(_KMZ[1356])] = IIl11l1l11
-ll111l1l11[l11IlIll11(_KMZ[1357])] = IIl11l1l11:GetPivot();
-ll111l1l11[l11IlIll11(_KMZ[1358])] = IlIlIIll11();
-ll111l1l11[l11IlIll11(_KMZ[1359])] = nil
-ll111l1l11:StartStableCamera();
-l111IIll11(0B1);
-task[l11IlIll11(_KMZ[1360])](.55)
-return lI11ll1l11[l11IlIll11(_KMZ[760])] and (ll111l1l11[l11IlIll11(_KMZ[1361])] and Il111l1l11[l11IlIll11(_KMZ[1362])] ~= nil)
+Il1I1IIll11[IIl1Ill1l11(_KEA[1361])] = l11I1IIll11
+Il1I1IIll11[IIl1Ill1l11(_KEA[1362])] = l11I1IIll11:GetPivot();
+Il1I1IIll11[IIl1Ill1l11(_KEA[1363])] = llll1ll1l11();
+Il1I1IIll11[IIl1Ill1l11(_KEA[1364])] = nil
+Il1I1IIll11:StartStableCamera();
+IIlIlll1l11(0B1);
+task[IIl1Ill1l11(_KEA[1365])](.55)
+return I1lIIIIll11[IIl1Ill1l11(_KEA[1366])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1367])] and ll1I1IIll11[IIl1Ill1l11(_KEA[1368])] ~= nil)
 	end
-function IIIlIIll11.GetBossProfile(ll111l1l11, Il111l1l11)
-local IIl11l1l11 = Il111l1l11 and ll111l1l11[l11IlIll11(_KMZ[1363])][Il111l1l11[l11IlIll11(_KMZ[1364])]]
-if IIl11l1l11 then
-return IIl11l1l11
+function l1IIlll1l11.GetBossProfile(Il1I1IIll11, ll1I1IIll11)
+local l11I1IIll11 = ll1I1IIll11 and Il1I1IIll11[IIl1Ill1l11(_KEA[1369])][ll1I1IIll11[IIl1Ill1l11(_KEA[1370])]]
+if l11I1IIll11 then
+return l11I1IIll11
 		end
-local lIl11l1l11 = Il111l1l11 and Il111l1l11:GetAttribute(l11IlIll11(_KMZ[1365]))
-if typeof(lIl11l1l11) == l11IlIll11(_KMZ[1366]) then
-for Il111l1l11, ll111l1l11 in pairs(ll111l1l11[l11IlIll11(_KMZ[1367])]) do
-if ll111l1l11[l11IlIll11(_KMZ[1368])] == lIl11l1l11 then
-return ll111l1l11
+local I11I1IIll11 = ll1I1IIll11 and ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1371]))
+if typeof(I11I1IIll11) == IIl1Ill1l11(_KEA[1372]) then
+for ll1I1IIll11, Il1I1IIll11 in pairs(Il1I1IIll11[IIl1Ill1l11(_KEA[1373])]) do
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1374])] == I11I1IIll11 then
+return Il1I1IIll11
 				end
 			end
 		end
-return ll111l1l11[l11IlIll11(_KMZ[1369])][l11IlIll11(_KMZ[1370])]
+return Il1I1IIll11[IIl1Ill1l11(_KEA[1375])][IIl1Ill1l11(_KEA[1376])]
 	end
-function IIIlIIll11.GetBossDodgePosition(l1l11l1l11, Il111l1l11, ll111l1l11, IIl11l1l11, lIl11l1l11, I1l11l1l11)
-local Ill11l1l11 = l1l11l1l11:GetBossProfile(Il111l1l11);
-local lll11l1l11 = Il111l1l11:GetAttribute(l11IlIll11(_KMZ[1371]));
-local IIIl1l1l11 = Il111l1l11:GetAttribute(l11IlIll11(_KMZ[1372]))
-if typeof(IIIl1l1l11) ~= l11IlIll11(_KMZ[1373]) then
-IIIl1l1l11 = CFrame[l11IlIll11(_KMZ[1374])](ll111l1l11[l11IlIll11(_KMZ[1375])]) * ll111l1l11[l11IlIll11(_KMZ[1376])][l11IlIll11(_KMZ[1377])]
+function l1IIlll1l11.GetBossDodgePosition(II1I1IIll11, ll1I1IIll11, Il1I1IIll11, l11I1IIll11, I11I1IIll11, lI1I1IIll11)
+local llII1IIll11 = II1I1IIll11:GetBossProfile(ll1I1IIll11);
+local IlII1IIll11 = ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1377]));
+local l1II1IIll11 = ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1378]))
+if typeof(l1II1IIll11) ~= IIl1Ill1l11(_KEA[1379]) then
+l1II1IIll11 = CFrame[IIl1Ill1l11(_KEA[1380])](Il1I1IIll11[IIl1Ill1l11(_KEA[1381])]) * Il1I1IIll11[IIl1Ill1l11(_KEA[1382])][IIl1Ill1l11(_KEA[1383])]
 		end
-local lIIl1l1l11 = lIl11l1l11[l11IlIll11(_KMZ[1378])][l11IlIll11(_KMZ[1379])] * .5
-if lll11l1l11 == l11IlIll11(_KMZ[1380]) and not I1l11l1l11 then
-local Il111l1l11 = math[l11IlIll11(_KMZ[1381])](Ill11l1l11[l11IlIll11(_KMZ[1382])] * .38, math[l11IlIll11(_KMZ[1383])](0xC, IIl11l1l11[l11IlIll11(_KMZ[1384])][l11IlIll11(_KMZ[1385])] * .38))
-return (IIIl1l1l11[l11IlIll11(_KMZ[1386])] - IIIl1l1l11[l11IlIll11(_KMZ[1387])] * Il111l1l11) + IIIl1l1l11[l11IlIll11(_KMZ[1388])] * math[l11IlIll11(_KMZ[1389])](lIIl1l1l11 + 0B11, IIl11l1l11[l11IlIll11(_KMZ[1390])][l11IlIll11(_KMZ[1391])] * .28)
+local I1II1IIll11 = I11I1IIll11[IIl1Ill1l11(_KEA[1384])][IIl1Ill1l11(_KEA[1385])] * .5
+if IlII1IIll11 == IIl1Ill1l11(_KEA[1386]) and not lI1I1IIll11 then
+local ll1I1IIll11 = math[IIl1Ill1l11(_KEA[1387])](llII1IIll11[IIl1Ill1l11(_KEA[1388])] * .38, math[IIl1Ill1l11(_KEA[1389])](0xC, l11I1IIll11[IIl1Ill1l11(_KEA[1390])][IIl1Ill1l11(_KEA[1391])] * .38))
+return (l1II1IIll11[IIl1Ill1l11(_KEA[1392])] - l1II1IIll11[IIl1Ill1l11(_KEA[1393])] * ll1I1IIll11) + l1II1IIll11[IIl1Ill1l11(_KEA[1394])] * math[IIl1Ill1l11(_KEA[1395])](I1II1IIll11 + 0B11, l11I1IIll11[IIl1Ill1l11(_KEA[1396])][IIl1Ill1l11(_KEA[1397])] * .28)
 		end
-return IIIl1l1l11[l11IlIll11(_KMZ[266])] + IIIl1l1l11[l11IlIll11(_KMZ[1392])] * ((Ill11l1l11[l11IlIll11(_KMZ[1393])] + lIIl1l1l11) + 0xE)
+return l1II1IIll11[IIl1Ill1l11(_KEA[1398])] + l1II1IIll11[IIl1Ill1l11(_KEA[1399])] * ((llII1IIll11[IIl1Ill1l11(_KEA[1400])] + I1II1IIll11) + 0xE)
 	end
-function IIIlIIll11.RestoreBattle(Il111l1l11)
-local ll111l1l11 = IIIl1l1l11[l11IlIll11(_KMZ[1394])]
-local IIl11l1l11 = ll111l1l11 and ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[1395]))
-if ll111l1l11 and (IIl11l1l11 and Il111l1l11[l11IlIll11(_KMZ[1396])]) then
-ll111l1l11:PivotTo(Il111l1l11[l11IlIll11(_KMZ[1397])]);
-IIl11l1l11[l11IlIll11(_KMZ[1398])] = Vector3[l11IlIll11(_KMZ[1399])]
-IIl11l1l11[l11IlIll11(_KMZ[1400])] = Vector3[l11IlIll11(_KMZ[1401])]
+function l1IIlll1l11.RestoreBattle(ll1I1IIll11)
+local Il1I1IIll11 = l1II1IIll11[IIl1Ill1l11(_KEA[1401])]
+local l11I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1402]))
+if Il1I1IIll11 and (l11I1IIll11 and ll1I1IIll11[IIl1Ill1l11(_KEA[1403])]) then
+Il1I1IIll11:PivotTo(ll1I1IIll11[IIl1Ill1l11(_KEA[1404])]);
+l11I1IIll11[IIl1Ill1l11(_KEA[1405])] = Vector3[IIl1Ill1l11(_KEA[1406])]
+l11I1IIll11[IIl1Ill1l11(_KEA[1407])] = Vector3[IIl1Ill1l11(_KEA[1408])]
 		end
-if Il111l1l11[l11IlIll11(_KMZ[1402])] then
-l111IIll11(Il111l1l11[l11IlIll11(_KMZ[1403])])
+if ll1I1IIll11[IIl1Ill1l11(_KEA[1409])] then
+IIlIlll1l11(ll1I1IIll11[IIl1Ill1l11(_KEA[1410])])
 		end
-Il111l1l11:StopStableCamera();
-llIlll1l11();
-Il111l1l11[l11IlIll11(_KMZ[1404])] = nil
-Il111l1l11[l11IlIll11(_KMZ[1405])] = nil
-Il111l1l11[l11IlIll11(_KMZ[1406])] = nil
-Il111l1l11[l11IlIll11(_KMZ[1407])] = nil
-Il111l1l11[l11IlIll11(_KMZ[1408])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[1409])] = false
-Il111l1l11:RestoreOtherScripts();
-local lIl11l1l11 = Il111l1l11[l11IlIll11(_KMZ[1410])]
-Il111l1l11[l11IlIll11(_KMZ[1411])] = false
-if lI11ll1l11[l11IlIll11(_KMZ[1412])] then
-ll11IIll11();
-l11IIIll11()
-if lI11ll1l11[l11IlIll11(_KMZ[1413])] and not lI11ll1l11[l11IlIll11(_KMZ[1414])] then
-lIl1IIll11()
+ll1I1IIll11:StopStableCamera();
+Illllll1l11();
+ll1I1IIll11[IIl1Ill1l11(_KEA[1411])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[1412])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[1413])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[1414])] = nil
+ll1I1IIll11[IIl1Ill1l11(_KEA[1415])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[1416])] = false
+ll1I1IIll11:RestoreOtherScripts();
+local I11I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[1417])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[1418])] = false
+if I1lIIIIll11[IIl1Ill1l11(_KEA[1419])] then
+Il1Illl1l11();
+IIl1lll1l11()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[1420])] and not I1lIIIIll11[IIl1Ill1l11(_KEA[1421])] then
+I11Illl1l11()
 			end
-if lIl11l1l11 and (not lI11ll1l11[l11IlIll11(_KMZ[1415])] and type(II11ll1l11[l11IlIll11(_KMZ[1416])]) == l11IlIll11(_KMZ[1128])) then
-task[l11IlIll11(_KMZ[1417])](function()
-if lI11ll1l11[l11IlIll11(_KMZ[373])] and (not lI11ll1l11[l11IlIll11(_KMZ[1418])] and not lI11ll1l11[l11IlIll11(_KMZ[1419])]) then
-pcall(II11ll1l11[l11IlIll11(_KMZ[1420])], true)
+if I11I1IIll11 and (not I1lIIIIll11[IIl1Ill1l11(_KEA[1422])] and type(l1lIIIIll11[IIl1Ill1l11(_KEA[1423])]) == IIl1Ill1l11(_KEA[1052])) then
+task[IIl1Ill1l11(_KEA[1424])](function()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[1425])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[1426])] and not I1lIIIIll11[IIl1Ill1l11(_KEA[1427])]) then
+pcall(l1lIIIIll11[IIl1Ill1l11(_KEA[1428])], true)
 					end
 				end)
 			end
 		end
 	end
-function IIIlIIll11.CollectChest(IIl11l1l11, Il111l1l11)
-local lIl11l1l11 = false
-local I1l11l1l11
-local l1l11l1l11 = ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[1421]));
-local Ill11l1l11 = l1l11l1l11 and l1l11l1l11:FindFirstChild(l11IlIll11(_KMZ[1422]))
-if Ill11l1l11 and Ill11l1l11:IsA(l11IlIll11(_KMZ[1423])) then
-I1l11l1l11 = Ill11l1l11[l11IlIll11(_KMZ[1424])]:Connect(function()
-lIl11l1l11 = true
+function l1IIlll1l11.CollectChest(l11I1IIll11, ll1I1IIll11)
+local I11I1IIll11 = false
+local lI1I1IIll11
+local II1I1IIll11 = Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1429]));
+local llII1IIll11 = II1I1IIll11 and II1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1430]))
+if llII1IIll11 and llII1IIll11:IsA(IIl1Ill1l11(_KEA[1431])) then
+lI1I1IIll11 = llII1IIll11[IIl1Ill1l11(_KEA[1432])]:Connect(function()
+I11I1IIll11 = true
 				end)
 		end
-local function lIIl1l1l11(Il111l1l11)
-if I1l11l1l11 then
-I1l11l1l11:Disconnect()
+local function I1II1IIll11(ll1I1IIll11)
+if lI1I1IIll11 then
+lI1I1IIll11:Disconnect()
 			end
-return Il111l1l11
+return ll1I1IIll11
 		end
-local l1Il1l1l11 = os[l11IlIll11(_KMZ[1425])]() + (tonumber(Il111l1l11) or 0xF);
-local IlIl1l1l11 = false
-local llIl1l1l11 = false
-local II1l1l1l11 = 0B0
-while lI11ll1l11[l11IlIll11(_KMZ[1426])] and (IIl11l1l11[l11IlIll11(_KMZ[1427])] and os[l11IlIll11(_KMZ[1428])]() < l1Il1l1l11) do
-if lIl11l1l11 then
-lIIlIIll11(l11IlIll11(_KMZ[1429]))
-return lIIl1l1l11(true)
+local IIII1IIll11 = os[IIl1Ill1l11(_KEA[1433])]() + (tonumber(ll1I1IIll11) or 0xF);
+local llllIIIll11 = false
+local IlllIIIll11 = false
+local l1llIIIll11 = 0B0
+while I1lIIIIll11[IIl1Ill1l11(_KEA[1434])] and (l11I1IIll11[IIl1Ill1l11(_KEA[1435])] and os[IIl1Ill1l11(_KEA[1436])]() < IIII1IIll11) do
+if I11I1IIll11 then
+I1IIlll1l11(IIl1Ill1l11(_KEA[1437]))
+return I1II1IIll11(true)
 			end
-local Il111l1l11
-local ll111l1l11
-for IIl11l1l11, lIl11l1l11 in ipairs(lll11l1l11:GetTagged(l11IlIll11(_KMZ[1430]))) do
-ll111l1l11 = lIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[1431]), true)
-if ll111l1l11 then
-Il111l1l11 = lIl11l1l11
+local ll1I1IIll11
+local Il1I1IIll11
+for l11I1IIll11, I11I1IIll11 in ipairs(IlII1IIll11:GetTagged(IIl1Ill1l11(_KEA[1438]))) do
+Il1I1IIll11 = I11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1439]), true)
+if Il1I1IIll11 then
+ll1I1IIll11 = I11I1IIll11
 break
 				end
 			end
-if not ll111l1l11 then
-local IIl11l1l11 = workspace:FindFirstChild(l11IlIll11(_KMZ[1432]))
-ll111l1l11 = IIl11l1l11 and IIl11l1l11:FindFirstChild(l11IlIll11(_KMZ[1433]), true)
-Il111l1l11 = ll111l1l11 and ll111l1l11:FindFirstAncestorOfClass(l11IlIll11(_KMZ[1434])) or nil
+if not Il1I1IIll11 then
+local l11I1IIll11 = workspace:FindFirstChild(IIl1Ill1l11(_KEA[1440]))
+Il1I1IIll11 = l11I1IIll11 and l11I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1441]), true)
+ll1I1IIll11 = Il1I1IIll11 and Il1I1IIll11:FindFirstAncestorOfClass(IIl1Ill1l11(_KEA[1442])) or nil
 			end
-local IIl11l1l11 = IIIl1l1l11:GetAttribute(l11IlIll11(_KMZ[1435])) == true
-local I1l11l1l11 = IIIl1l1l11:GetAttribute(l11IlIll11(_KMZ[1436])) == true
-if I1l11l1l11 then
-IlIl1l1l11 = true
-			elseif llIl1l1l11 and IlIl1l1l11 then
-lIIlIIll11(l11IlIll11(_KMZ[1437]))
-return lIIl1l1l11(true)
+local l11I1IIll11 = l1II1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1443])) == true
+local lI1I1IIll11 = l1II1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1444])) == true
+if lI1I1IIll11 then
+llllIIIll11 = true
+			elseif IlllIIIll11 and llllIIIll11 then
+I1IIlll1l11(IIl1Ill1l11(_KEA[1445]))
+return I1II1IIll11(true)
 			end
-local l1l11l1l11 = Il111l1l11 and Il111l1l11:GetAttribute(l11IlIll11(_KMZ[1438])) == true
-if ll111l1l11 and (ll111l1l11:IsA(l11IlIll11(_KMZ[1439])) and (IIl11l1l11 and (I1l11l1l11 and not l1l11l1l11))) then
-lIIlIIll11(l11IlIll11(_KMZ[1440]));
-local Il111l1l11 = I1Illl1l11();
-local IIl11l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[1441]));
-local lIl11l1l11 = ll111l1l11[l11IlIll11(_KMZ[1442])]
-if Il111l1l11 and (IIl11l1l11 and (lIl11l1l11 and lIl11l1l11:IsA(l11IlIll11(_KMZ[1443])))) then
-Il111l1l11:PivotTo(lIl11l1l11[l11IlIll11(_KMZ[1444])] * CFrame[l11IlIll11(_KMZ[1445])](0B0, math[l11IlIll11(_KMZ[1446])](0B100, lIl11l1l11[l11IlIll11(_KMZ[1447])][l11IlIll11(_KMZ[1448])] * .5 + 0B11), 0B0));
-IIl11l1l11[l11IlIll11(_KMZ[1449])] = Vector3[l11IlIll11(_KMZ[1450])]
-IIl11l1l11[l11IlIll11(_KMZ[1451])] = Vector3[l11IlIll11(_KMZ[1452])]
-task[l11IlIll11(_KMZ[1453])](.12)
+local II1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1446])) == true
+if Il1I1IIll11 and (Il1I1IIll11:IsA(IIl1Ill1l11(_KEA[1447])) and (l11I1IIll11 and (lI1I1IIll11 and not II1I1IIll11))) then
+I1IIlll1l11(IIl1Ill1l11(_KEA[1448]));
+local ll1I1IIll11 = lIIIIIIll11();
+local l11I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1449]));
+local I11I1IIll11 = Il1I1IIll11[IIl1Ill1l11(_KEA[1450])]
+if ll1I1IIll11 and (l11I1IIll11 and (I11I1IIll11 and I11I1IIll11:IsA(IIl1Ill1l11(_KEA[1451])))) then
+ll1I1IIll11:PivotTo(I11I1IIll11[IIl1Ill1l11(_KEA[1452])] * CFrame[IIl1Ill1l11(_KEA[1453])](0B0, math[IIl1Ill1l11(_KEA[1454])](0x4, I11I1IIll11[IIl1Ill1l11(_KEA[1455])][IIl1Ill1l11(_KEA[1385])] * .5 + 0B11), 0B0));
+l11I1IIll11[IIl1Ill1l11(_KEA[1456])] = Vector3[IIl1Ill1l11(_KEA[1457])]
+l11I1IIll11[IIl1Ill1l11(_KEA[1458])] = Vector3[IIl1Ill1l11(_KEA[1459])]
+task[IIl1Ill1l11(_KEA[1460])](.12)
 				end
-if ll111l1l11[l11IlIll11(_KMZ[1454])] and os[l11IlIll11(_KMZ[1455])]() - II1l1l1l11 >= .45 then
-II1l1l1l11 = os[l11IlIll11(_KMZ[1456])]();
-local Il111l1l11 = false
-if type(I1Il1l1l11[l11IlIll11(_KMZ[1457])]) == l11IlIll11(_KMZ[1458]) then
-Il111l1l11 = pcall(I1Il1l1l11[l11IlIll11(_KMZ[1459])], ll111l1l11)
-					elseif type(fireproximityprompt) == l11IlIll11(_KMZ[1460]) then
-Il111l1l11 = pcall(fireproximityprompt, ll111l1l11)
+if Il1I1IIll11[IIl1Ill1l11(_KEA[1461])] and os[IIl1Ill1l11(_KEA[1462])]() - l1llIIIll11 >= .45 then
+l1llIIIll11 = os[IIl1Ill1l11(_KEA[1463])]();
+local ll1I1IIll11 = false
+if type(lIII1IIll11[IIl1Ill1l11(_KEA[1464])]) == IIl1Ill1l11(_KEA[1465]) then
+ll1I1IIll11 = pcall(lIII1IIll11[IIl1Ill1l11(_KEA[1466])], Il1I1IIll11)
+					elseif type(fireproximityprompt) == IIl1Ill1l11(_KEA[1467]) then
+ll1I1IIll11 = pcall(fireproximityprompt, Il1I1IIll11)
 					else
-Il111l1l11 = pcall(function()
-ll111l1l11:InputHoldBegin();
-task[l11IlIll11(_KMZ[1461])](math[l11IlIll11(_KMZ[1462])](.05, tonumber(ll111l1l11[l11IlIll11(_KMZ[1463])]) or 0B0) + .05);
-ll111l1l11:InputHoldEnd()
+ll1I1IIll11 = pcall(function()
+Il1I1IIll11:InputHoldBegin();
+task[IIl1Ill1l11(_KEA[1468])](math[IIl1Ill1l11(_KEA[1469])](.05, tonumber(Il1I1IIll11[IIl1Ill1l11(_KEA[1470])]) or 0B0) + .05);
+Il1I1IIll11:InputHoldEnd()
 							end)
 					end
-llIl1l1l11 = Il111l1l11 or llIl1l1l11
+IlllIIIll11 = ll1I1IIll11 or IlllIIIll11
 				end
 			end
-task[l11IlIll11(_KMZ[1360])](.1)
+task[IIl1Ill1l11(_KEA[1471])](.1)
 		end
-return lIIl1l1l11(lIl11l1l11 or llIl1l1l11 and (IlIl1l1l11 and IIIl1l1l11:GetAttribute(l11IlIll11(_KMZ[1464])) ~= true))
+return I1II1IIll11(I11I1IIll11 or IlllIIIll11 and (llllIIIll11 and l1II1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1472])) ~= true))
 	end
-function IIIlIIll11.Fight(IIl11l1l11, ll111l1l11)
-if not IIl11l1l11:BeginBattle(ll111l1l11) then
+function l1IIlll1l11.Fight(l11I1IIll11, Il1I1IIll11)
+if not l11I1IIll11:BeginBattle(Il1I1IIll11) then
 return
 		end
-local lIl11l1l11 = l1IlIIll11();
-local I1l11l1l11 = 0B0
-local l1l11l1l11 = 0B0
-local Ill11l1l11 = 0B0
-local lll11l1l11 = nil
-local lIIl1l1l11 = 0B0
-local I1Il1l1l11 = 0B0
-local l1Il1l1l11 = 0B0
-while lI11ll1l11[l11IlIll11(_KMZ[1465])] and (IIl11l1l11[l11IlIll11(_KMZ[1466])] and (ll111l1l11[l11IlIll11(_KMZ[1467])] and workspace:GetAttribute(l11IlIll11(_KMZ[1468])) == true)) do
-local IlIl1l1l11, llIl1l1l11, II1l1l1l11 = I1IlIIll11()
-if IlIl1l1l11 ~= ll111l1l11 or not llIl1l1l11 or not II1l1l1l11 then
+local I11I1IIll11 = IIIIlll1l11();
+local lI1I1IIll11 = 0B0
+local II1I1IIll11 = 0B0
+local llII1IIll11 = 0B0
+local IlII1IIll11 = nil
+local I1II1IIll11 = 0B0
+local lIII1IIll11 = 0B0
+local IIII1IIll11 = 0B0
+while I1lIIIIll11[IIl1Ill1l11(_KEA[1473])] and (l11I1IIll11[IIl1Ill1l11(_KEA[1474])] and (Il1I1IIll11[IIl1Ill1l11(_KEA[1475])] and workspace:GetAttribute(IIl1Ill1l11(_KEA[1476])) == true)) do
+local llllIIIll11, IlllIIIll11, l1llIIIll11 = lIIIlll1l11()
+if llllIIIll11 ~= Il1I1IIll11 or not IlllIIIll11 or not l1llIIIll11 then
 break
 			end
-local lI1l1l1l11 = I1Illl1l11();
-local I11l1l1l11 = lI1l1l1l11 and lI1l1l1l11:FindFirstChild(l11IlIll11(_KMZ[1469]));
-local l11l1l1l11 = lI1l1l1l11 and lI1l1l1l11:FindFirstChildWhichIsA(l11IlIll11(_KMZ[1470]));
-local Il1l1l1l11 = I1IIIIll11()
-if not lI1l1l1l11 or not I11l1l1l11 or not l11l1l1l11 or l11l1l1l11[l11IlIll11(_KMZ[1471])] <= 0B0 or not Il1l1l1l11 then
+local I1llIIIll11 = lIIIIIIll11();
+local lIllIIIll11 = I1llIIIll11 and I1llIIIll11:FindFirstChild(IIl1Ill1l11(_KEA[1477]));
+local IIllIIIll11 = I1llIIIll11 and I1llIIIll11:FindFirstChildWhichIsA(IIl1Ill1l11(_KEA[1478]));
+local ll1lIIIll11 = lIIllll1l11()
+if not I1llIIIll11 or not lIllIIIll11 or not IIllIIIll11 or IIllIIIll11[IIl1Ill1l11(_KEA[1479])] <= 0B0 or not ll1lIIIll11 then
 break
 			end
-local ll1l1l1l11 = os[l11IlIll11(_KMZ[1472])]()
-if lll11l1l11 and l11l1l1l11[l11IlIll11(_KMZ[1473])] < lll11l1l11 then
-l1Il1l1l11 = ll1l1l1l11 + 1.6
+local Il1lIIIll11 = os[IIl1Ill1l11(_KEA[1480])]()
+if IlII1IIll11 and IIllIIIll11[IIl1Ill1l11(_KEA[1481])] < IlII1IIll11 then
+IIII1IIll11 = Il1lIIIll11 + 1.6
 			end
-lll11l1l11 = l11l1l1l11[l11IlIll11(_KMZ[1474])]
-local IIll1l1l11 = IIl11l1l11:GetBossProfile(ll111l1l11);
-local lIll1l1l11 = ll111l1l11:GetAttribute(l11IlIll11(_KMZ[1475]));
-local I1ll1l1l11 = ll111l1l11:GetAttribute(l11IlIll11(_KMZ[1476]));
-local l1ll1l1l11 = workspace:GetServerTimeNow();
-local Illl1l1l11 = 0B0
+IlII1IIll11 = IIllIIIll11[IIl1Ill1l11(_KEA[1482])]
+local l11lIIIll11 = l11I1IIll11:GetBossProfile(Il1I1IIll11);
+local I11lIIIll11 = Il1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1483]));
+local lI1lIIIll11 = Il1I1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1484]));
+local II1lIIIll11 = workspace:GetServerTimeNow();
+local llIlIIIll11 = 0B0
 pcall(function()
-Illl1l1l11 = math[l11IlIll11(_KMZ[1477])](IIIl1l1l11:GetNetworkPing() * 1.5, 0B0, .8)
+llIlIIIll11 = math[IIl1Ill1l11(_KEA[1485])](l1II1IIll11:GetNetworkPing() * 1.5, 0B0, .8)
 			end);
-local llll1l1l11 = IIll1l1l11[l11IlIll11(_KMZ[1478])] + Illl1l1l11
-local IIIIll1l11 = (lIll1l1l11 == l11IlIll11(_KMZ[1479]) or lIll1l1l11 == l11IlIll11(_KMZ[1480])) and (typeof(I1ll1l1l11) == l11IlIll11(_KMZ[1481]) and (l1ll1l1l11 >= I1ll1l1l11 - llll1l1l11 and l1ll1l1l11 <= I1ll1l1l11 + .48))
-if ll1l1l1l11 >= lIIl1l1l11 then
-lIIl1l1l11 = ll1l1l1l11 + .25
-local ll111l1l11 = math[l11IlIll11(_KMZ[1482])](II1l1l1l11[l11IlIll11(_KMZ[1483])][l11IlIll11(_KMZ[1484])] * .1, llIl1l1l11[l11IlIll11(_KMZ[1485])][l11IlIll11(_KMZ[1486])] * .14);
-local IIl11l1l11 = II1l1l1l11[l11IlIll11(_KMZ[1487])] - II1l1l1l11[l11IlIll11(_KMZ[770])][l11IlIll11(_KMZ[1488])] * ll111l1l11
-local lIl11l1l11 = II1l1l1l11[l11IlIll11(_KMZ[1489])] + II1l1l1l11[l11IlIll11(_KMZ[1490])][l11IlIll11(_KMZ[1491])] * ll111l1l11
-local I1l11l1l11 = math[l11IlIll11(_KMZ[1492])]
-local l1l11l1l11 = math[l11IlIll11(_KMZ[1493])]
-local Ill11l1l11 = false
-for Il111l1l11, ll111l1l11 in ipairs(Il111l1l11:GetPlayers()) do
-if ll111l1l11 ~= IIIl1l1l11 then
-local Il111l1l11 = ll111l1l11[l11IlIll11(_KMZ[1494])]
-local lll11l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[1495]))
-if lll11l1l11 then
-I1l11l1l11 = math[l11IlIll11(_KMZ[1496])](I1l11l1l11, (lll11l1l11[l11IlIll11(_KMZ[1497])] - IIl11l1l11)[l11IlIll11(_KMZ[1498])])
-l1l11l1l11 = math[l11IlIll11(_KMZ[1499])](l1l11l1l11, (lll11l1l11[l11IlIll11(_KMZ[1500])] - lIl11l1l11)[l11IlIll11(_KMZ[1501])])
-if math[l11IlIll11(_KMZ[1502])]((lll11l1l11[l11IlIll11(_KMZ[1503])] - IIl11l1l11)[l11IlIll11(_KMZ[1504])], (lll11l1l11[l11IlIll11(_KMZ[1505])] - lIl11l1l11)[l11IlIll11(_KMZ[1506])]) < 0x50 then
-Ill11l1l11 = true
+local IlIlIIIll11 = l11lIIIll11[IIl1Ill1l11(_KEA[1486])] + llIlIIIll11
+local l1IlIIIll11 = (I11lIIIll11 == IIl1Ill1l11(_KEA[1487]) or I11lIIIll11 == IIl1Ill1l11(_KEA[1488])) and (typeof(lI1lIIIll11) == IIl1Ill1l11(_KEA[1489]) and (II1lIIIll11 >= lI1lIIIll11 - IlIlIIIll11 and II1lIIIll11 <= lI1lIIIll11 + .48))
+if Il1lIIIll11 >= I1II1IIll11 then
+I1II1IIll11 = Il1lIIIll11 + .25
+local Il1I1IIll11 = math[IIl1Ill1l11(_KEA[1490])](l1llIIIll11[IIl1Ill1l11(_KEA[1491])][IIl1Ill1l11(_KEA[1492])] * .1, IlllIIIll11[IIl1Ill1l11(_KEA[1493])][IIl1Ill1l11(_KEA[1494])] * .14);
+local l11I1IIll11 = l1llIIIll11[IIl1Ill1l11(_KEA[1495])] - l1llIIIll11[IIl1Ill1l11(_KEA[1496])][IIl1Ill1l11(_KEA[1497])] * Il1I1IIll11
+local I11I1IIll11 = l1llIIIll11[IIl1Ill1l11(_KEA[1498])] + l1llIIIll11[IIl1Ill1l11(_KEA[1499])][IIl1Ill1l11(_KEA[1500])] * Il1I1IIll11
+local lI1I1IIll11 = math[IIl1Ill1l11(_KEA[1501])]
+local II1I1IIll11 = math[IIl1Ill1l11(_KEA[1502])]
+local llII1IIll11 = false
+for ll1I1IIll11, Il1I1IIll11 in ipairs(ll1I1IIll11:GetPlayers()) do
+if Il1I1IIll11 ~= l1II1IIll11 then
+local ll1I1IIll11 = Il1I1IIll11[IIl1Ill1l11(_KEA[1503])]
+local IlII1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1504]))
+if IlII1IIll11 then
+lI1I1IIll11 = math[IIl1Ill1l11(_KEA[1505])](lI1I1IIll11, (IlII1IIll11[IIl1Ill1l11(_KEA[1506])] - l11I1IIll11)[IIl1Ill1l11(_KEA[1507])])
+II1I1IIll11 = math[IIl1Ill1l11(_KEA[1508])](II1I1IIll11, (IlII1IIll11[IIl1Ill1l11(_KEA[295])] - I11I1IIll11)[IIl1Ill1l11(_KEA[1509])])
+if math[IIl1Ill1l11(_KEA[1510])]((IlII1IIll11[IIl1Ill1l11(_KEA[1511])] - l11I1IIll11)[IIl1Ill1l11(_KEA[1512])], (IlII1IIll11[IIl1Ill1l11(_KEA[1513])] - I11I1IIll11)[IIl1Ill1l11(_KEA[1514])]) < 0x50 then
+llII1IIll11 = true
 							end
 						end
 					end
 				end
-if not Ill11l1l11 then
-I1Il1l1l11 = 0B0
-				elseif I1Il1l1l11 == 0B0 then
-I1Il1l1l11 = l1l11l1l11 > I1l11l1l11 and 0B1 or -0B1
-				elseif I1Il1l1l11 == 0B1 then
-if I1l11l1l11 > l1l11l1l11 + 0x8 then
-I1Il1l1l11 = -0B1
+if not llII1IIll11 then
+lIII1IIll11 = 0B0
+				elseif lIII1IIll11 == 0B0 then
+lIII1IIll11 = II1I1IIll11 > lI1I1IIll11 and 0B1 or -0B1
+				elseif lIII1IIll11 == 0B1 then
+if lI1I1IIll11 > II1I1IIll11 + 0B1000 then
+lIII1IIll11 = -0B1
 					end
-				elseif l1l11l1l11 > I1l11l1l11 + 0x8 then
-I1Il1l1l11 = 0B1
+				elseif II1I1IIll11 > lI1I1IIll11 + 0x8 then
+lIII1IIll11 = 0B1
 				end
 			end
-local lIIIll1l11
-if IIIIll1l11 or ll1l1l1l11 < l1Il1l1l11 then
-lIIIll1l11 = IIl11l1l11:GetBossDodgePosition(ll111l1l11, llIl1l1l11, II1l1l1l11, I11l1l1l11, ll1l1l1l11 < l1Il1l1l11 or lIll1l1l11 ~= l11IlIll11(_KMZ[1507]));
-IIl11l1l11[l11IlIll11(_KMZ[1508])] = nil
+local I1IlIIIll11
+if l1IlIIIll11 or Il1lIIIll11 < IIII1IIll11 then
+I1IlIIIll11 = l11I1IIll11:GetBossDodgePosition(Il1I1IIll11, IlllIIIll11, l1llIIIll11, lIllIIIll11, Il1lIIIll11 < IIII1IIll11 or I11lIIIll11 ~= IIl1Ill1l11(_KEA[1515]));
+l11I1IIll11[IIl1Ill1l11(_KEA[1414])] = nil
 			else
-local Il111l1l11 = (II1l1l1l11[l11IlIll11(_KMZ[1509])][l11IlIll11(_KMZ[1510])] * math[l11IlIll11(_KMZ[1511])](II1l1l1l11[l11IlIll11(_KMZ[1512])][l11IlIll11(_KMZ[1513])] * .1, llIl1l1l11[l11IlIll11(_KMZ[1514])][l11IlIll11(_KMZ[1515])] * .14)) * I1Il1l1l11
-local ll111l1l11 = (II1l1l1l11[l11IlIll11(_KMZ[1516])] + Il111l1l11) + Vector3[l11IlIll11(_KMZ[1517])](0B0, II1l1l1l11[l11IlIll11(_KMZ[1518])][l11IlIll11(_KMZ[1519])] * .37, 0B0);
-local lIl11l1l11 = llIl1l1l11[l11IlIll11(_KMZ[1520])]:PointToObjectSpace(ll111l1l11);
-local I1l11l1l11 = llIl1l1l11[l11IlIll11(_KMZ[1521])] * .42
-local l1l11l1l11 = I11l1l1l11[l11IlIll11(_KMZ[1522])] * .5
-lIl11l1l11 = Vector3[l11IlIll11(_KMZ[260])](math[l11IlIll11(_KMZ[1523])](lIl11l1l11[l11IlIll11(_KMZ[1524])], -math[l11IlIll11(_KMZ[1525])](0B0, I1l11l1l11[l11IlIll11(_KMZ[1526])] - l1l11l1l11[l11IlIll11(_KMZ[1527])]), math[l11IlIll11(_KMZ[1528])](0B0, I1l11l1l11[l11IlIll11(_KMZ[1529])] - l1l11l1l11[l11IlIll11(_KMZ[1530])])), math[l11IlIll11(_KMZ[1531])](lIl11l1l11[l11IlIll11(_KMZ[1532])], -math[l11IlIll11(_KMZ[1533])](0B0, I1l11l1l11[l11IlIll11(_KMZ[1534])] - l1l11l1l11[l11IlIll11(_KMZ[1535])]), math[l11IlIll11(_KMZ[1536])](0B0, I1l11l1l11[l11IlIll11(_KMZ[1537])] - l1l11l1l11[l11IlIll11(_KMZ[1538])])), math[l11IlIll11(_KMZ[1539])](lIl11l1l11[l11IlIll11(_KMZ[1540])], -math[l11IlIll11(_KMZ[1541])](0B0, I1l11l1l11[l11IlIll11(_KMZ[1542])] - l1l11l1l11[l11IlIll11(_KMZ[1543])]), math[l11IlIll11(_KMZ[1544])](0B0, I1l11l1l11[l11IlIll11(_KMZ[1545])] - l1l11l1l11[l11IlIll11(_KMZ[1546])])))
-ll111l1l11 = llIl1l1l11[l11IlIll11(_KMZ[1547])]:PointToWorldSpace(lIl11l1l11)
-if not IIl11l1l11[l11IlIll11(_KMZ[1548])] or (ll111l1l11 - IIl11l1l11[l11IlIll11(_KMZ[1549])])[l11IlIll11(_KMZ[1550])] > 0x2D then
-IIl11l1l11[l11IlIll11(_KMZ[1551])] = ll111l1l11
+local ll1I1IIll11 = (l1llIIIll11[IIl1Ill1l11(_KEA[1516])][IIl1Ill1l11(_KEA[1517])] * math[IIl1Ill1l11(_KEA[1518])](l1llIIIll11[IIl1Ill1l11(_KEA[1519])][IIl1Ill1l11(_KEA[333])] * .1, IlllIIIll11[IIl1Ill1l11(_KEA[1520])][IIl1Ill1l11(_KEA[1521])] * .14)) * lIII1IIll11
+local Il1I1IIll11 = (l1llIIIll11[IIl1Ill1l11(_KEA[1522])] + ll1I1IIll11) + Vector3[IIl1Ill1l11(_KEA[260])](0B0, l1llIIIll11[IIl1Ill1l11(_KEA[1523])][IIl1Ill1l11(_KEA[1524])] * .37, 0B0);
+local I11I1IIll11 = IlllIIIll11[IIl1Ill1l11(_KEA[1452])]:PointToObjectSpace(Il1I1IIll11);
+local lI1I1IIll11 = IlllIIIll11[IIl1Ill1l11(_KEA[1525])] * .42
+local II1I1IIll11 = lIllIIIll11[IIl1Ill1l11(_KEA[1526])] * .5
+I11I1IIll11 = Vector3[IIl1Ill1l11(_KEA[1527])](math[IIl1Ill1l11(_KEA[1528])](I11I1IIll11[IIl1Ill1l11(_KEA[1529])], -math[IIl1Ill1l11(_KEA[1530])](0B0, lI1I1IIll11[IIl1Ill1l11(_KEA[1531])] - II1I1IIll11[IIl1Ill1l11(_KEA[1532])]), math[IIl1Ill1l11(_KEA[1533])](0B0, lI1I1IIll11[IIl1Ill1l11(_KEA[1534])] - II1I1IIll11[IIl1Ill1l11(_KEA[1535])])), math[IIl1Ill1l11(_KEA[1536])](I11I1IIll11[IIl1Ill1l11(_KEA[1537])], -math[IIl1Ill1l11(_KEA[1538])](0B0, lI1I1IIll11[IIl1Ill1l11(_KEA[1539])] - II1I1IIll11[IIl1Ill1l11(_KEA[1540])]), math[IIl1Ill1l11(_KEA[1541])](0B0, lI1I1IIll11[IIl1Ill1l11(_KEA[1542])] - II1I1IIll11[IIl1Ill1l11(_KEA[1543])])), math[IIl1Ill1l11(_KEA[1544])](I11I1IIll11[IIl1Ill1l11(_KEA[1545])], -math[IIl1Ill1l11(_KEA[1546])](0B0, lI1I1IIll11[IIl1Ill1l11(_KEA[1547])] - II1I1IIll11[IIl1Ill1l11(_KEA[1548])]), math[IIl1Ill1l11(_KEA[1549])](0B0, lI1I1IIll11[IIl1Ill1l11(_KEA[1550])] - II1I1IIll11[IIl1Ill1l11(_KEA[1551])])))
+Il1I1IIll11 = IlllIIIll11[IIl1Ill1l11(_KEA[1552])]:PointToWorldSpace(I11I1IIll11)
+if not l11I1IIll11[IIl1Ill1l11(_KEA[1553])] or (Il1I1IIll11 - l11I1IIll11[IIl1Ill1l11(_KEA[1554])])[IIl1Ill1l11(_KEA[1555])] > 0x2D then
+l11I1IIll11[IIl1Ill1l11(_KEA[1556])] = Il1I1IIll11
 				else
-IIl11l1l11[l11IlIll11(_KMZ[1552])] = IIl11l1l11[l11IlIll11(_KMZ[1553])]:Lerp(ll111l1l11, .16)
+l11I1IIll11[IIl1Ill1l11(_KEA[1557])] = l11I1IIll11[IIl1Ill1l11(_KEA[1558])]:Lerp(Il1I1IIll11, .16)
 				end
-lIIIll1l11 = IIl11l1l11[l11IlIll11(_KMZ[1554])]
+I1IlIIIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[1559])]
 			end
-local I1IIll1l11 = II1l1l1l11[l11IlIll11(_KMZ[1555])] + Vector3[l11IlIll11(_KMZ[1556])](0B0, II1l1l1l11[l11IlIll11(_KMZ[1557])][l11IlIll11(_KMZ[1558])] * .32, 0B0);
-lI1l1l1l11:PivotTo(CFrame[l11IlIll11(_KMZ[1559])](lIIIll1l11, I1IIll1l11));
-I11l1l1l11[l11IlIll11(_KMZ[1560])] = Vector3[l11IlIll11(_KMZ[1561])]
-I11l1l1l11[l11IlIll11(_KMZ[1562])] = Vector3[l11IlIll11(_KMZ[1563])]
-if ll1l1l1l11 - Ill11l1l11 >= IIl11l1l11[l11IlIll11(_KMZ[1564])] then
-Ill11l1l11 = ll1l1l1l11
-pcall(Il1l1l1l11[l11IlIll11(_KMZ[1565])], Il1l1l1l11);
-pcall(Il1l1l1l11[l11IlIll11(_KMZ[1566])], Il1l1l1l11)
-l1l11l1l11 = l1l11l1l11 + 0B1
+local lIIlIIIll11 = l1llIIIll11[IIl1Ill1l11(_KEA[270])] + Vector3[IIl1Ill1l11(_KEA[1560])](0B0, l1llIIIll11[IIl1Ill1l11(_KEA[276])][IIl1Ill1l11(_KEA[1561])] * .32, 0B0);
+I1llIIIll11:PivotTo(CFrame[IIl1Ill1l11(_KEA[1562])](I1IlIIIll11, lIIlIIIll11));
+lIllIIIll11[IIl1Ill1l11(_KEA[1563])] = Vector3[IIl1Ill1l11(_KEA[1564])]
+lIllIIIll11[IIl1Ill1l11(_KEA[1565])] = Vector3[IIl1Ill1l11(_KEA[1566])]
+if Il1lIIIll11 - llII1IIll11 >= l11I1IIll11[IIl1Ill1l11(_KEA[1567])] then
+llII1IIll11 = Il1lIIIll11
+pcall(ll1lIIIll11[IIl1Ill1l11(_KEA[1568])], ll1lIIIll11);
+pcall(ll1lIIIll11[IIl1Ill1l11(_KEA[1569])], ll1lIIIll11)
+II1I1IIll11 = II1I1IIll11 + 0B1
 			end
-local l1IIll1l11 = l1IlIIll11()
-if l1IIll1l11 < lIl11l1l11 then
-local Il111l1l11 = lIl11l1l11 - l1IIll1l11
-I1l11l1l11 = I1l11l1l11 + Il111l1l11
-if lll1IIll11 then
-lll1IIll11()
+local IIIlIIIll11 = IIIIlll1l11()
+if IIIlIIIll11 < I11I1IIll11 then
+local ll1I1IIll11 = I11I1IIll11 - IIIlIIIll11
+lI1I1IIll11 = lI1I1IIll11 + ll1I1IIll11
+if IlIIlll1l11 then
+IlIIlll1l11()
 				end
 			end
-lIl11l1l11 = l1IIll1l11
-lIIlIIll11(tostring(workspace:GetAttribute(l11IlIll11(_KMZ[1567])) or l11IlIll11(_KMZ[1568])), I1l11l1l11, l1l11l1l11);
-task[l11IlIll11(_KMZ[1569])](.04)
+I11I1IIll11 = IIIlIIIll11
+I1IIlll1l11(tostring(workspace:GetAttribute(IIl1Ill1l11(_KEA[1570])) or IIl1Ill1l11(_KEA[1571])), lI1I1IIll11, II1I1IIll11);
+task[IIl1Ill1l11(_KEA[1572])](.04)
 		end
-local IlIl1l1l11 = workspace:GetAttribute(l11IlIll11(_KMZ[1570])) ~= true or l1IlIIll11() <= 0B0
-if IlIl1l1l11 and (lI11ll1l11[l11IlIll11(_KMZ[1571])] and IIl11l1l11[l11IlIll11(_KMZ[1572])]) then
-lIIlIIll11(l11IlIll11(_KMZ[1573]), I1l11l1l11, l1l11l1l11);
-IIl11l1l11:CollectChest(0xF)
+local llllIIIll11 = workspace:GetAttribute(IIl1Ill1l11(_KEA[1573])) ~= true or IIIIlll1l11() <= 0B0
+if llllIIIll11 and (I1lIIIIll11[IIl1Ill1l11(_KEA[1574])] and l11I1IIll11[IIl1Ill1l11(_KEA[1575])]) then
+I1IIlll1l11(IIl1Ill1l11(_KEA[1576]), lI1I1IIll11, II1I1IIll11);
+l11I1IIll11:CollectChest(0xF)
 		end
-IIl11l1l11:RestoreBattle()
+l11I1IIll11:RestoreBattle()
 	end
-function IIIlIIll11.Set(IIl11l1l11, Il111l1l11)
-IIl11l1l11[l11IlIll11(_KMZ[1574])] = IIl11l1l11[l11IlIll11(_KMZ[1575])] + 0B1
-local lIl11l1l11 = IIl11l1l11[l11IlIll11(_KMZ[1576])]
-IIl11l1l11[l11IlIll11(_KMZ[1577])] = Il111l1l11 == true
-lI11ll1l11[l11IlIll11(_KMZ[1578])] = IIl11l1l11[l11IlIll11(_KMZ[1579])]
-I1l1ll1l11(l11IlIll11(_KMZ[1580]))
-if not IIl11l1l11[l11IlIll11(_KMZ[1581])] then
-lIIlIIll11(l11IlIll11(_KMZ[1582]), 0B0, 0B0);
-IIl11l1l11:RestoreBattle();
-IIl11l1l11:SetAntiLag(false);
-IIl11l1l11:RestoreFG100BossOwnership();
-lII1IIll11()
+function l1IIlll1l11.Set(l11I1IIll11, ll1I1IIll11)
+l11I1IIll11[IIl1Ill1l11(_KEA[1577])] = l11I1IIll11[IIl1Ill1l11(_KEA[1578])] + 0B1
+local I11I1IIll11 = l11I1IIll11[IIl1Ill1l11(_KEA[1579])]
+l11I1IIll11[IIl1Ill1l11(_KEA[1580])] = ll1I1IIll11 == true
+I1lIIIIll11[IIl1Ill1l11(_KEA[1581])] = l11I1IIll11[IIl1Ill1l11(_KEA[1582])]
+lI1IIIIll11(IIl1Ill1l11(_KEA[1583]))
+if not l11I1IIll11[IIl1Ill1l11(_KEA[1584])] then
+I1IIlll1l11(IIl1Ill1l11(_KEA[1585]), 0B0, 0B0);
+l11I1IIll11:RestoreBattle();
+l11I1IIll11:SetAntiLag(false);
+l11I1IIll11:RestoreFG100BossOwnership();
+I1I1lll1l11()
 return true
 		end
-local I1l11l1l11 = ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[1583]))
-I1l11l1l11 = I1l11l1l11 and I1l11l1l11:FindFirstChild(l11IlIll11(_KMZ[1584]))
-I1l11l1l11 = I1l11l1l11 and I1l11l1l11:FindFirstChild(l11IlIll11(_KMZ[1585]));
-local l1l11l1l11, Ill11l1l11 = pcall(function()
-return I1l11l1l11 and require(I1l11l1l11)
+local lI1I1IIll11 = Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1586]))
+lI1I1IIll11 = lI1I1IIll11 and lI1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1587]))
+lI1I1IIll11 = lI1I1IIll11 and lI1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1588]));
+local II1I1IIll11, llII1IIll11 = pcall(function()
+return lI1I1IIll11 and require(lI1I1IIll11)
 			end)
-if not l1l11l1l11 or type(Ill11l1l11) ~= l11IlIll11(_KMZ[1586]) or Ill11l1l11[l11IlIll11(_KMZ[1587])] ~= true then
-IIl11l1l11[l11IlIll11(_KMZ[1588])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1589])] = false
-lIIlIIll11(l11IlIll11(_KMZ[1590]), 0B0, 0B0);
-lII1IIll11()
+if not II1I1IIll11 or type(llII1IIll11) ~= IIl1Ill1l11(_KEA[1589]) or llII1IIll11[IIl1Ill1l11(_KEA[1590])] ~= true then
+l11I1IIll11[IIl1Ill1l11(_KEA[1591])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1592])] = false
+I1IIlll1l11(IIl1Ill1l11(_KEA[1593]), 0B0, 0B0);
+I1I1lll1l11()
 return false
 		end
-IIl11l1l11[l11IlIll11(_KMZ[1591])] = math[l11IlIll11(_KMZ[1592])](.31, (tonumber(Ill11l1l11[l11IlIll11(_KMZ[1593])]) or .3) + .01);
-IIl11l1l11:ClaimFG100BossOwnership();
-IIl11l1l11:SetAntiLag(true);
-l1l1ll1l11(l11IlIll11(_KMZ[1594]), function()
-while lI11ll1l11[l11IlIll11(_KMZ[1595])] and (IIl11l1l11[l11IlIll11(_KMZ[1596])] and IIl11l1l11[l11IlIll11(_KMZ[1597])] == lIl11l1l11) do
-IIl11l1l11:ClaimFG100BossOwnership();
-local Il111l1l11 = I1IlIIll11()
-if Il111l1l11 and workspace:GetAttribute(l11IlIll11(_KMZ[1598])) == true then
-IIl11l1l11:Fight(Il111l1l11)
+l11I1IIll11[IIl1Ill1l11(_KEA[1594])] = math[IIl1Ill1l11(_KEA[1595])](.31, (tonumber(llII1IIll11[IIl1Ill1l11(_KEA[1596])]) or .3) + .01);
+l11I1IIll11:ClaimFG100BossOwnership();
+l11I1IIll11:SetAntiLag(true);
+II1IIIIll11(IIl1Ill1l11(_KEA[1597]), function()
+while I1lIIIIll11[IIl1Ill1l11(_KEA[1598])] and (l11I1IIll11[IIl1Ill1l11(_KEA[1599])] and l11I1IIll11[IIl1Ill1l11(_KEA[1600])] == I11I1IIll11) do
+l11I1IIll11:ClaimFG100BossOwnership()
+if l1II1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1601])) == true then
+l11I1IIll11:CollectChest(0xF)
+				elseif workspace:GetAttribute(IIl1Ill1l11(_KEA[1602])) == true then
+local ll1I1IIll11 = lIIIlll1l11()
+if ll1I1IIll11 then
+l11I1IIll11:Fight(ll1I1IIll11)
+					else
+I1IIlll1l11(IIl1Ill1l11(_KEA[1603]), 0B0, 0B0);
+task[IIl1Ill1l11(_KEA[1604])](.15)
+					end
 				else
-lIIlIIll11(l11IlIll11(_KMZ[1599]), 0B0, 0B0);
-task[l11IlIll11(_KMZ[698])](.4)
+I1IIlll1l11(IIl1Ill1l11(_KEA[1605]), 0B0, 0B0);
+task[IIl1Ill1l11(_KEA[1606])](.4)
 				end
 			end
-if IIl11l1l11[l11IlIll11(_KMZ[1600])] == lIl11l1l11 then
-IIl11l1l11:RestoreBattle()
+if l11I1IIll11[IIl1Ill1l11(_KEA[1607])] == I11I1IIll11 then
+l11I1IIll11:RestoreBattle()
 			end
 		end);
-lII1IIll11()
+I1I1lll1l11()
 return true
 	end
-lI11ll1l11[l11IlIll11(_KMZ[1601])] = IIIlIIll11
-local function llIlIIll11(Il111l1l11)
-return IIIlIIll11:Set(Il111l1l11)
+I1lIIIIll11[IIl1Ill1l11(_KEA[1608])] = l1IIlll1l11
+local function Illl1ll1l11(ll1I1IIll11)
+return l1IIlll1l11:Set(ll1I1IIll11)
 	end
-local function II1lIIll11()
-lI11ll1l11[l11IlIll11(_KMZ[1602])] = l11IlIll11(_KMZ[1603]);
-lI11ll1l11[l11IlIll11(_KMZ[1604])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1605])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1606])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1607])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1608])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[1609])] = os[l11IlIll11(_KMZ[1610])]();
-lI11ll1l11[l11IlIll11(_KMZ[1611])] = nil
-ll11IIll11();
-l11IIIll11()
-if lI11ll1l11[l11IlIll11(_KMZ[807])] then
-lIl1IIll11()
+local function l1ll1ll1l11()
+I1lIIIIll11[IIl1Ill1l11(_KEA[1609])] = IIl1Ill1l11(_KEA[1610]);
+I1lIIIIll11[IIl1Ill1l11(_KEA[1611])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1612])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1613])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1614])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1615])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[1616])] = os[IIl1Ill1l11(_KEA[1617])]();
+I1lIIIIll11[IIl1Ill1l11(_KEA[1618])] = nil
+Il1Illl1l11();
+IIl1lll1l11()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[427])] then
+I11Illl1l11()
 		else
-II1IIIll11()
+l1l1lll1l11()
 		end
 	end
-local function lI1lIIll11()
-if not lI11ll1l11[l11IlIll11(_KMZ[1612])] and lI11ll1l11[l11IlIll11(_KMZ[1613])] == l11IlIll11(_KMZ[1614]) then
+local function I1ll1ll1l11()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1619])] and I1lIIIIll11[IIl1Ill1l11(_KEA[1620])] == IIl1Ill1l11(_KEA[1621]) then
 return
 		end
-lI11ll1l11[l11IlIll11(_KMZ[1615])] = l11IlIll11(_KMZ[1616]);
-lI11ll1l11[l11IlIll11(_KMZ[430])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1617])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[1618])] = nil
-ll11IIll11();
-l11IIIll11();
-I1l1ll1l11(l11IlIll11(_KMZ[1619]));
-l1l1ll1l11(l11IlIll11(_KMZ[1620]), function()
-local Il111l1l11 = os[l11IlIll11(_KMZ[1621])]() + 0xF
-while lI11ll1l11[l11IlIll11(_KMZ[732])] and I1llll1l11(IIIl1l1l11) do
-if l1Il1l1l11:GetAttribute(l11IlIll11(_KMZ[1622])) ~= true and os[l11IlIll11(_KMZ[1623])]() >= Il111l1l11 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[1622])] = IIl1Ill1l11(_KEA[1623]);
+I1lIIIIll11[IIl1Ill1l11(_KEA[1624])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1625])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[1626])] = nil
+Il1Illl1l11();
+IIl1lll1l11();
+lI1IIIIll11(IIl1Ill1l11(_KEA[1627]));
+II1IIIIll11(IIl1Ill1l11(_KEA[1628]), function()
+local ll1I1IIll11 = os[IIl1Ill1l11(_KEA[1629])]() + 0xF
+while I1lIIIIll11[IIl1Ill1l11(_KEA[1630])] and lI1llll1l11(l1II1IIll11) do
+if IIII1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1631])) ~= true and os[IIl1Ill1l11(_KEA[1632])]() >= ll1I1IIll11 then
 break
 				end
-task[l11IlIll11(_KMZ[1624])](.25)
+task[IIl1Ill1l11(_KEA[1633])](.25)
 			end
-if lI11ll1l11[l11IlIll11(_KMZ[1625])] then
-local Il111l1l11 = Illlll1l11();
-lI11ll1l11[l11IlIll11(_KMZ[1626])] = Il111l1l11 ~= nil and (lI11ll1l11[l11IlIll11(_KMZ[1627])] ~= nil and Il111l1l11 > lI11ll1l11[l11IlIll11(_KMZ[1628])]);
-II1lIIll11()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[1634])] then
+local ll1I1IIll11 = llIllll1l11();
+I1lIIIIll11[IIl1Ill1l11(_KEA[1635])] = ll1I1IIll11 ~= nil and (I1lIIIIll11[IIl1Ill1l11(_KEA[1636])] ~= nil and ll1I1IIll11 > I1lIIIIll11[IIl1Ill1l11(_KEA[1637])]);
+l1ll1ll1l11()
 			end
 		end)
 	end
-local function I11lIIll11()
-if not lI11ll1l11[l11IlIll11(_KMZ[1629])] then
-lI11ll1l11[l11IlIll11(_KMZ[1630])] = Illlll1l11()
+local function lIll1ll1l11()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1638])] then
+I1lIIIIll11[IIl1Ill1l11(_KEA[1639])] = llIllll1l11()
 		end
-lI11ll1l11[l11IlIll11(_KMZ[1631])] = true
-lI11ll1l11[l11IlIll11(_KMZ[1632])] = false
-lI11ll1l11[l11IlIll11(_KMZ[1633])] = I1llll1l11(IIIl1l1l11);
-lI11ll1l11[l11IlIll11(_KMZ[1634])] = nil
-lI11ll1l11[l11IlIll11(_KMZ[1635])] = lI11ll1l11[l11IlIll11(_KMZ[1636])] and l11IlIll11(_KMZ[1637]) or l11IlIll11(_KMZ[1638]);
-lI11ll1l11[l11IlIll11(_KMZ[1639])] = nil
-IIl1IIll11();
-l11IIIll11()
+I1lIIIIll11[IIl1Ill1l11(_KEA[1640])] = true
+I1lIIIIll11[IIl1Ill1l11(_KEA[1641])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[1642])] = lI1llll1l11(l1II1IIll11);
+I1lIIIIll11[IIl1Ill1l11(_KEA[1643])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[75])] = I1lIIIIll11[IIl1Ill1l11(_KEA[1644])] and IIl1Ill1l11(_KEA[1645]) or IIl1Ill1l11(_KEA[1646]);
+I1lIIIIll11[IIl1Ill1l11(_KEA[1647])] = nil
+l11Illl1l11();
+IIl1lll1l11()
 	end
-local function l11lIIll11()
-if not lI11ll1l11[l11IlIll11(_KMZ[1640])] or not I1llll1l11(IIIl1l1l11) then
+local function IIll1ll1l11()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1648])] or not lI1llll1l11(l1II1IIll11) then
 return false
 		end
-if not lI11ll1l11[l11IlIll11(_KMZ[1641])] then
-I11lIIll11()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1352])] then
+lIll1ll1l11()
 		end
-lI11ll1l11[l11IlIll11(_KMZ[1642])] = true
-lI11ll1l11[l11IlIll11(_KMZ[1643])] = true
-lI11ll1l11[l11IlIll11(_KMZ[1644])] = l11IlIll11(_KMZ[1645]);
-lI11ll1l11[l11IlIll11(_KMZ[1646])] = nil
-IIl1IIll11();
-ll11IIll11();
-l11IIIll11()
+I1lIIIIll11[IIl1Ill1l11(_KEA[1649])] = true
+I1lIIIIll11[IIl1Ill1l11(_KEA[1650])] = true
+I1lIIIIll11[IIl1Ill1l11(_KEA[1651])] = IIl1Ill1l11(_KEA[1652]);
+I1lIIIIll11[IIl1Ill1l11(_KEA[1653])] = nil
+l11Illl1l11();
+Il1Illl1l11();
+IIl1lll1l11()
 return true
 	end
-local function Il1lIIll11()
-if not lI11ll1l11[l11IlIll11(_KMZ[1647])] or lI11ll1l11[l11IlIll11(_KMZ[1648])] or l1Il1l1l11:GetAttribute(l11IlIll11(_KMZ[1649])) ~= true or l1Il1l1l11:GetAttribute(l11IlIll11(_KMZ[1650])) == true then
+local function ll1l1ll1l11()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1654])] or I1lIIIIll11[IIl1Ill1l11(_KEA[1655])] or IIII1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1656])) ~= true or IIII1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1657])) == true then
 return false
 		end
-I11lIIll11();
-Il11IIll11();
-lI11ll1l11[l11IlIll11(_KMZ[1651])] = true
-local Il111l1l11 = pcall(IlIl1l1l11[l11IlIll11(_KMZ[1652])], IlIl1l1l11, l11IlIll11(_KMZ[1653]))
-if not Il111l1l11 then
-lI11ll1l11[l11IlIll11(_KMZ[1654])] = false
-lI1lIIll11()
+lIll1ll1l11();
+ll1Illl1l11();
+I1lIIIIll11[IIl1Ill1l11(_KEA[1658])] = true
+local ll1I1IIll11 = pcall(llllIIIll11[IIl1Ill1l11(_KEA[1659])], llllIIIll11, IIl1Ill1l11(_KEA[1660]))
+if not ll1I1IIll11 then
+I1lIIIIll11[IIl1Ill1l11(_KEA[1661])] = false
+I1ll1ll1l11()
 return false
 		end
 return true
 	end
-local function ll1lIIll11(Il111l1l11)
-lI11ll1l11[l11IlIll11(_KMZ[1655])] = Il111l1l11 == true
-lII1IIll11()
-if not lI11ll1l11[l11IlIll11(_KMZ[1656])] then
-if lI11ll1l11[l11IlIll11(_KMZ[1657])] then
-lI1lIIll11()
+local function Il1l1ll1l11(ll1I1IIll11)
+I1lIIIIll11[IIl1Ill1l11(_KEA[1662])] = ll1I1IIll11 == true
+I1I1lll1l11()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1663])] then
+if I1lIIIIll11[IIl1Ill1l11(_KEA[1664])] then
+I1ll1ll1l11()
 			else
-II1lIIll11()
+l1ll1ll1l11()
 			end
 return true
 		end
-if l1Il1l1l11:GetAttribute(l11IlIll11(_KMZ[1658])) == true then
-l11lIIll11()
-		elseif llllll1l11() then
-Il1lIIll11()
+if IIII1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1665])) == true then
+IIll1ll1l11()
+		elseif IlIllll1l11() then
+ll1l1ll1l11()
 		end
 return true
 	end
-lIl1ll1l11(IlIl1l1l11[l11IlIll11(_KMZ[1659])]:Connect(function(Il111l1l11, ...)
-if not lI11ll1l11[l11IlIll11(_KMZ[1660])] or not lI11ll1l11[l11IlIll11(_KMZ[1661])] then
+I11IIIIll11(llllIIIll11[IIl1Ill1l11(_KEA[1666])]:Connect(function(ll1I1IIll11, ...)
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1667])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[1668])] then
 return
 		end
-if Il111l1l11 == l11IlIll11(_KMZ[1662]) then
-lI11ll1l11[l11IlIll11(_KMZ[1663])] = false
-task[l11IlIll11(_KMZ[1664])](Il1lIIll11)
-		elseif Il111l1l11 == l11IlIll11(_KMZ[1665]) then
-if not lI11ll1l11[l11IlIll11(_KMZ[1666])] then
-I11lIIll11()
+if ll1I1IIll11 == IIl1Ill1l11(_KEA[1669]) then
+I1lIIIIll11[IIl1Ill1l11(_KEA[1670])] = false
+task[IIl1Ill1l11(_KEA[1671])](ll1l1ll1l11)
+		elseif ll1I1IIll11 == IIl1Ill1l11(_KEA[1672]) then
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1673])] then
+lIll1ll1l11()
 			end
-lI11ll1l11[l11IlIll11(_KMZ[1667])] = true
-lI11ll1l11[l11IlIll11(_KMZ[1668])] = l11IlIll11(_KMZ[1669])
-		elseif Il111l1l11 == l11IlIll11(_KMZ[1670]) then
-l11lIIll11()
-		elseif Il111l1l11 == l11IlIll11(_KMZ[1671]) then
-local Il111l1l11 = select(0B1, ...)
-if typeof(Il111l1l11) == l11IlIll11(_KMZ[1672]) and Il111l1l11:IsA(l11IlIll11(_KMZ[1673])) then
-if Il111l1l11 ~= IIIl1l1l11 and l1llll1l11(IIIl1l1l11) then
-lI11ll1l11[l11IlIll11(_KMZ[1674])] = Il111l1l11
+I1lIIIIll11[IIl1Ill1l11(_KEA[1674])] = true
+I1lIIIIll11[IIl1Ill1l11(_KEA[1675])] = IIl1Ill1l11(_KEA[1676])
+		elseif ll1I1IIll11 == IIl1Ill1l11(_KEA[1677]) then
+IIll1ll1l11()
+		elseif ll1I1IIll11 == IIl1Ill1l11(_KEA[1678]) then
+local ll1I1IIll11 = select(0B1, ...)
+if typeof(ll1I1IIll11) == IIl1Ill1l11(_KEA[1679]) and ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[1680])) then
+if ll1I1IIll11 ~= l1II1IIll11 and II1llll1l11(l1II1IIll11) then
+I1lIIIIll11[IIl1Ill1l11(_KEA[1681])] = ll1I1IIll11
 				else
-lI11ll1l11[l11IlIll11(_KMZ[1675])] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[1682])] = nil
 				end
 			end
-		elseif Il111l1l11 == l11IlIll11(_KMZ[1676]) or Il111l1l11 == l11IlIll11(_KMZ[1677]) then
-lI1lIIll11()
+		elseif ll1I1IIll11 == IIl1Ill1l11(_KEA[1683]) or ll1I1IIll11 == IIl1Ill1l11(_KEA[1684]) then
+I1ll1ll1l11()
 		end
 	end));
-lIl1ll1l11((l1Il1l1l11:GetAttributeChangedSignal(l11IlIll11(_KMZ[1678]))):Connect(function()
-if not lI11ll1l11[l11IlIll11(_KMZ[1679])] or not lI11ll1l11[l11IlIll11(_KMZ[1680])] then
+I11IIIIll11((IIII1IIll11:GetAttributeChangedSignal(IIl1Ill1l11(_KEA[1685]))):Connect(function()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1686])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[1687])] then
 return
 		end
-if l1Il1l1l11:GetAttribute(l11IlIll11(_KMZ[1681])) == true then
-l11lIIll11()
-		elseif l1Il1l1l11:GetAttribute(l11IlIll11(_KMZ[1682])) ~= true then
-lI1lIIll11()
+if IIII1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1688])) == true then
+IIll1ll1l11()
+		elseif IIII1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1689])) ~= true then
+I1ll1ll1l11()
 		end
 	end));
-lIl1ll1l11((l1Il1l1l11:GetAttributeChangedSignal(l11IlIll11(_KMZ[1683]))):Connect(function()
-if not lI11ll1l11[l11IlIll11(_KMZ[1684])] or not lI11ll1l11[l11IlIll11(_KMZ[673])] then
+I11IIIIll11((IIII1IIll11:GetAttributeChangedSignal(IIl1Ill1l11(_KEA[1690]))):Connect(function()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[1691])] or not I1lIIIIll11[IIl1Ill1l11(_KEA[1692])] then
 return
 		end
-if l1Il1l1l11:GetAttribute(l11IlIll11(_KMZ[1685])) ~= true and lI11ll1l11[l11IlIll11(_KMZ[1686])] then
-lI1lIIll11()
+if IIII1IIll11:GetAttribute(IIl1Ill1l11(_KEA[1693])) ~= true and I1lIIIIll11[IIl1Ill1l11(_KEA[1694])] then
+I1ll1ll1l11()
 		end
 	end));
-local IIllIIll11 = lIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[1687]))
-if IIllIIll11 then
-IIllIIll11:Destroy()
+local l11l1ll1l11 = I1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[1695]))
+if l11l1ll1l11 then
+l11l1ll1l11:Destroy()
 	end
-local lIllIIll11 = { [l11IlIll11(_KMZ[1688])] = Color3[l11IlIll11(_KMZ[1689])](0x7, 0x7, 0x9), [l11IlIll11(_KMZ[1690])] = Color3[l11IlIll11(_KMZ[1691])](0xF, 0xC, 0x10), [l11IlIll11(_KMZ[1692])] = Color3[l11IlIll11(_KMZ[1693])](0x18, 0x12, 0x16), [l11IlIll11(_KMZ[1694])] = Color3[l11IlIll11(_KMZ[1695])](0x1F, 0x16, 0x1B), [l11IlIll11(_KMZ[1696])] = Color3[l11IlIll11(_KMZ[1697])](0x32, 0x18, 0x20), [l11IlIll11(_KMZ[1698])] = Color3[l11IlIll11(_KMZ[1699])](0x44, 0x14, 0x1F), [l11IlIll11(_KMZ[1700])] = Color3[l11IlIll11(_KMZ[1701])](0xFF, 0x37, 0x52), [l11IlIll11(_KMZ[1702])] = Color3[l11IlIll11(_KMZ[1703])](0xFF, 0x65, 0x7A), [l11IlIll11(_KMZ[1704])] = Color3[l11IlIll11(_KMZ[1705])](0xB9, 0x18, 0x30), [l11IlIll11(_KMZ[1706])] = Color3[l11IlIll11(_KMZ[1707])](0x2F, 0x18, 0x20), [l11IlIll11(_KMZ[1708])] = Color3[l11IlIll11(_KMZ[1709])](0xFF, 0xFF, 0xFF), [l11IlIll11(_KMZ[1710])] = Color3[l11IlIll11(_KMZ[1711])](0xF5, 0xF0, 0xF2), [l11IlIll11(_KMZ[1712])] = Color3[l11IlIll11(_KMZ[1713])](0xC9, 0xB9, 0xBF), [l11IlIll11(_KMZ[1714])] = Color3[l11IlIll11(_KMZ[1715])](0xFF, 0xB0, 0x48), [l11IlIll11(_KMZ[1716])] = Color3[l11IlIll11(_KMZ[1717])](0B1, 0B0, 0B10) };
-local function I1llIIll11(Il111l1l11)
+local I11l1ll1l11 = { [IIl1Ill1l11(_KEA[1696])] = Color3[IIl1Ill1l11(_KEA[1697])](0x7, 0x7, 0x9), [IIl1Ill1l11(_KEA[1698])] = Color3[IIl1Ill1l11(_KEA[1699])](0xF, 0xC, 0x10), [IIl1Ill1l11(_KEA[1700])] = Color3[IIl1Ill1l11(_KEA[1701])](0x18, 0x12, 0x16), [IIl1Ill1l11(_KEA[1702])] = Color3[IIl1Ill1l11(_KEA[1703])](0x1F, 0x16, 0x1B), [IIl1Ill1l11(_KEA[1704])] = Color3[IIl1Ill1l11(_KEA[1705])](0x32, 0x18, 0x20), [IIl1Ill1l11(_KEA[1706])] = Color3[IIl1Ill1l11(_KEA[1707])](0x44, 0x14, 0x1F), [IIl1Ill1l11(_KEA[1708])] = Color3[IIl1Ill1l11(_KEA[1709])](0xFF, 0x37, 0x52), [IIl1Ill1l11(_KEA[1710])] = Color3[IIl1Ill1l11(_KEA[1711])](0xFF, 0x65, 0x7A), [IIl1Ill1l11(_KEA[1712])] = Color3[IIl1Ill1l11(_KEA[1713])](0xB9, 0x18, 0x30), [IIl1Ill1l11(_KEA[1714])] = Color3[IIl1Ill1l11(_KEA[1715])](0x2F, 0x18, 0x20), [IIl1Ill1l11(_KEA[1716])] = Color3[IIl1Ill1l11(_KEA[1717])](0xFF, 0xFF, 0xFF), [IIl1Ill1l11(_KEA[1718])] = Color3[IIl1Ill1l11(_KEA[1719])](0xF5, 0xF0, 0xF2), [IIl1Ill1l11(_KEA[1720])] = Color3[IIl1Ill1l11(_KEA[1721])](0xC9, 0xB9, 0xBF), [IIl1Ill1l11(_KEA[1722])] = Color3[IIl1Ill1l11(_KEA[1723])](0xFF, 0xB0, 0x48), [IIl1Ill1l11(_KEA[1724])] = Color3[IIl1Ill1l11(_KEA[1725])](0B1, 0B0, 0B10) };
+local function lI1l1ll1l11(ll1I1IIll11)
 pcall(function()
-(game:GetService(l11IlIll11(_KMZ[1718]))):SetCore(l11IlIll11(_KMZ[1719]), { [l11IlIll11(_KMZ[1720])] = l11IlIll11(_KMZ[1721]), [l11IlIll11(_KMZ[1722])] = tostring(Il111l1l11 or l11IlIll11(_KMZ[1723])), [l11IlIll11(_KMZ[1724])] = 0x4 })
+(game:GetService(IIl1Ill1l11(_KEA[1726]))):SetCore(IIl1Ill1l11(_KEA[1727]), { [IIl1Ill1l11(_KEA[1728])] = IIl1Ill1l11(_KEA[1729]), [IIl1Ill1l11(_KEA[1730])] = tostring(ll1I1IIll11 or IIl1Ill1l11(_KEA[1731])), [IIl1Ill1l11(_KEA[1732])] = 0x4 })
 		end)
 	end
-local function l1llIIll11()
+local function II1l1ll1l11()
 
 	end
-lI11ll1l11[l11IlIll11(_KMZ[1725])] = l1llIIll11
-local IlllIIll11 = workspace[l11IlIll11(_KMZ[1726])]
-local llllIIll11 = IlllIIll11 and IlllIIll11[l11IlIll11(_KMZ[1727])] or Vector2[l11IlIll11(_KMZ[1728])](0x500, 0x2D0);
-local IIII1Ill11 = llllIIll11[l11IlIll11(_KMZ[1524])] < 0x2D0 or IIl11l1l11[l11IlIll11(_KMZ[1729])] and llllIIll11[l11IlIll11(_KMZ[1730])] < 0x44C
-local lIII1Ill11 = IIII1Ill11 and math[l11IlIll11(_KMZ[1731])](math[l11IlIll11(_KMZ[1732])](llllIIll11[l11IlIll11(_KMZ[1733])] * .78, 0x110, 0x168)) or 0x19A
-local I1II1Ill11 = 0x110
-local l1II1Ill11 = 0x122
-local IlII1Ill11 = 0x2A
-local llII1Ill11 = IlII1Ill11
-local II1I1Ill11 = false
-local lI1I1Ill11 = Instance[l11IlIll11(_KMZ[1734])](l11IlIll11(_KMZ[1735]));
-lI1I1Ill11[l11IlIll11(_KMZ[1736])] = l11IlIll11(_KMZ[1737]);
-lI1I1Ill11[l11IlIll11(_KMZ[1738])] = false
-lI1I1Ill11[l11IlIll11(_KMZ[1739])] = true
-lI1I1Ill11[l11IlIll11(_KMZ[1740])] = 0x3E7
-lI1I1Ill11[l11IlIll11(_KMZ[1741])] = Enum[l11IlIll11(_KMZ[1742])][l11IlIll11(_KMZ[1743])]
+I1lIIIIll11[IIl1Ill1l11(_KEA[1733])] = II1l1ll1l11
+local llIl1ll1l11 = workspace[IIl1Ill1l11(_KEA[1734])]
+local IlIl1ll1l11 = llIl1ll1l11 and llIl1ll1l11[IIl1Ill1l11(_KEA[1735])] or Vector2[IIl1Ill1l11(_KEA[1736])](0x500, 0x2D0);
+local l1Il1ll1l11 = IlIl1ll1l11[IIl1Ill1l11(_KEA[1737])] < 0x2D0 or l11I1IIll11[IIl1Ill1l11(_KEA[1738])] and IlIl1ll1l11[IIl1Ill1l11(_KEA[1739])] < 0x44C
+local I1Il1ll1l11 = l1Il1ll1l11 and math[IIl1Ill1l11(_KEA[1740])](math[IIl1Ill1l11(_KEA[1741])](IlIl1ll1l11[IIl1Ill1l11(_KEA[1742])] * .78, 0x110, 0x168)) or 0x19A
+local lIIl1ll1l11 = 0x110
+local IIIl1ll1l11 = 0x122
+local lll11ll1l11 = 0x2A
+local Ill11ll1l11 = lll11ll1l11
+local l1l11ll1l11 = false
+local I1l11ll1l11 = Instance[IIl1Ill1l11(_KEA[1743])](IIl1Ill1l11(_KEA[1744]));
+I1l11ll1l11[IIl1Ill1l11(_KEA[1745])] = IIl1Ill1l11(_KEA[1746]);
+I1l11ll1l11[IIl1Ill1l11(_KEA[1747])] = false
+I1l11ll1l11[IIl1Ill1l11(_KEA[1748])] = true
+I1l11ll1l11[IIl1Ill1l11(_KEA[1749])] = 0x3E7
+I1l11ll1l11[IIl1Ill1l11(_KEA[1750])] = Enum[IIl1Ill1l11(_KEA[1751])][IIl1Ill1l11(_KEA[1752])]
 pcall(function()
-lI1I1Ill11[l11IlIll11(_KMZ[1744])] = false
+I1l11ll1l11[IIl1Ill1l11(_KEA[1753])] = false
 	end);
-lI1I1Ill11[l11IlIll11(_KMZ[1745])] = lIIl1l1l11
-local I11I1Ill11 = Instance[l11IlIll11(_KMZ[1746])](l11IlIll11(_KMZ[1747]));
-I11I1Ill11[l11IlIll11(_KMZ[1748])] = l11IlIll11(_KMZ[1749]);
-I11I1Ill11[l11IlIll11(_KMZ[1750])] = Vector2[l11IlIll11(_KMZ[1751])](.5, 0B0);
-I11I1Ill11[l11IlIll11(_KMZ[1752])] = UDim2[l11IlIll11(_KMZ[1753])](lIII1Ill11 + 0xC, I1II1Ill11 + 0xC);
-I11I1Ill11[l11IlIll11(_KMZ[1754])] = UDim2[l11IlIll11(_KMZ[1755])](.5, 0B0, .5, -(I1II1Ill11 / 0B10) - 0B110);
-I11I1Ill11[l11IlIll11(_KMZ[1756])] = Color3[l11IlIll11(_KMZ[1757])](0x2A, 0B0, 0xE);
-I11I1Ill11[l11IlIll11(_KMZ[1758])] = .38
-I11I1Ill11[l11IlIll11(_KMZ[1759])] = 0B0
-I11I1Ill11[l11IlIll11(_KMZ[1760])] = false
-I11I1Ill11[l11IlIll11(_KMZ[1761])] = 0B1
-I11I1Ill11[l11IlIll11(_KMZ[1762])] = lI1I1Ill11;
-(Instance[l11IlIll11(_KMZ[1763])](l11IlIll11(_KMZ[1764]), I11I1Ill11))[l11IlIll11(_KMZ[1765])] = UDim[l11IlIll11(_KMZ[1766])](0B0, 0x10);
-local l11I1Ill11 = Instance[l11IlIll11(_KMZ[1767])](l11IlIll11(_KMZ[1768]));
-l11I1Ill11[l11IlIll11(_KMZ[1769])] = l11IlIll11(_KMZ[1770]);
-l11I1Ill11[l11IlIll11(_KMZ[1771])] = Vector2[l11IlIll11(_KMZ[1772])](.5, 0B0);
-l11I1Ill11[l11IlIll11(_KMZ[1773])] = UDim2[l11IlIll11(_KMZ[1774])](lIII1Ill11, I1II1Ill11);
-l11I1Ill11[l11IlIll11(_KMZ[1775])] = UDim2[l11IlIll11(_KMZ[1776])](.5, 0B0, .5, -I1II1Ill11 / 0B10);
-l11I1Ill11[l11IlIll11(_KMZ[1777])] = lIllIIll11[l11IlIll11(_KMZ[1778])]
-l11I1Ill11[l11IlIll11(_KMZ[1779])] = .14
-l11I1Ill11[l11IlIll11(_KMZ[1780])] = 0B0
-l11I1Ill11[l11IlIll11(_KMZ[1781])] = true
-l11I1Ill11[l11IlIll11(_KMZ[1782])] = 0B10
-l11I1Ill11[l11IlIll11(_KMZ[1783])] = lI1I1Ill11;
-(Instance[l11IlIll11(_KMZ[1784])](l11IlIll11(_KMZ[1785]), l11I1Ill11))[l11IlIll11(_KMZ[1786])] = UDim[l11IlIll11(_KMZ[1787])](0B0, 0x10);
-local Il1I1Ill11 = Instance[l11IlIll11(_KMZ[1788])](l11IlIll11(_KMZ[1789]));
-Il1I1Ill11[l11IlIll11(_KMZ[1790])] = ColorSequence[l11IlIll11(_KMZ[1791])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[296])](0B0, lIllIIll11[l11IlIll11(_KMZ[1792])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[1766])](.55, lIllIIll11[l11IlIll11(_KMZ[1793])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[1794])](0B1, lIllIIll11[l11IlIll11(_KMZ[1795])]) });
-Il1I1Ill11[l11IlIll11(_KMZ[1796])] = 0x20
-Il1I1Ill11[l11IlIll11(_KMZ[1797])] = l11I1Ill11
-local ll1I1Ill11 = Instance[l11IlIll11(_KMZ[1798])](l11IlIll11(_KMZ[1799]));
-ll1I1Ill11[l11IlIll11(_KMZ[1800])] = l11IlIll11(_KMZ[1801]);
-ll1I1Ill11[l11IlIll11(_KMZ[1802])] = Vector2[l11IlIll11(_KMZ[1517])](.5, 0B0);
-ll1I1Ill11[l11IlIll11(_KMZ[1803])] = UDim2[l11IlIll11(_KMZ[1804])](lIII1Ill11, I1II1Ill11);
-ll1I1Ill11[l11IlIll11(_KMZ[1805])] = l11I1Ill11[l11IlIll11(_KMZ[1806])]
-ll1I1Ill11[l11IlIll11(_KMZ[1807])] = 0B1
-ll1I1Ill11[l11IlIll11(_KMZ[1808])] = 0B0
-ll1I1Ill11[l11IlIll11(_KMZ[1809])] = 0x50
-ll1I1Ill11[l11IlIll11(_KMZ[1810])] = lI1I1Ill11;
-(Instance[l11IlIll11(_KMZ[260])](l11IlIll11(_KMZ[1811]), ll1I1Ill11))[l11IlIll11(_KMZ[1812])] = UDim[l11IlIll11(_KMZ[1813])](0B0, 0x10);
-local IIlI1Ill11 = Instance[l11IlIll11(_KMZ[1734])](l11IlIll11(_KMZ[1814]));
-IIlI1Ill11[l11IlIll11(_KMZ[1815])] = Enum[l11IlIll11(_KMZ[1816])][l11IlIll11(_KMZ[1817])]
-IIlI1Ill11[l11IlIll11(_KMZ[1818])] = lIllIIll11[l11IlIll11(_KMZ[1819])]
-IIlI1Ill11[l11IlIll11(_KMZ[1820])] = 1.25
-IIlI1Ill11[l11IlIll11(_KMZ[1821])] = .18
-IIlI1Ill11[l11IlIll11(_KMZ[1822])] = Enum[l11IlIll11(_KMZ[1823])][l11IlIll11(_KMZ[1824])]
-IIlI1Ill11[l11IlIll11(_KMZ[1825])] = ll1I1Ill11
-local lIlI1Ill11 = Instance[l11IlIll11(_KMZ[1826])](l11IlIll11(_KMZ[1827]));
-lIlI1Ill11[l11IlIll11(_KMZ[1828])] = ColorSequence[l11IlIll11(_KMZ[1829])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[1830])](0B0, lIllIIll11[l11IlIll11(_KMZ[1831])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[1832])](.5, lIllIIll11[l11IlIll11(_KMZ[1833])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[1834])](0B1, lIllIIll11[l11IlIll11(_KMZ[1835])]) });
-lIlI1Ill11[l11IlIll11(_KMZ[1836])] = IIlI1Ill11
-local I1lI1Ill11 = Instance[l11IlIll11(_KMZ[1837])](l11IlIll11(_KMZ[1838]));
-I1lI1Ill11[l11IlIll11(_KMZ[1839])] = l11IlIll11(_KMZ[1840]);
-I1lI1Ill11[l11IlIll11(_KMZ[1485])] = UDim2[l11IlIll11(_KMZ[1841])](0B1, 0B0, 0B0, IlII1Ill11);
-I1lI1Ill11[l11IlIll11(_KMZ[1842])] = lIllIIll11[l11IlIll11(_KMZ[1843])]
-I1lI1Ill11[l11IlIll11(_KMZ[1844])] = .2
-I1lI1Ill11[l11IlIll11(_KMZ[1845])] = 0B0
-I1lI1Ill11[l11IlIll11(_KMZ[1846])] = true
-I1lI1Ill11[l11IlIll11(_KMZ[1847])] = 0x5
-I1lI1Ill11[l11IlIll11(_KMZ[1848])] = l11I1Ill11;
-(Instance[l11IlIll11(_KMZ[1849])](l11IlIll11(_KMZ[1850]), I1lI1Ill11))[l11IlIll11(_KMZ[1851])] = UDim[l11IlIll11(_KMZ[1852])](0B0, 0x10);
-local l1lI1Ill11 = Instance[l11IlIll11(_KMZ[1767])](l11IlIll11(_KMZ[1853]));
-l1lI1Ill11[l11IlIll11(_KMZ[1854])] = UDim2[l11IlIll11(_KMZ[1855])](0B1, 0B0, 0B0, 0xC);
-l1lI1Ill11[l11IlIll11(_KMZ[1856])] = UDim2[l11IlIll11(_KMZ[1857])](0B0, 0B0, 0B1, -12);
-l1lI1Ill11[l11IlIll11(_KMZ[1858])] = lIllIIll11[l11IlIll11(_KMZ[1859])]
-l1lI1Ill11[l11IlIll11(_KMZ[1860])] = 0B1
-l1lI1Ill11[l11IlIll11(_KMZ[1861])] = 0B0
-l1lI1Ill11[l11IlIll11(_KMZ[1862])] = 0x5
-l1lI1Ill11[l11IlIll11(_KMZ[1863])] = I1lI1Ill11
-l1lI1Ill11[l11IlIll11(_KMZ[1864])] = false
-local IllI1Ill11 = Instance[l11IlIll11(_KMZ[1865])](l11IlIll11(_KMZ[1866]));
-IllI1Ill11[l11IlIll11(_KMZ[1867])] = ColorSequence[l11IlIll11(_KMZ[1868])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[1869])](0B0, Color3[l11IlIll11(_KMZ[1870])](0x28, 0xF, 0x17)), ColorSequenceKeypoint[l11IlIll11(_KMZ[1871])](.48, lIllIIll11[l11IlIll11(_KMZ[1872])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[1873])](0B1, lIllIIll11[l11IlIll11(_KMZ[1874])]) });
-IllI1Ill11[l11IlIll11(_KMZ[1875])] = 0x8
-IllI1Ill11[l11IlIll11(_KMZ[1876])] = I1lI1Ill11
-local lllI1Ill11 = Instance[l11IlIll11(_KMZ[1871])](l11IlIll11(_KMZ[1877]));
-lllI1Ill11[l11IlIll11(_KMZ[1878])] = UDim2[l11IlIll11(_KMZ[1879])](0xCD, 0x68);
-lllI1Ill11[l11IlIll11(_KMZ[1880])] = UDim2[l11IlIll11(_KMZ[1881])](-64, -28);
-lllI1Ill11[l11IlIll11(_KMZ[1882])] = Color3[l11IlIll11(_KMZ[1883])](0xD4, 0xF, 0x43);
-lllI1Ill11[l11IlIll11(_KMZ[1884])] = .74
-lllI1Ill11[l11IlIll11(_KMZ[1885])] = 0B0
-lllI1Ill11[l11IlIll11(_KMZ[1886])] = 0x6
-lllI1Ill11[l11IlIll11(_KMZ[1887])] = I1lI1Ill11
-lllI1Ill11[l11IlIll11(_KMZ[1888])] = false;
-(Instance[l11IlIll11(_KMZ[1889])](l11IlIll11(_KMZ[1890]), lllI1Ill11))[l11IlIll11(_KMZ[1891])] = UDim[l11IlIll11(_KMZ[1892])](0B1, 0B0);
-local III11Ill11 = Instance[l11IlIll11(_KMZ[1893])](l11IlIll11(_KMZ[1894]));
-III11Ill11[l11IlIll11(_KMZ[1895])] = NumberSequence[l11IlIll11(_KMZ[1896])]({ NumberSequenceKeypoint[l11IlIll11(_KMZ[1889])](0B0, .2), NumberSequenceKeypoint[l11IlIll11(_KMZ[1897])](.62, .78), NumberSequenceKeypoint[l11IlIll11(_KMZ[1898])](0B1, 0B1) });
-III11Ill11[l11IlIll11(_KMZ[1899])] = lllI1Ill11
-local lII11Ill11 = Instance[l11IlIll11(_KMZ[1900])](l11IlIll11(_KMZ[1901]));
-lII11Ill11[l11IlIll11(_KMZ[1902])] = UDim2[l11IlIll11(_KMZ[1903])](0B1, -88, 0B1, 0B0);
-lII11Ill11[l11IlIll11(_KMZ[1904])] = UDim2[l11IlIll11(_KMZ[1905])](0x2C, 0B0);
-lII11Ill11[l11IlIll11(_KMZ[1906])] = 0B1
-lII11Ill11[l11IlIll11(_KMZ[1907])] = l11IlIll11(_KMZ[1908]);
-lII11Ill11[l11IlIll11(_KMZ[1909])] = lIllIIll11[l11IlIll11(_KMZ[1910])]
-lII11Ill11[l11IlIll11(_KMZ[1911])] = lIllIIll11[l11IlIll11(_KMZ[1912])]
-lII11Ill11[l11IlIll11(_KMZ[1913])] = .52
-lII11Ill11[l11IlIll11(_KMZ[1914])] = Enum[l11IlIll11(_KMZ[1915])][l11IlIll11(_KMZ[1916])]
-lII11Ill11[l11IlIll11(_KMZ[1917])] = IIII1Ill11 and 0x11 or 0x13
-lII11Ill11[l11IlIll11(_KMZ[1918])] = Enum[l11IlIll11(_KMZ[1919])][l11IlIll11(_KMZ[1920])]
-lII11Ill11[l11IlIll11(_KMZ[1921])] = 0x8
-lII11Ill11[l11IlIll11(_KMZ[1922])] = I1lI1Ill11
-local I1I11Ill11 = Instance[l11IlIll11(_KMZ[1923])](l11IlIll11(_KMZ[1924]));
-I1I11Ill11[l11IlIll11(_KMZ[1925])] = UDim2[l11IlIll11(_KMZ[1926])](0B1, -20, 0B0, 0B11);
-I1I11Ill11[l11IlIll11(_KMZ[1927])] = UDim2[l11IlIll11(_KMZ[1928])](0B0, 0xA, 0B1, -4);
-I1I11Ill11[l11IlIll11(_KMZ[1929])] = lIllIIll11[l11IlIll11(_KMZ[1930])]
-I1I11Ill11[l11IlIll11(_KMZ[1931])] = 0B0
-I1I11Ill11[l11IlIll11(_KMZ[1932])] = 0x8
-I1I11Ill11[l11IlIll11(_KMZ[1933])] = I1lI1Ill11;
-(Instance[l11IlIll11(_KMZ[1896])](l11IlIll11(_KMZ[1934]), I1I11Ill11))[l11IlIll11(_KMZ[1935])] = UDim[l11IlIll11(_KMZ[1936])](0B1, 0B0);
-local l1I11Ill11 = Instance[l11IlIll11(_KMZ[1937])](l11IlIll11(_KMZ[1938]));
-l1I11Ill11[l11IlIll11(_KMZ[1939])] = ColorSequence[l11IlIll11(_KMZ[1940])](lIllIIll11[l11IlIll11(_KMZ[1941])]);
-l1I11Ill11[l11IlIll11(_KMZ[1942])] = I1I11Ill11
-local IlI11Ill11 = Instance[l11IlIll11(_KMZ[1943])](l11IlIll11(_KMZ[1944]));
-IlI11Ill11[l11IlIll11(_KMZ[1945])] = UDim2[l11IlIll11(_KMZ[1946])](0B1, 0B1);
-IlI11Ill11[l11IlIll11(_KMZ[1947])] = 0B1
-IlI11Ill11[l11IlIll11(_KMZ[1948])] = 0B0
-IlI11Ill11[l11IlIll11(_KMZ[1949])] = l11IlIll11(_KMZ[1950]);
-IlI11Ill11[l11IlIll11(_KMZ[1951])] = false
-IlI11Ill11[l11IlIll11(_KMZ[1952])] = 0xA
-IlI11Ill11[l11IlIll11(_KMZ[1953])] = I1lI1Ill11
-local llI11Ill11 = Instance[l11IlIll11(_KMZ[1954])](l11IlIll11(_KMZ[1955]));
-llI11Ill11[l11IlIll11(_KMZ[1956])] = l11IlIll11(_KMZ[1957]);
-llI11Ill11[l11IlIll11(_KMZ[1958])] = UDim2[l11IlIll11(_KMZ[1784])](0B1, 0B0, 0B1, -IlII1Ill11);
-llI11Ill11[l11IlIll11(_KMZ[1959])] = UDim2[l11IlIll11(_KMZ[1960])](0B0, 0B0, 0B0, IlII1Ill11);
-llI11Ill11[l11IlIll11(_KMZ[1961])] = Color3[l11IlIll11(_KMZ[1962])](0x6, 0B11, 0x8);
-llI11Ill11[l11IlIll11(_KMZ[1963])] = 0B1
-llI11Ill11[l11IlIll11(_KMZ[1964])] = 0B0
-llI11Ill11[l11IlIll11(_KMZ[1965])] = 0B10
-llI11Ill11[l11IlIll11(_KMZ[1966])] = lIllIIll11[l11IlIll11(_KMZ[1967])]
-llI11Ill11[l11IlIll11(_KMZ[1968])] = .1
-llI11Ill11[l11IlIll11(_KMZ[1969])] = UDim2[l11IlIll11(_KMZ[1798])]();
-llI11Ill11[l11IlIll11(_KMZ[1970])] = 0x4
-llI11Ill11[l11IlIll11(_KMZ[1971])] = l11I1Ill11;
-(Instance[l11IlIll11(_KMZ[1972])](l11IlIll11(_KMZ[1973]), llI11Ill11))[l11IlIll11(_KMZ[1974])] = UDim[l11IlIll11(_KMZ[1975])](0B0, 0xE);
-local II111Ill11 = Instance[l11IlIll11(_KMZ[1976])](l11IlIll11(_KMZ[1977]));
-II111Ill11[l11IlIll11(_KMZ[1978])] = UDim[l11IlIll11(_KMZ[1979])](0B0, 0xA);
-II111Ill11[l11IlIll11(_KMZ[1980])] = UDim[l11IlIll11(_KMZ[1981])](0B0, 0xA);
-II111Ill11[l11IlIll11(_KMZ[1982])] = UDim[l11IlIll11(_KMZ[1983])](0B0, 0x7);
-II111Ill11[l11IlIll11(_KMZ[1984])] = UDim[l11IlIll11(_KMZ[1985])](0B0, 0x8);
-II111Ill11[l11IlIll11(_KMZ[1986])] = llI11Ill11
-local lI111Ill11 = Instance[l11IlIll11(_KMZ[1445])](l11IlIll11(_KMZ[1987]));
-lI111Ill11[l11IlIll11(_KMZ[1988])] = Enum[l11IlIll11(_KMZ[1989])][l11IlIll11(_KMZ[1990])]
-lI111Ill11[l11IlIll11(_KMZ[1991])] = UDim[l11IlIll11(_KMZ[1992])](0B0, 0B11);
-lI111Ill11[l11IlIll11(_KMZ[1993])] = llI11Ill11
-lIl1ll1l11((lI111Ill11:GetPropertyChangedSignal(l11IlIll11(_KMZ[1994]))):Connect(function()
-llI11Ill11[l11IlIll11(_KMZ[1995])] = UDim2[l11IlIll11(_KMZ[1996])](0B0, lI111Ill11[l11IlIll11(_KMZ[1997])][l11IlIll11(_KMZ[1558])] + 0x10)
+I1l11ll1l11[IIl1Ill1l11(_KEA[1754])] = I1II1IIll11
+local lIl11ll1l11 = Instance[IIl1Ill1l11(_KEA[1755])](IIl1Ill1l11(_KEA[1756]));
+lIl11ll1l11[IIl1Ill1l11(_KEA[1757])] = IIl1Ill1l11(_KEA[1758]);
+lIl11ll1l11[IIl1Ill1l11(_KEA[1759])] = Vector2[IIl1Ill1l11(_KEA[1760])](.5, 0B0);
+lIl11ll1l11[IIl1Ill1l11(_KEA[1761])] = UDim2[IIl1Ill1l11(_KEA[1762])](I1Il1ll1l11 + 0xC, lIIl1ll1l11 + 0xC);
+lIl11ll1l11[IIl1Ill1l11(_KEA[1763])] = UDim2[IIl1Ill1l11(_KEA[1764])](.5, 0B0, .5, -(lIIl1ll1l11 / 0B10) - 0x6);
+lIl11ll1l11[IIl1Ill1l11(_KEA[1765])] = Color3[IIl1Ill1l11(_KEA[1766])](0x2A, 0B0, 0xE);
+lIl11ll1l11[IIl1Ill1l11(_KEA[1767])] = .38
+lIl11ll1l11[IIl1Ill1l11(_KEA[1768])] = 0B0
+lIl11ll1l11[IIl1Ill1l11(_KEA[1769])] = false
+lIl11ll1l11[IIl1Ill1l11(_KEA[1770])] = 0B1
+lIl11ll1l11[IIl1Ill1l11(_KEA[1771])] = I1l11ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1772])](IIl1Ill1l11(_KEA[1773]), lIl11ll1l11))[IIl1Ill1l11(_KEA[1774])] = UDim[IIl1Ill1l11(_KEA[1775])](0B0, 0x10);
+local IIl11ll1l11 = Instance[IIl1Ill1l11(_KEA[1776])](IIl1Ill1l11(_KEA[1777]));
+IIl11ll1l11[IIl1Ill1l11(_KEA[1778])] = IIl1Ill1l11(_KEA[1779]);
+IIl11ll1l11[IIl1Ill1l11(_KEA[1780])] = Vector2[IIl1Ill1l11(_KEA[1781])](.5, 0B0);
+IIl11ll1l11[IIl1Ill1l11(_KEA[1782])] = UDim2[IIl1Ill1l11(_KEA[1783])](I1Il1ll1l11, lIIl1ll1l11);
+IIl11ll1l11[IIl1Ill1l11(_KEA[1784])] = UDim2[IIl1Ill1l11(_KEA[1785])](.5, 0B0, .5, -lIIl1ll1l11 / 0B10);
+IIl11ll1l11[IIl1Ill1l11(_KEA[1786])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1787])]
+IIl11ll1l11[IIl1Ill1l11(_KEA[1788])] = .14
+IIl11ll1l11[IIl1Ill1l11(_KEA[1789])] = 0B0
+IIl11ll1l11[IIl1Ill1l11(_KEA[1790])] = true
+IIl11ll1l11[IIl1Ill1l11(_KEA[1791])] = 0B10
+IIl11ll1l11[IIl1Ill1l11(_KEA[1792])] = I1l11ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1793])](IIl1Ill1l11(_KEA[1794]), IIl11ll1l11))[IIl1Ill1l11(_KEA[1795])] = UDim[IIl1Ill1l11(_KEA[1796])](0B0, 0x10);
+local ll111ll1l11 = Instance[IIl1Ill1l11(_KEA[1797])](IIl1Ill1l11(_KEA[1798]));
+ll111ll1l11[IIl1Ill1l11(_KEA[1799])] = ColorSequence[IIl1Ill1l11(_KEA[1800])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1801])](0B0, I11l1ll1l11[IIl1Ill1l11(_KEA[1802])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1803])](.55, I11l1ll1l11[IIl1Ill1l11(_KEA[1804])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1805])](0B1, I11l1ll1l11[IIl1Ill1l11(_KEA[1806])]) });
+ll111ll1l11[IIl1Ill1l11(_KEA[1807])] = 0x20
+ll111ll1l11[IIl1Ill1l11(_KEA[1808])] = IIl11ll1l11
+local Il111ll1l11 = Instance[IIl1Ill1l11(_KEA[1809])](IIl1Ill1l11(_KEA[1810]));
+Il111ll1l11[IIl1Ill1l11(_KEA[1811])] = IIl1Ill1l11(_KEA[1812]);
+Il111ll1l11[IIl1Ill1l11(_KEA[1813])] = Vector2[IIl1Ill1l11(_KEA[1814])](.5, 0B0);
+Il111ll1l11[IIl1Ill1l11(_KEA[1815])] = UDim2[IIl1Ill1l11(_KEA[1816])](I1Il1ll1l11, lIIl1ll1l11);
+Il111ll1l11[IIl1Ill1l11(_KEA[1817])] = IIl11ll1l11[IIl1Ill1l11(_KEA[1818])]
+Il111ll1l11[IIl1Ill1l11(_KEA[1819])] = 0B1
+Il111ll1l11[IIl1Ill1l11(_KEA[1820])] = 0B0
+Il111ll1l11[IIl1Ill1l11(_KEA[1821])] = 0x50
+Il111ll1l11[IIl1Ill1l11(_KEA[1822])] = I1l11ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1823])](IIl1Ill1l11(_KEA[1824]), Il111ll1l11))[IIl1Ill1l11(_KEA[1795])] = UDim[IIl1Ill1l11(_KEA[1825])](0B0, 0x10);
+local l1111ll1l11 = Instance[IIl1Ill1l11(_KEA[1826])](IIl1Ill1l11(_KEA[1827]));
+l1111ll1l11[IIl1Ill1l11(_KEA[1828])] = Enum[IIl1Ill1l11(_KEA[1829])][IIl1Ill1l11(_KEA[1830])]
+l1111ll1l11[IIl1Ill1l11(_KEA[1831])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1832])]
+l1111ll1l11[IIl1Ill1l11(_KEA[1833])] = 1.25
+l1111ll1l11[IIl1Ill1l11(_KEA[1834])] = .18
+l1111ll1l11[IIl1Ill1l11(_KEA[1835])] = Enum[IIl1Ill1l11(_KEA[1836])][IIl1Ill1l11(_KEA[1837])]
+l1111ll1l11[IIl1Ill1l11(_KEA[1838])] = Il111ll1l11
+local I1111ll1l11 = Instance[IIl1Ill1l11(_KEA[1839])](IIl1Ill1l11(_KEA[1840]));
+I1111ll1l11[IIl1Ill1l11(_KEA[1841])] = ColorSequence[IIl1Ill1l11(_KEA[1842])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[296])](0B0, I11l1ll1l11[IIl1Ill1l11(_KEA[1712])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1843])](.5, I11l1ll1l11[IIl1Ill1l11(_KEA[1844])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1845])](0B1, I11l1ll1l11[IIl1Ill1l11(_KEA[1846])]) });
+I1111ll1l11[IIl1Ill1l11(_KEA[1847])] = l1111ll1l11
+local lI111ll1l11 = Instance[IIl1Ill1l11(_KEA[1848])](IIl1Ill1l11(_KEA[1849]));
+lI111ll1l11[IIl1Ill1l11(_KEA[1850])] = IIl1Ill1l11(_KEA[1851]);
+lI111ll1l11[IIl1Ill1l11(_KEA[1852])] = UDim2[IIl1Ill1l11(_KEA[1853])](0B1, 0B0, 0B0, lll11ll1l11);
+lI111ll1l11[IIl1Ill1l11(_KEA[1854])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1855])]
+lI111ll1l11[IIl1Ill1l11(_KEA[1856])] = .2
+lI111ll1l11[IIl1Ill1l11(_KEA[1857])] = 0B0
+lI111ll1l11[IIl1Ill1l11(_KEA[1858])] = true
+lI111ll1l11[IIl1Ill1l11(_KEA[1859])] = 0x5
+lI111ll1l11[IIl1Ill1l11(_KEA[1860])] = IIl11ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1814])](IIl1Ill1l11(_KEA[1861]), lI111ll1l11))[IIl1Ill1l11(_KEA[1862])] = UDim[IIl1Ill1l11(_KEA[1863])](0B0, 0x10);
+local II111ll1l11 = Instance[IIl1Ill1l11(_KEA[1864])](IIl1Ill1l11(_KEA[1865]));
+II111ll1l11[IIl1Ill1l11(_KEA[1866])] = UDim2[IIl1Ill1l11(_KEA[1814])](0B1, 0B0, 0B0, 0xC);
+II111ll1l11[IIl1Ill1l11(_KEA[1867])] = UDim2[IIl1Ill1l11(_KEA[1781])](0B0, 0B0, 0B1, -0B1100);
+II111ll1l11[IIl1Ill1l11(_KEA[1868])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1869])]
+II111ll1l11[IIl1Ill1l11(_KEA[1870])] = 0B1
+II111ll1l11[IIl1Ill1l11(_KEA[1871])] = 0B0
+II111ll1l11[IIl1Ill1l11(_KEA[1872])] = 0B101
+II111ll1l11[IIl1Ill1l11(_KEA[1873])] = lI111ll1l11
+II111ll1l11[IIl1Ill1l11(_KEA[1874])] = false
+local llI11ll1l11 = Instance[IIl1Ill1l11(_KEA[1875])](IIl1Ill1l11(_KEA[1876]));
+llI11ll1l11[IIl1Ill1l11(_KEA[1877])] = ColorSequence[IIl1Ill1l11(_KEA[1878])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1879])](0B0, Color3[IIl1Ill1l11(_KEA[1880])](0x28, 0xF, 0x17)), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1881])](.48, I11l1ll1l11[IIl1Ill1l11(_KEA[1882])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1883])](0B1, I11l1ll1l11[IIl1Ill1l11(_KEA[1884])]) });
+llI11ll1l11[IIl1Ill1l11(_KEA[1885])] = 0x8
+llI11ll1l11[IIl1Ill1l11(_KEA[1886])] = lI111ll1l11
+local IlI11ll1l11 = Instance[IIl1Ill1l11(_KEA[1887])](IIl1Ill1l11(_KEA[1777]));
+IlI11ll1l11[IIl1Ill1l11(_KEA[1888])] = UDim2[IIl1Ill1l11(_KEA[1889])](0xCD, 0x68);
+IlI11ll1l11[IIl1Ill1l11(_KEA[1890])] = UDim2[IIl1Ill1l11(_KEA[1891])](-64, -28);
+IlI11ll1l11[IIl1Ill1l11(_KEA[1892])] = Color3[IIl1Ill1l11(_KEA[1893])](0xD4, 0xF, 0x43);
+IlI11ll1l11[IIl1Ill1l11(_KEA[1894])] = .74
+IlI11ll1l11[IIl1Ill1l11(_KEA[1895])] = 0B0
+IlI11ll1l11[IIl1Ill1l11(_KEA[1896])] = 0x6
+IlI11ll1l11[IIl1Ill1l11(_KEA[1897])] = lI111ll1l11
+IlI11ll1l11[IIl1Ill1l11(_KEA[1898])] = false;
+(Instance[IIl1Ill1l11(_KEA[1899])](IIl1Ill1l11(_KEA[1900]), IlI11ll1l11))[IIl1Ill1l11(_KEA[1901])] = UDim[IIl1Ill1l11(_KEA[340])](0B1, 0B0);
+local l1I11ll1l11 = Instance[IIl1Ill1l11(_KEA[1863])](IIl1Ill1l11(_KEA[1902]));
+l1I11ll1l11[IIl1Ill1l11(_KEA[1903])] = NumberSequence[IIl1Ill1l11(_KEA[1755])]({ NumberSequenceKeypoint[IIl1Ill1l11(_KEA[1904])](0B0, .2), NumberSequenceKeypoint[IIl1Ill1l11(_KEA[1560])](.62, .78), NumberSequenceKeypoint[IIl1Ill1l11(_KEA[1905])](0B1, 0B1) });
+l1I11ll1l11[IIl1Ill1l11(_KEA[1906])] = IlI11ll1l11
+local I1I11ll1l11 = Instance[IIl1Ill1l11(_KEA[1907])](IIl1Ill1l11(_KEA[1908]));
+I1I11ll1l11[IIl1Ill1l11(_KEA[1909])] = UDim2[IIl1Ill1l11(_KEA[1910])](0B1, -88, 0B1, 0B0);
+I1I11ll1l11[IIl1Ill1l11(_KEA[1911])] = UDim2[IIl1Ill1l11(_KEA[1912])](0x2C, 0B0);
+I1I11ll1l11[IIl1Ill1l11(_KEA[1913])] = 0B1
+I1I11ll1l11[IIl1Ill1l11(_KEA[1914])] = IIl1Ill1l11(_KEA[1915]);
+I1I11ll1l11[IIl1Ill1l11(_KEA[1916])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1917])]
+I1I11ll1l11[IIl1Ill1l11(_KEA[1918])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1919])]
+I1I11ll1l11[IIl1Ill1l11(_KEA[1920])] = .52
+I1I11ll1l11[IIl1Ill1l11(_KEA[1921])] = Enum[IIl1Ill1l11(_KEA[1922])][IIl1Ill1l11(_KEA[1923])]
+I1I11ll1l11[IIl1Ill1l11(_KEA[1924])] = l1Il1ll1l11 and 0x11 or 0x13
+I1I11ll1l11[IIl1Ill1l11(_KEA[1925])] = Enum[IIl1Ill1l11(_KEA[1926])][IIl1Ill1l11(_KEA[1927])]
+I1I11ll1l11[IIl1Ill1l11(_KEA[1928])] = 0x8
+I1I11ll1l11[IIl1Ill1l11(_KEA[1929])] = lI111ll1l11
+local lII11ll1l11 = Instance[IIl1Ill1l11(_KEA[1825])](IIl1Ill1l11(_KEA[1930]));
+lII11ll1l11[IIl1Ill1l11(_KEA[1931])] = UDim2[IIl1Ill1l11(_KEA[1932])](0B1, -20, 0B0, 0B11);
+lII11ll1l11[IIl1Ill1l11(_KEA[1933])] = UDim2[IIl1Ill1l11(_KEA[1934])](0B0, 0xA, 0B1, -4);
+lII11ll1l11[IIl1Ill1l11(_KEA[1935])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1936])]
+lII11ll1l11[IIl1Ill1l11(_KEA[1937])] = 0B0
+lII11ll1l11[IIl1Ill1l11(_KEA[1938])] = 0x8
+lII11ll1l11[IIl1Ill1l11(_KEA[1939])] = lI111ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1879])](IIl1Ill1l11(_KEA[1940]), lII11ll1l11))[IIl1Ill1l11(_KEA[1941])] = UDim[IIl1Ill1l11(_KEA[1942])](0B1, 0B0);
+local III11ll1l11 = Instance[IIl1Ill1l11(_KEA[1842])](IIl1Ill1l11(_KEA[1943]));
+III11ll1l11[IIl1Ill1l11(_KEA[1944])] = ColorSequence[IIl1Ill1l11(_KEA[1945])](I11l1ll1l11[IIl1Ill1l11(_KEA[1946])]);
+III11ll1l11[IIl1Ill1l11(_KEA[1947])] = lII11ll1l11
+local lllI1ll1l11 = Instance[IIl1Ill1l11(_KEA[1948])](IIl1Ill1l11(_KEA[1949]));
+lllI1ll1l11[IIl1Ill1l11(_KEA[1950])] = UDim2[IIl1Ill1l11(_KEA[1951])](0B1, 0B1);
+lllI1ll1l11[IIl1Ill1l11(_KEA[1952])] = 0B1
+lllI1ll1l11[IIl1Ill1l11(_KEA[1953])] = 0B0
+lllI1ll1l11[IIl1Ill1l11(_KEA[1954])] = IIl1Ill1l11(_KEA[1955]);
+lllI1ll1l11[IIl1Ill1l11(_KEA[1956])] = false
+lllI1ll1l11[IIl1Ill1l11(_KEA[1957])] = 0xA
+lllI1ll1l11[IIl1Ill1l11(_KEA[1958])] = lI111ll1l11
+local IllI1ll1l11 = Instance[IIl1Ill1l11(_KEA[1959])](IIl1Ill1l11(_KEA[1960]));
+IllI1ll1l11[IIl1Ill1l11(_KEA[1961])] = IIl1Ill1l11(_KEA[1962]);
+IllI1ll1l11[IIl1Ill1l11(_KEA[1963])] = UDim2[IIl1Ill1l11(_KEA[1964])](0B1, 0B0, 0B1, -lll11ll1l11);
+IllI1ll1l11[IIl1Ill1l11(_KEA[1965])] = UDim2[IIl1Ill1l11(_KEA[1907])](0B0, 0B0, 0B0, lll11ll1l11);
+IllI1ll1l11[IIl1Ill1l11(_KEA[1966])] = Color3[IIl1Ill1l11(_KEA[1967])](0x6, 0B11, 0x8);
+IllI1ll1l11[IIl1Ill1l11(_KEA[1968])] = 0B1
+IllI1ll1l11[IIl1Ill1l11(_KEA[1969])] = 0B0
+IllI1ll1l11[IIl1Ill1l11(_KEA[1970])] = 0B10
+IllI1ll1l11[IIl1Ill1l11(_KEA[1971])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1972])]
+IllI1ll1l11[IIl1Ill1l11(_KEA[1973])] = .1
+IllI1ll1l11[IIl1Ill1l11(_KEA[1974])] = UDim2[IIl1Ill1l11(_KEA[1887])]();
+IllI1ll1l11[IIl1Ill1l11(_KEA[1975])] = 0x4
+IllI1ll1l11[IIl1Ill1l11(_KEA[1976])] = IIl11ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1977])](IIl1Ill1l11(_KEA[1978]), IllI1ll1l11))[IIl1Ill1l11(_KEA[1979])] = UDim[IIl1Ill1l11(_KEA[1980])](0B0, 0xE);
+local l1lI1ll1l11 = Instance[IIl1Ill1l11(_KEA[1848])](IIl1Ill1l11(_KEA[1981]));
+l1lI1ll1l11[IIl1Ill1l11(_KEA[1982])] = UDim[IIl1Ill1l11(_KEA[1983])](0B0, 0xA);
+l1lI1ll1l11[IIl1Ill1l11(_KEA[1984])] = UDim[IIl1Ill1l11(_KEA[1985])](0B0, 0xA);
+l1lI1ll1l11[IIl1Ill1l11(_KEA[1986])] = UDim[IIl1Ill1l11(_KEA[1987])](0B0, 0x7);
+l1lI1ll1l11[IIl1Ill1l11(_KEA[1988])] = UDim[IIl1Ill1l11(_KEA[1989])](0B0, 0x8);
+l1lI1ll1l11[IIl1Ill1l11(_KEA[1990])] = IllI1ll1l11
+local I1lI1ll1l11 = Instance[IIl1Ill1l11(_KEA[1991])](IIl1Ill1l11(_KEA[1992]));
+I1lI1ll1l11[IIl1Ill1l11(_KEA[1993])] = Enum[IIl1Ill1l11(_KEA[1994])][IIl1Ill1l11(_KEA[1995])]
+I1lI1ll1l11[IIl1Ill1l11(_KEA[1996])] = UDim[IIl1Ill1l11(_KEA[1997])](0B0, 0B11);
+I1lI1ll1l11[IIl1Ill1l11(_KEA[1998])] = IllI1ll1l11
+I11IIIIll11((I1lI1ll1l11:GetPropertyChangedSignal(IIl1Ill1l11(_KEA[1999]))):Connect(function()
+IllI1ll1l11[IIl1Ill1l11(_KEA[2000])] = UDim2[IIl1Ill1l11(_KEA[2001])](0B0, I1lI1ll1l11[IIl1Ill1l11(_KEA[2002])][IIl1Ill1l11(_KEA[2003])] + 0x10)
 	end));
-local function I1111Ill11(Il111l1l11, ll111l1l11)
-Il111l1l11[l11IlIll11(_KMZ[1998])] = UDim2[l11IlIll11(_KMZ[1999])](0B1, 0B0, 0B0, ll111l1l11);
-Il111l1l11[l11IlIll11(_KMZ[2000])] = lIllIIll11[l11IlIll11(_KMZ[2001])]
-Il111l1l11[l11IlIll11(_KMZ[2002])] = .16
-Il111l1l11[l11IlIll11(_KMZ[2003])] = 0B0
-Il111l1l11[l11IlIll11(_KMZ[2004])] = true
-Il111l1l11[l11IlIll11(_KMZ[2005])] = 0x5;
-(Instance[l11IlIll11(_KMZ[1517])](l11IlIll11(_KMZ[2006]), Il111l1l11))[l11IlIll11(_KMZ[2007])] = UDim[l11IlIll11(_KMZ[2008])](0B0, 0xB);
-local IIl11l1l11 = Instance[l11IlIll11(_KMZ[2009])](l11IlIll11(_KMZ[2010]));
-IIl11l1l11[l11IlIll11(_KMZ[2011])] = UDim2[l11IlIll11(_KMZ[2012])](0B1, -0B10, 0B0, 0xD);
-IIl11l1l11[l11IlIll11(_KMZ[2013])] = UDim2[l11IlIll11(_KMZ[2014])](0B1, 0B1);
-IIl11l1l11[l11IlIll11(_KMZ[2015])] = lIllIIll11[l11IlIll11(_KMZ[2016])]
-IIl11l1l11[l11IlIll11(_KMZ[2017])] = .92
-IIl11l1l11[l11IlIll11(_KMZ[2018])] = 0B0
-IIl11l1l11[l11IlIll11(_KMZ[2019])] = false
-IIl11l1l11[l11IlIll11(_KMZ[2020])] = 0x6
-IIl11l1l11[l11IlIll11(_KMZ[2021])] = Il111l1l11;
-(Instance[l11IlIll11(_KMZ[2022])](l11IlIll11(_KMZ[2023]), IIl11l1l11))[l11IlIll11(_KMZ[2024])] = UDim[l11IlIll11(_KMZ[2025])](0B0, 0xA);
-local lIl11l1l11 = Instance[l11IlIll11(_KMZ[2026])](l11IlIll11(_KMZ[2027]));
-lIl11l1l11[l11IlIll11(_KMZ[2028])] = NumberSequence[l11IlIll11(_KMZ[2029])]({ NumberSequenceKeypoint[l11IlIll11(_KMZ[2030])](0B0, .18), NumberSequenceKeypoint[l11IlIll11(_KMZ[2031])](0B1, 0B1) });
-lIl11l1l11[l11IlIll11(_KMZ[2032])] = 0x5A
-lIl11l1l11[l11IlIll11(_KMZ[2033])] = IIl11l1l11
-local I1l11l1l11 = Instance[l11IlIll11(_KMZ[2034])](l11IlIll11(_KMZ[2035]));
-I1l11l1l11[l11IlIll11(_KMZ[2036])] = Enum[l11IlIll11(_KMZ[2037])][l11IlIll11(_KMZ[2038])]
-I1l11l1l11[l11IlIll11(_KMZ[2039])] = lIllIIll11[l11IlIll11(_KMZ[2040])]
-I1l11l1l11[l11IlIll11(_KMZ[2041])] = 1.15
-I1l11l1l11[l11IlIll11(_KMZ[2042])] = .4
-I1l11l1l11[l11IlIll11(_KMZ[2043])] = Il111l1l11
-return I1l11l1l11
+local function lIlI1ll1l11(ll1I1IIll11, Il1I1IIll11)
+ll1I1IIll11[IIl1Ill1l11(_KEA[2004])] = UDim2[IIl1Ill1l11(_KEA[2005])](0B1, 0B0, 0B0, Il1I1IIll11);
+ll1I1IIll11[IIl1Ill1l11(_KEA[2006])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2007])]
+ll1I1IIll11[IIl1Ill1l11(_KEA[2008])] = .16
+ll1I1IIll11[IIl1Ill1l11(_KEA[2009])] = 0B0
+ll1I1IIll11[IIl1Ill1l11(_KEA[2010])] = true
+ll1I1IIll11[IIl1Ill1l11(_KEA[2011])] = 0x5;
+(Instance[IIl1Ill1l11(_KEA[2012])](IIl1Ill1l11(_KEA[2013]), ll1I1IIll11))[IIl1Ill1l11(_KEA[2014])] = UDim[IIl1Ill1l11(_KEA[2015])](0B0, 0xB);
+local l11I1IIll11 = Instance[IIl1Ill1l11(_KEA[2016])](IIl1Ill1l11(_KEA[2017]));
+l11I1IIll11[IIl1Ill1l11(_KEA[2018])] = UDim2[IIl1Ill1l11(_KEA[2019])](0B1, -0B10, 0B0, 0xD);
+l11I1IIll11[IIl1Ill1l11(_KEA[2020])] = UDim2[IIl1Ill1l11(_KEA[2021])](0B1, 0B1);
+l11I1IIll11[IIl1Ill1l11(_KEA[2022])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2023])]
+l11I1IIll11[IIl1Ill1l11(_KEA[2024])] = .92
+l11I1IIll11[IIl1Ill1l11(_KEA[2025])] = 0B0
+l11I1IIll11[IIl1Ill1l11(_KEA[2026])] = false
+l11I1IIll11[IIl1Ill1l11(_KEA[2027])] = 0x6
+l11I1IIll11[IIl1Ill1l11(_KEA[2028])] = ll1I1IIll11;
+(Instance[IIl1Ill1l11(_KEA[2029])](IIl1Ill1l11(_KEA[2030]), l11I1IIll11))[IIl1Ill1l11(_KEA[2031])] = UDim[IIl1Ill1l11(_KEA[1797])](0B0, 0xA);
+local I11I1IIll11 = Instance[IIl1Ill1l11(_KEA[1785])](IIl1Ill1l11(_KEA[2032]));
+I11I1IIll11[IIl1Ill1l11(_KEA[2033])] = NumberSequence[IIl1Ill1l11(_KEA[2034])]({ NumberSequenceKeypoint[IIl1Ill1l11(_KEA[1987])](0B0, .18), NumberSequenceKeypoint[IIl1Ill1l11(_KEA[2035])](0B1, 0B1) });
+I11I1IIll11[IIl1Ill1l11(_KEA[2036])] = 0x5A
+I11I1IIll11[IIl1Ill1l11(_KEA[2037])] = l11I1IIll11
+local lI1I1IIll11 = Instance[IIl1Ill1l11(_KEA[2038])](IIl1Ill1l11(_KEA[2039]));
+lI1I1IIll11[IIl1Ill1l11(_KEA[2040])] = Enum[IIl1Ill1l11(_KEA[2041])][IIl1Ill1l11(_KEA[2042])]
+lI1I1IIll11[IIl1Ill1l11(_KEA[2043])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2044])]
+lI1I1IIll11[IIl1Ill1l11(_KEA[2045])] = 1.15
+lI1I1IIll11[IIl1Ill1l11(_KEA[2046])] = .4
+lI1I1IIll11[IIl1Ill1l11(_KEA[1897])] = ll1I1IIll11
+return lI1I1IIll11
 	end
-local function l1111Ill11(Il111l1l11, ll111l1l11, IIl11l1l11)
-local I1l11l1l11 = Instance[l11IlIll11(_KMZ[2044])](l11IlIll11(_KMZ[2045]));
-I1l11l1l11[l11IlIll11(_KMZ[2046])] = ll111l1l11
-I1l11l1l11[l11IlIll11(_KMZ[2047])] = l11IlIll11(_KMZ[2048]);
-I1l11l1l11[l11IlIll11(_KMZ[2049])] = false
-I1l11l1l11[l11IlIll11(_KMZ[2050])] = llI11Ill11
-local l1l11l1l11 = I1111Ill11(I1l11l1l11, 0x26);
-local Ill11l1l11 = Instance[l11IlIll11(_KMZ[2051])](l11IlIll11(_KMZ[2052]));
-Ill11l1l11[l11IlIll11(_KMZ[2053])] = UDim2[l11IlIll11(_KMZ[2054])](0B11, 0x18);
-Ill11l1l11[l11IlIll11(_KMZ[2055])] = UDim2[l11IlIll11(_KMZ[2056])](0B0, 0x8, .5, -12);
-Ill11l1l11[l11IlIll11(_KMZ[2057])] = lIllIIll11[l11IlIll11(_KMZ[2058])]
-Ill11l1l11[l11IlIll11(_KMZ[2059])] = 0B0
-Ill11l1l11[l11IlIll11(_KMZ[2060])] = 0x7
-Ill11l1l11[l11IlIll11(_KMZ[2061])] = I1l11l1l11;
-(Instance[l11IlIll11(_KMZ[2062])](l11IlIll11(_KMZ[2063]), Ill11l1l11))[l11IlIll11(_KMZ[2064])] = UDim[l11IlIll11(_KMZ[2065])](0B1, 0B0);
-local lll11l1l11 = Instance[l11IlIll11(_KMZ[2066])](l11IlIll11(_KMZ[2067]));
-lll11l1l11[l11IlIll11(_KMZ[2068])] = ColorSequence[l11IlIll11(_KMZ[341])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[1889])](0B0, lIllIIll11[l11IlIll11(_KMZ[2069])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[2070])](.52, lIllIIll11[l11IlIll11(_KMZ[2071])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[2072])](0B1, Color3[l11IlIll11(_KMZ[2073])](0xFF, 0xC7, 0xD1)) });
-lll11l1l11[l11IlIll11(_KMZ[2074])] = 0x5A
-lll11l1l11[l11IlIll11(_KMZ[2075])] = Ill11l1l11
-local IIIl1l1l11 = Instance[l11IlIll11(_KMZ[2076])](l11IlIll11(_KMZ[2077]));
-IIIl1l1l11[l11IlIll11(_KMZ[2078])] = UDim2[l11IlIll11(_KMZ[2079])](0B1, -76, 0B1, 0B0);
-IIIl1l1l11[l11IlIll11(_KMZ[2080])] = UDim2[l11IlIll11(_KMZ[2081])](0x13, 0B0);
-IIIl1l1l11[l11IlIll11(_KMZ[2082])] = 0B1
-IIIl1l1l11[l11IlIll11(_KMZ[2083])] = Il111l1l11
-IIIl1l1l11[l11IlIll11(_KMZ[2084])] = lIllIIll11[l11IlIll11(_KMZ[2085])]
-IIIl1l1l11[l11IlIll11(_KMZ[2086])] = Enum[l11IlIll11(_KMZ[2087])][l11IlIll11(_KMZ[2088])]
-IIIl1l1l11[l11IlIll11(_KMZ[2089])] = IIII1Ill11 and 0B1100 or 0xE
-IIIl1l1l11[l11IlIll11(_KMZ[2090])] = Enum[l11IlIll11(_KMZ[2091])][l11IlIll11(_KMZ[2092])]
-IIIl1l1l11[l11IlIll11(_KMZ[2093])] = 0x7
-IIIl1l1l11[l11IlIll11(_KMZ[2094])] = I1l11l1l11
-local lIIl1l1l11 = Instance[l11IlIll11(_KMZ[2095])](l11IlIll11(_KMZ[2096]));
-lIIl1l1l11[l11IlIll11(_KMZ[2097])] = UDim2[l11IlIll11(_KMZ[2098])](0x28, 0x14);
-lIIl1l1l11[l11IlIll11(_KMZ[272])] = UDim2[l11IlIll11(_KMZ[2099])](0B1, -50, .5, -10);
-lIIl1l1l11[l11IlIll11(_KMZ[2100])] = lIllIIll11[l11IlIll11(_KMZ[2101])]
-lIIl1l1l11[l11IlIll11(_KMZ[2102])] = 0B0
-lIIl1l1l11[l11IlIll11(_KMZ[2103])] = 0x7
-lIIl1l1l11[l11IlIll11(_KMZ[1971])] = I1l11l1l11;
-(Instance[l11IlIll11(_KMZ[2104])](l11IlIll11(_KMZ[2105]), lIIl1l1l11))[l11IlIll11(_KMZ[2106])] = UDim[l11IlIll11(_KMZ[2107])](0B1, 0B0);
-local I1Il1l1l11 = Instance[l11IlIll11(_KMZ[2108])](l11IlIll11(_KMZ[2109]));
-I1Il1l1l11[l11IlIll11(_KMZ[2110])] = ColorSequence[l11IlIll11(_KMZ[2099])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[1954])](0B0, Color3[l11IlIll11(_KMZ[2111])](0x5D, 0x9, 0x20)), ColorSequenceKeypoint[l11IlIll11(_KMZ[2112])](0B1, Color3[l11IlIll11(_KMZ[2113])](0x27, 0x5, 0x12)) });
-I1Il1l1l11[l11IlIll11(_KMZ[2114])] = lIIl1l1l11
-local l1Il1l1l11 = Instance[l11IlIll11(_KMZ[1975])](l11IlIll11(_KMZ[2115]));
-l1Il1l1l11[l11IlIll11(_KMZ[2116])] = UDim2[l11IlIll11(_KMZ[2117])](0xE, 0xE);
-l1Il1l1l11[l11IlIll11(_KMZ[1555])] = UDim2[l11IlIll11(_KMZ[2118])](0B11, 0B11);
-l1Il1l1l11[l11IlIll11(_KMZ[2119])] = lIllIIll11[l11IlIll11(_KMZ[2120])]
-l1Il1l1l11[l11IlIll11(_KMZ[2121])] = 0B0
-l1Il1l1l11[l11IlIll11(_KMZ[2122])] = 0x8
-l1Il1l1l11[l11IlIll11(_KMZ[2123])] = lIIl1l1l11;
-(Instance[l11IlIll11(_KMZ[2124])](l11IlIll11(_KMZ[2125]), l1Il1l1l11))[l11IlIll11(_KMZ[2126])] = UDim[l11IlIll11(_KMZ[2127])](0B1, 0B0);
-local IlIl1l1l11 = Instance[l11IlIll11(_KMZ[2128])](l11IlIll11(_KMZ[2129]));
-IlIl1l1l11[l11IlIll11(_KMZ[2130])] = Enum[l11IlIll11(_KMZ[2036])][l11IlIll11(_KMZ[2131])]
-IlIl1l1l11[l11IlIll11(_KMZ[2132])] = Color3[l11IlIll11(_KMZ[2133])](0xFF, 0xCD, 0xD7);
-IlIl1l1l11[l11IlIll11(_KMZ[2134])] = 0B1
-IlIl1l1l11[l11IlIll11(_KMZ[2135])] = .52
-IlIl1l1l11[l11IlIll11(_KMZ[2136])] = l1Il1l1l11
-local llIl1l1l11 = false
-local II1l1l1l11 = {};
-local function lI1l1l1l11(Il111l1l11)
-local ll111l1l11 = TweenInfo[l11IlIll11(_KMZ[1928])](Il111l1l11 and 0B0 or .14, Enum[l11IlIll11(_KMZ[2137])][l11IlIll11(_KMZ[2138])], Enum[l11IlIll11(_KMZ[2139])][l11IlIll11(_KMZ[2140])]);
-(lIl11l1l11:Create(I1l11l1l11, ll111l1l11, { [l11IlIll11(_KMZ[2141])] = llIl1l1l11 and lIllIIll11[l11IlIll11(_KMZ[2142])] or lIllIIll11[l11IlIll11(_KMZ[2143])] })):Play();
-(lIl11l1l11:Create(l1l11l1l11, ll111l1l11, { [l11IlIll11(_KMZ[2144])] = llIl1l1l11 and lIllIIll11[l11IlIll11(_KMZ[2145])] or lIllIIll11[l11IlIll11(_KMZ[2146])], [l11IlIll11(_KMZ[2147])] = llIl1l1l11 and .02 or .22 })):Play();
-(lIl11l1l11:Create(Ill11l1l11, ll111l1l11, { [l11IlIll11(_KMZ[2148])] = llIl1l1l11 and lIllIIll11[l11IlIll11(_KMZ[2149])] or lIllIIll11[l11IlIll11(_KMZ[2150])] })):Play();
-(lIl11l1l11:Create(lIIl1l1l11, ll111l1l11, { [l11IlIll11(_KMZ[2151])] = llIl1l1l11 and lIllIIll11[l11IlIll11(_KMZ[2152])] or lIllIIll11[l11IlIll11(_KMZ[2153])] })):Play();
-(lIl11l1l11:Create(l1Il1l1l11, ll111l1l11, { [l11IlIll11(_KMZ[2154])] = llIl1l1l11 and UDim2[l11IlIll11(_KMZ[2155])](0x17, 0B11) or UDim2[l11IlIll11(_KMZ[2156])](0B11, 0B11), [l11IlIll11(_KMZ[2157])] = llIl1l1l11 and lIllIIll11[l11IlIll11(_KMZ[2158])] or lIllIIll11[l11IlIll11(_KMZ[2159])] })):Play();
-(lIl11l1l11:Create(IlIl1l1l11, ll111l1l11, { [l11IlIll11(_KMZ[2160])] = llIl1l1l11 and lIllIIll11[l11IlIll11(_KMZ[2161])] or Color3[l11IlIll11(_KMZ[2162])](0xFF, 0xCD, 0xD7), [l11IlIll11(_KMZ[2163])] = llIl1l1l11 and .04 or .52 })):Play()
+local function IIlI1ll1l11(ll1I1IIll11, Il1I1IIll11, l11I1IIll11)
+local lI1I1IIll11 = Instance[IIl1Ill1l11(_KEA[2047])](IIl1Ill1l11(_KEA[2048]));
+lI1I1IIll11[IIl1Ill1l11(_KEA[2049])] = Il1I1IIll11
+lI1I1IIll11[IIl1Ill1l11(_KEA[2050])] = IIl1Ill1l11(_KEA[2051]);
+lI1I1IIll11[IIl1Ill1l11(_KEA[2052])] = false
+lI1I1IIll11[IIl1Ill1l11(_KEA[2053])] = IllI1ll1l11
+local II1I1IIll11 = lIlI1ll1l11(lI1I1IIll11, 0x26);
+local llII1IIll11 = Instance[IIl1Ill1l11(_KEA[2054])](IIl1Ill1l11(_KEA[2055]));
+llII1IIll11[IIl1Ill1l11(_KEA[2056])] = UDim2[IIl1Ill1l11(_KEA[2057])](0B11, 0x18);
+llII1IIll11[IIl1Ill1l11(_KEA[2058])] = UDim2[IIl1Ill1l11(_KEA[1839])](0B0, 0x8, .5, -12);
+llII1IIll11[IIl1Ill1l11(_KEA[2059])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2060])]
+llII1IIll11[IIl1Ill1l11(_KEA[2061])] = 0B0
+llII1IIll11[IIl1Ill1l11(_KEA[2062])] = 0x7
+llII1IIll11[IIl1Ill1l11(_KEA[2063])] = lI1I1IIll11;
+(Instance[IIl1Ill1l11(_KEA[2064])](IIl1Ill1l11(_KEA[2065]), llII1IIll11))[IIl1Ill1l11(_KEA[2066])] = UDim[IIl1Ill1l11(_KEA[1743])](0B1, 0B0);
+local IlII1IIll11 = Instance[IIl1Ill1l11(_KEA[2067])](IIl1Ill1l11(_KEA[2068]));
+IlII1IIll11[IIl1Ill1l11(_KEA[2069])] = ColorSequence[IIl1Ill1l11(_KEA[2070])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2071])](0B0, I11l1ll1l11[IIl1Ill1l11(_KEA[2072])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2073])](.52, I11l1ll1l11[IIl1Ill1l11(_KEA[1844])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2074])](0B1, Color3[IIl1Ill1l11(_KEA[2075])](0xFF, 0xC7, 0xD1)) });
+IlII1IIll11[IIl1Ill1l11(_KEA[2076])] = 0x5A
+IlII1IIll11[IIl1Ill1l11(_KEA[2077])] = llII1IIll11
+local l1II1IIll11 = Instance[IIl1Ill1l11(_KEA[1781])](IIl1Ill1l11(_KEA[2078]));
+l1II1IIll11[IIl1Ill1l11(_KEA[1523])] = UDim2[IIl1Ill1l11(_KEA[1945])](0B1, -76, 0B1, 0B0);
+l1II1IIll11[IIl1Ill1l11(_KEA[2079])] = UDim2[IIl1Ill1l11(_KEA[2080])](0x13, 0B0);
+l1II1IIll11[IIl1Ill1l11(_KEA[2081])] = 0B1
+l1II1IIll11[IIl1Ill1l11(_KEA[2082])] = ll1I1IIll11
+l1II1IIll11[IIl1Ill1l11(_KEA[2083])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2084])]
+l1II1IIll11[IIl1Ill1l11(_KEA[2085])] = Enum[IIl1Ill1l11(_KEA[2086])][IIl1Ill1l11(_KEA[2087])]
+l1II1IIll11[IIl1Ill1l11(_KEA[2088])] = l1Il1ll1l11 and 0xC or 0xE
+l1II1IIll11[IIl1Ill1l11(_KEA[2089])] = Enum[IIl1Ill1l11(_KEA[2090])][IIl1Ill1l11(_KEA[2091])]
+l1II1IIll11[IIl1Ill1l11(_KEA[2092])] = 0B111
+l1II1IIll11[IIl1Ill1l11(_KEA[2093])] = lI1I1IIll11
+local I1II1IIll11 = Instance[IIl1Ill1l11(_KEA[2094])](IIl1Ill1l11(_KEA[2095]));
+I1II1IIll11[IIl1Ill1l11(_KEA[2096])] = UDim2[IIl1Ill1l11(_KEA[2097])](0x28, 0x14);
+I1II1IIll11[IIl1Ill1l11(_KEA[2098])] = UDim2[IIl1Ill1l11(_KEA[2099])](0B1, -50, .5, -10);
+I1II1IIll11[IIl1Ill1l11(_KEA[2100])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2101])]
+I1II1IIll11[IIl1Ill1l11(_KEA[2102])] = 0B0
+I1II1IIll11[IIl1Ill1l11(_KEA[2103])] = 0x7
+I1II1IIll11[IIl1Ill1l11(_KEA[2104])] = lI1I1IIll11;
+(Instance[IIl1Ill1l11(_KEA[2105])](IIl1Ill1l11(_KEA[2106]), I1II1IIll11))[IIl1Ill1l11(_KEA[1862])] = UDim[IIl1Ill1l11(_KEA[2107])](0B1, 0B0);
+local lIII1IIll11 = Instance[IIl1Ill1l11(_KEA[2108])](IIl1Ill1l11(_KEA[2109]));
+lIII1IIll11[IIl1Ill1l11(_KEA[2110])] = ColorSequence[IIl1Ill1l11(_KEA[2111])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1823])](0B0, Color3[IIl1Ill1l11(_KEA[2112])](0x5D, 0x9, 0x20)), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2113])](0B1, Color3[IIl1Ill1l11(_KEA[2114])](0x27, 0x5, 0x12)) });
+lIII1IIll11[IIl1Ill1l11(_KEA[2115])] = I1II1IIll11
+local IIII1IIll11 = Instance[IIl1Ill1l11(_KEA[2116])](IIl1Ill1l11(_KEA[2117]));
+IIII1IIll11[IIl1Ill1l11(_KEA[2118])] = UDim2[IIl1Ill1l11(_KEA[2119])](0xE, 0xE);
+IIII1IIll11[IIl1Ill1l11(_KEA[2120])] = UDim2[IIl1Ill1l11(_KEA[2121])](0B11, 0B11);
+IIII1IIll11[IIl1Ill1l11(_KEA[2122])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2123])]
+IIII1IIll11[IIl1Ill1l11(_KEA[2124])] = 0B0
+IIII1IIll11[IIl1Ill1l11(_KEA[2125])] = 0x8
+IIII1IIll11[IIl1Ill1l11(_KEA[2126])] = I1II1IIll11;
+(Instance[IIl1Ill1l11(_KEA[2127])](IIl1Ill1l11(_KEA[2128]), IIII1IIll11))[IIl1Ill1l11(_KEA[2129])] = UDim[IIl1Ill1l11(_KEA[2130])](0B1, 0B0);
+local llllIIIll11 = Instance[IIl1Ill1l11(_KEA[1987])](IIl1Ill1l11(_KEA[2131]));
+llllIIIll11[IIl1Ill1l11(_KEA[2132])] = Enum[IIl1Ill1l11(_KEA[2133])][IIl1Ill1l11(_KEA[2134])]
+llllIIIll11[IIl1Ill1l11(_KEA[2135])] = Color3[IIl1Ill1l11(_KEA[1703])](0xFF, 0xCD, 0xD7);
+llllIIIll11[IIl1Ill1l11(_KEA[2136])] = 0B1
+llllIIIll11[IIl1Ill1l11(_KEA[2137])] = .52
+llllIIIll11[IIl1Ill1l11(_KEA[2138])] = IIII1IIll11
+local IlllIIIll11 = false
+local l1llIIIll11 = {};
+local function I1llIIIll11(ll1I1IIll11)
+local Il1I1IIll11 = TweenInfo[IIl1Ill1l11(_KEA[2139])](ll1I1IIll11 and 0B0 or .14, Enum[IIl1Ill1l11(_KEA[2140])][IIl1Ill1l11(_KEA[2141])], Enum[IIl1Ill1l11(_KEA[2142])][IIl1Ill1l11(_KEA[2143])]);
+(I11I1IIll11:Create(lI1I1IIll11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2144])] = IlllIIIll11 and I11l1ll1l11[IIl1Ill1l11(_KEA[2145])] or I11l1ll1l11[IIl1Ill1l11(_KEA[2146])] })):Play();
+(I11I1IIll11:Create(II1I1IIll11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2147])] = IlllIIIll11 and I11l1ll1l11[IIl1Ill1l11(_KEA[2148])] or I11l1ll1l11[IIl1Ill1l11(_KEA[2149])], [IIl1Ill1l11(_KEA[2150])] = IlllIIIll11 and .02 or .22 })):Play();
+(I11I1IIll11:Create(llII1IIll11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2059])] = IlllIIIll11 and I11l1ll1l11[IIl1Ill1l11(_KEA[2151])] or I11l1ll1l11[IIl1Ill1l11(_KEA[1708])] })):Play();
+(I11I1IIll11:Create(I1II1IIll11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2152])] = IlllIIIll11 and I11l1ll1l11[IIl1Ill1l11(_KEA[2153])] or I11l1ll1l11[IIl1Ill1l11(_KEA[2154])] })):Play();
+(I11I1IIll11:Create(IIII1IIll11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2155])] = IlllIIIll11 and UDim2[IIl1Ill1l11(_KEA[2156])](0x17, 0B11) or UDim2[IIl1Ill1l11(_KEA[2157])](0B11, 0B11), [IIl1Ill1l11(_KEA[2158])] = IlllIIIll11 and I11l1ll1l11[IIl1Ill1l11(_KEA[2159])] or I11l1ll1l11[IIl1Ill1l11(_KEA[2160])] })):Play();
+(I11I1IIll11:Create(llllIIIll11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2161])] = IlllIIIll11 and I11l1ll1l11[IIl1Ill1l11(_KEA[2162])] or Color3[IIl1Ill1l11(_KEA[2163])](0xFF, 0xCD, 0xD7), [IIl1Ill1l11(_KEA[2164])] = IlllIIIll11 and .04 or .52 })):Play()
 		end
-function II1l1l1l11.Set(lIl11l1l11, Il111l1l11, ll111l1l11)
-Il111l1l11 = Il111l1l11 == true
-if llIl1l1l11 == Il111l1l11 then
+function l1llIIIll11.Set(I11I1IIll11, ll1I1IIll11, Il1I1IIll11)
+ll1I1IIll11 = ll1I1IIll11 == true
+if IlllIIIll11 == ll1I1IIll11 then
 return true
 			end
-if not ll111l1l11 and IIl11l1l11 then
-local ll111l1l11, lIl11l1l11 = pcall(IIl11l1l11, Il111l1l11)
-if not ll111l1l11 or lIl11l1l11 == false then
+if not Il1I1IIll11 and l11I1IIll11 then
+local Il1I1IIll11, I11I1IIll11 = pcall(l11I1IIll11, ll1I1IIll11)
+if not Il1I1IIll11 or I11I1IIll11 == false then
 return false
 				end
 			end
-llIl1l1l11 = Il111l1l11
-lI1l1l1l11(false)
+IlllIIIll11 = ll1I1IIll11
+I1llIIIll11(false)
 return true
 		end
-function II1l1l1l11.Get(Il111l1l11)
-return llIl1l1l11
+function l1llIIIll11.Get(ll1I1IIll11)
+return IlllIIIll11
 		end
-lIl1ll1l11(I1l11l1l11[l11IlIll11(_KMZ[2164])]:Connect(function()
-II1l1l1l11:Set(not llIl1l1l11, false)
+I11IIIIll11(lI1I1IIll11[IIl1Ill1l11(_KEA[2165])]:Connect(function()
+l1llIIIll11:Set(not IlllIIIll11, false)
 		end));
-lIl1ll1l11(I1l11l1l11[l11IlIll11(_KMZ[2165])]:Connect(function()
-(lIl11l1l11:Create(I1l11l1l11, TweenInfo[l11IlIll11(_KMZ[2065])](.1), { [l11IlIll11(_KMZ[2166])] = llIl1l1l11 and lIllIIll11[l11IlIll11(_KMZ[2167])] or lIllIIll11[l11IlIll11(_KMZ[2168])] })):Play()
+I11IIIIll11(lI1I1IIll11[IIl1Ill1l11(_KEA[2166])]:Connect(function()
+(I11I1IIll11:Create(lI1I1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2167])](.1), { [IIl1Ill1l11(_KEA[2168])] = IlllIIIll11 and I11l1ll1l11[IIl1Ill1l11(_KEA[2169])] or I11l1ll1l11[IIl1Ill1l11(_KEA[2170])] })):Play()
 		end));
-lIl1ll1l11(I1l11l1l11[l11IlIll11(_KMZ[2169])]:Connect(function()
-lI1l1l1l11(false)
+I11IIIIll11(lI1I1IIll11[IIl1Ill1l11(_KEA[2171])]:Connect(function()
+I1llIIIll11(false)
 		end));
-lI1l1l1l11(true)
-return II1l1l1l11
+I1llIIIll11(true)
+return l1llIIIll11
 	end
-local Il111Ill11
-local ll111Ill11
-local IIl11Ill11
-local lIl11Ill11
-local I1l11Ill11
-local l1l11Ill11
-Il111Ill11 = l1111Ill11(l11IlIll11(_KMZ[2170]), 0B10, function(Il111l1l11)
-if Il111l1l11 and (I1l11Ill11 and I1l11Ill11:Get()) then
-I1l11Ill11:Set(false, false)
+local ll1I1ll1l11
+local Il1I1ll1l11
+local l11I1ll1l11
+local I11I1ll1l11
+local lI1I1ll1l11
+local II1I1ll1l11
+ll1I1ll1l11 = IIlI1ll1l11(IIl1Ill1l11(_KEA[2172]), 0B10, function(ll1I1IIll11)
+if ll1I1IIll11 and (lI1I1ll1l11 and lI1I1ll1l11:Get()) then
+lI1I1ll1l11:Set(false, false)
 			end
-local ll111l1l11 = I1l1IIll11(Il111l1l11)
-if ll111l1l11 == false then
-I1llIIll11(l11IlIll11(_KMZ[2171]))
+local Il1I1IIll11 = lI1Illl1l11(ll1I1IIll11)
+if Il1I1IIll11 == false then
+lI1l1ll1l11(IIl1Ill1l11(_KEA[2173]))
 return false
 			end
 return true
 		end)
-l1l11Ill11 = l1111Ill11(l11IlIll11(_KMZ[2172]), 0B11, function(Il111l1l11)
-local ll111l1l11 = llIlIIll11(Il111l1l11)
-if ll111l1l11 == false then
-I1llIIll11(l11IlIll11(_KMZ[2173]))
+II1I1ll1l11 = IIlI1ll1l11(IIl1Ill1l11(_KEA[2174]), 0B11, function(ll1I1IIll11)
+local Il1I1IIll11 = Illl1ll1l11(ll1I1IIll11)
+if Il1I1IIll11 == false then
+lI1l1ll1l11(IIl1Ill1l11(_KEA[2175]))
 return false
 			end
 return true
 		end)
-lIl11Ill11 = l1111Ill11(l11IlIll11(_KMZ[2174]), 0x4, function(Il111l1l11)
-local ll111l1l11 = II11IIll11(Il111l1l11)
-if ll111l1l11 == false then
-I1llIIll11(l11IlIll11(_KMZ[2175]))
+I11I1ll1l11 = IIlI1ll1l11(IIl1Ill1l11(_KEA[2176]), 0x4, function(ll1I1IIll11)
+local Il1I1IIll11 = l1lIlll1l11(ll1I1IIll11)
+if Il1I1IIll11 == false then
+lI1l1ll1l11(IIl1Ill1l11(_KEA[2177]))
 return false
 			end
 return true
 		end)
-ll111Ill11 = l1111Ill11(l11IlIll11(_KMZ[2176]), 0x5, function(Il111l1l11)
-return ll1lIIll11(Il111l1l11)
+Il1I1ll1l11 = IIlI1ll1l11(IIl1Ill1l11(_KEA[2178]), 0x5, function(ll1I1IIll11)
+return Il1l1ll1l11(ll1I1IIll11)
 		end)
-IIl11Ill11 = l1111Ill11(l11IlIll11(_KMZ[2177]), 0x6, function(Il111l1l11)
-Ill1IIll11(Il111l1l11)
+l11I1ll1l11 = IIlI1ll1l11(IIl1Ill1l11(_KEA[2179]), 0x6, function(ll1I1IIll11)
+llIIlll1l11(ll1I1IIll11)
 return true
 		end);
-local function Ill11Ill11()
-local ll111l1l11 = {}
-for Il111l1l11, IIl11l1l11 in ipairs(Il111l1l11:GetPlayers()) do
-if IIl11l1l11 ~= IIIl1l1l11 then
-ll111l1l11[#ll111l1l11 + 0B1] = { [l11IlIll11(_KMZ[2178])] = IIl11l1l11[l11IlIll11(_KMZ[2179])], [l11IlIll11(_KMZ[2180])] = IIl11l1l11[l11IlIll11(_KMZ[2181])], [l11IlIll11(_KMZ[2182])] = IIl11l1l11[l11IlIll11(_KMZ[2183])] }
+local function llII1ll1l11()
+local Il1I1IIll11 = {}
+for ll1I1IIll11, l11I1IIll11 in ipairs(ll1I1IIll11:GetPlayers()) do
+if l11I1IIll11 ~= l1II1IIll11 then
+Il1I1IIll11[#Il1I1IIll11 + 0B1] = { [IIl1Ill1l11(_KEA[2180])] = l11I1IIll11[IIl1Ill1l11(_KEA[2181])], [IIl1Ill1l11(_KEA[2182])] = l11I1IIll11[IIl1Ill1l11(_KEA[2183])], [IIl1Ill1l11(_KEA[2184])] = l11I1IIll11[IIl1Ill1l11(_KEA[2185])] }
 			end
 		end
-table[l11IlIll11(_KMZ[2184])](ll111l1l11, function(Il111l1l11, ll111l1l11)
-return Il111l1l11[l11IlIll11(_KMZ[2185])]:lower() < ll111l1l11[l11IlIll11(_KMZ[2186])]:lower()
+table[IIl1Ill1l11(_KEA[2186])](Il1I1IIll11, function(ll1I1IIll11, Il1I1IIll11)
+return ll1I1IIll11[IIl1Ill1l11(_KEA[2187])]:lower() < Il1I1IIll11[IIl1Ill1l11(_KEA[2188])]:lower()
 		end)
-return ll111l1l11
+return Il1I1IIll11
 	end
-local function lll11Ill11(Il111l1l11, ll111l1l11, IIl11l1l11, l1l11l1l11)
-local Ill11l1l11 = Instance[l11IlIll11(_KMZ[1983])](l11IlIll11(_KMZ[2187]));
-Ill11l1l11[l11IlIll11(_KMZ[2188])] = 0x7
-Ill11l1l11[l11IlIll11(_KMZ[2189])] = Il111l1l11
-Ill11l1l11[l11IlIll11(_KMZ[2190])] = true
-local lll11l1l11 = I1111Ill11(Ill11l1l11, 0x2A);
-local IIIl1l1l11 = Instance[l11IlIll11(_KMZ[2191])](l11IlIll11(_KMZ[2192]));
-IIIl1l1l11[l11IlIll11(_KMZ[2193])] = UDim2[l11IlIll11(_KMZ[2194])](0B1, 0B0, 0B0, 0x2A);
-IIIl1l1l11[l11IlIll11(_KMZ[2195])] = 0B1
-IIIl1l1l11[l11IlIll11(_KMZ[2196])] = 0B0
-IIIl1l1l11[l11IlIll11(_KMZ[2197])] = l11IlIll11(_KMZ[2198]);
-IIIl1l1l11[l11IlIll11(_KMZ[2199])] = false
-IIIl1l1l11[l11IlIll11(_KMZ[2200])] = 0B1101
-IIIl1l1l11[l11IlIll11(_KMZ[2201])] = Ill11l1l11
-local lIIl1l1l11 = Instance[l11IlIll11(_KMZ[1374])](l11IlIll11(_KMZ[2202]));
-lIIl1l1l11[l11IlIll11(_KMZ[2203])] = UDim2[l11IlIll11(_KMZ[2204])](.42, -12, 0B1, 0B0);
-lIIl1l1l11[l11IlIll11(_KMZ[2205])] = UDim2[l11IlIll11(_KMZ[2206])](0xB, 0B0);
-lIIl1l1l11[l11IlIll11(_KMZ[2207])] = 0B1
-lIIl1l1l11[l11IlIll11(_KMZ[2208])] = ll111l1l11
-lIIl1l1l11[l11IlIll11(_KMZ[2209])] = lIllIIll11[l11IlIll11(_KMZ[2210])]
-lIIl1l1l11[l11IlIll11(_KMZ[2211])] = Enum[l11IlIll11(_KMZ[2212])][l11IlIll11(_KMZ[2213])]
-lIIl1l1l11[l11IlIll11(_KMZ[2214])] = IIII1Ill11 and 0xC or 0B1101
-lIIl1l1l11[l11IlIll11(_KMZ[2215])] = Enum[l11IlIll11(_KMZ[2216])][l11IlIll11(_KMZ[2217])]
-lIIl1l1l11[l11IlIll11(_KMZ[2218])] = 0B1110
-lIIl1l1l11[l11IlIll11(_KMZ[2219])] = IIIl1l1l11
-local I1Il1l1l11 = Instance[l11IlIll11(_KMZ[2220])](l11IlIll11(_KMZ[2221]));
-I1Il1l1l11[l11IlIll11(_KMZ[2222])] = UDim2[l11IlIll11(_KMZ[2223])](.58, -34, 0B1, 0B0);
-I1Il1l1l11[l11IlIll11(_KMZ[2224])] = UDim2[l11IlIll11(_KMZ[1766])](.42, 0B0, 0B0, 0B0);
-I1Il1l1l11[l11IlIll11(_KMZ[2225])] = 0B1
-I1Il1l1l11[l11IlIll11(_KMZ[2226])] = lIllIIll11[l11IlIll11(_KMZ[2227])]
-I1Il1l1l11[l11IlIll11(_KMZ[2228])] = Enum[l11IlIll11(_KMZ[2229])][l11IlIll11(_KMZ[2230])]
-I1Il1l1l11[l11IlIll11(_KMZ[2231])] = IIII1Ill11 and 0xB or 0xC
-I1Il1l1l11[l11IlIll11(_KMZ[2232])] = true
-I1Il1l1l11[l11IlIll11(_KMZ[2233])] = Enum[l11IlIll11(_KMZ[2234])][l11IlIll11(_KMZ[2235])]
-I1Il1l1l11[l11IlIll11(_KMZ[2236])] = 0xE
-I1Il1l1l11[l11IlIll11(_KMZ[2237])] = IIIl1l1l11
-local l1Il1l1l11 = Instance[l11IlIll11(_KMZ[2238])](l11IlIll11(_KMZ[2239]));
-l1Il1l1l11[l11IlIll11(_KMZ[2240])] = UDim2[l11IlIll11(_KMZ[2241])](0x18, 0x2A);
-l1Il1l1l11[l11IlIll11(_KMZ[2242])] = UDim2[l11IlIll11(_KMZ[2243])](0B1, -28, 0B0, 0B0);
-l1Il1l1l11[l11IlIll11(_KMZ[2244])] = 0B1
-l1Il1l1l11[l11IlIll11(_KMZ[2245])] = l11IlIll11(_KMZ[2246]);
-l1Il1l1l11[l11IlIll11(_KMZ[2247])] = lIllIIll11[l11IlIll11(_KMZ[2248])]
-l1Il1l1l11[l11IlIll11(_KMZ[2249])] = Enum[l11IlIll11(_KMZ[2250])][l11IlIll11(_KMZ[2251])]
-l1Il1l1l11[l11IlIll11(_KMZ[2252])] = 0x12
-l1Il1l1l11[l11IlIll11(_KMZ[2253])] = 0B1110
-l1Il1l1l11[l11IlIll11(_KMZ[2094])] = IIIl1l1l11
-l1Il1l1l11[l11IlIll11(_KMZ[2254])] = l11IlIll11(_KMZ[2255]);
-local IlIl1l1l11 = Instance[l11IlIll11(_KMZ[2256])](l11IlIll11(_KMZ[2257]));
-IlIl1l1l11[l11IlIll11(_KMZ[2258])] = UDim2[l11IlIll11(_KMZ[2259])](0B1, -12, 0B0, 0B0);
-IlIl1l1l11[l11IlIll11(_KMZ[2260])] = UDim2[l11IlIll11(_KMZ[2261])](0x6, 0x2A);
-IlIl1l1l11[l11IlIll11(_KMZ[2262])] = lIllIIll11[l11IlIll11(_KMZ[2263])]
-IlIl1l1l11[l11IlIll11(_KMZ[2264])] = .04
-IlIl1l1l11[l11IlIll11(_KMZ[2265])] = 0B0
-IlIl1l1l11[l11IlIll11(_KMZ[2266])] = 0B10
-IlIl1l1l11[l11IlIll11(_KMZ[2267])] = lIllIIll11[l11IlIll11(_KMZ[2268])]
-IlIl1l1l11[l11IlIll11(_KMZ[2269])] = UDim2[l11IlIll11(_KMZ[2270])]();
-IlIl1l1l11[l11IlIll11(_KMZ[2271])] = false
-IlIl1l1l11[l11IlIll11(_KMZ[2272])] = 0xE
-IlIl1l1l11[l11IlIll11(_KMZ[2273])] = Ill11l1l11;
-(Instance[l11IlIll11(_KMZ[1943])](l11IlIll11(_KMZ[2274]), IlIl1l1l11))[l11IlIll11(_KMZ[2275])] = UDim[l11IlIll11(_KMZ[1898])](0B0, 0x9);
-local llIl1l1l11 = Instance[l11IlIll11(_KMZ[2276])](l11IlIll11(_KMZ[2277]), IlIl1l1l11);
-llIl1l1l11[l11IlIll11(_KMZ[2278])] = Enum[l11IlIll11(_KMZ[2279])][l11IlIll11(_KMZ[2280])]
-llIl1l1l11[l11IlIll11(_KMZ[2281])] = UDim[l11IlIll11(_KMZ[2282])](0B0, 0B10);
-local II1l1l1l11 = Instance[l11IlIll11(_KMZ[2034])](l11IlIll11(_KMZ[2283]), IlIl1l1l11);
-II1l1l1l11[l11IlIll11(_KMZ[2284])] = UDim[l11IlIll11(_KMZ[2124])](0B0, 0B11);
-II1l1l1l11[l11IlIll11(_KMZ[2285])] = UDim[l11IlIll11(_KMZ[2286])](0B0, 0B11);
-II1l1l1l11[l11IlIll11(_KMZ[2287])] = UDim[l11IlIll11(_KMZ[1798])](0B0, 0B11);
-II1l1l1l11[l11IlIll11(_KMZ[2288])] = UDim[l11IlIll11(_KMZ[2289])](0B0, 0B11);
-local lI1l1l1l11 = { [l11IlIll11(_KMZ[2290])] = IIl11l1l11 or {}, [l11IlIll11(_KMZ[2291])] = 0B1, [l11IlIll11(_KMZ[2292])] = false };
-local function I11l1l1l11(Il111l1l11)
-if type(Il111l1l11) == l11IlIll11(_KMZ[2293]) then
-return tostring(Il111l1l11[l11IlIll11(_KMZ[2294])] or Il111l1l11[l11IlIll11(_KMZ[2295])] or l11IlIll11(_KMZ[2296]))
+local function IlII1ll1l11(ll1I1IIll11, Il1I1IIll11, l11I1IIll11, II1I1IIll11)
+local llII1IIll11 = Instance[IIl1Ill1l11(_KEA[2189])](IIl1Ill1l11(_KEA[2190]));
+llII1IIll11[IIl1Ill1l11(_KEA[2191])] = 0x7
+llII1IIll11[IIl1Ill1l11(_KEA[2192])] = ll1I1IIll11
+llII1IIll11[IIl1Ill1l11(_KEA[2193])] = true
+local IlII1IIll11 = lIlI1ll1l11(llII1IIll11, 0x2A);
+local l1II1IIll11 = Instance[IIl1Ill1l11(_KEA[2194])](IIl1Ill1l11(_KEA[2195]));
+l1II1IIll11[IIl1Ill1l11(_KEA[2196])] = UDim2[IIl1Ill1l11(_KEA[2197])](0B1, 0B0, 0B0, 0x2A);
+l1II1IIll11[IIl1Ill1l11(_KEA[2198])] = 0B1
+l1II1IIll11[IIl1Ill1l11(_KEA[2199])] = 0B0
+l1II1IIll11[IIl1Ill1l11(_KEA[2200])] = IIl1Ill1l11(_KEA[2201]);
+l1II1IIll11[IIl1Ill1l11(_KEA[2202])] = false
+l1II1IIll11[IIl1Ill1l11(_KEA[2203])] = 0xD
+l1II1IIll11[IIl1Ill1l11(_KEA[2204])] = llII1IIll11
+local I1II1IIll11 = Instance[IIl1Ill1l11(_KEA[2205])](IIl1Ill1l11(_KEA[2206]));
+I1II1IIll11[IIl1Ill1l11(_KEA[2207])] = UDim2[IIl1Ill1l11(_KEA[1907])](.42, -12, 0B1, 0B0);
+I1II1IIll11[IIl1Ill1l11(_KEA[2208])] = UDim2[IIl1Ill1l11(_KEA[2209])](0xB, 0B0);
+I1II1IIll11[IIl1Ill1l11(_KEA[2210])] = 0B1
+I1II1IIll11[IIl1Ill1l11(_KEA[2211])] = Il1I1IIll11
+I1II1IIll11[IIl1Ill1l11(_KEA[2212])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2213])]
+I1II1IIll11[IIl1Ill1l11(_KEA[2214])] = Enum[IIl1Ill1l11(_KEA[2215])][IIl1Ill1l11(_KEA[2216])]
+I1II1IIll11[IIl1Ill1l11(_KEA[2217])] = l1Il1ll1l11 and 0xC or 0B1101
+I1II1IIll11[IIl1Ill1l11(_KEA[2218])] = Enum[IIl1Ill1l11(_KEA[2219])][IIl1Ill1l11(_KEA[2220])]
+I1II1IIll11[IIl1Ill1l11(_KEA[2221])] = 0xE
+I1II1IIll11[IIl1Ill1l11(_KEA[2222])] = l1II1IIll11
+local lIII1IIll11 = Instance[IIl1Ill1l11(_KEA[2194])](IIl1Ill1l11(_KEA[2223]));
+lIII1IIll11[IIl1Ill1l11(_KEA[2224])] = UDim2[IIl1Ill1l11(_KEA[1987])](.58, -34, 0B1, 0B0);
+lIII1IIll11[IIl1Ill1l11(_KEA[2225])] = UDim2[IIl1Ill1l11(_KEA[2226])](.42, 0B0, 0B0, 0B0);
+lIII1IIll11[IIl1Ill1l11(_KEA[2227])] = 0B1
+lIII1IIll11[IIl1Ill1l11(_KEA[2228])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2229])]
+lIII1IIll11[IIl1Ill1l11(_KEA[2230])] = Enum[IIl1Ill1l11(_KEA[2231])][IIl1Ill1l11(_KEA[2232])]
+lIII1IIll11[IIl1Ill1l11(_KEA[2233])] = l1Il1ll1l11 and 0xB or 0xC
+lIII1IIll11[IIl1Ill1l11(_KEA[2234])] = true
+lIII1IIll11[IIl1Ill1l11(_KEA[2235])] = Enum[IIl1Ill1l11(_KEA[2236])][IIl1Ill1l11(_KEA[2237])]
+lIII1IIll11[IIl1Ill1l11(_KEA[2238])] = 0xE
+lIII1IIll11[IIl1Ill1l11(_KEA[2239])] = l1II1IIll11
+local IIII1IIll11 = Instance[IIl1Ill1l11(_KEA[2240])](IIl1Ill1l11(_KEA[2241]));
+IIII1IIll11[IIl1Ill1l11(_KEA[2242])] = UDim2[IIl1Ill1l11(_KEA[2243])](0x18, 0x2A);
+IIII1IIll11[IIl1Ill1l11(_KEA[2244])] = UDim2[IIl1Ill1l11(_KEA[2245])](0B1, -28, 0B0, 0B0);
+IIII1IIll11[IIl1Ill1l11(_KEA[2246])] = 0B1
+IIII1IIll11[IIl1Ill1l11(_KEA[2247])] = IIl1Ill1l11(_KEA[2248]);
+IIII1IIll11[IIl1Ill1l11(_KEA[2249])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2250])]
+IIII1IIll11[IIl1Ill1l11(_KEA[2251])] = Enum[IIl1Ill1l11(_KEA[2252])][IIl1Ill1l11(_KEA[2253])]
+IIII1IIll11[IIl1Ill1l11(_KEA[2254])] = 0x12
+IIII1IIll11[IIl1Ill1l11(_KEA[2062])] = 0xE
+IIII1IIll11[IIl1Ill1l11(_KEA[2255])] = l1II1IIll11
+IIII1IIll11[IIl1Ill1l11(_KEA[2256])] = IIl1Ill1l11(_KEA[2257]);
+local llllIIIll11 = Instance[IIl1Ill1l11(_KEA[2258])](IIl1Ill1l11(_KEA[2259]));
+llllIIIll11[IIl1Ill1l11(_KEA[2260])] = UDim2[IIl1Ill1l11(_KEA[2261])](0B1, -12, 0B0, 0B0);
+llllIIIll11[IIl1Ill1l11(_KEA[2262])] = UDim2[IIl1Ill1l11(_KEA[2263])](0x6, 0x2A);
+llllIIIll11[IIl1Ill1l11(_KEA[2264])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1696])]
+llllIIIll11[IIl1Ill1l11(_KEA[2265])] = .04
+llllIIIll11[IIl1Ill1l11(_KEA[2266])] = 0B0
+llllIIIll11[IIl1Ill1l11(_KEA[2267])] = 0B10
+llllIIIll11[IIl1Ill1l11(_KEA[2268])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2269])]
+llllIIIll11[IIl1Ill1l11(_KEA[2270])] = UDim2[IIl1Ill1l11(_KEA[1803])]();
+llllIIIll11[IIl1Ill1l11(_KEA[2271])] = false
+llllIIIll11[IIl1Ill1l11(_KEA[2272])] = 0xE
+llllIIIll11[IIl1Ill1l11(_KEA[2273])] = llII1IIll11;
+(Instance[IIl1Ill1l11(_KEA[269])](IIl1Ill1l11(_KEA[2274]), llllIIIll11))[IIl1Ill1l11(_KEA[2275])] = UDim[IIl1Ill1l11(_KEA[2105])](0B0, 0x9);
+local IlllIIIll11 = Instance[IIl1Ill1l11(_KEA[2194])](IIl1Ill1l11(_KEA[2276]), llllIIIll11);
+IlllIIIll11[IIl1Ill1l11(_KEA[2277])] = Enum[IIl1Ill1l11(_KEA[2278])][IIl1Ill1l11(_KEA[2279])]
+IlllIIIll11[IIl1Ill1l11(_KEA[2280])] = UDim[IIl1Ill1l11(_KEA[2281])](0B0, 0B10);
+local l1llIIIll11 = Instance[IIl1Ill1l11(_KEA[2205])](IIl1Ill1l11(_KEA[2282]), llllIIIll11);
+l1llIIIll11[IIl1Ill1l11(_KEA[2283])] = UDim[IIl1Ill1l11(_KEA[2284])](0B0, 0B11);
+l1llIIIll11[IIl1Ill1l11(_KEA[2285])] = UDim[IIl1Ill1l11(_KEA[1899])](0B0, 0B11);
+l1llIIIll11[IIl1Ill1l11(_KEA[2286])] = UDim[IIl1Ill1l11(_KEA[2287])](0B0, 0B11);
+l1llIIIll11[IIl1Ill1l11(_KEA[2288])] = UDim[IIl1Ill1l11(_KEA[2289])](0B0, 0B11);
+local I1llIIIll11 = { [IIl1Ill1l11(_KEA[2290])] = l11I1IIll11 or {}, [IIl1Ill1l11(_KEA[2291])] = 0B1, [IIl1Ill1l11(_KEA[2292])] = false };
+local function lIllIIIll11(ll1I1IIll11)
+if type(ll1I1IIll11) == IIl1Ill1l11(_KEA[2293]) then
+return tostring(ll1I1IIll11[IIl1Ill1l11(_KEA[2294])] or ll1I1IIll11[IIl1Ill1l11(_KEA[2295])] or IIl1Ill1l11(_KEA[2296]))
 			end
-return Il111l1l11 and tostring(Il111l1l11) or l11IlIll11(_KMZ[2297])
+return ll1I1IIll11 and tostring(ll1I1IIll11) or IIl1Ill1l11(_KEA[2297])
 		end
-local function l11l1l1l11()
-return lI1l1l1l11[l11IlIll11(_KMZ[2298])][lI1l1l1l11[l11IlIll11(_KMZ[2299])]]
+local function IIllIIIll11()
+return I1llIIIll11[IIl1Ill1l11(_KEA[2298])][I1llIIIll11[IIl1Ill1l11(_KEA[2299])]]
 		end
-local function Il1l1l1l11(Il111l1l11)
-local ll111l1l11 = l11l1l1l11();
-I1Il1l1l11[l11IlIll11(_KMZ[1949])] = I11l1l1l11(ll111l1l11)
-if Il111l1l11 and l1l11l1l11 then
-pcall(l1l11l1l11, ll111l1l11)
+local function ll1lIIIll11(ll1I1IIll11)
+local Il1I1IIll11 = IIllIIIll11();
+lIII1IIll11[IIl1Ill1l11(_KEA[2300])] = lIllIIIll11(Il1I1IIll11)
+if ll1I1IIll11 and II1I1IIll11 then
+pcall(II1I1IIll11, Il1I1IIll11)
 			end
 		end
-local function ll1l1l1l11(ll111l1l11)
-lI1l1l1l11[l11IlIll11(_KMZ[2300])] = ll111l1l11 == true and #lI1l1l1l11[l11IlIll11(_KMZ[2301])] > 0B0
-local IIl11l1l11 = math[l11IlIll11(_KMZ[2302])](#lI1l1l1l11[l11IlIll11(_KMZ[2303])], 0x5) * 0x1E + 0x6
-IlIl1l1l11[l11IlIll11(_KMZ[2304])] = lI1l1l1l11[l11IlIll11(_KMZ[2305])]
-IlIl1l1l11[l11IlIll11(_KMZ[2306])] = UDim2[l11IlIll11(_KMZ[2307])](0B1, -12, 0B0, lI1l1l1l11[l11IlIll11(_KMZ[2308])] and IIl11l1l11 or 0B0);
-Ill11l1l11[l11IlIll11(_KMZ[319])] = UDim2[l11IlIll11(_KMZ[2191])](0B1, 0B0, 0B0, 0x2A + (lI1l1l1l11[l11IlIll11(_KMZ[2309])] and IIl11l1l11 or 0B0))
-if not II1I1Ill11 then
-local Il111l1l11 = lI1l1l1l11[l11IlIll11(_KMZ[2310])] and l1II1Ill11 or I1II1Ill11
-local ll111l1l11 = TweenInfo[l11IlIll11(_KMZ[2009])](.16, Enum[l11IlIll11(_KMZ[2311])][l11IlIll11(_KMZ[2312])], Enum[l11IlIll11(_KMZ[2313])][l11IlIll11(_KMZ[2314])]);
-(lIl11l1l11:Create(l11I1Ill11, ll111l1l11, { [l11IlIll11(_KMZ[2315])] = UDim2[l11IlIll11(_KMZ[2316])](lIII1Ill11, Il111l1l11) })):Play();
-(lIl11l1l11:Create(ll1I1Ill11, ll111l1l11, { [l11IlIll11(_KMZ[2317])] = UDim2[l11IlIll11(_KMZ[2318])](lIII1Ill11, Il111l1l11) })):Play();
-(lIl11l1l11:Create(I11I1Ill11, ll111l1l11, { [l11IlIll11(_KMZ[2258])] = UDim2[l11IlIll11(_KMZ[2319])](lIII1Ill11 + 0xC, Il111l1l11 + 0xC) })):Play()
+local function Il1lIIIll11(Il1I1IIll11)
+I1llIIIll11[IIl1Ill1l11(_KEA[2301])] = Il1I1IIll11 == true and #I1llIIIll11[IIl1Ill1l11(_KEA[2302])] > 0B0
+local l11I1IIll11 = math[IIl1Ill1l11(_KEA[2303])](#I1llIIIll11[IIl1Ill1l11(_KEA[2304])], 0x5) * 0x1E + 0x6
+llllIIIll11[IIl1Ill1l11(_KEA[2305])] = I1llIIIll11[IIl1Ill1l11(_KEA[2306])]
+llllIIIll11[IIl1Ill1l11(_KEA[2307])] = UDim2[IIl1Ill1l11(_KEA[1985])](0B1, -12, 0B0, I1llIIIll11[IIl1Ill1l11(_KEA[2308])] and l11I1IIll11 or 0B0);
+llII1IIll11[IIl1Ill1l11(_KEA[2309])] = UDim2[IIl1Ill1l11(_KEA[2310])](0B1, 0B0, 0B0, 0x2A + (I1llIIIll11[IIl1Ill1l11(_KEA[2311])] and l11I1IIll11 or 0B0))
+if not l1l11ll1l11 then
+local ll1I1IIll11 = I1llIIIll11[IIl1Ill1l11(_KEA[2312])] and IIIl1ll1l11 or lIIl1ll1l11
+local Il1I1IIll11 = TweenInfo[IIl1Ill1l11(_KEA[2313])](.16, Enum[IIl1Ill1l11(_KEA[2314])][IIl1Ill1l11(_KEA[2315])], Enum[IIl1Ill1l11(_KEA[2316])][IIl1Ill1l11(_KEA[2317])]);
+(I11I1IIll11:Create(IIl11ll1l11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2318])] = UDim2[IIl1Ill1l11(_KEA[2319])](I1Il1ll1l11, ll1I1IIll11) })):Play();
+(I11I1IIll11:Create(Il111ll1l11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2320])] = UDim2[IIl1Ill1l11(_KEA[2321])](I1Il1ll1l11, ll1I1IIll11) })):Play();
+(I11I1IIll11:Create(lIl11ll1l11, Il1I1IIll11, { [IIl1Ill1l11(_KEA[2322])] = UDim2[IIl1Ill1l11(_KEA[2323])](I1Il1ll1l11 + 0xC, ll1I1IIll11 + 0xC) })):Play()
 			end
-if lI1l1l1l11[l11IlIll11(_KMZ[2320])] then
-IlIl1l1l11[l11IlIll11(_KMZ[2321])] = Vector2[l11IlIll11(_KMZ[2322])]
-if Il111l1l11:IsA(l11IlIll11(_KMZ[2323])) then
-task[l11IlIll11(_KMZ[2324])](function()
-I1l11l1l11[l11IlIll11(_KMZ[2325])]:Wait();
-local ll111l1l11 = (Ill11l1l11[l11IlIll11(_KMZ[2326])][l11IlIll11(_KMZ[2327])] - Il111l1l11[l11IlIll11(_KMZ[2328])][l11IlIll11(_KMZ[2329])]) + Il111l1l11[l11IlIll11(_KMZ[2330])][l11IlIll11(_KMZ[2331])]
-local IIl11l1l11 = math[l11IlIll11(_KMZ[2332])](0B0, Il111l1l11[l11IlIll11(_KMZ[2333])][l11IlIll11(_KMZ[2334])] - Il111l1l11[l11IlIll11(_KMZ[2335])][l11IlIll11(_KMZ[2336])]);
-(lIl11l1l11:Create(Il111l1l11, TweenInfo[l11IlIll11(_KMZ[2337])](.18, Enum[l11IlIll11(_KMZ[2338])][l11IlIll11(_KMZ[2339])], Enum[l11IlIll11(_KMZ[2340])][l11IlIll11(_KMZ[2341])]), { [l11IlIll11(_KMZ[2342])] = Vector2[l11IlIll11(_KMZ[2343])](0B0, math[l11IlIll11(_KMZ[1502])](IIl11l1l11, math[l11IlIll11(_KMZ[2344])](0B0, ll111l1l11 - 0B10))) })):Play()
+if I1llIIIll11[IIl1Ill1l11(_KEA[2324])] then
+llllIIIll11[IIl1Ill1l11(_KEA[2325])] = Vector2[IIl1Ill1l11(_KEA[2326])]
+if ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[2327])) then
+task[IIl1Ill1l11(_KEA[2328])](function()
+lI1I1IIll11[IIl1Ill1l11(_KEA[2329])]:Wait();
+local Il1I1IIll11 = (llII1IIll11[IIl1Ill1l11(_KEA[2330])][IIl1Ill1l11(_KEA[2331])] - ll1I1IIll11[IIl1Ill1l11(_KEA[2332])][IIl1Ill1l11(_KEA[2333])]) + ll1I1IIll11[IIl1Ill1l11(_KEA[2334])][IIl1Ill1l11(_KEA[2335])]
+local l11I1IIll11 = math[IIl1Ill1l11(_KEA[2336])](0B0, ll1I1IIll11[IIl1Ill1l11(_KEA[2337])][IIl1Ill1l11(_KEA[2338])] - ll1I1IIll11[IIl1Ill1l11(_KEA[2339])][IIl1Ill1l11(_KEA[1561])]);
+(I11I1IIll11:Create(ll1I1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2035])](.18, Enum[IIl1Ill1l11(_KEA[2340])][IIl1Ill1l11(_KEA[2341])], Enum[IIl1Ill1l11(_KEA[2342])][IIl1Ill1l11(_KEA[2343])]), { [IIl1Ill1l11(_KEA[2344])] = Vector2[IIl1Ill1l11(_KEA[2345])](0B0, math[IIl1Ill1l11(_KEA[2346])](l11I1IIll11, math[IIl1Ill1l11(_KEA[2347])](0B0, Il1I1IIll11 - 0B10))) })):Play()
 					end)
 				end
-			elseif Il111l1l11:IsA(l11IlIll11(_KMZ[2345])) then
-(lIl11l1l11:Create(Il111l1l11, TweenInfo[l11IlIll11(_KMZ[2346])](.16, Enum[l11IlIll11(_KMZ[2347])][l11IlIll11(_KMZ[2348])], Enum[l11IlIll11(_KMZ[2349])][l11IlIll11(_KMZ[2350])]), { [l11IlIll11(_KMZ[2351])] = Vector2[l11IlIll11(_KMZ[2352])] })):Play()
+			elseif ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[2348])) then
+(I11I1IIll11:Create(ll1I1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2349])](.16, Enum[IIl1Ill1l11(_KEA[2350])][IIl1Ill1l11(_KEA[2351])], Enum[IIl1Ill1l11(_KEA[2352])][IIl1Ill1l11(_KEA[2353])]), { [IIl1Ill1l11(_KEA[2354])] = Vector2[IIl1Ill1l11(_KEA[2355])] })):Play()
 			end
-l1Il1l1l11[l11IlIll11(_KMZ[2353])] = false
-task[l11IlIll11(_KMZ[2354])](function()
-l1Il1l1l11[l11IlIll11(_KMZ[2355])] = lI1l1l1l11[l11IlIll11(_KMZ[2356])] and l11IlIll11(_KMZ[2357]) or l11IlIll11(_KMZ[2358]);
-l1Il1l1l11[l11IlIll11(_KMZ[2359])] = true
+IIII1IIll11[IIl1Ill1l11(_KEA[2356])] = false
+task[IIl1Ill1l11(_KEA[2357])](function()
+IIII1IIll11[IIl1Ill1l11(_KEA[2358])] = I1llIIIll11[IIl1Ill1l11(_KEA[2359])] and IIl1Ill1l11(_KEA[2360]) or IIl1Ill1l11(_KEA[2361]);
+IIII1IIll11[IIl1Ill1l11(_KEA[2362])] = true
 			end);
-l1Il1l1l11[l11IlIll11(_KMZ[2360])] = lI1l1l1l11[l11IlIll11(_KMZ[2361])] and l11IlIll11(_KMZ[2362]) or l11IlIll11(_KMZ[2363])
+IIII1IIll11[IIl1Ill1l11(_KEA[2363])] = I1llIIIll11[IIl1Ill1l11(_KEA[2364])] and IIl1Ill1l11(_KEA[2365]) or IIl1Ill1l11(_KEA[2366])
 		end
-local function IIll1l1l11()
-for Il111l1l11, ll111l1l11 in ipairs(IlIl1l1l11:GetChildren()) do
-if ll111l1l11:IsA(l11IlIll11(_KMZ[2364])) then
-ll111l1l11:Destroy()
+local function l11lIIIll11()
+for ll1I1IIll11, Il1I1IIll11 in ipairs(llllIIIll11:GetChildren()) do
+if Il1I1IIll11:IsA(IIl1Ill1l11(_KEA[2367])) then
+Il1I1IIll11:Destroy()
 				end
 			end
-for Il111l1l11, ll111l1l11 in ipairs(lI1l1l1l11[l11IlIll11(_KMZ[2365])]) do
-local IIl11l1l11 = Instance[l11IlIll11(_KMZ[1445])](l11IlIll11(_KMZ[2366]));
-IIl11l1l11[l11IlIll11(_KMZ[2367])] = UDim2[l11IlIll11(_KMZ[2368])](0B1, -6, 0B0, 0x1C);
-IIl11l1l11[l11IlIll11(_KMZ[2369])] = Il111l1l11 == lI1l1l1l11[l11IlIll11(_KMZ[2370])] and lIllIIll11[l11IlIll11(_KMZ[2371])] or lIllIIll11[l11IlIll11(_KMZ[2372])]
-IIl11l1l11[l11IlIll11(_KMZ[2373])] = Il111l1l11 == lI1l1l1l11[l11IlIll11(_KMZ[2374])] and .05 or .14
-IIl11l1l11[l11IlIll11(_KMZ[2375])] = 0B0
-IIl11l1l11[l11IlIll11(_KMZ[2376])] = I11l1l1l11(ll111l1l11);
-IIl11l1l11[l11IlIll11(_KMZ[2377])] = lIllIIll11[l11IlIll11(_KMZ[2378])]
-IIl11l1l11[l11IlIll11(_KMZ[2379])] = Enum[l11IlIll11(_KMZ[2380])][l11IlIll11(_KMZ[2381])]
-IIl11l1l11[l11IlIll11(_KMZ[2382])] = IIII1Ill11 and 0xB or 0xC
-IIl11l1l11[l11IlIll11(_KMZ[2383])] = false
-IIl11l1l11[l11IlIll11(_KMZ[2384])] = Il111l1l11
-IIl11l1l11[l11IlIll11(_KMZ[2385])] = 0xF
-IIl11l1l11[l11IlIll11(_KMZ[2386])] = IlIl1l1l11;
-(Instance[l11IlIll11(_KMZ[2387])](l11IlIll11(_KMZ[2388]), IIl11l1l11))[l11IlIll11(_KMZ[2389])] = UDim[l11IlIll11(_KMZ[2390])](0B0, 0x8);
-lIl1ll1l11(IIl11l1l11[l11IlIll11(_KMZ[2391])]:Connect(function()
-lI1l1l1l11[l11IlIll11(_KMZ[2392])] = Il111l1l11
-Il1l1l1l11(true);
-ll1l1l1l11(false);
-IIll1l1l11()
+for ll1I1IIll11, Il1I1IIll11 in ipairs(I1llIIIll11[IIl1Ill1l11(_KEA[2368])]) do
+local l11I1IIll11 = Instance[IIl1Ill1l11(_KEA[2369])](IIl1Ill1l11(_KEA[2370]));
+l11I1IIll11[IIl1Ill1l11(_KEA[2371])] = UDim2[IIl1Ill1l11(_KEA[1989])](0B1, -6, 0B0, 0x1C);
+l11I1IIll11[IIl1Ill1l11(_KEA[2372])] = ll1I1IIll11 == I1llIIIll11[IIl1Ill1l11(_KEA[2373])] and I11l1ll1l11[IIl1Ill1l11(_KEA[2374])] or I11l1ll1l11[IIl1Ill1l11(_KEA[2375])]
+l11I1IIll11[IIl1Ill1l11(_KEA[2376])] = ll1I1IIll11 == I1llIIIll11[IIl1Ill1l11(_KEA[2377])] and .05 or .14
+l11I1IIll11[IIl1Ill1l11(_KEA[2378])] = 0B0
+l11I1IIll11[IIl1Ill1l11(_KEA[2379])] = lIllIIIll11(Il1I1IIll11);
+l11I1IIll11[IIl1Ill1l11(_KEA[2380])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2381])]
+l11I1IIll11[IIl1Ill1l11(_KEA[2382])] = Enum[IIl1Ill1l11(_KEA[2383])][IIl1Ill1l11(_KEA[2384])]
+l11I1IIll11[IIl1Ill1l11(_KEA[2385])] = l1Il1ll1l11 and 0B1011 or 0xC
+l11I1IIll11[IIl1Ill1l11(_KEA[2386])] = false
+l11I1IIll11[IIl1Ill1l11(_KEA[2387])] = ll1I1IIll11
+l11I1IIll11[IIl1Ill1l11(_KEA[2388])] = 0xF
+l11I1IIll11[IIl1Ill1l11(_KEA[2389])] = llllIIIll11;
+(Instance[IIl1Ill1l11(_KEA[1380])](IIl1Ill1l11(_KEA[2390]), l11I1IIll11))[IIl1Ill1l11(_KEA[2391])] = UDim[IIl1Ill1l11(_KEA[1864])](0B0, 0x8);
+I11IIIIll11(l11I1IIll11[IIl1Ill1l11(_KEA[2392])]:Connect(function()
+I1llIIIll11[IIl1Ill1l11(_KEA[2393])] = ll1I1IIll11
+ll1lIIIll11(true);
+Il1lIIIll11(false);
+l11lIIIll11()
 				end));
-lIl1ll1l11(IIl11l1l11[l11IlIll11(_KMZ[2393])]:Connect(function()
-(lIl11l1l11:Create(IIl11l1l11, TweenInfo[l11IlIll11(_KMZ[2394])](.08), { [l11IlIll11(_KMZ[2395])] = lIllIIll11[l11IlIll11(_KMZ[2396])] })):Play()
+I11IIIIll11(l11I1IIll11[IIl1Ill1l11(_KEA[2394])]:Connect(function()
+(I11I1IIll11:Create(l11I1IIll11, TweenInfo[IIl1Ill1l11(_KEA[1823])](.08), { [IIl1Ill1l11(_KEA[2395])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2396])] })):Play()
 				end));
-lIl1ll1l11(IIl11l1l11[l11IlIll11(_KMZ[2397])]:Connect(function()
-(lIl11l1l11:Create(IIl11l1l11, TweenInfo[l11IlIll11(_KMZ[1981])](.08), { [l11IlIll11(_KMZ[2398])] = Il111l1l11 == lI1l1l1l11[l11IlIll11(_KMZ[2399])] and lIllIIll11[l11IlIll11(_KMZ[2400])] or lIllIIll11[l11IlIll11(_KMZ[2401])] })):Play()
+I11IIIIll11(l11I1IIll11[IIl1Ill1l11(_KEA[2397])]:Connect(function()
+(I11I1IIll11:Create(l11I1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2094])](.08), { [IIl1Ill1l11(_KEA[2398])] = ll1I1IIll11 == I1llIIIll11[IIl1Ill1l11(_KEA[2399])] and I11l1ll1l11[IIl1Ill1l11(_KEA[2400])] or I11l1ll1l11[IIl1Ill1l11(_KEA[2401])] })):Play()
 				end))
 			end
-IlIl1l1l11[l11IlIll11(_KMZ[2402])] = UDim2[l11IlIll11(_KMZ[2403])](0B0, #lI1l1l1l11[l11IlIll11(_KMZ[2404])] * 0x1E + 0x6)
+llllIIIll11[IIl1Ill1l11(_KEA[2402])] = UDim2[IIl1Ill1l11(_KEA[2403])](0B0, #I1llIIIll11[IIl1Ill1l11(_KEA[2404])] * 0x1E + 0x6)
 		end
-function lI1l1l1l11.Get(Il111l1l11)
-return l11l1l1l11()
+function I1llIIIll11.Get(ll1I1IIll11)
+return IIllIIIll11()
 		end
-function lI1l1l1l11.Close(Il111l1l11)
-ll1l1l1l11(false)
+function I1llIIIll11.Close(ll1I1IIll11)
+Il1lIIIll11(false)
 		end
-function lI1l1l1l11.SetValues(IIl11l1l11, Il111l1l11, ll111l1l11)
-local lIl11l1l11 = ll111l1l11 and l11l1l1l11() or nil
-lI1l1l1l11[l11IlIll11(_KMZ[2405])] = Il111l1l11 or {};
-lI1l1l1l11[l11IlIll11(_KMZ[2406])] = 0B1
-if lIl11l1l11 then
-for Il111l1l11, ll111l1l11 in ipairs(lI1l1l1l11[l11IlIll11(_KMZ[2407])]) do
-local IIl11l1l11 = ll111l1l11 == lIl11l1l11
-if type(ll111l1l11) == l11IlIll11(_KMZ[2408]) and type(lIl11l1l11) == l11IlIll11(_KMZ[2409]) then
-IIl11l1l11 = ll111l1l11[l11IlIll11(_KMZ[2410])] and ll111l1l11[l11IlIll11(_KMZ[2411])] == lIl11l1l11[l11IlIll11(_KMZ[2412])] or ll111l1l11[l11IlIll11(_KMZ[2413])] and ll111l1l11[l11IlIll11(_KMZ[2414])] == lIl11l1l11[l11IlIll11(_KMZ[2415])]
+function I1llIIIll11.SetValues(l11I1IIll11, ll1I1IIll11, Il1I1IIll11)
+local I11I1IIll11 = Il1I1IIll11 and IIllIIIll11() or nil
+I1llIIIll11[IIl1Ill1l11(_KEA[2405])] = ll1I1IIll11 or {};
+I1llIIIll11[IIl1Ill1l11(_KEA[2406])] = 0B1
+if I11I1IIll11 then
+for ll1I1IIll11, Il1I1IIll11 in ipairs(I1llIIIll11[IIl1Ill1l11(_KEA[2407])]) do
+local l11I1IIll11 = Il1I1IIll11 == I11I1IIll11
+if type(Il1I1IIll11) == IIl1Ill1l11(_KEA[2408]) and type(I11I1IIll11) == IIl1Ill1l11(_KEA[517]) then
+l11I1IIll11 = Il1I1IIll11[IIl1Ill1l11(_KEA[2409])] and Il1I1IIll11[IIl1Ill1l11(_KEA[2410])] == I11I1IIll11[IIl1Ill1l11(_KEA[2411])] or Il1I1IIll11[IIl1Ill1l11(_KEA[2412])] and Il1I1IIll11[IIl1Ill1l11(_KEA[2413])] == I11I1IIll11[IIl1Ill1l11(_KEA[2414])]
 					end
-if IIl11l1l11 then
-lI1l1l1l11[l11IlIll11(_KMZ[2416])] = Il111l1l11
+if l11I1IIll11 then
+I1llIIIll11[IIl1Ill1l11(_KEA[2415])] = ll1I1IIll11
 break
 					end
 				end
 			end
-IIll1l1l11();
-ll1l1l1l11(false);
-Il1l1l1l11(true)
+l11lIIIll11();
+Il1lIIIll11(false);
+ll1lIIIll11(true)
 		end
-function lI1l1l1l11.SetByName(ll111l1l11, Il111l1l11)
-for ll111l1l11, IIl11l1l11 in ipairs(lI1l1l1l11[l11IlIll11(_KMZ[2417])]) do
-if type(IIl11l1l11) == l11IlIll11(_KMZ[2418]) and IIl11l1l11[l11IlIll11(_KMZ[2419])] == Il111l1l11 then
-lI1l1l1l11[l11IlIll11(_KMZ[2420])] = ll111l1l11
-IIll1l1l11();
-ll1l1l1l11(false);
-Il1l1l1l11(true)
+function I1llIIIll11.SetByName(Il1I1IIll11, ll1I1IIll11)
+for Il1I1IIll11, l11I1IIll11 in ipairs(I1llIIIll11[IIl1Ill1l11(_KEA[2416])]) do
+if type(l11I1IIll11) == IIl1Ill1l11(_KEA[2417]) and l11I1IIll11[IIl1Ill1l11(_KEA[2418])] == ll1I1IIll11 then
+I1llIIIll11[IIl1Ill1l11(_KEA[2419])] = Il1I1IIll11
+l11lIIIll11();
+Il1lIIIll11(false);
+ll1lIIIll11(true)
 return true
 				end
 			end
 return false
 		end
-lIl1ll1l11(IIIl1l1l11[l11IlIll11(_KMZ[2421])]:Connect(function()
-ll1l1l1l11(not lI1l1l1l11[l11IlIll11(_KMZ[2422])])
+I11IIIIll11(l1II1IIll11[IIl1Ill1l11(_KEA[2420])]:Connect(function()
+Il1lIIIll11(not I1llIIIll11[IIl1Ill1l11(_KEA[2312])])
 		end));
-lIl1ll1l11(IIIl1l1l11[l11IlIll11(_KMZ[2423])]:Connect(function()
-(lIl11l1l11:Create(Ill11l1l11, TweenInfo[l11IlIll11(_KMZ[1975])](.1), { [l11IlIll11(_KMZ[2424])] = lIllIIll11[l11IlIll11(_KMZ[2425])] })):Play();
-(lIl11l1l11:Create(lll11l1l11, TweenInfo[l11IlIll11(_KMZ[2029])](.1), { [l11IlIll11(_KMZ[2426])] = lIllIIll11[l11IlIll11(_KMZ[2427])] })):Play()
+I11IIIIll11(l1II1IIll11[IIl1Ill1l11(_KEA[2421])]:Connect(function()
+(I11I1IIll11:Create(llII1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2422])](.1), { [IIl1Ill1l11(_KEA[2423])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2424])] })):Play();
+(I11I1IIll11:Create(IlII1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2422])](.1), { [IIl1Ill1l11(_KEA[2425])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2426])] })):Play()
 		end));
-lIl1ll1l11(IIIl1l1l11[l11IlIll11(_KMZ[2428])]:Connect(function()
-(lIl11l1l11:Create(Ill11l1l11, TweenInfo[l11IlIll11(_KMZ[2429])](.1), { [l11IlIll11(_KMZ[2430])] = lIllIIll11[l11IlIll11(_KMZ[2431])] })):Play();
-(lIl11l1l11:Create(lll11l1l11, TweenInfo[l11IlIll11(_KMZ[1829])](.1), { [l11IlIll11(_KMZ[2432])] = lIllIIll11[l11IlIll11(_KMZ[2433])] })):Play()
+I11IIIIll11(l1II1IIll11[IIl1Ill1l11(_KEA[2427])]:Connect(function()
+(I11I1IIll11:Create(llII1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2428])](.1), { [IIl1Ill1l11(_KEA[2429])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2430])] })):Play();
+(I11I1IIll11:Create(IlII1IIll11, TweenInfo[IIl1Ill1l11(_KEA[2108])](.1), { [IIl1Ill1l11(_KEA[2431])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2432])] })):Play()
 		end));
-IIll1l1l11();
-Il1l1l1l11(true)
-return lI1l1l1l11
+l11lIIIll11();
+ll1lIIIll11(true)
+return I1llIIIll11
 	end
-local IIIl1Ill11 = lll11Ill11(llI11Ill11, l11IlIll11(_KMZ[2434]), Ill11Ill11(), function(Il111l1l11)
-lI11ll1l11[l11IlIll11(_KMZ[2435])] = type(Il111l1l11) == l11IlIll11(_KMZ[2436]) and Il111l1l11[l11IlIll11(_KMZ[2437])] or Il111l1l11
+local l1II1ll1l11 = IlII1ll1l11(IllI1ll1l11, IIl1Ill1l11(_KEA[2433]), llII1ll1l11(), function(ll1I1IIll11)
+I1lIIIIll11[IIl1Ill1l11(_KEA[2434])] = type(ll1I1IIll11) == IIl1Ill1l11(_KEA[2435]) and ll1I1IIll11[IIl1Ill1l11(_KEA[2436])] or ll1I1IIll11
 		end)
-I1l11Ill11 = l1111Ill11(l11IlIll11(_KMZ[2438]), 0x8, function(Il111l1l11)
-if Il111l1l11 and Il111Ill11:Get() then
-Il111Ill11:Set(false, false)
+lI1I1ll1l11 = IIlI1ll1l11(IIl1Ill1l11(_KEA[2437]), 0x8, function(ll1I1IIll11)
+if ll1I1IIll11 and ll1I1ll1l11:Get() then
+ll1I1ll1l11:Set(false, false)
 			end
-local ll111l1l11 = l1l1IIll11(Il111l1l11)
-if ll111l1l11 == false then
-I1llIIll11(lI11ll1l11[l11IlIll11(_KMZ[2439])] and l11IlIll11(_KMZ[2440]) or l11IlIll11(_KMZ[2441]))
+local Il1I1IIll11 = II1Illl1l11(ll1I1IIll11)
+if Il1I1IIll11 == false then
+lI1l1ll1l11(I1lIIIIll11[IIl1Ill1l11(_KEA[2438])] and IIl1Ill1l11(_KEA[2439]) or IIl1Ill1l11(_KEA[2440]))
 return false
 			end
 return true
 		end);
-local lIIl1Ill11 = Instance[l11IlIll11(_KMZ[2442])](l11IlIll11(_KMZ[2443]));
-lIIl1Ill11[l11IlIll11(_KMZ[2444])] = 0B1
-lIIl1Ill11[l11IlIll11(_KMZ[2445])] = llI11Ill11
-local I1Il1Ill11 = I1111Ill11(lIIl1Ill11, 0x34);
-lIIl1Ill11[l11IlIll11(_KMZ[2446])] = lIllIIll11[l11IlIll11(_KMZ[2447])]
-local l1Il1Ill11 = Instance[l11IlIll11(_KMZ[2065])](l11IlIll11(_KMZ[2448]));
-l1Il1Ill11[l11IlIll11(_KMZ[1939])] = ColorSequence[l11IlIll11(_KMZ[1975])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[2449])](0B0, Color3[l11IlIll11(_KMZ[2450])](0x3C, 0x13, 0x1F)), ColorSequenceKeypoint[l11IlIll11(_KMZ[2451])](.5, lIllIIll11[l11IlIll11(_KMZ[2452])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[2259])](0B1, Color3[l11IlIll11(_KMZ[2453])](0x2B, 0B1111, 0x18)) });
-l1Il1Ill11[l11IlIll11(_KMZ[2454])] = 0xA
-l1Il1Ill11[l11IlIll11(_KMZ[2455])] = lIIl1Ill11
-local IlIl1Ill11 = Instance[l11IlIll11(_KMZ[2456])](l11IlIll11(_KMZ[2457]));
-IlIl1Ill11[l11IlIll11(_KMZ[2458])] = UDim2[l11IlIll11(_KMZ[2256])](0B0, 0x4, 0B1, -20);
-IlIl1Ill11[l11IlIll11(_KMZ[2459])] = UDim2[l11IlIll11(_KMZ[2319])](0x9, 0xA);
-IlIl1Ill11[l11IlIll11(_KMZ[2460])] = lIllIIll11[l11IlIll11(_KMZ[2461])]
-IlIl1Ill11[l11IlIll11(_KMZ[2462])] = 0B0
-IlIl1Ill11[l11IlIll11(_KMZ[2463])] = 0x7
-IlIl1Ill11[l11IlIll11(_KMZ[2464])] = lIIl1Ill11;
-(Instance[l11IlIll11(_KMZ[2465])](l11IlIll11(_KMZ[2466]), IlIl1Ill11))[l11IlIll11(_KMZ[2467])] = UDim[l11IlIll11(_KMZ[1857])](0B1, 0B0);
-local llIl1Ill11 = Instance[l11IlIll11(_KMZ[1869])](l11IlIll11(_KMZ[2468]));
-llIl1Ill11[l11IlIll11(_KMZ[2469])] = ColorSequence[l11IlIll11(_KMZ[2470])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[2471])](0B0, Color3[l11IlIll11(_KMZ[2472])](0xFF, 0xCA, 0xD6)), ColorSequenceKeypoint[l11IlIll11(_KMZ[1898])](.45, lIllIIll11[l11IlIll11(_KMZ[2473])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[2474])](0B1, lIllIIll11[l11IlIll11(_KMZ[2475])]) });
-llIl1Ill11[l11IlIll11(_KMZ[2476])] = 0x5A
-llIl1Ill11[l11IlIll11(_KMZ[2477])] = IlIl1Ill11
-local II1l1Ill11 = Instance[l11IlIll11(_KMZ[269])](l11IlIll11(_KMZ[2478]));
-II1l1Ill11[l11IlIll11(_KMZ[2479])] = UDim2[l11IlIll11(_KMZ[1374])](.42, -12, 0B1, 0B0);
-II1l1Ill11[l11IlIll11(_KMZ[2480])] = UDim2[l11IlIll11(_KMZ[2481])](0x16, 0B0);
-II1l1Ill11[l11IlIll11(_KMZ[2482])] = 0B1
-II1l1Ill11[l11IlIll11(_KMZ[2483])] = l11IlIll11(_KMZ[2484]);
-II1l1Ill11[l11IlIll11(_KMZ[2485])] = lIllIIll11[l11IlIll11(_KMZ[2486])]
-II1l1Ill11[l11IlIll11(_KMZ[2487])] = lIllIIll11[l11IlIll11(_KMZ[2488])]
-II1l1Ill11[l11IlIll11(_KMZ[2489])] = .15
-II1l1Ill11[l11IlIll11(_KMZ[2490])] = Enum[l11IlIll11(_KMZ[2491])][l11IlIll11(_KMZ[2492])]
-II1l1Ill11[l11IlIll11(_KMZ[2493])] = IIII1Ill11 and 0x12 or 0x15
-II1l1Ill11[l11IlIll11(_KMZ[2494])] = Enum[l11IlIll11(_KMZ[2495])][l11IlIll11(_KMZ[2496])]
-II1l1Ill11[l11IlIll11(_KMZ[2272])] = 0x7
-II1l1Ill11[l11IlIll11(_KMZ[2497])] = lIIl1Ill11
-local lI1l1Ill11 = Instance[l11IlIll11(_KMZ[2498])](l11IlIll11(_KMZ[2499]));
-lI1l1Ill11[l11IlIll11(_KMZ[1390])] = UDim2[l11IlIll11(_KMZ[2500])](.58, -16, 0B1, 0B0);
-lI1l1Ill11[l11IlIll11(_KMZ[2501])] = UDim2[l11IlIll11(_KMZ[269])](.42, 0B0, 0B0, 0B0);
-lI1l1Ill11[l11IlIll11(_KMZ[2502])] = 0B1
-lI1l1Ill11[l11IlIll11(_KMZ[2503])] = l11IlIll11(_KMZ[2504]);
-lI1l1Ill11[l11IlIll11(_KMZ[2505])] = lIllIIll11[l11IlIll11(_KMZ[2506])]
-lI1l1Ill11[l11IlIll11(_KMZ[2507])] = lIllIIll11[l11IlIll11(_KMZ[2508])]
-lI1l1Ill11[l11IlIll11(_KMZ[2509])] = .15
-lI1l1Ill11[l11IlIll11(_KMZ[2510])] = Enum[l11IlIll11(_KMZ[2511])][l11IlIll11(_KMZ[2512])]
-lI1l1Ill11[l11IlIll11(_KMZ[2513])] = true
-lI1l1Ill11[l11IlIll11(_KMZ[2514])] = Enum[l11IlIll11(_KMZ[2515])][l11IlIll11(_KMZ[2516])]
-lI1l1Ill11[l11IlIll11(_KMZ[2517])] = 0x7
-lI1l1Ill11[l11IlIll11(_KMZ[2518])] = lIIl1Ill11
-local I11l1Ill11 = Instance[l11IlIll11(_KMZ[2519])](l11IlIll11(_KMZ[2520]));
-I11l1Ill11[l11IlIll11(_KMZ[2521])] = 0x12
-I11l1Ill11[l11IlIll11(_KMZ[2522])] = IIII1Ill11 and 0x1C or 0x21
-I11l1Ill11[l11IlIll11(_KMZ[2523])] = lI1l1Ill11
-local l11l1Ill11 = Instance[l11IlIll11(_KMZ[2524])](l11IlIll11(_KMZ[2525]));
-l11l1Ill11[l11IlIll11(_KMZ[2526])] = 0x9
-l11l1Ill11[l11IlIll11(_KMZ[2527])] = l11IlIll11(_KMZ[2528]);
-l11l1Ill11[l11IlIll11(_KMZ[2529])] = lIllIIll11[l11IlIll11(_KMZ[2158])]
-l11l1Ill11[l11IlIll11(_KMZ[2530])] = Enum[l11IlIll11(_KMZ[2531])][l11IlIll11(_KMZ[2532])]
-l11l1Ill11[l11IlIll11(_KMZ[2533])] = IIII1Ill11 and 0xD or 0xE
-l11l1Ill11[l11IlIll11(_KMZ[2534])] = false
-l11l1Ill11[l11IlIll11(_KMZ[2535])] = llI11Ill11
-local Il1l1Ill11 = I1111Ill11(l11l1Ill11, 0x26);
-l11l1Ill11[l11IlIll11(_KMZ[2536])] = lIllIIll11[l11IlIll11(_KMZ[2537])]
-Il1l1Ill11[l11IlIll11(_KMZ[2538])] = lIllIIll11[l11IlIll11(_KMZ[1967])]
-Il1l1Ill11[l11IlIll11(_KMZ[2539])] = .08
-local ll1l1Ill11 = Instance[l11IlIll11(_KMZ[2127])](l11IlIll11(_KMZ[2540]));
-ll1l1Ill11[l11IlIll11(_KMZ[2541])] = ColorSequence[l11IlIll11(_KMZ[2346])]({ ColorSequenceKeypoint[l11IlIll11(_KMZ[1837])](0B0, Color3[l11IlIll11(_KMZ[2542])](0x78, 0xA, 0x28)), ColorSequenceKeypoint[l11IlIll11(_KMZ[1788])](.5, lIllIIll11[l11IlIll11(_KMZ[1831])]), ColorSequenceKeypoint[l11IlIll11(_KMZ[2346])](0B1, Color3[l11IlIll11(_KMZ[2543])](0x50, 0x7, 0x1C)) });
-ll1l1Ill11[l11IlIll11(_KMZ[2544])] = 0x8
-ll1l1Ill11[l11IlIll11(_KMZ[2545])] = l11l1Ill11
-lIl1ll1l11(l11l1Ill11[l11IlIll11(_KMZ[2546])]:Connect(function()
-(lIl11l1l11:Create(l11l1Ill11, TweenInfo[l11IlIll11(_KMZ[2547])](.1), { [l11IlIll11(_KMZ[2548])] = lIllIIll11[l11IlIll11(_KMZ[2549])] })):Play()
+local I1II1ll1l11 = Instance[IIl1Ill1l11(_KEA[2441])](IIl1Ill1l11(_KEA[2442]));
+I1II1ll1l11[IIl1Ill1l11(_KEA[2443])] = 0B1
+I1II1ll1l11[IIl1Ill1l11(_KEA[1958])] = IllI1ll1l11
+local lIII1ll1l11 = lIlI1ll1l11(I1II1ll1l11, 0x34);
+I1II1ll1l11[IIl1Ill1l11(_KEA[2444])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2445])]
+local IIII1ll1l11 = Instance[IIl1Ill1l11(_KEA[2446])](IIl1Ill1l11(_KEA[2447]));
+IIII1ll1l11[IIl1Ill1l11(_KEA[2448])] = ColorSequence[IIl1Ill1l11(_KEA[2449])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2450])](0B0, Color3[IIl1Ill1l11(_KEA[2451])](0x3C, 0x13, 0x1F)), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2452])](.5, I11l1ll1l11[IIl1Ill1l11(_KEA[2453])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2454])](0B1, Color3[IIl1Ill1l11(_KEA[2455])](0x2B, 0xF, 0x18)) });
+IIII1ll1l11[IIl1Ill1l11(_KEA[2456])] = 0xA
+IIII1ll1l11[IIl1Ill1l11(_KEA[2457])] = I1II1ll1l11
+local llllIll1l11 = Instance[IIl1Ill1l11(_KEA[2458])](IIl1Ill1l11(_KEA[2459]));
+llllIll1l11[IIl1Ill1l11(_KEA[2460])] = UDim2[IIl1Ill1l11(_KEA[2461])](0B0, 0x4, 0B1, -20);
+llllIll1l11[IIl1Ill1l11(_KEA[2462])] = UDim2[IIl1Ill1l11(_KEA[2463])](0x9, 0xA);
+llllIll1l11[IIl1Ill1l11(_KEA[2464])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2465])]
+llllIll1l11[IIl1Ill1l11(_KEA[2466])] = 0B0
+llllIll1l11[IIl1Ill1l11(_KEA[2467])] = 0x7
+llllIll1l11[IIl1Ill1l11(_KEA[2468])] = I1II1ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1864])](IIl1Ill1l11(_KEA[2469]), llllIll1l11))[IIl1Ill1l11(_KEA[2470])] = UDim[IIl1Ill1l11(_KEA[2313])](0B1, 0B0);
+local IlllIll1l11 = Instance[IIl1Ill1l11(_KEA[2471])](IIl1Ill1l11(_KEA[2472]));
+IlllIll1l11[IIl1Ill1l11(_KEA[2473])] = ColorSequence[IIl1Ill1l11(_KEA[1796])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1772])](0B0, Color3[IIl1Ill1l11(_KEA[2474])](0xFF, 0xCA, 0xD6)), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[1843])](.45, I11l1ll1l11[IIl1Ill1l11(_KEA[2475])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2116])](0B1, I11l1ll1l11[IIl1Ill1l11(_KEA[2153])]) });
+IlllIll1l11[IIl1Ill1l11(_KEA[2476])] = 0x5A
+IlllIll1l11[IIl1Ill1l11(_KEA[2477])] = llllIll1l11
+local l1llIll1l11 = Instance[IIl1Ill1l11(_KEA[2458])](IIl1Ill1l11(_KEA[2478]));
+l1llIll1l11[IIl1Ill1l11(_KEA[2479])] = UDim2[IIl1Ill1l11(_KEA[2194])](.42, -0B1100, 0B1, 0B0);
+l1llIll1l11[IIl1Ill1l11(_KEA[2480])] = UDim2[IIl1Ill1l11(_KEA[2481])](0x16, 0B0);
+l1llIll1l11[IIl1Ill1l11(_KEA[2482])] = 0B1
+l1llIll1l11[IIl1Ill1l11(_KEA[2483])] = IIl1Ill1l11(_KEA[2484]);
+l1llIll1l11[IIl1Ill1l11(_KEA[2485])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2486])]
+l1llIll1l11[IIl1Ill1l11(_KEA[2487])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2488])]
+l1llIll1l11[IIl1Ill1l11(_KEA[2489])] = .15
+l1llIll1l11[IIl1Ill1l11(_KEA[2490])] = Enum[IIl1Ill1l11(_KEA[2085])][IIl1Ill1l11(_KEA[2491])]
+l1llIll1l11[IIl1Ill1l11(_KEA[2492])] = l1Il1ll1l11 and 0x12 or 0x15
+l1llIll1l11[IIl1Ill1l11(_KEA[2493])] = Enum[IIl1Ill1l11(_KEA[2494])][IIl1Ill1l11(_KEA[2495])]
+l1llIll1l11[IIl1Ill1l11(_KEA[2496])] = 0x7
+l1llIll1l11[IIl1Ill1l11(_KEA[2497])] = I1II1ll1l11
+local I1llIll1l11 = Instance[IIl1Ill1l11(_KEA[296])](IIl1Ill1l11(_KEA[2498]));
+I1llIll1l11[IIl1Ill1l11(_KEA[2499])] = UDim2[IIl1Ill1l11(_KEA[2500])](.58, -16, 0B1, 0B0);
+I1llIll1l11[IIl1Ill1l11(_KEA[2501])] = UDim2[IIl1Ill1l11(_KEA[2502])](.42, 0B0, 0B0, 0B0);
+I1llIll1l11[IIl1Ill1l11(_KEA[2503])] = 0B1
+I1llIll1l11[IIl1Ill1l11(_KEA[2504])] = IIl1Ill1l11(_KEA[2505]);
+I1llIll1l11[IIl1Ill1l11(_KEA[2506])] = I11l1ll1l11[IIl1Ill1l11(_KEA[1917])]
+I1llIll1l11[IIl1Ill1l11(_KEA[2507])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2508])]
+I1llIll1l11[IIl1Ill1l11(_KEA[2509])] = .15
+I1llIll1l11[IIl1Ill1l11(_KEA[2510])] = Enum[IIl1Ill1l11(_KEA[2511])][IIl1Ill1l11(_KEA[2512])]
+I1llIll1l11[IIl1Ill1l11(_KEA[2513])] = true
+I1llIll1l11[IIl1Ill1l11(_KEA[2514])] = Enum[IIl1Ill1l11(_KEA[2515])][IIl1Ill1l11(_KEA[2516])]
+I1llIll1l11[IIl1Ill1l11(_KEA[2517])] = 0x7
+I1llIll1l11[IIl1Ill1l11(_KEA[2518])] = I1II1ll1l11
+local lIllIll1l11 = Instance[IIl1Ill1l11(_KEA[340])](IIl1Ill1l11(_KEA[2519]));
+lIllIll1l11[IIl1Ill1l11(_KEA[2520])] = 0x12
+lIllIll1l11[IIl1Ill1l11(_KEA[2521])] = l1Il1ll1l11 and 0x1C or 0x21
+lIllIll1l11[IIl1Ill1l11(_KEA[2126])] = I1llIll1l11
+local IIllIll1l11 = Instance[IIl1Ill1l11(_KEA[1527])](IIl1Ill1l11(_KEA[2522]));
+IIllIll1l11[IIl1Ill1l11(_KEA[2523])] = 0x9
+IIllIll1l11[IIl1Ill1l11(_KEA[2524])] = IIl1Ill1l11(_KEA[2525]);
+IIllIll1l11[IIl1Ill1l11(_KEA[2526])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2527])]
+IIllIll1l11[IIl1Ill1l11(_KEA[2528])] = Enum[IIl1Ill1l11(_KEA[2529])][IIl1Ill1l11(_KEA[2530])]
+IIllIll1l11[IIl1Ill1l11(_KEA[2531])] = l1Il1ll1l11 and 0xD or 0xE
+IIllIll1l11[IIl1Ill1l11(_KEA[2532])] = false
+IIllIll1l11[IIl1Ill1l11(_KEA[2533])] = IllI1ll1l11
+local ll1lIll1l11 = lIlI1ll1l11(IIllIll1l11, 0x26);
+IIllIll1l11[IIl1Ill1l11(_KEA[2534])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2535])]
+ll1lIll1l11[IIl1Ill1l11(_KEA[2536])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2537])]
+ll1lIll1l11[IIl1Ill1l11(_KEA[2538])] = .08
+local Il1lIll1l11 = Instance[IIl1Ill1l11(_KEA[2539])](IIl1Ill1l11(_KEA[2472]));
+Il1lIll1l11[IIl1Ill1l11(_KEA[2540])] = ColorSequence[IIl1Ill1l11(_KEA[2541])]({ ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2130])](0B0, Color3[IIl1Ill1l11(_KEA[2542])](0x78, 0xA, 0x28)), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2543])](.5, I11l1ll1l11[IIl1Ill1l11(_KEA[2544])]), ColorSequenceKeypoint[IIl1Ill1l11(_KEA[2545])](0B1, Color3[IIl1Ill1l11(_KEA[2546])](0x50, 0x7, 0x1C)) });
+Il1lIll1l11[IIl1Ill1l11(_KEA[1807])] = 0x8
+Il1lIll1l11[IIl1Ill1l11(_KEA[2547])] = IIllIll1l11
+I11IIIIll11(IIllIll1l11[IIl1Ill1l11(_KEA[2548])]:Connect(function()
+(I11I1IIll11:Create(IIllIll1l11, TweenInfo[IIl1Ill1l11(_KEA[2549])](.1), { [IIl1Ill1l11(_KEA[2550])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2551])] })):Play()
 	end));
-lIl1ll1l11(l11l1Ill11[l11IlIll11(_KMZ[2550])]:Connect(function()
-(lIl11l1l11:Create(l11l1Ill11, TweenInfo[l11IlIll11(_KMZ[2551])](.1), { [l11IlIll11(_KMZ[2552])] = lIllIIll11[l11IlIll11(_KMZ[2553])] })):Play()
+I11IIIIll11(IIllIll1l11[IIl1Ill1l11(_KEA[2552])]:Connect(function()
+(I11I1IIll11:Create(IIllIll1l11, TweenInfo[IIl1Ill1l11(_KEA[2553])](.1), { [IIl1Ill1l11(_KEA[2554])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2555])] })):Play()
 	end));
-local IIll1Ill11 = nil
-local lIll1Ill11 = 0B0
-lll1IIll11 = function()
-lIll1Ill11 = lIll1Ill11 + 0B1
-local Il111l1l11 = lIll1Ill11
-lI1l1Ill11[l11IlIll11(_KMZ[2485])] = lIllIIll11[l11IlIll11(_KMZ[2554])]
-I1Il1Ill11[l11IlIll11(_KMZ[2555])] = lIllIIll11[l11IlIll11(_KMZ[2556])]
-I1Il1Ill11[l11IlIll11(_KMZ[2557])] = 0B0
-task[l11IlIll11(_KMZ[2558])](.04, function()
-if Il111l1l11 ~= lIll1Ill11 or not lI1l1Ill11[l11IlIll11(_KMZ[2559])] then
+local l11lIll1l11 = nil
+local I11lIll1l11 = 0B0
+IlIIlll1l11 = function()
+I11lIll1l11 = I11lIll1l11 + 0B1
+local ll1I1IIll11 = I11lIll1l11
+I1llIll1l11[IIl1Ill1l11(_KEA[2556])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2557])]
+lIII1ll1l11[IIl1Ill1l11(_KEA[2558])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2559])]
+lIII1ll1l11[IIl1Ill1l11(_KEA[2164])] = 0B0
+task[IIl1Ill1l11(_KEA[2560])](.04, function()
+if ll1I1IIll11 ~= I11lIll1l11 or not I1llIll1l11[IIl1Ill1l11(_KEA[2561])] then
 return
 				end;
-(lIl11l1l11:Create(lI1l1Ill11, TweenInfo[l11IlIll11(_KMZ[2560])](.34), { [l11IlIll11(_KMZ[2561])] = lIllIIll11[l11IlIll11(_KMZ[2562])] })):Play();
-(lIl11l1l11:Create(I1Il1Ill11, TweenInfo[l11IlIll11(_KMZ[260])](.42), { [l11IlIll11(_KMZ[2563])] = lIllIIll11[l11IlIll11(_KMZ[2564])], [l11IlIll11(_KMZ[2565])] = .32 })):Play()
+(I11I1IIll11:Create(I1llIll1l11, TweenInfo[IIl1Ill1l11(_KEA[1848])](.34), { [IIl1Ill1l11(_KEA[2562])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2159])] })):Play();
+(I11I1IIll11:Create(lIII1ll1l11, TweenInfo[IIl1Ill1l11(_KEA[2563])](.42), { [IIl1Ill1l11(_KEA[2564])] = I11l1ll1l11[IIl1Ill1l11(_KEA[2565])], [IIl1Ill1l11(_KEA[2538])] = .32 })):Play()
 			end)
 		end
-IIIlIIll11[l11IlIll11(_KMZ[2566])] = function(Il111l1l11)
-Il111l1l11 = math[l11IlIll11(_KMZ[2567])](0B0, math[l11IlIll11(_KMZ[2568])]((tonumber(Il111l1l11) or 0B0) + .5))
-if Il111l1l11 <= 0B0 or not lI1I1Ill11[l11IlIll11(_KMZ[1354])] then
+l1IIlll1l11[IIl1Ill1l11(_KEA[2566])] = function(ll1I1IIll11)
+ll1I1IIll11 = math[IIl1Ill1l11(_KEA[2567])](0B0, math[IIl1Ill1l11(_KEA[2568])]((tonumber(ll1I1IIll11) or 0B0) + .5))
+if ll1I1IIll11 <= 0B0 or not I1l11ll1l11[IIl1Ill1l11(_KEA[2569])] then
 return
 			end
-IIIlIIll11[l11IlIll11(_KMZ[2569])] = IIIlIIll11[l11IlIll11(_KMZ[2570])] + 0B1
-local ll111l1l11 = IIIlIIll11[l11IlIll11(_KMZ[2571])]
-local IIl11l1l11 = (ll111l1l11 % 0x5 - 0B10) * (IIII1Ill11 and 0x11 or 0x17);
-local I1l11l1l11 = Instance[l11IlIll11(_KMZ[1976])](l11IlIll11(_KMZ[2572]));
-I1l11l1l11[l11IlIll11(_KMZ[2573])] = l11IlIll11(_KMZ[2574]);
-I1l11l1l11[l11IlIll11(_KMZ[2575])] = Vector2[l11IlIll11(_KMZ[2576])](.5, .5);
-I1l11l1l11[l11IlIll11(_KMZ[2577])] = UDim2[l11IlIll11(_KMZ[2243])](.5, IIl11l1l11, .35, 0B0);
-I1l11l1l11[l11IlIll11(_KMZ[2578])] = UDim2[l11IlIll11(_KMZ[2579])](IIII1Ill11 and 0x5C or 0x76, IIII1Ill11 and 0x22 or 0x2A);
-I1l11l1l11[l11IlIll11(_KMZ[2580])] = Color3[l11IlIll11(_KMZ[2581])](0x26, 0x8, 0x11);
-I1l11l1l11[l11IlIll11(_KMZ[1963])] = .08
-I1l11l1l11[l11IlIll11(_KMZ[2582])] = 0B0
-I1l11l1l11[l11IlIll11(_KMZ[2583])] = 0x64
-I1l11l1l11[l11IlIll11(_KMZ[2584])] = lI1I1Ill11;
-(Instance[l11IlIll11(_KMZ[2585])](l11IlIll11(_KMZ[2586]), I1l11l1l11))[l11IlIll11(_KMZ[2587])] = UDim[l11IlIll11(_KMZ[2588])](0B0, 0xB);
-local l1l11l1l11 = Instance[l11IlIll11(_KMZ[2589])](l11IlIll11(_KMZ[2590]));
-l1l11l1l11[l11IlIll11(_KMZ[2591])] = Color3[l11IlIll11(_KMZ[2592])](0xFF, 0x30, 0x5B);
-l1l11l1l11[l11IlIll11(_KMZ[2593])] = IIII1Ill11 and 1.5 or 0B10
-l1l11l1l11[l11IlIll11(_KMZ[2594])] = .04
-l1l11l1l11[l11IlIll11(_KMZ[2595])] = I1l11l1l11
-local Ill11l1l11 = Instance[l11IlIll11(_KMZ[2596])](l11IlIll11(_KMZ[2597]));
-Ill11l1l11[l11IlIll11(_KMZ[2598])] = 0B1
-Ill11l1l11[l11IlIll11(_KMZ[2599])] = UDim2[l11IlIll11(_KMZ[2600])](0B1, 0B1);
-Ill11l1l11[l11IlIll11(_KMZ[2601])] = l11IlIll11(_KMZ[2602]) .. (lll1ll1l11(Il111l1l11) .. l11IlIll11(_KMZ[2603]));
-Ill11l1l11[l11IlIll11(_KMZ[2604])] = Color3[l11IlIll11(_KMZ[2605])](0xFF, 0xEF, 0x96);
-Ill11l1l11[l11IlIll11(_KMZ[2606])] = Color3[l11IlIll11(_KMZ[2607])](0x28, 0B0, 0x8);
-Ill11l1l11[l11IlIll11(_KMZ[2608])] = .05
-Ill11l1l11[l11IlIll11(_KMZ[2609])] = Enum[l11IlIll11(_KMZ[2610])][l11IlIll11(_KMZ[2611])]
-Ill11l1l11[l11IlIll11(_KMZ[2612])] = IIII1Ill11 and 0xF or 0x13
-Ill11l1l11[l11IlIll11(_KMZ[2613])] = 0x65
-Ill11l1l11[l11IlIll11(_KMZ[2614])] = I1l11l1l11
-local lll11l1l11 = TweenInfo[l11IlIll11(_KMZ[1834])](.72, Enum[l11IlIll11(_KMZ[2615])][l11IlIll11(_KMZ[2616])], Enum[l11IlIll11(_KMZ[2617])][l11IlIll11(_KMZ[2618])]);
-(lIl11l1l11:Create(I1l11l1l11, lll11l1l11, { [l11IlIll11(_KMZ[2619])] = I1l11l1l11[l11IlIll11(_KMZ[1386])] - UDim2[l11IlIll11(_KMZ[2620])](0B0, IIII1Ill11 and 0x2E or 0x3E), [l11IlIll11(_KMZ[2621])] = 0B1 })):Play();
-(lIl11l1l11:Create(Ill11l1l11, lll11l1l11, { [l11IlIll11(_KMZ[2622])] = 0B1, [l11IlIll11(_KMZ[2623])] = 0B1 })):Play();
-(lIl11l1l11:Create(l1l11l1l11, lll11l1l11, { [l11IlIll11(_KMZ[2624])] = 0B1 })):Play();
-task[l11IlIll11(_KMZ[2625])](.78, function()
-if I1l11l1l11[l11IlIll11(_KMZ[2626])] then
-I1l11l1l11:Destroy()
+l1IIlll1l11[IIl1Ill1l11(_KEA[2570])] = l1IIlll1l11[IIl1Ill1l11(_KEA[2571])] + 0B1
+local Il1I1IIll11 = l1IIlll1l11[IIl1Ill1l11(_KEA[2572])]
+local l11I1IIll11 = (Il1I1IIll11 % 0x5 - 0B10) * (l1Il1ll1l11 and 0x11 or 0x17);
+local lI1I1IIll11 = Instance[IIl1Ill1l11(_KEA[2281])](IIl1Ill1l11(_KEA[2573]));
+lI1I1IIll11[IIl1Ill1l11(_KEA[2574])] = IIl1Ill1l11(_KEA[2575]);
+lI1I1IIll11[IIl1Ill1l11(_KEA[2576])] = Vector2[IIl1Ill1l11(_KEA[2577])](.5, .5);
+lI1I1IIll11[IIl1Ill1l11(_KEA[2578])] = UDim2[IIl1Ill1l11(_KEA[1803])](.5, l11I1IIll11, .35, 0B0);
+lI1I1IIll11[IIl1Ill1l11(_KEA[2579])] = UDim2[IIl1Ill1l11(_KEA[2580])](l1Il1ll1l11 and 0x5C or 0x76, l1Il1ll1l11 and 0x22 or 0x2A);
+lI1I1IIll11[IIl1Ill1l11(_KEA[2581])] = Color3[IIl1Ill1l11(_KEA[2582])](0x26, 0x8, 0x11);
+lI1I1IIll11[IIl1Ill1l11(_KEA[2583])] = .08
+lI1I1IIll11[IIl1Ill1l11(_KEA[2584])] = 0B0
+lI1I1IIll11[IIl1Ill1l11(_KEA[2585])] = 0x64
+lI1I1IIll11[IIl1Ill1l11(_KEA[2586])] = I1l11ll1l11;
+(Instance[IIl1Ill1l11(_KEA[1814])](IIl1Ill1l11(_KEA[2587]), lI1I1IIll11))[IIl1Ill1l11(_KEA[2588])] = UDim[IIl1Ill1l11(_KEA[2589])](0B0, 0xB);
+local II1I1IIll11 = Instance[IIl1Ill1l11(_KEA[2590])](IIl1Ill1l11(_KEA[2591]));
+II1I1IIll11[IIl1Ill1l11(_KEA[2592])] = Color3[IIl1Ill1l11(_KEA[2593])](0xFF, 0x30, 0x5B);
+II1I1IIll11[IIl1Ill1l11(_KEA[2594])] = l1Il1ll1l11 and 1.5 or 0B10
+II1I1IIll11[IIl1Ill1l11(_KEA[2595])] = .04
+II1I1IIll11[IIl1Ill1l11(_KEA[2596])] = lI1I1IIll11
+local llII1IIll11 = Instance[IIl1Ill1l11(_KEA[2597])](IIl1Ill1l11(_KEA[1908]));
+llII1IIll11[IIl1Ill1l11(_KEA[2598])] = 0B1
+llII1IIll11[IIl1Ill1l11(_KEA[1384])] = UDim2[IIl1Ill1l11(_KEA[2599])](0B1, 0B1);
+llII1IIll11[IIl1Ill1l11(_KEA[2600])] = IIl1Ill1l11(_KEA[2601]) .. (IlIIIIIll11(ll1I1IIll11) .. IIl1Ill1l11(_KEA[2602]));
+llII1IIll11[IIl1Ill1l11(_KEA[2603])] = Color3[IIl1Ill1l11(_KEA[2604])](0xFF, 0xEF, 0x96);
+llII1IIll11[IIl1Ill1l11(_KEA[2605])] = Color3[IIl1Ill1l11(_KEA[2606])](0x28, 0B0, 0x8);
+llII1IIll11[IIl1Ill1l11(_KEA[2607])] = .05
+llII1IIll11[IIl1Ill1l11(_KEA[2608])] = Enum[IIl1Ill1l11(_KEA[2609])][IIl1Ill1l11(_KEA[2610])]
+llII1IIll11[IIl1Ill1l11(_KEA[2492])] = l1Il1ll1l11 and 0xF or 0x13
+llII1IIll11[IIl1Ill1l11(_KEA[2611])] = 0x65
+llII1IIll11[IIl1Ill1l11(_KEA[1359])] = lI1I1IIll11
+local IlII1IIll11 = TweenInfo[IIl1Ill1l11(_KEA[2612])](.72, Enum[IIl1Ill1l11(_KEA[2613])][IIl1Ill1l11(_KEA[2614])], Enum[IIl1Ill1l11(_KEA[2615])][IIl1Ill1l11(_KEA[2616])]);
+(I11I1IIll11:Create(lI1I1IIll11, IlII1IIll11, { [IIl1Ill1l11(_KEA[2617])] = lI1I1IIll11[IIl1Ill1l11(_KEA[2618])] - UDim2[IIl1Ill1l11(_KEA[2619])](0B0, l1Il1ll1l11 and 0x2E or 0x3E), [IIl1Ill1l11(_KEA[2620])] = 0B1 })):Play();
+(I11I1IIll11:Create(llII1IIll11, IlII1IIll11, { [IIl1Ill1l11(_KEA[2621])] = 0B1, [IIl1Ill1l11(_KEA[2622])] = 0B1 })):Play();
+(I11I1IIll11:Create(II1I1IIll11, IlII1IIll11, { [IIl1Ill1l11(_KEA[2033])] = 0B1 })):Play();
+task[IIl1Ill1l11(_KEA[2623])](.78, function()
+if lI1I1IIll11[IIl1Ill1l11(_KEA[2547])] then
+lI1I1IIll11:Destroy()
 				end
 			end)
 		end
 do
-local Il111l1l11 = ll111l1l11:FindFirstChild(l11IlIll11(_KMZ[2627]))
-Il111l1l11 = Il111l1l11 and Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[2628]))
-if Il111l1l11 and Il111l1l11:IsA(l11IlIll11(_KMZ[2629])) then
-lIl1ll1l11(Il111l1l11[l11IlIll11(_KMZ[2630])]:Connect(function(Il111l1l11, ll111l1l11, IIl11l1l11)
-if not lI11ll1l11[l11IlIll11(_KMZ[2631])] or Il111l1l11 ~= l11IlIll11(_KMZ[2632]) or typeof(IIl11l1l11) ~= l11IlIll11(_KMZ[2633]) then
+local ll1I1IIll11 = Il1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[2624]))
+ll1I1IIll11 = ll1I1IIll11 and ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[2625]))
+if ll1I1IIll11 and ll1I1IIll11:IsA(IIl1Ill1l11(_KEA[2626])) then
+I11IIIIll11(ll1I1IIll11[IIl1Ill1l11(_KEA[2627])]:Connect(function(ll1I1IIll11, Il1I1IIll11, l11I1IIll11)
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[2628])] or ll1I1IIll11 ~= IIl1Ill1l11(_KEA[2629]) or typeof(l11I1IIll11) ~= IIl1Ill1l11(_KEA[2630]) then
 return
 				end
-if typeof(ll111l1l11) == l11IlIll11(_KMZ[2634]) and (IIIlIIll11[l11IlIll11(_KMZ[2635])] and ll111l1l11 ~= IIIlIIll11[l11IlIll11(_KMZ[2636])]) then
+if typeof(Il1I1IIll11) == IIl1Ill1l11(_KEA[2631]) and (l1IIlll1l11[IIl1Ill1l11(_KEA[2632])] and Il1I1IIll11 ~= l1IIlll1l11[IIl1Ill1l11(_KEA[814])]) then
 return
 				end
-IIIlIIll11[l11IlIll11(_KMZ[2637])](IIl11l1l11)
+l1IIlll1l11[IIl1Ill1l11(_KEA[2633])](l11I1IIll11)
 			end))
 		end
 	end
-local function I1ll1Ill11(Il111l1l11)
-local ll111l1l11 = math[l11IlIll11(_KMZ[2638])](tonumber(Il111l1l11) or 0B0);
-lI1l1Ill11[l11IlIll11(_KMZ[2639])] = lll1ll1l11(ll111l1l11);
-lIIlll1l11(ll111l1l11)
-if IIll1Ill11 ~= nil and ll111l1l11 > IIll1Ill11 then
-lll1IIll11()
+local function lI1lIll1l11(ll1I1IIll11)
+local Il1I1IIll11 = math[IIl1Ill1l11(_KEA[2634])](tonumber(ll1I1IIll11) or 0B0);
+I1llIll1l11[IIl1Ill1l11(_KEA[2635])] = IlIIIIIll11(Il1I1IIll11);
+I1IIIIIll11(Il1I1IIll11)
+if l11lIll1l11 ~= nil and Il1I1IIll11 > l11lIll1l11 then
+IlIIlll1l11()
 		end
-IIll1Ill11 = ll111l1l11
+l11lIll1l11 = Il1I1IIll11
 	end
-l1l1ll1l11(l11IlIll11(_KMZ[2640]), function()
-local Il111l1l11 = IIIl1l1l11:FindFirstChild(l11IlIll11(_KMZ[2641])) or IIIl1l1l11:WaitForChild(l11IlIll11(_KMZ[2642]), 0xF);
-local ll111l1l11 = Il111l1l11 and (Il111l1l11:FindFirstChild(l11IlIll11(_KMZ[2643])) or Il111l1l11:WaitForChild(l11IlIll11(_KMZ[2644]), 0xF))
-if not lI11ll1l11[l11IlIll11(_KMZ[2645])] then
+II1IIIIll11(IIl1Ill1l11(_KEA[2636]), function()
+local ll1I1IIll11 = l1II1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[2637])) or l1II1IIll11:WaitForChild(IIl1Ill1l11(_KEA[2638]), 0xF);
+local Il1I1IIll11 = ll1I1IIll11 and (ll1I1IIll11:FindFirstChild(IIl1Ill1l11(_KEA[2639])) or ll1I1IIll11:WaitForChild(IIl1Ill1l11(_KEA[2640]), 0xF))
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[2641])] then
 return
 		end
-if ll111l1l11 then
-I1ll1Ill11(ll111l1l11[l11IlIll11(_KMZ[2646])]);
-lIl1ll1l11(ll111l1l11[l11IlIll11(_KMZ[2647])]:Connect(I1ll1Ill11))
+if Il1I1IIll11 then
+lI1lIll1l11(Il1I1IIll11[IIl1Ill1l11(_KEA[2642])]);
+I11IIIIll11(Il1I1IIll11[IIl1Ill1l11(_KEA[2643])]:Connect(lI1lIll1l11))
 		else
-lI1l1Ill11[l11IlIll11(_KMZ[2648])] = l11IlIll11(_KMZ[2649])
+I1llIll1l11[IIl1Ill1l11(_KEA[2644])] = IIl1Ill1l11(_KEA[2645])
 		end
 	end);
-local function l1ll1Ill11()
-if IIIl1Ill11 then
-IIIl1Ill11:SetValues(Ill11Ill11(), true)
+local function II1lIll1l11()
+if l1II1ll1l11 then
+l1II1ll1l11:SetValues(llII1ll1l11(), true)
 		end
 	end
-lIl1ll1l11(Il111l1l11[l11IlIll11(_KMZ[2650])]:Connect(function(Il111l1l11)
-if lI11ll1l11[l11IlIll11(_KMZ[2651])] then
-task[l11IlIll11(_KMZ[2652])](function()
-local ll111l1l11 = lI1lll1l11(Il111l1l11);
-Il11ll1l11[Il111l1l11[l11IlIll11(_KMZ[2653])]] = ll111l1l11 == nil or ll111l1l11 == true
+I11IIIIll11(ll1I1IIll11[IIl1Ill1l11(_KEA[2646])]:Connect(function(ll1I1IIll11)
+if I1lIIIIll11[IIl1Ill1l11(_KEA[2647])] then
+task[IIl1Ill1l11(_KEA[2648])](function()
+local Il1I1IIll11 = I1lllll1l11(ll1I1IIll11);
+ll1IIIIll11[ll1I1IIll11[IIl1Ill1l11(_KEA[2649])]] = Il1I1IIll11 == nil or Il1I1IIll11 == true
 			end)
 		end
-task[l11IlIll11(_KMZ[2654])](l1ll1Ill11)
+task[IIl1Ill1l11(_KEA[2650])](II1lIll1l11)
 	end));
-lIl1ll1l11(Il111l1l11[l11IlIll11(_KMZ[2655])]:Connect(function(Il111l1l11)
-lI11ll1l11[l11IlIll11(_KMZ[2656])][Il111l1l11[l11IlIll11(_KMZ[2657])]] = nil
-lI11ll1l11[l11IlIll11(_KMZ[2658])][Il111l1l11[l11IlIll11(_KMZ[2659])]] = nil
-if Il11ll1l11[Il111l1l11[l11IlIll11(_KMZ[2660])]] ~= true then
-Il11ll1l11[Il111l1l11[l11IlIll11(_KMZ[2661])]] = nil
+I11IIIIll11(ll1I1IIll11[IIl1Ill1l11(_KEA[2651])]:Connect(function(ll1I1IIll11)
+I1lIIIIll11[IIl1Ill1l11(_KEA[439])][ll1I1IIll11[IIl1Ill1l11(_KEA[2652])]] = nil
+I1lIIIIll11[IIl1Ill1l11(_KEA[2653])][ll1I1IIll11[IIl1Ill1l11(_KEA[2654])]] = nil
+if ll1IIIIll11[ll1I1IIll11[IIl1Ill1l11(_KEA[2655])]] ~= true then
+ll1IIIIll11[ll1I1IIll11[IIl1Ill1l11(_KEA[2649])]] = nil
 		end
-local ll111l1l11 = lI11ll1l11[l11IlIll11(_KMZ[2662])] == Il111l1l11[l11IlIll11(_KMZ[2663])]
-task[l11IlIll11(_KMZ[2664])](function()
-if not lI11ll1l11[l11IlIll11(_KMZ[2665])] then
+local Il1I1IIll11 = I1lIIIIll11[IIl1Ill1l11(_KEA[2656])] == ll1I1IIll11[IIl1Ill1l11(_KEA[1757])]
+task[IIl1Ill1l11(_KEA[2657])](function()
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[2658])] then
 return
 			end
-l1ll1Ill11()
-if ll111l1l11 and lI11ll1l11[l11IlIll11(_KMZ[805])] then
-l1l1IIll11(false)
-if I1l11Ill11 then
-I1l11Ill11:Set(false, true)
+II1lIll1l11()
+if Il1I1IIll11 and I1lIIIIll11[IIl1Ill1l11(_KEA[2659])] then
+II1Illl1l11(false)
+if lI1I1ll1l11 then
+lI1I1ll1l11:Set(false, true)
 				end
 			end
 		end)
 	end));
-local Illl1Ill11 = false
-local llll1Ill11 = nil
-local IIIIlIll11 = nil
-local lIIIlIll11 = 0B0
-local function I1IIlIll11(Il111l1l11)
-l11I1Ill11[l11IlIll11(_KMZ[2666])] = Il111l1l11
-ll1I1Ill11[l11IlIll11(_KMZ[2667])] = Il111l1l11
-I11I1Ill11[l11IlIll11(_KMZ[1497])] = UDim2[l11IlIll11(_KMZ[2668])](Il111l1l11[l11IlIll11(_KMZ[1524])][l11IlIll11(_KMZ[2669])], Il111l1l11[l11IlIll11(_KMZ[2670])][l11IlIll11(_KMZ[2671])], Il111l1l11[l11IlIll11(_KMZ[2331])][l11IlIll11(_KMZ[2672])], Il111l1l11[l11IlIll11(_KMZ[2673])][l11IlIll11(_KMZ[2674])] - 0x6)
+local llIlIll1l11 = false
+local IlIlIll1l11 = nil
+local l1IlIll1l11 = nil
+local I1IlIll1l11 = 0B0
+local function lIIlIll1l11(ll1I1IIll11)
+IIl11ll1l11[IIl1Ill1l11(_KEA[2020])] = ll1I1IIll11
+Il111ll1l11[IIl1Ill1l11(_KEA[2660])] = ll1I1IIll11
+lIl11ll1l11[IIl1Ill1l11(_KEA[2020])] = UDim2[IIl1Ill1l11(_KEA[2661])](ll1I1IIll11[IIl1Ill1l11(_KEA[2662])][IIl1Ill1l11(_KEA[2663])], ll1I1IIll11[IIl1Ill1l11(_KEA[2664])][IIl1Ill1l11(_KEA[2665])], ll1I1IIll11[IIl1Ill1l11(_KEA[2666])][IIl1Ill1l11(_KEA[2667])], ll1I1IIll11[IIl1Ill1l11(_KEA[2668])][IIl1Ill1l11(_KEA[2669])] - 0x6)
 	end
-local function l1IIlIll11(Il111l1l11)
-if ll11ll1l11 or II1I1Ill11 == Il111l1l11 then
+local function IIIlIll1l11(ll1I1IIll11)
+if Il1IIIIll11 or l1l11ll1l11 == ll1I1IIll11 then
 return
 		end
-II1I1Ill11 = Il111l1l11
-if II1I1Ill11 and IIIl1Ill11 then
-IIIl1Ill11:Close()
+l1l11ll1l11 = ll1I1IIll11
+if l1l11ll1l11 and l1II1ll1l11 then
+l1II1ll1l11:Close()
 		end
-l1lI1Ill11[l11IlIll11(_KMZ[2675])] = false
-if not II1I1Ill11 then
-llI11Ill11[l11IlIll11(_KMZ[1888])] = true
+II111ll1l11[IIl1Ill1l11(_KEA[2670])] = false
+if not l1l11ll1l11 then
+IllI1ll1l11[IIl1Ill1l11(_KEA[2671])] = true
 		end
-local ll111l1l11 = II1I1Ill11 and llII1Ill11 or I1II1Ill11
-local IIl11l1l11 = TweenInfo[l11IlIll11(_KMZ[2204])](.22, Enum[l11IlIll11(_KMZ[2676])][l11IlIll11(_KMZ[2677])], Enum[l11IlIll11(_KMZ[2678])][l11IlIll11(_KMZ[2679])]);
-(lIl11l1l11:Create(l11I1Ill11, IIl11l1l11, { [l11IlIll11(_KMZ[2680])] = UDim2[l11IlIll11(_KMZ[2681])](lIII1Ill11, ll111l1l11) })):Play();
-(lIl11l1l11:Create(ll1I1Ill11, IIl11l1l11, { [l11IlIll11(_KMZ[2682])] = UDim2[l11IlIll11(_KMZ[2683])](lIII1Ill11, ll111l1l11) })):Play();
-(lIl11l1l11:Create(I11I1Ill11, IIl11l1l11, { [l11IlIll11(_KMZ[2011])] = UDim2[l11IlIll11(_KMZ[2684])](lIII1Ill11 + 0xC, ll111l1l11 + 0xC) })):Play()
-if II1I1Ill11 then
-task[l11IlIll11(_KMZ[2685])](.18, function()
-if II1I1Ill11 and lI11ll1l11[l11IlIll11(_KMZ[2686])] then
-llI11Ill11[l11IlIll11(_KMZ[2687])] = false
+local Il1I1IIll11 = l1l11ll1l11 and Ill11ll1l11 or lIIl1ll1l11
+local l11I1IIll11 = TweenInfo[IIl1Ill1l11(_KEA[2612])](.22, Enum[IIl1Ill1l11(_KEA[2672])][IIl1Ill1l11(_KEA[2673])], Enum[IIl1Ill1l11(_KEA[2674])][IIl1Ill1l11(_KEA[2675])]);
+(I11I1IIll11:Create(IIl11ll1l11, l11I1IIll11, { [IIl1Ill1l11(_KEA[2676])] = UDim2[IIl1Ill1l11(_KEA[2677])](I1Il1ll1l11, Il1I1IIll11) })):Play();
+(I11I1IIll11:Create(Il111ll1l11, l11I1IIll11, { [IIl1Ill1l11(_KEA[2678])] = UDim2[IIl1Ill1l11(_KEA[2679])](I1Il1ll1l11, Il1I1IIll11) })):Play();
+(I11I1IIll11:Create(lIl11ll1l11, l11I1IIll11, { [IIl1Ill1l11(_KEA[2680])] = UDim2[IIl1Ill1l11(_KEA[2681])](I1Il1ll1l11 + 0xC, Il1I1IIll11 + 0xC) })):Play()
+if l1l11ll1l11 then
+task[IIl1Ill1l11(_KEA[2682])](.18, function()
+if l1l11ll1l11 and I1lIIIIll11[IIl1Ill1l11(_KEA[2683])] then
+IllI1ll1l11[IIl1Ill1l11(_KEA[2684])] = false
 				end
 			end)
 		end
 	end
-lIl1ll1l11(IlI11Ill11[l11IlIll11(_KMZ[2688])]:Connect(function(Il111l1l11)
-if Il111l1l11[l11IlIll11(_KMZ[2689])] == Enum[l11IlIll11(_KMZ[2690])][l11IlIll11(_KMZ[2691])] or Il111l1l11[l11IlIll11(_KMZ[2692])] == Enum[l11IlIll11(_KMZ[2693])][l11IlIll11(_KMZ[2694])] then
-Illl1Ill11 = true
-llll1Ill11 = Il111l1l11[l11IlIll11(_KMZ[2695])]
-IIIIlIll11 = l11I1Ill11[l11IlIll11(_KMZ[1856])]
-lIIIlIll11 = 0B0
+I11IIIIll11(lllI1ll1l11[IIl1Ill1l11(_KEA[2685])]:Connect(function(ll1I1IIll11)
+if ll1I1IIll11[IIl1Ill1l11(_KEA[2686])] == Enum[IIl1Ill1l11(_KEA[2687])][IIl1Ill1l11(_KEA[2688])] or ll1I1IIll11[IIl1Ill1l11(_KEA[2689])] == Enum[IIl1Ill1l11(_KEA[2690])][IIl1Ill1l11(_KEA[2691])] then
+llIlIll1l11 = true
+IlIlIll1l11 = ll1I1IIll11[IIl1Ill1l11(_KEA[2692])]
+l1IlIll1l11 = IIl11ll1l11[IIl1Ill1l11(_KEA[2693])]
+I1IlIll1l11 = 0B0
 		end
 	end));
-lIl1ll1l11(IIl11l1l11[l11IlIll11(_KMZ[2696])]:Connect(function(Il111l1l11)
-if not Illl1Ill11 or not llll1Ill11 or not IIIIlIll11 then
+I11IIIIll11(l11I1IIll11[IIl1Ill1l11(_KEA[2694])]:Connect(function(ll1I1IIll11)
+if not llIlIll1l11 or not IlIlIll1l11 or not l1IlIll1l11 then
 return
 		end
-if Il111l1l11[l11IlIll11(_KMZ[2697])] ~= Enum[l11IlIll11(_KMZ[2698])][l11IlIll11(_KMZ[2699])] and Il111l1l11[l11IlIll11(_KMZ[2700])] ~= Enum[l11IlIll11(_KMZ[2701])][l11IlIll11(_KMZ[2702])] then
+if ll1I1IIll11[IIl1Ill1l11(_KEA[2695])] ~= Enum[IIl1Ill1l11(_KEA[2696])][IIl1Ill1l11(_KEA[2697])] and ll1I1IIll11[IIl1Ill1l11(_KEA[2698])] ~= Enum[IIl1Ill1l11(_KEA[2699])][IIl1Ill1l11(_KEA[2700])] then
 return
 		end
-local ll111l1l11 = Il111l1l11[l11IlIll11(_KMZ[2703])] - llll1Ill11
-lIIIlIll11 = ll111l1l11[l11IlIll11(_KMZ[2704])]
-I1IIlIll11(UDim2[l11IlIll11(_KMZ[2705])](IIIIlIll11[l11IlIll11(_KMZ[2706])][l11IlIll11(_KMZ[2707])], IIIIlIll11[l11IlIll11(_KMZ[2708])][l11IlIll11(_KMZ[2709])] + ll111l1l11[l11IlIll11(_KMZ[2710])], IIIIlIll11[l11IlIll11(_KMZ[2711])][l11IlIll11(_KMZ[2712])], IIIIlIll11[l11IlIll11(_KMZ[2713])][l11IlIll11(_KMZ[2714])] + ll111l1l11[l11IlIll11(_KMZ[2715])]))
+local Il1I1IIll11 = ll1I1IIll11[IIl1Ill1l11(_KEA[2701])] - IlIlIll1l11
+I1IlIll1l11 = Il1I1IIll11[IIl1Ill1l11(_KEA[2702])]
+lIIlIll1l11(UDim2[IIl1Ill1l11(_KEA[1948])](l1IlIll1l11[IIl1Ill1l11(_KEA[2703])][IIl1Ill1l11(_KEA[2704])], l1IlIll1l11[IIl1Ill1l11(_KEA[2705])][IIl1Ill1l11(_KEA[2706])] + Il1I1IIll11[IIl1Ill1l11(_KEA[277])], l1IlIll1l11[IIl1Ill1l11(_KEA[2707])][IIl1Ill1l11(_KEA[2708])], l1IlIll1l11[IIl1Ill1l11(_KEA[2709])][IIl1Ill1l11(_KEA[2710])] + Il1I1IIll11[IIl1Ill1l11(_KEA[2711])]))
 	end));
-lIl1ll1l11(IIl11l1l11[l11IlIll11(_KMZ[2716])]:Connect(function(Il111l1l11)
-if Il111l1l11[l11IlIll11(_KMZ[2717])] == Enum[l11IlIll11(_KMZ[2718])][l11IlIll11(_KMZ[2719])] or Il111l1l11[l11IlIll11(_KMZ[2720])] == Enum[l11IlIll11(_KMZ[2721])][l11IlIll11(_KMZ[2722])] then
-Illl1Ill11 = false
+I11IIIIll11(l11I1IIll11[IIl1Ill1l11(_KEA[2712])]:Connect(function(ll1I1IIll11)
+if ll1I1IIll11[IIl1Ill1l11(_KEA[2713])] == Enum[IIl1Ill1l11(_KEA[2714])][IIl1Ill1l11(_KEA[2715])] or ll1I1IIll11[IIl1Ill1l11(_KEA[2716])] == Enum[IIl1Ill1l11(_KEA[2717])][IIl1Ill1l11(_KEA[2718])] then
+llIlIll1l11 = false
 		end
 	end));
-lIl1ll1l11(IlI11Ill11[l11IlIll11(_KMZ[2723])]:Connect(function()
-if lIIIlIll11 < 0x8 then
-l1IIlIll11(not II1I1Ill11)
+I11IIIIll11(lllI1ll1l11[IIl1Ill1l11(_KEA[2719])]:Connect(function()
+if I1IlIll1l11 < 0x8 then
+IIIlIll1l11(not l1l11ll1l11)
 		end
 	end));
-local function IlIIlIll11()
-lI11ll1l11[l11IlIll11(_KMZ[2724])] = false
-lI11ll1l11[l11IlIll11(_KMZ[2725])] = false
-lI11ll1l11[l11IlIll11(_KMZ[2726])] = false
-lI11ll1l11[l11IlIll11(_KMZ[2727])] = false
-lI11ll1l11[l11IlIll11(_KMZ[2728])] = false
-lI11ll1l11[l11IlIll11(_KMZ[376])] = false
-lI11ll1l11[l11IlIll11(_KMZ[2729])] = false
-lI11ll1l11[l11IlIll11(_KMZ[2730])] = false
-lI11ll1l11[l11IlIll11(_KMZ[2731])] = false
-IIIlIIll11[l11IlIll11(_KMZ[2732])] = false
-IIIlIIll11[l11IlIll11(_KMZ[2733])] = IIIlIIll11[l11IlIll11(_KMZ[2734])] + 0B1
-I1l1ll1l11(l11IlIll11(_KMZ[2735]));
-IIIlIIll11:RestoreBattle();
-IIIlIIll11:SetAntiLag(false);
-IIIlIIll11:SetAutoLag60(false);
-IIIlIIll11:RestoreFG100BossOwnership();
-I1l1ll1l11(l11IlIll11(_KMZ[2736]));
-I1l1ll1l11(l11IlIll11(_KMZ[2737]));
-I1l1ll1l11(l11IlIll11(_KMZ[2738]));
-I1l1ll1l11(l11IlIll11(_KMZ[2739]));
-IIl1IIll11();
-I1l1ll1l11(l11IlIll11(_KMZ[688]));
-I1l1ll1l11(l11IlIll11(_KMZ[2740]));
-llIlll1l11();
-Ill1ll1l11()
-if I1Il1l1l11[l11IlIll11(_KMZ[2741])] == II11ll1l11 then
-I1Il1l1l11[l11IlIll11(_KMZ[2742])] = nil
+local function lll1Ill1l11()
+I1lIIIIll11[IIl1Ill1l11(_KEA[2720])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[779])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[2721])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[2722])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[2723])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[2724])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[2725])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[2726])] = false
+I1lIIIIll11[IIl1Ill1l11(_KEA[2727])] = false
+l1IIlll1l11[IIl1Ill1l11(_KEA[2728])] = false
+l1IIlll1l11[IIl1Ill1l11(_KEA[2729])] = l1IIlll1l11[IIl1Ill1l11(_KEA[2730])] + 0B1
+lI1IIIIll11(IIl1Ill1l11(_KEA[2731]));
+l1IIlll1l11:RestoreBattle();
+l1IIlll1l11:SetAntiLag(false);
+l1IIlll1l11:SetAutoLag60(false);
+l1IIlll1l11:RestoreFG100BossOwnership();
+lI1IIIIll11(IIl1Ill1l11(_KEA[2732]));
+lI1IIIIll11(IIl1Ill1l11(_KEA[2733]));
+lI1IIIIll11(IIl1Ill1l11(_KEA[2734]));
+lI1IIIIll11(IIl1Ill1l11(_KEA[2735]));
+l11Illl1l11();
+lI1IIIIll11(IIl1Ill1l11(_KEA[2736]));
+lI1IIIIll11(IIl1Ill1l11(_KEA[2737]));
+Illllll1l11();
+llIIIIIll11()
+if lIII1IIll11[IIl1Ill1l11(_KEA[2738])] == l1lIIIIll11 then
+lIII1IIll11[IIl1Ill1l11(_KEA[2739])] = nil
 		end
 	end
-IIl1ll1l11 = function(Il111l1l11)
-if ll11ll1l11 then
+l11IIIIll11 = function(ll1I1IIll11)
+if Il1IIIIll11 then
 return
 			end
-ll11ll1l11 = true
-if not Il111l1l11 then
-llI1IIll11()
+Il1IIIIll11 = true
+if not ll1I1IIll11 then
+IllIlll1l11()
 			end
-IlIIlIll11()
-if Il111l1l11 then
-if lI1I1Ill11 and lI1I1Ill11[l11IlIll11(_KMZ[2743])] then
-lI1I1Ill11:Destroy()
+lll1Ill1l11()
+if ll1I1IIll11 then
+if I1l11ll1l11 and I1l11ll1l11[IIl1Ill1l11(_KEA[1359])] then
+I1l11ll1l11:Destroy()
 				end
 return
 			end
-local ll111l1l11 = l11I1Ill11[l11IlIll11(_KMZ[2744])][l11IlIll11(_KMZ[2745])]
-local IIl11l1l11 = l11I1Ill11[l11IlIll11(_KMZ[2746])][l11IlIll11(_KMZ[2747])]
-local I1l11l1l11 = math[l11IlIll11(_KMZ[2748])](ll111l1l11 * .86);
-local l1l11l1l11 = math[l11IlIll11(_KMZ[2749])](IIl11l1l11 * .86);
-local Ill11l1l11 = TweenInfo[l11IlIll11(_KMZ[1868])](.28, Enum[l11IlIll11(_KMZ[2750])][l11IlIll11(_KMZ[2751])], Enum[l11IlIll11(_KMZ[2752])][l11IlIll11(_KMZ[2753])]);
-(lIl11l1l11:Create(l11I1Ill11, Ill11l1l11, { [l11IlIll11(_KMZ[1390])] = UDim2[l11IlIll11(_KMZ[2754])](I1l11l1l11, l1l11l1l11), [l11IlIll11(_KMZ[2755])] = 0B1 })):Play();
-(lIl11l1l11:Create(ll1I1Ill11, Ill11l1l11, { [l11IlIll11(_KMZ[2756])] = UDim2[l11IlIll11(_KMZ[2757])](I1l11l1l11, l1l11l1l11) })):Play();
-(lIl11l1l11:Create(I11I1Ill11, Ill11l1l11, { [l11IlIll11(_KMZ[2758])] = UDim2[l11IlIll11(_KMZ[2759])](I1l11l1l11 + 0xC, l1l11l1l11 + 0xC), [l11IlIll11(_KMZ[2760])] = 0B1 })):Play();
-(lIl11l1l11:Create(IIlI1Ill11, Ill11l1l11, { [l11IlIll11(_KMZ[2761])] = 0B1 })):Play();
-task[l11IlIll11(_KMZ[2762])](.3, function()
-if lI1I1Ill11 and lI1I1Ill11[l11IlIll11(_KMZ[2763])] then
-lI1I1Ill11:Destroy()
+local Il1I1IIll11 = IIl11ll1l11[IIl1Ill1l11(_KEA[2740])][IIl1Ill1l11(_KEA[2741])]
+local l11I1IIll11 = IIl11ll1l11[IIl1Ill1l11(_KEA[2742])][IIl1Ill1l11(_KEA[2743])]
+local lI1I1IIll11 = math[IIl1Ill1l11(_KEA[2744])](Il1I1IIll11 * .86);
+local II1I1IIll11 = math[IIl1Ill1l11(_KEA[2745])](l11I1IIll11 * .86);
+local llII1IIll11 = TweenInfo[IIl1Ill1l11(_KEA[2461])](.28, Enum[IIl1Ill1l11(_KEA[2746])][IIl1Ill1l11(_KEA[2747])], Enum[IIl1Ill1l11(_KEA[2748])][IIl1Ill1l11(_KEA[2749])]);
+(I11I1IIll11:Create(IIl11ll1l11, llII1IIll11, { [IIl1Ill1l11(_KEA[2750])] = UDim2[IIl1Ill1l11(_KEA[2751])](lI1I1IIll11, II1I1IIll11), [IIl1Ill1l11(_KEA[2752])] = 0B1 })):Play();
+(I11I1IIll11:Create(Il111ll1l11, llII1IIll11, { [IIl1Ill1l11(_KEA[2242])] = UDim2[IIl1Ill1l11(_KEA[2753])](lI1I1IIll11, II1I1IIll11) })):Play();
+(I11I1IIll11:Create(lIl11ll1l11, llII1IIll11, { [IIl1Ill1l11(_KEA[2754])] = UDim2[IIl1Ill1l11(_KEA[2755])](lI1I1IIll11 + 0xC, II1I1IIll11 + 0xC), [IIl1Ill1l11(_KEA[2756])] = 0B1 })):Play();
+(I11I1IIll11:Create(l1111ll1l11, llII1IIll11, { [IIl1Ill1l11(_KEA[2757])] = 0B1 })):Play();
+task[IIl1Ill1l11(_KEA[2758])](.3, function()
+if I1l11ll1l11 and I1l11ll1l11[IIl1Ill1l11(_KEA[2759])] then
+I1l11ll1l11:Destroy()
 				end
 			end)
 		end
-II11ll1l11[l11IlIll11(_KMZ[2764])] = IIl1ll1l11
-II11ll1l11[l11IlIll11(_KMZ[2765])] = function(Il111l1l11)
-return Il111Ill11:Set(Il111l1l11, false)
+l1lIIIIll11[IIl1Ill1l11(_KEA[2760])] = l11IIIIll11
+l1lIIIIll11[IIl1Ill1l11(_KEA[2761])] = function(ll1I1IIll11)
+return ll1I1ll1l11:Set(ll1I1IIll11, false)
 		end
-II11ll1l11[l11IlIll11(_KMZ[2766])] = function(Il111l1l11)
-return ll111Ill11:Set(Il111l1l11, false)
+l1lIIIIll11[IIl1Ill1l11(_KEA[2762])] = function(ll1I1IIll11)
+return Il1I1ll1l11:Set(ll1I1IIll11, false)
 		end
-II11ll1l11[l11IlIll11(_KMZ[2767])] = function(Il111l1l11)
-return IIl11Ill11:Set(Il111l1l11, false)
+l1lIIIIll11[IIl1Ill1l11(_KEA[2763])] = function(ll1I1IIll11)
+return l11I1ll1l11:Set(ll1I1IIll11, false)
 		end
-II11ll1l11[l11IlIll11(_KMZ[2768])] = function(Il111l1l11)
-return lIl11Ill11:Set(Il111l1l11, false)
+l1lIIIIll11[IIl1Ill1l11(_KEA[2764])] = function(ll1I1IIll11)
+return I11I1ll1l11:Set(ll1I1IIll11, false)
 		end
-II11ll1l11[l11IlIll11(_KMZ[2769])] = function(Il111l1l11)
-return l1l11Ill11:Set(Il111l1l11, false)
+l1lIIIIll11[IIl1Ill1l11(_KEA[2765])] = function(ll1I1IIll11)
+return II1I1ll1l11:Set(ll1I1IIll11, false)
 		end
-II11ll1l11[l11IlIll11(_KMZ[2770])] = function(Il111l1l11)
-return I1l11Ill11:Set(Il111l1l11, false)
+l1lIIIIll11[IIl1Ill1l11(_KEA[2766])] = function(ll1I1IIll11)
+return lI1I1ll1l11:Set(ll1I1IIll11, false)
 		end
-II11ll1l11[l11IlIll11(_KMZ[2771])] = function(ll111l1l11)
-local IIl11l1l11 = ll111l1l11 and Il111l1l11:FindFirstChild(tostring(ll111l1l11))
-if not IIl11l1l11 or IIl11l1l11 == IIIl1l1l11 then
+l1lIIIIll11[IIl1Ill1l11(_KEA[2767])] = function(Il1I1IIll11)
+local l11I1IIll11 = Il1I1IIll11 and ll1I1IIll11:FindFirstChild(tostring(Il1I1IIll11))
+if not l11I1IIll11 or l11I1IIll11 == l1II1IIll11 then
 return false
 			end
-lI11ll1l11[l11IlIll11(_KMZ[2772])] = IIl11l1l11[l11IlIll11(_KMZ[2773])]
-if IIIl1Ill11 then
-IIIl1Ill11:SetByName(IIl11l1l11[l11IlIll11(_KMZ[2774])])
+I1lIIIIll11[IIl1Ill1l11(_KEA[2768])] = l11I1IIll11[IIl1Ill1l11(_KEA[2769])]
+if l1II1ll1l11 then
+l1II1ll1l11:SetByName(l11I1IIll11[IIl1Ill1l11(_KEA[2770])])
 			end
 return true
 		end
-II11ll1l11[l11IlIll11(_KMZ[2775])] = lI11ll1l11
-I1Il1l1l11[l11IlIll11(_KMZ[2776])] = II11ll1l11
-IIIlIIll11:SetAutoLag60(true);
-l1l1ll1l11(l11IlIll11(_KMZ[2777]), function()
-while lI11ll1l11[l11IlIll11(_KMZ[2778])] do
-if not lI11ll1l11[l11IlIll11(_KMZ[2779])] and (lI11ll1l11[l11IlIll11(_KMZ[2780])] or lI11ll1l11[l11IlIll11(_KMZ[2781])] or lI11ll1l11[l11IlIll11(_KMZ[2782])]) then
-if not l111ll1l11[l11IlIll11(_KMZ[2783])] then
-l11IIIll11()
+l1lIIIIll11[IIl1Ill1l11(_KEA[2771])] = I1lIIIIll11
+lIII1IIll11[IIl1Ill1l11(_KEA[2772])] = l1lIIIIll11
+l1IIlll1l11:SetAutoLag60(true);
+II1IIIIll11(IIl1Ill1l11(_KEA[2773]), function()
+while I1lIIIIll11[IIl1Ill1l11(_KEA[2774])] do
+if not I1lIIIIll11[IIl1Ill1l11(_KEA[2775])] and (I1lIIIIll11[IIl1Ill1l11(_KEA[2776])] or I1lIIIIll11[IIl1Ill1l11(_KEA[2777])] or I1lIIIIll11[IIl1Ill1l11(_KEA[2778])]) then
+if not IIlIIIIll11[IIl1Ill1l11(_KEA[2779])] then
+IIl1lll1l11()
 				end
-if not l111ll1l11[l11IlIll11(_KMZ[2784])] then
-ll11IIll11()
+if not IIlIIIIll11[IIl1Ill1l11(_KEA[2780])] then
+Il1Illl1l11()
 				end
 			end
-if lI11ll1l11[l11IlIll11(_KMZ[2785])] and (not lI11ll1l11[l11IlIll11(_KMZ[2786])] and (not lI11ll1l11[l11IlIll11(_KMZ[2787])] and not l111ll1l11[l11IlIll11(_KMZ[2788])])) then
-lIl1IIll11()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[2781])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[2782])] and (not I1lIIIIll11[IIl1Ill1l11(_KEA[2783])] and not IIlIIIIll11[IIl1Ill1l11(_KEA[2784])])) then
+I11Illl1l11()
 			end
-if lI11ll1l11[l11IlIll11(_KMZ[2789])] and not l111ll1l11[l11IlIll11(_KMZ[1594])] then
-llIlIIll11(true)
+if I1lIIIIll11[IIl1Ill1l11(_KEA[2785])] and not IIlIIIIll11[IIl1Ill1l11(_KEA[2786])] then
+Illl1ll1l11(true)
 			end
-if lI11ll1l11[l11IlIll11(_KMZ[2790])] and not l111ll1l11[l11IlIll11(_KMZ[2791])] then
-II11IIll11(true)
+if I1lIIIIll11[IIl1Ill1l11(_KEA[2787])] and not IIlIIIIll11[IIl1Ill1l11(_KEA[2788])] then
+l1lIlll1l11(true)
 			end
-if lI11ll1l11[l11IlIll11(_KMZ[2792])] and not l111ll1l11[l11IlIll11(_KMZ[2793])] then
-lIIIIIll11()
+if I1lIIIIll11[IIl1Ill1l11(_KEA[58])] and not IIlIIIIll11[IIl1Ill1l11(_KEA[2789])] then
+I1Illll1l11()
 			end
-task[l11IlIll11(_KMZ[2794])](0B10)
+task[IIl1Ill1l11(_KEA[2790])](0B10)
 		end
 	end);
-lIl1ll1l11(l11l1Ill11[l11IlIll11(_KMZ[2795])]:Connect(function()
-if IIl1ll1l11 then
-IIl1ll1l11(false)
+I11IIIIll11(IIllIll1l11[IIl1Ill1l11(_KEA[2791])]:Connect(function()
+if l11IIIIll11 then
+l11IIIIll11(false)
 		end
 	end));
-lIl1ll1l11(lI1I1Ill11[l11IlIll11(_KMZ[2796])]:Connect(function(Il111l1l11, ll111l1l11)
-if not ll111l1l11 and not ll11ll1l11 then
-IIl1ll1l11(true)
+I11IIIIll11(I1l11ll1l11[IIl1Ill1l11(_KEA[2792])]:Connect(function(ll1I1IIll11, Il1I1IIll11)
+if not Il1I1IIll11 and not Il1IIIIll11 then
+l11IIIIll11(true)
 		end
 	end));
-local llIIlIll11 = l11I1Ill11[l11IlIll11(_KMZ[2797])]
-local II1IlIll11 = math[l11IlIll11(_KMZ[2798])](lIII1Ill11 * .88);
-local lI1IlIll11 = math[l11IlIll11(_KMZ[2799])](I1II1Ill11 * .88);
-l11I1Ill11[l11IlIll11(_KMZ[1925])] = UDim2[l11IlIll11(_KMZ[2800])](II1IlIll11, lI1IlIll11);
-ll1I1Ill11[l11IlIll11(_KMZ[2801])] = UDim2[l11IlIll11(_KMZ[2802])](II1IlIll11, lI1IlIll11);
-I11I1Ill11[l11IlIll11(_KMZ[2803])] = UDim2[l11IlIll11(_KMZ[2804])](II1IlIll11 + 0xC, lI1IlIll11 + 0xC);
-l11I1Ill11[l11IlIll11(_KMZ[1884])] = .18
-I11I1Ill11[l11IlIll11(_KMZ[2805])] = 0B1
-IIlI1Ill11[l11IlIll11(_KMZ[2806])] = .7
-local I11IlIll11 = TweenInfo[l11IlIll11(_KMZ[2807])](.34, Enum[l11IlIll11(_KMZ[2808])][l11IlIll11(_KMZ[2809])], Enum[l11IlIll11(_KMZ[2810])][l11IlIll11(_KMZ[2811])]);
-(lIl11l1l11:Create(l11I1Ill11, I11IlIll11, { [l11IlIll11(_KMZ[2812])] = UDim2[l11IlIll11(_KMZ[2813])](lIII1Ill11, I1II1Ill11), [l11IlIll11(_KMZ[2814])] = 0B0 })):Play();
-(lIl11l1l11:Create(ll1I1Ill11, I11IlIll11, { [l11IlIll11(_KMZ[2815])] = UDim2[l11IlIll11(_KMZ[2816])](lIII1Ill11, I1II1Ill11) })):Play();
-(lIl11l1l11:Create(I11I1Ill11, I11IlIll11, { [l11IlIll11(_KMZ[2817])] = UDim2[l11IlIll11(_KMZ[2818])](lIII1Ill11 + 0xC, I1II1Ill11 + 0xC), [l11IlIll11(_KMZ[2819])] = UDim2[l11IlIll11(_KMZ[1746])](llIIlIll11[l11IlIll11(_KMZ[2820])][l11IlIll11(_KMZ[2821])], llIIlIll11[l11IlIll11(_KMZ[2822])][l11IlIll11(_KMZ[2823])], llIIlIll11[l11IlIll11(_KMZ[2824])][l11IlIll11(_KMZ[2825])], llIIlIll11[l11IlIll11(_KMZ[2747])][l11IlIll11(_KMZ[2826])] - 0x6), [l11IlIll11(_KMZ[1963])] = .48 })):Play();
-(lIl11l1l11:Create(IIlI1Ill11, TweenInfo[l11IlIll11(_KMZ[2827])](.28), { [l11IlIll11(_KMZ[2828])] = .04 })):Play()
-if llI1ll1l11 then
-if llI1ll1l11[l11IlIll11(_KMZ[2829])] then
-IIl11Ill11:Set(true, false)
+local Ill1Ill1l11 = IIl11ll1l11[IIl1Ill1l11(_KEA[2793])]
+local l1l1Ill1l11 = math[IIl1Ill1l11(_KEA[2794])](I1Il1ll1l11 * .88);
+local I1l1Ill1l11 = math[IIl1Ill1l11(_KEA[2795])](lIIl1ll1l11 * .88);
+IIl11ll1l11[IIl1Ill1l11(_KEA[2796])] = UDim2[IIl1Ill1l11(_KEA[2797])](l1l1Ill1l11, I1l1Ill1l11);
+Il111ll1l11[IIl1Ill1l11(_KEA[2798])] = UDim2[IIl1Ill1l11(_KEA[2057])](l1l1Ill1l11, I1l1Ill1l11);
+lIl11ll1l11[IIl1Ill1l11(_KEA[2799])] = UDim2[IIl1Ill1l11(_KEA[2800])](l1l1Ill1l11 + 0xC, I1l1Ill1l11 + 0xC);
+IIl11ll1l11[IIl1Ill1l11(_KEA[2801])] = .18
+lIl11ll1l11[IIl1Ill1l11(_KEA[2802])] = 0B1
+l1111ll1l11[IIl1Ill1l11(_KEA[2803])] = .7
+local lIl1Ill1l11 = TweenInfo[IIl1Ill1l11(_KEA[2016])](.34, Enum[IIl1Ill1l11(_KEA[2804])][IIl1Ill1l11(_KEA[2805])], Enum[IIl1Ill1l11(_KEA[2806])][IIl1Ill1l11(_KEA[2807])]);
+(I11I1IIll11:Create(IIl11ll1l11, lIl1Ill1l11, { [IIl1Ill1l11(_KEA[1782])] = UDim2[IIl1Ill1l11(_KEA[2808])](I1Il1ll1l11, lIIl1ll1l11), [IIl1Ill1l11(_KEA[2809])] = 0B0 })):Play();
+(I11I1IIll11:Create(Il111ll1l11, lIl1Ill1l11, { [IIl1Ill1l11(_KEA[2810])] = UDim2[IIl1Ill1l11(_KEA[2811])](I1Il1ll1l11, lIIl1ll1l11) })):Play();
+(I11I1IIll11:Create(lIl11ll1l11, lIl1Ill1l11, { [IIl1Ill1l11(_KEA[2812])] = UDim2[IIl1Ill1l11(_KEA[2813])](I1Il1ll1l11 + 0B1100, lIIl1ll1l11 + 0xC), [IIl1Ill1l11(_KEA[2814])] = UDim2[IIl1Ill1l11(_KEA[2073])](Ill1Ill1l11[IIl1Ill1l11(_KEA[320])][IIl1Ill1l11(_KEA[2815])], Ill1Ill1l11[IIl1Ill1l11(_KEA[2816])][IIl1Ill1l11(_KEA[2817])], Ill1Ill1l11[IIl1Ill1l11(_KEA[2818])][IIl1Ill1l11(_KEA[2819])], Ill1Ill1l11[IIl1Ill1l11(_KEA[2820])][IIl1Ill1l11(_KEA[2821])] - 0x6), [IIl1Ill1l11(_KEA[2822])] = .48 })):Play();
+(I11I1IIll11:Create(l1111ll1l11, TweenInfo[IIl1Ill1l11(_KEA[1805])](.28), { [IIl1Ill1l11(_KEA[2823])] = .04 })):Play()
+if IllIIIIll11 then
+if IllIIIIll11[IIl1Ill1l11(_KEA[2824])] then
+l11I1ll1l11:Set(true, false)
 		end
-if llI1ll1l11[l11IlIll11(_KMZ[2830])] then
-Il111Ill11:Set(true, false)
+if IllIIIIll11[IIl1Ill1l11(_KEA[2825])] then
+ll1I1ll1l11:Set(true, false)
 		end
-if llI1ll1l11[l11IlIll11(_KMZ[2831])] then
-ll111Ill11:Set(true, false)
+if IllIIIIll11[IIl1Ill1l11(_KEA[2826])] then
+Il1I1ll1l11:Set(true, false)
 		end
-if llI1ll1l11[l11IlIll11(_KMZ[2832])] then
-l1l11Ill11:Set(true, false)
+if IllIIIIll11[IIl1Ill1l11(_KEA[678])] then
+II1I1ll1l11:Set(true, false)
 		end
 	end
-if llI1ll1l11 and llI1ll1l11[l11IlIll11(_KMZ[2833])] or lllIll1l11 or l1lIll1l11 then
-lIl11Ill11:Set(true, false)
+if IllIIIIll11 and IllIIIIll11[IIl1Ill1l11(_KEA[2827])] or IlI1IIIll11 or II11IIIll11 then
+I11I1ll1l11:Set(true, false)
 	end end)()
